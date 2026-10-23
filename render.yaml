@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: dream-classes-ppt-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATA_DIR
+        value: /data
+      - key: FRONTEND_DIST
+        value: /app/dist
+      - key: MAX_UPLOAD_MB
+        value: "50"

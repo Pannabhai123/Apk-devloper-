@@ -172,6 +172,17 @@ Explanation: Patna is the capital of Bihar.
 
 Hindi numbering and `(क) (ख) (ग) (घ)` options are also supported. Every readable page is processed. Readable pages with no supported numbered MCQ pattern receive a warning and **no placeholder question is invented**. Missing options/answers remain editable and are flagged. Complex multi-column or inconsistent layouts may need OCR adjustments or optional AI extraction followed by teacher review.
 
+## Cloud backend with Render
+
+`render.yaml` is a ready Docker blueprint for the combined FastAPI + frontend service. It installs English/Hindi Tesseract OCR and exposes the health check at `/api/health`.
+
+1. In Render, choose **New → Blueprint** and connect `Pannabhai123/Apk-devloper-`.
+2. Select branch `arena/35966a87-apk-devloper` and apply `render.yaml`.
+3. Wait for the deployment health check to pass, then open `https://YOUR-SERVICE.onrender.com/api/health`. It must return `"status":"ok"`.
+4. In Android, open **Settings → Backend connection**, enter `https://YOUR-SERVICE.onrender.com`, and choose **Test & save**. The `/api` suffix is added automatically.
+
+The blueprint uses Render's free plan for initial setup. Free services can sleep when idle and their local filesystem is not permanent project storage. For long-term history and uploaded/exported files, use a paid persistent disk mounted at `/data` (or another permanent host). No AI key is included; add `AI_API_KEY` only in the hosting provider's server environment if AI answers are required.
+
 ## Production without Docker
 
 ```bash
