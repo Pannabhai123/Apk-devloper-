@@ -1,25 +1,30 @@
 DREAM CLASSES PPT MAKER — ANDROID INSTALL
-Version 1.1.0 | Package: in.dreamclasses.pptmaker | Android 6.0+
+Version 1.1.1 (versionCode 3) | Package: in.dreamclasses.pptmaker | Android 6.0+
 
-1. Install Dream_Classes_PPT_Maker.apk on your phone.
-2. The app needs the Dream Classes FastAPI backend. Deploy it with Docker
-   or run it on a computer on the same Wi-Fi network.
-3. Open the app > Settings > Backend connection.
-4. Enter your server URL, then tap Test & save:
-   https://your-server.com
-   OR http://YOUR-COMPUTER-LAN-IP:8000
-   (/api is added automatically.)
-5. Upload a PDF. Extraction, PPT generation, and download are automatic.
-   Files are saved to phone Downloads.
+CLOUD BACKEND IS ALREADY CONFIGURED
+https://dream-classes-ppt-api.onrender.com/api
 
-The Arena development preview URL is not embedded and will not work as a
-permanent public backend. Use HTTPS for a public server. HTTP is only for a
-trusted local network.
+1. Install Dream_Classes_PPT_Maker.apk. You can install it directly over
+   version 1.1.0; both APKs use the same development signing certificate.
+2. Open the app with internet access. You do NOT need to open Settings or
+   enter/Test & Save a backend URL. Any stale /api value from the old APK
+   automatically migrates to the configured cloud API.
+3. Choose Upload & Make PPT and select a PDF. Extraction, editable PPT
+   generation, and download are automatic. Files are saved to phone Downloads.
+
+The first request may wait while the free Render service wakes up. Its live
+health check confirms PDF text extraction, PPTX/PDF export, and Hindi+English
+OCR. No AI key is configured or included in the APK. Free-host filesystem
+storage is not a permanent backup; keep your downloaded presentations.
+
+Settings > Backend connection is only for diagnostics or a self-hosted server.
+Do not replace the cloud address with /api or localhost on a physical phone.
 
 APK SHA-256:
-907eaedd2e4bdf1866cccba0a59be44d92369053f181c30a12a07bd8f4b98d61
+24d9aa9cade983cb86f9af6d9c91877984a03e36059dc6234a1c04f126742ba7
 
 This APK uses a development/test signing certificate. Re-sign with your own
-private key for a production release. Device/emulator installation was not
-available in the build sandbox; compile, manifest, DEX, assets, ZIP alignment,
-and v1/v2 signatures were verified.
+private key for a production release. The build sandbox had no Android
+emulator; manifest, DEX, assets, ZIP alignment, and v1/v2 signatures were
+verified. Cloud API and real PDF-to-PPTX verification are covered by
+backend/scripts/verify_remote.py.

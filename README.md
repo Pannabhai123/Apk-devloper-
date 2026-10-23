@@ -38,6 +38,12 @@ The checked-in test suite currently passes **13 tests**, including this real API
 
 A separate browser test selected the sample PDF and performed **no further clicks**. The app automatically produced 12 slides and downloaded `Dream_Classes_Bilingual_Sample_Mode_C.pptx` with no JavaScript errors.
 
+Repeat the real deployed-cloud check (including Android CORS and PPTX download) with:
+
+```bash
+python backend/scripts/verify_remote.py https://dream-classes-ppt-api.onrender.com
+```
+
 Sample files are included:
 
 - `samples/Dream_Classes_Bilingual_Sample.pdf` — two-page Hindi + English input.
@@ -172,9 +178,9 @@ Explanation: Patna is the capital of Bihar.
 
 Hindi numbering and `(क) (ख) (ग) (घ)` options are also supported. Every readable page is processed. Readable pages with no supported numbered MCQ pattern receive a warning and **no placeholder question is invented**. Missing options/answers remain editable and are flagged. Complex multi-column or inconsistent layouts may need OCR adjustments or optional AI extraction followed by teacher review.
 
-## Cloud backend with Render
+## Self-host the cloud backend with Render (optional)
 
-**Do not copy the placeholder paths from the advanced manual-server section.** For Render, use this branch-specific deployment button:
+**Ready APK users do not need to deploy anything.** The current APK already uses `https://dream-classes-ppt-api.onrender.com/api`. The following button is only for creating a separate self-hosted backend.
 
 ### [Deploy Dream Classes backend to Render](https://render.com/deploy?repo=https://github.com/Pannabhai123/Apk-devloper-/tree/arena/35966a87-apk-devloper)
 
@@ -210,26 +216,24 @@ For this combined local deployment, **no path environment variables are required
 
 **APK:** `releases/Dream_Classes_PPT_Maker.apk`
 
-**Direct GitHub download:** https://github.com/Pannabhai123/Apk-devloper-/releases/download/v1.1.0/Dream_Classes_PPT_Maker.apk
+**Direct GitHub download:** https://github.com/Pannabhai123/Apk-devloper-/releases/download/v1.1.1/Dream_Classes_PPT_Maker.apk
 
-- Version: **1.1.0** (`versionCode 2`)
+- Version: **1.1.1** (`versionCode 3`)
+- Preconfigured cloud API: `https://dream-classes-ppt-api.onrender.com/api`—no manual backend entry is required.
+- Older saved `/api` settings migrate automatically to the cloud default after upgrading.
 - Package: `in.dreamclasses.pptmaker`
 - Android: **6.0 / API 23 and newer**; target/compile API 35
 - Signed with a development/test certificate; APK Signature Scheme **v1 and v2 verified**
-- APK SHA-256: `907eaedd2e4bdf1866cccba0a59be44d92369053f181c30a12a07bd8f4b98d61`
+- APK SHA-256: `24d9aa9cade983cb86f9af6d9c91877984a03e36059dc6234a1c04f126742ba7`
 
-### Install and connect
+### Install and use
 
-1. Copy the APK to the Android phone and choose **Install unknown apps** if Android asks for permission.
-2. Deploy the FastAPI backend using the Docker or production instructions above. The Python backend cannot be embedded in this lightweight APK.
-3. Open **Dream Classes PPT → Settings → Backend connection**.
-4. Enter the backend base URL and choose **Test & save**:
-   - Public server: `https://ppt-api.your-domain.com`
-   - Same-Wi-Fi computer: `http://192.168.1.10:8000` (replace with the computer's actual LAN IP)
-   - `/api` is added automatically. The setting is saved only on that Android device.
-5. Return to Dashboard and upload a PDF. Question extraction, PPT generation, and download happen automatically. Downloads are saved through Android's DownloadManager to **Downloads**.
+1. Copy the APK to the Android phone and choose **Install unknown apps** if Android asks for permission. Version 1.1.1 can be installed directly over 1.1.0 using the included development signature.
+2. Open the app with internet access. The Dream Classes Render backend is already configured; **Settings → Test & save is not required**. A sleeping free cloud service may take a short time to wake on the first request.
+3. Choose **Upload & Make PPT** and select a PDF. Question extraction, PPT generation, and download happen automatically. Downloads are saved through Android's DownloadManager to **Downloads**.
+4. **Settings → Backend connection** remains available for diagnostics or for switching to a self-hosted server. Do not replace the cloud URL with `/api` or `localhost` on a physical phone.
 
-Use HTTPS for a public backend. HTTP is intended only for a trusted local network. Do not enter `localhost` on a physical phone—it refers to the phone itself. The temporary Arena preview URL is deliberately not embedded because it requires a traffic token and is not a permanent backend.
+The configured backend is `https://dream-classes-ppt-api.onrender.com/api`. Its live health response confirms PDF text extraction, editable PPTX/PDF export, and Hindi + English OCR. No AI key is configured or bundled. The temporary Arena preview URL is not used.
 
 ### Rebuild from source
 
@@ -237,8 +241,8 @@ Requirements for a normal Gradle build: JDK 17 and Android Studio/SDK.
 
 ```bash
 npm install
-# Optional: bake in a default server; users can still change it on their device.
-VITE_API_URL=https://your-api-domain.example/api npm run android:sync
+# Bake in the deployed cloud default; users can still change it on their device.
+VITE_API_URL=https://dream-classes-ppt-api.onrender.com/api npm run android:sync
 npm run android:open
 ```
 

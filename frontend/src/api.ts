@@ -7,8 +7,16 @@ const DEFAULT_API_ROOT = (import.meta.env.VITE_API_URL || '/api').replace(/\/$/,
 const API_STORAGE_KEY = 'dream_classes_api_root';
 
 export function getApiRoot(): string {
-  try { return localStorage.getItem(API_STORAGE_KEY) || DEFAULT_API_ROOT; }
-  catch { return DEFAULT_API_ROOT; }
+  try {
+    const saved = localStorage.getItem(API_STORAGE_KEY);
+    // Older APKs used the WebView-local /api path. Migrate that stale value
+    // when a real cloud default is present, including after an app upgrade.
+    if (saved === '/api' && DEFAULT_API_ROOT !== '/api') {
+      localStorage.setItem(API_STORAGE_KEY, DEFAULT_API_ROOT);
+      return DEFAULT_API_ROOT;
+    }
+    return saved || DEFAULT_API_ROOT;
+  } catch { return DEFAULT_API_ROOT; }
 }
 
 export function normalizeApiRoot(value: string): string {
