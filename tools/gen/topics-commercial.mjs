@@ -214,7 +214,7 @@ export const PROFIT_LOSS = [
           q: `यदि ${x} वस्तुओं का क्रय मूल्य ${y} वस्तुओं के विक्रय मूल्य के बराबर है, तो लाभ प्रतिशत ज्ञात कीजिए।`,
           qEn: `If the cost price of ${x} articles equals the selling price of ${y} articles, find the profit percentage.`,
           ans: pc(`${fixed(profitPct, 2)}%`), wrong: [pc(`${fixed(((x - y) / x) * 100, 2)}%`), pc(`${x - y}%`), pc(`${fixed((x / y) * 100, 2)}%`), pc(`${fixed(((x + y) / y) * 10, 2)}%`)].filter((s) => s !== pc(`${fixed(profitPct, 2)}%`)).slice(0, 3),
-          sol: [`मान लीजिए प्रत्येक वस्तु का SP = ₹1`, `${y} वस्तुओं का SP = ₹${y} = ${x} वस्तुओं का CP`, `प्रत्येक वस्तु का CP = ${x} → कुल CP (${y} वस्तुओं का) = ${y} × 1/${x}... सरलतम: CP ${x} = SP ${y}`, `लाभ = SP − CP अनुपात में: (${x} − ${y})/${y}`, `लाभ% = (${x} − ${y})/${y} × 100 = ${fixed(profitPct, 2)}%`],
+          sol: [`मान लीजिए प्रत्येक वस्तु का विक्रय मूल्य (SP) = ₹1`, `${y} वस्तुओं का SP = ₹${y} = ${x} वस्तुओं का कुल CP (प्रश्न के अनुसार)`, `अतः 1 वस्तु का CP = ${y}/${x} रु.`, `लाभ% = (SP − CP)/CP × 100 = (1 − ${y}/${x}) ÷ (${y}/${x}) × 100 = (${x} − ${y})/${y} × 100`, `लाभ% = ${fixed(profitPct, 2)}%`],
           fin: pc(`${fixed(profitPct, 2)}%`), diff: 'Moderate',
           shortcut: 'लाभ% = (x − y)/y × 100 जब x वस्तुओं का CP = y वस्तुओं का SP',
         });

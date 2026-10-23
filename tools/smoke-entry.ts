@@ -69,7 +69,7 @@ ok(rec.marked.length === 2 && rec.marked.includes(5), 'marked carried over');
 ok(rec.testNumber === 1 && rec.score === 40, 'record carries test + score');
 
 console.log('\n[6] storage roundtrip');
-saveAttempt(rec as any);
+saveAttempt({ ...rec, submittedAt: 1000 } as any); // force earlier submit time so ordering is deterministic
 const got = getAttempt(rec.attemptId);
 ok(!!got && got.score === 40, 'saveAttempt → getAttempt roundtrip');
 ok(attemptsForTest(1).length === 1, 'attemptsForTest(1) = 1');
