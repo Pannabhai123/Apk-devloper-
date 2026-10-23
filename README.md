@@ -216,19 +216,20 @@ For this combined local deployment, **no path environment variables are required
 
 **APK:** `releases/Dream_Classes_PPT_Maker.apk`
 
-**Direct GitHub download:** https://github.com/Pannabhai123/Apk-devloper-/releases/download/v1.1.1/Dream_Classes_PPT_Maker.apk
+**Direct GitHub download:** https://github.com/Pannabhai123/Apk-devloper-/releases/download/v1.1.2/Dream_Classes_PPT_Maker.apk
 
-- Version: **1.1.1** (`versionCode 3`)
+- Version: **1.1.2** (`versionCode 4`)
+- PDF picker stability: content-URI read access, Android-standard result parsing, persistable permissions, and single-callback cleanup prevent upload-time WebView crashes on supported devices.
 - Preconfigured cloud API: `https://dream-classes-ppt-api.onrender.com/api`—no manual backend entry is required.
 - Older saved `/api` settings migrate automatically to the cloud default after upgrading.
 - Package: `in.dreamclasses.pptmaker`
 - Android: **6.0 / API 23 and newer**; target/compile API 35
 - Signed with a development/test certificate; APK Signature Scheme **v1 and v2 verified**
-- APK SHA-256: `24d9aa9cade983cb86f9af6d9c91877984a03e36059dc6234a1c04f126742ba7`
+- APK SHA-256: `6e351c266f606870dff1e2ac301b9ad61d6723de9767e73f527adc08364fa552`
 
 ### Install and use
 
-1. Copy the APK to the Android phone and choose **Install unknown apps** if Android asks for permission. Version 1.1.1 can be installed directly over 1.1.0 using the included development signature.
+1. Copy the APK to the Android phone and choose **Install unknown apps** if Android asks for permission. Version 1.1.2 can be installed directly over 1.1.x using the included development signature.
 2. Open the app with internet access. The Dream Classes Render backend is already configured; **Settings → Test & save is not required**. A sleeping free cloud service may take a short time to wake on the first request.
 3. Choose **Upload & Make PPT** and select a PDF. Question extraction, PPT generation, and download happen automatically. Downloads are saved through Android's DownloadManager to **Downloads**.
 4. **Settings → Backend connection** remains available for diagnostics or for switching to a self-hosted server. Do not replace the cloud URL with `/api` or `localhost` on a physical phone.

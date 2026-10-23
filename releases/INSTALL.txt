@@ -1,11 +1,13 @@
 DREAM CLASSES PPT MAKER — ANDROID INSTALL
-Version 1.1.1 (versionCode 3) | Package: in.dreamclasses.pptmaker | Android 6.0+
+Version 1.1.2 (versionCode 4) | Package: in.dreamclasses.pptmaker | Android 6.0+
 
 CLOUD BACKEND IS ALREADY CONFIGURED
 https://dream-classes-ppt-api.onrender.com/api
 
 1. Install Dream_Classes_PPT_Maker.apk. You can install it directly over
-   version 1.1.0; both APKs use the same development signing certificate.
+   version 1.1.x; both APKs use the same development signing certificate.
+   Version 1.1.2 fixes the PDF content-URI picker/upload crash and safely
+   handles picker cancellation or retry.
 2. Open the app with internet access. You do NOT need to open Settings or
    enter/Test & Save a backend URL. Any stale /api value from the old APK
    automatically migrates to the configured cloud API.
@@ -21,7 +23,7 @@ Settings > Backend connection is only for diagnostics or a self-hosted server.
 Do not replace the cloud address with /api or localhost on a physical phone.
 
 APK SHA-256:
-24d9aa9cade983cb86f9af6d9c91877984a03e36059dc6234a1c04f126742ba7
+6e351c266f606870dff1e2ac301b9ad61d6723de9767e73f527adc08364fa552
 
 This APK uses a development/test signing certificate. Re-sign with your own
 private key for a production release. The build sandbox had no Android

@@ -3,7 +3,6 @@ package in.dreamclasses.pptmaker;
 import android.Manifest;
 import android.app.Activity;
 import android.app.DownloadManager;
-import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -66,7 +65,11 @@ public class MainActivity extends Activity {
         settings.setLoadsImagesAutomatically(true);
         settings.setDefaultTextEncodingName("UTF-8");
         settings.setAllowFileAccess(false);
-        settings.setAllowContentAccess(false);
+        // PDF picker results are content:// URIs. WebView needs content-provider
+        // access to read the selected PDF during an HTML file upload.
+        settings.setAllowContentAccess(true);
+        settings.setAllowFileAccessFromFileURLs(false);
+        settings.setAllowUniversalAccessFromFileURLs(false);
         settings.setBuiltInZoomControls(false);
         settings.setSupportMultipleWindows(false);
         settings.setMediaPlaybackRequiresUserGesture(true);
@@ -113,10 +116,7 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onDestroy() {
-        if (fileChooserCallback != null) {
-            fileChooserCallback.onReceiveValue(null);
-            fileChooserCallback = null;
-        }
+        cancelFileChooser();
         if (webView != null) {
             webView.stopLoading();
             webView.setWebChromeClient(null);
@@ -127,34 +127,88 @@ public class MainActivity extends Activity {
         super.onDestroy();
     }
 
+    private void cancelFileChooser() {
+        ValueCallback<Uri[]> callback = fileChooserCallback;
+        fileChooserCallback = null;
+        if (callback != null) {
+            try { callback.onReceiveValue(null); } catch (RuntimeException ignored) { }
+        }
+    }
+
+    private void deliverFileChooserResult(int resultCode, Intent data) {
+        ValueCallback<Uri[]> callback = fileChooserCallback;
+        fileChooserCallback = null;
+        if (callback == null) return;
+
+        Uri[] selected = null;
+        boolean failed = false;
+        if (resultCode == RESULT_OK) {
+            try {
+                // This is Android's WebView-aware parser; it handles content
+                // URIs and ClipData correctly across Android 6+.
+                selected = WebChromeClient.FileChooserParams.parseResult(resultCode, data);
+                if ((selected == null || selected.length == 0) && data != null && data.getData() != null) {
+                    selected = new Uri[]{data.getData()};
+                }
+                if (selected != null && data != null) {
+                    int readFlag = data.getFlags() & Intent.FLAG_GRANT_READ_URI_PERMISSION;
+                    for (Uri uri : selected) {
+                        if (uri != null && readFlag != 0 && "content".equals(uri.getScheme())) {
+                            try {
+                                getContentResolver().takePersistableUriPermission(uri, readFlag);
+                            } catch (RuntimeException ignored) {
+                                // Some providers grant only a transient read
+                                // permission; that is still enough for upload.
+                            }
+                        }
+                    }
+                }
+            } catch (RuntimeException error) {
+                selected = null;
+                failed = true;
+            }
+        }
+        try {
+            // Resolve exactly once, including cancellation. Resolving twice
+            // can crash WebView's native file-upload bridge.
+            callback.onReceiveValue(selected);
+        } catch (RuntimeException error) {
+            failed = true;
+        }
+        if (failed) {
+            Toast.makeText(this, "Could not read that PDF. Please choose it again.", Toast.LENGTH_LONG).show();
+        }
+    }
+
     private final class DreamChromeClient extends WebChromeClient {
         @Override
         public boolean onShowFileChooser(
                 WebView view,
                 ValueCallback<Uri[]> callback,
                 FileChooserParams params) {
-            if (fileChooserCallback != null) fileChooserCallback.onReceiveValue(null);
+            cancelFileChooser();
             fileChooserCallback = callback;
 
             Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
             intent.addCategory(Intent.CATEGORY_OPENABLE);
             intent.setType("application/pdf");
-            intent.putExtra(Intent.EXTRA_MIME_TYPES, new String[]{"application/pdf"});
+            intent.putExtra(Intent.EXTRA_MIME_TYPES, new String[]{"application/pdf", "application/x-pdf"});
+            intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);
             try {
                 startActivityForResult(Intent.createChooser(intent, "Select question PDF"), FILE_CHOOSER_REQUEST);
                 return true;
-            } catch (ActivityNotFoundException firstError) {
+            } catch (RuntimeException firstError) {
                 try {
                     Intent fallback = new Intent(Intent.ACTION_GET_CONTENT);
                     fallback.addCategory(Intent.CATEGORY_OPENABLE);
                     fallback.setType("application/pdf");
+                    fallback.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                     startActivityForResult(Intent.createChooser(fallback, "Select question PDF"), FILE_CHOOSER_REQUEST);
                     return true;
-                } catch (ActivityNotFoundException error) {
-                    fileChooserCallback.onReceiveValue(null);
-                    fileChooserCallback = null;
+                } catch (RuntimeException error) {
+                    cancelFileChooser();
                     Toast.makeText(MainActivity.this, "No document picker is available.", Toast.LENGTH_LONG).show();
-                    return false;
+                    return true;
                 }
             }
         }
@@ -163,14 +217,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == FILE_CHOOSER_REQUEST) {
-            if (fileChooserCallback != null) {
-                Uri[] result = null;
-                if (resultCode == RESULT_OK && data != null && data.getData() != null) {
-                    result = new Uri[]{data.getData()};
-                }
-                fileChooserCallback.onReceiveValue(result);
-                fileChooserCallback = null;
-            }
+            deliverFileChooserResult(resultCode, data);
             return;
         }
         super.onActivityResult(requestCode, resultCode, data);
