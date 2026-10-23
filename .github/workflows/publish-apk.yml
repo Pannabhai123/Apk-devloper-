@@ -1,6 +1,9 @@
 name: Publish verified APK
 
 on:
+  push:
+    paths:
+      - .github/workflows/publish-apk.yml
   workflow_dispatch:
 
 permissions:
