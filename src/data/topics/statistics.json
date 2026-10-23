@@ -1,0 +1,1048 @@
+{
+ "topic": "Statistics",
+ "topicHi": "सांख्यिकी",
+ "slug": "statistics",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q028",
+   "testNumber": 1,
+   "questionNumber": 28,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्य (Mean) ज्ञात कीजिए: 38, 36, 28, 30, 39, 45",
+   "questionEn": "Find the mean of the following data: 38, 36, 28, 30, 39, 45",
+   "options": {
+    "A": "36",
+    "D": "36.5",
+    "C": "35",
+    "B": "45"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "योग = 38 + 36 + 28 + 30 + 39 + 45 = 216",
+    "पदों की संख्या = 6",
+    "माध्य = 216/6 = 36"
+   ],
+   "finalAnswer": "36",
+   "shortcut": "माध्य = Σx/n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q053",
+   "testNumber": 1,
+   "questionNumber": 53,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 15, 28, 12, 16, 27, 21, 37, 37, 32",
+   "questionEn": "Find the median of the following data: 15, 28, 12, 16, 27, 21, 37, 37, 32",
+   "options": {
+    "B": "27",
+    "A": "12",
+    "C": "37",
+    "D": "24.5"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "आँकड़ों को आरोही क्रम में लगाएँ: 12, 15, 16, 21, 27, 28, 32, 37, 37",
+    "पदों की संख्या n = 9 (विषम)",
+    "माध्यिका = ((n+1)/2)वाँ पद = 5वाँ पद = 27"
+   ],
+   "finalAnswer": "27",
+   "shortcut": "विषम n पर माध्यिका = (n+1)/2 वाँ पद",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q013",
+   "testNumber": 2,
+   "questionNumber": 13,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 7, 10, 13, 19, 21, 22, 38",
+   "questionEn": "Find the median of the following data: 7, 10, 13, 19, 21, 22, 38",
+   "options": {
+    "B": "19",
+    "D": "38",
+    "C": "22.5",
+    "A": "7"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "आँकड़ों को आरोही क्रम में लगाएँ: 7, 10, 13, 19, 21, 22, 38",
+    "पदों की संख्या n = 7 (विषम)",
+    "माध्यिका = ((n+1)/2)वाँ पद = 4वाँ पद = 19"
+   ],
+   "finalAnswer": "19",
+   "shortcut": "विषम n पर माध्यिका = (n+1)/2 वाँ पद",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q016",
+   "testNumber": 2,
+   "questionNumber": 16,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 18, 17, 32, 14, 42, 36, 37, 39",
+   "questionEn": "Find the median of the following data: 18, 17, 32, 14, 42, 36, 37, 39",
+   "options": {
+    "C": "34",
+    "A": "37",
+    "D": "32",
+    "B": "35"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "आरोही क्रम: 14, 17, 18, 32, 36, 37, 39, 42",
+    "n = 8 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (32 + 36)/2 = 34"
+   ],
+   "finalAnswer": "34",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q045",
+   "testNumber": 3,
+   "questionNumber": 45,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 8, 29, 11, 7, 20",
+   "questionEn": "Find the median of the following data: 8, 29, 11, 7, 20",
+   "options": {
+    "D": "11",
+    "A": "7",
+    "B": "29",
+    "C": "18"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "आँकड़ों को आरोही क्रम में लगाएँ: 7, 8, 11, 20, 29",
+    "पदों की संख्या n = 5 (विषम)",
+    "माध्यिका = ((n+1)/2)वाँ पद = 3वाँ पद = 11"
+   ],
+   "finalAnswer": "11",
+   "shortcut": "विषम n पर माध्यिका = (n+1)/2 वाँ पद",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q048",
+   "testNumber": 3,
+   "questionNumber": 48,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का परिसर (Range) ज्ञात कीजिए: 76, 55, 43, 78, 29, 57, 47, 32",
+   "questionEn": "Find the range of the following data: 76, 55, 43, 78, 29, 57, 47, 32",
+   "options": {
+    "A": "49",
+    "D": "107",
+    "B": "24.5",
+    "C": "29"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सबसे बड़ा मान = 78",
+    "सबसे छोटा मान = 29",
+    "परिसर = 78 − 29 = 49"
+   ],
+   "finalAnswer": "49",
+   "shortcut": "परिसर = अधिकतम − न्यूनतम",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q053",
+   "testNumber": 4,
+   "questionNumber": 53,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का बहुलक (Mode) ज्ञात कीजिए: 19, 48, 19, 17, 30, 57, 19, 42",
+   "questionEn": "Find the mode of the following data: 19, 48, 19, 17, 30, 57, 19, 42",
+   "options": {
+    "A": "19",
+    "B": "42",
+    "C": "57",
+    "D": "30"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "प्रत्येक पद की बारंबारता गिनें।",
+    "19 तीन बार आया है — सबसे अधिक बारंबारता।",
+    "अतः बहुलक = 19"
+   ],
+   "finalAnswer": "19",
+   "shortcut": "बहुलक = सर्वाधिक बारंबारता वाला पद",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q057",
+   "testNumber": 4,
+   "questionNumber": 57,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 30, 13, 42, 33, 47, 12, 45, 41",
+   "questionEn": "Find the median of the following data: 30, 13, 42, 33, 47, 12, 45, 41",
+   "options": {
+    "C": "37",
+    "B": "33",
+    "A": "41",
+    "D": "38"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "आरोही क्रम: 12, 13, 30, 33, 41, 42, 45, 47",
+    "n = 8 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (33 + 41)/2 = 37"
+   ],
+   "finalAnswer": "37",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q023",
+   "testNumber": 5,
+   "questionNumber": 23,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्य (Mean) ज्ञात कीजिए: 32, 32, 27, 30, 19",
+   "questionEn": "Find the mean of the following data: 32, 32, 27, 30, 19",
+   "options": {
+    "B": "28",
+    "D": "27",
+    "C": "29",
+    "A": "25.5"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "योग = 32 + 32 + 27 + 30 + 19 = 140",
+    "पदों की संख्या = 5",
+    "माध्य = 140/5 = 28"
+   ],
+   "finalAnswer": "28",
+   "shortcut": "माध्य = Σx/n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q046",
+   "testNumber": 5,
+   "questionNumber": 46,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 39, 19, 23, 35, 34, 30",
+   "questionEn": "Find the median of the following data: 39, 19, 23, 35, 34, 30",
+   "options": {
+    "C": "32",
+    "B": "30",
+    "D": "34",
+    "A": "35"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "आरोही क्रम: 19, 23, 30, 34, 35, 39",
+    "n = 6 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (30 + 34)/2 = 32"
+   ],
+   "finalAnswer": "32",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q017",
+   "testNumber": 6,
+   "questionNumber": 17,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्य (Mean) ज्ञात कीजिए: 43, 56, 50, 54, 50, 57, 40",
+   "questionEn": "Find the mean of the following data: 43, 56, 50, 54, 50, 57, 40",
+   "options": {
+    "A": "50",
+    "C": "51",
+    "D": "57",
+    "B": "48.5"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "योग = 43 + 56 + 50 + 54 + 50 + 57 + 40 = 350",
+    "पदों की संख्या = 7",
+    "माध्य = 350/7 = 50"
+   ],
+   "finalAnswer": "50",
+   "shortcut": "माध्य = Σx/n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q027",
+   "testNumber": 6,
+   "questionNumber": 27,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "9 संख्याओं का माध्य 17 है। इसमें एक नई संख्या 57 जोड़ दी जाती है। नया माध्य ज्ञात कीजिए।",
+   "questionEn": "The mean of 9 numbers is 17. A new number 57 is added. Find the new mean.",
+   "options": {
+    "C": "21",
+    "A": "37",
+    "B": "17",
+    "D": "57"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पुराना योग = 9 × 17 = 153",
+    "नया योग = 153 + 57 = 210",
+    "नया माध्य = 210/10 = 21"
+   ],
+   "finalAnswer": "21",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q014",
+   "testNumber": 7,
+   "questionNumber": 14,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्य (Mean) ज्ञात कीजिए: 43, 51, 43, 53, 46, 46",
+   "questionEn": "Find the mean of the following data: 43, 51, 43, 53, 46, 46",
+   "options": {
+    "A": "47",
+    "D": "48",
+    "C": "46",
+    "B": "53"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "योग = 43 + 51 + 43 + 53 + 46 + 46 = 282",
+    "पदों की संख्या = 6",
+    "माध्य = 282/6 = 47"
+   ],
+   "finalAnswer": "47",
+   "shortcut": "माध्य = Σx/n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q018",
+   "testNumber": 7,
+   "questionNumber": 18,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "11 संख्याओं का माध्य 42 है। इसमें एक नई संख्या 30 जोड़ दी जाती है। नया माध्य ज्ञात कीजिए।",
+   "questionEn": "The mean of 11 numbers is 42. A new number 30 is added. Find the new mean.",
+   "options": {
+    "A": "41",
+    "D": "42",
+    "C": "30",
+    "B": "36"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पुराना योग = 11 × 42 = 462",
+    "नया योग = 462 + 30 = 492",
+    "नया माध्य = 492/12 = 41"
+   ],
+   "finalAnswer": "41",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q008",
+   "testNumber": 8,
+   "questionNumber": 8,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्य (Mean) ज्ञात कीजिए: 49, 50, 61, 52, 63",
+   "questionEn": "Find the mean of the following data: 49, 50, 61, 52, 63",
+   "options": {
+    "A": "55",
+    "C": "56",
+    "B": "63",
+    "D": "54"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "योग = 49 + 50 + 61 + 52 + 63 = 275",
+    "पदों की संख्या = 5",
+    "माध्य = 275/5 = 55"
+   ],
+   "finalAnswer": "55",
+   "shortcut": "माध्य = Σx/n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q052",
+   "testNumber": 8,
+   "questionNumber": 52,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 22, 30, 34, 30, 11, 5",
+   "questionEn": "Find the median of the following data: 22, 30, 34, 30, 11, 5",
+   "options": {
+    "C": "26",
+    "A": "30",
+    "D": "27",
+    "B": "22"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "आरोही क्रम: 5, 11, 22, 30, 30, 34",
+    "n = 6 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (22 + 30)/2 = 26"
+   ],
+   "finalAnswer": "26",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q025",
+   "testNumber": 9,
+   "questionNumber": 25,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 46, 23, 17, 39, 18, 21, 31, 42",
+   "questionEn": "Find the median of the following data: 46, 23, 17, 39, 18, 21, 31, 42",
+   "options": {
+    "B": "27",
+    "C": "39",
+    "D": "31",
+    "A": "28"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "आरोही क्रम: 17, 18, 21, 23, 31, 39, 42, 46",
+    "n = 8 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (23 + 31)/2 = 27"
+   ],
+   "finalAnswer": "27",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q039",
+   "testNumber": 9,
+   "questionNumber": 39,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 4, 7, 14, 24, 29",
+   "questionEn": "Find the median of the following data: 4, 7, 14, 24, 29",
+   "options": {
+    "A": "14",
+    "D": "16.5",
+    "C": "4",
+    "B": "29"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "आँकड़ों को आरोही क्रम में लगाएँ: 4, 7, 14, 24, 29",
+    "पदों की संख्या n = 5 (विषम)",
+    "माध्यिका = ((n+1)/2)वाँ पद = 3वाँ पद = 14"
+   ],
+   "finalAnswer": "14",
+   "shortcut": "विषम n पर माध्यिका = (n+1)/2 वाँ पद",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q037",
+   "testNumber": 10,
+   "questionNumber": 37,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 39, 31, 20, 37, 9, 21",
+   "questionEn": "Find the median of the following data: 39, 31, 20, 37, 9, 21",
+   "options": {
+    "C": "26",
+    "D": "31",
+    "A": "27",
+    "B": "21"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "आरोही क्रम: 9, 20, 21, 31, 37, 39",
+    "n = 6 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (21 + 31)/2 = 26"
+   ],
+   "finalAnswer": "26",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q042",
+   "testNumber": 10,
+   "questionNumber": 42,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 7, 7, 8, 12, 22",
+   "questionEn": "Find the median of the following data: 7, 7, 8, 12, 22",
+   "options": {
+    "D": "8",
+    "A": "14.5",
+    "B": "7",
+    "C": "22"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "आँकड़ों को आरोही क्रम में लगाएँ: 7, 7, 8, 12, 22",
+    "पदों की संख्या n = 5 (विषम)",
+    "माध्यिका = ((n+1)/2)वाँ पद = 3वाँ पद = 8"
+   ],
+   "finalAnswer": "8",
+   "shortcut": "विषम n पर माध्यिका = (n+1)/2 वाँ पद",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q024",
+   "testNumber": 11,
+   "questionNumber": 24,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक बारंबारता बंटन में मान 28, 39, 40, 22 की बारंबारता क्रमशः 5, 3, 6, 7 है। बंटन का माध्य (Mean) ज्ञात कीजिए।",
+   "questionEn": "In a frequency distribution, the values 28, 39, 40, 22 occur with frequencies 5, 3, 6, 7 respectively. Find the mean of the distribution.",
+   "options": {
+    "D": "31",
+    "B": "32",
+    "C": "40",
+    "A": "163"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "Σfx = 28×5 + 39×3 + 40×6 + 22×7 = 651",
+    "Σf = 21",
+    "माध्य = Σfx/Σf = 651/21 = 31"
+   ],
+   "finalAnswer": "31",
+   "shortcut": "माध्य = Σfx/Σf",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q060",
+   "testNumber": 11,
+   "questionNumber": 60,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "9 संख्याओं का माध्य 50 है। इसमें एक नई संख्या 80 जोड़ दी जाती है। नया माध्य ज्ञात कीजिए।",
+   "questionEn": "The mean of 9 numbers is 50. A new number 80 is added. Find the new mean.",
+   "options": {
+    "D": "53",
+    "C": "80",
+    "B": "50",
+    "A": "65"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "पुराना योग = 9 × 50 = 450",
+    "नया योग = 450 + 80 = 530",
+    "नया माध्य = 530/10 = 53"
+   ],
+   "finalAnswer": "53",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q003",
+   "testNumber": 12,
+   "questionNumber": 3,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 23, 46, 7, 46, 7, 21, 17, 32",
+   "questionEn": "Find the median of the following data: 23, 46, 7, 46, 7, 21, 17, 32",
+   "options": {
+    "D": "22",
+    "B": "32",
+    "A": "21",
+    "C": "23"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "आरोही क्रम: 7, 7, 17, 21, 23, 32, 46, 46",
+    "n = 8 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (21 + 23)/2 = 22"
+   ],
+   "finalAnswer": "22",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q030",
+   "testNumber": 12,
+   "questionNumber": 30,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "7 संख्याओं का माध्य 28 है। इसमें एक नई संख्या 52 जोड़ दी जाती है। नया माध्य ज्ञात कीजिए।",
+   "questionEn": "The mean of 7 numbers is 28. A new number 52 is added. Find the new mean.",
+   "options": {
+    "C": "31",
+    "B": "52",
+    "A": "40",
+    "D": "28"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पुराना योग = 7 × 28 = 196",
+    "नया योग = 196 + 52 = 248",
+    "नया माध्य = 248/8 = 31"
+   ],
+   "finalAnswer": "31",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q032",
+   "testNumber": 13,
+   "questionNumber": 32,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "11 संख्याओं का माध्य 40 है। इसमें एक नई संख्या 52 जोड़ दी जाती है। नया माध्य ज्ञात कीजिए।",
+   "questionEn": "The mean of 11 numbers is 40. A new number 52 is added. Find the new mean.",
+   "options": {
+    "A": "41",
+    "B": "40",
+    "C": "42",
+    "D": "46"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पुराना योग = 11 × 40 = 440",
+    "नया योग = 440 + 52 = 492",
+    "नया माध्य = 492/12 = 41"
+   ],
+   "finalAnswer": "41",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q044",
+   "testNumber": 13,
+   "questionNumber": 44,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 38, 37, 30, 33, 25, 45",
+   "questionEn": "Find the median of the following data: 38, 37, 30, 33, 25, 45",
+   "options": {
+    "B": "35",
+    "A": "37",
+    "D": "36",
+    "C": "38"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "आरोही क्रम: 25, 30, 33, 37, 38, 45",
+    "n = 6 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (33 + 37)/2 = 35"
+   ],
+   "finalAnswer": "35",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q019",
+   "testNumber": 14,
+   "questionNumber": 19,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 21, 20, 29, 10, 11, 23, 40, 17, 23",
+   "questionEn": "Find the median of the following data: 21, 20, 29, 10, 11, 23, 40, 17, 23",
+   "options": {
+    "B": "21",
+    "A": "10",
+    "D": "11",
+    "C": "40"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "आँकड़ों को आरोही क्रम में लगाएँ: 10, 11, 17, 20, 21, 23, 23, 29, 40",
+    "पदों की संख्या n = 9 (विषम)",
+    "माध्यिका = ((n+1)/2)वाँ पद = 5वाँ पद = 21"
+   ],
+   "finalAnswer": "21",
+   "shortcut": "विषम n पर माध्यिका = (n+1)/2 वाँ पद",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q037",
+   "testNumber": 14,
+   "questionNumber": 37,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक बारंबारता बंटन में मान 25, 23, 32, 6 की बारंबारता क्रमशः 2, 6, 2, 6 है। बंटन का माध्य (Mean) ज्ञात कीजिए।",
+   "questionEn": "In a frequency distribution, the values 25, 23, 32, 6 occur with frequencies 2, 6, 2, 6 respectively. Find the mean of the distribution.",
+   "options": {
+    "B": "18",
+    "D": "32",
+    "A": "21.5",
+    "C": "72"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "Σfx = 25×2 + 23×6 + 32×2 + 6×6 = 288",
+    "Σf = 16",
+    "माध्य = Σfx/Σf = 288/16 = 18"
+   ],
+   "finalAnswer": "18",
+   "shortcut": "माध्य = Σfx/Σf",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q019",
+   "testNumber": 15,
+   "questionNumber": 19,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक बारंबारता बंटन में मान 9, 26, 32, 24 की बारंबारता क्रमशः 7, 6, 8, 8 है। बंटन का माध्य (Mean) ज्ञात कीजिए।",
+   "questionEn": "In a frequency distribution, the values 9, 26, 32, 24 occur with frequencies 7, 6, 8, 8 respectively. Find the mean of the distribution.",
+   "options": {
+    "C": "23",
+    "A": "24",
+    "D": "22.75",
+    "B": "167"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "Σfx = 9×7 + 26×6 + 32×8 + 24×8 = 667",
+    "Σf = 29",
+    "माध्य = Σfx/Σf = 667/29 = 23"
+   ],
+   "finalAnswer": "23",
+   "shortcut": "माध्य = Σfx/Σf",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q048",
+   "testNumber": 15,
+   "questionNumber": 48,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्य (Mean) ज्ञात कीजिए: 54, 62, 54, 53, 77",
+   "questionEn": "Find the mean of the following data: 54, 62, 54, 53, 77",
+   "options": {
+    "A": "60",
+    "C": "65",
+    "B": "77",
+    "D": "61"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "योग = 54 + 62 + 54 + 53 + 77 = 300",
+    "पदों की संख्या = 5",
+    "माध्य = 300/5 = 60"
+   ],
+   "finalAnswer": "60",
+   "shortcut": "माध्य = Σx/n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q032",
+   "testNumber": 16,
+   "questionNumber": 32,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्य (Mean) ज्ञात कीजिए: 32, 34, 27, 25, 27",
+   "questionEn": "Find the mean of the following data: 32, 34, 27, 25, 27",
+   "options": {
+    "C": "29",
+    "B": "29.5",
+    "D": "30",
+    "A": "28"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "योग = 32 + 34 + 27 + 25 + 27 = 145",
+    "पदों की संख्या = 5",
+    "माध्य = 145/5 = 29"
+   ],
+   "finalAnswer": "29",
+   "shortcut": "माध्य = Σx/n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q033",
+   "testNumber": 16,
+   "questionNumber": 33,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "11 संख्याओं का माध्य 27 है। इसमें एक नई संख्या 39 जोड़ दी जाती है। नया माध्य ज्ञात कीजिए।",
+   "questionEn": "The mean of 11 numbers is 27. A new number 39 is added. Find the new mean.",
+   "options": {
+    "D": "28",
+    "C": "29",
+    "B": "33",
+    "A": "39"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "पुराना योग = 11 × 27 = 297",
+    "नया योग = 297 + 39 = 336",
+    "नया माध्य = 336/12 = 28"
+   ],
+   "finalAnswer": "28",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q018",
+   "testNumber": 17,
+   "questionNumber": 18,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्य (Mean) ज्ञात कीजिए: 20, 12, 26, 21, 12, 12, 37",
+   "questionEn": "Find the mean of the following data: 20, 12, 26, 21, 12, 12, 37",
+   "options": {
+    "C": "20",
+    "A": "19",
+    "D": "24.5",
+    "B": "37"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "योग = 20 + 12 + 26 + 21 + 12 + 12 + 37 = 140",
+    "पदों की संख्या = 7",
+    "माध्य = 140/7 = 20"
+   ],
+   "finalAnswer": "20",
+   "shortcut": "माध्य = Σx/n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q051",
+   "testNumber": 17,
+   "questionNumber": 51,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 15, 39, 45, 41, 30, 18, 11, 7",
+   "questionEn": "Find the median of the following data: 15, 39, 45, 41, 30, 18, 11, 7",
+   "options": {
+    "C": "24",
+    "A": "18",
+    "D": "30",
+    "B": "39"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "आरोही क्रम: 7, 11, 15, 18, 30, 39, 41, 45",
+    "n = 8 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (18 + 30)/2 = 24"
+   ],
+   "finalAnswer": "24",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q024",
+   "testNumber": 18,
+   "questionNumber": 24,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "9 संख्याओं का माध्य 31 है। इसमें एक नई संख्या 61 जोड़ दी जाती है। नया माध्य ज्ञात कीजिए।",
+   "questionEn": "The mean of 9 numbers is 31. A new number 61 is added. Find the new mean.",
+   "options": {
+    "D": "34",
+    "C": "61",
+    "A": "35",
+    "B": "46"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "पुराना योग = 9 × 31 = 279",
+    "नया योग = 279 + 61 = 340",
+    "नया माध्य = 340/10 = 34"
+   ],
+   "finalAnswer": "34",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q041",
+   "testNumber": 18,
+   "questionNumber": 41,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 16, 11, 45, 30, 26, 24, 14, 14",
+   "questionEn": "Find the median of the following data: 16, 11, 45, 30, 26, 24, 14, 14",
+   "options": {
+    "C": "20",
+    "A": "26",
+    "D": "21",
+    "B": "16"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "आरोही क्रम: 11, 14, 14, 16, 24, 26, 30, 45",
+    "n = 8 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (16 + 24)/2 = 20"
+   ],
+   "finalAnswer": "20",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q001",
+   "testNumber": 19,
+   "questionNumber": 1,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक बारंबारता बंटन में मान 40, 6, 39, 22 की बारंबारता क्रमशः 8, 8, 4, 8 है। बंटन का माध्य (Mean) ज्ञात कीजिए।",
+   "questionEn": "In a frequency distribution, the values 40, 6, 39, 22 occur with frequencies 8, 8, 4, 8 respectively. Find the mean of the distribution.",
+   "options": {
+    "D": "25",
+    "B": "26",
+    "A": "40",
+    "C": "175"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "Σfx = 40×8 + 6×8 + 39×4 + 22×8 = 700",
+    "Σf = 28",
+    "माध्य = Σfx/Σf = 700/28 = 25"
+   ],
+   "finalAnswer": "25",
+   "shortcut": "माध्य = Σfx/Σf",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q053",
+   "testNumber": 19,
+   "questionNumber": 53,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 18, 26, 43, 45, 31, 8, 28, 7",
+   "questionEn": "Find the median of the following data: 18, 26, 43, 45, 31, 8, 28, 7",
+   "options": {
+    "D": "27",
+    "A": "28",
+    "B": "31",
+    "C": "26"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "आरोही क्रम: 7, 8, 18, 26, 28, 31, 43, 45",
+    "n = 8 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (26 + 28)/2 = 27"
+   ],
+   "finalAnswer": "27",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q041",
+   "testNumber": 20,
+   "questionNumber": 41,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "11 संख्याओं का माध्य 43 है। इसमें एक नई संख्या 79 जोड़ दी जाती है। नया माध्य ज्ञात कीजिए।",
+   "questionEn": "The mean of 11 numbers is 43. A new number 79 is added. Find the new mean.",
+   "options": {
+    "B": "46",
+    "C": "47",
+    "A": "43",
+    "D": "61"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पुराना योग = 11 × 43 = 473",
+    "नया योग = 473 + 79 = 552",
+    "नया माध्य = 552/12 = 46"
+   ],
+   "finalAnswer": "46",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q046",
+   "testNumber": 20,
+   "questionNumber": 46,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 34, 17, 21, 10, 29, 17, 37, 47",
+   "questionEn": "Find the median of the following data: 34, 17, 21, 10, 29, 17, 37, 47",
+   "options": {
+    "C": "25",
+    "A": "34",
+    "D": "21",
+    "B": "29"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "आरोही क्रम: 10, 17, 17, 21, 29, 34, 37, 47",
+    "n = 8 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (21 + 29)/2 = 25"
+   ],
+   "finalAnswer": "25",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  }
+ ]
+}

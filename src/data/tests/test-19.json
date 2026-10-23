@@ -1,0 +1,1593 @@
+{
+ "testNumber": 19,
+ "title": "Mock Test 19",
+ "difficulty": "Difficult and Advanced",
+ "durationMinutes": 90,
+ "totalQuestions": 60,
+ "markingScheme": {
+  "correct": 1,
+  "incorrect": 0,
+  "unanswered": 0
+ },
+ "questions": [
+  {
+   "id": "ALP-MATH-T19-Q001",
+   "testNumber": 19,
+   "questionNumber": 1,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक बारंबारता बंटन में मान 40, 6, 39, 22 की बारंबारता क्रमशः 8, 8, 4, 8 है। बंटन का माध्य (Mean) ज्ञात कीजिए।",
+   "questionEn": "In a frequency distribution, the values 40, 6, 39, 22 occur with frequencies 8, 8, 4, 8 respectively. Find the mean of the distribution.",
+   "options": {
+    "D": "25",
+    "B": "26",
+    "A": "40",
+    "C": "175"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "Σfx = 40×8 + 6×8 + 39×4 + 22×8 = 700",
+    "Σf = 28",
+    "माध्य = Σfx/Σf = 700/28 = 25"
+   ],
+   "finalAnswer": "25",
+   "shortcut": "माध्य = Σfx/Σf",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q002",
+   "testNumber": 19,
+   "questionNumber": 2,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह बड़ी से बड़ी संख्या ज्ञात कीजिए जिससे 476 को भाग देने पर 8 शेष बचता है और 405 को भाग देने पर 9 शेष बचता है।",
+   "questionEn": "Find the greatest number which divides 476 leaving remainder 8 and divides 405 leaving remainder 9.",
+   "options": {
+    "D": "36",
+    "C": "37",
+    "A": "35",
+    "B": "72"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अभीष्ट संख्या N, (476 − 8) = 468 और (405 − 9) = 396 को पूर्णतः विभाजित करेगी।",
+    "अतः N = 468 और 396 का महत्तम समापवर्तक (HCF)",
+    "468 = 36 × 13",
+    "396 = 36 × 11",
+    "चूँकि 13 और 11 सह-अभाज्य हैं, HCF = 36"
+   ],
+   "finalAnswer": "36",
+   "shortcut": "शेषफल घटाकर शेष बची संख्याओं का HCF निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q003",
+   "testNumber": 19,
+   "questionNumber": 3,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 4 गुनी थी। पुत्र की वर्तमान आयु 22 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "10 years ago, a father's age was 4 times his son's age. The son's present age is 22 years. Find the father's present age.",
+   "options": {
+    "B": "58 वर्ष",
+    "C": "68 वर्ष",
+    "A": "48 वर्ष",
+    "D": "32 वर्ष"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "10 वर्ष पहले पुत्र की आयु = 22 − 10 = 12 वर्ष",
+    "तब पिता की आयु = 4 × 12 = 48 वर्ष",
+    "पिता की वर्तमान आयु = 48 + 10 = 58 वर्ष"
+   ],
+   "finalAnswer": "58 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q004",
+   "testNumber": 19,
+   "questionNumber": 4,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.05 × 0.2 का मान क्या है?",
+   "questionEn": "Find the value of 0.05 × 0.2.",
+   "options": {
+    "D": "0.01",
+    "B": "0.25",
+    "A": "0.10000000000000002",
+    "C": "-0.14"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "0.05 = 2 दशमलव स्थान, 0.2 = 1 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 3 दशमलव स्थान होंगे",
+    "0.05 × 0.2 = 0.01"
+   ],
+   "finalAnswer": "0.01",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q005",
+   "testNumber": 19,
+   "questionNumber": 5,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक मशीन का मूल्य ₹8,000 है, जो प्रति वर्ष 20% की दर से मूल्यह्रास (depreciation) करती है। 3 वर्ष बाद उसका मूल्य ज्ञात कीजिए।",
+   "questionEn": "A machine worth ₹8000 depreciates at 20% per annum. Find its value after 3 years.",
+   "options": {
+    "C": "₹4,096",
+    "D": "₹2,048",
+    "B": "₹8,000",
+    "A": "₹6,400"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मूल्यह्रास पर: V = P(1 − R/100)^T",
+    "V = 8000(1 − 0.2)^3 = 8000 × 0.512",
+    "V = 4,096"
+   ],
+   "finalAnswer": "₹4,096",
+   "shortcut": "मूल्यह्रास: V = P(1 − r/100)^t",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q006",
+   "testNumber": 19,
+   "questionNumber": 6,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 12 सेमी, 3 सेमी और 9 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 36 सेमी है, तो दूसरे त्रिभुज की 3 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:3. If a side of the smaller triangle is 3 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "A": "9 सेमी",
+    "C": "4.5 सेमी",
+    "B": "3 सेमी",
+    "D": "10 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 12/36 = 1/3",
+    "संगत भुजा = 3 × 3 = 9 सेमी"
+   ],
+   "finalAnswer": "9 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q007",
+   "testNumber": 19,
+   "questionNumber": 7,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 3 है, तो x² + 1/x² का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 3, find the value of x² + 1/x².",
+   "options": {
+    "D": "7",
+    "B": "5",
+    "A": "13",
+    "C": "11"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "(x + 1/x)² = x² + 1/x² + 2",
+    "x² + 1/x² = (x + 1/x)² − 2",
+    "= 3² − 2 = 9 − 2 = 7"
+   ],
+   "finalAnswer": "7",
+   "shortcut": "x² + 1/x² = (x + 1/x)² − 2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q008",
+   "testNumber": 19,
+   "questionNumber": 8,
+   "topic": "Profit and Loss",
+   "topicHi": "लाभ एवं हानि",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹5,000 है और विक्रय मूल्य ₹3,750 है। हानि प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The cost price of an article is ₹5000 and selling price is ₹3750. Find the loss percentage.",
+   "options": {
+    "A": "25%",
+    "D": "29%",
+    "B": "50%",
+    "C": "33.33%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "CP = ₹5,000, SP = ₹3,750",
+    "हानि = CP − SP = ₹1,250",
+    "हानि% = (हानि/CP) × 100 = (1250/5000) × 100 = 25%"
+   ],
+   "finalAnswer": "25%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q009",
+   "testNumber": 19,
+   "questionNumber": 9,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹500 है। दुकानदार 25% छूट देकर भी 20% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹500. A shopkeeper wants to earn 20% profit even after allowing a 25% discount. What should be the marked price?",
+   "options": {
+    "D": "₹800",
+    "A": "₹900",
+    "C": "₹500",
+    "B": "₹600"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SP = CP × (100 + 20)/100 = 600",
+    "SP = MP × (100 − 25)/100",
+    "600 = MP × 75/100",
+    "MP = 600 × 100/75 = 800"
+   ],
+   "finalAnswer": "₹800",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q010",
+   "testNumber": 19,
+   "questionNumber": 10,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 20 किमी/घंटा और धारा के विपरीत (upstream) चाल 16 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 20 km/h and upstream speed is 16 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "C": "18 किमी/घंटा",
+    "B": "2 किमी/घंटा",
+    "D": "9 किमी/घंटा",
+    "A": "20 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (20 + 16)/2 = 36/2 = 18 किमी/घंटा"
+   ],
+   "finalAnswer": "18 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q011",
+   "testNumber": 19,
+   "questionNumber": 11,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "12 संख्याओं का औसत 54 है। यदि एक संख्या 37 को हटाकर एक नई संख्या रखी जाती है, तो औसत 55 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 12 numbers is 54. If one number 37 is replaced by a new number, the average becomes 55. Find the new number.",
+   "options": {
+    "C": "49",
+    "B": "50",
+    "A": "37",
+    "D": "38"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पुराना योग = 12 × 54 = 648",
+    "नया योग = 12 × 55 = 660",
+    "योग में वृद्धि = 660 − 648 = 12",
+    "नई संख्या = 37 + 12 = 49"
+   ],
+   "finalAnswer": "49",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q012",
+   "testNumber": 19,
+   "questionNumber": 12,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 8 किमी/घंटा तथा धारा की चाल 2 किमी/घंटा है। 18 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 8 km/h and the stream speed is 2 km/h. How long will it take to travel 18 km upstream?",
+   "options": {
+    "A": "3 घंटे",
+    "D": "1.8 घंटे",
+    "C": "2.3 घंटे",
+    "B": "4 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के विपरीत चाल = 8 − 2 = 6 किमी/घंटा",
+    "समय = 18/6 = 3 घंटे"
+   ],
+   "finalAnswer": "3 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q013",
+   "testNumber": 19,
+   "questionNumber": 13,
+   "topic": "Profit and Loss",
+   "topicHi": "लाभ एवं हानि",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक दुकानदार दो वस्तुएँ ₹600 प्रत्येक की दर से बेचता है। एक वस्तु पर उसे 10% लाभ और दूसरी पर 10% हानि होती है। पूरे सौदे में उसे कितने प्रतिशत हानि हुई?",
+   "questionEn": "A shopkeeper sells two articles for ₹600 each, gaining 10% on one and losing 10% on the other. Find his overall loss percentage.",
+   "options": {
+    "A": "−1%",
+    "D": "0%",
+    "B": "10%",
+    "C": "−5%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "वस्तु 1 का CP = 600 × 100/(110) = 545.45",
+    "वस्तु 2 का CP = 600 × 100/(90) = 666.67",
+    "कुल CP = 1212.12, कुल SP = 1,200",
+    "हानि = 12.12",
+    "हानि% = हानि/कुल CP × 100 = 12.12/1212.12 × 100 = 1%"
+   ],
+   "finalAnswer": "−1%",
+   "shortcut": "समान SP, समान % लाभ-हानि ⇒ शुद्ध हानि% = (x/10)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q014",
+   "testNumber": 19,
+   "questionNumber": 14,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 13 और ab = 42 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 13 and ab = 42, find the value of a² + b².",
+   "options": {
+    "B": "85",
+    "C": "253",
+    "D": "111",
+    "A": "169"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 13² − 2 × 42",
+    "= 169 − 84 = 85"
+   ],
+   "finalAnswer": "85",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q015",
+   "testNumber": 19,
+   "questionNumber": 15,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "30 आदमी एक कार्य 30 दिन में पूरा करते हैं। 15 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "30 men complete a work in 30 days. In how many days will 15 men complete the same work?",
+   "options": {
+    "A": "60 दिन",
+    "B": "30 दिन",
+    "C": "120 दिन",
+    "D": "62 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "30 × 30 = 15 × D₂",
+    "D₂ = 900/15 = 60 दिन"
+   ],
+   "finalAnswer": "60 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q016",
+   "testNumber": 19,
+   "questionNumber": 16,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 150 मीटर लंबी रेलगाड़ी एक खंभे को 15 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 150 m long passes a pole in 15 seconds. Find its speed in km/h.",
+   "options": {
+    "B": "36 किमी/घंटा",
+    "A": "72 किमी/घंटा",
+    "D": "18 किमी/घंटा",
+    "C": "10 किमी/घंटा"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 150/15 = 10 मी/से",
+    "किमी/घंटा में = 10 × 18/5 = 36 किमी/घंटा"
+   ],
+   "finalAnswer": "36 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q017",
+   "testNumber": 19,
+   "questionNumber": 17,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक चतुर्भुज के तीन कोण 108°, 100° और 93° हैं। चौथा कोण ज्ञात कीजिए।",
+   "questionEn": "Three angles of a quadrilateral are 108°, 100° and 93°. Find the fourth angle.",
+   "options": {
+    "B": "59°",
+    "C": "90°",
+    "A": "121°",
+    "D": "29.5°"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चतुर्भुज के कोणों का योग = 360°",
+    "चौथा कोण = 360° − (108 + 100 + 93)",
+    "= 360° − 301 = 59°"
+   ],
+   "finalAnswer": "59°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q018",
+   "testNumber": 19,
+   "questionNumber": 18,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 7 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 4 : 1 है। दूसरे बर्तन में 10 लीटर मिश्रण है जिसमें अनुपात 1 : 2 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 7 L of milk-water mixture in ratio 4:1. Another vessel has 10 L in ratio 1:2. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "2514509791948527/2270564812132625",
+    "A": "4",
+    "D": "1/2",
+    "C": "4785074604081152/2270564812132625"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 7 × 4/5 = 5.6 L, पानी = 1.4 L",
+    "बर्तन 2: दूध = 10 × 1/3 = 3.333 L, पानी = 6.667 L",
+    "कुल दूध = 8.933 L, कुल पानी = 8.067 L",
+    "अनुपात = 8.933 : 8.067 = 2514509791948527/2270564812132625"
+   ],
+   "finalAnswer": "2514509791948527/2270564812132625",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q019",
+   "testNumber": 19,
+   "questionNumber": 19,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो व्यक्तियों की वर्तमान आयु का अनुपात 6 : 2 है और आयु का योग 48 वर्ष है। छोटे व्यक्ति की आयु ज्ञात कीजिए।",
+   "questionEn": "The ratio of present ages of two persons is 6:2 and the sum of their ages is 48 years. Find the age of the younger person.",
+   "options": {
+    "B": "12 वर्ष",
+    "C": "24 वर्ष",
+    "D": "36 वर्ष",
+    "A": "17 वर्ष"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए आयुएँ 6x और 2x वर्ष हैं।",
+    "6x + 2x = 48 ⇒ 8x = 48 ⇒ x = 6",
+    "छोटे व्यक्ति की आयु = 2 × 6 = 12 वर्ष"
+   ],
+   "finalAnswer": "12 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q020",
+   "testNumber": 19,
+   "questionNumber": 20,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 3, 9 और 10 से भाग देने पर प्रत्येक स्थिति में 2 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 3, 9 and 10 leaves remainder 2 in each case.",
+   "options": {
+    "D": "92",
+    "C": "88",
+    "B": "90",
+    "A": "182"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 2 बचता है, तो (संख्या − 2) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(3, 9, 10) = 90",
+    "अभीष्ट न्यूनतम संख्या = 90 + 2 = 92"
+   ],
+   "finalAnswer": "92",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q021",
+   "testNumber": 19,
+   "questionNumber": 21,
+   "topic": "Time, Speed and Distance",
+   "topicHi": "समय, चाल एवं दूरी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक चोर 16 किमी/घंटा की चाल से चलता है। 1 घंटे बाद पुलिस 18 किमी/घंटा की चाल से उसका पीछा करती है। पुलिस चोर को कितने घंटे में पकड़ लेगी? (पीछा शुरू करने के बाद से)",
+   "questionEn": "A thief walks at 16 km/h. After 1 hours, the police chase him at 18 km/h. In how many hours after starting will the police catch the thief?",
+   "options": {
+    "A": "8 घंटे",
+    "B": "1 घंटे",
+    "D": "0.9 घंटे",
+    "C": "9 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "1 घंटे में चोर आगे निकल गया = 16 × 1 = 16 किमी",
+    "सापेक्ष चाल = 18 − 16 = 2 किमी/घंटा",
+    "पकड़ने का समय = 16/2 = 8 घंटे"
+   ],
+   "finalAnswer": "8 घंटे",
+   "shortcut": "पीछा: समय = अंतर ÷ चालों का अंतर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q022",
+   "testNumber": 19,
+   "questionNumber": 22,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों की संगत भुजाएँ 2 : 1 के अनुपात में हैं। यदि बड़े त्रिभुज का क्षेत्रफल 72 वर्ग सेमी है, तो छोटे त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Corresponding sides of two similar triangles are in the ratio 2:1. If the larger triangle has area 72 cm², find the area of the smaller triangle.",
+   "options": {
+    "A": "18 वर्ग सेमी",
+    "D": "36 वर्ग सेमी",
+    "B": "54 वर्ग सेमी",
+    "C": "9 वर्ग सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप आकृतियों में क्षेत्रफलों का अनुपात = भुजाओं के अनुपात का वर्ग",
+    "क्षेत्रफल अनुपात = 2² : 1 = 4 : 1",
+    "छोटे का क्षेत्रफल = 72/4 = 18 वर्ग सेमी"
+   ],
+   "finalAnswer": "18 वर्ग सेमी",
+   "shortcut": "क्षेत्रफल अनुपात = (भुजा अनुपात)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q023",
+   "testNumber": 19,
+   "questionNumber": 23,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹30,000 लगाया। यदि लाभ का अनुपात 3 : 4 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹30000. If profits are shared in the ratio 3:4, find B's capital.",
+   "options": {
+    "C": "₹40,000",
+    "D": "₹30,000",
+    "B": "₹50,000",
+    "A": "₹20,000"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "30000 : c2 = 3 : 4",
+    "c2 = 30000 × 4/3 = 40,000"
+   ],
+   "finalAnswer": "₹40,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q024",
+   "testNumber": 19,
+   "questionNumber": 24,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√2304 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √2304.",
+   "options": {
+    "B": "48",
+    "A": "50",
+    "C": "47",
+    "D": "51"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "2304 को अभाज्य गुणनखंडों में लिखें",
+    "2304 = 2^8 × 3^2",
+    "√2304 = 2^4 × 3 = 48"
+   ],
+   "finalAnswer": "48",
+   "shortcut": "48² = 2304 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q025",
+   "testNumber": 19,
+   "questionNumber": 25,
+   "topic": "Mensuration",
+   "topicHi": "क्षेत्रमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक शंकु (cone) की त्रिज्या 7 सेमी और ऊँचाई 6 सेमी है। उसका आयतन ज्ञात कीजिए (π = 22/7)।",
+   "questionEn": "Find the volume of a cone with radius 7 cm and height 6 cm (π = 22/7).",
+   "options": {
+    "B": "308 घन सेमी",
+    "C": "44 घन सेमी",
+    "A": "924 घन सेमी",
+    "D": "102.67 घन सेमी"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "शंकु का आयतन = (1/3)πr²h",
+    "= (1/3) × 22/7 × 7² × 6",
+    "= (1/3) × 22/7 × 49 × 6 = 308 घन सेमी"
+   ],
+   "finalAnswer": "308 घन सेमी",
+   "shortcut": "शंकु आयतन = (1/3)πr²h",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q026",
+   "testNumber": 19,
+   "questionNumber": 26,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 6 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 9 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 6 hours. If one pipe alone fills it in 9 hours, how long will the other pipe take alone?",
+   "options": {
+    "B": "18 घंटे",
+    "D": "9 घंटे",
+    "C": "3 घंटे",
+    "A": "6 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संयुक्त दर = 1/6",
+    "पहले पाइप की दर = 1/9",
+    "दूसरे पाइप की दर = 1/6 − 1/9 = 1/18 = 1/18",
+    "दूसरा पाइप = 18 घंटे"
+   ],
+   "finalAnswer": "18 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q027",
+   "testNumber": 19,
+   "questionNumber": 27,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 3 है, तो x³ + 1/x³ का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 3, find the value of x³ + 1/x³.",
+   "options": {
+    "B": "18",
+    "A": "27",
+    "C": "21",
+    "D": "24"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x)",
+    "= 3³ − 3 × 3",
+    "= 27 − 9 = 18"
+   ],
+   "finalAnswer": "18",
+   "shortcut": "x³+1/x³ = (x+1/x)³ − 3(x+1/x)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q028",
+   "testNumber": 19,
+   "questionNumber": 28,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक विद्यालय की पाँच कक्षाओं में छात्रों की संख्या / Number of students in five classes of a school:\nकक्षा 6 (Class 6): 80\nकक्षा 7 (Class 7): 85\nकक्षा 8 (Class 8): 65\nकक्षा 9 (Class 9): 40\nकक्षा 10 (Class 10): 50\n\nकक्षा 9 से कक्षा 10 तक मान में प्रतिशत परिवर्तन ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the percentage change in the value from Class 9 to Class 10.",
+   "options": {
+    "D": "25%",
+    "A": "−25%",
+    "B": "10%",
+    "C": "30%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कक्षा 9 = 40, कक्षा 10 = 50",
+    "परिवर्तन = 50 − 40 = 10",
+    "प्रतिशत परिवर्तन = 10/40 × 100 = 25%",
+    "अतः वृद्धि 25% हुई।"
+   ],
+   "finalAnswer": "25%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q029",
+   "testNumber": 19,
+   "questionNumber": 29,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹25,000 की राशि पर 16% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹25000 at 16% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "C": "₹29,160",
+    "B": "₹14,580",
+    "D": "₹29,000",
+    "A": "₹4,160"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 16/2 = 8% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 8/100)² = 25000 × 1.1664",
+    "A = 29,160"
+   ],
+   "finalAnswer": "₹29,160",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q030",
+   "testNumber": 19,
+   "questionNumber": 30,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "64 − [53 − {26 − (29 − 20)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 64 − [53 − {26 − (29 − 20)}]",
+   "options": {
+    "B": "28",
+    "A": "46",
+    "C": "19",
+    "D": "-15"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (29 − 20) = 9",
+    "इसके बाद { }: 26 − 9 = 17",
+    "फिर [ ]: 53 − 17 = 36",
+    "अंत में: 64 − 36 = 28"
+   ],
+   "finalAnswer": "28",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q031",
+   "testNumber": 19,
+   "questionNumber": 31,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 8/15 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 8/15 (θ acute), find the value of sinθ.",
+   "options": {
+    "B": "8/17",
+    "C": "15/17",
+    "D": "8/15",
+    "A": "17/15"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tanθ = लंब/आधार = 8/15",
+    "लंब = 8, आधार = 15",
+    "कर्ण = √(8² + 15²) = √(64 + 225) = 17",
+    "sinθ = लंब/कर्ण = 8/17"
+   ],
+   "finalAnswer": "8/17",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q032",
+   "testNumber": 19,
+   "questionNumber": 32,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक मीनार की ऊँचाई 80 मीटर है। मीनार के पाद से कितनी दूरी पर स्थित बिंदु से शिखर का उन्नयन कोण 60° होगा?",
+   "questionEn": "A tower is 80 m high. At what distance from its foot will the angle of elevation of the top be 60°?",
+   "options": {
+    "A": "80/√3 मीटर",
+    "B": "80 मीटर",
+    "C": "80√3 मीटर",
+    "D": "160 मीटर"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "tan60° = ऊँचाई/दूरी",
+    "√3 = 80/दूरी",
+    "दूरी = 80 × 1/√3 = 80/√3 मीटर"
+   ],
+   "finalAnswer": "80/√3 मीटर",
+   "shortcut": "tan30 = 1/√3, tan60 = √3, tan45 = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q033",
+   "testNumber": 19,
+   "questionNumber": 33,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "2 और 14 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 2 and 14.",
+   "options": {
+    "B": "98",
+    "D": "7",
+    "C": "14",
+    "A": "28"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 14²/2 = 196/2 = 98"
+   ],
+   "finalAnswer": "98",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q034",
+   "testNumber": 19,
+   "questionNumber": 34,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√0.81 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √0.81.",
+   "options": {
+    "B": "0.9",
+    "A": "0.45",
+    "C": "1.8",
+    "D": "0.81"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "0.81 = 0.9 × 0.9 = 09/10 के बराबर भिन्न",
+    "अतः √0.81 = 0.9"
+   ],
+   "finalAnswer": "0.9",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q035",
+   "testNumber": 19,
+   "questionNumber": 35,
+   "topic": "Profit and Loss",
+   "topicHi": "लाभ एवं हानि",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो वस्तुएँ क्रमशः ₹400 और ₹1,000 में खरीदी गईं और दोनों 20% लाभ पर बेची गईं। कुल लेन-देन पर लाभ प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "Two articles are bought for ₹400 and ₹1000 and both are sold at 20% profit. Find the overall profit percentage.",
+   "options": {
+    "A": "20%",
+    "B": "25%",
+    "C": "40%",
+    "D": "10%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कुल CP = 400 + 1,000 = 1,400",
+    "वस्तु 1 का SP = 480; वस्तु 2 का SP = 1,200",
+    "कुल SP = 1,680",
+    "कुल लाभ = 280",
+    "लाभ% = 280/1400 × 100 = 20%"
+   ],
+   "finalAnswer": "20%",
+   "shortcut": "समान लाभ% पर कुल लाभ% भी वही रहता है (CP पर भारित)।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q036",
+   "testNumber": 19,
+   "questionNumber": 36,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "40% of 240 + 20% of 300 = ?",
+   "questionEn": "Find the value of 40% of 240 + 20% of 300.",
+   "options": {
+    "D": "156",
+    "B": "312",
+    "A": "78",
+    "C": "300"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "40% of 240 = 240 × 40/100 = 96",
+    "20% of 300 = 300 × 20/100 = 60",
+    "योग = 96 + 60 = 156"
+   ],
+   "finalAnswer": "156",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q037",
+   "testNumber": 19,
+   "questionNumber": 37,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "156 ÷ 4 × 6 + 12² − 8 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 156 ÷ 4 × 6 + 12² − 8",
+   "options": {
+    "C": "370",
+    "B": "378",
+    "D": "250",
+    "A": "143"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 156 ÷ 4 = 39",
+    "39 × 6 = 234",
+    "12² = 144",
+    "अब क्रमशः जोड़ें/घटाएँ: 234 + 144 − 8 = 370"
+   ],
+   "finalAnswer": "370",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q038",
+   "testNumber": 19,
+   "questionNumber": 38,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "प्रथम 8 प्राकृत संख्याओं के स्थान पर 8 संख्याओं 81, 70, 83, 78, 84, 83, 70, 51 का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Find the average of the numbers 81, 70, 83, 78, 84, 83, 70, 51.",
+   "options": {
+    "C": "75",
+    "A": "84",
+    "D": "76",
+    "B": "6"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "योग = 81 + 70 + 83 + 78 + 84 + 83 + 70 + 51 = 600",
+    "संख्याओं की संख्या = 8",
+    "औसत = 600/8 = 75"
+   ],
+   "finalAnswer": "75",
+   "shortcut": "औसत = योग ÷ संख्याओं की संख्या",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q039",
+   "testNumber": 19,
+   "questionNumber": 39,
+   "topic": "Percentage",
+   "topicHi": "प्रतिशत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक शहर की जनसंख्या 25,000 है। पहले वर्ष यह 25% बढ़ती है और दूसरे वर्ष 5% बढ़ती है। दो वर्ष बाद जनसंख्या कितनी होगी?",
+   "questionEn": "A town's population is 25000. It increases by 25% in the first year and 5% in the second year. Find the population after two years.",
+   "options": {
+    "C": "32,813",
+    "A": "36,094",
+    "D": "25,000",
+    "B": "31,250"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पहले वर्ष के बाद: 25,000 × (100 + 25)/100 = 31,250",
+    "दूसरे वर्ष के बाद: 31,250 × (100 + 5)/100 = 32,813"
+   ],
+   "finalAnswer": "32,813",
+   "shortcut": "क्रमिक वृद्धि: नई संख्या = पुरानी × (100+r₁)/100 × (100+r₂)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q040",
+   "testNumber": 19,
+   "questionNumber": 40,
+   "topic": "Percentage",
+   "topicHi": "प्रतिशत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "800 का 60% कितना होगा?",
+   "questionEn": "What is 60% of 800?",
+   "options": {
+    "A": "480",
+    "B": "490",
+    "D": "528",
+    "C": "960"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "60% of 800 = 800 × 60/100",
+    "= 480"
+   ],
+   "finalAnswer": "480",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q041",
+   "testNumber": 19,
+   "questionNumber": 41,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 12 घंटे और 24 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 12 hours and 24 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "A": "8 घंटे",
+    "D": "18 घंटे",
+    "C": "12 घंटे",
+    "B": "36 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A की दर = 1/12 टंकी/घंटा",
+    "B की दर = 1/24 टंकी/घंटा",
+    "संयुक्त दर = 1/12 + 1/24 = 1/8 टंकी/घंटा",
+    "समय = 12×24/(12+24) = 8 घंटे"
+   ],
+   "finalAnswer": "8 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q042",
+   "testNumber": 19,
+   "questionNumber": 42,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "संख्या 2025 के कुल कितने गुणनखंड (Factors) हैं?",
+   "questionEn": "How many factors does the number 2025 have?",
+   "options": {
+    "D": "15",
+    "B": "10",
+    "A": "14",
+    "C": "17"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "2025 = 3^4 × 5^2",
+    "गुणनखंड संख्या = (a+1)(b+1), जहाँ a, b अभाज्य घातें हैं",
+    "गुणनखंड = (4+1) × (2+1) = 5 × 3 = 15"
+   ],
+   "finalAnswer": "15",
+   "shortcut": "N = p^a·q^b ⇒ गुणनखंड = (a+1)(b+1)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q043",
+   "testNumber": 19,
+   "questionNumber": 43,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nपाँच छात्रों के गणित में प्राप्तांक (100 में से) / Mathematics marks of five students (out of 100):\nराम (Ram): 85\nश्याम (Shyam): 70\nमोहन (Mohan): 80\nसोहन (Sohan): 65\nगोपाल (Gopal): 40\n\nमोहन और सोहन के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of Mohan and Sohan.",
+   "options": {
+    "D": "16 : 13",
+    "A": "13 : 16",
+    "B": "80 : 65",
+    "C": "17 : 13"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मोहन = 80, सोहन = 65",
+    "अनुपात = 80 : 65",
+    "= 16 : 13 (सबसे बड़े सार्व गुणनखंड 5 से भाग)",
+    "= 16 : 13"
+   ],
+   "finalAnswer": "16 : 13",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q044",
+   "testNumber": 19,
+   "questionNumber": 44,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 3 : 2 है। B, A से 5 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹9,100 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 3:2. B joins 5 months after A. Out of the annual profit of ₹9100, find B's share.",
+   "options": {
+    "C": "₹2,548",
+    "D": "₹4,550",
+    "B": "₹6,552",
+    "A": "₹5,096"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए पूँजियाँ 3x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 7 महीने लगी।",
+    "लाभ अनुपात = 3 × 12 : 2 × 7 = 36 : 14 = 18 : 7",
+    "B का हिस्सा = 9100 × 7/(18 + 7) = 2,548"
+   ],
+   "finalAnswer": "₹2,548",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q045",
+   "testNumber": 19,
+   "questionNumber": 45,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो धावक एक वृत्ताकार पथ पर क्रमशः 18 सेकंड और 12 सेकंड में एक चक्कर पूरा करते हैं। यदि वे एक साथ एक ही बिंदु से दौड़ना शुरू करें, तो कितने सेकंड बाद वे पुनः उसी बिंदु पर मिलेंगे?",
+   "questionEn": "Two runners complete one round of a circular track in 18 s and 12 s. Starting together, after how many seconds will they meet at the starting point again?",
+   "options": {
+    "B": "36 सेकंड",
+    "C": "216 सेकंड",
+    "A": "18 सेकंड",
+    "D": "6 सेकंड"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "वे पुनः प्रारंभिक बिंदु पर तब मिलेंगे जब समय दोनों चक्कर-समयों का सार्व गुणज हो।",
+    "LCM(18, 12) = 36",
+    "अतः 36 सेकंड बाद।"
+   ],
+   "finalAnswer": "36 सेकंड",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q046",
+   "testNumber": 19,
+   "questionNumber": 46,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "24 और 96 के बीच मध्यानुपाती (Mean Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the mean proportional between 24 and 96.",
+   "options": {
+    "B": "48",
+    "D": "72",
+    "A": "24",
+    "C": "120"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए मध्यानुपाती x है: a : x = x : b",
+    "x² = a × b = 24 × 96 = 2304",
+    "x = √2304 = 48"
+   ],
+   "finalAnswer": "48",
+   "shortcut": "मध्यानुपाती = √(a×b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q047",
+   "testNumber": 19,
+   "questionNumber": 47,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-3, -1), (1, -1) और (-3, 14) से बने त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Find the area of the triangle formed by the points (-3, -1), (1, -1) and (-3, 14).",
+   "options": {
+    "D": "30 वर्ग इकाई",
+    "C": "60 वर्ग इकाई",
+    "B": "19 वर्ग इकाई",
+    "A": "15 वर्ग इकाई"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "शोलेस (Shoelace) सूत्र: क्षेत्रफल = ½|x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|",
+    "= ½|-3(-1 − 14) + 1(14 − -1) + -3(-1 − -1)|",
+    "= ½|60| = ½ × 60 = 30 वर्ग इकाई",
+    "(ज्यामितीय जाँच: इस त्रिभुज की भुजाएँ 4 और 15 हैं ⇒ ½ × 4 × 15 = 30)"
+   ],
+   "finalAnswer": "30 वर्ग इकाई",
+   "shortcut": "शोलेस (Shoelace) सूत्र से क्षेत्रफल",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q048",
+   "testNumber": 19,
+   "questionNumber": 48,
+   "topic": "Mensuration",
+   "topicHi": "क्षेत्रमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक वर्ग का विकर्ण 22.63 सेमी है (√2 ≈ 1.414)। वर्ग का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "The diagonal of a square is 22.63 cm. Find its area.",
+   "options": {
+    "D": "256 वर्ग सेमी",
+    "C": "64 वर्ग सेमी",
+    "A": "512 वर्ग सेमी",
+    "B": "128 वर्ग सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "विकर्ण d = √2 × भुजा",
+    "भुजा = d/√2 = 16 सेमी",
+    "क्षेत्रफल = भुजा² = 16² = 256 वर्ग सेमी",
+    "(सीधा सूत्र: क्षेत्रफल = d²/2 = 512/2 = 256)"
+   ],
+   "finalAnswer": "256 वर्ग सेमी",
+   "shortcut": "वर्ग का क्षेत्रफल = विकर्ण²/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q049",
+   "testNumber": 19,
+   "questionNumber": 49,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹3,000 है तथा विक्रय मूल्य ₹2,640 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹3000 and its selling price is ₹2640. Find the discount percentage.",
+   "options": {
+    "A": "12%",
+    "B": "6%",
+    "C": "13.64%",
+    "D": "15%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "MP = ₹3,000, SP = ₹2,640",
+    "छूट = MP − SP = ₹360",
+    "छूट% = (छूट/MP) × 100 = (360/3000) × 100 = 12%"
+   ],
+   "finalAnswer": "12%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q050",
+   "testNumber": 19,
+   "questionNumber": 50,
+   "topic": "Mensuration",
+   "topicHi": "क्षेत्रमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वलय (ring) की बाहरी और भीतरी त्रिज्याएँ क्रमशः 14 सेमी और 7 सेमी हैं। वलय का क्षेत्रफल ज्ञात कीजिए (π = 22/7)।",
+   "questionEn": "The outer and inner radii of a ring are 14 cm and 7 cm. Find the area of the ring (π = 22/7).",
+   "options": {
+    "D": "462 वर्ग सेमी",
+    "B": "924 वर्ग सेमी",
+    "A": "616 वर्ग सेमी",
+    "C": "154 वर्ग सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "वलय का क्षेत्रफल = π(R² − r²)",
+    "= 22/7 × (14² − 7²)",
+    "= 22/7 × (196 − 49) = 22/7 × 147",
+    "= 462 वर्ग सेमी"
+   ],
+   "finalAnswer": "462 वर्ग सेमी",
+   "shortcut": "वलय = π(R² − r²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q051",
+   "testNumber": 19,
+   "questionNumber": 51,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक टंकी में 100 लीटर शुद्ध दूध है। इसमें से 25 लीटर दूध निकालकर उतना ही पानी मिला दिया जाता है। अब मिश्रण में दूध का प्रतिशत कितना है?",
+   "questionEn": "A tank contains 100 L of pure milk. 25 L is drawn and replaced with water. What is the percentage of milk in the mixture now?",
+   "options": {
+    "C": "75%",
+    "A": "25%",
+    "D": "37.5%",
+    "B": "85%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "निकाले गए दूध का भाग = 25/100",
+    "शेष दूध = 100 − 25 = 75 L (कुल मात्रा 100 L ही रहती है)",
+    "दूध% = 75/100 × 100 = 75%"
+   ],
+   "finalAnswer": "75%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q052",
+   "testNumber": 19,
+   "questionNumber": 52,
+   "topic": "Time, Speed and Distance",
+   "topicHi": "समय, चाल एवं दूरी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो स्थानों A और B के बीच की दूरी 66 किमी है। दो व्यक्ति एक साथ क्रमशः 6 किमी/घंटा और 5 किमी/घंटा की चाल से A और B से एक-दूसरे की ओर चलते हैं। वे कितने घंटे बाद मिलेंगे?",
+   "questionEn": "Two places A and B are 66 km apart. Two persons start simultaneously from A and B towards each other at 6 km/h and 5 km/h. After how many hours will they meet?",
+   "options": {
+    "B": "6 घंटे",
+    "A": "11 घंटे",
+    "C": "7 घंटे",
+    "D": "3 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सापेक्ष चाल = 6 + 5 = 11 किमी/घंटा (विपरीत दिशाएँ)",
+    "मिलने का समय = 66/11 = 6 घंटे"
+   ],
+   "finalAnswer": "6 घंटे",
+   "shortcut": "मिलने का समय = दूरी ÷ (चालों का योग)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q053",
+   "testNumber": 19,
+   "questionNumber": 53,
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्न आँकड़ों का माध्यिका (Median) ज्ञात कीजिए: 18, 26, 43, 45, 31, 8, 28, 7",
+   "questionEn": "Find the median of the following data: 18, 26, 43, 45, 31, 8, 28, 7",
+   "options": {
+    "D": "27",
+    "A": "28",
+    "B": "31",
+    "C": "26"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "आरोही क्रम: 7, 8, 18, 26, 28, 31, 43, 45",
+    "n = 8 (सम)",
+    "माध्यिका = (n/2वाँ + (n/2)+1वाँ पद)/2 = (26 + 28)/2 = 27"
+   ],
+   "finalAnswer": "27",
+   "shortcut": "सम n पर माध्यिका = दो मध्य पदों का औसत",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q054",
+   "testNumber": 19,
+   "questionNumber": 54,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 8.571428571428571 दिन में पूरा करते हैं। A अकेला वही कार्य 15 दिन में करता है। B अकेला उस कार्य को कितने दिन में करेगा?",
+   "questionEn": "A and B together complete a work in 8.571428571428571 days. A alone takes 15 days. How long will B alone take?",
+   "options": {
+    "C": "20 दिन",
+    "A": "8.57 दिन",
+    "B": "10 दिन",
+    "D": "6.43 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "(A + B) का 1 दिन का कार्य = 1/8.571428571428571",
+    "A का 1 दिन का कार्य = 1/15",
+    "B का 1 दिन का कार्य = 1/8.571428571428571 − 1/15 = 3618963986279863/72379279725597250 = 1/20",
+    "B अकेला = 20 दिन"
+   ],
+   "finalAnswer": "20 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q055",
+   "testNumber": 19,
+   "questionNumber": 55,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹12,000 पर 4 वर्ष में ₹4,800 साधारण ब्याज मिलता है। ब्याज की दर प्रतिशत प्रति वर्ष ज्ञात कीजिए।",
+   "questionEn": "₹12000 gives ₹4800 simple interest in 4 years. Find the rate of interest per annum.",
+   "options": {
+    "C": "10%",
+    "A": "12%",
+    "D": "5%",
+    "B": "9%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SI = PRT/100 ⇒ R = SI × 100/(P × T)",
+    "R = 4800 × 100/(12000 × 4)",
+    "R = 480000/48000 = 10% प्रति वर्ष"
+   ],
+   "finalAnswer": "10%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q056",
+   "testNumber": 19,
+   "questionNumber": 56,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "636 ÷ 6 × 3 + 8² − 24/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 636 ÷ 6 × 3 + 8² − 24/2",
+   "options": {
+    "C": "370",
+    "A": "87",
+    "B": "378",
+    "D": "434"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "636 ÷ 6 = 106; 106 × 3 = 318",
+    "8² = 64; 24/2 = 12",
+    "कुल मान = 318 + 64 − 12 = 370"
+   ],
+   "finalAnswer": "370",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q057",
+   "testNumber": 19,
+   "questionNumber": 57,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.545454... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.545454... into a simple fraction.",
+   "options": {
+    "C": "6/11",
+    "D": "2/3",
+    "A": "4/9",
+    "B": "5/9"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए x = 0.545454...",
+    "दोनों पक्षों को 100 से गुणा करें: 100x = 0.545454...",
+    "घटाने पर: 99x = 54",
+    "x = 54/99 = 6/11"
+   ],
+   "finalAnswer": "6/11",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q058",
+   "testNumber": 19,
+   "questionNumber": 58,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹12,000 की राशि पर 2 वर्ष में 6% और 8% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹12000 for 2 years at 6% and 8% per annum.",
+   "options": {
+    "B": "₹480",
+    "A": "₹960",
+    "C": "₹240",
+    "D": "₹580"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "SI₁ = 12000 × 6 × 2/100 = 1,440",
+    "SI₂ = 12000 × 8 × 2/100 = 1,920",
+    "अंतर = 1,920 − 1,440 = 480",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹480",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q059",
+   "testNumber": 19,
+   "questionNumber": 59,
+   "topic": "Percentage",
+   "topicHi": "प्रतिशत",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक परीक्षा में एक छात्र को अधिकतम अंकों का 40% प्राप्त होने पर 45 अंकों से अनुत्तीर्ण होना पड़ता है, जबकि दूसरे छात्र को 52% प्राप्त होने पर उत्तीर्ण अंकों से 36 अंक अधिक मिलते हैं। अधिकतम अंक ज्ञात कीजिए।",
+   "questionEn": "In an exam, a student scoring 40% of maximum marks fails by 45 marks, while another scoring 52% gets 36 marks more than pass marks. Find the maximum marks.",
+   "options": {
+    "A": "675",
+    "D": "315",
+    "B": "8100",
+    "C": "337.5"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए अधिकतम अंक M हैं और उत्तीर्ण अंक P हैं।",
+    "40% of M = P − 45",
+    "52% of M = P + 36",
+    "घटाने पर: (52 − 40)% of M = 45 + 36 = 81",
+    "12/100 × M = 81 ⇒ M = 81 × 100/12 = 675"
+   ],
+   "finalAnswer": "675",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q060",
+   "testNumber": 19,
+   "questionNumber": 60,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "120 मीटर और 105 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 72 किमी/घंटा और 54 किमी/घंटा की चाल से एक ही दिशा में समांतर पटरियों पर चल रही हैं। तेज़ रेलगाड़ी धीमी को कितने सेकंड में पार करेगी?",
+   "questionEn": "Two trains of lengths 120 m and 105 m run at 72 km/h and 54 km/h in the same direction. How long will the faster train take to pass the slower one?",
+   "options": {
+    "D": "45 सेकंड",
+    "B": "6.4 सेकंड",
+    "C": "90 सेकंड",
+    "A": "22.5 सेकंड"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सापेक्ष चाल = 72 − 54 = 18 किमी/घंटा = 5 मी/से",
+    "कुल लंबाई = 120 + 105 = 225 मीटर",
+    "समय = 225/5 = 45 सेकंड"
+   ],
+   "finalAnswer": "45 सेकंड",
+   "shortcut": "समान दिशा: चालों का अंतर",
+   "marks": 1
+  }
+ ]
+}

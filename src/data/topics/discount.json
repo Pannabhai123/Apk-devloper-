@@ -1,0 +1,1078 @@
+{
+ "topic": "Discount",
+ "topicHi": "छूट",
+ "slug": "discount",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q023",
+   "testNumber": 1,
+   "questionNumber": 23,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹1,250 है। दुकानदार 20% छूट देकर भी 12% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹1250. A shopkeeper wants to earn 12% profit even after allowing a 20% discount. What should be the marked price?",
+   "options": {
+    "A": "₹1,750",
+    "B": "₹1,500",
+    "C": "₹1,400",
+    "D": "₹1,250"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "SP = CP × (100 + 12)/100 = 1,400",
+    "SP = MP × (100 − 20)/100",
+    "1,400 = MP × 80/100",
+    "MP = 1,400 × 100/80 = 1,750"
+   ],
+   "finalAnswer": "₹1,750",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q030",
+   "testNumber": 1,
+   "questionNumber": 30,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹3,200 है तथा विक्रय मूल्य ₹2,720 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹3200 and its selling price is ₹2720. Find the discount percentage.",
+   "options": {
+    "C": "15%",
+    "B": "17.65%",
+    "D": "18%",
+    "A": "7.5%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "MP = ₹3,200, SP = ₹2,720",
+    "छूट = MP − SP = ₹480",
+    "छूट% = (छूट/MP) × 100 = (480/3200) × 100 = 15%"
+   ],
+   "finalAnswer": "15%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q027",
+   "testNumber": 2,
+   "questionNumber": 27,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹1,000 है। दुकानदार 20% छूट देकर भी 12% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹1000. A shopkeeper wants to earn 12% profit even after allowing a 20% discount. What should be the marked price?",
+   "options": {
+    "C": "₹1,400",
+    "D": "₹1,000",
+    "B": "₹1,200",
+    "A": "₹1,500"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SP = CP × (100 + 12)/100 = 1,120",
+    "SP = MP × (100 − 20)/100",
+    "1,120 = MP × 80/100",
+    "MP = 1,120 × 100/80 = 1,400"
+   ],
+   "finalAnswer": "₹1,400",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q046",
+   "testNumber": 2,
+   "questionNumber": 46,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक वस्तु पर 50% और 20% की दो क्रमिक छूटें दी जाती हैं। समतुल्य एकल छूट (equivalent single discount) ज्ञात कीजिए।",
+   "questionEn": "Two successive discounts of 50% and 20% are offered. Find the equivalent single discount.",
+   "options": {
+    "B": "60%",
+    "A": "70%",
+    "D": "69%",
+    "C": "55%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए MP = 100",
+    "पहली छूट के बाद: 100 − 50 = 50",
+    "दूसरी छूट के बाद: 50 × (100 − 20)/100 = 40",
+    "कुल छूट = 100 − 40 = 60",
+    "अतः समतुल्य एकल छूट = 60%"
+   ],
+   "finalAnswer": "60%",
+   "shortcut": "समतुल्य छूट = d₁ + d₂ − d₁d₂/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q046",
+   "testNumber": 3,
+   "questionNumber": 46,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹2,500 है तथा विक्रय मूल्य ₹2,400 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹2500 and its selling price is ₹2400. Find the discount percentage.",
+   "options": {
+    "A": "4%",
+    "D": "7%",
+    "C": "8%",
+    "B": "2%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "MP = ₹2,500, SP = ₹2,400",
+    "छूट = MP − SP = ₹100",
+    "छूट% = (छूट/MP) × 100 = (100/2500) × 100 = 4%"
+   ],
+   "finalAnswer": "4%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q060",
+   "testNumber": 3,
+   "questionNumber": 60,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य (Marked Price) ₹5,000 है और 10% की छूट दी जाती है। वस्तु का विक्रय मूल्य ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹5000 and a discount of 10% is given. Find the selling price.",
+   "options": {
+    "A": "₹4,500",
+    "B": "₹500",
+    "D": "₹4,550",
+    "C": "₹2,250"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अंकित मूल्य (MP) = ₹5,000",
+    "छूट = 10% of ₹5,000 = ₹500",
+    "SP = MP − छूट = 5,000 − 500 = 4,500"
+   ],
+   "finalAnswer": "₹4,500",
+   "shortcut": "SP = MP × (100 − d%)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q007",
+   "testNumber": 4,
+   "questionNumber": 7,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹750 है। दुकानदार 20% छूट देकर भी 28% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹750. A shopkeeper wants to earn 28% profit even after allowing a 20% discount. What should be the marked price?",
+   "options": {
+    "C": "₹1,200",
+    "B": "₹975",
+    "A": "₹960",
+    "D": "₹750"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SP = CP × (100 + 28)/100 = 960",
+    "SP = MP × (100 − 20)/100",
+    "960 = MP × 80/100",
+    "MP = 960 × 100/80 = 1,200"
+   ],
+   "finalAnswer": "₹1,200",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q042",
+   "testNumber": 4,
+   "questionNumber": 42,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक वस्तु पर 20% और 10% की दो क्रमिक छूटें दी जाती हैं। समतुल्य एकल छूट (equivalent single discount) ज्ञात कीजिए।",
+   "questionEn": "Two successive discounts of 20% and 10% are offered. Find the equivalent single discount.",
+   "options": {
+    "D": "28%",
+    "A": "30%",
+    "B": "29%",
+    "C": "23%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए MP = 100",
+    "पहली छूट के बाद: 100 − 20 = 80",
+    "दूसरी छूट के बाद: 80 × (100 − 10)/100 = 72",
+    "कुल छूट = 100 − 72 = 28",
+    "अतः समतुल्य एकल छूट = 28%"
+   ],
+   "finalAnswer": "28%",
+   "shortcut": "समतुल्य छूट = d₁ + d₂ − d₁d₂/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q033",
+   "testNumber": 5,
+   "questionNumber": 33,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक वस्तु पर 25% और 20% की दो क्रमिक छूटें दी जाती हैं। समतुल्य एकल छूट (equivalent single discount) ज्ञात कीजिए।",
+   "questionEn": "Two successive discounts of 25% and 20% are offered. Find the equivalent single discount.",
+   "options": {
+    "A": "40%",
+    "D": "45%",
+    "B": "44%",
+    "C": "35%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए MP = 100",
+    "पहली छूट के बाद: 100 − 25 = 75",
+    "दूसरी छूट के बाद: 75 × (100 − 20)/100 = 60",
+    "कुल छूट = 100 − 60 = 40",
+    "अतः समतुल्य एकल छूट = 40%"
+   ],
+   "finalAnswer": "40%",
+   "shortcut": "समतुल्य छूट = d₁ + d₂ − d₁d₂/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q044",
+   "testNumber": 5,
+   "questionNumber": 44,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹2,400 है तथा विक्रय मूल्य ₹1,800 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹2400 and its selling price is ₹1800. Find the discount percentage.",
+   "options": {
+    "C": "25%",
+    "A": "28%",
+    "B": "33.33%",
+    "D": "12.5%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "MP = ₹2,400, SP = ₹1,800",
+    "छूट = MP − SP = ₹600",
+    "छूट% = (छूट/MP) × 100 = (600/2400) × 100 = 25%"
+   ],
+   "finalAnswer": "25%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q044",
+   "testNumber": 6,
+   "questionNumber": 44,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹600 है तथा विक्रय मूल्य ₹576 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹600 and its selling price is ₹576. Find the discount percentage.",
+   "options": {
+    "B": "4%",
+    "A": "4.17%",
+    "D": "2%",
+    "C": "7%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "MP = ₹600, SP = ₹576",
+    "छूट = MP − SP = ₹24",
+    "छूट% = (छूट/MP) × 100 = (24/600) × 100 = 4%"
+   ],
+   "finalAnswer": "4%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q057",
+   "testNumber": 6,
+   "questionNumber": 57,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "\"खरीदें 1 पाएँ 2\" की योजना पर प्रभावी छूट (effective discount) कितने प्रतिशत है?",
+   "questionEn": "What is the effective discount on the scheme \"buy 1 get 1 free\"?",
+   "options": {
+    "C": "50%",
+    "A": "10%",
+    "D": "5%",
+    "B": "55%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए प्रत्येक वस्तु की कीमत ₹1 है।",
+    "कुल वस्तुएँ मिलती हैं = 2, भुगतान = 1 वस्तुओं का = ₹1",
+    "छूट = 1 वस्तुओं की कीमत = ₹1",
+    "छूट% = 1/2 × 100 = 50%"
+   ],
+   "finalAnswer": "50%",
+   "shortcut": "छूट% = मुफ्त वस्तुएँ/(कुल वस्तुएँ) × 100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q012",
+   "testNumber": 7,
+   "questionNumber": 12,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक वस्तु पर 10% और 10% की दो क्रमिक छूटें दी जाती हैं। समतुल्य एकल छूट (equivalent single discount) ज्ञात कीजिए।",
+   "questionEn": "Two successive discounts of 10% and 10% are offered. Find the equivalent single discount.",
+   "options": {
+    "B": "19%",
+    "C": "20%",
+    "A": "14%",
+    "D": "24%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए MP = 100",
+    "पहली छूट के बाद: 100 − 10 = 90",
+    "दूसरी छूट के बाद: 90 × (100 − 10)/100 = 81",
+    "कुल छूट = 100 − 81 = 19",
+    "अतः समतुल्य एकल छूट = 19%"
+   ],
+   "finalAnswer": "19%",
+   "shortcut": "समतुल्य छूट = d₁ + d₂ − d₁d₂/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q055",
+   "testNumber": 7,
+   "questionNumber": 55,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य (Marked Price) ₹2,000 है और 40% की छूट दी जाती है। वस्तु का विक्रय मूल्य ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹2000 and a discount of 40% is given. Find the selling price.",
+   "options": {
+    "A": "₹1,200",
+    "D": "₹600",
+    "B": "₹800",
+    "C": "₹1,250"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अंकित मूल्य (MP) = ₹2,000",
+    "छूट = 40% of ₹2,000 = ₹800",
+    "SP = MP − छूट = 2,000 − 800 = 1,200"
+   ],
+   "finalAnswer": "₹1,200",
+   "shortcut": "SP = MP × (100 − d%)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q056",
+   "testNumber": 8,
+   "questionNumber": 56,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य (Marked Price) ₹2,500 है और 30% की छूट दी जाती है। वस्तु का विक्रय मूल्य ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹2500 and a discount of 30% is given. Find the selling price.",
+   "options": {
+    "B": "₹1,750",
+    "A": "₹1,800",
+    "C": "₹2,470",
+    "D": "₹875"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "अंकित मूल्य (MP) = ₹2,500",
+    "छूट = 30% of ₹2,500 = ₹750",
+    "SP = MP − छूट = 2,500 − 750 = 1,750"
+   ],
+   "finalAnswer": "₹1,750",
+   "shortcut": "SP = MP × (100 − d%)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q058",
+   "testNumber": 8,
+   "questionNumber": 58,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक वस्तु पर 25% और 40% की दो क्रमिक छूटें दी जाती हैं। समतुल्य एकल छूट (equivalent single discount) ज्ञात कीजिए।",
+   "questionEn": "Two successive discounts of 25% and 40% are offered. Find the equivalent single discount.",
+   "options": {
+    "A": "55%",
+    "B": "65%",
+    "C": "64%",
+    "D": "50%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए MP = 100",
+    "पहली छूट के बाद: 100 − 25 = 75",
+    "दूसरी छूट के बाद: 75 × (100 − 40)/100 = 45",
+    "कुल छूट = 100 − 45 = 55",
+    "अतः समतुल्य एकल छूट = 55%"
+   ],
+   "finalAnswer": "55%",
+   "shortcut": "समतुल्य छूट = d₁ + d₂ − d₁d₂/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q038",
+   "testNumber": 9,
+   "questionNumber": 38,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य (Marked Price) ₹5,000 है और 25% की छूट दी जाती है। वस्तु का विक्रय मूल्य ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹5000 and a discount of 25% is given. Find the selling price.",
+   "options": {
+    "C": "₹3,750",
+    "A": "₹3,800",
+    "B": "₹1,875",
+    "D": "₹4,975"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "अंकित मूल्य (MP) = ₹5,000",
+    "छूट = 25% of ₹5,000 = ₹1,250",
+    "SP = MP − छूट = 5,000 − 1,250 = 3,750"
+   ],
+   "finalAnswer": "₹3,750",
+   "shortcut": "SP = MP × (100 − d%)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q048",
+   "testNumber": 9,
+   "questionNumber": 48,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹1,000 है तथा विक्रय मूल्य ₹880 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹1000 and its selling price is ₹880. Find the discount percentage.",
+   "options": {
+    "A": "12%",
+    "C": "24%",
+    "B": "15%",
+    "D": "13.64%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "MP = ₹1,000, SP = ₹880",
+    "छूट = MP − SP = ₹120",
+    "छूट% = (छूट/MP) × 100 = (120/1000) × 100 = 12%"
+   ],
+   "finalAnswer": "12%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q006",
+   "testNumber": 10,
+   "questionNumber": 6,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "\"खरीदें 9 पाएँ 10\" की योजना पर प्रभावी छूट (effective discount) कितने प्रतिशत है?",
+   "questionEn": "What is the effective discount on the scheme \"buy 9 get 1 free\"?",
+   "options": {
+    "A": "10%",
+    "D": "45%",
+    "B": "15%",
+    "C": "5%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए प्रत्येक वस्तु की कीमत ₹1 है।",
+    "कुल वस्तुएँ मिलती हैं = 10, भुगतान = 9 वस्तुओं का = ₹9",
+    "छूट = 1 वस्तुओं की कीमत = ₹1",
+    "छूट% = 1/10 × 100 = 10%"
+   ],
+   "finalAnswer": "10%",
+   "shortcut": "छूट% = मुफ्त वस्तुएँ/(कुल वस्तुएँ) × 100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q031",
+   "testNumber": 10,
+   "questionNumber": 31,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य (Marked Price) ₹2,500 है और 12% की छूट दी जाती है। वस्तु का विक्रय मूल्य ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹2500 and a discount of 12% is given. Find the selling price.",
+   "options": {
+    "D": "₹2,200",
+    "A": "₹2,488",
+    "B": "₹2,250",
+    "C": "₹300"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अंकित मूल्य (MP) = ₹2,500",
+    "छूट = 12% of ₹2,500 = ₹300",
+    "SP = MP − छूट = 2,500 − 300 = 2,200"
+   ],
+   "finalAnswer": "₹2,200",
+   "shortcut": "SP = MP × (100 − d%)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q006",
+   "testNumber": 11,
+   "questionNumber": 6,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य (Marked Price) ₹4,000 है और 5% की छूट दी जाती है। वस्तु का विक्रय मूल्य ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹4000 and a discount of 5% is given. Find the selling price.",
+   "options": {
+    "B": "₹3,800",
+    "C": "₹3,850",
+    "D": "₹1,900",
+    "A": "₹200"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "अंकित मूल्य (MP) = ₹4,000",
+    "छूट = 5% of ₹4,000 = ₹200",
+    "SP = MP − छूट = 4,000 − 200 = 3,800"
+   ],
+   "finalAnswer": "₹3,800",
+   "shortcut": "SP = MP × (100 − d%)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q051",
+   "testNumber": 11,
+   "questionNumber": 51,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "\"खरीदें 4 पाएँ 5\" की योजना पर प्रभावी छूट (effective discount) कितने प्रतिशत है?",
+   "questionEn": "What is the effective discount on the scheme \"buy 4 get 1 free\"?",
+   "options": {
+    "A": "20%",
+    "C": "10%",
+    "B": "25%",
+    "D": "15%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए प्रत्येक वस्तु की कीमत ₹1 है।",
+    "कुल वस्तुएँ मिलती हैं = 5, भुगतान = 4 वस्तुओं का = ₹4",
+    "छूट = 1 वस्तुओं की कीमत = ₹1",
+    "छूट% = 1/5 × 100 = 20%"
+   ],
+   "finalAnswer": "20%",
+   "shortcut": "छूट% = मुफ्त वस्तुएँ/(कुल वस्तुएँ) × 100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q016",
+   "testNumber": 12,
+   "questionNumber": 16,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹640 है। दुकानदार 20% छूट देकर भी 28% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹640. A shopkeeper wants to earn 28% profit even after allowing a 20% discount. What should be the marked price?",
+   "options": {
+    "C": "₹1,024",
+    "D": "₹819",
+    "A": "₹832",
+    "B": "₹1,124"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SP = CP × (100 + 28)/100 = 819",
+    "SP = MP × (100 − 20)/100",
+    "819 = MP × 80/100",
+    "MP = 819 × 100/80 = 1,024"
+   ],
+   "finalAnswer": "₹1,024",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q020",
+   "testNumber": 12,
+   "questionNumber": 20,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "\"खरीदें 3 पाएँ 4\" की योजना पर प्रभावी छूट (effective discount) कितने प्रतिशत है?",
+   "questionEn": "What is the effective discount on the scheme \"buy 3 get 1 free\"?",
+   "options": {
+    "C": "25%",
+    "A": "10%",
+    "D": "15%",
+    "B": "30%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए प्रत्येक वस्तु की कीमत ₹1 है।",
+    "कुल वस्तुएँ मिलती हैं = 4, भुगतान = 3 वस्तुओं का = ₹3",
+    "छूट = 1 वस्तुओं की कीमत = ₹1",
+    "छूट% = 1/4 × 100 = 25%"
+   ],
+   "finalAnswer": "25%",
+   "shortcut": "छूट% = मुफ्त वस्तुएँ/(कुल वस्तुएँ) × 100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q027",
+   "testNumber": 13,
+   "questionNumber": 27,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य (Marked Price) ₹1,500 है और 12% की छूट दी जाती है। वस्तु का विक्रय मूल्य ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹1500 and a discount of 12% is given. Find the selling price.",
+   "options": {
+    "A": "₹1,320",
+    "B": "₹180",
+    "C": "₹1,488",
+    "D": "₹1,370"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अंकित मूल्य (MP) = ₹1,500",
+    "छूट = 12% of ₹1,500 = ₹180",
+    "SP = MP − छूट = 1,500 − 180 = 1,320"
+   ],
+   "finalAnswer": "₹1,320",
+   "shortcut": "SP = MP × (100 − d%)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q056",
+   "testNumber": 13,
+   "questionNumber": 56,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक वस्तु पर 20% और 50% की दो क्रमिक छूटें दी जाती हैं। समतुल्य एकल छूट (equivalent single discount) ज्ञात कीजिए।",
+   "questionEn": "Two successive discounts of 20% and 50% are offered. Find the equivalent single discount.",
+   "options": {
+    "A": "60%",
+    "D": "70%",
+    "C": "69%",
+    "B": "55%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए MP = 100",
+    "पहली छूट के बाद: 100 − 20 = 80",
+    "दूसरी छूट के बाद: 80 × (100 − 50)/100 = 40",
+    "कुल छूट = 100 − 40 = 60",
+    "अतः समतुल्य एकल छूट = 60%"
+   ],
+   "finalAnswer": "60%",
+   "shortcut": "समतुल्य छूट = d₁ + d₂ − d₁d₂/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q005",
+   "testNumber": 14,
+   "questionNumber": 5,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक वस्तु पर 10% और 40% की दो क्रमिक छूटें दी जाती हैं। समतुल्य एकल छूट (equivalent single discount) ज्ञात कीजिए।",
+   "questionEn": "Two successive discounts of 10% and 40% are offered. Find the equivalent single discount.",
+   "options": {
+    "B": "46%",
+    "A": "50%",
+    "C": "49%",
+    "D": "41%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए MP = 100",
+    "पहली छूट के बाद: 100 − 10 = 90",
+    "दूसरी छूट के बाद: 90 × (100 − 40)/100 = 54",
+    "कुल छूट = 100 − 54 = 46",
+    "अतः समतुल्य एकल छूट = 46%"
+   ],
+   "finalAnswer": "46%",
+   "shortcut": "समतुल्य छूट = d₁ + d₂ − d₁d₂/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q052",
+   "testNumber": 14,
+   "questionNumber": 52,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹320 है। दुकानदार 20% छूट देकर भी 12% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹320. A shopkeeper wants to earn 12% profit even after allowing a 20% discount. What should be the marked price?",
+   "options": {
+    "C": "₹448",
+    "B": "₹358",
+    "A": "₹384",
+    "D": "₹320"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SP = CP × (100 + 12)/100 = 358",
+    "SP = MP × (100 − 20)/100",
+    "358 = MP × 80/100",
+    "MP = 358 × 100/80 = 448"
+   ],
+   "finalAnswer": "₹448",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q009",
+   "testNumber": 15,
+   "questionNumber": 9,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹800 है। दुकानदार 20% छूट देकर भी 12% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹800. A shopkeeper wants to earn 12% profit even after allowing a 20% discount. What should be the marked price?",
+   "options": {
+    "A": "₹1,120",
+    "D": "₹1,220",
+    "B": "₹896",
+    "C": "₹960"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "SP = CP × (100 + 12)/100 = 896",
+    "SP = MP × (100 − 20)/100",
+    "896 = MP × 80/100",
+    "MP = 896 × 100/80 = 1,120"
+   ],
+   "finalAnswer": "₹1,120",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q044",
+   "testNumber": 15,
+   "questionNumber": 44,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹600 है तथा विक्रय मूल्य ₹480 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹600 and its selling price is ₹480. Find the discount percentage.",
+   "options": {
+    "C": "20%",
+    "A": "10%",
+    "D": "40%",
+    "B": "23%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "MP = ₹600, SP = ₹480",
+    "छूट = MP − SP = ₹120",
+    "छूट% = (छूट/MP) × 100 = (120/600) × 100 = 20%"
+   ],
+   "finalAnswer": "20%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q022",
+   "testNumber": 16,
+   "questionNumber": 22,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य (Marked Price) ₹2,400 है और 20% की छूट दी जाती है। वस्तु का विक्रय मूल्य ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹2400 and a discount of 20% is given. Find the selling price.",
+   "options": {
+    "A": "₹1,920",
+    "B": "₹480",
+    "C": "₹1,970",
+    "D": "₹960"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अंकित मूल्य (MP) = ₹2,400",
+    "छूट = 20% of ₹2,400 = ₹480",
+    "SP = MP − छूट = 2,400 − 480 = 1,920"
+   ],
+   "finalAnswer": "₹1,920",
+   "shortcut": "SP = MP × (100 − d%)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q056",
+   "testNumber": 16,
+   "questionNumber": 56,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹1,200 है तथा विक्रय मूल्य ₹1,080 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹1200 and its selling price is ₹1080. Find the discount percentage.",
+   "options": {
+    "D": "10%",
+    "A": "13%",
+    "C": "11.11%",
+    "B": "20%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "MP = ₹1,200, SP = ₹1,080",
+    "छूट = MP − SP = ₹120",
+    "छूट% = (छूट/MP) × 100 = (120/1200) × 100 = 10%"
+   ],
+   "finalAnswer": "10%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q004",
+   "testNumber": 17,
+   "questionNumber": 4,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य (Marked Price) ₹1,600 है और 15% की छूट दी जाती है। वस्तु का विक्रय मूल्य ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹1600 and a discount of 15% is given. Find the selling price.",
+   "options": {
+    "A": "₹1,360",
+    "D": "₹680",
+    "B": "₹1,585",
+    "C": "₹1,410"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अंकित मूल्य (MP) = ₹1,600",
+    "छूट = 15% of ₹1,600 = ₹240",
+    "SP = MP − छूट = 1,600 − 240 = 1,360"
+   ],
+   "finalAnswer": "₹1,360",
+   "shortcut": "SP = MP × (100 − d%)/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q038",
+   "testNumber": 17,
+   "questionNumber": 38,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹1,500 है। दुकानदार 25% छूट देकर भी 40% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹1500. A shopkeeper wants to earn 40% profit even after allowing a 25% discount. What should be the marked price?",
+   "options": {
+    "D": "₹2,800",
+    "C": "₹2,900",
+    "A": "₹2,150",
+    "B": "₹2,100"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SP = CP × (100 + 40)/100 = 2,100",
+    "SP = MP × (100 − 25)/100",
+    "2,100 = MP × 75/100",
+    "MP = 2,100 × 100/75 = 2,800"
+   ],
+   "finalAnswer": "₹2,800",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q010",
+   "testNumber": 18,
+   "questionNumber": 10,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹3,200 है तथा विक्रय मूल्य ₹3,040 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹3200 and its selling price is ₹3040. Find the discount percentage.",
+   "options": {
+    "D": "5%",
+    "C": "8%",
+    "B": "10%",
+    "A": "2.5%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "MP = ₹3,200, SP = ₹3,040",
+    "छूट = MP − SP = ₹160",
+    "छूट% = (छूट/MP) × 100 = (160/3200) × 100 = 5%"
+   ],
+   "finalAnswer": "5%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q028",
+   "testNumber": 18,
+   "questionNumber": 28,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹800 है। दुकानदार 20% छूट देकर भी 15% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹800. A shopkeeper wants to earn 15% profit even after allowing a 20% discount. What should be the marked price?",
+   "options": {
+    "A": "₹1,150",
+    "C": "₹800",
+    "B": "₹1,250",
+    "D": "₹920"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "SP = CP × (100 + 15)/100 = 920",
+    "SP = MP × (100 − 20)/100",
+    "920 = MP × 80/100",
+    "MP = 920 × 100/80 = 1,150"
+   ],
+   "finalAnswer": "₹1,150",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q009",
+   "testNumber": 19,
+   "questionNumber": 9,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹500 है। दुकानदार 25% छूट देकर भी 20% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹500. A shopkeeper wants to earn 20% profit even after allowing a 25% discount. What should be the marked price?",
+   "options": {
+    "D": "₹800",
+    "A": "₹900",
+    "C": "₹500",
+    "B": "₹600"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SP = CP × (100 + 20)/100 = 600",
+    "SP = MP × (100 − 25)/100",
+    "600 = MP × 75/100",
+    "MP = 600 × 100/75 = 800"
+   ],
+   "finalAnswer": "₹800",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q049",
+   "testNumber": 19,
+   "questionNumber": 49,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का अंकित मूल्य ₹3,000 है तथा विक्रय मूल्य ₹2,640 है। छूट प्रतिशत ज्ञात कीजिए।",
+   "questionEn": "The marked price of an article is ₹3000 and its selling price is ₹2640. Find the discount percentage.",
+   "options": {
+    "A": "12%",
+    "B": "6%",
+    "C": "13.64%",
+    "D": "15%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "MP = ₹3,000, SP = ₹2,640",
+    "छूट = MP − SP = ₹360",
+    "छूट% = (छूट/MP) × 100 = (360/3000) × 100 = 12%"
+   ],
+   "finalAnswer": "12%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q033",
+   "testNumber": 20,
+   "questionNumber": 33,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक वस्तु पर 40% और 25% की दो क्रमिक छूटें दी जाती हैं। समतुल्य एकल छूट (equivalent single discount) ज्ञात कीजिए।",
+   "questionEn": "Two successive discounts of 40% and 25% are offered. Find the equivalent single discount.",
+   "options": {
+    "B": "55%",
+    "D": "65%",
+    "C": "64%",
+    "A": "50%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए MP = 100",
+    "पहली छूट के बाद: 100 − 40 = 60",
+    "दूसरी छूट के बाद: 60 × (100 − 25)/100 = 45",
+    "कुल छूट = 100 − 45 = 55",
+    "अतः समतुल्य एकल छूट = 55%"
+   ],
+   "finalAnswer": "55%",
+   "shortcut": "समतुल्य छूट = d₁ + d₂ − d₁d₂/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q038",
+   "testNumber": 20,
+   "questionNumber": 38,
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वस्तु का क्रय मूल्य ₹400 है। दुकानदार 20% छूट देकर भी 28% लाभ कमाना चाहता है। अंकित मूल्य कितना रखना चाहिए?",
+   "questionEn": "The cost price of an article is ₹400. A shopkeeper wants to earn 28% profit even after allowing a 20% discount. What should be the marked price?",
+   "options": {
+    "B": "₹640",
+    "D": "₹520",
+    "A": "₹400",
+    "C": "₹512"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "SP = CP × (100 + 28)/100 = 512",
+    "SP = MP × (100 − 20)/100",
+    "512 = MP × 80/100",
+    "MP = 512 × 100/80 = 640"
+   ],
+   "finalAnswer": "₹640",
+   "shortcut": "MP = CP(100 + p%)/(100 − d%)",
+   "marks": 1
+  }
+ ]
+}

@@ -1,0 +1,1077 @@
+{
+ "topic": "BODMAS",
+ "topicHi": "BODMAS (कोष्ठक)",
+ "slug": "bodmas",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q004",
+   "testNumber": 1,
+   "questionNumber": 4,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "56 − [48 − {26 − (33 − 27)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 56 − [48 − {26 − (33 − 27)}]",
+   "options": {
+    "A": "28",
+    "B": "34",
+    "D": "-18",
+    "C": "22"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (33 − 27) = 6",
+    "इसके बाद { }: 26 − 6 = 20",
+    "फिर [ ]: 48 − 20 = 28",
+    "अंत में: 56 − 28 = 28"
+   ],
+   "finalAnswer": "28",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q006",
+   "testNumber": 1,
+   "questionNumber": 6,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "40% of 240 + 96 ÷ 4 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 40% of 240 + 96 ÷ 4",
+   "options": {
+    "C": "120",
+    "B": "72",
+    "D": "192",
+    "A": "96"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "'of' का अर्थ गुणा है: 40% of 240 = 240 × 40/100 = 96",
+    "भाग: 96 ÷ 4 = 24",
+    "योग = 96 + 24 = 120"
+   ],
+   "finalAnswer": "120",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q007",
+   "testNumber": 2,
+   "questionNumber": 7,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "232 ÷ 4 × 5 + 6² − 12/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 232 ÷ 4 × 5 + 6² − 12/2",
+   "options": {
+    "C": "320",
+    "B": "326",
+    "D": "356",
+    "A": "42"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "232 ÷ 4 = 58; 58 × 5 = 290",
+    "6² = 36; 12/2 = 6",
+    "कुल मान = 290 + 36 − 6 = 320"
+   ],
+   "finalAnswer": "320",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q010",
+   "testNumber": 2,
+   "questionNumber": 10,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "45 − [52 − {19 − (28 − 26)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 45 − [52 − {19 − (28 − 26)}]",
+   "options": {
+    "A": "10",
+    "C": "14",
+    "B": "-26",
+    "D": "12"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (28 − 26) = 2",
+    "इसके बाद { }: 19 − 2 = 17",
+    "फिर [ ]: 52 − 17 = 35",
+    "अंत में: 45 − 35 = 10"
+   ],
+   "finalAnswer": "10",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q037",
+   "testNumber": 3,
+   "questionNumber": 37,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "57 − [57 − {31 − (17 − 9)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 57 − [57 − {31 − (17 − 9)}]",
+   "options": {
+    "D": "23",
+    "C": "31",
+    "A": "-31",
+    "B": "39"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (17 − 9) = 8",
+    "इसके बाद { }: 31 − 8 = 23",
+    "फिर [ ]: 57 − 23 = 34",
+    "अंत में: 57 − 34 = 23"
+   ],
+   "finalAnswer": "23",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q055",
+   "testNumber": 3,
+   "questionNumber": 55,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "162 ÷ 3 × 2 + 8² − 20/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 162 ÷ 3 × 2 + 8² − 20/2",
+   "options": {
+    "C": "162",
+    "D": "81",
+    "B": "170",
+    "A": "172"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "162 ÷ 3 = 54; 54 × 2 = 108",
+    "8² = 64; 20/2 = 10",
+    "कुल मान = 108 + 64 − 10 = 162"
+   ],
+   "finalAnswer": "162",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q014",
+   "testNumber": 4,
+   "questionNumber": 14,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "25% of 240 + 60 ÷ 5 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 25% of 240 + 60 ÷ 5",
+   "options": {
+    "D": "72",
+    "B": "120",
+    "A": "48",
+    "C": "144"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "'of' का अर्थ गुणा है: 25% of 240 = 240 × 25/100 = 60",
+    "भाग: 60 ÷ 5 = 12",
+    "योग = 60 + 12 = 72"
+   ],
+   "finalAnswer": "72",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q054",
+   "testNumber": 4,
+   "questionNumber": 54,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "25 − [26 − {10 − (22 − 21)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 25 − [26 − {10 − (22 − 21)}]",
+   "options": {
+    "C": "8",
+    "B": "-11",
+    "D": "10",
+    "A": "9"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (22 − 21) = 1",
+    "इसके बाद { }: 10 − 1 = 9",
+    "फिर [ ]: 26 − 9 = 17",
+    "अंत में: 25 − 17 = 8"
+   ],
+   "finalAnswer": "8",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q022",
+   "testNumber": 5,
+   "questionNumber": 22,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "111 ÷ 3 × 4 + 4² − 10/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 111 ÷ 3 × 4 + 4² − 10/2",
+   "options": {
+    "A": "159",
+    "D": "20",
+    "B": "164",
+    "C": "163"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "111 ÷ 3 = 37; 37 × 4 = 148",
+    "4² = 16; 10/2 = 5",
+    "कुल मान = 148 + 16 − 5 = 159"
+   ],
+   "finalAnswer": "159",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q041",
+   "testNumber": 5,
+   "questionNumber": 41,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "51 − [49 − {23 − (24 − 20)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 51 − [49 − {23 − (24 − 20)}]",
+   "options": {
+    "D": "21",
+    "C": "25",
+    "A": "-21",
+    "B": "29"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (24 − 20) = 4",
+    "इसके बाद { }: 23 − 4 = 19",
+    "फिर [ ]: 49 − 19 = 30",
+    "अंत में: 51 − 30 = 21"
+   ],
+   "finalAnswer": "21",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q006",
+   "testNumber": 6,
+   "questionNumber": 6,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "60% of 80 + 48 ÷ 6 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 60% of 80 + 48 ÷ 6",
+   "options": {
+    "A": "56",
+    "D": "40",
+    "C": "48",
+    "B": "112"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "'of' का अर्थ गुणा है: 60% of 80 = 80 × 60/100 = 48",
+    "भाग: 48 ÷ 6 = 8",
+    "योग = 48 + 8 = 56"
+   ],
+   "finalAnswer": "56",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q033",
+   "testNumber": 6,
+   "questionNumber": 33,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "276 ÷ 6 × 5 + 4² − 14/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 276 ÷ 6 × 5 + 4² − 14/2",
+   "options": {
+    "A": "239",
+    "B": "243",
+    "C": "18",
+    "D": "255"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "276 ÷ 6 = 46; 46 × 5 = 230",
+    "4² = 16; 14/2 = 7",
+    "कुल मान = 230 + 16 − 7 = 239"
+   ],
+   "finalAnswer": "239",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q016",
+   "testNumber": 7,
+   "questionNumber": 16,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "56 − [58 − {26 − (9 − 2)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 56 − [58 − {26 − (9 − 2)}]",
+   "options": {
+    "A": "17",
+    "D": "10",
+    "C": "-28",
+    "B": "31"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (9 − 2) = 7",
+    "इसके बाद { }: 26 − 7 = 19",
+    "फिर [ ]: 58 − 19 = 39",
+    "अंत में: 56 − 39 = 17"
+   ],
+   "finalAnswer": "17",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q019",
+   "testNumber": 7,
+   "questionNumber": 19,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "40% of 80 + 32 ÷ 2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 40% of 80 + 32 ÷ 2",
+   "options": {
+    "A": "48",
+    "D": "16",
+    "C": "64",
+    "B": "96"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "'of' का अर्थ गुणा है: 40% of 80 = 80 × 40/100 = 32",
+    "भाग: 32 ÷ 2 = 16",
+    "योग = 32 + 16 = 48"
+   ],
+   "finalAnswer": "48",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q029",
+   "testNumber": 8,
+   "questionNumber": 29,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "25% of 240 + 60 ÷ 6 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 25% of 240 + 60 ÷ 6",
+   "options": {
+    "B": "70",
+    "D": "50",
+    "A": "120",
+    "C": "140"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "'of' का अर्थ गुणा है: 25% of 240 = 240 × 25/100 = 60",
+    "भाग: 60 ÷ 6 = 10",
+    "योग = 60 + 10 = 70"
+   ],
+   "finalAnswer": "70",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q059",
+   "testNumber": 8,
+   "questionNumber": 59,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "408 ÷ 4 × 2 + 7² − 10/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 408 ÷ 4 × 2 + 7² − 10/2",
+   "options": {
+    "C": "248",
+    "B": "297",
+    "A": "255",
+    "D": "253"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "408 ÷ 4 = 102; 102 × 2 = 204",
+    "7² = 49; 10/2 = 5",
+    "कुल मान = 204 + 49 − 5 = 248"
+   ],
+   "finalAnswer": "248",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q001",
+   "testNumber": 9,
+   "questionNumber": 1,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "25% of 160 + 40 ÷ 4 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 25% of 160 + 40 ÷ 4",
+   "options": {
+    "D": "50",
+    "A": "40",
+    "B": "100",
+    "C": "30"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "'of' का अर्थ गुणा है: 25% of 160 = 160 × 25/100 = 40",
+    "भाग: 40 ÷ 4 = 10",
+    "योग = 40 + 10 = 50"
+   ],
+   "finalAnswer": "50",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q019",
+   "testNumber": 9,
+   "questionNumber": 19,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "372 ÷ 4 × 2 + 7² − 24/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 372 ÷ 4 × 2 + 7² − 24/2",
+   "options": {
+    "D": "223",
+    "A": "272",
+    "C": "230",
+    "B": "235"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "372 ÷ 4 = 93; 93 × 2 = 186",
+    "7² = 49; 24/2 = 12",
+    "कुल मान = 186 + 49 − 12 = 223"
+   ],
+   "finalAnswer": "223",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q013",
+   "testNumber": 10,
+   "questionNumber": 13,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "505 ÷ 5 × 3 + 7² − 18/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 505 ÷ 5 × 3 + 7² − 18/2",
+   "options": {
+    "C": "343",
+    "A": "74",
+    "D": "392",
+    "B": "352"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "505 ÷ 5 = 101; 101 × 3 = 303",
+    "7² = 49; 18/2 = 9",
+    "कुल मान = 303 + 49 − 9 = 343"
+   ],
+   "finalAnswer": "343",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q060",
+   "testNumber": 10,
+   "questionNumber": 60,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "58 − [43 − {22 − (19 − 11)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 58 − [43 − {22 − (19 − 11)}]",
+   "options": {
+    "B": "29",
+    "A": "-7",
+    "D": "21",
+    "C": "45"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (19 − 11) = 8",
+    "इसके बाद { }: 22 − 8 = 14",
+    "फिर [ ]: 43 − 14 = 29",
+    "अंत में: 58 − 29 = 29"
+   ],
+   "finalAnswer": "29",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q022",
+   "testNumber": 11,
+   "questionNumber": 22,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "60% of 240 + 144 ÷ 4 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 60% of 240 + 144 ÷ 4",
+   "options": {
+    "B": "180",
+    "D": "360",
+    "A": "144",
+    "C": "288"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "'of' का अर्थ गुणा है: 60% of 240 = 240 × 60/100 = 144",
+    "भाग: 144 ÷ 4 = 36",
+    "योग = 144 + 36 = 180"
+   ],
+   "finalAnswer": "180",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q041",
+   "testNumber": 11,
+   "questionNumber": 41,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "310 ÷ 5 × 3 + 8² − 18/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 310 ÷ 5 × 3 + 8² − 18/2",
+   "options": {
+    "C": "241",
+    "D": "305",
+    "B": "249",
+    "A": "250"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "310 ÷ 5 = 62; 62 × 3 = 186",
+    "8² = 64; 18/2 = 9",
+    "कुल मान = 186 + 64 − 9 = 241"
+   ],
+   "finalAnswer": "241",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q010",
+   "testNumber": 12,
+   "questionNumber": 10,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "170 ÷ 5 × 3 + 4² − 24/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 170 ÷ 5 × 3 + 4² − 24/2",
+   "options": {
+    "C": "106",
+    "A": "118",
+    "D": "15",
+    "B": "110"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "170 ÷ 5 = 34; 34 × 3 = 102",
+    "4² = 16; 24/2 = 12",
+    "कुल मान = 102 + 16 − 12 = 106"
+   ],
+   "finalAnswer": "106",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q014",
+   "testNumber": 12,
+   "questionNumber": 14,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "25% of 80 + 20 ÷ 2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 25% of 80 + 20 ÷ 2",
+   "options": {
+    "C": "30",
+    "D": "20",
+    "B": "10",
+    "A": "40"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "'of' का अर्थ गुणा है: 25% of 80 = 80 × 25/100 = 20",
+    "भाग: 20 ÷ 2 = 10",
+    "योग = 20 + 10 = 30"
+   ],
+   "finalAnswer": "30",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q048",
+   "testNumber": 13,
+   "questionNumber": 48,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "25% of 240 + 60 ÷ 2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 25% of 240 + 60 ÷ 2",
+   "options": {
+    "A": "90",
+    "B": "120",
+    "C": "180",
+    "D": "30"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "'of' का अर्थ गुणा है: 25% of 240 = 240 × 25/100 = 60",
+    "भाग: 60 ÷ 2 = 30",
+    "योग = 60 + 30 = 90"
+   ],
+   "finalAnswer": "90",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q049",
+   "testNumber": 13,
+   "questionNumber": 49,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "54 − [47 − {28 − (33 − 25)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 54 − [47 − {28 − (33 − 25)}]",
+   "options": {
+    "C": "27",
+    "D": "-21",
+    "A": "43",
+    "B": "19"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (33 − 25) = 8",
+    "इसके बाद { }: 28 − 8 = 20",
+    "फिर [ ]: 47 − 20 = 27",
+    "अंत में: 54 − 27 = 27"
+   ],
+   "finalAnswer": "27",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q030",
+   "testNumber": 14,
+   "questionNumber": 30,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "46 − [51 − {22 − (34 − 28)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 46 − [51 − {22 − (34 − 28)}]",
+   "options": {
+    "A": "11",
+    "D": "17",
+    "B": "23",
+    "C": "5"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (34 − 28) = 6",
+    "इसके बाद { }: 22 − 6 = 16",
+    "फिर [ ]: 51 − 16 = 35",
+    "अंत में: 46 − 35 = 11"
+   ],
+   "finalAnswer": "11",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q051",
+   "testNumber": 14,
+   "questionNumber": 51,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "25% of 160 + 40 ÷ 2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 25% of 160 + 40 ÷ 2",
+   "options": {
+    "D": "60",
+    "A": "80",
+    "B": "120",
+    "C": "20"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "'of' का अर्थ गुणा है: 25% of 160 = 160 × 25/100 = 40",
+    "भाग: 40 ÷ 2 = 20",
+    "योग = 40 + 20 = 60"
+   ],
+   "finalAnswer": "60",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q001",
+   "testNumber": 15,
+   "questionNumber": 1,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "61 − [48 − {18 − (31 − 28)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 61 − [48 − {18 − (31 − 28)}]",
+   "options": {
+    "B": "28",
+    "C": "25",
+    "D": "-5",
+    "A": "34"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (31 − 28) = 3",
+    "इसके बाद { }: 18 − 3 = 15",
+    "फिर [ ]: 48 − 15 = 33",
+    "अंत में: 61 − 33 = 28"
+   ],
+   "finalAnswer": "28",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q014",
+   "testNumber": 15,
+   "questionNumber": 14,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "60% of 120 + 72 ÷ 3 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 60% of 120 + 72 ÷ 3",
+   "options": {
+    "C": "96",
+    "D": "48",
+    "A": "72",
+    "B": "144"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "'of' का अर्थ गुणा है: 60% of 120 = 120 × 60/100 = 72",
+    "भाग: 72 ÷ 3 = 24",
+    "योग = 72 + 24 = 96"
+   ],
+   "finalAnswer": "96",
+   "shortcut": "BODMAS में of (= ×) को ÷ और × से पहले लगाते हैं।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q015",
+   "testNumber": 16,
+   "questionNumber": 15,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "44 − [48 − {17 − (9 − 6)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 44 − [48 − {17 − (9 − 6)}]",
+   "options": {
+    "B": "10",
+    "D": "13",
+    "A": "-21",
+    "C": "7"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (9 − 6) = 3",
+    "इसके बाद { }: 17 − 3 = 14",
+    "फिर [ ]: 48 − 14 = 34",
+    "अंत में: 44 − 34 = 10"
+   ],
+   "finalAnswer": "10",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q025",
+   "testNumber": 16,
+   "questionNumber": 25,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "292 ÷ 4 × 3 + 6² − 24/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 292 ÷ 4 × 3 + 6² − 24/2",
+   "options": {
+    "A": "243",
+    "B": "255",
+    "D": "249",
+    "C": "279"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "292 ÷ 4 = 73; 73 × 3 = 219",
+    "6² = 36; 24/2 = 12",
+    "कुल मान = 219 + 36 − 12 = 243"
+   ],
+   "finalAnswer": "243",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q042",
+   "testNumber": 17,
+   "questionNumber": 42,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "380 ÷ 4 × 3 + 9² − 16/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 380 ÷ 4 × 3 + 9² − 16/2",
+   "options": {
+    "C": "358",
+    "D": "366",
+    "A": "105",
+    "B": "439"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "380 ÷ 4 = 95; 95 × 3 = 285",
+    "9² = 81; 16/2 = 8",
+    "कुल मान = 285 + 81 − 8 = 358"
+   ],
+   "finalAnswer": "358",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q045",
+   "testNumber": 17,
+   "questionNumber": 45,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "48 − [29 − {11 − (28 − 24)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 48 − [29 − {11 − (28 − 24)}]",
+   "options": {
+    "C": "26",
+    "B": "34",
+    "A": "8",
+    "D": "22"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (28 − 24) = 4",
+    "इसके बाद { }: 11 − 4 = 7",
+    "फिर [ ]: 29 − 7 = 22",
+    "अंत में: 48 − 22 = 26"
+   ],
+   "finalAnswer": "26",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q051",
+   "testNumber": 18,
+   "questionNumber": 51,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "34 − [15 − {7 − (31 − 29)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 34 − [15 − {7 − (31 − 29)}]",
+   "options": {
+    "B": "24",
+    "D": "26",
+    "A": "12",
+    "C": "28"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (31 − 29) = 2",
+    "इसके बाद { }: 7 − 2 = 5",
+    "फिर [ ]: 15 − 5 = 10",
+    "अंत में: 34 − 10 = 24"
+   ],
+   "finalAnswer": "24",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q060",
+   "testNumber": 18,
+   "questionNumber": 60,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "576 ÷ 6 × 2 + 9² − 20/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 576 ÷ 6 × 2 + 9² − 20/2",
+   "options": {
+    "A": "263",
+    "B": "344",
+    "D": "119",
+    "C": "272"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "576 ÷ 6 = 96; 96 × 2 = 192",
+    "9² = 81; 20/2 = 10",
+    "कुल मान = 192 + 81 − 10 = 263"
+   ],
+   "finalAnswer": "263",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q030",
+   "testNumber": 19,
+   "questionNumber": 30,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "64 − [53 − {26 − (29 − 20)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 64 − [53 − {26 − (29 − 20)}]",
+   "options": {
+    "B": "28",
+    "A": "46",
+    "C": "19",
+    "D": "-15"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (29 − 20) = 9",
+    "इसके बाद { }: 26 − 9 = 17",
+    "फिर [ ]: 53 − 17 = 36",
+    "अंत में: 64 − 36 = 28"
+   ],
+   "finalAnswer": "28",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q056",
+   "testNumber": 19,
+   "questionNumber": 56,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "636 ÷ 6 × 3 + 8² − 24/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 636 ÷ 6 × 3 + 8² − 24/2",
+   "options": {
+    "C": "370",
+    "A": "87",
+    "B": "378",
+    "D": "434"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "636 ÷ 6 = 106; 106 × 3 = 318",
+    "8² = 64; 24/2 = 12",
+    "कुल मान = 318 + 64 − 12 = 370"
+   ],
+   "finalAnswer": "370",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q011",
+   "testNumber": 20,
+   "questionNumber": 11,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "272 ÷ 4 × 2 + 3² − 24/2 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 272 ÷ 4 × 2 + 3² − 24/2",
+   "options": {
+    "B": "133",
+    "C": "145",
+    "D": "142",
+    "A": "31"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "BODMAS क्रम: पहले Of/वर्ग, फिर ÷ और ×, फिर + और −",
+    "272 ÷ 4 = 68; 68 × 2 = 136",
+    "3² = 9; 24/2 = 12",
+    "कुल मान = 136 + 9 − 12 = 133"
+   ],
+   "finalAnswer": "133",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q025",
+   "testNumber": 20,
+   "questionNumber": 25,
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "51 − [33 − {15 − (13 − 10)}] का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 51 − [33 − {15 − (13 − 10)}]",
+   "options": {
+    "A": "30",
+    "D": "33",
+    "C": "3",
+    "B": "36"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सबसे छोटा कोष्ठक: (13 − 10) = 3",
+    "इसके बाद { }: 15 − 3 = 12",
+    "फिर [ ]: 33 − 12 = 21",
+    "अंत में: 51 − 21 = 30"
+   ],
+   "finalAnswer": "30",
+   "shortcut": "कोष्ठकों को अंदर से बाहर की ओर हल करें: ( ) → { } → [ ]",
+   "marks": 1
+  }
+ ]
+}

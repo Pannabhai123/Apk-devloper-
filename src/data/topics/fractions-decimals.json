@@ -1,0 +1,1041 @@
+{
+ "topic": "Fractions and Decimals",
+ "topicHi": "भिन्न एवं दशमलव",
+ "slug": "fractions-decimals",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q024",
+   "testNumber": 1,
+   "questionNumber": 24,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "निम्नलिखित में से सबसे बड़ी भिन्न कौन-सी है? (Which is the largest fraction?)",
+   "questionEn": "Which of the following is the largest fraction?",
+   "options": {
+    "D": "4/5",
+    "C": "3/5",
+    "B": "5/9",
+    "A": "7/10"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "भिन्नों की तुलना करने के लिए हर (denominators) समान करें या दशमलव में बदलें।",
+    "4/5 = 0.8",
+    "3/5 = 0.6",
+    "5/9 = 0.556",
+    "7/10 = 0.7",
+    "सबसे बड़ा दशमलव मान 0.8 है, अतः सबसे बड़ी भिन्न = 4/5"
+   ],
+   "finalAnswer": "4/5",
+   "shortcut": "समान अंतर वाली भिन्नों में छोटा हर बड़ा मान देता है; अन्यथा LCM से हर समान करें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q050",
+   "testNumber": 1,
+   "questionNumber": 50,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.5 + 0.1 − 0.01 का मान क्या है?",
+   "questionEn": "Find the value of 0.5 + 0.1 − 0.01.",
+   "options": {
+    "B": "0.6",
+    "D": "0.05",
+    "C": "0.61",
+    "A": "0.5"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "0.5 + 0.1 = 0.6",
+    "0.6 − 0.01 = 0.6"
+   ],
+   "finalAnswer": "0.6",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q008",
+   "testNumber": 2,
+   "questionNumber": 8,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.363636... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.363636... into a simple fraction.",
+   "options": {
+    "D": "4/11",
+    "A": "8/11",
+    "B": "7/9",
+    "C": "3/11"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए x = 0.363636...",
+    "दोनों पक्षों को 100 से गुणा करें: 100x = 0.363636...",
+    "घटाने पर: 99x = 36",
+    "x = 36/99 = 4/11"
+   ],
+   "finalAnswer": "4/11",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q036",
+   "testNumber": 2,
+   "questionNumber": 36,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.08 × 0.5 का मान क्या है?",
+   "questionEn": "Find the value of 0.08 × 0.5.",
+   "options": {
+    "B": "0.04",
+    "C": "0.58",
+    "A": "0.4",
+    "D": "-0.41"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "0.08 = 2 दशमलव स्थान, 0.5 = 1 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 3 दशमलव स्थान होंगे",
+    "0.08 × 0.5 = 0.04"
+   ],
+   "finalAnswer": "0.04",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q012",
+   "testNumber": 3,
+   "questionNumber": 12,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.2 + 0.04 − 0.01 का मान क्या है?",
+   "questionEn": "Find the value of 0.2 + 0.04 − 0.01.",
+   "options": {
+    "B": "0.24",
+    "C": "0.008",
+    "A": "0.25",
+    "D": "0.14"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "0.2 + 0.04 = 0.24",
+    "0.24 − 0.01 = 0.24"
+   ],
+   "finalAnswer": "0.24",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q056",
+   "testNumber": 3,
+   "questionNumber": 56,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "6/8 × 120 × 2 = ?",
+   "questionEn": "Find the value of 6/8 of 120 × 2.",
+   "options": {
+    "A": "180",
+    "B": "90",
+    "C": "30",
+    "D": "270"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "120 का 6/8 = 120 × 6/8 = 90",
+    "अब 90 × 2 = 180"
+   ],
+   "finalAnswer": "180",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q044",
+   "testNumber": 4,
+   "questionNumber": 44,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "2/3 × 60 × 2 = ?",
+   "questionEn": "Find the value of 2/3 of 60 × 2.",
+   "options": {
+    "D": "80",
+    "A": "120",
+    "C": "30",
+    "B": "20"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "60 का 2/3 = 60 × 2/3 = 40",
+    "अब 40 × 2 = 80"
+   ],
+   "finalAnswer": "80",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q046",
+   "testNumber": 4,
+   "questionNumber": 46,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.4 + 0.02 − 0.01 का मान क्या है?",
+   "questionEn": "Find the value of 0.4 + 0.02 − 0.01.",
+   "options": {
+    "B": "0.42",
+    "C": "0.008",
+    "A": "0.43000000000000005",
+    "D": "0.32000000000000006"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "0.4 + 0.02 = 0.42",
+    "0.42 − 0.01 = 0.42"
+   ],
+   "finalAnswer": "0.42",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q031",
+   "testNumber": 5,
+   "questionNumber": 31,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.08 × 0.1 का मान क्या है?",
+   "questionEn": "Find the value of 0.08 × 0.1.",
+   "options": {
+    "D": "0.008",
+    "C": "0.18",
+    "B": "0.08",
+    "A": "-0.010000000000000004"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "0.08 = 2 दशमलव स्थान, 0.1 = 1 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 3 दशमलव स्थान होंगे",
+    "0.08 × 0.1 = 0.008"
+   ],
+   "finalAnswer": "0.008",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q051",
+   "testNumber": 5,
+   "questionNumber": 51,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.333... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.333... into a simple fraction.",
+   "options": {
+    "D": "1/3",
+    "C": "5/11",
+    "B": "3/11",
+    "A": "6/11"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए x = 0.333...",
+    "दोनों पक्षों को 10 से गुणा करें: 10x = 0.333...",
+    "घटाने पर: 9x = 3",
+    "x = 3/9 = 1/3"
+   ],
+   "finalAnswer": "1/3",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q023",
+   "testNumber": 6,
+   "questionNumber": 23,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "4/7 × 42 × 2 = ?",
+   "questionEn": "Find the value of 4/7 of 42 × 2.",
+   "options": {
+    "A": "48",
+    "B": "18",
+    "D": "21",
+    "C": "72"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "42 का 4/7 = 42 × 4/7 = 24",
+    "अब 24 × 2 = 48"
+   ],
+   "finalAnswer": "48",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q034",
+   "testNumber": 6,
+   "questionNumber": 34,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.888... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.888... into a simple fraction.",
+   "options": {
+    "B": "8/9",
+    "D": "8/11",
+    "A": "4/9",
+    "C": "2/11"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए x = 0.888...",
+    "दोनों पक्षों को 10 से गुणा करें: 10x = 0.888...",
+    "घटाने पर: 9x = 8",
+    "x = 8/9 = 8/9"
+   ],
+   "finalAnswer": "8/9",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q006",
+   "testNumber": 7,
+   "questionNumber": 6,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.2 × 0.2 का मान क्या है?",
+   "questionEn": "Find the value of 0.2 × 0.2.",
+   "options": {
+    "C": "0.04",
+    "B": "0.4",
+    "A": "0.4000000000000001",
+    "D": "0.01"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "0.2 = 1 दशमलव स्थान, 0.2 = 1 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 2 दशमलव स्थान होंगे",
+    "0.2 × 0.2 = 0.04"
+   ],
+   "finalAnswer": "0.04",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q009",
+   "testNumber": 7,
+   "questionNumber": 9,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "6/7 × 70 × 2 = ?",
+   "questionEn": "Find the value of 6/7 of 70 × 2.",
+   "options": {
+    "A": "120",
+    "B": "180",
+    "D": "10",
+    "C": "35"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "70 का 6/7 = 70 × 6/7 = 60",
+    "अब 60 × 2 = 120"
+   ],
+   "finalAnswer": "120",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q023",
+   "testNumber": 8,
+   "questionNumber": 23,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.777... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.777... into a simple fraction.",
+   "options": {
+    "B": "7/9",
+    "A": "2/3",
+    "C": "5/9",
+    "D": "2/11"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए x = 0.777...",
+    "दोनों पक्षों को 10 से गुणा करें: 10x = 0.777...",
+    "घटाने पर: 9x = 7",
+    "x = 7/9 = 7/9"
+   ],
+   "finalAnswer": "7/9",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q031",
+   "testNumber": 8,
+   "questionNumber": 31,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.2 + 0.1 − 0.01 का मान क्या है?",
+   "questionEn": "Find the value of 0.2 + 0.1 − 0.01.",
+   "options": {
+    "D": "0.3",
+    "B": "0.020000000000000004",
+    "A": "0.31000000000000005",
+    "C": "0.20000000000000004"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "0.2 + 0.1 = 0.3",
+    "0.3 − 0.01 = 0.3"
+   ],
+   "finalAnswer": "0.3",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q050",
+   "testNumber": 9,
+   "questionNumber": 50,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.05 + 0.5 − 0.01 का मान क्या है?",
+   "questionEn": "Find the value of 0.05 + 0.5 − 0.01.",
+   "options": {
+    "A": "0.55",
+    "C": "0.025",
+    "D": "0.56",
+    "B": "0.45000000000000007"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "0.05 + 0.5 = 0.55",
+    "0.55 − 0.01 = 0.55"
+   ],
+   "finalAnswer": "0.55",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q053",
+   "testNumber": 9,
+   "questionNumber": 53,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "5/6 × 24 × 2 = ?",
+   "questionEn": "Find the value of 5/6 of 24 × 2.",
+   "options": {
+    "A": "40",
+    "D": "60",
+    "B": "20",
+    "C": "12"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "24 का 5/6 = 24 × 5/6 = 20",
+    "अब 20 × 2 = 40"
+   ],
+   "finalAnswer": "40",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q041",
+   "testNumber": 10,
+   "questionNumber": 41,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.272727... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.272727... into a simple fraction.",
+   "options": {
+    "C": "3/11",
+    "D": "8/11",
+    "A": "2/11",
+    "B": "6/11"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए x = 0.272727...",
+    "दोनों पक्षों को 100 से गुणा करें: 100x = 0.272727...",
+    "घटाने पर: 99x = 27",
+    "x = 27/99 = 3/11"
+   ],
+   "finalAnswer": "3/11",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q048",
+   "testNumber": 10,
+   "questionNumber": 48,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "2/5 × 90 × 2 = ?",
+   "questionEn": "Find the value of 2/5 of 90 × 2.",
+   "options": {
+    "D": "72",
+    "B": "108",
+    "A": "54",
+    "C": "36"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "90 का 2/5 = 90 × 2/5 = 36",
+    "अब 36 × 2 = 72"
+   ],
+   "finalAnswer": "72",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q004",
+   "testNumber": 11,
+   "questionNumber": 4,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.5 × 0.1 का मान क्या है?",
+   "questionEn": "Find the value of 0.5 × 0.1.",
+   "options": {
+    "D": "0.05",
+    "C": "0.6",
+    "A": "0.5",
+    "B": "0.41000000000000003"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "0.5 = 1 दशमलव स्थान, 0.1 = 1 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 2 दशमलव स्थान होंगे",
+    "0.5 × 0.1 = 0.05"
+   ],
+   "finalAnswer": "0.05",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q005",
+   "testNumber": 11,
+   "questionNumber": 5,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.555... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.555... into a simple fraction.",
+   "options": {
+    "A": "5/9",
+    "C": "6/11",
+    "B": "3/11",
+    "D": "2/3"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए x = 0.555...",
+    "दोनों पक्षों को 10 से गुणा करें: 10x = 0.555...",
+    "घटाने पर: 9x = 5",
+    "x = 5/9 = 5/9"
+   ],
+   "finalAnswer": "5/9",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q011",
+   "testNumber": 12,
+   "questionNumber": 11,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.727272... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.727272... into a simple fraction.",
+   "options": {
+    "D": "8/11",
+    "A": "6/11",
+    "C": "5/9",
+    "B": "7/9"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए x = 0.727272...",
+    "दोनों पक्षों को 100 से गुणा करें: 100x = 0.727272...",
+    "घटाने पर: 99x = 72",
+    "x = 72/99 = 8/11"
+   ],
+   "finalAnswer": "8/11",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q053",
+   "testNumber": 12,
+   "questionNumber": 53,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "6/9 × 45 × 2 = ?",
+   "questionEn": "Find the value of 6/9 of 45 × 2.",
+   "options": {
+    "A": "60",
+    "D": "90",
+    "C": "22.5",
+    "B": "30"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "45 का 6/9 = 45 × 6/9 = 30",
+    "अब 30 × 2 = 60"
+   ],
+   "finalAnswer": "60",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q029",
+   "testNumber": 13,
+   "questionNumber": 29,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.5 × 0.2 का मान क्या है?",
+   "questionEn": "Find the value of 0.5 × 0.2.",
+   "options": {
+    "C": "0.1",
+    "A": "0.7",
+    "B": "1",
+    "D": "0.31"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "0.5 = 1 दशमलव स्थान, 0.2 = 1 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 2 दशमलव स्थान होंगे",
+    "0.5 × 0.2 = 0.1"
+   ],
+   "finalAnswer": "0.1",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q059",
+   "testNumber": 13,
+   "questionNumber": 59,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "3/5 × 30 × 2 = ?",
+   "questionEn": "Find the value of 3/5 of 30 × 2.",
+   "options": {
+    "C": "36",
+    "D": "15",
+    "A": "54",
+    "B": "18"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "30 का 3/5 = 30 × 3/5 = 18",
+    "अब 18 × 2 = 36"
+   ],
+   "finalAnswer": "36",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q006",
+   "testNumber": 14,
+   "questionNumber": 6,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "3/8 × 144 × 2 = ?",
+   "questionEn": "Find the value of 3/8 of 144 × 2.",
+   "options": {
+    "C": "108",
+    "B": "162",
+    "D": "90",
+    "A": "54"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "144 का 3/8 = 144 × 3/8 = 54",
+    "अब 54 × 2 = 108"
+   ],
+   "finalAnswer": "108",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q056",
+   "testNumber": 14,
+   "questionNumber": 56,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.08 × 0.02 का मान क्या है?",
+   "questionEn": "Find the value of 0.08 × 0.02.",
+   "options": {
+    "B": "0.0016",
+    "A": "0.1",
+    "D": "0.016",
+    "C": "0.06999999999999999"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "0.08 = 2 दशमलव स्थान, 0.02 = 2 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 4 दशमलव स्थान होंगे",
+    "0.08 × 0.02 = 0.0016"
+   ],
+   "finalAnswer": "0.0016",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q021",
+   "testNumber": 15,
+   "questionNumber": 21,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.454545... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.454545... into a simple fraction.",
+   "options": {
+    "C": "5/11",
+    "A": "8/11",
+    "B": "6/11",
+    "D": "5/9"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए x = 0.454545...",
+    "दोनों पक्षों को 100 से गुणा करें: 100x = 0.454545...",
+    "घटाने पर: 99x = 45",
+    "x = 45/99 = 5/11"
+   ],
+   "finalAnswer": "5/11",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q060",
+   "testNumber": 15,
+   "questionNumber": 60,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.25 × 0.02 का मान क्या है?",
+   "questionEn": "Find the value of 0.25 × 0.02.",
+   "options": {
+    "A": "0.005",
+    "C": "0.27",
+    "B": "0.05",
+    "D": "0.24000000000000002"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "0.25 = 2 दशमलव स्थान, 0.02 = 2 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 4 दशमलव स्थान होंगे",
+    "0.25 × 0.02 = 0.005"
+   ],
+   "finalAnswer": "0.005",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q014",
+   "testNumber": 16,
+   "questionNumber": 14,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "5/6 × 114 × 2 = ?",
+   "questionEn": "Find the value of 5/6 of 114 × 2.",
+   "options": {
+    "D": "190",
+    "B": "285",
+    "A": "57",
+    "C": "95"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "114 का 5/6 = 114 × 5/6 = 95",
+    "अब 95 × 2 = 190"
+   ],
+   "finalAnswer": "190",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q044",
+   "testNumber": 16,
+   "questionNumber": 44,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.5 × 0.02 का मान क्या है?",
+   "questionEn": "Find the value of 0.5 × 0.02.",
+   "options": {
+    "B": "0.01",
+    "C": "0.52",
+    "A": "0.1",
+    "D": "0.49"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "0.5 = 1 दशमलव स्थान, 0.02 = 2 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 3 दशमलव स्थान होंगे",
+    "0.5 × 0.02 = 0.01"
+   ],
+   "finalAnswer": "0.01",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q015",
+   "testNumber": 17,
+   "questionNumber": 15,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.25 + 0.04 − 0.01 का मान क्या है?",
+   "questionEn": "Find the value of 0.25 + 0.04 − 0.01.",
+   "options": {
+    "A": "0.29",
+    "D": "0.01",
+    "B": "0.3",
+    "C": "0.18999999999999997"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "0.25 + 0.04 = 0.29",
+    "0.29 − 0.01 = 0.29"
+   ],
+   "finalAnswer": "0.29",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q016",
+   "testNumber": 17,
+   "questionNumber": 16,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "2/3 × 87 × 2 = ?",
+   "questionEn": "Find the value of 2/3 of 87 × 2.",
+   "options": {
+    "B": "116",
+    "D": "43.5",
+    "A": "174",
+    "C": "58"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "87 का 2/3 = 87 × 2/3 = 58",
+    "अब 58 × 2 = 116"
+   ],
+   "finalAnswer": "116",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q017",
+   "testNumber": 18,
+   "questionNumber": 17,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.444... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.444... into a simple fraction.",
+   "options": {
+    "C": "4/9",
+    "A": "8/9",
+    "B": "2/3",
+    "D": "5/9"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए x = 0.444...",
+    "दोनों पक्षों को 10 से गुणा करें: 10x = 0.444...",
+    "घटाने पर: 9x = 4",
+    "x = 4/9 = 4/9"
+   ],
+   "finalAnswer": "4/9",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q057",
+   "testNumber": 18,
+   "questionNumber": 57,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.25 + 0.5 − 0.01 का मान क्या है?",
+   "questionEn": "Find the value of 0.25 + 0.5 − 0.01.",
+   "options": {
+    "C": "0.75",
+    "D": "0.125",
+    "A": "0.76",
+    "B": "0.65"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "0.25 + 0.5 = 0.75",
+    "0.75 − 0.01 = 0.75"
+   ],
+   "finalAnswer": "0.75",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q004",
+   "testNumber": 19,
+   "questionNumber": 4,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.05 × 0.2 का मान क्या है?",
+   "questionEn": "Find the value of 0.05 × 0.2.",
+   "options": {
+    "D": "0.01",
+    "B": "0.25",
+    "A": "0.10000000000000002",
+    "C": "-0.14"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "0.05 = 2 दशमलव स्थान, 0.2 = 1 दशमलव स्थान",
+    "गुणा करने पर उत्तर में 3 दशमलव स्थान होंगे",
+    "0.05 × 0.2 = 0.01"
+   ],
+   "finalAnswer": "0.01",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q057",
+   "testNumber": 19,
+   "questionNumber": 57,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "पुनरावृत्त (recurring) दशमलव 0.545454... को सरलतम भिन्न में बदलें।",
+   "questionEn": "Convert the recurring decimal 0.545454... into a simple fraction.",
+   "options": {
+    "C": "6/11",
+    "D": "2/3",
+    "A": "4/9",
+    "B": "5/9"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए x = 0.545454...",
+    "दोनों पक्षों को 100 से गुणा करें: 100x = 0.545454...",
+    "घटाने पर: 99x = 54",
+    "x = 54/99 = 6/11"
+   ],
+   "finalAnswer": "6/11",
+   "shortcut": "शुद्ध पुनरावृत्त दशमलव 0.ab̄ = ab/99, 0.ā = a/9",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q017",
+   "testNumber": 20,
+   "questionNumber": 17,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "0.08 + 0.1 − 0.01 का मान क्या है?",
+   "questionEn": "Find the value of 0.08 + 0.1 − 0.01.",
+   "options": {
+    "A": "0.18",
+    "C": "0.008",
+    "D": "0.19",
+    "B": "0.07999999999999999"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "0.08 + 0.1 = 0.18",
+    "0.18 − 0.01 = 0.18"
+   ],
+   "finalAnswer": "0.18",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q037",
+   "testNumber": 20,
+   "questionNumber": 37,
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "2/3 × 69 × 2 = ?",
+   "questionEn": "Find the value of 2/3 of 69 × 2.",
+   "options": {
+    "B": "92",
+    "C": "23",
+    "A": "138",
+    "D": "46"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "69 का 2/3 = 69 × 2/3 = 46",
+    "अब 46 × 2 = 92"
+   ],
+   "finalAnswer": "92",
+   "shortcut": "",
+   "marks": 1
+  }
+ ]
+}

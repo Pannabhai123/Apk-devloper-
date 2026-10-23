@@ -1,0 +1,1078 @@
+{
+ "topic": "Number System",
+ "topicHi": "संख्या पद्धति",
+ "slug": "number-system",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q022",
+   "testNumber": 1,
+   "questionNumber": 22,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "संख्या 54268 में अंक 2 का स्थानीय मान (Place Value) क्या है?",
+   "questionEn": "What is the place value of the digit 2 in the number 54268?",
+   "options": {
+    "D": "200",
+    "A": "2",
+    "B": "20",
+    "C": "2,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "संख्या 54268 में अंक 2 सैकड़ा के स्थान पर है।",
+    "स्थानीय मान = अंक × स्थान का मान = 2 × 100",
+    "स्थानीय मान = 200"
+   ],
+   "finalAnswer": "200",
+   "shortcut": "स्थानीय मान = अंक × 10^(स्थान)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q059",
+   "testNumber": 1,
+   "questionNumber": 59,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न में से कौन-सी संख्या 6 से पूर्णतः विभाज्य है?",
+   "questionEn": "Which of the following numbers is exactly divisible by 6?",
+   "options": {
+    "B": "408",
+    "A": "403",
+    "C": "415",
+    "D": "409"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "विभाज्यता नियम: 2 और 3 दोनों से विभाज्य।",
+    "408 सम है (2 से विभाज्य) और अंकों का योग = 12, जो 3 से विभाज्य है।",
+    "अतः 408, 6 से विभाज्य है।"
+   ],
+   "finalAnswer": "408",
+   "shortcut": "विभाज्यता नियम: 2 और 3 दोनों से विभाज्य।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q021",
+   "testNumber": 2,
+   "questionNumber": 21,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न में से कौन-सी संख्या 11 से पूर्णतः विभाज्य है?",
+   "questionEn": "Which of the following numbers is exactly divisible by 11?",
+   "options": {
+    "A": "528",
+    "D": "531",
+    "B": "535",
+    "C": "521"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "विभाज्यता नियम: विषम स्थान व सम स्थान के अंकों के योग का अंतर 11 से विभाज्य।",
+    "संख्या 528 में विषम स्थानों का योग − सम स्थानों का योग = 11, जो 11 से विभाज्य है।",
+    "अतः 528, 11 से विभाज्य है।"
+   ],
+   "finalAnswer": "528",
+   "shortcut": "विभाज्यता नियम: विषम स्थान व सम स्थान के अंकों के योग का अंतर 11 से विभाज्य।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q055",
+   "testNumber": 2,
+   "questionNumber": 55,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "22 से 53 तक की सभी प्राकृत संख्याओं (दोनों सम्मिलित) का योग ज्ञात कीजिए।",
+   "questionEn": "Find the sum of all numbers from 22 to 53 (both included).",
+   "options": {
+    "A": "1200",
+    "D": "600",
+    "C": "1232",
+    "B": "1168"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पहली संख्या a = 22, अंतिम संख्या l = 53",
+    "पदों की संख्या n = 53 − 22 + 1 = 32",
+    "योग = n(a + l)/2 = 32 × (22 + 53)/2",
+    "योग = 32 × 37.5 = 1200"
+   ],
+   "finalAnswer": "1200",
+   "shortcut": "संख्याओं का योग = (पदों की संख्या) × (पहली + अंतिम)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q010",
+   "testNumber": 3,
+   "questionNumber": 10,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "355 और 855 के बीच (दोनों सम्मिलित) 12 से विभाज्य कितनी संख्याएँ हैं?",
+   "questionEn": "How many numbers between 355 and 855 (both included) are divisible by 12?",
+   "options": {
+    "C": "42",
+    "B": "41",
+    "A": "40",
+    "D": "44"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "855 तक 12 के गुणज = 71",
+    "354 तक 12 के गुणज = 29",
+    "अभीष्ट संख्याएँ = 71 − 29 = 42"
+   ],
+   "finalAnswer": "42",
+   "shortcut": "गिनती = ⌊b/d⌋ − ⌊(a−1)/d⌋",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q043",
+   "testNumber": 3,
+   "questionNumber": 43,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "संख्या 1945 को 6 से भाग देने पर शेषफल (Remainder) क्या बचेगा?",
+   "questionEn": "What is the remainder when 1945 is divided by 6?",
+   "options": {
+    "C": "1",
+    "B": "5",
+    "A": "2",
+    "D": "3"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "1945 ÷ 6 का भागफल = 324, शेषफल = 1",
+    "जाँच: 6 × 324 + 1 = 1945",
+    "अतः शेषफल = 1"
+   ],
+   "finalAnswer": "1",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q006",
+   "testNumber": 4,
+   "questionNumber": 6,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "संख्या 65978 में अंक 9 का स्थानीय मान (Place Value) क्या है?",
+   "questionEn": "What is the place value of the digit 9 in the number 65978?",
+   "options": {
+    "B": "900",
+    "D": "9",
+    "C": "90",
+    "A": "9,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संख्या 65978 में अंक 9 सैकड़ा के स्थान पर है।",
+    "स्थानीय मान = अंक × स्थान का मान = 9 × 100",
+    "स्थानीय मान = 900"
+   ],
+   "finalAnswer": "900",
+   "shortcut": "स्थानीय मान = अंक × 10^(स्थान)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q034",
+   "testNumber": 4,
+   "questionNumber": 34,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न में से कौन-सी संख्या 4 से पूर्णतः विभाज्य है?",
+   "questionEn": "Which of the following numbers is exactly divisible by 4?",
+   "options": {
+    "B": "272",
+    "D": "274",
+    "A": "265",
+    "C": "279"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "विभाज्यता नियम: अंतिम दो अंकों से बनी संख्या 4 से विभाज्य।",
+    "संख्या 272 के अंतिम दो अंक = 72, जो 4 से विभाज्य है।",
+    "अतः 272, 4 से विभाज्य है।"
+   ],
+   "finalAnswer": "272",
+   "shortcut": "विभाज्यता नियम: अंतिम दो अंकों से बनी संख्या 4 से विभाज्य।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q019",
+   "testNumber": 5,
+   "questionNumber": 19,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "संख्या 1496 को 12 से भाग देने पर शेषफल (Remainder) क्या बचेगा?",
+   "questionEn": "What is the remainder when 1496 is divided by 12?",
+   "options": {
+    "B": "8",
+    "C": "4",
+    "A": "9",
+    "D": "10"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "1496 ÷ 12 का भागफल = 124, शेषफल = 8",
+    "जाँच: 12 × 124 + 8 = 1496",
+    "अतः शेषफल = 8"
+   ],
+   "finalAnswer": "8",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q052",
+   "testNumber": 5,
+   "questionNumber": 52,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "संख्या 13628 में अंक 1 का स्थानीय मान (Place Value) क्या है?",
+   "questionEn": "What is the place value of the digit 1 in the number 13628?",
+   "options": {
+    "A": "10,000",
+    "D": "1",
+    "C": "10",
+    "B": "100"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संख्या 13628 में अंक 1 दस हज़ार के स्थान पर है।",
+    "स्थानीय मान = अंक × स्थान का मान = 1 × 10000",
+    "स्थानीय मान = 10,000"
+   ],
+   "finalAnswer": "10,000",
+   "shortcut": "स्थानीय मान = अंक × 10^(स्थान)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q011",
+   "testNumber": 6,
+   "questionNumber": 11,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "6 से 41 तक की सभी संख्याओं (दोनों सम्मिलित) का योग ज्ञात कीजिए।",
+   "questionEn": "Find the sum of all numbers from 6 to 41 (both included).",
+   "options": {
+    "A": "846",
+    "C": "423",
+    "B": "810",
+    "D": "882"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पहली संख्या a = 6, अंतिम संख्या l = 41",
+    "पदों की संख्या n = 41 − 6 + 1 = 36",
+    "योग = n(a + l)/2 = 36 × (6 + 41)/2",
+    "योग = 36 × 23.5 = 846"
+   ],
+   "finalAnswer": "846",
+   "shortcut": "संख्याओं का योग = (पदों की संख्या) × (पहली + अंतिम)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q015",
+   "testNumber": 6,
+   "questionNumber": 15,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "298 और 572 के बीच (दोनों सम्मिलित) 8 से विभाज्य कितनी संख्याएँ हैं?",
+   "questionEn": "How many numbers between 298 and 572 (both included) are divisible by 8?",
+   "options": {
+    "A": "34",
+    "B": "32",
+    "D": "33",
+    "C": "35"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "572 तक 8 के गुणज = 71",
+    "297 तक 8 के गुणज = 37",
+    "अभीष्ट संख्याएँ = 71 − 37 = 34"
+   ],
+   "finalAnswer": "34",
+   "shortcut": "गिनती = ⌊b/d⌋ − ⌊(a−1)/d⌋",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q007",
+   "testNumber": 7,
+   "questionNumber": 7,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "संख्या 392 के कुल कितने गुणनखंड (Factors) हैं?",
+   "questionEn": "How many factors does the number 392 have?",
+   "options": {
+    "B": "12",
+    "C": "13",
+    "A": "14",
+    "D": "11"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "392 = 2^3 × 7^2",
+    "गुणनखंड संख्या = (a+1)(b+1), जहाँ a, b अभाज्य घातें हैं",
+    "गुणनखंड = (3+1) × (2+1) = 4 × 3 = 12"
+   ],
+   "finalAnswer": "12",
+   "shortcut": "N = p^a·q^b ⇒ गुणनखंड = (a+1)(b+1)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q035",
+   "testNumber": 7,
+   "questionNumber": 35,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न में से कौन-सी संख्या 3 से पूर्णतः विभाज्य है?",
+   "questionEn": "Which of the following numbers is exactly divisible by 3?",
+   "options": {
+    "A": "51",
+    "D": "49",
+    "B": "44",
+    "C": "50"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "विभाज्यता नियम: अंकों का योग 3 से विभाज्य।",
+    "संख्या 51 के अंकों का योग = 6",
+    "6 ÷ 3 = 2 (पूर्ण भाग जाता है)",
+    "अतः 51, 3 से विभाज्य है।"
+   ],
+   "finalAnswer": "51",
+   "shortcut": "विभाज्यता नियम: अंकों का योग 3 से विभाज्य।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q004",
+   "testNumber": 8,
+   "questionNumber": 4,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "18 से 31 तक की सभी प्राकृत संख्याओं (दोनों सम्मिलित) का योग ज्ञात कीजिए।",
+   "questionEn": "Find the sum of all numbers from 18 to 31 (both included).",
+   "options": {
+    "A": "343",
+    "D": "357",
+    "C": "329",
+    "B": "49"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पहली संख्या a = 18, अंतिम संख्या l = 31",
+    "पदों की संख्या n = 31 − 18 + 1 = 14",
+    "योग = n(a + l)/2 = 14 × (18 + 31)/2",
+    "योग = 14 × 24.5 = 343"
+   ],
+   "finalAnswer": "343",
+   "shortcut": "संख्याओं का योग = (पदों की संख्या) × (पहली + अंतिम)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q016",
+   "testNumber": 8,
+   "questionNumber": 16,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "संख्या 13689 के कुल कितने गुणनखंड (Factors) हैं?",
+   "questionEn": "How many factors does the number 13689 have?",
+   "options": {
+    "B": "15",
+    "A": "17",
+    "C": "10",
+    "D": "16"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "13689 = 3^4 × 13^2",
+    "गुणनखंड संख्या = (a+1)(b+1), जहाँ a, b अभाज्य घातें हैं",
+    "गुणनखंड = (4+1) × (2+1) = 5 × 3 = 15"
+   ],
+   "finalAnswer": "15",
+   "shortcut": "N = p^a·q^b ⇒ गुणनखंड = (a+1)(b+1)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q002",
+   "testNumber": 9,
+   "questionNumber": 2,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "संख्या 216 के कुल कितने गुणनखंड (Factors) हैं?",
+   "questionEn": "How many factors does the number 216 have?",
+   "options": {
+    "C": "16",
+    "D": "17",
+    "A": "15",
+    "B": "11"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "216 = 3^3 × 2^3",
+    "गुणनखंड संख्या = (a+1)(b+1), जहाँ a, b अभाज्य घातें हैं",
+    "गुणनखंड = (3+1) × (3+1) = 4 × 4 = 16"
+   ],
+   "finalAnswer": "16",
+   "shortcut": "N = p^a·q^b ⇒ गुणनखंड = (a+1)(b+1)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q056",
+   "testNumber": 9,
+   "questionNumber": 56,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "14 से 50 तक की सभी प्राकृत संख्याओं (दोनों सम्मिलित) का योग ज्ञात कीजिए।",
+   "questionEn": "Find the sum of all numbers from 14 to 50 (both included).",
+   "options": {
+    "A": "1184",
+    "C": "1147",
+    "D": "1221",
+    "B": "64"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पहली संख्या a = 14, अंतिम संख्या l = 50",
+    "पदों की संख्या n = 50 − 14 + 1 = 37",
+    "योग = n(a + l)/2 = 37 × (14 + 50)/2",
+    "योग = 37 × 32 = 1184"
+   ],
+   "finalAnswer": "1184",
+   "shortcut": "संख्याओं का योग = (पदों की संख्या) × (पहली + अंतिम)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q002",
+   "testNumber": 10,
+   "questionNumber": 2,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "13 से 27 तक की सभी प्राकृत संख्याओं (दोनों सम्मिलित) का योग ज्ञात कीजिए।",
+   "questionEn": "Find the sum of all numbers from 13 to 27 (both included).",
+   "options": {
+    "B": "300",
+    "D": "285",
+    "C": "150",
+    "A": "315"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पहली संख्या a = 13, अंतिम संख्या l = 27",
+    "पदों की संख्या n = 27 − 13 + 1 = 15",
+    "योग = n(a + l)/2 = 15 × (13 + 27)/2",
+    "योग = 15 × 20 = 300"
+   ],
+   "finalAnswer": "300",
+   "shortcut": "संख्याओं का योग = (पदों की संख्या) × (पहली + अंतिम)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q059",
+   "testNumber": 10,
+   "questionNumber": 59,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "74^31 की इकाई अंक (Unit Digit) क्या होगी?",
+   "questionEn": "Find the unit digit of 74^31.",
+   "options": {
+    "C": "4",
+    "D": "5",
+    "B": "0",
+    "A": "6"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "74 का इकाई अंक = 4",
+    "4 की घातों का चक्र (cycle): 4, 6, 4, 6 — फिर दोहराता है (चक्र की लंबाई 4)",
+    "घात 31 को चक्र से देखें: 31 = 4 × 7 + 3",
+    "अतः 74^31 का इकाई अंक = 4"
+   ],
+   "finalAnswer": "4",
+   "shortcut": "इकाई अंक के लिए केवल अंतिम अंक की घातें लें; चक्र 4 पर दोहराता है।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q002",
+   "testNumber": 11,
+   "questionNumber": 2,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह बड़ी से बड़ी संख्या ज्ञात कीजिए जिससे 617 को भाग देने पर 5 शेष बचता है और 579 को भाग देने पर 3 शेष बचता है।",
+   "questionEn": "Find the greatest number which divides 617 leaving remainder 5 and divides 579 leaving remainder 3.",
+   "options": {
+    "D": "36",
+    "B": "18",
+    "C": "72",
+    "A": "37"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अभीष्ट संख्या N, (617 − 5) = 612 और (579 − 3) = 576 को पूर्णतः विभाजित करेगी।",
+    "अतः N = 612 और 576 का महत्तम समापवर्तक (HCF)",
+    "612 = 36 × 17",
+    "576 = 36 × 16",
+    "चूँकि 17 और 16 सह-अभाज्य हैं, HCF = 36"
+   ],
+   "finalAnswer": "36",
+   "shortcut": "शेषफल घटाकर शेष बची संख्याओं का HCF निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q058",
+   "testNumber": 11,
+   "questionNumber": 58,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "22^23 की इकाई अंक (Unit Digit) क्या होगी?",
+   "questionEn": "Find the unit digit of 22^23.",
+   "options": {
+    "C": "8",
+    "A": "0",
+    "B": "4",
+    "D": "9"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "22 का इकाई अंक = 2",
+    "2 की घातों का चक्र (cycle): 2, 4, 8, 6 — फिर दोहराता है (चक्र की लंबाई 4)",
+    "घात 23 को चक्र से देखें: 23 = 4 × 5 + 3",
+    "अतः 22^23 का इकाई अंक = 8"
+   ],
+   "finalAnswer": "8",
+   "shortcut": "इकाई अंक के लिए केवल अंतिम अंक की घातें लें; चक्र 4 पर दोहराता है।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q041",
+   "testNumber": 12,
+   "questionNumber": 41,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "108 और 295 के बीच (दोनों सम्मिलित) 6 से विभाज्य कितनी संख्याएँ हैं?",
+   "questionEn": "How many numbers between 108 and 295 (both included) are divisible by 6?",
+   "options": {
+    "A": "32",
+    "B": "31",
+    "D": "30",
+    "C": "34"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "295 तक 6 के गुणज = 49",
+    "107 तक 6 के गुणज = 17",
+    "अभीष्ट संख्याएँ = 49 − 17 = 32"
+   ],
+   "finalAnswer": "32",
+   "shortcut": "गिनती = ⌊b/d⌋ − ⌊(a−1)/d⌋",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q059",
+   "testNumber": 12,
+   "questionNumber": 59,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह बड़ी से बड़ी संख्या ज्ञात कीजिए जिससे 156 को भाग देने पर 6 शेष बचता है और 514 को भाग देने पर 4 शेष बचता है।",
+   "questionEn": "Find the greatest number which divides 156 leaving remainder 6 and divides 514 leaving remainder 4.",
+   "options": {
+    "C": "30",
+    "D": "15",
+    "A": "29",
+    "B": "60"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "अभीष्ट संख्या N, (156 − 6) = 150 और (514 − 4) = 510 को पूर्णतः विभाजित करेगी।",
+    "अतः N = 150 और 510 का महत्तम समापवर्तक (HCF)",
+    "150 = 30 × 5",
+    "510 = 30 × 17",
+    "चूँकि 5 और 17 सह-अभाज्य हैं, HCF = 30"
+   ],
+   "finalAnswer": "30",
+   "shortcut": "शेषफल घटाकर शेष बची संख्याओं का HCF निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q031",
+   "testNumber": 13,
+   "questionNumber": 31,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "91^43 की इकाई अंक (Unit Digit) क्या होगी?",
+   "questionEn": "Find the unit digit of 91^43.",
+   "options": {
+    "A": "1",
+    "C": "5",
+    "D": "3",
+    "B": "9"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "91 का इकाई अंक = 1",
+    "1 की घातों का चक्र (cycle): 1, 1, 1, 1 — फिर दोहराता है (चक्र की लंबाई 4)",
+    "घात 43 को चक्र से देखें: 43 = 4 × 10 + 3",
+    "अतः 91^43 का इकाई अंक = 1"
+   ],
+   "finalAnswer": "1",
+   "shortcut": "इकाई अंक के लिए केवल अंतिम अंक की घातें लें; चक्र 4 पर दोहराता है।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q053",
+   "testNumber": 13,
+   "questionNumber": 53,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह बड़ी से बड़ी संख्या ज्ञात कीजिए जिससे 242 को भाग देने पर 2 शेष बचता है और 175 को भाग देने पर 7 शेष बचता है।",
+   "questionEn": "Find the greatest number which divides 242 leaving remainder 2 and divides 175 leaving remainder 7.",
+   "options": {
+    "B": "24",
+    "C": "25",
+    "D": "240",
+    "A": "48"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "अभीष्ट संख्या N, (242 − 2) = 240 और (175 − 7) = 168 को पूर्णतः विभाजित करेगी।",
+    "अतः N = 240 और 168 का महत्तम समापवर्तक (HCF)",
+    "240 = 24 × 10",
+    "168 = 24 × 7",
+    "चूँकि 10 और 7 सह-अभाज्य हैं, HCF = 24"
+   ],
+   "finalAnswer": "24",
+   "shortcut": "शेषफल घटाकर शेष बची संख्याओं का HCF निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q002",
+   "testNumber": 14,
+   "questionNumber": 2,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "निम्न में से कौन-सी संख्या 8 से पूर्णतः विभाज्य है?",
+   "questionEn": "Which of the following numbers is exactly divisible by 8?",
+   "options": {
+    "B": "280",
+    "A": "278",
+    "C": "277",
+    "D": "273"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "विभाज्यता नियम: अंतिम तीन अंकों से बनी संख्या 8 से विभाज्य।",
+    "संख्या 280 के अंतिम तीन अंक = 280, जो 8 से विभाज्य है।",
+    "अतः 280, 8 से विभाज्य है।"
+   ],
+   "finalAnswer": "280",
+   "shortcut": "विभाज्यता नियम: अंतिम तीन अंकों से बनी संख्या 8 से विभाज्य।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q015",
+   "testNumber": 14,
+   "questionNumber": 15,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह बड़ी से बड़ी संख्या ज्ञात कीजिए जिससे 70 को भाग देने पर 7 शेष बचता है और 340 को भाग देने पर 4 शेष बचता है।",
+   "questionEn": "Find the greatest number which divides 70 leaving remainder 7 and divides 340 leaving remainder 4.",
+   "options": {
+    "B": "21",
+    "C": "22",
+    "D": "63",
+    "A": "42"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "अभीष्ट संख्या N, (70 − 7) = 63 और (340 − 4) = 336 को पूर्णतः विभाजित करेगी।",
+    "अतः N = 63 और 336 का महत्तम समापवर्तक (HCF)",
+    "63 = 21 × 3",
+    "336 = 21 × 16",
+    "चूँकि 3 और 16 सह-अभाज्य हैं, HCF = 21"
+   ],
+   "finalAnswer": "21",
+   "shortcut": "शेषफल घटाकर शेष बची संख्याओं का HCF निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q015",
+   "testNumber": 15,
+   "questionNumber": 15,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "63^34 की इकाई अंक (Unit Digit) क्या होगी?",
+   "questionEn": "Find the unit digit of 63^34.",
+   "options": {
+    "D": "9",
+    "A": "5",
+    "C": "3",
+    "B": "1"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "63 का इकाई अंक = 3",
+    "3 की घातों का चक्र (cycle): 3, 9, 7, 1 — फिर दोहराता है (चक्र की लंबाई 4)",
+    "घात 34 को चक्र से देखें: 34 = 4 × 8 + 2",
+    "अतः 63^34 का इकाई अंक = 9"
+   ],
+   "finalAnswer": "9",
+   "shortcut": "इकाई अंक के लिए केवल अंतिम अंक की घातें लें; चक्र 4 पर दोहराता है।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q058",
+   "testNumber": 15,
+   "questionNumber": 58,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह बड़ी से बड़ी संख्या ज्ञात कीजिए जिससे 544 को भाग देने पर 4 शेष बचता है और 756 को भाग देने पर 6 शेष बचता है।",
+   "questionEn": "Find the greatest number which divides 544 leaving remainder 4 and divides 756 leaving remainder 6.",
+   "options": {
+    "B": "30",
+    "A": "540",
+    "D": "15",
+    "C": "29"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "अभीष्ट संख्या N, (544 − 4) = 540 और (756 − 6) = 750 को पूर्णतः विभाजित करेगी।",
+    "अतः N = 540 और 750 का महत्तम समापवर्तक (HCF)",
+    "540 = 30 × 18",
+    "750 = 30 × 25",
+    "चूँकि 18 और 25 सह-अभाज्य हैं, HCF = 30"
+   ],
+   "finalAnswer": "30",
+   "shortcut": "शेषफल घटाकर शेष बची संख्याओं का HCF निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q004",
+   "testNumber": 16,
+   "questionNumber": 4,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "संख्या 16875 के कुल कितने गुणनखंड (Factors) हैं?",
+   "questionEn": "How many factors does the number 16875 have?",
+   "options": {
+    "B": "20",
+    "C": "19",
+    "A": "22",
+    "D": "21"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "16875 = 5^4 × 3^3",
+    "गुणनखंड संख्या = (a+1)(b+1), जहाँ a, b अभाज्य घातें हैं",
+    "गुणनखंड = (4+1) × (3+1) = 5 × 4 = 20"
+   ],
+   "finalAnswer": "20",
+   "shortcut": "N = p^a·q^b ⇒ गुणनखंड = (a+1)(b+1)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q059",
+   "testNumber": 16,
+   "questionNumber": 59,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "55^21 की इकाई अंक (Unit Digit) क्या होगी?",
+   "questionEn": "Find the unit digit of 55^21.",
+   "options": {
+    "B": "5",
+    "A": "7",
+    "D": "1",
+    "C": "3"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "55 का इकाई अंक = 5",
+    "5 की घातों का चक्र (cycle): 5, 5, 5, 5 — फिर दोहराता है (चक्र की लंबाई 4)",
+    "घात 21 को चक्र से देखें: 21 = 4 × 5 + 1",
+    "अतः 55^21 का इकाई अंक = 5"
+   ],
+   "finalAnswer": "5",
+   "shortcut": "इकाई अंक के लिए केवल अंतिम अंक की घातें लें; चक्र 4 पर दोहराता है।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q019",
+   "testNumber": 17,
+   "questionNumber": 19,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "65^36 की इकाई अंक (Unit Digit) क्या होगी?",
+   "questionEn": "Find the unit digit of 65^36.",
+   "options": {
+    "C": "5",
+    "A": "6",
+    "D": "9",
+    "B": "1"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "65 का इकाई अंक = 5",
+    "5 की घातों का चक्र (cycle): 5, 5, 5, 5 — फिर दोहराता है (चक्र की लंबाई 4)",
+    "घात 36 को चक्र से देखें: 36 = 4 × 9 + 0",
+    "अतः 65^36 का इकाई अंक = 5"
+   ],
+   "finalAnswer": "5",
+   "shortcut": "इकाई अंक के लिए केवल अंतिम अंक की घातें लें; चक्र 4 पर दोहराता है।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q050",
+   "testNumber": 17,
+   "questionNumber": 50,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह बड़ी से बड़ी संख्या ज्ञात कीजिए जिससे 202 को भाग देने पर 2 शेष बचता है और 226 को भाग देने पर 6 शेष बचता है।",
+   "questionEn": "Find the greatest number which divides 202 leaving remainder 2 and divides 226 leaving remainder 6.",
+   "options": {
+    "B": "20",
+    "D": "200",
+    "C": "19",
+    "A": "21"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "अभीष्ट संख्या N, (202 − 2) = 200 और (226 − 6) = 220 को पूर्णतः विभाजित करेगी।",
+    "अतः N = 200 और 220 का महत्तम समापवर्तक (HCF)",
+    "200 = 20 × 10",
+    "220 = 20 × 11",
+    "चूँकि 10 और 11 सह-अभाज्य हैं, HCF = 20"
+   ],
+   "finalAnswer": "20",
+   "shortcut": "शेषफल घटाकर शेष बची संख्याओं का HCF निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q048",
+   "testNumber": 18,
+   "questionNumber": 48,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "35^17 की इकाई अंक (Unit Digit) क्या होगी?",
+   "questionEn": "Find the unit digit of 35^17.",
+   "options": {
+    "C": "5",
+    "A": "7",
+    "D": "6",
+    "B": "1"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "35 का इकाई अंक = 5",
+    "5 की घातों का चक्र (cycle): 5, 5, 5, 5 — फिर दोहराता है (चक्र की लंबाई 4)",
+    "घात 17 को चक्र से देखें: 17 = 4 × 4 + 1",
+    "अतः 35^17 का इकाई अंक = 5"
+   ],
+   "finalAnswer": "5",
+   "shortcut": "इकाई अंक के लिए केवल अंतिम अंक की घातें लें; चक्र 4 पर दोहराता है।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q059",
+   "testNumber": 18,
+   "questionNumber": 59,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "संख्या 26411 के कुल कितने गुणनखंड (Factors) हैं?",
+   "questionEn": "How many factors does the number 26411 have?",
+   "options": {
+    "A": "10",
+    "C": "12",
+    "D": "6",
+    "B": "11"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "26411 = 7^4 × 11^1",
+    "गुणनखंड संख्या = (a+1)(b+1), जहाँ a, b अभाज्य घातें हैं",
+    "गुणनखंड = (4+1) × (1+1) = 5 × 2 = 10"
+   ],
+   "finalAnswer": "10",
+   "shortcut": "N = p^a·q^b ⇒ गुणनखंड = (a+1)(b+1)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q002",
+   "testNumber": 19,
+   "questionNumber": 2,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह बड़ी से बड़ी संख्या ज्ञात कीजिए जिससे 476 को भाग देने पर 8 शेष बचता है और 405 को भाग देने पर 9 शेष बचता है।",
+   "questionEn": "Find the greatest number which divides 476 leaving remainder 8 and divides 405 leaving remainder 9.",
+   "options": {
+    "D": "36",
+    "C": "37",
+    "A": "35",
+    "B": "72"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अभीष्ट संख्या N, (476 − 8) = 468 और (405 − 9) = 396 को पूर्णतः विभाजित करेगी।",
+    "अतः N = 468 और 396 का महत्तम समापवर्तक (HCF)",
+    "468 = 36 × 13",
+    "396 = 36 × 11",
+    "चूँकि 13 और 11 सह-अभाज्य हैं, HCF = 36"
+   ],
+   "finalAnswer": "36",
+   "shortcut": "शेषफल घटाकर शेष बची संख्याओं का HCF निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q042",
+   "testNumber": 19,
+   "questionNumber": 42,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "संख्या 2025 के कुल कितने गुणनखंड (Factors) हैं?",
+   "questionEn": "How many factors does the number 2025 have?",
+   "options": {
+    "D": "15",
+    "B": "10",
+    "A": "14",
+    "C": "17"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "2025 = 3^4 × 5^2",
+    "गुणनखंड संख्या = (a+1)(b+1), जहाँ a, b अभाज्य घातें हैं",
+    "गुणनखंड = (4+1) × (2+1) = 5 × 3 = 15"
+   ],
+   "finalAnswer": "15",
+   "shortcut": "N = p^a·q^b ⇒ गुणनखंड = (a+1)(b+1)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q018",
+   "testNumber": 20,
+   "questionNumber": 18,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "32^29 की इकाई अंक (Unit Digit) क्या होगी?",
+   "questionEn": "Find the unit digit of 32^29.",
+   "options": {
+    "C": "2",
+    "A": "6",
+    "B": "8",
+    "D": "0"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "32 का इकाई अंक = 2",
+    "2 की घातों का चक्र (cycle): 2, 4, 8, 6 — फिर दोहराता है (चक्र की लंबाई 4)",
+    "घात 29 को चक्र से देखें: 29 = 4 × 7 + 1",
+    "अतः 32^29 का इकाई अंक = 2"
+   ],
+   "finalAnswer": "2",
+   "shortcut": "इकाई अंक के लिए केवल अंतिम अंक की घातें लें; चक्र 4 पर दोहराता है।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q036",
+   "testNumber": 20,
+   "questionNumber": 36,
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह बड़ी से बड़ी संख्या ज्ञात कीजिए जिससे 323 को भाग देने पर 3 शेष बचता है और 102 को भाग देने पर 2 शेष बचता है।",
+   "questionEn": "Find the greatest number which divides 323 leaving remainder 3 and divides 102 leaving remainder 2.",
+   "options": {
+    "D": "20",
+    "B": "320",
+    "A": "21",
+    "C": "19"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अभीष्ट संख्या N, (323 − 3) = 320 और (102 − 2) = 100 को पूर्णतः विभाजित करेगी।",
+    "अतः N = 320 और 100 का महत्तम समापवर्तक (HCF)",
+    "320 = 20 × 16",
+    "100 = 20 × 5",
+    "चूँकि 16 और 5 सह-अभाज्य हैं, HCF = 20"
+   ],
+   "finalAnswer": "20",
+   "shortcut": "शेषफल घटाकर शेष बची संख्याओं का HCF निकालें।",
+   "marks": 1
+  }
+ ]
+}

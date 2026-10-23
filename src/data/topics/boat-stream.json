@@ -1,0 +1,1016 @@
+{
+ "topic": "Boat and Stream",
+ "topicHi": "नाव एवं धारा",
+ "slug": "boat-stream",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q039",
+   "testNumber": 1,
+   "questionNumber": 39,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 15 किमी/घंटा तथा धारा की चाल 5 किमी/घंटा है। 40 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 15 km/h and the stream speed is 5 km/h. How long will it take to travel 40 km upstream?",
+   "options": {
+    "A": "4 घंटे",
+    "D": "2.7 घंटे",
+    "B": "2 घंटे",
+    "C": "5 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के विपरीत चाल = 15 − 5 = 10 किमी/घंटा",
+    "समय = 40/10 = 4 घंटे"
+   ],
+   "finalAnswer": "4 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q040",
+   "testNumber": 1,
+   "questionNumber": 40,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 22 किमी/घंटा और धारा के विपरीत (upstream) चाल 14 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 22 km/h and upstream speed is 14 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "A": "18 किमी/घंटा",
+    "B": "14 किमी/घंटा",
+    "D": "9 किमी/घंटा",
+    "C": "22 किमी/घंटा"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (22 + 14)/2 = 36/2 = 18 किमी/घंटा"
+   ],
+   "finalAnswer": "18 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q053",
+   "testNumber": 2,
+   "questionNumber": 53,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ चाल 22 किमी/घंटा तथा धारा के विपरीत चाल 18 किमी/घंटा है। धारा की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 22 km/h and upstream speed is 18 km/h. Find the speed of the stream.",
+   "options": {
+    "A": "2 किमी/घंटा",
+    "C": "20 किमी/घंटा",
+    "D": "18 किमी/घंटा",
+    "B": "22 किमी/घंटा"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा की चाल = (downstream − upstream)/2",
+    "= (22 − 18)/2 = 4/2 = 2 किमी/घंटा"
+   ],
+   "finalAnswer": "2 किमी/घंटा",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q057",
+   "testNumber": 2,
+   "questionNumber": 57,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 16 किमी/घंटा और धारा के विपरीत (upstream) चाल 8 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 16 km/h and upstream speed is 8 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "A": "12 किमी/घंटा",
+    "D": "16 किमी/घंटा",
+    "B": "4 किमी/घंटा",
+    "C": "6 किमी/घंटा"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (16 + 8)/2 = 24/2 = 12 किमी/घंटा"
+   ],
+   "finalAnswer": "12 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q006",
+   "testNumber": 3,
+   "questionNumber": 6,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 22 किमी/घंटा और धारा के विपरीत (upstream) चाल 18 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 22 km/h and upstream speed is 18 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "B": "20 किमी/घंटा",
+    "A": "22 किमी/घंटा",
+    "C": "10 किमी/घंटा",
+    "D": "18 किमी/घंटा"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (22 + 18)/2 = 40/2 = 20 किमी/घंटा"
+   ],
+   "finalAnswer": "20 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q041",
+   "testNumber": 3,
+   "questionNumber": 41,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 12 किमी/घंटा तथा धारा की चाल 5 किमी/घंटा है। 28 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 12 km/h and the stream speed is 5 km/h. How long will it take to travel 28 km upstream?",
+   "options": {
+    "D": "4 घंटे",
+    "B": "1.6 घंटे",
+    "A": "2.3 घंटे",
+    "C": "2 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "धारा के विपरीत चाल = 12 − 5 = 7 किमी/घंटा",
+    "समय = 28/7 = 4 घंटे"
+   ],
+   "finalAnswer": "4 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q038",
+   "testNumber": 4,
+   "questionNumber": 38,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 8 किमी/घंटा से चलती है और धारा की चाल 4 किमी/घंटा है। 36 किमी धारा के साथ जाने में नाव को कितना समय लगेगा?",
+   "questionEn": "A boat travels at 8 km/h in still water and the stream flows at 4 km/h. How long will it take to go 36 km downstream?",
+   "options": {
+    "D": "3 घंटे",
+    "B": "9 घंटे",
+    "A": "1.5 घंटे",
+    "C": "4.5 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "धारा के साथ चाल = 8 + 4 = 12 किमी/घंटा",
+    "समय = 36/12 = 3 घंटे"
+   ],
+   "finalAnswer": "3 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q040",
+   "testNumber": 4,
+   "questionNumber": 40,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ चाल 23 किमी/घंटा तथा धारा के विपरीत चाल 17 किमी/घंटा है। धारा की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 23 km/h and upstream speed is 17 km/h. Find the speed of the stream.",
+   "options": {
+    "C": "3 किमी/घंटा",
+    "B": "23 किमी/घंटा",
+    "A": "20 किमी/घंटा",
+    "D": "17 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा की चाल = (downstream − upstream)/2",
+    "= (23 − 17)/2 = 6/2 = 3 किमी/घंटा"
+   ],
+   "finalAnswer": "3 किमी/घंटा",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q011",
+   "testNumber": 5,
+   "questionNumber": 11,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ चाल 17 किमी/घंटा तथा धारा के विपरीत चाल 7 किमी/घंटा है। धारा की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 17 km/h and upstream speed is 7 km/h. Find the speed of the stream.",
+   "options": {
+    "C": "5 किमी/घंटा",
+    "B": "12 किमी/घंटा",
+    "A": "7 किमी/घंटा",
+    "D": "17 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा की चाल = (downstream − upstream)/2",
+    "= (17 − 7)/2 = 10/2 = 5 किमी/घंटा"
+   ],
+   "finalAnswer": "5 किमी/घंटा",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q058",
+   "testNumber": 5,
+   "questionNumber": 58,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 8 किमी/घंटा तथा धारा की चाल 2 किमी/घंटा है। 12 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 8 km/h and the stream speed is 2 km/h. How long will it take to travel 12 km upstream?",
+   "options": {
+    "A": "2 घंटे",
+    "D": "3 घंटे",
+    "B": "1.5 घंटे",
+    "C": "1 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के विपरीत चाल = 8 − 2 = 6 किमी/घंटा",
+    "समय = 12/6 = 2 घंटे"
+   ],
+   "finalAnswer": "2 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q024",
+   "testNumber": 6,
+   "questionNumber": 24,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ चाल 17 किमी/घंटा तथा धारा के विपरीत चाल 13 किमी/घंटा है। धारा की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 17 km/h and upstream speed is 13 km/h. Find the speed of the stream.",
+   "options": {
+    "D": "2 किमी/घंटा",
+    "A": "15 किमी/घंटा",
+    "B": "17 किमी/घंटा",
+    "C": "13 किमी/घंटा"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "धारा की चाल = (downstream − upstream)/2",
+    "= (17 − 13)/2 = 4/2 = 2 किमी/घंटा"
+   ],
+   "finalAnswer": "2 किमी/घंटा",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q047",
+   "testNumber": 6,
+   "questionNumber": 47,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 15 किमी/घंटा तथा धारा की चाल 5 किमी/घंटा है। 20 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 15 km/h and the stream speed is 5 km/h. How long will it take to travel 20 km upstream?",
+   "options": {
+    "B": "2 घंटे",
+    "C": "3 घंटे",
+    "A": "1 घंटे",
+    "D": "1.3 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "धारा के विपरीत चाल = 15 − 5 = 10 किमी/घंटा",
+    "समय = 20/10 = 2 घंटे"
+   ],
+   "finalAnswer": "2 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q043",
+   "testNumber": 7,
+   "questionNumber": 43,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 9 किमी/घंटा से चलती है। धारा की चाल 3 किमी/घंटा है। नाव 12 किमी धारा के साथ जाकर उतनी ही दूरी धारा के विपरीत लौटती है। कुल यात्रा में नाव की औसत चाल ज्ञात कीजिए।",
+   "questionEn": "A boat travels 9 km/h in still water; the stream flows at 3 km/h. It goes 12 km downstream and returns the same distance. Find the average speed for the whole trip.",
+   "options": {
+    "A": "8 किमी/घंटा",
+    "D": "9 किमी/घंटा",
+    "C": "6 किमी/घंटा",
+    "B": "12 किमी/घंटा"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के साथ चाल = 12 किमी/घंटा, समय = 12/12 = 1 घंटे",
+    "धारा के विपरीत चाल = 6 किमी/घंटा, समय = 12/6 = 2 घंटे",
+    "कुल दूरी = 24 किमी, कुल समय = 1 + 2 = 3 घंटे",
+    "औसत चाल = 24/3 = 8 किमी/घंटा"
+   ],
+   "finalAnswer": "8 किमी/घंटा",
+   "shortcut": "औसत चाल = 2DU/(D²... ) — कुल दूरी ÷ कुल समय से ज्ञात करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q058",
+   "testNumber": 7,
+   "questionNumber": 58,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 12 किमी/घंटा से चलती है और धारा की चाल 4 किमी/घंटा है। 64 किमी धारा के साथ जाने में नाव को कितना समय लगेगा?",
+   "questionEn": "A boat travels at 12 km/h in still water and the stream flows at 4 km/h. How long will it take to go 64 km downstream?",
+   "options": {
+    "D": "4 घंटे",
+    "A": "8 घंटे",
+    "C": "5.3 घंटे",
+    "B": "2 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "धारा के साथ चाल = 12 + 4 = 16 किमी/घंटा",
+    "समय = 64/16 = 4 घंटे"
+   ],
+   "finalAnswer": "4 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q011",
+   "testNumber": 8,
+   "questionNumber": 11,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 8 किमी/घंटा से चलती है और धारा की चाल 3 किमी/घंटा है। 33 किमी धारा के साथ जाने में नाव को कितना समय लगेगा?",
+   "questionEn": "A boat travels at 8 km/h in still water and the stream flows at 3 km/h. How long will it take to go 33 km downstream?",
+   "options": {
+    "B": "3 घंटे",
+    "C": "4.1 घंटे",
+    "D": "4 घंटे",
+    "A": "1.5 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "धारा के साथ चाल = 8 + 3 = 11 किमी/घंटा",
+    "समय = 33/11 = 3 घंटे"
+   ],
+   "finalAnswer": "3 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q020",
+   "testNumber": 8,
+   "questionNumber": 20,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 21 किमी/घंटा और धारा के विपरीत (upstream) चाल 11 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 21 km/h and upstream speed is 11 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "C": "16 किमी/घंटा",
+    "A": "5 किमी/घंटा",
+    "D": "11 किमी/घंटा",
+    "B": "8 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (21 + 11)/2 = 32/2 = 16 किमी/घंटा"
+   ],
+   "finalAnswer": "16 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q015",
+   "testNumber": 9,
+   "questionNumber": 15,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ चाल 16 किमी/घंटा तथा धारा के विपरीत चाल 8 किमी/घंटा है। धारा की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 16 km/h and upstream speed is 8 km/h. Find the speed of the stream.",
+   "options": {
+    "C": "4 किमी/घंटा",
+    "A": "8 किमी/घंटा",
+    "D": "16 किमी/घंटा",
+    "B": "12 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा की चाल = (downstream − upstream)/2",
+    "= (16 − 8)/2 = 8/2 = 4 किमी/घंटा"
+   ],
+   "finalAnswer": "4 किमी/घंटा",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q060",
+   "testNumber": 9,
+   "questionNumber": 60,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 12 किमी/घंटा तथा धारा की चाल 3 किमी/घंटा है। 36 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 12 km/h and the stream speed is 3 km/h. How long will it take to travel 36 km upstream?",
+   "options": {
+    "B": "4 घंटे",
+    "D": "5 घंटे",
+    "C": "3 घंटे",
+    "A": "2.4 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "धारा के विपरीत चाल = 12 − 3 = 9 किमी/घंटा",
+    "समय = 36/9 = 4 घंटे"
+   ],
+   "finalAnswer": "4 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q012",
+   "testNumber": 10,
+   "questionNumber": 12,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 6 किमी/घंटा से चलती है। धारा की चाल 3 किमी/घंटा है। नाव 18 किमी धारा के साथ जाकर उतनी ही दूरी धारा के विपरीत लौटती है। कुल यात्रा में नाव की औसत चाल ज्ञात कीजिए।",
+   "questionEn": "A boat travels 6 km/h in still water; the stream flows at 3 km/h. It goes 18 km downstream and returns the same distance. Find the average speed for the whole trip.",
+   "options": {
+    "A": "4.5 किमी/घंटा",
+    "C": "3 किमी/घंटा",
+    "B": "6 किमी/घंटा",
+    "D": "9 किमी/घंटा"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के साथ चाल = 9 किमी/घंटा, समय = 18/9 = 2 घंटे",
+    "धारा के विपरीत चाल = 3 किमी/घंटा, समय = 18/3 = 6 घंटे",
+    "कुल दूरी = 36 किमी, कुल समय = 2 + 6 = 8 घंटे",
+    "औसत चाल = 36/8 = 4.5 किमी/घंटा"
+   ],
+   "finalAnswer": "4.5 किमी/घंटा",
+   "shortcut": "औसत चाल = 2DU/(D²... ) — कुल दूरी ÷ कुल समय से ज्ञात करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q017",
+   "testNumber": 10,
+   "questionNumber": 17,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 10 किमी/घंटा तथा धारा की चाल 3 किमी/घंटा है। 28 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 10 km/h and the stream speed is 3 km/h. How long will it take to travel 28 km upstream?",
+   "options": {
+    "A": "4 घंटे",
+    "D": "5 घंटे",
+    "B": "2.1 घंटे",
+    "C": "2 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के विपरीत चाल = 10 − 3 = 7 किमी/घंटा",
+    "समय = 28/7 = 4 घंटे"
+   ],
+   "finalAnswer": "4 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q001",
+   "testNumber": 11,
+   "questionNumber": 1,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 23 किमी/घंटा और धारा के विपरीत (upstream) चाल 13 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 23 km/h and upstream speed is 13 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "D": "18 किमी/घंटा",
+    "B": "9 किमी/घंटा",
+    "C": "5 किमी/घंटा",
+    "A": "23 किमी/घंटा"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (23 + 13)/2 = 36/2 = 18 किमी/घंटा"
+   ],
+   "finalAnswer": "18 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q045",
+   "testNumber": 11,
+   "questionNumber": 45,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 12 किमी/घंटा से चलती है और धारा की चाल 3 किमी/घंटा है। 45 किमी धारा के साथ जाने में नाव को कितना समय लगेगा?",
+   "questionEn": "A boat travels at 12 km/h in still water and the stream flows at 3 km/h. How long will it take to go 45 km downstream?",
+   "options": {
+    "B": "3 घंटे",
+    "D": "1.5 घंटे",
+    "C": "4 घंटे",
+    "A": "3.8 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "धारा के साथ चाल = 12 + 3 = 15 किमी/घंटा",
+    "समय = 45/15 = 3 घंटे"
+   ],
+   "finalAnswer": "3 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q008",
+   "testNumber": 12,
+   "questionNumber": 8,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 19 किमी/घंटा और धारा के विपरीत (upstream) चाल 13 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 19 km/h and upstream speed is 13 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "C": "16 किमी/घंटा",
+    "A": "8 किमी/घंटा",
+    "B": "13 किमी/घंटा",
+    "D": "3 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (19 + 13)/2 = 32/2 = 16 किमी/घंटा"
+   ],
+   "finalAnswer": "16 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q037",
+   "testNumber": 12,
+   "questionNumber": 37,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 8 किमी/घंटा तथा धारा की चाल 2 किमी/घंटा है। 24 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 8 km/h and the stream speed is 2 km/h. How long will it take to travel 24 km upstream?",
+   "options": {
+    "C": "4 घंटे",
+    "B": "2.4 घंटे",
+    "A": "3 घंटे",
+    "D": "5 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा के विपरीत चाल = 8 − 2 = 6 किमी/घंटा",
+    "समय = 24/6 = 4 घंटे"
+   ],
+   "finalAnswer": "4 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q013",
+   "testNumber": 13,
+   "questionNumber": 13,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 15 किमी/घंटा तथा धारा की चाल 5 किमी/घंटा है। 30 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 15 km/h and the stream speed is 5 km/h. How long will it take to travel 30 km upstream?",
+   "options": {
+    "A": "3 घंटे",
+    "B": "2 घंटे",
+    "D": "1.5 घंटे",
+    "C": "4 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के विपरीत चाल = 15 − 5 = 10 किमी/घंटा",
+    "समय = 30/10 = 3 घंटे"
+   ],
+   "finalAnswer": "3 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q022",
+   "testNumber": 13,
+   "questionNumber": 22,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 23 किमी/घंटा और धारा के विपरीत (upstream) चाल 17 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 23 km/h and upstream speed is 17 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "A": "20 किमी/घंटा",
+    "D": "3 किमी/घंटा",
+    "B": "17 किमी/घंटा",
+    "C": "23 किमी/घंटा"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (23 + 17)/2 = 40/2 = 20 किमी/घंटा"
+   ],
+   "finalAnswer": "20 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q014",
+   "testNumber": 14,
+   "questionNumber": 14,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 10 किमी/घंटा तथा धारा की चाल 3 किमी/घंटा है। 21 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 10 km/h and the stream speed is 3 km/h. How long will it take to travel 21 km upstream?",
+   "options": {
+    "C": "3 घंटे",
+    "A": "4 घंटे",
+    "D": "1.5 घंटे",
+    "B": "2.1 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा के विपरीत चाल = 10 − 3 = 7 किमी/घंटा",
+    "समय = 21/7 = 3 घंटे"
+   ],
+   "finalAnswer": "3 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q058",
+   "testNumber": 14,
+   "questionNumber": 58,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 12 किमी/घंटा से चलती है। धारा की चाल 3 किमी/घंटा है। नाव 90 किमी धारा के साथ जाकर उतनी ही दूरी धारा के विपरीत लौटती है। कुल यात्रा में नाव की औसत चाल ज्ञात कीजिए।",
+   "questionEn": "A boat travels 12 km/h in still water; the stream flows at 3 km/h. It goes 90 km downstream and returns the same distance. Find the average speed for the whole trip.",
+   "options": {
+    "A": "11.25 किमी/घंटा",
+    "B": "12 किमी/घंटा",
+    "D": "15 किमी/घंटा",
+    "C": "9 किमी/घंटा"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के साथ चाल = 15 किमी/घंटा, समय = 90/15 = 6 घंटे",
+    "धारा के विपरीत चाल = 9 किमी/घंटा, समय = 90/9 = 10 घंटे",
+    "कुल दूरी = 180 किमी, कुल समय = 6 + 10 = 16 घंटे",
+    "औसत चाल = 180/16 = 11.25 किमी/घंटा"
+   ],
+   "finalAnswer": "11.25 किमी/घंटा",
+   "shortcut": "औसत चाल = 2DU/(D²... ) — कुल दूरी ÷ कुल समय से ज्ञात करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q027",
+   "testNumber": 15,
+   "questionNumber": 27,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ चाल 20 किमी/घंटा तथा धारा के विपरीत चाल 16 किमी/घंटा है। धारा की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 20 km/h and upstream speed is 16 km/h. Find the speed of the stream.",
+   "options": {
+    "C": "2 किमी/घंटा",
+    "A": "18 किमी/घंटा",
+    "B": "20 किमी/घंटा",
+    "D": "16 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा की चाल = (downstream − upstream)/2",
+    "= (20 − 16)/2 = 4/2 = 2 किमी/घंटा"
+   ],
+   "finalAnswer": "2 किमी/घंटा",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q046",
+   "testNumber": 15,
+   "questionNumber": 46,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 12 किमी/घंटा और धारा के विपरीत (upstream) चाल 8 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 12 km/h and upstream speed is 8 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "B": "10 किमी/घंटा",
+    "C": "12 किमी/घंटा",
+    "A": "8 किमी/घंटा",
+    "D": "5 किमी/घंटा"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (12 + 8)/2 = 20/2 = 10 किमी/घंटा"
+   ],
+   "finalAnswer": "10 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q028",
+   "testNumber": 16,
+   "questionNumber": 28,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 14 किमी/घंटा और धारा के विपरीत (upstream) चाल 6 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 14 km/h and upstream speed is 6 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "D": "10 किमी/घंटा",
+    "B": "14 किमी/घंटा",
+    "A": "6 किमी/घंटा",
+    "C": "5 किमी/घंटा"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (14 + 6)/2 = 20/2 = 10 किमी/घंटा"
+   ],
+   "finalAnswer": "10 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q042",
+   "testNumber": 16,
+   "questionNumber": 42,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ चाल 25 किमी/घंटा तथा धारा के विपरीत चाल 15 किमी/घंटा है। धारा की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 25 km/h and upstream speed is 15 km/h. Find the speed of the stream.",
+   "options": {
+    "A": "5 किमी/घंटा",
+    "C": "20 किमी/घंटा",
+    "B": "15 किमी/घंटा",
+    "D": "25 किमी/घंटा"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा की चाल = (downstream − upstream)/2",
+    "= (25 − 15)/2 = 10/2 = 5 किमी/घंटा"
+   ],
+   "finalAnswer": "5 किमी/घंटा",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q002",
+   "testNumber": 17,
+   "questionNumber": 2,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 8 किमी/घंटा तथा धारा की चाल 3 किमी/घंटा है। 10 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 8 km/h and the stream speed is 3 km/h. How long will it take to travel 10 km upstream?",
+   "options": {
+    "C": "2 घंटे",
+    "D": "1.3 घंटे",
+    "B": "3 घंटे",
+    "A": "0.9 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा के विपरीत चाल = 8 − 3 = 5 किमी/घंटा",
+    "समय = 10/5 = 2 घंटे"
+   ],
+   "finalAnswer": "2 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q013",
+   "testNumber": 17,
+   "questionNumber": 13,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 12 किमी/घंटा से चलती है और धारा की चाल 3 किमी/घंटा है। 30 किमी धारा के साथ जाने में नाव को कितना समय लगेगा?",
+   "questionEn": "A boat travels at 12 km/h in still water and the stream flows at 3 km/h. How long will it take to go 30 km downstream?",
+   "options": {
+    "C": "2 घंटे",
+    "D": "3.3 घंटे",
+    "B": "1 घंटे",
+    "A": "2.5 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा के साथ चाल = 12 + 3 = 15 किमी/घंटा",
+    "समय = 30/15 = 2 घंटे"
+   ],
+   "finalAnswer": "2 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q007",
+   "testNumber": 18,
+   "questionNumber": 7,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 10 किमी/घंटा से चलती है और धारा की चाल 4 किमी/घंटा है। 56 किमी धारा के साथ जाने में नाव को कितना समय लगेगा?",
+   "questionEn": "A boat travels at 10 km/h in still water and the stream flows at 4 km/h. How long will it take to go 56 km downstream?",
+   "options": {
+    "A": "4 घंटे",
+    "B": "5 घंटे",
+    "C": "2 घंटे",
+    "D": "5.6 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के साथ चाल = 10 + 4 = 14 किमी/घंटा",
+    "समय = 56/14 = 4 घंटे"
+   ],
+   "finalAnswer": "4 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q014",
+   "testNumber": 18,
+   "questionNumber": 14,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 6 किमी/घंटा से चलती है। धारा की चाल 3 किमी/घंटा है। नाव 9 किमी धारा के साथ जाकर उतनी ही दूरी धारा के विपरीत लौटती है। कुल यात्रा में नाव की औसत चाल ज्ञात कीजिए।",
+   "questionEn": "A boat travels 6 km/h in still water; the stream flows at 3 km/h. It goes 9 km downstream and returns the same distance. Find the average speed for the whole trip.",
+   "options": {
+    "B": "4.5 किमी/घंटा",
+    "D": "9 किमी/घंटा",
+    "C": "6 किमी/घंटा",
+    "A": "3 किमी/घंटा"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "धारा के साथ चाल = 9 किमी/घंटा, समय = 9/9 = 1 घंटे",
+    "धारा के विपरीत चाल = 3 किमी/घंटा, समय = 9/3 = 3 घंटे",
+    "कुल दूरी = 18 किमी, कुल समय = 1 + 3 = 4 घंटे",
+    "औसत चाल = 18/4 = 4.5 किमी/घंटा"
+   ],
+   "finalAnswer": "4.5 किमी/घंटा",
+   "shortcut": "औसत चाल = 2DU/(D²... ) — कुल दूरी ÷ कुल समय से ज्ञात करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q010",
+   "testNumber": 19,
+   "questionNumber": 10,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ (downstream) चाल 20 किमी/घंटा और धारा के विपरीत (upstream) चाल 16 किमी/घंटा है। स्थिर जल में नाव की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 20 km/h and upstream speed is 16 km/h. Find the speed of the boat in still water.",
+   "options": {
+    "C": "18 किमी/घंटा",
+    "B": "2 किमी/घंटा",
+    "D": "9 किमी/घंटा",
+    "A": "20 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "स्थिर जल की चाल = (downstream + upstream)/2",
+    "= (20 + 16)/2 = 36/2 = 18 किमी/घंटा"
+   ],
+   "finalAnswer": "18 किमी/घंटा",
+   "shortcut": "नाव = (D + U)/2, धारा = (D − U)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q012",
+   "testNumber": 19,
+   "questionNumber": 12,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "स्थिर जल में नाव की चाल 8 किमी/घंटा तथा धारा की चाल 2 किमी/घंटा है। 18 किमी धारा के विपरीत जाने में कितना समय लगेगा?",
+   "questionEn": "The speed of a boat in still water is 8 km/h and the stream speed is 2 km/h. How long will it take to travel 18 km upstream?",
+   "options": {
+    "A": "3 घंटे",
+    "D": "1.8 घंटे",
+    "C": "2.3 घंटे",
+    "B": "4 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "धारा के विपरीत चाल = 8 − 2 = 6 किमी/घंटा",
+    "समय = 18/6 = 3 घंटे"
+   ],
+   "finalAnswer": "3 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q013",
+   "testNumber": 20,
+   "questionNumber": 13,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक नाव की धारा के साथ चाल 21 किमी/घंटा तथा धारा के विपरीत चाल 11 किमी/घंटा है। धारा की चाल ज्ञात कीजिए।",
+   "questionEn": "A boat's downstream speed is 21 km/h and upstream speed is 11 km/h. Find the speed of the stream.",
+   "options": {
+    "C": "5 किमी/घंटा",
+    "D": "21 किमी/घंटा",
+    "A": "11 किमी/घंटा",
+    "B": "16 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा की चाल = (downstream − upstream)/2",
+    "= (21 − 11)/2 = 10/2 = 5 किमी/घंटा"
+   ],
+   "finalAnswer": "5 किमी/घंटा",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q031",
+   "testNumber": 20,
+   "questionNumber": 31,
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक नाव स्थिर जल में 12 किमी/घंटा से चलती है और धारा की चाल 4 किमी/घंटा है। 48 किमी धारा के साथ जाने में नाव को कितना समय लगेगा?",
+   "questionEn": "A boat travels at 12 km/h in still water and the stream flows at 4 km/h. How long will it take to go 48 km downstream?",
+   "options": {
+    "C": "3 घंटे",
+    "D": "1.5 घंटे",
+    "A": "4 घंटे",
+    "B": "6 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "धारा के साथ चाल = 12 + 4 = 16 किमी/घंटा",
+    "समय = 48/16 = 3 घंटे"
+   ],
+   "finalAnswer": "3 घंटे",
+   "shortcut": "",
+   "marks": 1
+  }
+ ]
+}

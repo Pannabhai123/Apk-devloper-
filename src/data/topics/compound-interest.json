@@ -1,0 +1,1048 @@
+{
+ "topic": "Compound Interest",
+ "topicHi": "चक्रवृद्धि ब्याज",
+ "slug": "compound-interest",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q019",
+   "testNumber": 1,
+   "questionNumber": 19,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹50,000 की राशि 20% वार्षिक चक्रवृद्धि दर से 3 वर्ष में कितनी हो जाएगी?",
+   "questionEn": "What will ₹50000 amount to in 3 years at 20% per annum compound interest?",
+   "options": {
+    "D": "₹86,400",
+    "A": "₹43,200",
+    "B": "₹72,000",
+    "C": "₹80,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A = P(1 + R/100)³",
+    "A = 50000 × (1.2)³ = 50000 × 1.728",
+    "A = 86,400"
+   ],
+   "finalAnswer": "₹86,400",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q029",
+   "testNumber": 1,
+   "questionNumber": 29,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹25,000 की राशि पर 8% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹25000 at 8% per annum for 2 years.",
+   "options": {
+    "A": "₹4,160",
+    "B": "₹2,080",
+    "C": "₹8,320",
+    "D": "₹2,000"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 25000(1 + 0.08)² = 25000 × 1.1664 = 29,160",
+    "CI = A − P = 29,160 − 25,000 = 4,160"
+   ],
+   "finalAnswer": "₹4,160",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q011",
+   "testNumber": 2,
+   "questionNumber": 11,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹50,000 की राशि पर 10% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹50000 at 10% per annum for 2 years.",
+   "options": {
+    "B": "₹10,500",
+    "A": "₹10,000",
+    "D": "₹5,250",
+    "C": "₹5,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 50000(1 + 0.1)² = 50000 × 1.21 = 60,500",
+    "CI = A − P = 60,500 − 50,000 = 10,500"
+   ],
+   "finalAnswer": "₹10,500",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q049",
+   "testNumber": 2,
+   "questionNumber": 49,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹16,000 की राशि 10% वार्षिक चक्रवृद्धि दर से 3 वर्ष में कितनी हो जाएगी?",
+   "questionEn": "What will ₹16000 amount to in 3 years at 10% per annum compound interest?",
+   "options": {
+    "A": "₹21,296",
+    "B": "₹5,296",
+    "D": "₹20,800",
+    "C": "₹10,648"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A = P(1 + R/100)³",
+    "A = 16000 × (1.1)³ = 16000 × 1.331",
+    "A = 21,296"
+   ],
+   "finalAnswer": "₹21,296",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q021",
+   "testNumber": 3,
+   "questionNumber": 21,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹8,000 की राशि 20% वार्षिक चक्रवृद्धि दर से 3 वर्ष में कितनी हो जाएगी?",
+   "questionEn": "What will ₹8000 amount to in 3 years at 20% per annum compound interest?",
+   "options": {
+    "C": "₹13,824",
+    "B": "₹11,520",
+    "A": "₹12,800",
+    "D": "₹5,824"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "A = P(1 + R/100)³",
+    "A = 8000 × (1.2)³ = 8000 × 1.728",
+    "A = 13,824"
+   ],
+   "finalAnswer": "₹13,824",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q024",
+   "testNumber": 3,
+   "questionNumber": 24,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹8,000 की राशि पर 20% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹8000 at 20% per annum for 2 years.",
+   "options": {
+    "A": "₹3,520",
+    "C": "₹1,760",
+    "D": "₹3,200",
+    "B": "₹1,600"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 8000(1 + 0.2)² = 8000 × 1.44 = 11,520",
+    "CI = A − P = 11,520 − 8,000 = 3,520"
+   ],
+   "finalAnswer": "₹3,520",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q022",
+   "testNumber": 4,
+   "questionNumber": 22,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक मशीन का मूल्य ₹1,25,000 है, जो प्रति वर्ष 4% की दर से मूल्यह्रास (depreciation) करती है। 2 वर्ष बाद उसका मूल्य ज्ञात कीजिए।",
+   "questionEn": "A machine worth ₹125000 depreciates at 4% per annum. Find its value after 2 years.",
+   "options": {
+    "C": "₹1,15,200",
+    "A": "₹1,15,000",
+    "B": "₹1,20,000",
+    "D": "₹57,600"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मूल्यह्रास पर: V = P(1 − R/100)^T",
+    "V = 125000(1 − 0.04)^2 = 125000 × 0.9216",
+    "V = 1,15,200"
+   ],
+   "finalAnswer": "₹1,15,200",
+   "shortcut": "मूल्यह्रास: V = P(1 − r/100)^t",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q060",
+   "testNumber": 4,
+   "questionNumber": 60,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹32,000 की राशि पर 10% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹32000 at 10% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "C": "₹35,280",
+    "A": "₹35,200",
+    "D": "₹17,640",
+    "B": "₹3,280"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 10/2 = 5% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 5/100)² = 32000 × 1.1025",
+    "A = 35,280"
+   ],
+   "finalAnswer": "₹35,280",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q003",
+   "testNumber": 5,
+   "questionNumber": 3,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹16,000 की राशि पर 10% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹16000 at 10% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "C": "₹17,640",
+    "D": "₹17,600",
+    "B": "₹1,640",
+    "A": "₹8,820"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 10/2 = 5% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 5/100)² = 16000 × 1.1025",
+    "A = 17,640"
+   ],
+   "finalAnswer": "₹17,640",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q059",
+   "testNumber": 5,
+   "questionNumber": 59,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹1,00,000 की राशि पर 2 वर्ष के लिए 25% वार्षिक दर से चक्रवृद्धि ब्याज और साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between compound interest and simple interest on ₹100000 for 2 years at 25% per annum.",
+   "options": {
+    "D": "₹6,250",
+    "C": "₹3,125",
+    "A": "₹50,000",
+    "B": "₹6,300"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SI(2 वर्ष) = P × 2R/100 = 50,000",
+    "CI(2 वर्ष) = P[(1 + R/100)² − 1] = 56,250",
+    "अंतर = P(R/100)² = 100000 × (25/100)² = 6,250"
+   ],
+   "finalAnswer": "₹6,250",
+   "shortcut": "2 वर्ष का अंतर = P(R/100)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q032",
+   "testNumber": 6,
+   "questionNumber": 32,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹40,000 की राशि पर 8% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹40000 at 8% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "D": "₹43,264",
+    "C": "₹21,632",
+    "B": "₹43,200",
+    "A": "₹3,264"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 8/2 = 4% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 4/100)² = 40000 × 1.0816",
+    "A = 43,264"
+   ],
+   "finalAnswer": "₹43,264",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q050",
+   "testNumber": 6,
+   "questionNumber": 50,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹10,000 की राशि पर 2 वर्ष के लिए 25% वार्षिक दर से चक्रवृद्धि ब्याज और साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between compound interest and simple interest on ₹10000 for 2 years at 25% per annum.",
+   "options": {
+    "A": "₹625",
+    "C": "₹5,000",
+    "B": "₹313",
+    "D": "₹1,250"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "SI(2 वर्ष) = P × 2R/100 = 5,000",
+    "CI(2 वर्ष) = P[(1 + R/100)² − 1] = 5,625",
+    "अंतर = P(R/100)² = 10000 × (25/100)² = 625"
+   ],
+   "finalAnswer": "₹625",
+   "shortcut": "2 वर्ष का अंतर = P(R/100)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q028",
+   "testNumber": 7,
+   "questionNumber": 28,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹12,500 की राशि पर 4% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹12500 at 4% per annum for 2 years.",
+   "options": {
+    "A": "₹1,020",
+    "B": "₹500",
+    "C": "₹1,000",
+    "D": "₹2,040"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 12500(1 + 0.04)² = 12500 × 1.0816 = 13,520",
+    "CI = A − P = 13,520 − 12,500 = 1,020"
+   ],
+   "finalAnswer": "₹1,020",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q041",
+   "testNumber": 7,
+   "questionNumber": 41,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹20,000 की राशि पर 10% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹20000 at 10% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "B": "₹22,050",
+    "D": "₹22,000",
+    "C": "₹11,025",
+    "A": "₹2,050"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 10/2 = 5% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 5/100)² = 20000 × 1.1025",
+    "A = 22,050"
+   ],
+   "finalAnswer": "₹22,050",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q037",
+   "testNumber": 8,
+   "questionNumber": 37,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹4,000 की राशि पर 2 वर्ष के लिए 25% वार्षिक दर से चक्रवृद्धि ब्याज और साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between compound interest and simple interest on ₹4000 for 2 years at 25% per annum.",
+   "options": {
+    "C": "₹250",
+    "A": "₹2,000",
+    "B": "₹300",
+    "D": "₹500"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SI(2 वर्ष) = P × 2R/100 = 2,000",
+    "CI(2 वर्ष) = P[(1 + R/100)² − 1] = 2,250",
+    "अंतर = P(R/100)² = 4000 × (25/100)² = 250"
+   ],
+   "finalAnswer": "₹250",
+   "shortcut": "2 वर्ष का अंतर = P(R/100)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q054",
+   "testNumber": 8,
+   "questionNumber": 54,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹20,000 की राशि पर 20% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹20000 at 20% per annum for 2 years.",
+   "options": {
+    "D": "₹8,800",
+    "C": "₹4,400",
+    "A": "₹8,000",
+    "B": "₹4,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 20000(1 + 0.2)² = 20000 × 1.44 = 28,800",
+    "CI = A − P = 28,800 − 20,000 = 8,800"
+   ],
+   "finalAnswer": "₹8,800",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q032",
+   "testNumber": 9,
+   "questionNumber": 32,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹40,000 की राशि 20% वार्षिक चक्रवृद्धि दर से 3 वर्ष में कितनी हो जाएगी?",
+   "questionEn": "What will ₹40000 amount to in 3 years at 20% per annum compound interest?",
+   "options": {
+    "D": "₹69,120",
+    "B": "₹64,000",
+    "C": "₹34,560",
+    "A": "₹57,600"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A = P(1 + R/100)³",
+    "A = 40000 × (1.2)³ = 40000 × 1.728",
+    "A = 69,120"
+   ],
+   "finalAnswer": "₹69,120",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q055",
+   "testNumber": 9,
+   "questionNumber": 55,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹40,000 की राशि पर 8% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹40000 at 8% per annum for 2 years.",
+   "options": {
+    "D": "₹6,656",
+    "A": "₹6,400",
+    "C": "₹13,312",
+    "B": "₹3,328"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 40000(1 + 0.08)² = 40000 × 1.1664 = 46,656",
+    "CI = A − P = 46,656 − 40,000 = 6,656"
+   ],
+   "finalAnswer": "₹6,656",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q009",
+   "testNumber": 10,
+   "questionNumber": 9,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹32,000 की राशि पर 20% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹32000 at 20% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "D": "₹38,720",
+    "B": "₹38,400",
+    "A": "₹6,720",
+    "C": "₹19,360"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 20/2 = 10% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 10/100)² = 32000 × 1.21",
+    "A = 38,720"
+   ],
+   "finalAnswer": "₹38,720",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q022",
+   "testNumber": 10,
+   "questionNumber": 22,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹12,500 की राशि पर 8% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹12500 at 8% per annum for 2 years.",
+   "options": {
+    "B": "₹2,080",
+    "D": "₹1,000",
+    "C": "₹1,040",
+    "A": "₹2,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 12500(1 + 0.08)² = 12500 × 1.1664 = 14,580",
+    "CI = A − P = 14,580 − 12,500 = 2,080"
+   ],
+   "finalAnswer": "₹2,080",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q033",
+   "testNumber": 11,
+   "questionNumber": 33,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹10,000 की राशि पर 12% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹10000 at 12% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "A": "₹11,236",
+    "D": "₹11,200",
+    "B": "₹1,236",
+    "C": "₹5,618"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 12/2 = 6% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 6/100)² = 10000 × 1.1236",
+    "A = 11,236"
+   ],
+   "finalAnswer": "₹11,236",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q044",
+   "testNumber": 11,
+   "questionNumber": 44,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹32,000 की राशि पर 12.5% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹32000 at 12.5% per annum for 2 years.",
+   "options": {
+    "D": "₹8,500",
+    "A": "₹4,250",
+    "B": "₹4,000",
+    "C": "₹17,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 32000(1 + 0.125)² = 32000 × 1.2656 = 40,500",
+    "CI = A − P = 40,500 − 32,000 = 8,500"
+   ],
+   "finalAnswer": "₹8,500",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q051",
+   "testNumber": 12,
+   "questionNumber": 51,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक मशीन का मूल्य ₹50,000 है, जो प्रति वर्ष 10% की दर से मूल्यह्रास (depreciation) करती है। 2 वर्ष बाद उसका मूल्य ज्ञात कीजिए।",
+   "questionEn": "A machine worth ₹50000 depreciates at 10% per annum. Find its value after 2 years.",
+   "options": {
+    "B": "₹40,500",
+    "D": "₹20,250",
+    "C": "₹50,000",
+    "A": "₹40,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मूल्यह्रास पर: V = P(1 − R/100)^T",
+    "V = 50000(1 − 0.1)^2 = 50000 × 0.81",
+    "V = 40,500"
+   ],
+   "finalAnswer": "₹40,500",
+   "shortcut": "मूल्यह्रास: V = P(1 − r/100)^t",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q055",
+   "testNumber": 12,
+   "questionNumber": 55,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹5,000 की राशि पर 8% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹5000 at 8% per annum for 2 years.",
+   "options": {
+    "A": "₹832",
+    "C": "₹1,664",
+    "D": "₹400",
+    "B": "₹416"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 5000(1 + 0.08)² = 5000 × 1.1664 = 5,832",
+    "CI = A − P = 5,832 − 5,000 = 832"
+   ],
+   "finalAnswer": "₹832",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q006",
+   "testNumber": 13,
+   "questionNumber": 6,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹8,000 की राशि पर 2 वर्ष के लिए 25% वार्षिक दर से चक्रवृद्धि ब्याज और साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between compound interest and simple interest on ₹8000 for 2 years at 25% per annum.",
+   "options": {
+    "C": "₹500",
+    "A": "₹250",
+    "B": "₹550",
+    "D": "₹4,000"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SI(2 वर्ष) = P × 2R/100 = 4,000",
+    "CI(2 वर्ष) = P[(1 + R/100)² − 1] = 4,500",
+    "अंतर = P(R/100)² = 8000 × (25/100)² = 500"
+   ],
+   "finalAnswer": "₹500",
+   "shortcut": "2 वर्ष का अंतर = P(R/100)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q016",
+   "testNumber": 13,
+   "questionNumber": 16,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹40,000 की राशि पर 10% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹40000 at 10% per annum for 2 years.",
+   "options": {
+    "B": "₹8,400",
+    "C": "₹8,000",
+    "D": "₹16,800",
+    "A": "₹4,200"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 40000(1 + 0.1)² = 40000 × 1.21 = 48,400",
+    "CI = A − P = 48,400 − 40,000 = 8,400"
+   ],
+   "finalAnswer": "₹8,400",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q043",
+   "testNumber": 14,
+   "questionNumber": 43,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹50,000 की राशि पर 16% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹50000 at 16% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "A": "₹58,320",
+    "B": "₹58,000",
+    "D": "₹29,160",
+    "C": "₹8,320"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 16/2 = 8% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 8/100)² = 50000 × 1.1664",
+    "A = 58,320"
+   ],
+   "finalAnswer": "₹58,320",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q049",
+   "testNumber": 14,
+   "questionNumber": 49,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹64,000 की राशि 20% वार्षिक चक्रवृद्धि दर से 3 वर्ष में कितनी हो जाएगी?",
+   "questionEn": "What will ₹64000 amount to in 3 years at 20% per annum compound interest?",
+   "options": {
+    "D": "₹1,10,592",
+    "C": "₹55,296",
+    "A": "₹46,592",
+    "B": "₹92,160"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A = P(1 + R/100)³",
+    "A = 64000 × (1.2)³ = 64000 × 1.728",
+    "A = 1,10,592"
+   ],
+   "finalAnswer": "₹1,10,592",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q013",
+   "testNumber": 15,
+   "questionNumber": 13,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक मशीन का मूल्य ₹40,000 है, जो प्रति वर्ष 4% की दर से मूल्यह्रास (depreciation) करती है। 2 वर्ष बाद उसका मूल्य ज्ञात कीजिए।",
+   "questionEn": "A machine worth ₹40000 depreciates at 4% per annum. Find its value after 2 years.",
+   "options": {
+    "D": "₹36,864",
+    "C": "₹36,800",
+    "B": "₹38,400",
+    "A": "₹40,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मूल्यह्रास पर: V = P(1 − R/100)^T",
+    "V = 40000(1 − 0.04)^2 = 40000 × 0.9216",
+    "V = 36,864"
+   ],
+   "finalAnswer": "₹36,864",
+   "shortcut": "मूल्यह्रास: V = P(1 − r/100)^t",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q056",
+   "testNumber": 15,
+   "questionNumber": 56,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹8,000 की राशि 5% वार्षिक चक्रवृद्धि दर से 3 वर्ष में कितनी हो जाएगी?",
+   "questionEn": "What will ₹8000 amount to in 3 years at 5% per annum compound interest?",
+   "options": {
+    "A": "₹9,261",
+    "C": "₹9,200",
+    "D": "₹8,820",
+    "B": "₹1,261"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A = P(1 + R/100)³",
+    "A = 8000 × (1.05)³ = 8000 × 1.1576",
+    "A = 9,261"
+   ],
+   "finalAnswer": "₹9,261",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q018",
+   "testNumber": 16,
+   "questionNumber": 18,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹25,000 की राशि पर 20% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹25000 at 20% per annum for 2 years.",
+   "options": {
+    "C": "₹11,000",
+    "A": "₹5,000",
+    "D": "₹22,000",
+    "B": "₹5,500"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 25000(1 + 0.2)² = 25000 × 1.44 = 36,000",
+    "CI = A − P = 36,000 − 25,000 = 11,000"
+   ],
+   "finalAnswer": "₹11,000",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q024",
+   "testNumber": 16,
+   "questionNumber": 24,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹50,000 की राशि पर 2 वर्ष के लिए 25% वार्षिक दर से चक्रवृद्धि ब्याज और साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between compound interest and simple interest on ₹50000 for 2 years at 25% per annum.",
+   "options": {
+    "A": "₹3,125",
+    "D": "₹3,175",
+    "C": "₹6,250",
+    "B": "₹25,000"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "SI(2 वर्ष) = P × 2R/100 = 25,000",
+    "CI(2 वर्ष) = P[(1 + R/100)² − 1] = 28,125",
+    "अंतर = P(R/100)² = 50000 × (25/100)² = 3,125"
+   ],
+   "finalAnswer": "₹3,125",
+   "shortcut": "2 वर्ष का अंतर = P(R/100)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q008",
+   "testNumber": 17,
+   "questionNumber": 8,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹40,000 की राशि पर 16% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹40000 at 16% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "D": "₹46,656",
+    "A": "₹46,400",
+    "C": "₹23,328",
+    "B": "₹6,656"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 16/2 = 8% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 8/100)² = 40000 × 1.1664",
+    "A = 46,656"
+   ],
+   "finalAnswer": "₹46,656",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q031",
+   "testNumber": 17,
+   "questionNumber": 31,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक मशीन का मूल्य ₹2,00,000 है, जो प्रति वर्ष 20% की दर से मूल्यह्रास (depreciation) करती है। 2 वर्ष बाद उसका मूल्य ज्ञात कीजिए।",
+   "questionEn": "A machine worth ₹200000 depreciates at 20% per annum. Find its value after 2 years.",
+   "options": {
+    "A": "₹1,28,000",
+    "D": "₹1,20,000",
+    "B": "₹2,00,000",
+    "C": "₹1,60,000"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मूल्यह्रास पर: V = P(1 − R/100)^T",
+    "V = 200000(1 − 0.2)^2 = 200000 × 0.64",
+    "V = 1,28,000"
+   ],
+   "finalAnswer": "₹1,28,000",
+   "shortcut": "मूल्यह्रास: V = P(1 − r/100)^t",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q005",
+   "testNumber": 18,
+   "questionNumber": 5,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹50,000 की राशि 10% वार्षिक चक्रवृद्धि दर से 3 वर्ष में कितनी हो जाएगी?",
+   "questionEn": "What will ₹50000 amount to in 3 years at 10% per annum compound interest?",
+   "options": {
+    "B": "₹66,550",
+    "A": "₹65,000",
+    "C": "₹60,500",
+    "D": "₹33,275"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A = P(1 + R/100)³",
+    "A = 50000 × (1.1)³ = 50000 × 1.331",
+    "A = 66,550"
+   ],
+   "finalAnswer": "₹66,550",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q037",
+   "testNumber": 18,
+   "questionNumber": 37,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹6,250 की राशि पर 4% वार्षिक दर से 2 वर्ष का चक्रवृद्धि ब्याज (Compound Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the compound interest on ₹6250 at 4% per annum for 2 years.",
+   "options": {
+    "D": "₹510",
+    "A": "₹250",
+    "C": "₹500",
+    "B": "₹1,020"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A = P(1 + R/100)^T",
+    "A = 6250(1 + 0.04)² = 6250 × 1.0816 = 6,760",
+    "CI = A − P = 6,760 − 6,250 = 510"
+   ],
+   "finalAnswer": "₹510",
+   "shortcut": "CI(2 वर्ष) = P[(1+r/100)² − 1]",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q005",
+   "testNumber": 19,
+   "questionNumber": 5,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक मशीन का मूल्य ₹8,000 है, जो प्रति वर्ष 20% की दर से मूल्यह्रास (depreciation) करती है। 3 वर्ष बाद उसका मूल्य ज्ञात कीजिए।",
+   "questionEn": "A machine worth ₹8000 depreciates at 20% per annum. Find its value after 3 years.",
+   "options": {
+    "C": "₹4,096",
+    "D": "₹2,048",
+    "B": "₹8,000",
+    "A": "₹6,400"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मूल्यह्रास पर: V = P(1 − R/100)^T",
+    "V = 8000(1 − 0.2)^3 = 8000 × 0.512",
+    "V = 4,096"
+   ],
+   "finalAnswer": "₹4,096",
+   "shortcut": "मूल्यह्रास: V = P(1 − r/100)^t",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q029",
+   "testNumber": 19,
+   "questionNumber": 29,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹25,000 की राशि पर 16% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹25000 at 16% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "C": "₹29,160",
+    "B": "₹14,580",
+    "D": "₹29,000",
+    "A": "₹4,160"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 16/2 = 8% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 8/100)² = 25000 × 1.1664",
+    "A = 29,160"
+   ],
+   "finalAnswer": "₹29,160",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q042",
+   "testNumber": 20,
+   "questionNumber": 42,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹50,000 की राशि पर 10% वार्षिक दर से, ब्याज अर्ध-वार्षिक संयोजित होने पर 1 वर्ष बाद मिश्रधन (Amount) ज्ञात कीजिए।",
+   "questionEn": "Find the amount on ₹50000 at 10% per annum compounded half-yearly for 1 year.",
+   "options": {
+    "C": "₹55,125",
+    "B": "₹27,563",
+    "A": "₹55,000",
+    "D": "₹5,125"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "अर्ध-वार्षिक संयोजन पर दर = 10/2 = 5% प्रति अर्ध-वर्ष, समय = 2 अर्ध-वर्ष",
+    "A = P(1 + 5/100)² = 50000 × 1.1025",
+    "A = 55,125"
+   ],
+   "finalAnswer": "₹55,125",
+   "shortcut": "अर्ध-वार्षिक: दर आधी, समय दोगुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q057",
+   "testNumber": 20,
+   "questionNumber": 57,
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "₹20,000 की राशि पर 2 वर्ष के लिए 25% वार्षिक दर से चक्रवृद्धि ब्याज और साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between compound interest and simple interest on ₹20000 for 2 years at 25% per annum.",
+   "options": {
+    "A": "₹1,250",
+    "D": "₹625",
+    "B": "₹2,500",
+    "C": "₹10,000"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "SI(2 वर्ष) = P × 2R/100 = 10,000",
+    "CI(2 वर्ष) = P[(1 + R/100)² − 1] = 11,250",
+    "अंतर = P(R/100)² = 20000 × (25/100)² = 1,250"
+   ],
+   "finalAnswer": "₹1,250",
+   "shortcut": "2 वर्ष का अंतर = P(R/100)²",
+   "marks": 1
+  }
+ ]
+}

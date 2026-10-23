@@ -1,0 +1,1042 @@
+{
+ "topic": "Square Roots and Cube Roots",
+ "topicHi": "वर्गमूल एवं घनमूल",
+ "slug": "square-cube-roots",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q011",
+   "testNumber": 1,
+   "questionNumber": 11,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√6.25 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √6.25.",
+   "options": {
+    "C": "2.5",
+    "B": "1.25",
+    "D": "5",
+    "A": "6.25"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "6.25 = 2.5 × 2.5 = 25/10 के बराबर भिन्न",
+    "अतः √6.25 = 2.5"
+   ],
+   "finalAnswer": "2.5",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q055",
+   "testNumber": 1,
+   "questionNumber": 55,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "∛1331 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of ∛1331.",
+   "options": {
+    "C": "11",
+    "D": "22",
+    "B": "12",
+    "A": "13"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "1331 = 11^3",
+    "घनमूल के लिए प्रत्येक घात को 3 से भाग दें",
+    "∛1331 = 11 = 11"
+   ],
+   "finalAnswer": "11",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q035",
+   "testNumber": 2,
+   "questionNumber": 35,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√36 × √25 + 11 का मान ज्ञात कीजिए।",
+   "questionEn": "Find √36 × √25 + 11.",
+   "options": {
+    "C": "41",
+    "A": "36",
+    "B": "30",
+    "D": "35"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "√36 = 6, √25 = 5",
+    "6 × 5 = 30",
+    "30 + 11 = 41"
+   ],
+   "finalAnswer": "41",
+   "shortcut": "√a × √b = √(ab)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q043",
+   "testNumber": 2,
+   "questionNumber": 43,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√12.25 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √12.25.",
+   "options": {
+    "D": "3.5",
+    "B": "1.75",
+    "C": "7",
+    "A": "12.25"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "12.25 = 3.5 × 3.5 = 35/10 के बराबर भिन्न",
+    "अतः √12.25 = 3.5"
+   ],
+   "finalAnswer": "3.5",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q004",
+   "testNumber": 3,
+   "questionNumber": 4,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√3025 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √3025.",
+   "options": {
+    "B": "55",
+    "D": "54",
+    "A": "57",
+    "C": "56"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "3025 को अभाज्य गुणनखंडों में लिखें",
+    "3025 = 5^2 × 11^2",
+    "√3025 = 5 × 11 = 55"
+   ],
+   "finalAnswer": "55",
+   "shortcut": "55² = 3025 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q040",
+   "testNumber": 3,
+   "questionNumber": 40,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√16 × √361 + 23 का मान ज्ञात कीजिए।",
+   "questionEn": "Find √16 × √361 + 23.",
+   "options": {
+    "C": "99",
+    "D": "23",
+    "B": "95",
+    "A": "76"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "√16 = 4, √361 = 19",
+    "4 × 19 = 76",
+    "76 + 23 = 99"
+   ],
+   "finalAnswer": "99",
+   "shortcut": "√a × √b = √(ab)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q017",
+   "testNumber": 4,
+   "questionNumber": 17,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√(625/484) का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(625/484).",
+   "options": {
+    "B": "25/22",
+    "D": "550",
+    "C": "22/25",
+    "A": "625/22"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "√(625/484) = √625 / √484",
+    "√625 = 25, √484 = 22",
+    "अतः मान = 25/22"
+   ],
+   "finalAnswer": "25/22",
+   "shortcut": "√(a/b) = √a/√b",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q037",
+   "testNumber": 4,
+   "questionNumber": 37,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√7921 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √7921.",
+   "options": {
+    "C": "89",
+    "A": "90",
+    "B": "92",
+    "D": "91"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "7921 को अभाज्य गुणनखंडों में लिखें",
+    "7921 = 89^2",
+    "√7921 = 89 = 89"
+   ],
+   "finalAnswer": "89",
+   "shortcut": "89² = 7921 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q048",
+   "testNumber": 5,
+   "questionNumber": 48,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√729 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √729.",
+   "options": {
+    "C": "27",
+    "A": "28",
+    "D": "26",
+    "B": "30"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "729 को अभाज्य गुणनखंडों में लिखें",
+    "729 = 3^6",
+    "√729 = 3^3 = 27"
+   ],
+   "finalAnswer": "27",
+   "shortcut": "27² = 729 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q060",
+   "testNumber": 5,
+   "questionNumber": 60,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√1.96 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √1.96.",
+   "options": {
+    "A": "1.4",
+    "C": "0.7",
+    "B": "2.8",
+    "D": "1.96"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "1.96 = 1.4 × 1.4 = 14/10 के बराबर भिन्न",
+    "अतः √1.96 = 1.4"
+   ],
+   "finalAnswer": "1.4",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q058",
+   "testNumber": 6,
+   "questionNumber": 58,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√5776 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √5776.",
+   "options": {
+    "A": "76",
+    "B": "79",
+    "C": "75",
+    "D": "78"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "5776 को अभाज्य गुणनखंडों में लिखें",
+    "5776 = 2^4 × 19^2",
+    "√5776 = 2^2 × 19 = 76"
+   ],
+   "finalAnswer": "76",
+   "shortcut": "76² = 5776 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q060",
+   "testNumber": 6,
+   "questionNumber": 60,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√(576/121) का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(576/121).",
+   "options": {
+    "B": "24/11",
+    "C": "264",
+    "D": "11/24",
+    "A": "576/11"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "√(576/121) = √576 / √121",
+    "√576 = 24, √121 = 11",
+    "अतः मान = 24/11"
+   ],
+   "finalAnswer": "24/11",
+   "shortcut": "√(a/b) = √a/√b",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q045",
+   "testNumber": 7,
+   "questionNumber": 45,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√0.49 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √0.49.",
+   "options": {
+    "B": "0.7",
+    "D": "0.35",
+    "A": "1.4",
+    "C": "0.49"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "0.49 = 0.7 × 0.7 = 07/10 के बराबर भिन्न",
+    "अतः √0.49 = 0.7"
+   ],
+   "finalAnswer": "0.7",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q060",
+   "testNumber": 7,
+   "questionNumber": 60,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√(784/49) का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(784/49).",
+   "options": {
+    "C": "4",
+    "A": "196",
+    "B": "1/4",
+    "D": "112"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "√(784/49) = √784 / √49",
+    "√784 = 28, √49 = 7",
+    "अतः मान = 4"
+   ],
+   "finalAnswer": "4",
+   "shortcut": "√(a/b) = √a/√b",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q002",
+   "testNumber": 8,
+   "questionNumber": 2,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√3249 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √3249.",
+   "options": {
+    "C": "57",
+    "A": "60",
+    "B": "58",
+    "D": "59"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "3249 को अभाज्य गुणनखंडों में लिखें",
+    "3249 = 3^2 × 19^2",
+    "√3249 = 3 × 19 = 57"
+   ],
+   "finalAnswer": "57",
+   "shortcut": "57² = 3249 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q055",
+   "testNumber": 8,
+   "questionNumber": 55,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "∛1000 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of ∛1000.",
+   "options": {
+    "D": "10",
+    "A": "12",
+    "B": "9",
+    "C": "20"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "1000 = 2^3 × 5^3",
+    "घनमूल के लिए प्रत्येक घात को 3 से भाग दें",
+    "∛1000 = 2 × 5 = 10"
+   ],
+   "finalAnswer": "10",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q031",
+   "testNumber": 9,
+   "questionNumber": 31,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√1444 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √1444.",
+   "options": {
+    "C": "38",
+    "A": "40",
+    "D": "39",
+    "B": "37"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "1444 को अभाज्य गुणनखंडों में लिखें",
+    "1444 = 2^2 × 19^2",
+    "√1444 = 2 × 19 = 38"
+   ],
+   "finalAnswer": "38",
+   "shortcut": "38² = 1444 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q045",
+   "testNumber": 9,
+   "questionNumber": 45,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√(841/289) का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(841/289).",
+   "options": {
+    "A": "29/17",
+    "C": "493",
+    "B": "17/29",
+    "D": "841/17"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "√(841/289) = √841 / √289",
+    "√841 = 29, √289 = 17",
+    "अतः मान = 29/17"
+   ],
+   "finalAnswer": "29/17",
+   "shortcut": "√(a/b) = √a/√b",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q018",
+   "testNumber": 10,
+   "questionNumber": 18,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√(121/676) का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(121/676).",
+   "options": {
+    "B": "11/26",
+    "D": "286",
+    "A": "26/11",
+    "C": "121/26"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "√(121/676) = √121 / √676",
+    "√121 = 11, √676 = 26",
+    "अतः मान = 11/26"
+   ],
+   "finalAnswer": "11/26",
+   "shortcut": "√(a/b) = √a/√b",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q050",
+   "testNumber": 10,
+   "questionNumber": 50,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√225 × √49 + 22 का मान ज्ञात कीजिए।",
+   "questionEn": "Find √225 × √49 + 22.",
+   "options": {
+    "A": "127",
+    "D": "22",
+    "C": "120",
+    "B": "112"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "√225 = 15, √49 = 7",
+    "15 × 7 = 105",
+    "105 + 22 = 127"
+   ],
+   "finalAnswer": "127",
+   "shortcut": "√a × √b = √(ab)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q023",
+   "testNumber": 11,
+   "questionNumber": 23,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "√(36) + 8 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(36) + 8.",
+   "options": {
+    "D": "14",
+    "C": "20",
+    "B": "11",
+    "A": "-2"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "36 = 9 × 4",
+    "√(9 × 4) = 3 × √4 = 3√4 = 6",
+    "6 + 8 = 14"
+   ],
+   "finalAnswer": "14",
+   "shortcut": "√(a²·k) = a√k",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q047",
+   "testNumber": 11,
+   "questionNumber": 47,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√5476 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √5476.",
+   "options": {
+    "A": "74",
+    "D": "75",
+    "B": "76",
+    "C": "73"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "5476 को अभाज्य गुणनखंडों में लिखें",
+    "5476 = 2^2 × 37^2",
+    "√5476 = 2 × 37 = 74"
+   ],
+   "finalAnswer": "74",
+   "shortcut": "74² = 5476 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q015",
+   "testNumber": 12,
+   "questionNumber": 15,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√6400 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √6400.",
+   "options": {
+    "D": "80",
+    "B": "79",
+    "A": "82",
+    "C": "81"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "6400 को अभाज्य गुणनखंडों में लिखें",
+    "6400 = 2^8 × 5^2",
+    "√6400 = 2^4 × 5 = 80"
+   ],
+   "finalAnswer": "80",
+   "shortcut": "80² = 6400 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q060",
+   "testNumber": 12,
+   "questionNumber": 60,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√(676/729) का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(676/729).",
+   "options": {
+    "D": "26/27",
+    "B": "702",
+    "A": "27/26",
+    "C": "676/27"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "√(676/729) = √676 / √729",
+    "√676 = 26, √729 = 27",
+    "अतः मान = 26/27"
+   ],
+   "finalAnswer": "26/27",
+   "shortcut": "√(a/b) = √a/√b",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q010",
+   "testNumber": 13,
+   "questionNumber": 10,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√1849 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √1849.",
+   "options": {
+    "C": "43",
+    "A": "44",
+    "B": "42",
+    "D": "45"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "1849 को अभाज्य गुणनखंडों में लिखें",
+    "1849 = 43^2",
+    "√1849 = 43 = 43"
+   ],
+   "finalAnswer": "43",
+   "shortcut": "43² = 1849 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q023",
+   "testNumber": 13,
+   "questionNumber": 23,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "√(4900) + 5 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(4900) + 5.",
+   "options": {
+    "D": "75",
+    "A": "355",
+    "B": "19",
+    "C": "65"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "4900 = 196 × 25",
+    "√(196 × 25) = 14 × √25 = 14√25 = 70",
+    "70 + 5 = 75"
+   ],
+   "finalAnswer": "75",
+   "shortcut": "√(a²·k) = a√k",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q020",
+   "testNumber": 14,
+   "questionNumber": 20,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "∛10648 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of ∛10648.",
+   "options": {
+    "D": "22",
+    "A": "44",
+    "C": "21",
+    "B": "23"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "10648 = 2^3 × 11^3",
+    "घनमूल के लिए प्रत्येक घात को 3 से भाग दें",
+    "∛10648 = 2 × 11 = 22"
+   ],
+   "finalAnswer": "22",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q050",
+   "testNumber": 14,
+   "questionNumber": 50,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "√(256) + 11 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(256) + 11.",
+   "options": {
+    "D": "27",
+    "A": "75",
+    "C": "15",
+    "B": "5"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "256 = 16 × 16",
+    "√(16 × 16) = 4 × √16 = 4√16 = 16",
+    "16 + 11 = 27"
+   ],
+   "finalAnswer": "27",
+   "shortcut": "√(a²·k) = a√k",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q012",
+   "testNumber": 15,
+   "questionNumber": 12,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "√(729) + 4 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(729) + 4.",
+   "options": {
+    "D": "31",
+    "B": "85",
+    "A": "13",
+    "C": "23"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "729 = 81 × 9",
+    "√(81 × 9) = 9 × √9 = 9√9 = 27",
+    "27 + 4 = 31"
+   ],
+   "finalAnswer": "31",
+   "shortcut": "√(a²·k) = a√k",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q032",
+   "testNumber": 15,
+   "questionNumber": 32,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "∛15625 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of ∛15625.",
+   "options": {
+    "B": "25",
+    "D": "27",
+    "C": "50",
+    "A": "26"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "15625 = 5^6",
+    "घनमूल के लिए प्रत्येक घात को 3 से भाग दें",
+    "∛15625 = 5^2 = 25"
+   ],
+   "finalAnswer": "25",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q013",
+   "testNumber": 16,
+   "questionNumber": 13,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "√(484) + 9 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(484) + 9.",
+   "options": {
+    "D": "31",
+    "B": "53",
+    "A": "20",
+    "C": "13"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "484 = 121 × 4",
+    "√(121 × 4) = 11 × √4 = 11√4 = 22",
+    "22 + 9 = 31"
+   ],
+   "finalAnswer": "31",
+   "shortcut": "√(a²·k) = a√k",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q039",
+   "testNumber": 16,
+   "questionNumber": 39,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "∛1728 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of ∛1728.",
+   "options": {
+    "A": "12",
+    "D": "13",
+    "B": "14",
+    "C": "24"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "1728 = 2^6 × 3^3",
+    "घनमूल के लिए प्रत्येक घात को 3 से भाग दें",
+    "∛1728 = 2^2 × 3 = 12"
+   ],
+   "finalAnswer": "12",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q037",
+   "testNumber": 17,
+   "questionNumber": 37,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√(484/729) का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(484/729).",
+   "options": {
+    "B": "22/27",
+    "A": "594",
+    "C": "27/22",
+    "D": "484/27"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "√(484/729) = √484 / √729",
+    "√484 = 22, √729 = 27",
+    "अतः मान = 22/27"
+   ],
+   "finalAnswer": "22/27",
+   "shortcut": "√(a/b) = √a/√b",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q044",
+   "testNumber": 17,
+   "questionNumber": 44,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "∛3375 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of ∛3375.",
+   "options": {
+    "A": "15",
+    "C": "17",
+    "D": "30",
+    "B": "16"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "3375 = 3^3 × 5^3",
+    "घनमूल के लिए प्रत्येक घात को 3 से भाग दें",
+    "∛3375 = 3 × 5 = 15"
+   ],
+   "finalAnswer": "15",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q016",
+   "testNumber": 18,
+   "questionNumber": 16,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "∛4096 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of ∛4096.",
+   "options": {
+    "D": "16",
+    "B": "15",
+    "C": "32",
+    "A": "18"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "4096 = 2^12",
+    "घनमूल के लिए प्रत्येक घात को 3 से भाग दें",
+    "∛4096 = 2^4 = 16"
+   ],
+   "finalAnswer": "16",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q043",
+   "testNumber": 18,
+   "questionNumber": 43,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√0.36 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √0.36.",
+   "options": {
+    "C": "0.6",
+    "B": "0.3",
+    "D": "1.2",
+    "A": "0.36"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "0.36 = 0.6 × 0.6 = 06/10 के बराबर भिन्न",
+    "अतः √0.36 = 0.6"
+   ],
+   "finalAnswer": "0.6",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q024",
+   "testNumber": 19,
+   "questionNumber": 24,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "√2304 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √2304.",
+   "options": {
+    "B": "48",
+    "A": "50",
+    "C": "47",
+    "D": "51"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "2304 को अभाज्य गुणनखंडों में लिखें",
+    "2304 = 2^8 × 3^2",
+    "√2304 = 2^4 × 3 = 48"
+   ],
+   "finalAnswer": "48",
+   "shortcut": "48² = 2304 — अंतिम अंक देखकर संभावित मूल चुनें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q034",
+   "testNumber": 19,
+   "questionNumber": 34,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√0.81 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √0.81.",
+   "options": {
+    "B": "0.9",
+    "A": "0.45",
+    "C": "1.8",
+    "D": "0.81"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "0.81 = 0.9 × 0.9 = 09/10 के बराबर भिन्न",
+    "अतः √0.81 = 0.9"
+   ],
+   "finalAnswer": "0.9",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q023",
+   "testNumber": 20,
+   "questionNumber": 23,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "√(576) + 2 का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(576) + 2.",
+   "options": {
+    "C": "26",
+    "A": "98",
+    "B": "8",
+    "D": "22"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "576 = 36 × 16",
+    "√(36 × 16) = 6 × √16 = 6√16 = 24",
+    "24 + 2 = 26"
+   ],
+   "finalAnswer": "26",
+   "shortcut": "√(a²·k) = a√k",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q051",
+   "testNumber": 20,
+   "questionNumber": 51,
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "√(225/169) का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of √(225/169).",
+   "options": {
+    "B": "15/13",
+    "A": "195",
+    "D": "13/15",
+    "C": "225/13"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "√(225/169) = √225 / √169",
+    "√225 = 15, √169 = 13",
+    "अतः मान = 15/13"
+   ],
+   "finalAnswer": "15/13",
+   "shortcut": "√(a/b) = √a/√b",
+   "marks": 1
+  }
+ ]
+}

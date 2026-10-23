@@ -1,0 +1,30 @@
+{
+  "name": "railway-alp-math-mock-test",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Railway ALP Mathematics Mock Test Platform - 20 tests x 60 questions, Hindi/English bilingual",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "build:only": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "generate": "node tools/generate.mjs",
+    "generate:batch": "node tools/generate.mjs --batch",
+    "validate": "node tools/validate.mjs",
+    "icons": "node tools/icons.mjs",
+    "smoke": "node tools/smoke.mjs && node tools/smoke-data.mjs && node tools/smoke-render.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.8",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "typescript": "~5.5.4",
+    "vite": "^5.4.8"
+  }
+}

@@ -1,0 +1,1573 @@
+{
+ "topic": "Geometry",
+ "topicHi": "ज्यामिति",
+ "slug": "geometry",
+ "count": 60,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q031",
+   "testNumber": 1,
+   "questionNumber": 31,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 8 सेमी, 8 सेमी और 10 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 32 सेमी है, तो दूसरे त्रिभुज की 8 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:4. If a side of the smaller triangle is 8 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "A": "32 सेमी",
+    "B": "36 सेमी",
+    "C": "33 सेमी",
+    "D": "16 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 8/32 = 1/4",
+    "संगत भुजा = 8 × 4 = 32 सेमी"
+   ],
+   "finalAnswer": "32 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q047",
+   "testNumber": 1,
+   "questionNumber": 47,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज की दो भुजाएँ (लंब) 18 सेमी और 24 सेमी हैं। कर्ण (Hypotenuse) ज्ञात कीजिए।",
+   "questionEn": "Two legs of a right triangle are 18 cm and 24 cm. Find the hypotenuse.",
+   "options": {
+    "B": "30 सेमी",
+    "D": "42 सेमी",
+    "C": "6 सेमी",
+    "A": "34 सेमी"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पाइथागोरस प्रमेय: कर्ण² = लंब² + आधार²",
+    "कर्ण² = 18² + 24² = 324 + 576 = 900",
+    "कर्ण = √900 = 30 सेमी"
+   ],
+   "finalAnswer": "30 सेमी",
+   "shortcut": "कर्ण² = लंब² + आधार²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q056",
+   "testNumber": 1,
+   "questionNumber": 56,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक समांतर चतुर्भुज का एक कोण 63° है। इसके आसन्न (adjacent) कोण ज्ञात कीजिए।",
+   "questionEn": "One angle of a parallelogram is 63°. Find its adjacent angle.",
+   "options": {
+    "A": "117°",
+    "B": "126°",
+    "C": "90°",
+    "D": "63°"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समांतर चतुर्भुज में आसन्न कोण संपूरक होते हैं (योग 180°)।",
+    "आसन्न कोण = 180° − 63° = 117°"
+   ],
+   "finalAnswer": "117°",
+   "shortcut": "आसन्न कोणों का योग = 180°",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q005",
+   "testNumber": 2,
+   "questionNumber": 5,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक समांतर चतुर्भुज का एक कोण 88° है। इसके आसन्न (adjacent) कोण ज्ञात कीजिए।",
+   "questionEn": "One angle of a parallelogram is 88°. Find its adjacent angle.",
+   "options": {
+    "B": "92°",
+    "C": "88°",
+    "D": "90°",
+    "A": "176°"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "समांतर चतुर्भुज में आसन्न कोण संपूरक होते हैं (योग 180°)।",
+    "आसन्न कोण = 180° − 88° = 92°"
+   ],
+   "finalAnswer": "92°",
+   "shortcut": "आसन्न कोणों का योग = 180°",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q017",
+   "testNumber": 2,
+   "questionNumber": 17,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक त्रिभुज के तीन कोण 4 : 3 : 5 के अनुपात में हैं। सबसे बड़ा कोण ज्ञात कीजिए।",
+   "questionEn": "The angles of a triangle are in the ratio 4:3:5. Find the largest angle.",
+   "options": {
+    "C": "75°",
+    "B": "45°",
+    "D": "15°",
+    "A": "37.5°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कोण योग प्रमेय: त्रिभुज के तीनों कोणों का योग = 180°",
+    "कुल भाग = 4 + 3 + 5 = 12",
+    "1 भाग = 180°/12 = 15°",
+    "कोण: 60°, 45°, 75° ⇒ सबसे बड़ा = 75°"
+   ],
+   "finalAnswer": "75°",
+   "shortcut": "अनुपात के भागों का योग 180° से विभाजित करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q056",
+   "testNumber": 2,
+   "questionNumber": 56,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समद्विबाहु त्रिभुज (isosceles triangle) में प्रत्येक आधार कोण 20° है। शीर्ष कोण ज्ञात कीजिए।",
+   "questionEn": "In an isosceles triangle, each base angle is 20°. Find the vertex angle.",
+   "options": {
+    "A": "140°",
+    "B": "40°",
+    "D": "150°",
+    "C": "160°"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कोण योग: शीर्ष + 20 + 20 = 180°",
+    "शीर्ष = 180° − 40 = 140°"
+   ],
+   "finalAnswer": "140°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q023",
+   "testNumber": 3,
+   "questionNumber": 23,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक त्रिभुज के तीन कोण 2 : 3 : 5 के अनुपात में हैं। सबसे बड़ा कोण ज्ञात कीजिए।",
+   "questionEn": "The angles of a triangle are in the ratio 2:3:5. Find the largest angle.",
+   "options": {
+    "D": "90°",
+    "C": "36°",
+    "B": "18°",
+    "A": "45°"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कोण योग प्रमेय: त्रिभुज के तीनों कोणों का योग = 180°",
+    "कुल भाग = 2 + 3 + 5 = 10",
+    "1 भाग = 180°/10 = 18°",
+    "कोण: 36°, 54°, 90° ⇒ सबसे बड़ा = 90°"
+   ],
+   "finalAnswer": "90°",
+   "shortcut": "अनुपात के भागों का योग 180° से विभाजित करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q042",
+   "testNumber": 3,
+   "questionNumber": 42,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक समांतर चतुर्भुज का एक कोण 94° है। इसके आसन्न (adjacent) कोण ज्ञात कीजिए।",
+   "questionEn": "One angle of a parallelogram is 94°. Find its adjacent angle.",
+   "options": {
+    "C": "86°",
+    "D": "94°",
+    "A": "90°",
+    "B": "188°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समांतर चतुर्भुज में आसन्न कोण संपूरक होते हैं (योग 180°)।",
+    "आसन्न कोण = 180° − 94° = 86°"
+   ],
+   "finalAnswer": "86°",
+   "shortcut": "आसन्न कोणों का योग = 180°",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q054",
+   "testNumber": 3,
+   "questionNumber": 54,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज की दो भुजाएँ (लंब) 32 सेमी और 60 सेमी हैं। कर्ण (Hypotenuse) ज्ञात कीजिए।",
+   "questionEn": "Two legs of a right triangle are 32 cm and 60 cm. Find the hypotenuse.",
+   "options": {
+    "C": "68 सेमी",
+    "D": "72 सेमी",
+    "B": "92 सेमी",
+    "A": "28 सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पाइथागोरस प्रमेय: कर्ण² = लंब² + आधार²",
+    "कर्ण² = 32² + 60² = 1024 + 3600 = 4624",
+    "कर्ण = √4624 = 68 सेमी"
+   ],
+   "finalAnswer": "68 सेमी",
+   "shortcut": "कर्ण² = लंब² + आधार²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q011",
+   "testNumber": 4,
+   "questionNumber": 11,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक त्रिभुज के दो कोण 43° और 60° हैं। तीसरा कोण ज्ञात कीजिए।",
+   "questionEn": "Two angles of a triangle are 43° and 60°. Find the third angle.",
+   "options": {
+    "A": "77°",
+    "C": "90°",
+    "D": "120°",
+    "B": "103°"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कोण योग प्रमेय: ∠A + ∠B + ∠C = 180°",
+    "43 + 60 + ∠C = 180°",
+    "∠C = 180° − 103 = 77°"
+   ],
+   "finalAnswer": "77°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q050",
+   "testNumber": 4,
+   "questionNumber": 50,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक समांतर चतुर्भुज का एक कोण 93° है। इसके आसन्न (adjacent) कोण ज्ञात कीजिए।",
+   "questionEn": "One angle of a parallelogram is 93°. Find its adjacent angle.",
+   "options": {
+    "A": "87°",
+    "D": "90°",
+    "C": "93°",
+    "B": "186°"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समांतर चतुर्भुज में आसन्न कोण संपूरक होते हैं (योग 180°)।",
+    "आसन्न कोण = 180° − 93° = 87°"
+   ],
+   "finalAnswer": "87°",
+   "shortcut": "आसन्न कोणों का योग = 180°",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q052",
+   "testNumber": 4,
+   "questionNumber": 52,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज का कर्ण 10 सेमी है और एक भुजा 6 सेमी है। तीसरी भुजा ज्ञात कीजिए।",
+   "questionEn": "The hypotenuse of a right triangle is 10 cm and one leg is 6 cm. Find the other leg.",
+   "options": {
+    "B": "8 सेमी",
+    "A": "4 सेमी",
+    "C": "16 सेमी",
+    "D": "12 सेमी"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कर्ण² = लंब² + आधार²",
+    "10² = 6² + भुजा²",
+    "भुजा² = 100 − 36 = 64",
+    "भुजा = 8 सेमी"
+   ],
+   "finalAnswer": "8 सेमी",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q010",
+   "testNumber": 5,
+   "questionNumber": 10,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज का कर्ण 50 सेमी है और एक भुजा 14 सेमी है। तीसरी भुजा ज्ञात कीजिए।",
+   "questionEn": "The hypotenuse of a right triangle is 50 cm and one leg is 14 cm. Find the other leg.",
+   "options": {
+    "A": "48 सेमी",
+    "C": "64 सेमी",
+    "D": "36 सेमी",
+    "B": "26 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कर्ण² = लंब² + आधार²",
+    "50² = 14² + भुजा²",
+    "भुजा² = 2500 − 196 = 2304",
+    "भुजा = 48 सेमी"
+   ],
+   "finalAnswer": "48 सेमी",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q045",
+   "testNumber": 5,
+   "questionNumber": 45,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक त्रिभुज के दो कोण 72° और 36° हैं। तीसरा कोण ज्ञात कीजिए।",
+   "questionEn": "Two angles of a triangle are 72° and 36°. Find the third angle.",
+   "options": {
+    "C": "72°",
+    "A": "144°",
+    "D": "108°",
+    "B": "90°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कोण योग प्रमेय: ∠A + ∠B + ∠C = 180°",
+    "72 + 36 + ∠C = 180°",
+    "∠C = 180° − 108 = 72°"
+   ],
+   "finalAnswer": "72°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q055",
+   "testNumber": 5,
+   "questionNumber": 55,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समद्विबाहु त्रिभुज (isosceles triangle) में प्रत्येक आधार कोण 18° है। शीर्ष कोण ज्ञात कीजिए।",
+   "questionEn": "In an isosceles triangle, each base angle is 18°. Find the vertex angle.",
+   "options": {
+    "C": "144°",
+    "A": "36°",
+    "B": "90°",
+    "D": "162°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कोण योग: शीर्ष + 18 + 18 = 180°",
+    "शीर्ष = 180° − 36 = 144°"
+   ],
+   "finalAnswer": "144°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q020",
+   "testNumber": 6,
+   "questionNumber": 20,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "त्रिभुज के दो अंतः कोण 46° और 46° हैं। तीसरे कोण का बहिष्कोण (Exterior angle) ज्ञात कीजिए।",
+   "questionEn": "Two interior angles of a triangle are 46° and 46°. Find the exterior angle of the third angle.",
+   "options": {
+    "D": "92°",
+    "B": "134°",
+    "A": "88°",
+    "C": "46°"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "बहिष्कोण प्रमेय: बहिष्कोण = दो अंतर्विपरीत अंतःकोणों का योग",
+    "बहिष्कोण = 46° + 46° = 92°"
+   ],
+   "finalAnswer": "92°",
+   "shortcut": "बहिष्कोण = दो दूसरे अंतःकोणों का योग",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q025",
+   "testNumber": 6,
+   "questionNumber": 25,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 20 सेमी, 3 सेमी और 17 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 40 सेमी है, तो दूसरे त्रिभुज की 3 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:2. If a side of the smaller triangle is 3 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "A": "6 सेमी",
+    "D": "8 सेमी",
+    "C": "7 सेमी",
+    "B": "3 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 20/40 = 1/2",
+    "संगत भुजा = 3 × 2 = 6 सेमी"
+   ],
+   "finalAnswer": "6 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q041",
+   "testNumber": 6,
+   "questionNumber": 41,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक त्रिभुज के तीन कोण 3 : 5 : 7 के अनुपात में हैं। सबसे बड़ा कोण ज्ञात कीजिए।",
+   "questionEn": "The angles of a triangle are in the ratio 3:5:7. Find the largest angle.",
+   "options": {
+    "B": "84°",
+    "D": "36°",
+    "A": "12°",
+    "C": "42°"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कोण योग प्रमेय: त्रिभुज के तीनों कोणों का योग = 180°",
+    "कुल भाग = 3 + 5 + 7 = 15",
+    "1 भाग = 180°/15 = 12°",
+    "कोण: 36°, 60°, 84° ⇒ सबसे बड़ा = 84°"
+   ],
+   "finalAnswer": "84°",
+   "shortcut": "अनुपात के भागों का योग 180° से विभाजित करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q038",
+   "testNumber": 7,
+   "questionNumber": 38,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज का कर्ण 100 सेमी है और एक भुजा 28 सेमी है। तीसरी भुजा ज्ञात कीजिए।",
+   "questionEn": "The hypotenuse of a right triangle is 100 cm and one leg is 28 cm. Find the other leg.",
+   "options": {
+    "C": "96 सेमी",
+    "A": "128 सेमी",
+    "B": "100 सेमी",
+    "D": "72 सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कर्ण² = लंब² + आधार²",
+    "100² = 28² + भुजा²",
+    "भुजा² = 10000 − 784 = 9216",
+    "भुजा = 96 सेमी"
+   ],
+   "finalAnswer": "96 सेमी",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q040",
+   "testNumber": 7,
+   "questionNumber": 40,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समद्विबाहु त्रिभुज (isosceles triangle) में प्रत्येक आधार कोण 40° है। शीर्ष कोण ज्ञात कीजिए।",
+   "questionEn": "In an isosceles triangle, each base angle is 40°. Find the vertex angle.",
+   "options": {
+    "B": "100°",
+    "A": "140°",
+    "C": "110°",
+    "D": "90°"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कोण योग: शीर्ष + 40 + 40 = 180°",
+    "शीर्ष = 180° − 80 = 100°"
+   ],
+   "finalAnswer": "100°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q051",
+   "testNumber": 7,
+   "questionNumber": 51,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "त्रिभुज के दो अंतः कोण 36° और 63° हैं। तीसरे कोण का बहिष्कोण (Exterior angle) ज्ञात कीजिए।",
+   "questionEn": "Two interior angles of a triangle are 36° and 63°. Find the exterior angle of the third angle.",
+   "options": {
+    "C": "99°",
+    "B": "117°",
+    "A": "81°",
+    "D": "144°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "बहिष्कोण प्रमेय: बहिष्कोण = दो अंतर्विपरीत अंतःकोणों का योग",
+    "बहिष्कोण = 36° + 63° = 99°"
+   ],
+   "finalAnswer": "99°",
+   "shortcut": "बहिष्कोण = दो दूसरे अंतःकोणों का योग",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q014",
+   "testNumber": 8,
+   "questionNumber": 14,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज का कर्ण 117 सेमी है और एक भुजा 45 सेमी है। तीसरी भुजा ज्ञात कीजिए।",
+   "questionEn": "The hypotenuse of a right triangle is 117 cm and one leg is 45 cm. Find the other leg.",
+   "options": {
+    "A": "108 सेमी",
+    "D": "73 सेमी",
+    "B": "72 सेमी",
+    "C": "162 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कर्ण² = लंब² + आधार²",
+    "117² = 45² + भुजा²",
+    "भुजा² = 13689 − 2025 = 11664",
+    "भुजा = 108 सेमी"
+   ],
+   "finalAnswer": "108 सेमी",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q028",
+   "testNumber": 8,
+   "questionNumber": 28,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 10 सेमी, 4 सेमी और 6 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 40 सेमी है, तो दूसरे त्रिभुज की 4 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:4. If a side of the smaller triangle is 4 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "A": "16 सेमी",
+    "D": "17 सेमी",
+    "B": "20 सेमी",
+    "C": "8 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 10/40 = 1/4",
+    "संगत भुजा = 4 × 4 = 16 सेमी"
+   ],
+   "finalAnswer": "16 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q050",
+   "testNumber": 8,
+   "questionNumber": 50,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक चतुर्भुज के तीन कोण 87°, 71° और 67° हैं। चौथा कोण ज्ञात कीजिए।",
+   "questionEn": "Three angles of a quadrilateral are 87°, 71° and 67°. Find the fourth angle.",
+   "options": {
+    "A": "135°",
+    "D": "273°",
+    "C": "45°",
+    "B": "90°"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "चतुर्भुज के कोणों का योग = 360°",
+    "चौथा कोण = 360° − (87 + 71 + 67)",
+    "= 360° − 225 = 135°"
+   ],
+   "finalAnswer": "135°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q008",
+   "testNumber": 9,
+   "questionNumber": 8,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "त्रिभुज के दो अंतः कोण 59° और 58° हैं। तीसरे कोण का बहिष्कोण (Exterior angle) ज्ञात कीजिए।",
+   "questionEn": "Two interior angles of a triangle are 59° and 58°. Find the exterior angle of the third angle.",
+   "options": {
+    "A": "117°",
+    "C": "63°",
+    "B": "121°",
+    "D": "122°"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "बहिष्कोण प्रमेय: बहिष्कोण = दो अंतर्विपरीत अंतःकोणों का योग",
+    "बहिष्कोण = 59° + 58° = 117°"
+   ],
+   "finalAnswer": "117°",
+   "shortcut": "बहिष्कोण = दो दूसरे अंतःकोणों का योग",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q013",
+   "testNumber": 9,
+   "questionNumber": 13,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 24 सेमी, 3 सेमी और 21 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 72 सेमी है, तो दूसरे त्रिभुज की 3 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:3. If a side of the smaller triangle is 3 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "D": "9 सेमी",
+    "A": "12 सेमी",
+    "B": "3 सेमी",
+    "C": "4.5 सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 24/72 = 1/3",
+    "संगत भुजा = 3 × 3 = 9 सेमी"
+   ],
+   "finalAnswer": "9 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q051",
+   "testNumber": 9,
+   "questionNumber": 51,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज का कर्ण 26 सेमी है और एक भुजा 10 सेमी है। तीसरी भुजा ज्ञात कीजिए।",
+   "questionEn": "The hypotenuse of a right triangle is 26 cm and one leg is 10 cm. Find the other leg.",
+   "options": {
+    "D": "24 सेमी",
+    "B": "16 सेमी",
+    "C": "26 सेमी",
+    "A": "36 सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कर्ण² = लंब² + आधार²",
+    "26² = 10² + भुजा²",
+    "भुजा² = 676 − 100 = 576",
+    "भुजा = 24 सेमी"
+   ],
+   "finalAnswer": "24 सेमी",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q007",
+   "testNumber": 10,
+   "questionNumber": 7,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "त्रिभुज के दो अंतः कोण 76° और 40° हैं। तीसरे कोण का बहिष्कोण (Exterior angle) ज्ञात कीजिए।",
+   "questionEn": "Two interior angles of a triangle are 76° and 40°. Find the exterior angle of the third angle.",
+   "options": {
+    "B": "116°",
+    "A": "104°",
+    "D": "58°",
+    "C": "64°"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बहिष्कोण प्रमेय: बहिष्कोण = दो अंतर्विपरीत अंतःकोणों का योग",
+    "बहिष्कोण = 76° + 40° = 116°"
+   ],
+   "finalAnswer": "116°",
+   "shortcut": "बहिष्कोण = दो दूसरे अंतःकोणों का योग",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q029",
+   "testNumber": 10,
+   "questionNumber": 29,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 18 सेमी, 5 सेमी और 13 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 72 सेमी है, तो दूसरे त्रिभुज की 5 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:4. If a side of the smaller triangle is 5 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "C": "20 सेमी",
+    "B": "24 सेमी",
+    "D": "5 सेमी",
+    "A": "10 सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 18/72 = 1/4",
+    "संगत भुजा = 5 × 4 = 20 सेमी"
+   ],
+   "finalAnswer": "20 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q049",
+   "testNumber": 10,
+   "questionNumber": 49,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज का कर्ण 58 सेमी है और एक भुजा 40 सेमी है। तीसरी भुजा ज्ञात कीजिए।",
+   "questionEn": "The hypotenuse of a right triangle is 58 cm and one leg is 40 cm. Find the other leg.",
+   "options": {
+    "D": "42 सेमी",
+    "B": "18 सेमी",
+    "A": "46 सेमी",
+    "C": "98 सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कर्ण² = लंब² + आधार²",
+    "58² = 40² + भुजा²",
+    "भुजा² = 3364 − 1600 = 1764",
+    "भुजा = 42 सेमी"
+   ],
+   "finalAnswer": "42 सेमी",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q011",
+   "testNumber": 11,
+   "questionNumber": 11,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 10 सेमी, 3 सेमी और 7 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 40 सेमी है, तो दूसरे त्रिभुज की 3 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:4. If a side of the smaller triangle is 3 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "D": "12 सेमी",
+    "B": "13 सेमी",
+    "C": "3 सेमी",
+    "A": "16 सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 10/40 = 1/4",
+    "संगत भुजा = 3 × 4 = 12 सेमी"
+   ],
+   "finalAnswer": "12 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q012",
+   "testNumber": 11,
+   "questionNumber": 12,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों की संगत भुजाएँ 4 : 1 के अनुपात में हैं। यदि बड़े त्रिभुज का क्षेत्रफल 288 वर्ग सेमी है, तो छोटे त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Corresponding sides of two similar triangles are in the ratio 4:1. If the larger triangle has area 288 cm², find the area of the smaller triangle.",
+   "options": {
+    "C": "18 वर्ग सेमी",
+    "A": "270 वर्ग सेमी",
+    "B": "72 वर्ग सेमी",
+    "D": "9 वर्ग सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समरूप आकृतियों में क्षेत्रफलों का अनुपात = भुजाओं के अनुपात का वर्ग",
+    "क्षेत्रफल अनुपात = 4² : 1 = 16 : 1",
+    "छोटे का क्षेत्रफल = 288/16 = 18 वर्ग सेमी"
+   ],
+   "finalAnswer": "18 वर्ग सेमी",
+   "shortcut": "क्षेत्रफल अनुपात = (भुजा अनुपात)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q040",
+   "testNumber": 11,
+   "questionNumber": 40,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वृत्त की त्रिज्या 10 सेमी है। केंद्र से 8 सेमी की दूरी पर स्थित जीवा (chord) की लंबाई ज्ञात कीजिए।",
+   "questionEn": "The radius of a circle is 10 cm. Find the length of a chord at a distance of 8 cm from the centre.",
+   "options": {
+    "A": "12 सेमी",
+    "D": "16 सेमी",
+    "C": "10 सेमी",
+    "B": "18 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "केंद्र से जीवा पर लंब, जीवा को समद्विभाजित करता है।",
+    "समकोण त्रिभुज: त्रिज्या² = दूरी² + (जीवा/2)²",
+    "10² = 8² + (जीवा/2)²",
+    "जीवा/2 = √(100 − 64) = 6",
+    "जीवा = 12 सेमी"
+   ],
+   "finalAnswer": "12 सेमी",
+   "shortcut": "अर्धजीवा = √(r² − d²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q001",
+   "testNumber": 12,
+   "questionNumber": 1,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों की संगत भुजाएँ 2 : 1 के अनुपात में हैं। यदि बड़े त्रिभुज का क्षेत्रफल 96 वर्ग सेमी है, तो छोटे त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Corresponding sides of two similar triangles are in the ratio 2:1. If the larger triangle has area 96 cm², find the area of the smaller triangle.",
+   "options": {
+    "B": "24 वर्ग सेमी",
+    "A": "48 वर्ग सेमी",
+    "C": "12 वर्ग सेमी",
+    "D": "72 वर्ग सेमी"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "समरूप आकृतियों में क्षेत्रफलों का अनुपात = भुजाओं के अनुपात का वर्ग",
+    "क्षेत्रफल अनुपात = 2² : 1 = 4 : 1",
+    "छोटे का क्षेत्रफल = 96/4 = 24 वर्ग सेमी"
+   ],
+   "finalAnswer": "24 वर्ग सेमी",
+   "shortcut": "क्षेत्रफल अनुपात = (भुजा अनुपात)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q009",
+   "testNumber": 12,
+   "questionNumber": 9,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज का कर्ण 45 सेमी है और एक भुजा 27 सेमी है। तीसरी भुजा ज्ञात कीजिए।",
+   "questionEn": "The hypotenuse of a right triangle is 45 cm and one leg is 27 cm. Find the other leg.",
+   "options": {
+    "D": "36 सेमी",
+    "A": "72 सेमी",
+    "C": "42 सेमी",
+    "B": "35 सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कर्ण² = लंब² + आधार²",
+    "45² = 27² + भुजा²",
+    "भुजा² = 2025 − 729 = 1296",
+    "भुजा = 36 सेमी"
+   ],
+   "finalAnswer": "36 सेमी",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q028",
+   "testNumber": 12,
+   "questionNumber": 28,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक चतुर्भुज के तीन कोण 75°, 108° और 100° हैं। चौथा कोण ज्ञात कीजिए।",
+   "questionEn": "Three angles of a quadrilateral are 75°, 108° and 100°. Find the fourth angle.",
+   "options": {
+    "C": "77°",
+    "B": "90°",
+    "A": "103°",
+    "D": "38.5°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "चतुर्भुज के कोणों का योग = 360°",
+    "चौथा कोण = 360° − (75 + 108 + 100)",
+    "= 360° − 283 = 77°"
+   ],
+   "finalAnswer": "77°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q037",
+   "testNumber": 13,
+   "questionNumber": 37,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समद्विबाहु त्रिभुज (isosceles triangle) में प्रत्येक आधार कोण 15° है। शीर्ष कोण ज्ञात कीजिए।",
+   "questionEn": "In an isosceles triangle, each base angle is 15°. Find the vertex angle.",
+   "options": {
+    "C": "150°",
+    "A": "30°",
+    "D": "160°",
+    "B": "165°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कोण योग: शीर्ष + 15 + 15 = 180°",
+    "शीर्ष = 180° − 30 = 150°"
+   ],
+   "finalAnswer": "150°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q045",
+   "testNumber": 13,
+   "questionNumber": 45,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज का कर्ण 102 सेमी है और एक भुजा 48 सेमी है। तीसरी भुजा ज्ञात कीजिए।",
+   "questionEn": "The hypotenuse of a right triangle is 102 cm and one leg is 48 cm. Find the other leg.",
+   "options": {
+    "B": "90 सेमी",
+    "A": "70 सेमी",
+    "D": "150 सेमी",
+    "C": "54 सेमी"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कर्ण² = लंब² + आधार²",
+    "102² = 48² + भुजा²",
+    "भुजा² = 10404 − 2304 = 8100",
+    "भुजा = 90 सेमी"
+   ],
+   "finalAnswer": "90 सेमी",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q055",
+   "testNumber": 13,
+   "questionNumber": 55,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 15 सेमी, 6 सेमी और 9 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 30 सेमी है, तो दूसरे त्रिभुज की 6 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:2. If a side of the smaller triangle is 6 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "A": "12 सेमी",
+    "C": "6 सेमी",
+    "B": "13 सेमी",
+    "D": "14 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 15/30 = 1/2",
+    "संगत भुजा = 6 × 2 = 12 सेमी"
+   ],
+   "finalAnswer": "12 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q008",
+   "testNumber": 14,
+   "questionNumber": 8,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक चतुर्भुज के तीन कोण 92°, 89° और 105° हैं। चौथा कोण ज्ञात कीजिए।",
+   "questionEn": "Three angles of a quadrilateral are 92°, 89° and 105°. Find the fourth angle.",
+   "options": {
+    "C": "74°",
+    "A": "106°",
+    "B": "90°",
+    "D": "37°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "चतुर्भुज के कोणों का योग = 360°",
+    "चौथा कोण = 360° − (92 + 89 + 105)",
+    "= 360° − 286 = 74°"
+   ],
+   "finalAnswer": "74°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q032",
+   "testNumber": 14,
+   "questionNumber": 32,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समद्विबाहु त्रिभुज (isosceles triangle) में प्रत्येक आधार कोण 35° है। शीर्ष कोण ज्ञात कीजिए।",
+   "questionEn": "In an isosceles triangle, each base angle is 35°. Find the vertex angle.",
+   "options": {
+    "A": "110°",
+    "C": "90°",
+    "D": "70°",
+    "B": "145°"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कोण योग: शीर्ष + 35 + 35 = 180°",
+    "शीर्ष = 180° − 70 = 110°"
+   ],
+   "finalAnswer": "110°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q057",
+   "testNumber": 14,
+   "questionNumber": 57,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वृत्त की त्रिज्या 17 सेमी है। केंद्र से 8 सेमी की दूरी पर स्थित जीवा (chord) की लंबाई ज्ञात कीजिए।",
+   "questionEn": "The radius of a circle is 17 cm. Find the length of a chord at a distance of 8 cm from the centre.",
+   "options": {
+    "D": "30 सेमी",
+    "B": "17 सेमी",
+    "C": "15 सेमी",
+    "A": "16 सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "केंद्र से जीवा पर लंब, जीवा को समद्विभाजित करता है।",
+    "समकोण त्रिभुज: त्रिज्या² = दूरी² + (जीवा/2)²",
+    "17² = 8² + (जीवा/2)²",
+    "जीवा/2 = √(289 − 64) = 15",
+    "जीवा = 30 सेमी"
+   ],
+   "finalAnswer": "30 सेमी",
+   "shortcut": "अर्धजीवा = √(r² − d²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q026",
+   "testNumber": 15,
+   "questionNumber": 26,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों की संगत भुजाएँ 2 : 1 के अनुपात में हैं। यदि बड़े त्रिभुज का क्षेत्रफल 60 वर्ग सेमी है, तो छोटे त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Corresponding sides of two similar triangles are in the ratio 2:1. If the larger triangle has area 60 cm², find the area of the smaller triangle.",
+   "options": {
+    "C": "15 वर्ग सेमी",
+    "A": "30 वर्ग सेमी",
+    "D": "45 वर्ग सेमी",
+    "B": "7.5 वर्ग सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समरूप आकृतियों में क्षेत्रफलों का अनुपात = भुजाओं के अनुपात का वर्ग",
+    "क्षेत्रफल अनुपात = 2² : 1 = 4 : 1",
+    "छोटे का क्षेत्रफल = 60/4 = 15 वर्ग सेमी"
+   ],
+   "finalAnswer": "15 वर्ग सेमी",
+   "shortcut": "क्षेत्रफल अनुपात = (भुजा अनुपात)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q029",
+   "testNumber": 15,
+   "questionNumber": 29,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 24 सेमी, 8 सेमी और 16 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 48 सेमी है, तो दूसरे त्रिभुज की 8 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:2. If a side of the smaller triangle is 8 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "A": "16 सेमी",
+    "B": "8 सेमी",
+    "D": "18 सेमी",
+    "C": "17 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 24/48 = 1/2",
+    "संगत भुजा = 8 × 2 = 16 सेमी"
+   ],
+   "finalAnswer": "16 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q038",
+   "testNumber": 15,
+   "questionNumber": 38,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक चतुर्भुज के तीन कोण 77°, 92° और 66° हैं। चौथा कोण ज्ञात कीजिए।",
+   "questionEn": "Three angles of a quadrilateral are 77°, 92° and 66°. Find the fourth angle.",
+   "options": {
+    "D": "125°",
+    "B": "283°",
+    "A": "90°",
+    "C": "62.5°"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "चतुर्भुज के कोणों का योग = 360°",
+    "चौथा कोण = 360° − (77 + 92 + 66)",
+    "= 360° − 235 = 125°"
+   ],
+   "finalAnswer": "125°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q003",
+   "testNumber": 16,
+   "questionNumber": 3,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समकोण त्रिभुज का कर्ण 51 सेमी है और एक भुजा 24 सेमी है। तीसरी भुजा ज्ञात कीजिए।",
+   "questionEn": "The hypotenuse of a right triangle is 51 cm and one leg is 24 cm. Find the other leg.",
+   "options": {
+    "C": "45 सेमी",
+    "B": "27 सेमी",
+    "D": "75 सेमी",
+    "A": "35 सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कर्ण² = लंब² + आधार²",
+    "51² = 24² + भुजा²",
+    "भुजा² = 2601 − 576 = 2025",
+    "भुजा = 45 सेमी"
+   ],
+   "finalAnswer": "45 सेमी",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q016",
+   "testNumber": 16,
+   "questionNumber": 16,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 12 सेमी, 5 सेमी और 7 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 48 सेमी है, तो दूसरे त्रिभुज की 5 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:4. If a side of the smaller triangle is 5 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "D": "20 सेमी",
+    "A": "10 सेमी",
+    "C": "24 सेमी",
+    "B": "5 सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 12/48 = 1/4",
+    "संगत भुजा = 5 × 4 = 20 सेमी"
+   ],
+   "finalAnswer": "20 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q037",
+   "testNumber": 16,
+   "questionNumber": 37,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वृत्त की त्रिज्या 20 सेमी है। केंद्र से 12 सेमी की दूरी पर स्थित जीवा (chord) की लंबाई ज्ञात कीजिए।",
+   "questionEn": "The radius of a circle is 20 cm. Find the length of a chord at a distance of 12 cm from the centre.",
+   "options": {
+    "D": "32 सेमी",
+    "C": "16 सेमी",
+    "B": "20 सेमी",
+    "A": "24 सेमी"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "केंद्र से जीवा पर लंब, जीवा को समद्विभाजित करता है।",
+    "समकोण त्रिभुज: त्रिज्या² = दूरी² + (जीवा/2)²",
+    "20² = 12² + (जीवा/2)²",
+    "जीवा/2 = √(400 − 144) = 16",
+    "जीवा = 32 सेमी"
+   ],
+   "finalAnswer": "32 सेमी",
+   "shortcut": "अर्धजीवा = √(r² − d²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q001",
+   "testNumber": 17,
+   "questionNumber": 1,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 20 सेमी, 8 सेमी और 12 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 80 सेमी है, तो दूसरे त्रिभुज की 8 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:4. If a side of the smaller triangle is 8 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "C": "32 सेमी",
+    "D": "16 सेमी",
+    "B": "36 सेमी",
+    "A": "33 सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 20/80 = 1/4",
+    "संगत भुजा = 8 × 4 = 32 सेमी"
+   ],
+   "finalAnswer": "32 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q020",
+   "testNumber": 17,
+   "questionNumber": 20,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक समद्विबाहु त्रिभुज (isosceles triangle) में प्रत्येक आधार कोण 30° है। शीर्ष कोण ज्ञात कीजिए।",
+   "questionEn": "In an isosceles triangle, each base angle is 30°. Find the vertex angle.",
+   "options": {
+    "C": "120°",
+    "D": "60°",
+    "B": "90°",
+    "A": "150°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कोण योग: शीर्ष + 30 + 30 = 180°",
+    "शीर्ष = 180° − 60 = 120°"
+   ],
+   "finalAnswer": "120°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q034",
+   "testNumber": 17,
+   "questionNumber": 34,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक वृत्त की त्रिज्या 13 सेमी है। केंद्र से 12 सेमी की दूरी पर स्थित जीवा (chord) की लंबाई ज्ञात कीजिए।",
+   "questionEn": "The radius of a circle is 13 cm. Find the length of a chord at a distance of 12 cm from the centre.",
+   "options": {
+    "C": "10 सेमी",
+    "A": "24 सेमी",
+    "B": "13 सेमी",
+    "D": "25 सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "केंद्र से जीवा पर लंब, जीवा को समद्विभाजित करता है।",
+    "समकोण त्रिभुज: त्रिज्या² = दूरी² + (जीवा/2)²",
+    "13² = 12² + (जीवा/2)²",
+    "जीवा/2 = √(169 − 144) = 5",
+    "जीवा = 10 सेमी"
+   ],
+   "finalAnswer": "10 सेमी",
+   "shortcut": "अर्धजीवा = √(r² − d²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q002",
+   "testNumber": 18,
+   "questionNumber": 2,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक चतुर्भुज के तीन कोण 75°, 61° और 99° हैं। चौथा कोण ज्ञात कीजिए।",
+   "questionEn": "Three angles of a quadrilateral are 75°, 61° and 99°. Find the fourth angle.",
+   "options": {
+    "D": "125°",
+    "C": "90°",
+    "A": "285°",
+    "B": "62.5°"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "चतुर्भुज के कोणों का योग = 360°",
+    "चौथा कोण = 360° − (75 + 61 + 99)",
+    "= 360° − 235 = 125°"
+   ],
+   "finalAnswer": "125°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q040",
+   "testNumber": 18,
+   "questionNumber": 40,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 15 सेमी, 8 सेमी और 7 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 60 सेमी है, तो दूसरे त्रिभुज की 8 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:4. If a side of the smaller triangle is 8 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "C": "32 सेमी",
+    "A": "16 सेमी",
+    "D": "8 सेमी",
+    "B": "33 सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 15/60 = 1/4",
+    "संगत भुजा = 8 × 4 = 32 सेमी"
+   ],
+   "finalAnswer": "32 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q044",
+   "testNumber": 18,
+   "questionNumber": 44,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों की संगत भुजाएँ 3 : 1 के अनुपात में हैं। यदि बड़े त्रिभुज का क्षेत्रफल 270 वर्ग सेमी है, तो छोटे त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Corresponding sides of two similar triangles are in the ratio 3:1. If the larger triangle has area 270 cm², find the area of the smaller triangle.",
+   "options": {
+    "A": "30 वर्ग सेमी",
+    "B": "240 वर्ग सेमी",
+    "D": "15 वर्ग सेमी",
+    "C": "60 वर्ग सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप आकृतियों में क्षेत्रफलों का अनुपात = भुजाओं के अनुपात का वर्ग",
+    "क्षेत्रफल अनुपात = 3² : 1 = 9 : 1",
+    "छोटे का क्षेत्रफल = 270/9 = 30 वर्ग सेमी"
+   ],
+   "finalAnswer": "30 वर्ग सेमी",
+   "shortcut": "क्षेत्रफल अनुपात = (भुजा अनुपात)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q006",
+   "testNumber": 19,
+   "questionNumber": 6,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 12 सेमी, 3 सेमी और 9 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 36 सेमी है, तो दूसरे त्रिभुज की 3 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:3. If a side of the smaller triangle is 3 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "A": "9 सेमी",
+    "C": "4.5 सेमी",
+    "B": "3 सेमी",
+    "D": "10 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 12/36 = 1/3",
+    "संगत भुजा = 3 × 3 = 9 सेमी"
+   ],
+   "finalAnswer": "9 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q017",
+   "testNumber": 19,
+   "questionNumber": 17,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक चतुर्भुज के तीन कोण 108°, 100° और 93° हैं। चौथा कोण ज्ञात कीजिए।",
+   "questionEn": "Three angles of a quadrilateral are 108°, 100° and 93°. Find the fourth angle.",
+   "options": {
+    "B": "59°",
+    "C": "90°",
+    "A": "121°",
+    "D": "29.5°"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चतुर्भुज के कोणों का योग = 360°",
+    "चौथा कोण = 360° − (108 + 100 + 93)",
+    "= 360° − 301 = 59°"
+   ],
+   "finalAnswer": "59°",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q022",
+   "testNumber": 19,
+   "questionNumber": 22,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों की संगत भुजाएँ 2 : 1 के अनुपात में हैं। यदि बड़े त्रिभुज का क्षेत्रफल 72 वर्ग सेमी है, तो छोटे त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Corresponding sides of two similar triangles are in the ratio 2:1. If the larger triangle has area 72 cm², find the area of the smaller triangle.",
+   "options": {
+    "A": "18 वर्ग सेमी",
+    "D": "36 वर्ग सेमी",
+    "B": "54 वर्ग सेमी",
+    "C": "9 वर्ग सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप आकृतियों में क्षेत्रफलों का अनुपात = भुजाओं के अनुपात का वर्ग",
+    "क्षेत्रफल अनुपात = 2² : 1 = 4 : 1",
+    "छोटे का क्षेत्रफल = 72/4 = 18 वर्ग सेमी"
+   ],
+   "finalAnswer": "18 वर्ग सेमी",
+   "shortcut": "क्षेत्रफल अनुपात = (भुजा अनुपात)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q049",
+   "testNumber": 20,
+   "questionNumber": 49,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों की संगत भुजाएँ 4 : 1 के अनुपात में हैं। यदि बड़े त्रिभुज का क्षेत्रफल 384 वर्ग सेमी है, तो छोटे त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Corresponding sides of two similar triangles are in the ratio 4:1. If the larger triangle has area 384 cm², find the area of the smaller triangle.",
+   "options": {
+    "C": "24 वर्ग सेमी",
+    "B": "12 वर्ग सेमी",
+    "D": "48 वर्ग सेमी",
+    "A": "96 वर्ग सेमी"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समरूप आकृतियों में क्षेत्रफलों का अनुपात = भुजाओं के अनुपात का वर्ग",
+    "क्षेत्रफल अनुपात = 4² : 1 = 16 : 1",
+    "छोटे का क्षेत्रफल = 384/16 = 24 वर्ग सेमी"
+   ],
+   "finalAnswer": "24 वर्ग सेमी",
+   "shortcut": "क्षेत्रफल अनुपात = (भुजा अनुपात)²",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q054",
+   "testNumber": 20,
+   "questionNumber": 54,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "त्रिभुज के दो अंतः कोण 54° और 55° हैं। तीसरे कोण का बहिष्कोण (Exterior angle) ज्ञात कीजिए।",
+   "questionEn": "Two interior angles of a triangle are 54° and 55°. Find the exterior angle of the third angle.",
+   "options": {
+    "D": "109°",
+    "A": "54.5°",
+    "C": "71°",
+    "B": "125°"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "बहिष्कोण प्रमेय: बहिष्कोण = दो अंतर्विपरीत अंतःकोणों का योग",
+    "बहिष्कोण = 54° + 55° = 109°"
+   ],
+   "finalAnswer": "109°",
+   "shortcut": "बहिष्कोण = दो दूसरे अंतःकोणों का योग",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q059",
+   "testNumber": 20,
+   "questionNumber": 59,
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो समरूप त्रिभुजों (similar triangles) में पहले त्रिभुज की भुजाएँ 20 सेमी, 8 सेमी और 12 सेमी हैं। यदि दूसरे त्रिभुज की सबसे लंबी भुजा 60 सेमी है, तो दूसरे त्रिभुज की 8 सेमी वाली भुजा के संगत वाली भुजा ज्ञात कीजिए।",
+   "questionEn": "Two similar triangles have sides in ratio 1:3. If a side of the smaller triangle is 8 cm, find the corresponding side of the larger triangle.",
+   "options": {
+    "A": "24 सेमी",
+    "C": "25 सेमी",
+    "D": "8 सेमी",
+    "B": "27 सेमी"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समरूप त्रिभुजों में संगत भुजाओं का अनुपात समान होता है।",
+    "अनुपात = 20/60 = 1/3",
+    "संगत भुजा = 8 × 3 = 24 सेमी"
+   ],
+   "finalAnswer": "24 सेमी",
+   "shortcut": "समरूप त्रिभुज: भुजाएँ समान अनुपात में",
+   "marks": 1
+  }
+ ]
+}

@@ -1,0 +1,1060 @@
+{
+ "topic": "Age Problems",
+ "topicHi": "आयु संबंधी प्रश्न",
+ "slug": "age-problems",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q020",
+   "testNumber": 1,
+   "questionNumber": 20,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A की आयु B से 3 गुनी है। 10 वर्ष बाद A की आयु, B की आयु की दोगुनी हो जाएगी। A की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "A's age is 3 times B's age. After 10 years, A will be twice as old as B. Find A's present age.",
+   "options": {
+    "A": "30 वर्ष",
+    "C": "20 वर्ष",
+    "D": "40 वर्ष",
+    "B": "10 वर्ष"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए B की आयु = x ⇒ A = 3x",
+    "10 वर्ष बाद: 3x + 10 = 2(x + 10)",
+    "3x + 10 = 2x + 20 ⇒ 1x = 10 ⇒ x = 10",
+    "A की आयु = 3 × 10 = 30 वर्ष"
+   ],
+   "finalAnswer": "30 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q051",
+   "testNumber": 1,
+   "questionNumber": 51,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 4 गुनी थी। पुत्र की वर्तमान आयु 15 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "10 years ago, a father's age was 4 times his son's age. The son's present age is 15 years. Find the father's present age.",
+   "options": {
+    "C": "30 वर्ष",
+    "A": "40 वर्ष",
+    "B": "20 वर्ष",
+    "D": "25 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "10 वर्ष पहले पुत्र की आयु = 15 − 10 = 5 वर्ष",
+    "तब पिता की आयु = 4 × 5 = 20 वर्ष",
+    "पिता की वर्तमान आयु = 20 + 10 = 30 वर्ष"
+   ],
+   "finalAnswer": "30 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q026",
+   "testNumber": 2,
+   "questionNumber": 26,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "5 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 5 गुनी थी। पुत्र की वर्तमान आयु 22 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "5 years ago, a father's age was 5 times his son's age. The son's present age is 22 years. Find the father's present age.",
+   "options": {
+    "C": "90 वर्ष",
+    "A": "85 वर्ष",
+    "D": "110 वर्ष",
+    "B": "95 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "5 वर्ष पहले पुत्र की आयु = 22 − 5 = 17 वर्ष",
+    "तब पिता की आयु = 5 × 17 = 85 वर्ष",
+    "पिता की वर्तमान आयु = 85 + 5 = 90 वर्ष"
+   ],
+   "finalAnswer": "90 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q050",
+   "testNumber": 2,
+   "questionNumber": 50,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 सदस्यों के एक परिवार की औसत आयु 33 वर्ष है। सबसे छोटे सदस्य की आयु 12 वर्ष है। शेष सदस्यों की औसत आयु ज्ञात कीजिए।",
+   "questionEn": "The average age of a family of 4 members is 33 years. The youngest member is 12 years old. Find the average age of the remaining members.",
+   "options": {
+    "D": "40 वर्ष",
+    "A": "33 वर्ष",
+    "C": "42 वर्ष",
+    "B": "12 वर्ष"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल आयु = 4 × 33 = 132 वर्ष",
+    "शेष सदस्यों की कुल आयु = 132 − 12 = 120 वर्ष",
+    "शेष का औसत = 120/3 = 40 वर्ष"
+   ],
+   "finalAnswer": "40 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q032",
+   "testNumber": 3,
+   "questionNumber": 32,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "8 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 5 गुनी थी। पुत्र की वर्तमान आयु 12 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "8 years ago, a father's age was 5 times his son's age. The son's present age is 12 years. Find the father's present age.",
+   "options": {
+    "D": "28 वर्ष",
+    "A": "20 वर्ष",
+    "B": "60 वर्ष",
+    "C": "36 वर्ष"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "8 वर्ष पहले पुत्र की आयु = 12 − 8 = 4 वर्ष",
+    "तब पिता की आयु = 5 × 4 = 20 वर्ष",
+    "पिता की वर्तमान आयु = 20 + 8 = 28 वर्ष"
+   ],
+   "finalAnswer": "28 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q058",
+   "testNumber": 3,
+   "questionNumber": 58,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पिता और पुत्र की वर्तमान आयु का अनुपात 3 : 1 है और उनकी आयु का योग 20 वर्ष है। 5 वर्ष बाद उनकी आयु का अनुपात क्या होगा?",
+   "questionEn": "The ratio of present ages of father and son is 3:1 and the sum of their ages is 20 years. What will be the ratio of their ages after 5 years?",
+   "options": {
+    "B": "2 : 1",
+    "A": "3 : 1",
+    "C": "1 : 2",
+    "D": "4 : 1"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पुत्र की आयु = x वर्ष, पिता = 3x वर्ष",
+    "x + 3x = 20 ⇒ 4x = 20 ⇒ x = 5",
+    "पिता = 15 वर्ष, पुत्र = 5 वर्ष",
+    "5 वर्ष बाद: 20 : 10 = 2 : 1"
+   ],
+   "finalAnswer": "2 : 1",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q004",
+   "testNumber": 4,
+   "questionNumber": 4,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो व्यक्तियों की वर्तमान आयु का अनुपात 2 : 1 है और आयु का योग 33 वर्ष है। छोटे व्यक्ति की आयु ज्ञात कीजिए।",
+   "questionEn": "The ratio of present ages of two persons is 2:1 and the sum of their ages is 33 years. Find the age of the younger person.",
+   "options": {
+    "C": "11 वर्ष",
+    "A": "16 वर्ष",
+    "D": "22 वर्ष",
+    "B": "16.5 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए आयुएँ 2x और 1x वर्ष हैं।",
+    "2x + 1x = 33 ⇒ 3x = 33 ⇒ x = 11",
+    "छोटे व्यक्ति की आयु = 1 × 11 = 11 वर्ष"
+   ],
+   "finalAnswer": "11 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q033",
+   "testNumber": 4,
+   "questionNumber": 33,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "6 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 3 गुनी थी। पुत्र की वर्तमान आयु 18 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "6 years ago, a father's age was 3 times his son's age. The son's present age is 18 years. Find the father's present age.",
+   "options": {
+    "A": "42 वर्ष",
+    "B": "48 वर्ष",
+    "D": "54 वर्ष",
+    "C": "36 वर्ष"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "6 वर्ष पहले पुत्र की आयु = 18 − 6 = 12 वर्ष",
+    "तब पिता की आयु = 3 × 12 = 36 वर्ष",
+    "पिता की वर्तमान आयु = 36 + 6 = 42 वर्ष"
+   ],
+   "finalAnswer": "42 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q002",
+   "testNumber": 5,
+   "questionNumber": 2,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A की आयु B से 3 गुनी है। 8 वर्ष बाद A की आयु, B की आयु की दोगुनी हो जाएगी। A की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "A's age is 3 times B's age. After 8 years, A will be twice as old as B. Find A's present age.",
+   "options": {
+    "D": "24 वर्ष",
+    "B": "8 वर्ष",
+    "C": "32 वर्ष",
+    "A": "16 वर्ष"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए B की आयु = x ⇒ A = 3x",
+    "8 वर्ष बाद: 3x + 8 = 2(x + 8)",
+    "3x + 8 = 2x + 16 ⇒ 1x = 8 ⇒ x = 8",
+    "A की आयु = 3 × 8 = 24 वर्ष"
+   ],
+   "finalAnswer": "24 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q005",
+   "testNumber": 5,
+   "questionNumber": 5,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो व्यक्तियों की वर्तमान आयु का अनुपात 2 : 1 है और आयु का योग 12 वर्ष है। छोटे व्यक्ति की आयु ज्ञात कीजिए।",
+   "questionEn": "The ratio of present ages of two persons is 2:1 and the sum of their ages is 12 years. Find the age of the younger person.",
+   "options": {
+    "C": "4 वर्ष",
+    "A": "8 वर्ष",
+    "B": "6 वर्ष",
+    "D": "9 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए आयुएँ 2x और 1x वर्ष हैं।",
+    "2x + 1x = 12 ⇒ 3x = 12 ⇒ x = 4",
+    "छोटे व्यक्ति की आयु = 1 × 4 = 4 वर्ष"
+   ],
+   "finalAnswer": "4 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q008",
+   "testNumber": 6,
+   "questionNumber": 8,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पिता और पुत्र की वर्तमान आयु का अनुपात 4 : 1 है और उनकी आयु का योग 25 वर्ष है। 10 वर्ष बाद उनकी आयु का अनुपात क्या होगा?",
+   "questionEn": "The ratio of present ages of father and son is 4:1 and the sum of their ages is 25 years. What will be the ratio of their ages after 10 years?",
+   "options": {
+    "B": "2 : 1",
+    "A": "4 : 1",
+    "C": "1 : 2",
+    "D": "5 : 1"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पुत्र की आयु = x वर्ष, पिता = 4x वर्ष",
+    "x + 4x = 25 ⇒ 5x = 25 ⇒ x = 5",
+    "पिता = 20 वर्ष, पुत्र = 5 वर्ष",
+    "10 वर्ष बाद: 30 : 15 = 2 : 1"
+   ],
+   "finalAnswer": "2 : 1",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q055",
+   "testNumber": 6,
+   "questionNumber": 55,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 सदस्यों के एक परिवार की औसत आयु 27 वर्ष है। सबसे छोटे सदस्य की आयु 12 वर्ष है। शेष सदस्यों की औसत आयु ज्ञात कीजिए।",
+   "questionEn": "The average age of a family of 4 members is 27 years. The youngest member is 12 years old. Find the average age of the remaining members.",
+   "options": {
+    "C": "32 वर्ष",
+    "B": "12 वर्ष",
+    "D": "27 वर्ष",
+    "A": "34 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल आयु = 4 × 27 = 108 वर्ष",
+    "शेष सदस्यों की कुल आयु = 108 − 12 = 96 वर्ष",
+    "शेष का औसत = 96/3 = 32 वर्ष"
+   ],
+   "finalAnswer": "32 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q003",
+   "testNumber": 7,
+   "questionNumber": 3,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "5 सदस्यों के एक परिवार की औसत आयु 25 वर्ष है। सबसे छोटे सदस्य की आयु 13 वर्ष है। शेष सदस्यों की औसत आयु ज्ञात कीजिए।",
+   "questionEn": "The average age of a family of 5 members is 25 years. The youngest member is 13 years old. Find the average age of the remaining members.",
+   "options": {
+    "A": "28 वर्ष",
+    "C": "30 वर्ष",
+    "D": "13 वर्ष",
+    "B": "25 वर्ष"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कुल आयु = 5 × 25 = 125 वर्ष",
+    "शेष सदस्यों की कुल आयु = 125 − 13 = 112 वर्ष",
+    "शेष का औसत = 112/4 = 28 वर्ष"
+   ],
+   "finalAnswer": "28 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q053",
+   "testNumber": 7,
+   "questionNumber": 53,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A की आयु B से 3 गुनी है। 12 वर्ष बाद A की आयु, B की आयु की दोगुनी हो जाएगी। A की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "A's age is 3 times B's age. After 12 years, A will be twice as old as B. Find A's present age.",
+   "options": {
+    "A": "36 वर्ष",
+    "C": "12 वर्ष",
+    "D": "24 वर्ष",
+    "B": "48 वर्ष"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए B की आयु = x ⇒ A = 3x",
+    "12 वर्ष बाद: 3x + 12 = 2(x + 12)",
+    "3x + 12 = 2x + 24 ⇒ 1x = 12 ⇒ x = 12",
+    "A की आयु = 3 × 12 = 36 वर्ष"
+   ],
+   "finalAnswer": "36 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q015",
+   "testNumber": 8,
+   "questionNumber": 15,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "5 सदस्यों के एक परिवार की औसत आयु 34 वर्ष है। सबसे छोटे सदस्य की आयु 10 वर्ष है। शेष सदस्यों की औसत आयु ज्ञात कीजिए।",
+   "questionEn": "The average age of a family of 5 members is 34 years. The youngest member is 10 years old. Find the average age of the remaining members.",
+   "options": {
+    "D": "40 वर्ष",
+    "A": "10 वर्ष",
+    "C": "34 वर्ष",
+    "B": "39 वर्ष"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल आयु = 5 × 34 = 170 वर्ष",
+    "शेष सदस्यों की कुल आयु = 170 − 10 = 160 वर्ष",
+    "शेष का औसत = 160/4 = 40 वर्ष"
+   ],
+   "finalAnswer": "40 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q045",
+   "testNumber": 8,
+   "questionNumber": 45,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "6 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 4 गुनी थी। पुत्र की वर्तमान आयु 15 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "6 years ago, a father's age was 4 times his son's age. The son's present age is 15 years. Find the father's present age.",
+   "options": {
+    "B": "42 वर्ष",
+    "D": "60 वर्ष",
+    "A": "36 वर्ष",
+    "C": "21 वर्ष"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "6 वर्ष पहले पुत्र की आयु = 15 − 6 = 9 वर्ष",
+    "तब पिता की आयु = 4 × 9 = 36 वर्ष",
+    "पिता की वर्तमान आयु = 36 + 6 = 42 वर्ष"
+   ],
+   "finalAnswer": "42 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q036",
+   "testNumber": 9,
+   "questionNumber": 36,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "6 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 4 गुनी थी। पुत्र की वर्तमान आयु 20 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "6 years ago, a father's age was 4 times his son's age. The son's present age is 20 years. Find the father's present age.",
+   "options": {
+    "C": "62 वर्ष",
+    "A": "80 वर्ष",
+    "D": "26 वर्ष",
+    "B": "56 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "6 वर्ष पहले पुत्र की आयु = 20 − 6 = 14 वर्ष",
+    "तब पिता की आयु = 4 × 14 = 56 वर्ष",
+    "पिता की वर्तमान आयु = 56 + 6 = 62 वर्ष"
+   ],
+   "finalAnswer": "62 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q047",
+   "testNumber": 9,
+   "questionNumber": 47,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पिता और पुत्र की वर्तमान आयु का अनुपात 5 : 1 है और उनकी आयु का योग 144 वर्ष है। 12 वर्ष बाद उनकी आयु का अनुपात क्या होगा?",
+   "questionEn": "The ratio of present ages of father and son is 5:1 and the sum of their ages is 144 years. What will be the ratio of their ages after 12 years?",
+   "options": {
+    "C": "11 : 3",
+    "D": "5 : 1",
+    "A": "3 : 11",
+    "B": "6 : 1"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए पुत्र की आयु = x वर्ष, पिता = 5x वर्ष",
+    "x + 5x = 144 ⇒ 6x = 144 ⇒ x = 24",
+    "पिता = 120 वर्ष, पुत्र = 24 वर्ष",
+    "12 वर्ष बाद: 132 : 36 = 11 : 3"
+   ],
+   "finalAnswer": "11 : 3",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q055",
+   "testNumber": 10,
+   "questionNumber": 55,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो व्यक्तियों की वर्तमान आयु का अनुपात 2 : 1 है और आयु का योग 27 वर्ष है। छोटे व्यक्ति की आयु ज्ञात कीजिए।",
+   "questionEn": "The ratio of present ages of two persons is 2:1 and the sum of their ages is 27 years. Find the age of the younger person.",
+   "options": {
+    "A": "9 वर्ष",
+    "C": "18 वर्ष",
+    "B": "14 वर्ष",
+    "D": "13.5 वर्ष"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए आयुएँ 2x और 1x वर्ष हैं।",
+    "2x + 1x = 27 ⇒ 3x = 27 ⇒ x = 9",
+    "छोटे व्यक्ति की आयु = 1 × 9 = 9 वर्ष"
+   ],
+   "finalAnswer": "9 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q057",
+   "testNumber": 10,
+   "questionNumber": 57,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 सदस्यों के एक परिवार की औसत आयु 26 वर्ष है। सबसे छोटे सदस्य की आयु 11 वर्ष है। शेष सदस्यों की औसत आयु ज्ञात कीजिए।",
+   "questionEn": "The average age of a family of 4 members is 26 years. The youngest member is 11 years old. Find the average age of the remaining members.",
+   "options": {
+    "D": "31 वर्ष",
+    "A": "33 वर्ष",
+    "B": "26 वर्ष",
+    "C": "11 वर्ष"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल आयु = 4 × 26 = 104 वर्ष",
+    "शेष सदस्यों की कुल आयु = 104 − 11 = 93 वर्ष",
+    "शेष का औसत = 93/3 = 31 वर्ष"
+   ],
+   "finalAnswer": "31 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q010",
+   "testNumber": 11,
+   "questionNumber": 10,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 सदस्यों के एक परिवार की औसत आयु 30 वर्ष है। सबसे छोटे सदस्य की आयु 15 वर्ष है। शेष सदस्यों की औसत आयु ज्ञात कीजिए।",
+   "questionEn": "The average age of a family of 4 members is 30 years. The youngest member is 15 years old. Find the average age of the remaining members.",
+   "options": {
+    "B": "35 वर्ष",
+    "D": "37 वर्ष",
+    "C": "15 वर्ष",
+    "A": "30 वर्ष"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कुल आयु = 4 × 30 = 120 वर्ष",
+    "शेष सदस्यों की कुल आयु = 120 − 15 = 105 वर्ष",
+    "शेष का औसत = 105/3 = 35 वर्ष"
+   ],
+   "finalAnswer": "35 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q020",
+   "testNumber": 11,
+   "questionNumber": 20,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "8 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 4 गुनी थी। पुत्र की वर्तमान आयु 22 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "8 years ago, a father's age was 4 times his son's age. The son's present age is 22 years. Find the father's present age.",
+   "options": {
+    "A": "64 वर्ष",
+    "B": "88 वर्ष",
+    "C": "30 वर्ष",
+    "D": "56 वर्ष"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "8 वर्ष पहले पुत्र की आयु = 22 − 8 = 14 वर्ष",
+    "तब पिता की आयु = 4 × 14 = 56 वर्ष",
+    "पिता की वर्तमान आयु = 56 + 8 = 64 वर्ष"
+   ],
+   "finalAnswer": "64 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q024",
+   "testNumber": 12,
+   "questionNumber": 24,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "6 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 5 गुनी थी। पुत्र की वर्तमान आयु 24 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "6 years ago, a father's age was 5 times his son's age. The son's present age is 24 years. Find the father's present age.",
+   "options": {
+    "B": "96 वर्ष",
+    "C": "120 वर्ष",
+    "A": "102 वर्ष",
+    "D": "90 वर्ष"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "6 वर्ष पहले पुत्र की आयु = 24 − 6 = 18 वर्ष",
+    "तब पिता की आयु = 5 × 18 = 90 वर्ष",
+    "पिता की वर्तमान आयु = 90 + 6 = 96 वर्ष"
+   ],
+   "finalAnswer": "96 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q034",
+   "testNumber": 12,
+   "questionNumber": 34,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पिता और पुत्र की वर्तमान आयु का अनुपात 5 : 1 है और उनकी आयु का योग 72 वर्ष है। 4 वर्ष बाद उनकी आयु का अनुपात क्या होगा?",
+   "questionEn": "The ratio of present ages of father and son is 5:1 and the sum of their ages is 72 years. What will be the ratio of their ages after 4 years?",
+   "options": {
+    "B": "4 : 1",
+    "D": "5 : 1",
+    "A": "1 : 4",
+    "C": "6 : 1"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पुत्र की आयु = x वर्ष, पिता = 5x वर्ष",
+    "x + 5x = 72 ⇒ 6x = 72 ⇒ x = 12",
+    "पिता = 60 वर्ष, पुत्र = 12 वर्ष",
+    "4 वर्ष बाद: 64 : 16 = 4 : 1"
+   ],
+   "finalAnswer": "4 : 1",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q024",
+   "testNumber": 13,
+   "questionNumber": 24,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 सदस्यों के एक परिवार की औसत आयु 33 वर्ष है। सबसे छोटे सदस्य की आयु 15 वर्ष है। शेष सदस्यों की औसत आयु ज्ञात कीजिए।",
+   "questionEn": "The average age of a family of 4 members is 33 years. The youngest member is 15 years old. Find the average age of the remaining members.",
+   "options": {
+    "C": "39 वर्ष",
+    "A": "41 वर्ष",
+    "D": "38 वर्ष",
+    "B": "15 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल आयु = 4 × 33 = 132 वर्ष",
+    "शेष सदस्यों की कुल आयु = 132 − 15 = 117 वर्ष",
+    "शेष का औसत = 117/3 = 39 वर्ष"
+   ],
+   "finalAnswer": "39 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q054",
+   "testNumber": 13,
+   "questionNumber": 54,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो व्यक्तियों की वर्तमान आयु का अनुपात 5 : 2 है और आयु का योग 28 वर्ष है। छोटे व्यक्ति की आयु ज्ञात कीजिए।",
+   "questionEn": "The ratio of present ages of two persons is 5:2 and the sum of their ages is 28 years. Find the age of the younger person.",
+   "options": {
+    "D": "8 वर्ष",
+    "B": "20 वर्ष",
+    "C": "14 वर्ष",
+    "A": "13 वर्ष"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए आयुएँ 5x और 2x वर्ष हैं।",
+    "5x + 2x = 28 ⇒ 7x = 28 ⇒ x = 4",
+    "छोटे व्यक्ति की आयु = 2 × 4 = 8 वर्ष"
+   ],
+   "finalAnswer": "8 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q027",
+   "testNumber": 14,
+   "questionNumber": 27,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो व्यक्तियों की वर्तमान आयु का अनुपात 4 : 2 है और आयु का योग 36 वर्ष है। छोटे व्यक्ति की आयु ज्ञात कीजिए।",
+   "questionEn": "The ratio of present ages of two persons is 4:2 and the sum of their ages is 36 years. Find the age of the younger person.",
+   "options": {
+    "B": "12 वर्ष",
+    "A": "17 वर्ष",
+    "C": "18 वर्ष",
+    "D": "24 वर्ष"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए आयुएँ 4x और 2x वर्ष हैं।",
+    "4x + 2x = 36 ⇒ 6x = 36 ⇒ x = 6",
+    "छोटे व्यक्ति की आयु = 2 × 6 = 12 वर्ष"
+   ],
+   "finalAnswer": "12 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q040",
+   "testNumber": 14,
+   "questionNumber": 40,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पिता और पुत्र की वर्तमान आयु का अनुपात 5 : 1 है और उनकी आयु का योग 120 वर्ष है। 10 वर्ष बाद उनकी आयु का अनुपात क्या होगा?",
+   "questionEn": "The ratio of present ages of father and son is 5:1 and the sum of their ages is 120 years. What will be the ratio of their ages after 10 years?",
+   "options": {
+    "A": "11 : 3",
+    "B": "5 : 1",
+    "C": "3 : 11",
+    "D": "6 : 1"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए पुत्र की आयु = x वर्ष, पिता = 5x वर्ष",
+    "x + 5x = 120 ⇒ 6x = 120 ⇒ x = 20",
+    "पिता = 100 वर्ष, पुत्र = 20 वर्ष",
+    "10 वर्ष बाद: 110 : 30 = 11 : 3"
+   ],
+   "finalAnswer": "11 : 3",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q008",
+   "testNumber": 15,
+   "questionNumber": 8,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "8 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 4 गुनी थी। पुत्र की वर्तमान आयु 16 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "8 years ago, a father's age was 4 times his son's age. The son's present age is 16 years. Find the father's present age.",
+   "options": {
+    "A": "40 वर्ष",
+    "B": "48 वर्ष",
+    "C": "24 वर्ष",
+    "D": "32 वर्ष"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "8 वर्ष पहले पुत्र की आयु = 16 − 8 = 8 वर्ष",
+    "तब पिता की आयु = 4 × 8 = 32 वर्ष",
+    "पिता की वर्तमान आयु = 32 + 8 = 40 वर्ष"
+   ],
+   "finalAnswer": "40 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q055",
+   "testNumber": 15,
+   "questionNumber": 55,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पिता और पुत्र की वर्तमान आयु का अनुपात 5 : 1 है और उनकी आयु का योग 120 वर्ष है। 12 वर्ष बाद उनकी आयु का अनुपात क्या होगा?",
+   "questionEn": "The ratio of present ages of father and son is 5:1 and the sum of their ages is 120 years. What will be the ratio of their ages after 12 years?",
+   "options": {
+    "A": "7 : 2",
+    "C": "5 : 1",
+    "B": "2 : 7",
+    "D": "6 : 1"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए पुत्र की आयु = x वर्ष, पिता = 5x वर्ष",
+    "x + 5x = 120 ⇒ 6x = 120 ⇒ x = 20",
+    "पिता = 100 वर्ष, पुत्र = 20 वर्ष",
+    "12 वर्ष बाद: 112 : 32 = 7 : 2"
+   ],
+   "finalAnswer": "7 : 2",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q002",
+   "testNumber": 16,
+   "questionNumber": 2,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पिता और पुत्र की वर्तमान आयु का अनुपात 5 : 1 है और उनकी आयु का योग 48 वर्ष है। 4 वर्ष बाद उनकी आयु का अनुपात क्या होगा?",
+   "questionEn": "The ratio of present ages of father and son is 5:1 and the sum of their ages is 48 years. What will be the ratio of their ages after 4 years?",
+   "options": {
+    "B": "11 : 3",
+    "C": "5 : 1",
+    "D": "3 : 11",
+    "A": "6 : 1"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पुत्र की आयु = x वर्ष, पिता = 5x वर्ष",
+    "x + 5x = 48 ⇒ 6x = 48 ⇒ x = 8",
+    "पिता = 40 वर्ष, पुत्र = 8 वर्ष",
+    "4 वर्ष बाद: 44 : 12 = 11 : 3"
+   ],
+   "finalAnswer": "11 : 3",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q053",
+   "testNumber": 16,
+   "questionNumber": 53,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "6 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 3 गुनी थी। पुत्र की वर्तमान आयु 14 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "6 years ago, a father's age was 3 times his son's age. The son's present age is 14 years. Find the father's present age.",
+   "options": {
+    "B": "30 वर्ष",
+    "D": "20 वर्ष",
+    "C": "24 वर्ष",
+    "A": "36 वर्ष"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "6 वर्ष पहले पुत्र की आयु = 14 − 6 = 8 वर्ष",
+    "तब पिता की आयु = 3 × 8 = 24 वर्ष",
+    "पिता की वर्तमान आयु = 24 + 6 = 30 वर्ष"
+   ],
+   "finalAnswer": "30 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q006",
+   "testNumber": 17,
+   "questionNumber": 6,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो व्यक्तियों की वर्तमान आयु का अनुपात 4 : 3 है और आयु का योग 56 वर्ष है। छोटे व्यक्ति की आयु ज्ञात कीजिए।",
+   "questionEn": "The ratio of present ages of two persons is 4:3 and the sum of their ages is 56 years. Find the age of the younger person.",
+   "options": {
+    "C": "24 वर्ष",
+    "D": "29 वर्ष",
+    "B": "32 वर्ष",
+    "A": "28 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए आयुएँ 4x और 3x वर्ष हैं।",
+    "4x + 3x = 56 ⇒ 7x = 56 ⇒ x = 8",
+    "छोटे व्यक्ति की आयु = 3 × 8 = 24 वर्ष"
+   ],
+   "finalAnswer": "24 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q059",
+   "testNumber": 17,
+   "questionNumber": 59,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "5 सदस्यों के एक परिवार की औसत आयु 31 वर्ष है। सबसे छोटे सदस्य की आयु 11 वर्ष है। शेष सदस्यों की औसत आयु ज्ञात कीजिए।",
+   "questionEn": "The average age of a family of 5 members is 31 years. The youngest member is 11 years old. Find the average age of the remaining members.",
+   "options": {
+    "D": "36 वर्ष",
+    "B": "38 वर्ष",
+    "A": "11 वर्ष",
+    "C": "31 वर्ष"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल आयु = 5 × 31 = 155 वर्ष",
+    "शेष सदस्यों की कुल आयु = 155 − 11 = 144 वर्ष",
+    "शेष का औसत = 144/4 = 36 वर्ष"
+   ],
+   "finalAnswer": "36 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q022",
+   "testNumber": 18,
+   "questionNumber": 22,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पिता और पुत्र की वर्तमान आयु का अनुपात 6 : 1 है और उनकी आयु का योग 70 वर्ष है। 10 वर्ष बाद उनकी आयु का अनुपात क्या होगा?",
+   "questionEn": "The ratio of present ages of father and son is 6:1 and the sum of their ages is 70 years. What will be the ratio of their ages after 10 years?",
+   "options": {
+    "B": "7 : 2",
+    "C": "6 : 1",
+    "A": "2 : 7",
+    "D": "7 : 1"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पुत्र की आयु = x वर्ष, पिता = 6x वर्ष",
+    "x + 6x = 70 ⇒ 7x = 70 ⇒ x = 10",
+    "पिता = 60 वर्ष, पुत्र = 10 वर्ष",
+    "10 वर्ष बाद: 70 : 20 = 7 : 2"
+   ],
+   "finalAnswer": "7 : 2",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q053",
+   "testNumber": 18,
+   "questionNumber": 53,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो व्यक्तियों की वर्तमान आयु का अनुपात 6 : 3 है और आयु का योग 72 वर्ष है। छोटे व्यक्ति की आयु ज्ञात कीजिए।",
+   "questionEn": "The ratio of present ages of two persons is 6:3 and the sum of their ages is 72 years. Find the age of the younger person.",
+   "options": {
+    "C": "24 वर्ष",
+    "A": "48 वर्ष",
+    "D": "36 वर्ष",
+    "B": "29 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए आयुएँ 6x और 3x वर्ष हैं।",
+    "6x + 3x = 72 ⇒ 9x = 72 ⇒ x = 8",
+    "छोटे व्यक्ति की आयु = 3 × 8 = 24 वर्ष"
+   ],
+   "finalAnswer": "24 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q003",
+   "testNumber": 19,
+   "questionNumber": 3,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 4 गुनी थी। पुत्र की वर्तमान आयु 22 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "10 years ago, a father's age was 4 times his son's age. The son's present age is 22 years. Find the father's present age.",
+   "options": {
+    "B": "58 वर्ष",
+    "C": "68 वर्ष",
+    "A": "48 वर्ष",
+    "D": "32 वर्ष"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "10 वर्ष पहले पुत्र की आयु = 22 − 10 = 12 वर्ष",
+    "तब पिता की आयु = 4 × 12 = 48 वर्ष",
+    "पिता की वर्तमान आयु = 48 + 10 = 58 वर्ष"
+   ],
+   "finalAnswer": "58 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q019",
+   "testNumber": 19,
+   "questionNumber": 19,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो व्यक्तियों की वर्तमान आयु का अनुपात 6 : 2 है और आयु का योग 48 वर्ष है। छोटे व्यक्ति की आयु ज्ञात कीजिए।",
+   "questionEn": "The ratio of present ages of two persons is 6:2 and the sum of their ages is 48 years. Find the age of the younger person.",
+   "options": {
+    "B": "12 वर्ष",
+    "C": "24 वर्ष",
+    "D": "36 वर्ष",
+    "A": "17 वर्ष"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए आयुएँ 6x और 2x वर्ष हैं।",
+    "6x + 2x = 48 ⇒ 8x = 48 ⇒ x = 6",
+    "छोटे व्यक्ति की आयु = 2 × 6 = 12 वर्ष"
+   ],
+   "finalAnswer": "12 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q021",
+   "testNumber": 20,
+   "questionNumber": 21,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A की आयु B से 3 गुनी है। 6 वर्ष बाद A की आयु, B की आयु की दोगुनी हो जाएगी। A की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "A's age is 3 times B's age. After 6 years, A will be twice as old as B. Find A's present age.",
+   "options": {
+    "C": "18 वर्ष",
+    "B": "12 वर्ष",
+    "D": "24 वर्ष",
+    "A": "6 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए B की आयु = x ⇒ A = 3x",
+    "6 वर्ष बाद: 3x + 6 = 2(x + 6)",
+    "3x + 6 = 2x + 12 ⇒ 1x = 6 ⇒ x = 6",
+    "A की आयु = 3 × 6 = 18 वर्ष"
+   ],
+   "finalAnswer": "18 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q052",
+   "testNumber": 20,
+   "questionNumber": 52,
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "8 वर्ष पहले, पिता की आयु अपने पुत्र की आयु की 3 गुनी थी। पुत्र की वर्तमान आयु 16 वर्ष है। पिता की वर्तमान आयु ज्ञात कीजिए।",
+   "questionEn": "8 years ago, a father's age was 3 times his son's age. The son's present age is 16 years. Find the father's present age.",
+   "options": {
+    "C": "32 वर्ष",
+    "B": "24 वर्ष",
+    "D": "48 वर्ष",
+    "A": "40 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "8 वर्ष पहले पुत्र की आयु = 16 − 8 = 8 वर्ष",
+    "तब पिता की आयु = 3 × 8 = 24 वर्ष",
+    "पिता की वर्तमान आयु = 24 + 8 = 32 वर्ष"
+   ],
+   "finalAnswer": "32 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  }
+ ]
+}

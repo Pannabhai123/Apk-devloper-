@@ -1,0 +1,1063 @@
+{
+ "topic": "Trigonometry",
+ "topicHi": "त्रिकोणमिति",
+ "slug": "trigonometry",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q001",
+   "testNumber": 1,
+   "questionNumber": 1,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 40/42 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 40/42 (θ acute), find the value of sinθ.",
+   "options": {
+    "B": "40/58",
+    "A": "42/58",
+    "C": "40/42",
+    "D": "58/42"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tanθ = लंब/आधार = 40/42",
+    "लंब = 40, आधार = 42",
+    "कर्ण = √(40² + 42²) = √(1600 + 1764) = 58",
+    "sinθ = लंब/कर्ण = 40/58"
+   ],
+   "finalAnswer": "40/58",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q008",
+   "testNumber": 1,
+   "questionNumber": 8,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "cot 30° + tan 30° का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of cot 30° + tan 30°.",
+   "options": {
+    "D": "4√3/3",
+    "A": "√2",
+    "B": "1/2",
+    "C": "3/4"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "cot 30° = √3",
+    "tan 30° = √3/3",
+    "योग = √3 + √3/3 = 4√3/3"
+   ],
+   "finalAnswer": "4√3/3",
+   "shortcut": "मानक कोणों के मान याद रखें: sin30 = 1/2, cos60 = 1/2, tan45 = 1, √2 ≈ 1.414, √3 ≈ 1.732",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q028",
+   "testNumber": 2,
+   "questionNumber": 28,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "θ = 45° है। sec²θ − tan²θ का मान ज्ञात कीजिए।",
+   "questionEn": "If θ = 45°, find the value of sec²θ − tan²θ.",
+   "options": {
+    "C": "1",
+    "D": "0",
+    "A": "2",
+    "B": "√3"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "यह एक मूलभूत सर्वसमिका (identity) है:",
+    "sec²θ − tan²θ = 1 (प्रत्येक θ के लिए, जहाँ परिभाषित हो)",
+    "अतः θ = 45° के लिए भी मान = 1"
+   ],
+   "finalAnswer": "1",
+   "shortcut": "sec²θ − tan²θ = 1; sin²θ + cos²θ = 1; cosec²θ − cot²θ = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q038",
+   "testNumber": 2,
+   "questionNumber": 38,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "sin 30° + cos 60° का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of sin 30° + cos 60°.",
+   "options": {
+    "D": "1",
+    "A": "5/2",
+    "C": "2√3",
+    "B": "1/√2"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "sin 30° = 1/2",
+    "cos 60° = 1/2",
+    "योग = 1/2 + 1/2 = 1"
+   ],
+   "finalAnswer": "1",
+   "shortcut": "मानक कोणों के मान याद रखें: sin30 = 1/2, cos60 = 1/2, tan45 = 1, √2 ≈ 1.414, √3 ≈ 1.732",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q034",
+   "testNumber": 3,
+   "questionNumber": 34,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "θ = 30° पर sin²θ + cos²θ का मान क्या है?",
+   "questionEn": "What is the value of sin²θ + cos²θ at θ = 30°?",
+   "options": {
+    "D": "1",
+    "C": "0",
+    "B": "2",
+    "A": "1/2"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मूलभूत सर्वसमिका: sin²θ + cos²θ = 1",
+    "यह प्रत्येक कोण θ के लिए सत्य है।",
+    "अतः θ = 30° पर मान = 1"
+   ],
+   "finalAnswer": "1",
+   "shortcut": "sin²θ + cos²θ = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q047",
+   "testNumber": 3,
+   "questionNumber": 47,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 9/40 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 9/40 (θ acute), find the value of sinθ.",
+   "options": {
+    "A": "9/41",
+    "D": "40/41",
+    "C": "9/40",
+    "B": "41/40"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "tanθ = लंब/आधार = 9/40",
+    "लंब = 9, आधार = 40",
+    "कर्ण = √(9² + 40²) = √(81 + 1600) = 41",
+    "sinθ = लंब/कर्ण = 9/41"
+   ],
+   "finalAnswer": "9/41",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q047",
+   "testNumber": 4,
+   "questionNumber": 47,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "θ = 90° पर sin²θ + cos²θ का मान क्या है?",
+   "questionEn": "What is the value of sin²θ + cos²θ at θ = 90°?",
+   "options": {
+    "D": "1",
+    "C": "0",
+    "B": "2",
+    "A": "1/2"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मूलभूत सर्वसमिका: sin²θ + cos²θ = 1",
+    "यह प्रत्येक कोण θ के लिए सत्य है।",
+    "अतः θ = 90° पर मान = 1"
+   ],
+   "finalAnswer": "1",
+   "shortcut": "sin²θ + cos²θ = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q058",
+   "testNumber": 4,
+   "questionNumber": 58,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "sin 60° + cos 30° का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of sin 60° + cos 30°.",
+   "options": {
+    "D": "√3",
+    "A": "√3/2",
+    "B": "3",
+    "C": "2√2"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "sin 60° = √3/2",
+    "cos 30° = √3/2",
+    "योग = √3/2 + √3/2 = √3"
+   ],
+   "finalAnswer": "√3",
+   "shortcut": "मानक कोणों के मान याद रखें: sin30 = 1/2, cos60 = 1/2, tan45 = 1, √2 ≈ 1.414, √3 ≈ 1.732",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q001",
+   "testNumber": 5,
+   "questionNumber": 1,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 7/24 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 7/24 (θ acute), find the value of sinθ.",
+   "options": {
+    "B": "7/25",
+    "C": "24/25",
+    "D": "7/24",
+    "A": "25/24"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tanθ = लंब/आधार = 7/24",
+    "लंब = 7, आधार = 24",
+    "कर्ण = √(7² + 24²) = √(49 + 576) = 25",
+    "sinθ = लंब/कर्ण = 7/25"
+   ],
+   "finalAnswer": "7/25",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q009",
+   "testNumber": 5,
+   "questionNumber": 9,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "sin 90° + cos 0° का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of sin 90° + cos 0°.",
+   "options": {
+    "B": "2",
+    "D": "√3/2",
+    "C": "0",
+    "A": "√2/2"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "sin 90° = 1",
+    "cos 0° = 1",
+    "योग = 1 + 1 = 2"
+   ],
+   "finalAnswer": "2",
+   "shortcut": "मानक कोणों के मान याद रखें: sin30 = 1/2, cos60 = 1/2, tan45 = 1, √2 ≈ 1.414, √3 ≈ 1.732",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q018",
+   "testNumber": 6,
+   "questionNumber": 18,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक मीनार के पाद से 25 मीटर की दूरी पर स्थित बिंदु से मीनार के शिखर का उन्नयन कोण (angle of elevation) 45° है। मीनार की ऊँचाई ज्ञात कीजिए।",
+   "questionEn": "The angle of elevation of the top of a tower from a point 25 m from its foot is 45°. Find the height of the tower.",
+   "options": {
+    "C": "25 मीटर",
+    "B": "50 मीटर",
+    "A": "12.5 मीटर",
+    "D": "43 मीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "tan45° = ऊँचाई/क्षैतिज दूरी",
+    "1 = ऊँचाई/25",
+    "ऊँचाई = 25 मीटर"
+   ],
+   "finalAnswer": "25 मीटर",
+   "shortcut": "45° पर ऊँचाई = दूरी",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q040",
+   "testNumber": 6,
+   "questionNumber": 40,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि sinθ = 5/13 है (θ न्यूनकोण), तो cotθ का मान ज्ञात कीजिए।",
+   "questionEn": "If sinθ = 5/13 (θ acute), find the value of cotθ.",
+   "options": {
+    "A": "12/5",
+    "B": "5/12",
+    "D": "13/12",
+    "C": "12/13"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "sinθ = लंब/कर्ण = 5/13 ⇒ लंब = 5, कर्ण = 13",
+    "आधार = √(13² − 5²) = √(169 − 25) = 12",
+    "cotθ = आधार/लंब = 12/5"
+   ],
+   "finalAnswer": "12/5",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q005",
+   "testNumber": 7,
+   "questionNumber": 5,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि sinθ = 20/29 है (θ न्यूनकोण), तो cotθ का मान ज्ञात कीजिए।",
+   "questionEn": "If sinθ = 20/29 (θ acute), find the value of cotθ.",
+   "options": {
+    "C": "21/20",
+    "B": "20/21",
+    "A": "29/21",
+    "D": "21/29"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "sinθ = लंब/कर्ण = 20/29 ⇒ लंब = 20, कर्ण = 29",
+    "आधार = √(29² − 20²) = √(841 − 400) = 21",
+    "cotθ = आधार/लंब = 21/20"
+   ],
+   "finalAnswer": "21/20",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q059",
+   "testNumber": 7,
+   "questionNumber": 59,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 20/21 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 20/21 (θ acute), find the value of sinθ.",
+   "options": {
+    "B": "20/29",
+    "C": "21/29",
+    "A": "20/21",
+    "D": "29/21"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tanθ = लंब/आधार = 20/21",
+    "लंब = 20, आधार = 21",
+    "कर्ण = √(20² + 21²) = √(400 + 441) = 29",
+    "sinθ = लंब/कर्ण = 20/29"
+   ],
+   "finalAnswer": "20/29",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q013",
+   "testNumber": 8,
+   "questionNumber": 13,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 14/48 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 14/48 (θ acute), find the value of sinθ.",
+   "options": {
+    "A": "14/50",
+    "C": "48/50",
+    "D": "14/48",
+    "B": "50/48"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "tanθ = लंब/आधार = 14/48",
+    "लंब = 14, आधार = 48",
+    "कर्ण = √(14² + 48²) = √(196 + 2304) = 50",
+    "sinθ = लंब/कर्ण = 14/50"
+   ],
+   "finalAnswer": "14/50",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q024",
+   "testNumber": 8,
+   "questionNumber": 24,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = cot20° है, तो θ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = cot20°, find θ.",
+   "options": {
+    "C": "70°",
+    "D": "20°",
+    "B": "45°",
+    "A": "60°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पूरक कोण सर्वसमिका: tanθ = cot(90° − θ)",
+    "अतः θ = 90° − दिया गया कोण",
+    "θ = 70°"
+   ],
+   "finalAnswer": "70°",
+   "shortcut": "sinθ = cos(90−θ), tanθ = cot(90−θ), secθ = cosec(90−θ)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q012",
+   "testNumber": 9,
+   "questionNumber": 12,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 10/24 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 10/24 (θ acute), find the value of sinθ.",
+   "options": {
+    "B": "10/26",
+    "A": "24/26",
+    "D": "10/24",
+    "C": "26/24"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tanθ = लंब/आधार = 10/24",
+    "लंब = 10, आधार = 24",
+    "कर्ण = √(10² + 24²) = √(100 + 576) = 26",
+    "sinθ = लंब/कर्ण = 10/26"
+   ],
+   "finalAnswer": "10/26",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q043",
+   "testNumber": 9,
+   "questionNumber": 43,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि sinθ = 3/5 है (θ न्यूनकोण), तो cotθ का मान ज्ञात कीजिए।",
+   "questionEn": "If sinθ = 3/5 (θ acute), find the value of cotθ.",
+   "options": {
+    "D": "4/3",
+    "A": "3/4",
+    "B": "5/4",
+    "C": "4/5"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "sinθ = लंब/कर्ण = 3/5 ⇒ लंब = 3, कर्ण = 5",
+    "आधार = √(5² − 3²) = √(25 − 9) = 4",
+    "cotθ = आधार/लंब = 4/3"
+   ],
+   "finalAnswer": "4/3",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q033",
+   "testNumber": 10,
+   "questionNumber": 33,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि sinθ = cos65° है, तो θ का मान ज्ञात कीजिए।",
+   "questionEn": "If sinθ = cos65°, find θ.",
+   "options": {
+    "C": "25°",
+    "A": "65°",
+    "D": "45°",
+    "B": "60°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पूरक कोण सर्वसमिका: sinθ = cos(90° − θ)",
+    "अतः θ = 90° − दिया गया कोण",
+    "θ = 25°"
+   ],
+   "finalAnswer": "25°",
+   "shortcut": "sinθ = cos(90−θ), tanθ = cot(90−θ), secθ = cosec(90−θ)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q045",
+   "testNumber": 10,
+   "questionNumber": 45,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक मीनार के पाद से 10 मीटर की दूरी पर स्थित बिंदु से मीनार के शिखर का उन्नयन कोण (angle of elevation) 45° है। मीनार की ऊँचाई ज्ञात कीजिए।",
+   "questionEn": "The angle of elevation of the top of a tower from a point 10 m from its foot is 45°. Find the height of the tower.",
+   "options": {
+    "B": "10 मीटर",
+    "D": "5 मीटर",
+    "C": "20 मीटर",
+    "A": "15 मीटर"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tan45° = ऊँचाई/क्षैतिज दूरी",
+    "1 = ऊँचाई/10",
+    "ऊँचाई = 10 मीटर"
+   ],
+   "finalAnswer": "10 मीटर",
+   "shortcut": "45° पर ऊँचाई = दूरी",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q031",
+   "testNumber": 11,
+   "questionNumber": 31,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "sin²45° + cos²45° का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of sin²45° + cos²45°.",
+   "options": {
+    "D": "1",
+    "A": "0",
+    "B": "1/2",
+    "C": "2"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "sin45° = cos45° = 1/√2",
+    "वर्ग करने पर प्रत्येक = 1/2",
+    "1/2 + 1/2 = 1",
+    "अतः मान = 1"
+   ],
+   "finalAnswer": "1",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q057",
+   "testNumber": 11,
+   "questionNumber": 57,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि sinθ = 7/25 है (θ न्यूनकोण), तो cotθ का मान ज्ञात कीजिए।",
+   "questionEn": "If sinθ = 7/25 (θ acute), find the value of cotθ.",
+   "options": {
+    "C": "24/7",
+    "D": "7/24",
+    "B": "25/24",
+    "A": "24/25"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "sinθ = लंब/कर्ण = 7/25 ⇒ लंब = 7, कर्ण = 25",
+    "आधार = √(25² − 7²) = √(625 − 49) = 24",
+    "cotθ = आधार/लंब = 24/7"
+   ],
+   "finalAnswer": "24/7",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q029",
+   "testNumber": 12,
+   "questionNumber": 29,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "sin²30° + cos²60° का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of sin²30° + cos²60°.",
+   "options": {
+    "A": "1/2",
+    "D": "0",
+    "C": "1",
+    "B": "2"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "sin30° = 1/2 ⇒ sin²30° = 1/4",
+    "cos60° = 1/2 ⇒ cos²60° = 1/4",
+    "1/4 + 1/4 = 1/2",
+    "अतः मान = 1/2"
+   ],
+   "finalAnswer": "1/2",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q045",
+   "testNumber": 12,
+   "questionNumber": 45,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि secθ = cosec55° है, तो θ का मान ज्ञात कीजिए।",
+   "questionEn": "If secθ = cosec55°, find θ.",
+   "options": {
+    "C": "35°",
+    "A": "55°",
+    "B": "45°",
+    "D": "60°"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पूरक कोण सर्वसमिका: secθ = cosec(90° − θ)",
+    "अतः θ = 90° − दिया गया कोण",
+    "θ = 35°"
+   ],
+   "finalAnswer": "35°",
+   "shortcut": "sinθ = cos(90−θ), tanθ = cot(90−θ), secθ = cosec(90−θ)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q003",
+   "testNumber": 13,
+   "questionNumber": 3,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक मीनार की ऊँचाई 30 मीटर है। मीनार के पाद से कितनी दूरी पर स्थित बिंदु से शिखर का उन्नयन कोण 30° होगा?",
+   "questionEn": "A tower is 30 m high. At what distance from its foot will the angle of elevation of the top be 30°?",
+   "options": {
+    "C": "30√3 मीटर",
+    "D": "30 मीटर",
+    "B": "30/√3 मीटर",
+    "A": "60 मीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "tan30° = ऊँचाई/दूरी",
+    "1/√3 = 30/दूरी",
+    "दूरी = 30 × √3 = 30√3 मीटर"
+   ],
+   "finalAnswer": "30√3 मीटर",
+   "shortcut": "tan30 = 1/√3, tan60 = √3, tan45 = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q011",
+   "testNumber": 13,
+   "questionNumber": 11,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 16/30 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 16/30 (θ acute), find the value of sinθ.",
+   "options": {
+    "D": "16/34",
+    "C": "30/34",
+    "B": "16/30",
+    "A": "34/30"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "tanθ = लंब/आधार = 16/30",
+    "लंब = 16, आधार = 30",
+    "कर्ण = √(16² + 30²) = √(256 + 900) = 34",
+    "sinθ = लंब/कर्ण = 16/34"
+   ],
+   "finalAnswer": "16/34",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q028",
+   "testNumber": 14,
+   "questionNumber": 28,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "2sin²30° + 2cos²60° का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of 2sin²30° + 2cos²60°.",
+   "options": {
+    "C": "1",
+    "A": "0",
+    "B": "1/2",
+    "D": "2"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "sin30° = cos60° = 1/2",
+    "2 × 1/4 + 2 × 1/4 = 1/2 + 1/2 = 1",
+    "अतः मान = 1"
+   ],
+   "finalAnswer": "1",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q034",
+   "testNumber": 14,
+   "questionNumber": 34,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक मीनार की ऊँचाई 50 मीटर है। मीनार के पाद से कितनी दूरी पर स्थित बिंदु से शिखर का उन्नयन कोण 30° होगा?",
+   "questionEn": "A tower is 50 m high. At what distance from its foot will the angle of elevation of the top be 30°?",
+   "options": {
+    "C": "50√3 मीटर",
+    "D": "50 मीटर",
+    "B": "50/√3 मीटर",
+    "A": "100 मीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "tan30° = ऊँचाई/दूरी",
+    "1/√3 = 50/दूरी",
+    "दूरी = 50 × √3 = 50√3 मीटर"
+   ],
+   "finalAnswer": "50√3 मीटर",
+   "shortcut": "tan30 = 1/√3, tan60 = √3, tan45 = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q022",
+   "testNumber": 15,
+   "questionNumber": 22,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "tan²45° + cot²45° का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of tan²45° + cot²45°.",
+   "options": {
+    "B": "2",
+    "D": "0",
+    "A": "1/2",
+    "C": "1"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tan45° = 1, cot45° = 1",
+    "1 + 1 = 2",
+    "अतः मान = 2"
+   ],
+   "finalAnswer": "2",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q052",
+   "testNumber": 15,
+   "questionNumber": 52,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक मीनार की ऊँचाई 50 मीटर है। मीनार के पाद से कितनी दूरी पर स्थित बिंदु से शिखर का उन्नयन कोण 60° होगा?",
+   "questionEn": "A tower is 50 m high. At what distance from its foot will the angle of elevation of the top be 60°?",
+   "options": {
+    "B": "50/√3 मीटर",
+    "D": "50 मीटर",
+    "A": "50√3 मीटर",
+    "C": "100 मीटर"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tan60° = ऊँचाई/दूरी",
+    "√3 = 50/दूरी",
+    "दूरी = 50 × 1/√3 = 50/√3 मीटर"
+   ],
+   "finalAnswer": "50/√3 मीटर",
+   "shortcut": "tan30 = 1/√3, tan60 = √3, tan45 = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q008",
+   "testNumber": 16,
+   "questionNumber": 8,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 18/80 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 18/80 (θ acute), find the value of sinθ.",
+   "options": {
+    "C": "18/82",
+    "A": "80/82",
+    "B": "18/80",
+    "D": "82/80"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "tanθ = लंब/आधार = 18/80",
+    "लंब = 18, आधार = 80",
+    "कर्ण = √(18² + 80²) = √(324 + 6400) = 82",
+    "sinθ = लंब/कर्ण = 18/82"
+   ],
+   "finalAnswer": "18/82",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q023",
+   "testNumber": 16,
+   "questionNumber": 23,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक मीनार की ऊँचाई 10 मीटर है। मीनार के पाद से कितनी दूरी पर स्थित बिंदु से शिखर का उन्नयन कोण 60° होगा?",
+   "questionEn": "A tower is 10 m high. At what distance from its foot will the angle of elevation of the top be 60°?",
+   "options": {
+    "C": "10/√3 मीटर",
+    "A": "10 मीटर",
+    "B": "10√3 मीटर",
+    "D": "20 मीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "tan60° = ऊँचाई/दूरी",
+    "√3 = 10/दूरी",
+    "दूरी = 10 × 1/√3 = 10/√3 मीटर"
+   ],
+   "finalAnswer": "10/√3 मीटर",
+   "shortcut": "tan30 = 1/√3, tan60 = √3, tan45 = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q035",
+   "testNumber": 17,
+   "questionNumber": 35,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक मीनार की ऊँचाई 10 मीटर है। मीनार के पाद से कितनी दूरी पर स्थित बिंदु से शिखर का उन्नयन कोण 30° होगा?",
+   "questionEn": "A tower is 10 m high. At what distance from its foot will the angle of elevation of the top be 30°?",
+   "options": {
+    "C": "10√3 मीटर",
+    "A": "10 मीटर",
+    "D": "10/√3 मीटर",
+    "B": "20 मीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "tan30° = ऊँचाई/दूरी",
+    "1/√3 = 10/दूरी",
+    "दूरी = 10 × √3 = 10√3 मीटर"
+   ],
+   "finalAnswer": "10√3 मीटर",
+   "shortcut": "tan30 = 1/√3, tan60 = √3, tan45 = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q055",
+   "testNumber": 17,
+   "questionNumber": 55,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 5/12 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 5/12 (θ acute), find the value of sinθ.",
+   "options": {
+    "A": "5/13",
+    "D": "12/13",
+    "C": "5/12",
+    "B": "13/12"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "tanθ = लंब/आधार = 5/12",
+    "लंब = 5, आधार = 12",
+    "कर्ण = √(5² + 12²) = √(25 + 144) = 13",
+    "sinθ = लंब/कर्ण = 5/13"
+   ],
+   "finalAnswer": "5/13",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q003",
+   "testNumber": 18,
+   "questionNumber": 3,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि sinθ = 8/17 है (θ न्यूनकोण), तो cotθ का मान ज्ञात कीजिए।",
+   "questionEn": "If sinθ = 8/17 (θ acute), find the value of cotθ.",
+   "options": {
+    "D": "15/8",
+    "C": "8/15",
+    "B": "17/15",
+    "A": "15/17"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "sinθ = लंब/कर्ण = 8/17 ⇒ लंब = 8, कर्ण = 17",
+    "आधार = √(17² − 8²) = √(289 − 64) = 15",
+    "cotθ = आधार/लंब = 15/8"
+   ],
+   "finalAnswer": "15/8",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q029",
+   "testNumber": 18,
+   "questionNumber": 29,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 3/4 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 3/4 (θ acute), find the value of sinθ.",
+   "options": {
+    "B": "3/5",
+    "D": "4/5",
+    "C": "3/4",
+    "A": "5/4"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tanθ = लंब/आधार = 3/4",
+    "लंब = 3, आधार = 4",
+    "कर्ण = √(3² + 4²) = √(9 + 16) = 5",
+    "sinθ = लंब/कर्ण = 3/5"
+   ],
+   "finalAnswer": "3/5",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q031",
+   "testNumber": 19,
+   "questionNumber": 31,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 8/15 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 8/15 (θ acute), find the value of sinθ.",
+   "options": {
+    "B": "8/17",
+    "C": "15/17",
+    "D": "8/15",
+    "A": "17/15"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "tanθ = लंब/आधार = 8/15",
+    "लंब = 8, आधार = 15",
+    "कर्ण = √(8² + 15²) = √(64 + 225) = 17",
+    "sinθ = लंब/कर्ण = 8/17"
+   ],
+   "finalAnswer": "8/17",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q032",
+   "testNumber": 19,
+   "questionNumber": 32,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक मीनार की ऊँचाई 80 मीटर है। मीनार के पाद से कितनी दूरी पर स्थित बिंदु से शिखर का उन्नयन कोण 60° होगा?",
+   "questionEn": "A tower is 80 m high. At what distance from its foot will the angle of elevation of the top be 60°?",
+   "options": {
+    "A": "80/√3 मीटर",
+    "B": "80 मीटर",
+    "C": "80√3 मीटर",
+    "D": "160 मीटर"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "tan60° = ऊँचाई/दूरी",
+    "√3 = 80/दूरी",
+    "दूरी = 80 × 1/√3 = 80/√3 मीटर"
+   ],
+   "finalAnswer": "80/√3 मीटर",
+   "shortcut": "tan30 = 1/√3, tan60 = √3, tan45 = 1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q003",
+   "testNumber": 20,
+   "questionNumber": 3,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "sin²60° + cos²30° का मान ज्ञात कीजिए।",
+   "questionEn": "Find the value of sin²60° + cos²30°.",
+   "options": {
+    "A": "3/2",
+    "D": "0",
+    "C": "1/2",
+    "B": "1"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "sin60° = cos30° = √3/2",
+    "वर्ग = 3/4 (प्रत्येक)",
+    "3/4 + 3/4 = 3/2",
+    "अतः मान = 3/2"
+   ],
+   "finalAnswer": "3/2",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q006",
+   "testNumber": 20,
+   "questionNumber": 6,
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि tanθ = 6/8 है (θ न्यूनकोण), तो sinθ का मान ज्ञात कीजिए।",
+   "questionEn": "If tanθ = 6/8 (θ acute), find the value of sinθ.",
+   "options": {
+    "C": "6/10",
+    "D": "8/10",
+    "B": "6/8",
+    "A": "10/8"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "tanθ = लंब/आधार = 6/8",
+    "लंब = 6, आधार = 8",
+    "कर्ण = √(6² + 8²) = √(36 + 64) = 10",
+    "sinθ = लंब/कर्ण = 6/10"
+   ],
+   "finalAnswer": "6/10",
+   "shortcut": "tanθ = p/b दिए जाने पर पाइथागोरस से कर्ण निकालें।",
+   "marks": 1
+  }
+ ]
+}

@@ -1,0 +1,1064 @@
+{
+ "topic": "Average",
+ "topicHi": "औसत",
+ "slug": "average",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q021",
+   "testNumber": 1,
+   "questionNumber": 21,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "सोमवार, मंगलवार और बुधवार के तापमान क्रमशः 28°C, 27°C और 23°C रहे। तीन दिनों का औसत तापमान ज्ञात कीजिए।",
+   "questionEn": "The temperatures on Monday, Tuesday and Wednesday were 28°C, 27°C and 23°C. Find the average temperature of the three days.",
+   "options": {
+    "D": "26°C",
+    "A": "25°C",
+    "C": "28°C",
+    "B": "27°C"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "योग = 28 + 27 + 23 = 78°C",
+    "औसत = 78/3 = 26°C"
+   ],
+   "finalAnswer": "26°C",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q058",
+   "testNumber": 1,
+   "questionNumber": 58,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "20 संख्याओं का औसत 26 है। यदि एक संख्या 12 को हटाकर एक नई संख्या रखी जाती है, तो औसत 27 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 20 numbers is 26. If one number 12 is replaced by a new number, the average becomes 27. Find the new number.",
+   "options": {
+    "C": "32",
+    "A": "12",
+    "D": "33",
+    "B": "13"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पुराना योग = 20 × 26 = 520",
+    "नया योग = 20 × 27 = 540",
+    "योग में वृद्धि = 540 − 520 = 20",
+    "नई संख्या = 12 + 20 = 32"
+   ],
+   "finalAnswer": "32",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q045",
+   "testNumber": 2,
+   "questionNumber": 45,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "12 संख्याओं का औसत 60 है। यदि एक संख्या 16 को हटाकर एक नई संख्या रखी जाती है, तो औसत 61 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 12 numbers is 60. If one number 16 is replaced by a new number, the average becomes 61. Find the new number.",
+   "options": {
+    "C": "28",
+    "B": "16",
+    "A": "17",
+    "D": "29"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पुराना योग = 12 × 60 = 720",
+    "नया योग = 12 × 61 = 732",
+    "योग में वृद्धि = 732 − 720 = 12",
+    "नई संख्या = 16 + 12 = 28"
+   ],
+   "finalAnswer": "28",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q051",
+   "testNumber": 2,
+   "questionNumber": 51,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "प्रथम 7 प्राकृत संख्याओं के स्थान पर 7 संख्याओं 48, 51, 37, 37, 55, 44, 50 का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Find the average of the numbers 48, 51, 37, 37, 55, 44, 50.",
+   "options": {
+    "C": "46",
+    "A": "55",
+    "B": "47",
+    "D": "7"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "योग = 48 + 51 + 37 + 37 + 55 + 44 + 50 = 322",
+    "संख्याओं की संख्या = 7",
+    "औसत = 322/7 = 46"
+   ],
+   "finalAnswer": "46",
+   "shortcut": "औसत = योग ÷ संख्याओं की संख्या",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q030",
+   "testNumber": 3,
+   "questionNumber": 30,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "सोमवार, मंगलवार और बुधवार के तापमान क्रमशः 20°C, 28°C और 24°C रहे। तीन दिनों का औसत तापमान ज्ञात कीजिए।",
+   "questionEn": "The temperatures on Monday, Tuesday and Wednesday were 20°C, 28°C and 24°C. Find the average temperature of the three days.",
+   "options": {
+    "B": "24°C",
+    "C": "23°C",
+    "D": "25°C",
+    "A": "28°C"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "योग = 20 + 28 + 24 = 72°C",
+    "औसत = 72/3 = 24°C"
+   ],
+   "finalAnswer": "24°C",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q033",
+   "testNumber": 3,
+   "questionNumber": 33,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 खिलाड़ियों की टीम की औसत आयु 27 वर्ष है। जब कोच (आयु 49 वर्ष) को शामिल किया जाता है, तो औसत आयु कितनी हो जाती है?",
+   "questionEn": "The average age of a team of 10 players is 27 years. When the coach aged 49 years is included, what is the average age?",
+   "options": {
+    "D": "29 वर्ष",
+    "B": "27 वर्ष",
+    "A": "30 वर्ष",
+    "C": "49 वर्ष"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "खिलाड़ियों की कुल आयु = 10 × 27 = 270 वर्ष",
+    "कोच सहित कुल आयु = 270 + 49 = 319 वर्ष",
+    "नया औसत = 319/11 = 29 वर्ष"
+   ],
+   "finalAnswer": "29 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q013",
+   "testNumber": 4,
+   "questionNumber": 13,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "पहली 18 सम संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "Find the average of the first 18 even numbers.",
+   "options": {
+    "A": "19",
+    "C": "18",
+    "B": "20",
+    "D": "10"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "प्रथम n सम संख्याओं का योग = n(n+1) = 18 × 19 = 342",
+    "औसत = 342/18 = 19"
+   ],
+   "finalAnswer": "19",
+   "shortcut": "प्रथम n सम संख्याओं का औसत = n+1",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q059",
+   "testNumber": 4,
+   "questionNumber": 59,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "सोमवार, मंगलवार और बुधवार के तापमान क्रमशः 20°C, 26°C और 29°C रहे। तीन दिनों का औसत तापमान ज्ञात कीजिए।",
+   "questionEn": "The temperatures on Monday, Tuesday and Wednesday were 20°C, 26°C and 29°C. Find the average temperature of the three days.",
+   "options": {
+    "A": "25°C",
+    "B": "29°C",
+    "C": "23°C",
+    "D": "26°C"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "योग = 20 + 26 + 29 = 75°C",
+    "औसत = 75/3 = 25°C"
+   ],
+   "finalAnswer": "25°C",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q008",
+   "testNumber": 5,
+   "questionNumber": 8,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 खिलाड़ियों की टीम की औसत आयु 26 वर्ष है। जब कोच (आयु 48 वर्ष) को शामिल किया जाता है, तो औसत आयु कितनी हो जाती है?",
+   "questionEn": "The average age of a team of 10 players is 26 years. When the coach aged 48 years is included, what is the average age?",
+   "options": {
+    "D": "28 वर्ष",
+    "A": "24 वर्ष",
+    "C": "29 वर्ष",
+    "B": "26 वर्ष"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "खिलाड़ियों की कुल आयु = 10 × 26 = 260 वर्ष",
+    "कोच सहित कुल आयु = 260 + 48 = 308 वर्ष",
+    "नया औसत = 308/11 = 28 वर्ष"
+   ],
+   "finalAnswer": "28 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q024",
+   "testNumber": 5,
+   "questionNumber": 24,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "प्रथम 7 प्राकृत संख्याओं के स्थान पर 7 संख्याओं 80, 70, 74, 67, 77, 70, 80 का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Find the average of the numbers 80, 70, 74, 67, 77, 70, 80.",
+   "options": {
+    "C": "74",
+    "A": "80",
+    "B": "11",
+    "D": "73"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "योग = 80 + 70 + 74 + 67 + 77 + 70 + 80 = 518",
+    "संख्याओं की संख्या = 7",
+    "औसत = 518/7 = 74"
+   ],
+   "finalAnswer": "74",
+   "shortcut": "औसत = योग ÷ संख्याओं की संख्या",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q004",
+   "testNumber": 6,
+   "questionNumber": 4,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "15 संख्याओं का औसत 50 है। यदि एक संख्या 47 को हटाकर एक नई संख्या रखी जाती है, तो औसत 52 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 15 numbers is 50. If one number 47 is replaced by a new number, the average becomes 52. Find the new number.",
+   "options": {
+    "D": "77",
+    "A": "79",
+    "B": "62",
+    "C": "47"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "पुराना योग = 15 × 50 = 750",
+    "नया योग = 15 × 52 = 780",
+    "योग में वृद्धि = 780 − 750 = 30",
+    "नई संख्या = 47 + 30 = 77"
+   ],
+   "finalAnswer": "77",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q019",
+   "testNumber": 6,
+   "questionNumber": 19,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "प्रथम 8 प्राकृत संख्याओं के स्थान पर 8 संख्याओं 76, 86, 76, 76, 84, 86, 85, 47 का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Find the average of the numbers 76, 86, 76, 76, 84, 86, 85, 47.",
+   "options": {
+    "C": "77",
+    "D": "86",
+    "B": "154",
+    "A": "78"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "योग = 76 + 86 + 76 + 76 + 84 + 86 + 85 + 47 = 616",
+    "संख्याओं की संख्या = 8",
+    "औसत = 616/8 = 77"
+   ],
+   "finalAnswer": "77",
+   "shortcut": "औसत = योग ÷ संख्याओं की संख्या",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q023",
+   "testNumber": 7,
+   "questionNumber": 23,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 संख्याओं का औसत 52 है। यदि एक संख्या 11 को हटाकर एक नई संख्या रखी जाती है, तो औसत 56 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 10 numbers is 52. If one number 11 is replaced by a new number, the average becomes 56. Find the new number.",
+   "options": {
+    "B": "51",
+    "A": "41",
+    "C": "11",
+    "D": "15"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पुराना योग = 10 × 52 = 520",
+    "नया योग = 10 × 56 = 560",
+    "योग में वृद्धि = 560 − 520 = 40",
+    "नई संख्या = 11 + 40 = 51"
+   ],
+   "finalAnswer": "51",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q032",
+   "testNumber": 7,
+   "questionNumber": 32,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "प्रथम 7 प्राकृत संख्याओं के स्थान पर 7 संख्याओं 40, 37, 33, 38, 44, 28, 32 का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Find the average of the numbers 40, 37, 33, 38, 44, 28, 32.",
+   "options": {
+    "C": "36",
+    "A": "72",
+    "D": "37",
+    "B": "44"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "योग = 40 + 37 + 33 + 38 + 44 + 28 + 32 = 252",
+    "संख्याओं की संख्या = 7",
+    "औसत = 252/7 = 36"
+   ],
+   "finalAnswer": "36",
+   "shortcut": "औसत = योग ÷ संख्याओं की संख्या",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q025",
+   "testNumber": 8,
+   "questionNumber": 25,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "20 संख्याओं का औसत 46 है। यदि एक संख्या 18 को हटाकर एक नई संख्या रखी जाती है, तो औसत 48 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 20 numbers is 46. If one number 18 is replaced by a new number, the average becomes 48. Find the new number.",
+   "options": {
+    "C": "58",
+    "A": "18",
+    "B": "38",
+    "D": "20"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पुराना योग = 20 × 46 = 920",
+    "नया योग = 20 × 48 = 960",
+    "योग में वृद्धि = 960 − 920 = 40",
+    "नई संख्या = 18 + 40 = 58"
+   ],
+   "finalAnswer": "58",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q033",
+   "testNumber": 8,
+   "questionNumber": 33,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "प्रथम 8 प्राकृत संख्याओं के स्थान पर 8 संख्याओं 48, 46, 35, 45, 41, 52, 36, 41 का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Find the average of the numbers 48, 46, 35, 45, 41, 52, 36, 41.",
+   "options": {
+    "B": "43",
+    "C": "52",
+    "A": "86",
+    "D": "5"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "योग = 48 + 46 + 35 + 45 + 41 + 52 + 36 + 41 = 344",
+    "संख्याओं की संख्या = 8",
+    "औसत = 344/8 = 43"
+   ],
+   "finalAnswer": "43",
+   "shortcut": "औसत = योग ÷ संख्याओं की संख्या",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q005",
+   "testNumber": 9,
+   "questionNumber": 5,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "पहली 12 विषम संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "Find the average of the first 12 odd numbers.",
+   "options": {
+    "D": "12",
+    "A": "11",
+    "B": "6",
+    "C": "13"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "प्रथम n विषम संख्याओं का योग = n² = 12² = 144",
+    "औसत = 144/12 = 12"
+   ],
+   "finalAnswer": "12",
+   "shortcut": "प्रथम n विषम संख्याओं का औसत = n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q049",
+   "testNumber": 9,
+   "questionNumber": 49,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 संख्याओं का औसत 30 है। यदि एक संख्या 24 को हटाकर एक नई संख्या रखी जाती है, तो औसत 34 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 10 numbers is 30. If one number 24 is replaced by a new number, the average becomes 34. Find the new number.",
+   "options": {
+    "A": "64",
+    "B": "28",
+    "D": "54",
+    "C": "68"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पुराना योग = 10 × 30 = 300",
+    "नया योग = 10 × 34 = 340",
+    "योग में वृद्धि = 340 − 300 = 40",
+    "नई संख्या = 24 + 40 = 64"
+   ],
+   "finalAnswer": "64",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q054",
+   "testNumber": 10,
+   "questionNumber": 54,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "6 क्रमागत संख्याओं 3, 4, ..., 8 में से सबसे छोटी संख्या 3 को हटा दिया जाता है। शेष संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "From 6 consecutive numbers 3, 4, ..., 8, the smallest number 3 is removed. Find the average of the remaining numbers.",
+   "options": {
+    "C": "6",
+    "B": "7",
+    "A": "5",
+    "D": "8"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल योग = (3 + 8) × 6/2 = 33",
+    "हटाई गई संख्या = 3",
+    "शेष योग = 33 − 3 = 30",
+    "शेष औसत = 30/5 = 6"
+   ],
+   "finalAnswer": "6",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q058",
+   "testNumber": 10,
+   "questionNumber": 58,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "15 संख्याओं का औसत 36 है। यदि एक संख्या 19 को हटाकर एक नई संख्या रखी जाती है, तो औसत 37 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 15 numbers is 36. If one number 19 is replaced by a new number, the average becomes 37. Find the new number.",
+   "options": {
+    "D": "34",
+    "C": "19",
+    "A": "20",
+    "B": "35"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "पुराना योग = 15 × 36 = 540",
+    "नया योग = 15 × 37 = 555",
+    "योग में वृद्धि = 555 − 540 = 15",
+    "नई संख्या = 19 + 15 = 34"
+   ],
+   "finalAnswer": "34",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q049",
+   "testNumber": 11,
+   "questionNumber": 49,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 क्रमागत संख्याओं 5, 6, ..., 8 में से सबसे छोटी संख्या 5 को हटा दिया जाता है। शेष संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "From 4 consecutive numbers 5, 6, ..., 8, the smallest number 5 is removed. Find the average of the remaining numbers.",
+   "options": {
+    "A": "7",
+    "D": "5",
+    "C": "6",
+    "B": "6.5"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कुल योग = (5 + 8) × 4/2 = 26",
+    "हटाई गई संख्या = 5",
+    "शेष योग = 26 − 5 = 21",
+    "शेष औसत = 21/3 = 7"
+   ],
+   "finalAnswer": "7",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q054",
+   "testNumber": 11,
+   "questionNumber": 54,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "12 संख्याओं का औसत 31 है। यदि एक संख्या 21 को हटाकर एक नई संख्या रखी जाती है, तो औसत 32 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 12 numbers is 31. If one number 21 is replaced by a new number, the average becomes 32. Find the new number.",
+   "options": {
+    "D": "33",
+    "B": "34",
+    "A": "21",
+    "C": "22"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "पुराना योग = 12 × 31 = 372",
+    "नया योग = 12 × 32 = 384",
+    "योग में वृद्धि = 384 − 372 = 12",
+    "नई संख्या = 21 + 12 = 33"
+   ],
+   "finalAnswer": "33",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q025",
+   "testNumber": 12,
+   "questionNumber": 25,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक बल्लेबाज का 11 पारियों में औसत 30 रन है। 12वीं पारी में उसे कितने रन बनाने चाहिए ताकि औसत 34 हो जाए?",
+   "questionEn": "A batsman has an average of 30 runs in 11 innings. How many runs must he score in the 12th innings to raise his average to 34?",
+   "options": {
+    "A": "78 रन",
+    "C": "34 रन",
+    "B": "89 रन",
+    "D": "30 रन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कुल रन (11 पारियाँ) = 11 × 30 = 330",
+    "लक्षित कुल रन (12 पारियाँ) = 12 × 34 = 408",
+    "आवश्यक रन = 408 − 330 = 78 रन"
+   ],
+   "finalAnswer": "78 रन",
+   "shortcut": "आवश्यक रन = नया औसत × (n+1) − पुराना औसत × n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q050",
+   "testNumber": 12,
+   "questionNumber": 50,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "6 क्रमागत संख्याओं 33, 34, ..., 38 में से सबसे बड़ी संख्या 38 को हटा दिया जाता है। शेष संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "From 6 consecutive numbers 33, 34, ..., 38, the largest number 38 is removed. Find the average of the remaining numbers.",
+   "options": {
+    "B": "35",
+    "A": "38",
+    "C": "36",
+    "D": "34"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कुल योग = (33 + 38) × 6/2 = 213",
+    "हटाई गई संख्या = 38",
+    "शेष योग = 213 − 38 = 175",
+    "शेष औसत = 175/5 = 35"
+   ],
+   "finalAnswer": "35",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q014",
+   "testNumber": 13,
+   "questionNumber": 14,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 क्रमागत संख्याओं 39, 40, ..., 42 में से सबसे छोटी संख्या 39 को हटा दिया जाता है। शेष संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "From 4 consecutive numbers 39, 40, ..., 42, the smallest number 39 is removed. Find the average of the remaining numbers.",
+   "options": {
+    "B": "41",
+    "C": "39",
+    "A": "40.5",
+    "D": "42"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कुल योग = (39 + 42) × 4/2 = 162",
+    "हटाई गई संख्या = 39",
+    "शेष योग = 162 − 39 = 123",
+    "शेष औसत = 123/3 = 41"
+   ],
+   "finalAnswer": "41",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q050",
+   "testNumber": 13,
+   "questionNumber": 50,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "15 संख्याओं का औसत 32 है। यदि एक संख्या 20 को हटाकर एक नई संख्या रखी जाती है, तो औसत 34 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 15 numbers is 32. If one number 20 is replaced by a new number, the average becomes 34. Find the new number.",
+   "options": {
+    "B": "50",
+    "D": "20",
+    "A": "52",
+    "C": "35"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पुराना योग = 15 × 32 = 480",
+    "नया योग = 15 × 34 = 510",
+    "योग में वृद्धि = 510 − 480 = 30",
+    "नई संख्या = 20 + 30 = 50"
+   ],
+   "finalAnswer": "50",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q054",
+   "testNumber": 14,
+   "questionNumber": 54,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "8 क्रमागत संख्याओं 40, 41, ..., 47 में से सबसे बड़ी संख्या 47 को हटा दिया जाता है। शेष संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "From 8 consecutive numbers 40, 41, ..., 47, the largest number 47 is removed. Find the average of the remaining numbers.",
+   "options": {
+    "C": "43",
+    "A": "42",
+    "B": "47",
+    "D": "45"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल योग = (40 + 47) × 8/2 = 348",
+    "हटाई गई संख्या = 47",
+    "शेष योग = 348 − 47 = 301",
+    "शेष औसत = 301/7 = 43"
+   ],
+   "finalAnswer": "43",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q059",
+   "testNumber": 14,
+   "questionNumber": 59,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 खिलाड़ियों की टीम की औसत आयु 28 वर्ष है। जब कोच (आयु 50 वर्ष) को शामिल किया जाता है, तो औसत आयु कितनी हो जाती है?",
+   "questionEn": "The average age of a team of 10 players is 28 years. When the coach aged 50 years is included, what is the average age?",
+   "options": {
+    "C": "30 वर्ष",
+    "B": "50 वर्ष",
+    "D": "31 वर्ष",
+    "A": "25 वर्ष"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "खिलाड़ियों की कुल आयु = 10 × 28 = 280 वर्ष",
+    "कोच सहित कुल आयु = 280 + 50 = 330 वर्ष",
+    "नया औसत = 330/11 = 30 वर्ष"
+   ],
+   "finalAnswer": "30 वर्ष",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q004",
+   "testNumber": 15,
+   "questionNumber": 4,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "8 संख्याओं का औसत 27 है। यदि एक संख्या 14 को हटाकर एक नई संख्या रखी जाती है, तो औसत 28 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 8 numbers is 27. If one number 14 is replaced by a new number, the average becomes 28. Find the new number.",
+   "options": {
+    "A": "22",
+    "D": "14",
+    "C": "15",
+    "B": "23"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पुराना योग = 8 × 27 = 216",
+    "नया योग = 8 × 28 = 224",
+    "योग में वृद्धि = 224 − 216 = 8",
+    "नई संख्या = 14 + 8 = 22"
+   ],
+   "finalAnswer": "22",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q051",
+   "testNumber": 15,
+   "questionNumber": 51,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 क्रमागत संख्याओं 3, 4, ..., 6 में से सबसे बड़ी संख्या 6 को हटा दिया जाता है। शेष संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "From 4 consecutive numbers 3, 4, ..., 6, the largest number 6 is removed. Find the average of the remaining numbers.",
+   "options": {
+    "A": "4",
+    "C": "6",
+    "B": "4.5",
+    "D": "5"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कुल योग = (3 + 6) × 4/2 = 18",
+    "हटाई गई संख्या = 6",
+    "शेष योग = 18 − 6 = 12",
+    "शेष औसत = 12/3 = 4"
+   ],
+   "finalAnswer": "4",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q031",
+   "testNumber": 16,
+   "questionNumber": 31,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "प्रथम 7 प्राकृत संख्याओं के स्थान पर 7 संख्याओं 22, 20, 38, 20, 19, 31, 53 का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Find the average of the numbers 22, 20, 38, 20, 19, 31, 53.",
+   "options": {
+    "C": "29",
+    "D": "53",
+    "B": "58",
+    "A": "30"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "योग = 22 + 20 + 38 + 20 + 19 + 31 + 53 = 203",
+    "संख्याओं की संख्या = 7",
+    "औसत = 203/7 = 29"
+   ],
+   "finalAnswer": "29",
+   "shortcut": "औसत = योग ÷ संख्याओं की संख्या",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q046",
+   "testNumber": 16,
+   "questionNumber": 46,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "6 क्रमागत संख्याओं 28, 29, ..., 33 में से सबसे छोटी संख्या 28 को हटा दिया जाता है। शेष संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "From 6 consecutive numbers 28, 29, ..., 33, the smallest number 28 is removed. Find the average of the remaining numbers.",
+   "options": {
+    "D": "31",
+    "A": "32",
+    "C": "33",
+    "B": "28"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल योग = (28 + 33) × 6/2 = 183",
+    "हटाई गई संख्या = 28",
+    "शेष योग = 183 − 28 = 155",
+    "शेष औसत = 155/5 = 31"
+   ],
+   "finalAnswer": "31",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q048",
+   "testNumber": 17,
+   "questionNumber": 48,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक बल्लेबाज का 12 पारियों में औसत 45 रन है। 13वीं पारी में उसे कितने रन बनाने चाहिए ताकि औसत 49 हो जाए?",
+   "questionEn": "A batsman has an average of 45 runs in 12 innings. How many runs must he score in the 13th innings to raise his average to 49?",
+   "options": {
+    "D": "97 रन",
+    "C": "109 रन",
+    "B": "85 रन",
+    "A": "45 रन"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल रन (12 पारियाँ) = 12 × 45 = 540",
+    "लक्षित कुल रन (13 पारियाँ) = 13 × 49 = 637",
+    "आवश्यक रन = 637 − 540 = 97 रन"
+   ],
+   "finalAnswer": "97 रन",
+   "shortcut": "आवश्यक रन = नया औसत × (n+1) − पुराना औसत × n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q058",
+   "testNumber": 17,
+   "questionNumber": 58,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 संख्याओं का औसत 42 है। यदि एक संख्या 29 को हटाकर एक नई संख्या रखी जाती है, तो औसत 45 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 10 numbers is 42. If one number 29 is replaced by a new number, the average becomes 45. Find the new number.",
+   "options": {
+    "C": "59",
+    "B": "62",
+    "D": "49",
+    "A": "32"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पुराना योग = 10 × 42 = 420",
+    "नया योग = 10 × 45 = 450",
+    "योग में वृद्धि = 450 − 420 = 30",
+    "नई संख्या = 29 + 30 = 59"
+   ],
+   "finalAnswer": "59",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q045",
+   "testNumber": 18,
+   "questionNumber": 45,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 क्रमागत संख्याओं 4, 5, ..., 7 में से सबसे बड़ी संख्या 7 को हटा दिया जाता है। शेष संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "From 4 consecutive numbers 4, 5, ..., 7, the largest number 7 is removed. Find the average of the remaining numbers.",
+   "options": {
+    "B": "5",
+    "A": "7",
+    "C": "5.5",
+    "D": "4"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कुल योग = (4 + 7) × 4/2 = 22",
+    "हटाई गई संख्या = 7",
+    "शेष योग = 22 − 7 = 15",
+    "शेष औसत = 15/3 = 5"
+   ],
+   "finalAnswer": "5",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q056",
+   "testNumber": 18,
+   "questionNumber": 56,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक बल्लेबाज का 11 पारियों में औसत 35 रन है। 12वीं पारी में उसे कितने रन बनाने चाहिए ताकि औसत 41 हो जाए?",
+   "questionEn": "A batsman has an average of 35 runs in 11 innings. How many runs must he score in the 12th innings to raise his average to 41?",
+   "options": {
+    "B": "107 रन",
+    "A": "41 रन",
+    "D": "118 रन",
+    "C": "35 रन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कुल रन (11 पारियाँ) = 11 × 35 = 385",
+    "लक्षित कुल रन (12 पारियाँ) = 12 × 41 = 492",
+    "आवश्यक रन = 492 − 385 = 107 रन"
+   ],
+   "finalAnswer": "107 रन",
+   "shortcut": "आवश्यक रन = नया औसत × (n+1) − पुराना औसत × n",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q011",
+   "testNumber": 19,
+   "questionNumber": 11,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "12 संख्याओं का औसत 54 है। यदि एक संख्या 37 को हटाकर एक नई संख्या रखी जाती है, तो औसत 55 हो जाता है। नई संख्या ज्ञात कीजिए।",
+   "questionEn": "The average of 12 numbers is 54. If one number 37 is replaced by a new number, the average becomes 55. Find the new number.",
+   "options": {
+    "C": "49",
+    "B": "50",
+    "A": "37",
+    "D": "38"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पुराना योग = 12 × 54 = 648",
+    "नया योग = 12 × 55 = 660",
+    "योग में वृद्धि = 660 − 648 = 12",
+    "नई संख्या = 37 + 12 = 49"
+   ],
+   "finalAnswer": "49",
+   "shortcut": "नई संख्या = पुरानी संख्या ± n × (औसत परिवर्तन)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q038",
+   "testNumber": 19,
+   "questionNumber": 38,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "प्रथम 8 प्राकृत संख्याओं के स्थान पर 8 संख्याओं 81, 70, 83, 78, 84, 83, 70, 51 का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Find the average of the numbers 81, 70, 83, 78, 84, 83, 70, 51.",
+   "options": {
+    "C": "75",
+    "A": "84",
+    "D": "76",
+    "B": "6"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "योग = 81 + 70 + 83 + 78 + 84 + 83 + 70 + 51 = 600",
+    "संख्याओं की संख्या = 8",
+    "औसत = 600/8 = 75"
+   ],
+   "finalAnswer": "75",
+   "shortcut": "औसत = योग ÷ संख्याओं की संख्या",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q016",
+   "testNumber": 20,
+   "questionNumber": 16,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "प्रथम 6 प्राकृत संख्याओं के स्थान पर 6 संख्याओं 18, 30, 25, 21, 21, 29 का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Find the average of the numbers 18, 30, 25, 21, 21, 29.",
+   "options": {
+    "A": "24",
+    "D": "48",
+    "B": "23",
+    "C": "5"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "योग = 18 + 30 + 25 + 21 + 21 + 29 = 144",
+    "संख्याओं की संख्या = 6",
+    "औसत = 144/6 = 24"
+   ],
+   "finalAnswer": "24",
+   "shortcut": "औसत = योग ÷ संख्याओं की संख्या",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q047",
+   "testNumber": 20,
+   "questionNumber": 47,
+   "topic": "Average",
+   "topicHi": "औसत",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "4 क्रमागत संख्याओं 14, 15, ..., 17 में से सबसे बड़ी संख्या 17 को हटा दिया जाता है। शेष संख्याओं का औसत ज्ञात कीजिए।",
+   "questionEn": "From 4 consecutive numbers 14, 15, ..., 17, the largest number 17 is removed. Find the average of the remaining numbers.",
+   "options": {
+    "C": "15",
+    "B": "17",
+    "D": "14",
+    "A": "15.5"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल योग = (14 + 17) × 4/2 = 62",
+    "हटाई गई संख्या = 17",
+    "शेष योग = 62 − 17 = 45",
+    "शेष औसत = 45/3 = 15"
+   ],
+   "finalAnswer": "15",
+   "shortcut": "",
+   "marks": 1
+  }
+ ]
+}

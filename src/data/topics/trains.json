@@ -1,0 +1,1049 @@
+{
+ "topic": "Train Problems",
+ "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+ "slug": "trains",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q049",
+   "testNumber": 1,
+   "questionNumber": 49,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक 240 मीटर लंबी रेलगाड़ी 36 किमी/घंटा की चाल से एक खंभे को कितने सेकंड में पार करेगी?",
+   "questionEn": "How long will a train 240 m long take to pass a pole at 36 km/h?",
+   "options": {
+    "C": "24 सेकंड",
+    "A": "12 सेकंड",
+    "D": "6.7 सेकंड",
+    "B": "2 सेकंड"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "चाल = 36 किमी/घंटा = 36 × 5/18 = 10 मी/से",
+    "खंभा बिंदु है ⇒ तय दूरी = रेलगाड़ी की लंबाई = 240 मी",
+    "समय = 240/10 = 24 सेकंड"
+   ],
+   "finalAnswer": "24 सेकंड",
+   "shortcut": "किमी/घंटा → मी/से: × 5/18",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q052",
+   "testNumber": 1,
+   "questionNumber": 52,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "100 मीटर और 200 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 90 किमी/घंटा और 54 किमी/घंटा की चाल से एक ही दिशा में समांतर पटरियों पर चल रही हैं। तेज़ रेलगाड़ी धीमी को कितने सेकंड में पार करेगी?",
+   "questionEn": "Two trains of lengths 100 m and 200 m run at 90 km/h and 54 km/h in the same direction. How long will the faster train take to pass the slower one?",
+   "options": {
+    "A": "30 सेकंड",
+    "C": "15 सेकंड",
+    "B": "7.5 सेकंड",
+    "D": "60 सेकंड"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सापेक्ष चाल = 90 − 54 = 36 किमी/घंटा = 10 मी/से",
+    "कुल लंबाई = 100 + 200 = 300 मीटर",
+    "समय = 300/10 = 30 सेकंड"
+   ],
+   "finalAnswer": "30 सेकंड",
+   "shortcut": "समान दिशा: चालों का अंतर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q020",
+   "testNumber": 2,
+   "questionNumber": 20,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 240 मीटर लंबी रेलगाड़ी 72 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 24 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 240 m long train running at 72 km/h crosses a platform in 24 seconds. Find the length of the platform.",
+   "options": {
+    "C": "240 मीटर",
+    "B": "290 मीटर",
+    "D": "480 मीटर",
+    "A": "120 मीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "चाल = 20 मी/से",
+    "कुल तय दूरी = 20 × 24 = 480 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 480 − 240 = 240 मीटर"
+   ],
+   "finalAnswer": "240 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q047",
+   "testNumber": 2,
+   "questionNumber": 47,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक 300 मीटर लंबी रेलगाड़ी 90 किमी/घंटा की चाल से एक खंभे को कितने सेकंड में पार करेगी?",
+   "questionEn": "How long will a train 300 m long take to pass a pole at 90 km/h?",
+   "options": {
+    "A": "12 सेकंड",
+    "D": "3 सेकंड",
+    "C": "3.3 सेकंड",
+    "B": "6 सेकंड"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "चाल = 90 किमी/घंटा = 90 × 5/18 = 25 मी/से",
+    "खंभा बिंदु है ⇒ तय दूरी = रेलगाड़ी की लंबाई = 300 मी",
+    "समय = 300/25 = 12 सेकंड"
+   ],
+   "finalAnswer": "12 सेकंड",
+   "shortcut": "किमी/घंटा → मी/से: × 5/18",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q009",
+   "testNumber": 3,
+   "questionNumber": 9,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक 150 मीटर लंबी रेलगाड़ी 36 किमी/घंटा की चाल से एक खंभे को कितने सेकंड में पार करेगी?",
+   "questionEn": "How long will a train 150 m long take to pass a pole at 36 km/h?",
+   "options": {
+    "A": "15 सेकंड",
+    "B": "4.2 सेकंड",
+    "D": "7.5 सेकंड",
+    "C": "2 सेकंड"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "चाल = 36 किमी/घंटा = 36 × 5/18 = 10 मी/से",
+    "खंभा बिंदु है ⇒ तय दूरी = रेलगाड़ी की लंबाई = 150 मी",
+    "समय = 150/10 = 15 सेकंड"
+   ],
+   "finalAnswer": "15 सेकंड",
+   "shortcut": "किमी/घंटा → मी/से: × 5/18",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q044",
+   "testNumber": 3,
+   "questionNumber": 44,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 180 मीटर लंबी रेलगाड़ी 54 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 25 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 180 m long train running at 54 km/h crosses a platform in 25 seconds. Find the length of the platform.",
+   "options": {
+    "B": "195 मीटर",
+    "D": "98 मीटर",
+    "C": "245 मीटर",
+    "A": "180 मीटर"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 15 मी/से",
+    "कुल तय दूरी = 15 × 25 = 375 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 375 − 180 = 195 मीटर"
+   ],
+   "finalAnswer": "195 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q008",
+   "testNumber": 4,
+   "questionNumber": 8,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 100 मीटर लंबी रेलगाड़ी 54 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 30 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 100 m long train running at 54 km/h crosses a platform in 30 seconds. Find the length of the platform.",
+   "options": {
+    "D": "350 मीटर",
+    "B": "450 मीटर",
+    "C": "100 मीटर",
+    "A": "400 मीटर"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "चाल = 15 मी/से",
+    "कुल तय दूरी = 15 × 30 = 450 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 450 − 100 = 350 मीटर"
+   ],
+   "finalAnswer": "350 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q031",
+   "testNumber": 4,
+   "questionNumber": 31,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "150 मीटर और 90 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 72 किमी/घंटा और 36 किमी/घंटा की चाल से एक-दूसरे के विपरीत दिशा में चल रही हैं। वे एक-दूसरे को कितने सेकंड में पार करेंगी?",
+   "questionEn": "Two trains of lengths 150 m and 90 m run at 72 km/h and 36 km/h in opposite directions. In how many seconds will they cross each other?",
+   "options": {
+    "B": "8 सेकंड",
+    "C": "4 सेकंड",
+    "A": "11 सेकंड",
+    "D": "24 सेकंड"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सापेक्ष चाल = 72 + 36 = 108 किमी/घंटा = 30 मी/से",
+    "कुल लंबाई = 150 + 90 = 240 मीटर",
+    "समय = 240/30 = 8 सेकंड"
+   ],
+   "finalAnswer": "8 सेकंड",
+   "shortcut": "विपरीत दिशा: चालें जुड़ती हैं",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q034",
+   "testNumber": 5,
+   "questionNumber": 34,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक 200 मीटर लंबी रेलगाड़ी 90 किमी/घंटा की चाल से एक खंभे को कितने सेकंड में पार करेगी?",
+   "questionEn": "How long will a train 200 m long take to pass a pole at 90 km/h?",
+   "options": {
+    "B": "8 सेकंड",
+    "A": "4 सेकंड",
+    "D": "2 सेकंड",
+    "C": "2.2 सेकंड"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 90 किमी/घंटा = 90 × 5/18 = 25 मी/से",
+    "खंभा बिंदु है ⇒ तय दूरी = रेलगाड़ी की लंबाई = 200 मी",
+    "समय = 200/25 = 8 सेकंड"
+   ],
+   "finalAnswer": "8 सेकंड",
+   "shortcut": "किमी/घंटा → मी/से: × 5/18",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q035",
+   "testNumber": 5,
+   "questionNumber": 35,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "140 मीटर और 110 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 36 किमी/घंटा और 54 किमी/घंटा की चाल से एक-दूसरे के विपरीत दिशा में चल रही हैं। वे एक-दूसरे को कितने सेकंड में पार करेंगी?",
+   "questionEn": "Two trains of lengths 140 m and 110 m run at 36 km/h and 54 km/h in opposite directions. In how many seconds will they cross each other?",
+   "options": {
+    "A": "10 सेकंड",
+    "B": "50 सेकंड",
+    "C": "13 सेकंड",
+    "D": "20 सेकंड"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सापेक्ष चाल = 36 + 54 = 90 किमी/घंटा = 25 मी/से",
+    "कुल लंबाई = 140 + 110 = 250 मीटर",
+    "समय = 250/25 = 10 सेकंड"
+   ],
+   "finalAnswer": "10 सेकंड",
+   "shortcut": "विपरीत दिशा: चालें जुड़ती हैं",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q003",
+   "testNumber": 6,
+   "questionNumber": 3,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 100 मीटर लंबी रेलगाड़ी 72 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 15 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 100 m long train running at 72 km/h crosses a platform in 15 seconds. Find the length of the platform.",
+   "options": {
+    "B": "200 मीटर",
+    "D": "300 मीटर",
+    "C": "100 मीटर",
+    "A": "250 मीटर"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 20 मी/से",
+    "कुल तय दूरी = 20 × 15 = 300 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 300 − 100 = 200 मीटर"
+   ],
+   "finalAnswer": "200 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q042",
+   "testNumber": 6,
+   "questionNumber": 42,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 135 मीटर लंबी रेलगाड़ी एक खंभे को 9 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 135 m long passes a pole in 9 seconds. Find its speed in km/h.",
+   "options": {
+    "A": "54 किमी/घंटा",
+    "D": "108 किमी/घंटा",
+    "B": "27 किमी/घंटा",
+    "C": "63 किमी/घंटा"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "चाल = 135/9 = 15 मी/से",
+    "किमी/घंटा में = 15 × 18/5 = 54 किमी/घंटा"
+   ],
+   "finalAnswer": "54 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q029",
+   "testNumber": 7,
+   "questionNumber": 29,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 180 मीटर लंबी रेलगाड़ी एक खंभे को 18 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 180 m long passes a pole in 18 seconds. Find its speed in km/h.",
+   "options": {
+    "B": "36 किमी/घंटा",
+    "C": "10 किमी/घंटा",
+    "A": "18 किमी/घंटा",
+    "D": "72 किमी/घंटा"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 180/18 = 10 मी/से",
+    "किमी/घंटा में = 10 × 18/5 = 36 किमी/घंटा"
+   ],
+   "finalAnswer": "36 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q056",
+   "testNumber": 7,
+   "questionNumber": 56,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "80 मीटर और 220 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 54 किमी/घंटा और 36 किमी/घंटा की चाल से एक-दूसरे के विपरीत दिशा में चल रही हैं। वे एक-दूसरे को कितने सेकंड में पार करेंगी?",
+   "questionEn": "Two trains of lengths 80 m and 220 m run at 54 km/h and 36 km/h in opposite directions. In how many seconds will they cross each other?",
+   "options": {
+    "D": "12 सेकंड",
+    "A": "15 सेकंड",
+    "B": "24 सेकंड",
+    "C": "60 सेकंड"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सापेक्ष चाल = 54 + 36 = 90 किमी/घंटा = 25 मी/से",
+    "कुल लंबाई = 80 + 220 = 300 मीटर",
+    "समय = 300/25 = 12 सेकंड"
+   ],
+   "finalAnswer": "12 सेकंड",
+   "shortcut": "विपरीत दिशा: चालें जुड़ती हैं",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q005",
+   "testNumber": 8,
+   "questionNumber": 5,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 120 मीटर लंबी रेलगाड़ी 90 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 36 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 120 m long train running at 90 km/h crosses a platform in 36 seconds. Find the length of the platform.",
+   "options": {
+    "B": "780 मीटर",
+    "A": "120 मीटर",
+    "D": "900 मीटर",
+    "C": "390 मीटर"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 25 मी/से",
+    "कुल तय दूरी = 25 × 36 = 900 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 900 − 120 = 780 मीटर"
+   ],
+   "finalAnswer": "780 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q021",
+   "testNumber": 8,
+   "questionNumber": 21,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 100 मीटर लंबी रेलगाड़ी एक खंभे को 10 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 100 m long passes a pole in 10 seconds. Find its speed in km/h.",
+   "options": {
+    "D": "36 किमी/घंटा",
+    "C": "72 किमी/घंटा",
+    "B": "10 किमी/घंटा",
+    "A": "45 किमी/घंटा"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "चाल = 100/10 = 10 मी/से",
+    "किमी/घंटा में = 10 × 18/5 = 36 किमी/घंटा"
+   ],
+   "finalAnswer": "36 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q021",
+   "testNumber": 9,
+   "questionNumber": 21,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 375 मीटर लंबी रेलगाड़ी एक खंभे को 15 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 375 m long passes a pole in 15 seconds. Find its speed in km/h.",
+   "options": {
+    "D": "90 किमी/घंटा",
+    "C": "45 किमी/घंटा",
+    "A": "25 किमी/घंटा",
+    "B": "99 किमी/घंटा"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "चाल = 375/15 = 25 मी/से",
+    "किमी/घंटा में = 25 × 18/5 = 90 किमी/घंटा"
+   ],
+   "finalAnswer": "90 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q029",
+   "testNumber": 9,
+   "questionNumber": 29,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 120 मीटर लंबी रेलगाड़ी 36 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 25 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 120 m long train running at 36 km/h crosses a platform in 25 seconds. Find the length of the platform.",
+   "options": {
+    "C": "130 मीटर",
+    "A": "65 मीटर",
+    "B": "120 मीटर",
+    "D": "250 मीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "चाल = 10 मी/से",
+    "कुल तय दूरी = 10 × 25 = 250 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 250 − 120 = 130 मीटर"
+   ],
+   "finalAnswer": "130 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q015",
+   "testNumber": 10,
+   "questionNumber": 15,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक 400 मीटर लंबी रेलगाड़ी 72 किमी/घंटा की चाल से एक खंभे को कितने सेकंड में पार करेगी?",
+   "questionEn": "How long will a train 400 m long take to pass a pole at 72 km/h?",
+   "options": {
+    "C": "20 सेकंड",
+    "A": "4 सेकंड",
+    "B": "10 सेकंड",
+    "D": "25 सेकंड"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "चाल = 72 किमी/घंटा = 72 × 5/18 = 20 मी/से",
+    "खंभा बिंदु है ⇒ तय दूरी = रेलगाड़ी की लंबाई = 400 मी",
+    "समय = 400/20 = 20 सेकंड"
+   ],
+   "finalAnswer": "20 सेकंड",
+   "shortcut": "किमी/घंटा → मी/से: × 5/18",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q034",
+   "testNumber": 10,
+   "questionNumber": 34,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 150 मीटर लंबी रेलगाड़ी एक खंभे को 12 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 150 m long passes a pole in 12 seconds. Find its speed in km/h.",
+   "options": {
+    "D": "45 किमी/घंटा",
+    "C": "54 किमी/घंटा",
+    "B": "90 किमी/घंटा",
+    "A": "12.5 किमी/घंटा"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "चाल = 150/12 = 12.5 मी/से",
+    "किमी/घंटा में = 12.5 × 18/5 = 45 किमी/घंटा"
+   ],
+   "finalAnswer": "45 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q052",
+   "testNumber": 11,
+   "questionNumber": 52,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 210 मीटर लंबी रेलगाड़ी एक खंभे को 12 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 210 m long passes a pole in 12 seconds. Find its speed in km/h.",
+   "options": {
+    "C": "63 किमी/घंटा",
+    "D": "126 किमी/घंटा",
+    "A": "72 किमी/घंटा",
+    "B": "31.5 किमी/घंटा"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "चाल = 210/12 = 17.5 मी/से",
+    "किमी/घंटा में = 17.5 × 18/5 = 63 किमी/घंटा"
+   ],
+   "finalAnswer": "63 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q059",
+   "testNumber": 11,
+   "questionNumber": 59,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 200 मीटर लंबी रेलगाड़ी 72 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 24 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 200 m long train running at 72 km/h crosses a platform in 24 seconds. Find the length of the platform.",
+   "options": {
+    "A": "280 मीटर",
+    "D": "200 मीटर",
+    "C": "480 मीटर",
+    "B": "140 मीटर"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "चाल = 20 मी/से",
+    "कुल तय दूरी = 20 × 24 = 480 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 480 − 200 = 280 मीटर"
+   ],
+   "finalAnswer": "280 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q027",
+   "testNumber": 12,
+   "questionNumber": 27,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "100 मीटर और 200 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 72 किमी/घंटा और 54 किमी/घंटा की चाल से एक ही दिशा में समांतर पटरियों पर चल रही हैं। तेज़ रेलगाड़ी धीमी को कितने सेकंड में पार करेगी?",
+   "questionEn": "Two trains of lengths 100 m and 200 m run at 72 km/h and 54 km/h in the same direction. How long will the faster train take to pass the slower one?",
+   "options": {
+    "A": "60 सेकंड",
+    "C": "8.6 सेकंड",
+    "D": "120 सेकंड",
+    "B": "30 सेकंड"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सापेक्ष चाल = 72 − 54 = 18 किमी/घंटा = 5 मी/से",
+    "कुल लंबाई = 100 + 200 = 300 मीटर",
+    "समय = 300/5 = 60 सेकंड"
+   ],
+   "finalAnswer": "60 सेकंड",
+   "shortcut": "समान दिशा: चालों का अंतर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q031",
+   "testNumber": 12,
+   "questionNumber": 31,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 240 मीटर लंबी रेलगाड़ी एक खंभे को 12 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 240 m long passes a pole in 12 seconds. Find its speed in km/h.",
+   "options": {
+    "B": "72 किमी/घंटा",
+    "D": "144 किमी/घंटा",
+    "C": "20 किमी/घंटा",
+    "A": "36 किमी/घंटा"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 240/12 = 20 मी/से",
+    "किमी/घंटा में = 20 × 18/5 = 72 किमी/घंटा"
+   ],
+   "finalAnswer": "72 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q012",
+   "testNumber": 13,
+   "questionNumber": 12,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "80 मीटर और 160 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 36 किमी/घंटा और 72 किमी/घंटा की चाल से एक-दूसरे के विपरीत दिशा में चल रही हैं। वे एक-दूसरे को कितने सेकंड में पार करेंगी?",
+   "questionEn": "Two trains of lengths 80 m and 160 m run at 36 km/h and 72 km/h in opposite directions. In how many seconds will they cross each other?",
+   "options": {
+    "A": "8 सेकंड",
+    "B": "4 सेकंड",
+    "C": "11 सेकंड",
+    "D": "16 सेकंड"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सापेक्ष चाल = 36 + 72 = 108 किमी/घंटा = 30 मी/से",
+    "कुल लंबाई = 80 + 160 = 240 मीटर",
+    "समय = 240/30 = 8 सेकंड"
+   ],
+   "finalAnswer": "8 सेकंड",
+   "shortcut": "विपरीत दिशा: चालें जुड़ती हैं",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q025",
+   "testNumber": 13,
+   "questionNumber": 25,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 180 मीटर लंबी रेलगाड़ी 72 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 25 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 180 m long train running at 72 km/h crosses a platform in 25 seconds. Find the length of the platform.",
+   "options": {
+    "B": "320 मीटर",
+    "D": "180 मीटर",
+    "A": "370 मीटर",
+    "C": "500 मीटर"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 20 मी/से",
+    "कुल तय दूरी = 20 × 25 = 500 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 500 − 180 = 320 मीटर"
+   ],
+   "finalAnswer": "320 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q033",
+   "testNumber": 14,
+   "questionNumber": 33,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "120 मीटर और 80 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 72 किमी/घंटा और 54 किमी/घंटा की चाल से एक ही दिशा में समांतर पटरियों पर चल रही हैं। तेज़ रेलगाड़ी धीमी को कितने सेकंड में पार करेगी?",
+   "questionEn": "Two trains of lengths 120 m and 80 m run at 72 km/h and 54 km/h in the same direction. How long will the faster train take to pass the slower one?",
+   "options": {
+    "B": "40 सेकंड",
+    "A": "80 सेकंड",
+    "D": "5.7 सेकंड",
+    "C": "20 सेकंड"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सापेक्ष चाल = 72 − 54 = 18 किमी/घंटा = 5 मी/से",
+    "कुल लंबाई = 120 + 80 = 200 मीटर",
+    "समय = 200/5 = 40 सेकंड"
+   ],
+   "finalAnswer": "40 सेकंड",
+   "shortcut": "समान दिशा: चालों का अंतर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q038",
+   "testNumber": 14,
+   "questionNumber": 38,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक 120 मीटर लंबी रेलगाड़ी 54 किमी/घंटा की चाल से एक खंभे को कितने सेकंड में पार करेगी?",
+   "questionEn": "How long will a train 120 m long take to pass a pole at 54 km/h?",
+   "options": {
+    "A": "8 सेकंड",
+    "C": "1 सेकंड",
+    "D": "4 सेकंड",
+    "B": "2.2 सेकंड"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "चाल = 54 किमी/घंटा = 54 × 5/18 = 15 मी/से",
+    "खंभा बिंदु है ⇒ तय दूरी = रेलगाड़ी की लंबाई = 120 मी",
+    "समय = 120/15 = 8 सेकंड"
+   ],
+   "finalAnswer": "8 सेकंड",
+   "shortcut": "किमी/घंटा → मी/से: × 5/18",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q041",
+   "testNumber": 15,
+   "questionNumber": 41,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 180 मीटर लंबी रेलगाड़ी एक खंभे को 12 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 180 m long passes a pole in 12 seconds. Find its speed in km/h.",
+   "options": {
+    "B": "54 किमी/घंटा",
+    "D": "27 किमी/घंटा",
+    "C": "108 किमी/घंटा",
+    "A": "63 किमी/घंटा"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 180/12 = 15 मी/से",
+    "किमी/घंटा में = 15 × 18/5 = 54 किमी/घंटा"
+   ],
+   "finalAnswer": "54 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q042",
+   "testNumber": 15,
+   "questionNumber": 42,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 100 मीटर लंबी रेलगाड़ी 90 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 15 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 100 m long train running at 90 km/h crosses a platform in 15 seconds. Find the length of the platform.",
+   "options": {
+    "D": "275 मीटर",
+    "B": "100 मीटर",
+    "A": "375 मीटर",
+    "C": "325 मीटर"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "चाल = 25 मी/से",
+    "कुल तय दूरी = 25 × 15 = 375 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 375 − 100 = 275 मीटर"
+   ],
+   "finalAnswer": "275 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q005",
+   "testNumber": 16,
+   "questionNumber": 5,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "150 मीटर और 150 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 72 किमी/घंटा और 54 किमी/घंटा की चाल से एक ही दिशा में समांतर पटरियों पर चल रही हैं। तेज़ रेलगाड़ी धीमी को कितने सेकंड में पार करेगी?",
+   "questionEn": "Two trains of lengths 150 m and 150 m run at 72 km/h and 54 km/h in the same direction. How long will the faster train take to pass the slower one?",
+   "options": {
+    "A": "60 सेकंड",
+    "D": "8.6 सेकंड",
+    "B": "30 सेकंड",
+    "C": "120 सेकंड"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सापेक्ष चाल = 72 − 54 = 18 किमी/घंटा = 5 मी/से",
+    "कुल लंबाई = 150 + 150 = 300 मीटर",
+    "समय = 300/5 = 60 सेकंड"
+   ],
+   "finalAnswer": "60 सेकंड",
+   "shortcut": "समान दिशा: चालों का अंतर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q057",
+   "testNumber": 16,
+   "questionNumber": 57,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "80 मीटर और 130 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 54 किमी/घंटा और 72 किमी/घंटा की चाल से एक-दूसरे के विपरीत दिशा में चल रही हैं। वे एक-दूसरे को कितने सेकंड में पार करेंगी?",
+   "questionEn": "Two trains of lengths 80 m and 130 m run at 54 km/h and 72 km/h in opposite directions. In how many seconds will they cross each other?",
+   "options": {
+    "D": "6 सेकंड",
+    "B": "12 सेकंड",
+    "C": "9 सेकंड",
+    "A": "42 सेकंड"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सापेक्ष चाल = 54 + 72 = 126 किमी/घंटा = 35 मी/से",
+    "कुल लंबाई = 80 + 130 = 210 मीटर",
+    "समय = 210/35 = 6 सेकंड"
+   ],
+   "finalAnswer": "6 सेकंड",
+   "shortcut": "विपरीत दिशा: चालें जुड़ती हैं",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q010",
+   "testNumber": 17,
+   "questionNumber": 10,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक 600 मीटर लंबी रेलगाड़ी 90 किमी/घंटा की चाल से एक खंभे को कितने सेकंड में पार करेगी?",
+   "questionEn": "How long will a train 600 m long take to pass a pole at 90 km/h?",
+   "options": {
+    "B": "24 सेकंड",
+    "D": "6 सेकंड",
+    "C": "29 सेकंड",
+    "A": "12 सेकंड"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 90 किमी/घंटा = 90 × 5/18 = 25 मी/से",
+    "खंभा बिंदु है ⇒ तय दूरी = रेलगाड़ी की लंबाई = 600 मी",
+    "समय = 600/25 = 24 सेकंड"
+   ],
+   "finalAnswer": "24 सेकंड",
+   "shortcut": "किमी/घंटा → मी/से: × 5/18",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q033",
+   "testNumber": 17,
+   "questionNumber": 33,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "120 मीटर और 120 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 36 किमी/घंटा और 72 किमी/घंटा की चाल से एक-दूसरे के विपरीत दिशा में चल रही हैं। वे एक-दूसरे को कितने सेकंड में पार करेंगी?",
+   "questionEn": "Two trains of lengths 120 m and 120 m run at 36 km/h and 72 km/h in opposite directions. In how many seconds will they cross each other?",
+   "options": {
+    "B": "8 सेकंड",
+    "C": "11 सेकंड",
+    "A": "4 सेकंड",
+    "D": "16 सेकंड"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सापेक्ष चाल = 36 + 72 = 108 किमी/घंटा = 30 मी/से",
+    "कुल लंबाई = 120 + 120 = 240 मीटर",
+    "समय = 240/30 = 8 सेकंड"
+   ],
+   "finalAnswer": "8 सेकंड",
+   "shortcut": "विपरीत दिशा: चालें जुड़ती हैं",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q042",
+   "testNumber": 18,
+   "questionNumber": 42,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 120 मीटर लंबी रेलगाड़ी एक खंभे को 12 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 120 m long passes a pole in 12 seconds. Find its speed in km/h.",
+   "options": {
+    "B": "36 किमी/घंटा",
+    "A": "45 किमी/घंटा",
+    "D": "18 किमी/घंटा",
+    "C": "10 किमी/घंटा"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 120/12 = 10 मी/से",
+    "किमी/घंटा में = 10 × 18/5 = 36 किमी/घंटा"
+   ],
+   "finalAnswer": "36 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q054",
+   "testNumber": 18,
+   "questionNumber": 54,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 180 मीटर लंबी रेलगाड़ी 72 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 40 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 180 m long train running at 72 km/h crosses a platform in 40 seconds. Find the length of the platform.",
+   "options": {
+    "A": "620 मीटर",
+    "C": "180 मीटर",
+    "B": "800 मीटर",
+    "D": "310 मीटर"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "चाल = 20 मी/से",
+    "कुल तय दूरी = 20 × 40 = 800 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 800 − 180 = 620 मीटर"
+   ],
+   "finalAnswer": "620 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q016",
+   "testNumber": 19,
+   "questionNumber": 16,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 150 मीटर लंबी रेलगाड़ी एक खंभे को 15 सेकंड में पार करती है। रेलगाड़ी की चाल किमी/घंटा में ज्ञात कीजिए।",
+   "questionEn": "A train 150 m long passes a pole in 15 seconds. Find its speed in km/h.",
+   "options": {
+    "B": "36 किमी/घंटा",
+    "A": "72 किमी/घंटा",
+    "D": "18 किमी/घंटा",
+    "C": "10 किमी/घंटा"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 150/15 = 10 मी/से",
+    "किमी/घंटा में = 10 × 18/5 = 36 किमी/घंटा"
+   ],
+   "finalAnswer": "36 किमी/घंटा",
+   "shortcut": "मी/से → किमी/घंटा: × 18/5",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q060",
+   "testNumber": 19,
+   "questionNumber": 60,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "120 मीटर और 105 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 72 किमी/घंटा और 54 किमी/घंटा की चाल से एक ही दिशा में समांतर पटरियों पर चल रही हैं। तेज़ रेलगाड़ी धीमी को कितने सेकंड में पार करेगी?",
+   "questionEn": "Two trains of lengths 120 m and 105 m run at 72 km/h and 54 km/h in the same direction. How long will the faster train take to pass the slower one?",
+   "options": {
+    "D": "45 सेकंड",
+    "B": "6.4 सेकंड",
+    "C": "90 सेकंड",
+    "A": "22.5 सेकंड"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सापेक्ष चाल = 72 − 54 = 18 किमी/घंटा = 5 मी/से",
+    "कुल लंबाई = 120 + 105 = 225 मीटर",
+    "समय = 225/5 = 45 सेकंड"
+   ],
+   "finalAnswer": "45 सेकंड",
+   "shortcut": "समान दिशा: चालों का अंतर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q001",
+   "testNumber": 20,
+   "questionNumber": 1,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक 120 मीटर लंबी रेलगाड़ी 90 किमी/घंटा की चाल से चलकर एक प्लेटफार्म को 24 सेकंड में पार करती है। प्लेटफार्म की लंबाई ज्ञात कीजिए।",
+   "questionEn": "A 120 m long train running at 90 km/h crosses a platform in 24 seconds. Find the length of the platform.",
+   "options": {
+    "B": "480 मीटर",
+    "D": "600 मीटर",
+    "A": "240 मीटर",
+    "C": "120 मीटर"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "चाल = 25 मी/से",
+    "कुल तय दूरी = 25 × 24 = 600 मीटर",
+    "कुल दूरी = रेलगाड़ी + प्लेटफार्म",
+    "प्लेटफार्म = 600 − 120 = 480 मीटर"
+   ],
+   "finalAnswer": "480 मीटर",
+   "shortcut": "प्लेटफार्म = चाल×समय − रेलगाड़ी की लंबाई",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q014",
+   "testNumber": 20,
+   "questionNumber": 14,
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "100 मीटर और 500 मीटर लंबी दो रेलगाड़ियाँ क्रमशः 90 किमी/घंटा और 54 किमी/घंटा की चाल से एक ही दिशा में समांतर पटरियों पर चल रही हैं। तेज़ रेलगाड़ी धीमी को कितने सेकंड में पार करेगी?",
+   "questionEn": "Two trains of lengths 100 m and 500 m run at 90 km/h and 54 km/h in the same direction. How long will the faster train take to pass the slower one?",
+   "options": {
+    "A": "60 सेकंड",
+    "D": "120 सेकंड",
+    "C": "15 सेकंड",
+    "B": "30 सेकंड"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सापेक्ष चाल = 90 − 54 = 36 किमी/घंटा = 10 मी/से",
+    "कुल लंबाई = 100 + 500 = 600 मीटर",
+    "समय = 600/10 = 60 सेकंड"
+   ],
+   "finalAnswer": "60 सेकंड",
+   "shortcut": "समान दिशा: चालों का अंतर",
+   "marks": 1
+  }
+ ]
+}

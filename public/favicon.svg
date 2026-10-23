@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="#0b2447"/>
+  <rect x="2" y="2" width="60" height="60" rx="13" fill="none" stroke="#19376d" stroke-width="2"/>
+  <!-- railway track -->
+  <rect x="14" y="46" width="3.5" height="12" fill="#a5d7e8"/>
+  <rect x="46.5" y="46" width="3.5" height="12" fill="#a5d7e8"/>
+  <rect x="12" y="49" width="40" height="3" rx="1.5" fill="#a5d7e8"/>
+  <rect x="12" y="55" width="40" height="3" rx="1.5" fill="#a5d7e8"/>
+  <!-- signal dot -->
+  <circle cx="32" cy="42" r="3.2" fill="#f5b301"/>
+  <!-- ALP letters -->
+  <g fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-weight="bold" text-anchor="middle">
+    <text x="32" y="36" font-size="22">ALP</text>
+  </g>
+  <rect x="18" y="10" width="28" height="4" rx="2" fill="#f5b301"/>
+</svg>

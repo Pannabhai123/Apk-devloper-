@@ -1,0 +1,1057 @@
+{
+ "topic": "HCF and LCM",
+ "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+ "slug": "hcf-lcm",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q007",
+   "testNumber": 1,
+   "questionNumber": 7,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 4, 10 और 15 से भाग देने पर प्रत्येक स्थिति में 2 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 4, 10 and 15 leaves remainder 2 in each case.",
+   "options": {
+    "B": "62",
+    "C": "58",
+    "D": "66",
+    "A": "122"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 2 बचता है, तो (संख्या − 2) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(4, 10, 15) = 60",
+    "अभीष्ट न्यूनतम संख्या = 60 + 2 = 62"
+   ],
+   "finalAnswer": "62",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q037",
+   "testNumber": 1,
+   "questionNumber": 37,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं 24 और 10 का गुणनफल उनके HCF और LCM के गुणनफल के बराबर है। यदि HCF = 2 है, तो LCM ज्ञात कीजिए।",
+   "questionEn": "For two numbers 24 and 10, if HCF = 2, find the LCM.",
+   "options": {
+    "C": "120",
+    "B": "34",
+    "A": "60",
+    "D": "2"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सूत्र: a × b = HCF × LCM",
+    "24 × 10 = 2 × LCM",
+    "240 = 2 × LCM",
+    "LCM = 240 / 2 = 120"
+   ],
+   "finalAnswer": "120",
+   "shortcut": "LCM = (a×b)/HCF",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q019",
+   "testNumber": 2,
+   "questionNumber": 19,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "27 और 24 का लघुत्तम समापवर्त्य (LCM) ज्ञात कीजिए।",
+   "questionEn": "Find the LCM of 27 and 24.",
+   "options": {
+    "A": "216",
+    "D": "648",
+    "B": "51",
+    "C": "432"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "27 = 3^3",
+    "24 = 2^3 × 3^1",
+    "LCM = सभी अभाज्य गुणनखंडों की सबसे बड़ी घातें = 216"
+   ],
+   "finalAnswer": "216",
+   "shortcut": "HCF × LCM = दोनों संख्याओं का गुणनफल",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q041",
+   "testNumber": 2,
+   "questionNumber": 41,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 3, 8 और 6 से भाग देने पर प्रत्येक स्थिति में 2 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 3, 8 and 6 leaves remainder 2 in each case.",
+   "options": {
+    "B": "26",
+    "D": "24",
+    "A": "50",
+    "C": "29"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 2 बचता है, तो (संख्या − 2) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(3, 8, 6) = 24",
+    "अभीष्ट न्यूनतम संख्या = 24 + 2 = 26"
+   ],
+   "finalAnswer": "26",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q022",
+   "testNumber": 3,
+   "questionNumber": 22,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 6, 10 और 15 से भाग देने पर प्रत्येक स्थिति में 1 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 6, 10 and 15 leaves remainder 1 in each case.",
+   "options": {
+    "B": "31",
+    "C": "29",
+    "A": "61",
+    "D": "37"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 1 बचता है, तो (संख्या − 1) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(6, 10, 15) = 30",
+    "अभीष्ट न्यूनतम संख्या = 30 + 1 = 31"
+   ],
+   "finalAnswer": "31",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q049",
+   "testNumber": 3,
+   "questionNumber": 49,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं 15 और 27 का गुणनफल उनके HCF और LCM के गुणनफल के बराबर है। यदि HCF = 3 है, तो LCM ज्ञात कीजिए।",
+   "questionEn": "For two numbers 15 and 27, if HCF = 3, find the LCM.",
+   "options": {
+    "D": "135",
+    "C": "45",
+    "B": "42",
+    "A": "3"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सूत्र: a × b = HCF × LCM",
+    "15 × 27 = 3 × LCM",
+    "405 = 3 × LCM",
+    "LCM = 405 / 3 = 135"
+   ],
+   "finalAnswer": "135",
+   "shortcut": "LCM = (a×b)/HCF",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q030",
+   "testNumber": 4,
+   "questionNumber": 30,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "चार घंटियाँ क्रमशः 6, 8, 8 और 24 मिनट के अंतराल पर बजती हैं। यदि वे एक साथ बजती हैं, तो पुनः कितने मिनट बाद एक साथ बजेंगी?",
+   "questionEn": "Four bells ring at intervals of 6, 8, 8 and 24 minutes. If they ring together now, after how many minutes will they ring together again?",
+   "options": {
+    "A": "24 मिनट",
+    "B": "9216 मिनट",
+    "C": "12 मिनट",
+    "D": "30 मिनट"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सभी घंियाँ पुनः तब एक साथ बजेंगी जब समय अंतरालों का LCM बीत जाए।",
+    "LCM(6, 8, 8, 24) = 24",
+    "अतः 24 मिनट बाद सभी घंटियाँ पुनः एक साथ बजेंगी।"
+   ],
+   "finalAnswer": "24 मिनट",
+   "shortcut": "एक साथ बजने का समय = अंतरालों का LCM",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q041",
+   "testNumber": 4,
+   "questionNumber": 41,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "24 और 25 का लघुत्तम समापवर्त्य (LCM) ज्ञात कीजिए।",
+   "questionEn": "Find the LCM of 24 and 25.",
+   "options": {
+    "A": "600",
+    "B": "300",
+    "D": "49",
+    "C": "1200"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "24 = 2^3 × 3^1",
+    "25 = 5^2",
+    "LCM = सभी अभाज्य गुणनखंडों की सबसे बड़ी घातें = 600"
+   ],
+   "finalAnswer": "600",
+   "shortcut": "HCF × LCM = दोनों संख्याओं का गुणनफल",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q036",
+   "testNumber": 5,
+   "questionNumber": 36,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं 24 और 16 का गुणनफल उनके HCF और LCM के गुणनफल के बराबर है। यदि HCF = 8 है, तो LCM ज्ञात कीजिए।",
+   "questionEn": "For two numbers 24 and 16, if HCF = 8, find the LCM.",
+   "options": {
+    "D": "48",
+    "A": "40",
+    "B": "8",
+    "C": "6"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सूत्र: a × b = HCF × LCM",
+    "24 × 16 = 8 × LCM",
+    "384 = 8 × LCM",
+    "LCM = 384 / 8 = 48"
+   ],
+   "finalAnswer": "48",
+   "shortcut": "LCM = (a×b)/HCF",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q050",
+   "testNumber": 5,
+   "questionNumber": 50,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "16 और 24 का महत्तम समापवर्तक (HCF) ज्ञात कीजिए।",
+   "questionEn": "Find the HCF of 16 and 24.",
+   "options": {
+    "C": "8",
+    "A": "4",
+    "B": "16",
+    "D": "48"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "16 = 8 × 2, 24 = 8 × 3",
+    "2 और 3 सह-अभाज्य हैं",
+    "अतः HCF = 8"
+   ],
+   "finalAnswer": "8",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q009",
+   "testNumber": 6,
+   "questionNumber": 9,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "चार घंटियाँ क्रमशः 5, 4, 8 और 40 मिनट के अंतराल पर बजती हैं। यदि वे एक साथ बजती हैं, तो पुनः कितने मिनट बाद एक साथ बजेंगी?",
+   "questionEn": "Four bells ring at intervals of 5, 4, 8 and 40 minutes. If they ring together now, after how many minutes will they ring together again?",
+   "options": {
+    "C": "40 मिनट",
+    "D": "6400 मिनट",
+    "A": "20 मिनट",
+    "B": "45 मिनट"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सभी घंियाँ पुनः तब एक साथ बजेंगी जब समय अंतरालों का LCM बीत जाए।",
+    "LCM(5, 4, 8, 40) = 40",
+    "अतः 40 मिनट बाद सभी घंटियाँ पुनः एक साथ बजेंगी।"
+   ],
+   "finalAnswer": "40 मिनट",
+   "shortcut": "एक साथ बजने का समय = अंतरालों का LCM",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q030",
+   "testNumber": 6,
+   "questionNumber": 30,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 4, 9 और 15 से भाग देने पर प्रत्येक स्थिति में 1 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 4, 9 and 15 leaves remainder 1 in each case.",
+   "options": {
+    "B": "181",
+    "D": "185",
+    "C": "361",
+    "A": "179"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 1 बचता है, तो (संख्या − 1) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(4, 9, 15) = 180",
+    "अभीष्ट न्यूनतम संख्या = 180 + 1 = 181"
+   ],
+   "finalAnswer": "181",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q034",
+   "testNumber": 7,
+   "questionNumber": 34,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "28 और 24 का लघुत्तम समापवर्त्य (LCM) ज्ञात कीजिए।",
+   "questionEn": "Find the LCM of 28 and 24.",
+   "options": {
+    "B": "168",
+    "D": "336",
+    "A": "672",
+    "C": "4"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "28 = 2^2 × 7^1",
+    "24 = 2^3 × 3^1",
+    "LCM = सभी अभाज्य गुणनखंडों की सबसे बड़ी घातें = 168"
+   ],
+   "finalAnswer": "168",
+   "shortcut": "HCF × LCM = दोनों संख्याओं का गुणनफल",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q039",
+   "testNumber": 7,
+   "questionNumber": 39,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "216 और 198 का महत्तम समापवर्तक (HCF) ज्ञात कीजिए।",
+   "questionEn": "Find the HCF of 216 and 198.",
+   "options": {
+    "C": "18",
+    "A": "36",
+    "D": "2376",
+    "B": "9"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "216 = 18 × 12, 198 = 18 × 11",
+    "12 और 11 सह-अभाज्य हैं",
+    "अतः HCF = 18"
+   ],
+   "finalAnswer": "18",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q038",
+   "testNumber": 8,
+   "questionNumber": 38,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं 45 और 27 का गुणनफल उनके HCF और LCM के गुणनफल के बराबर है। यदि HCF = 9 है, तो LCM ज्ञात कीजिए।",
+   "questionEn": "For two numbers 45 and 27, if HCF = 9, find the LCM.",
+   "options": {
+    "C": "135",
+    "A": "72",
+    "B": "15",
+    "D": "9"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सूत्र: a × b = HCF × LCM",
+    "45 × 27 = 9 × LCM",
+    "1215 = 9 × LCM",
+    "LCM = 1215 / 9 = 135"
+   ],
+   "finalAnswer": "135",
+   "shortcut": "LCM = (a×b)/HCF",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q044",
+   "testNumber": 8,
+   "questionNumber": 44,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 5, 6 और 10 से भाग देने पर प्रत्येक स्थिति में 3 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 5, 6 and 10 leaves remainder 3 in each case.",
+   "options": {
+    "C": "33",
+    "B": "30",
+    "A": "38",
+    "D": "27"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 3 बचता है, तो (संख्या − 3) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(5, 6, 10) = 30",
+    "अभीष्ट न्यूनतम संख्या = 30 + 3 = 33"
+   ],
+   "finalAnswer": "33",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q033",
+   "testNumber": 9,
+   "questionNumber": 33,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं 24 और 27 का गुणनफल उनके HCF और LCM के गुणनफल के बराबर है। यदि HCF = 3 है, तो LCM ज्ञात कीजिए।",
+   "questionEn": "For two numbers 24 and 27, if HCF = 3, find the LCM.",
+   "options": {
+    "C": "216",
+    "D": "3",
+    "B": "72",
+    "A": "51"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सूत्र: a × b = HCF × LCM",
+    "24 × 27 = 3 × LCM",
+    "648 = 3 × LCM",
+    "LCM = 648 / 3 = 216"
+   ],
+   "finalAnswer": "216",
+   "shortcut": "LCM = (a×b)/HCF",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q034",
+   "testNumber": 9,
+   "questionNumber": 34,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "40 और 28 का महत्तम समापवर्तक (HCF) ज्ञात कीजिए।",
+   "questionEn": "Find the HCF of 40 and 28.",
+   "options": {
+    "A": "4",
+    "C": "1",
+    "D": "2",
+    "B": "8"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "40 = 4 × 10, 28 = 4 × 7",
+    "10 और 7 सह-अभाज्य हैं",
+    "अतः HCF = 4"
+   ],
+   "finalAnswer": "4",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q011",
+   "testNumber": 10,
+   "questionNumber": 11,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 3, 6 और 15 से भाग देने पर प्रत्येक स्थिति में 1 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 3, 6 and 15 leaves remainder 1 in each case.",
+   "options": {
+    "B": "31",
+    "C": "34",
+    "A": "29",
+    "D": "30"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 1 बचता है, तो (संख्या − 1) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(3, 6, 15) = 30",
+    "अभीष्ट न्यूनतम संख्या = 30 + 1 = 31"
+   ],
+   "finalAnswer": "31",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q046",
+   "testNumber": 10,
+   "questionNumber": 46,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "20 और 44 का महत्तम समापवर्तक (HCF) ज्ञात कीजिए।",
+   "questionEn": "Find the HCF of 20 and 44.",
+   "options": {
+    "B": "4",
+    "A": "1",
+    "D": "8",
+    "C": "220"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "20 = 4 × 5, 44 = 4 × 11",
+    "5 और 11 सह-अभाज्य हैं",
+    "अतः HCF = 4"
+   ],
+   "finalAnswer": "4",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q035",
+   "testNumber": 11,
+   "questionNumber": 35,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं 20 और 30 का गुणनफल उनके HCF और LCM के गुणनफल के बराबर है। यदि HCF = 10 है, तो LCM ज्ञात कीजिए।",
+   "questionEn": "For two numbers 20 and 30, if HCF = 10, find the LCM.",
+   "options": {
+    "B": "60",
+    "A": "50",
+    "C": "6",
+    "D": "10"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: a × b = HCF × LCM",
+    "20 × 30 = 10 × LCM",
+    "600 = 10 × LCM",
+    "LCM = 600 / 10 = 60"
+   ],
+   "finalAnswer": "60",
+   "shortcut": "LCM = (a×b)/HCF",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q038",
+   "testNumber": 11,
+   "questionNumber": 38,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "चार घंटियाँ क्रमशः 4, 9, 8 और 72 मिनट के अंतराल पर बजती हैं। यदि वे एक साथ बजती हैं, तो पुनः कितने मिनट बाद एक साथ बजेंगी?",
+   "questionEn": "Four bells ring at intervals of 4, 9, 8 and 72 minutes. If they ring together now, after how many minutes will they ring together again?",
+   "options": {
+    "B": "72 मिनट",
+    "A": "20736 मिनट",
+    "D": "36 मिनट",
+    "C": "76 मिनट"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सभी घंियाँ पुनः तब एक साथ बजेंगी जब समय अंतरालों का LCM बीत जाए।",
+    "LCM(4, 9, 8, 72) = 72",
+    "अतः 72 मिनट बाद सभी घंटियाँ पुनः एक साथ बजेंगी।"
+   ],
+   "finalAnswer": "72 मिनट",
+   "shortcut": "एक साथ बजने का समय = अंतरालों का LCM",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q021",
+   "testNumber": 12,
+   "questionNumber": 21,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 3, 8 और 5 से भाग देने पर प्रत्येक स्थिति में 2 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 3, 8 and 5 leaves remainder 2 in each case.",
+   "options": {
+    "B": "122",
+    "A": "125",
+    "C": "118",
+    "D": "120"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 2 बचता है, तो (संख्या − 2) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(3, 8, 5) = 120",
+    "अभीष्ट न्यूनतम संख्या = 120 + 2 = 122"
+   ],
+   "finalAnswer": "122",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q039",
+   "testNumber": 12,
+   "questionNumber": 39,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो धावक एक वृत्ताकार पथ पर क्रमशः 18 सेकंड और 30 सेकंड में एक चक्कर पूरा करते हैं। यदि वे एक साथ एक ही बिंदु से दौड़ना शुरू करें, तो कितने सेकंड बाद वे पुनः उसी बिंदु पर मिलेंगे?",
+   "questionEn": "Two runners complete one round of a circular track in 18 s and 30 s. Starting together, after how many seconds will they meet at the starting point again?",
+   "options": {
+    "C": "90 सेकंड",
+    "B": "540 सेकंड",
+    "A": "45 सेकंड",
+    "D": "12 सेकंड"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "वे पुनः प्रारंभिक बिंदु पर तब मिलेंगे जब समय दोनों चक्कर-समयों का सार्व गुणज हो।",
+    "LCM(18, 30) = 90",
+    "अतः 90 सेकंड बाद।"
+   ],
+   "finalAnswer": "90 सेकंड",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q021",
+   "testNumber": 13,
+   "questionNumber": 21,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो धावक एक वृत्ताकार पथ पर क्रमशः 15 सेकंड और 20 सेकंड में एक चक्कर पूरा करते हैं। यदि वे एक साथ एक ही बिंदु से दौड़ना शुरू करें, तो कितने सेकंड बाद वे पुनः उसी बिंदु पर मिलेंगे?",
+   "questionEn": "Two runners complete one round of a circular track in 15 s and 20 s. Starting together, after how many seconds will they meet at the starting point again?",
+   "options": {
+    "B": "60 सेकंड",
+    "D": "300 सेकंड",
+    "C": "30 सेकंड",
+    "A": "5 सेकंड"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "वे पुनः प्रारंभिक बिंदु पर तब मिलेंगे जब समय दोनों चक्कर-समयों का सार्व गुणज हो।",
+    "LCM(15, 20) = 60",
+    "अतः 60 सेकंड बाद।"
+   ],
+   "finalAnswer": "60 सेकंड",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q043",
+   "testNumber": 13,
+   "questionNumber": 43,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं 45 और 25 का गुणनफल उनके HCF और LCM के गुणनफल के बराबर है। यदि HCF = 5 है, तो LCM ज्ञात कीजिए।",
+   "questionEn": "For two numbers 45 and 25, if HCF = 5, find the LCM.",
+   "options": {
+    "C": "225",
+    "B": "5",
+    "D": "45",
+    "A": "70"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सूत्र: a × b = HCF × LCM",
+    "45 × 25 = 5 × LCM",
+    "1125 = 5 × LCM",
+    "LCM = 1125 / 5 = 225"
+   ],
+   "finalAnswer": "225",
+   "shortcut": "LCM = (a×b)/HCF",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q018",
+   "testNumber": 14,
+   "questionNumber": 18,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "18 और 42 का लघुत्तम समापवर्त्य (LCM) ज्ञात कीजिए।",
+   "questionEn": "Find the LCM of 18 and 42.",
+   "options": {
+    "D": "126",
+    "A": "6",
+    "C": "252",
+    "B": "63"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "18 = 2^1 × 3^2",
+    "42 = 2^1 × 3^1 × 7^1",
+    "LCM = सभी अभाज्य गुणनखंडों की सबसे बड़ी घातें = 126"
+   ],
+   "finalAnswer": "126",
+   "shortcut": "HCF × LCM = दोनों संख्याओं का गुणनफल",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q035",
+   "testNumber": 14,
+   "questionNumber": 35,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "चार घंटियाँ क्रमशः 5, 4, 5 और 20 मिनट के अंतराल पर बजती हैं। यदि वे एक साथ बजती हैं, तो पुनः कितने मिनट बाद एक साथ बजेंगी?",
+   "questionEn": "Four bells ring at intervals of 5, 4, 5 and 20 minutes. If they ring together now, after how many minutes will they ring together again?",
+   "options": {
+    "B": "20 मिनट",
+    "C": "2000 मिनट",
+    "D": "10 मिनट",
+    "A": "25 मिनट"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सभी घंियाँ पुनः तब एक साथ बजेंगी जब समय अंतरालों का LCM बीत जाए।",
+    "LCM(5, 4, 5, 20) = 20",
+    "अतः 20 मिनट बाद सभी घंटियाँ पुनः एक साथ बजेंगी।"
+   ],
+   "finalAnswer": "20 मिनट",
+   "shortcut": "एक साथ बजने का समय = अंतरालों का LCM",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q035",
+   "testNumber": 15,
+   "questionNumber": 35,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो धावक एक वृत्ताकार पथ पर क्रमशः 8 सेकंड और 20 सेकंड में एक चक्कर पूरा करते हैं। यदि वे एक साथ एक ही बिंदु से दौड़ना शुरू करें, तो कितने सेकंड बाद वे पुनः उसी बिंदु पर मिलेंगे?",
+   "questionEn": "Two runners complete one round of a circular track in 8 s and 20 s. Starting together, after how many seconds will they meet at the starting point again?",
+   "options": {
+    "C": "40 सेकंड",
+    "D": "160 सेकंड",
+    "A": "20 सेकंड",
+    "B": "12 सेकंड"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "वे पुनः प्रारंभिक बिंदु पर तब मिलेंगे जब समय दोनों चक्कर-समयों का सार्व गुणज हो।",
+    "LCM(8, 20) = 40",
+    "अतः 40 सेकंड बाद।"
+   ],
+   "finalAnswer": "40 सेकंड",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q039",
+   "testNumber": 15,
+   "questionNumber": 39,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 5, 10 और 10 से भाग देने पर प्रत्येक स्थिति में 2 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 5, 10 and 10 leaves remainder 2 in each case.",
+   "options": {
+    "B": "12",
+    "A": "10",
+    "C": "8",
+    "D": "22"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 2 बचता है, तो (संख्या − 2) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(5, 10, 10) = 10",
+    "अभीष्ट न्यूनतम संख्या = 10 + 2 = 12"
+   ],
+   "finalAnswer": "12",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q001",
+   "testNumber": 16,
+   "questionNumber": 1,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो धावक एक वृत्ताकार पथ पर क्रमशः 20 सेकंड और 25 सेकंड में एक चक्कर पूरा करते हैं। यदि वे एक साथ एक ही बिंदु से दौड़ना शुरू करें, तो कितने सेकंड बाद वे पुनः उसी बिंदु पर मिलेंगे?",
+   "questionEn": "Two runners complete one round of a circular track in 20 s and 25 s. Starting together, after how many seconds will they meet at the starting point again?",
+   "options": {
+    "C": "100 सेकंड",
+    "A": "500 सेकंड",
+    "B": "50 सेकंड",
+    "D": "5 सेकंड"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "वे पुनः प्रारंभिक बिंदु पर तब मिलेंगे जब समय दोनों चक्कर-समयों का सार्व गुणज हो।",
+    "LCM(20, 25) = 100",
+    "अतः 100 सेकंड बाद।"
+   ],
+   "finalAnswer": "100 सेकंड",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q049",
+   "testNumber": 16,
+   "questionNumber": 49,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 4, 10 और 12 से भाग देने पर प्रत्येक स्थिति में 2 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 4, 10 and 12 leaves remainder 2 in each case.",
+   "options": {
+    "D": "62",
+    "B": "66",
+    "A": "60",
+    "C": "122"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 2 बचता है, तो (संख्या − 2) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(4, 10, 12) = 60",
+    "अभीष्ट न्यूनतम संख्या = 60 + 2 = 62"
+   ],
+   "finalAnswer": "62",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q021",
+   "testNumber": 17,
+   "questionNumber": 21,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं 15 और 18 का गुणनफल उनके HCF और LCM के गुणनफल के बराबर है। यदि HCF = 3 है, तो LCM ज्ञात कीजिए।",
+   "questionEn": "For two numbers 15 and 18, if HCF = 3, find the LCM.",
+   "options": {
+    "C": "90",
+    "A": "33",
+    "B": "30",
+    "D": "3"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सूत्र: a × b = HCF × LCM",
+    "15 × 18 = 3 × LCM",
+    "270 = 3 × LCM",
+    "LCM = 270 / 3 = 90"
+   ],
+   "finalAnswer": "90",
+   "shortcut": "LCM = (a×b)/HCF",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q032",
+   "testNumber": 17,
+   "questionNumber": 32,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "27 और 40 का लघुत्तम समापवर्त्य (LCM) ज्ञात कीजिए।",
+   "questionEn": "Find the LCM of 27 and 40.",
+   "options": {
+    "D": "1080",
+    "C": "540",
+    "B": "1",
+    "A": "67"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "27 = 3^3",
+    "40 = 2^3 × 5^1",
+    "LCM = सभी अभाज्य गुणनखंडों की सबसे बड़ी घातें = 1080"
+   ],
+   "finalAnswer": "1080",
+   "shortcut": "HCF × LCM = दोनों संख्याओं का गुणनफल",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q036",
+   "testNumber": 18,
+   "questionNumber": 36,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो धावक एक वृत्ताकार पथ पर क्रमशः 20 सेकंड और 30 सेकंड में एक चक्कर पूरा करते हैं। यदि वे एक साथ एक ही बिंदु से दौड़ना शुरू करें, तो कितने सेकंड बाद वे पुनः उसी बिंदु पर मिलेंगे?",
+   "questionEn": "Two runners complete one round of a circular track in 20 s and 30 s. Starting together, after how many seconds will they meet at the starting point again?",
+   "options": {
+    "C": "60 सेकंड",
+    "D": "600 सेकंड",
+    "A": "30 सेकंड",
+    "B": "10 सेकंड"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "वे पुनः प्रारंभिक बिंदु पर तब मिलेंगे जब समय दोनों चक्कर-समयों का सार्व गुणज हो।",
+    "LCM(20, 30) = 60",
+    "अतः 60 सेकंड बाद।"
+   ],
+   "finalAnswer": "60 सेकंड",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q058",
+   "testNumber": 18,
+   "questionNumber": 58,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "चार घंटियाँ क्रमशः 6, 8, 12 और 24 मिनट के अंतराल पर बजती हैं। यदि वे एक साथ बजती हैं, तो पुनः कितने मिनट बाद एक साथ बजेंगी?",
+   "questionEn": "Four bells ring at intervals of 6, 8, 12 and 24 minutes. If they ring together now, after how many minutes will they ring together again?",
+   "options": {
+    "D": "24 मिनट",
+    "C": "13824 मिनट",
+    "A": "12 मिनट",
+    "B": "30 मिनट"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सभी घंियाँ पुनः तब एक साथ बजेंगी जब समय अंतरालों का LCM बीत जाए।",
+    "LCM(6, 8, 12, 24) = 24",
+    "अतः 24 मिनट बाद सभी घंटियाँ पुनः एक साथ बजेंगी।"
+   ],
+   "finalAnswer": "24 मिनट",
+   "shortcut": "एक साथ बजने का समय = अंतरालों का LCM",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q020",
+   "testNumber": 19,
+   "questionNumber": 20,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "वह छोटी से छोटी संख्या ज्ञात कीजिए जिसे 3, 9 और 10 से भाग देने पर प्रत्येक स्थिति में 2 शेष बचता है।",
+   "questionEn": "Find the least number which when divided by 3, 9 and 10 leaves remainder 2 in each case.",
+   "options": {
+    "D": "92",
+    "C": "88",
+    "B": "90",
+    "A": "182"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "जब प्रत्येक बार शेषफल 2 बचता है, तो (संख्या − 2) प्रत्येक से पूर्ण विभाज्य है।",
+    "LCM(3, 9, 10) = 90",
+    "अभीष्ट न्यूनतम संख्या = 90 + 2 = 92"
+   ],
+   "finalAnswer": "92",
+   "shortcut": "न्यूनतम संख्या = LCM + शेषफल (समान शेषफल की स्थिति में)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q045",
+   "testNumber": 19,
+   "questionNumber": 45,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो धावक एक वृत्ताकार पथ पर क्रमशः 18 सेकंड और 12 सेकंड में एक चक्कर पूरा करते हैं। यदि वे एक साथ एक ही बिंदु से दौड़ना शुरू करें, तो कितने सेकंड बाद वे पुनः उसी बिंदु पर मिलेंगे?",
+   "questionEn": "Two runners complete one round of a circular track in 18 s and 12 s. Starting together, after how many seconds will they meet at the starting point again?",
+   "options": {
+    "B": "36 सेकंड",
+    "C": "216 सेकंड",
+    "A": "18 सेकंड",
+    "D": "6 सेकंड"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "वे पुनः प्रारंभिक बिंदु पर तब मिलेंगे जब समय दोनों चक्कर-समयों का सार्व गुणज हो।",
+    "LCM(18, 12) = 36",
+    "अतः 36 सेकंड बाद।"
+   ],
+   "finalAnswer": "36 सेकंड",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q026",
+   "testNumber": 20,
+   "questionNumber": 26,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं 40 और 18 का गुणनफल उनके HCF और LCM के गुणनफल के बराबर है। यदि HCF = 2 है, तो LCM ज्ञात कीजिए।",
+   "questionEn": "For two numbers 40 and 18, if HCF = 2, find the LCM.",
+   "options": {
+    "B": "360",
+    "A": "180",
+    "D": "58",
+    "C": "2"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: a × b = HCF × LCM",
+    "40 × 18 = 2 × LCM",
+    "720 = 2 × LCM",
+    "LCM = 720 / 2 = 360"
+   ],
+   "finalAnswer": "360",
+   "shortcut": "LCM = (a×b)/HCF",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q030",
+   "testNumber": 20,
+   "questionNumber": 30,
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "चार घंटियाँ क्रमशः 2, 6, 5 और 30 मिनट के अंतराल पर बजती हैं। यदि वे एक साथ बजती हैं, तो पुनः कितने मिनट बाद एक साथ बजेंगी?",
+   "questionEn": "Four bells ring at intervals of 2, 6, 5 and 30 minutes. If they ring together now, after how many minutes will they ring together again?",
+   "options": {
+    "A": "30 मिनट",
+    "C": "1800 मिनट",
+    "B": "15 मिनट",
+    "D": "32 मिनट"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सभी घंियाँ पुनः तब एक साथ बजेंगी जब समय अंतरालों का LCM बीत जाए।",
+    "LCM(2, 6, 5, 30) = 30",
+    "अतः 30 मिनट बाद सभी घंटियाँ पुनः एक साथ बजेंगी।"
+   ],
+   "finalAnswer": "30 मिनट",
+   "shortcut": "एक साथ बजने का समय = अंतरालों का LCM",
+   "marks": 1
+  }
+ ]
+}

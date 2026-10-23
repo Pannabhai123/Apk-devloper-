@@ -1,0 +1,1081 @@
+{
+ "topic": "Pipes and Cisterns",
+ "topicHi": "पाइप एवं टंकी",
+ "slug": "pipes-cisterns",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q035",
+   "testNumber": 1,
+   "questionNumber": 35,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 12 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 36 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 12 hours. If one pipe alone fills it in 36 hours, how long will the other pipe take alone?",
+   "options": {
+    "C": "18 घंटे",
+    "A": "24 घंटे",
+    "D": "30 घंटे",
+    "B": "9 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "संयुक्त दर = 1/12",
+    "पहले पाइप की दर = 1/36",
+    "दूसरे पाइप की दर = 1/12 − 1/36 = 1/18 = 1/18",
+    "दूसरा पाइप = 18 घंटे"
+   ],
+   "finalAnswer": "18 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q045",
+   "testNumber": 1,
+   "questionNumber": 45,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पाइप A और B एक टंकी को क्रमशः 15 और 20 घंटे में भरते हैं, जबकि तीसरा पाइप C उसे 60 घंटे में खाली करता है। तीनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Pipes A and B fill a tank in 15 and 20 hours, while pipe C empties it in 60 hours. If all three are opened together, how long will the tank take to fill?",
+   "options": {
+    "B": "10 घंटे",
+    "C": "60 घंटे",
+    "A": "5 घंटे",
+    "D": "11 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "टंकी = 60 इकाई मानें।",
+    "A = +4, B = +3, C = −1 इकाई/घंटा",
+    "शुद्ध दर = 4 + 3 − 1 = 6 इकाई/घंटा",
+    "समय = 60/6 = 10 घंटे"
+   ],
+   "finalAnswer": "10 घंटे",
+   "shortcut": "शुद्ध दर = भरने की दर − खाली करने की दर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q018",
+   "testNumber": 2,
+   "questionNumber": 18,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पाइप A और B एक टंकी को क्रमशः 12 और 15 घंटे में भरते हैं, जबकि तीसरा पाइप C उसे 20 घंटे में खाली करता है। तीनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Pipes A and B fill a tank in 12 and 15 hours, while pipe C empties it in 20 hours. If all three are opened together, how long will the tank take to fill?",
+   "options": {
+    "C": "10 घंटे",
+    "A": "20 घंटे",
+    "B": "5 घंटे",
+    "D": "11 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "टंकी = 60 इकाई मानें।",
+    "A = +5, B = +4, C = −3 इकाई/घंटा",
+    "शुद्ध दर = 5 + 4 − 3 = 6 इकाई/घंटा",
+    "समय = 60/6 = 10 घंटे"
+   ],
+   "finalAnswer": "10 घंटे",
+   "shortcut": "शुद्ध दर = भरने की दर − खाली करने की दर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q039",
+   "testNumber": 2,
+   "questionNumber": 39,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 8 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 12 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 8 hours. If one pipe alone fills it in 12 hours, how long will the other pipe take alone?",
+   "options": {
+    "B": "24 घंटे",
+    "A": "32 घंटे",
+    "C": "12 घंटे",
+    "D": "8 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संयुक्त दर = 1/8",
+    "पहले पाइप की दर = 1/12",
+    "दूसरे पाइप की दर = 1/8 − 1/12 = 1/24 = 1/24",
+    "दूसरा पाइप = 24 घंटे"
+   ],
+   "finalAnswer": "24 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q020",
+   "testNumber": 3,
+   "questionNumber": 20,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक पाइप टंकी को 12 घंटे में भरता है और दूसरा पाइप उसे 16 घंटे में खाली करता है। दोनों एक साथ खुले होने पर खाली टंकी कितने घंटे में भरेगी?",
+   "questionEn": "One pipe fills a tank in 12 hours and another empties it in 16 hours. If both are opened together, how long will the empty tank take to fill?",
+   "options": {
+    "D": "48 घंटे",
+    "B": "16 घंटे",
+    "C": "24 घंटे",
+    "A": "4 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "भरने की दर = 1/12, खाली करने की दर = 1/16",
+    "शुद्ध दर = 1/12 − 1/16 = 1/48 टंकी/घंटा",
+    "समय = 12×16/(16 − 12) = 48 घंटे"
+   ],
+   "finalAnswer": "48 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q036",
+   "testNumber": 3,
+   "questionNumber": 36,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पाइप A और B एक टंकी को क्रमशः 8 और 12 घंटे में भरते हैं, जबकि तीसरा पाइप C उसे 24 घंटे में खाली करता है। तीनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Pipes A and B fill a tank in 8 and 12 hours, while pipe C empties it in 24 hours. If all three are opened together, how long will the tank take to fill?",
+   "options": {
+    "A": "6 घंटे",
+    "B": "24 घंटे",
+    "D": "7 घंटे",
+    "C": "3 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "टंकी = 24 इकाई मानें।",
+    "A = +3, B = +2, C = −1 इकाई/घंटा",
+    "शुद्ध दर = 3 + 2 − 1 = 4 इकाई/घंटा",
+    "समय = 24/4 = 6 घंटे"
+   ],
+   "finalAnswer": "6 घंटे",
+   "shortcut": "शुद्ध दर = भरने की दर − खाली करने की दर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q039",
+   "testNumber": 4,
+   "questionNumber": 39,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 20 घंटे और 30 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 20 hours and 30 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "B": "12 घंटे",
+    "D": "10 घंटे",
+    "C": "50 घंटे",
+    "A": "6 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A की दर = 1/20 टंकी/घंटा",
+    "B की दर = 1/30 टंकी/घंटा",
+    "संयुक्त दर = 1/20 + 1/30 = 1/12 टंकी/घंटा",
+    "समय = 20×30/(20+30) = 12 घंटे"
+   ],
+   "finalAnswer": "12 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q051",
+   "testNumber": 4,
+   "questionNumber": 51,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 24 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 40 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 24 hours. If one pipe alone fills it in 40 hours, how long will the other pipe take alone?",
+   "options": {
+    "A": "60 घंटे",
+    "B": "84 घंटे",
+    "C": "16 घंटे",
+    "D": "24 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संयुक्त दर = 1/24",
+    "पहले पाइप की दर = 1/40",
+    "दूसरे पाइप की दर = 1/24 − 1/40 = 1/60 = 1/60",
+    "दूसरा पाइप = 60 घंटे"
+   ],
+   "finalAnswer": "60 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q012",
+   "testNumber": 5,
+   "questionNumber": 12,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 36 घंटे और 18 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 36 hours and 18 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "A": "12 घंटे",
+    "D": "54 घंटे",
+    "B": "6 घंटे",
+    "C": "27 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A की दर = 1/36 टंकी/घंटा",
+    "B की दर = 1/18 टंकी/घंटा",
+    "संयुक्त दर = 1/36 + 1/18 = 1/12 टंकी/घंटा",
+    "समय = 36×18/(36+18) = 12 घंटे"
+   ],
+   "finalAnswer": "12 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q015",
+   "testNumber": 5,
+   "questionNumber": 15,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 20 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 60 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 20 hours. If one pipe alone fills it in 60 hours, how long will the other pipe take alone?",
+   "options": {
+    "B": "30 घंटे",
+    "A": "40 घंटे",
+    "C": "50 घंटे",
+    "D": "20 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संयुक्त दर = 1/20",
+    "पहले पाइप की दर = 1/60",
+    "दूसरे पाइप की दर = 1/20 − 1/60 = 1/30 = 1/30",
+    "दूसरा पाइप = 30 घंटे"
+   ],
+   "finalAnswer": "30 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q005",
+   "testNumber": 6,
+   "questionNumber": 5,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 40 घंटे और 60 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 40 hours and 60 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "A": "24 घंटे",
+    "C": "50 घंटे",
+    "B": "12 घंटे",
+    "D": "20 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A की दर = 1/40 टंकी/घंटा",
+    "B की दर = 1/60 टंकी/घंटा",
+    "संयुक्त दर = 1/40 + 1/60 = 1/24 टंकी/घंटा",
+    "समय = 40×60/(40+60) = 24 घंटे"
+   ],
+   "finalAnswer": "24 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q007",
+   "testNumber": 6,
+   "questionNumber": 7,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 9 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 12 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 9 hours. If one pipe alone fills it in 12 hours, how long will the other pipe take alone?",
+   "options": {
+    "A": "36 घंटे",
+    "D": "3 घंटे",
+    "B": "9 घंटे",
+    "C": "45 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संयुक्त दर = 1/9",
+    "पहले पाइप की दर = 1/12",
+    "दूसरे पाइप की दर = 1/9 − 1/12 = 1/36 = 1/36",
+    "दूसरा पाइप = 36 घंटे"
+   ],
+   "finalAnswer": "36 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q024",
+   "testNumber": 7,
+   "questionNumber": 24,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "पाइप A और B एक टंकी को क्रमशः 12 और 20 घंटे में भरते हैं, जबकि तीसरा पाइप C उसे 30 घंटे में खाली करता है। तीनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Pipes A and B fill a tank in 12 and 20 hours, while pipe C empties it in 30 hours. If all three are opened together, how long will the tank take to fill?",
+   "options": {
+    "D": "10 घंटे",
+    "B": "11 घंटे",
+    "C": "7.5 घंटे",
+    "A": "5 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "टंकी = 60 इकाई मानें।",
+    "A = +5, B = +3, C = −2 इकाई/घंटा",
+    "शुद्ध दर = 5 + 3 − 2 = 6 इकाई/घंटा",
+    "समय = 60/6 = 10 घंटे"
+   ],
+   "finalAnswer": "10 घंटे",
+   "shortcut": "शुद्ध दर = भरने की दर − खाली करने की दर",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q030",
+   "testNumber": 7,
+   "questionNumber": 30,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक पाइप टंकी को 4 घंटे में भरता है और दूसरा पाइप उसे 6 घंटे में खाली करता है। दोनों एक साथ खुले होने पर खाली टंकी कितने घंटे में भरेगी?",
+   "questionEn": "One pipe fills a tank in 4 hours and another empties it in 6 hours. If both are opened together, how long will the empty tank take to fill?",
+   "options": {
+    "C": "12 घंटे",
+    "B": "2 घंटे",
+    "D": "2.4 घंटे",
+    "A": "6 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "भरने की दर = 1/4, खाली करने की दर = 1/6",
+    "शुद्ध दर = 1/4 − 1/6 = 1/12 टंकी/घंटा",
+    "समय = 4×6/(6 − 4) = 12 घंटे"
+   ],
+   "finalAnswer": "12 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q010",
+   "testNumber": 8,
+   "questionNumber": 10,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक पाइप टंकी को 8 घंटे में भरता है और दूसरा पाइप उसे 10 घंटे में खाली करता है। दोनों एक साथ खुले होने पर खाली टंकी कितने घंटे में भरेगी?",
+   "questionEn": "One pipe fills a tank in 8 hours and another empties it in 10 hours. If both are opened together, how long will the empty tank take to fill?",
+   "options": {
+    "D": "40 घंटे",
+    "B": "2 घंटे",
+    "A": "10 घंटे",
+    "C": "20 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "भरने की दर = 1/8, खाली करने की दर = 1/10",
+    "शुद्ध दर = 1/8 − 1/10 = 1/40 टंकी/घंटा",
+    "समय = 8×10/(10 − 8) = 40 घंटे"
+   ],
+   "finalAnswer": "40 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q046",
+   "testNumber": 8,
+   "questionNumber": 46,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक साथ खोले जाते हैं और एक साथ टंकी 9 घंटे में भर सकते हैं। 6 घंटे बाद पाइप B बंद कर दिया जाता है, जिसके बाद A अकेला शेष टंकी भरता है (A अकेला 12 घंटे में भरता है)। टंकी भरने में कुल कितना समय लगा?",
+   "questionEn": "Pipes A and B together can fill a tank in 9 hours. After 6 hours together, B is closed and A (which alone fills in 12 hours) fills the rest. What is the total time taken to fill the tank?",
+   "options": {
+    "D": "10 घंटे",
+    "B": "9 घंटे",
+    "C": "4 घंटे",
+    "A": "11 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "संयुक्त दर = 1/9; 6 घंटे में भरा = 6/9 = 2/3",
+    "शेष = 1 − 2/3 = 1/3",
+    "A की दर = 1/12 ⇒ शेष समय = 1/3 × 12 = 4 घंटे",
+    "कुल समय = 6 + 4 = 10 घंटे"
+   ],
+   "finalAnswer": "10 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q030",
+   "testNumber": 9,
+   "questionNumber": 30,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 24 घंटे और 8 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 24 hours and 8 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "A": "6 घंटे",
+    "C": "32 घंटे",
+    "D": "3 घंटे",
+    "B": "16 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A की दर = 1/24 टंकी/घंटा",
+    "B की दर = 1/8 टंकी/घंटा",
+    "संयुक्त दर = 1/24 + 1/8 = 1/6 टंकी/घंटा",
+    "समय = 24×8/(24+8) = 6 घंटे"
+   ],
+   "finalAnswer": "6 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q046",
+   "testNumber": 9,
+   "questionNumber": 46,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक साथ खोले जाते हैं और एक साथ टंकी 12 घंटे में भर सकते हैं। 6 घंटे बाद पाइप B बंद कर दिया जाता है, जिसके बाद A अकेला शेष टंकी भरता है (A अकेला 36 घंटे में भरता है)। टंकी भरने में कुल कितना समय लगा?",
+   "questionEn": "Pipes A and B together can fill a tank in 12 hours. After 6 hours together, B is closed and A (which alone fills in 36 hours) fills the rest. What is the total time taken to fill the tank?",
+   "options": {
+    "D": "24 घंटे",
+    "C": "42 घंटे",
+    "A": "18 घंटे",
+    "B": "12 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "संयुक्त दर = 1/12; 6 घंटे में भरा = 6/12 = 1/2",
+    "शेष = 1 − 1/2 = 1/2",
+    "A की दर = 1/36 ⇒ शेष समय = 1/2 × 36 = 18 घंटे",
+    "कुल समय = 6 + 18 = 24 घंटे"
+   ],
+   "finalAnswer": "24 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q004",
+   "testNumber": 10,
+   "questionNumber": 4,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक पाइप टंकी को 12 घंटे में भरता है और दूसरा पाइप उसे 14 घंटे में खाली करता है। दोनों एक साथ खुले होने पर खाली टंकी कितने घंटे में भरेगी?",
+   "questionEn": "One pipe fills a tank in 12 hours and another empties it in 14 hours. If both are opened together, how long will the empty tank take to fill?",
+   "options": {
+    "A": "84 घंटे",
+    "C": "2 घंटे",
+    "B": "42 घंटे",
+    "D": "14 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "भरने की दर = 1/12, खाली करने की दर = 1/14",
+    "शुद्ध दर = 1/12 − 1/14 = 1/84 टंकी/घंटा",
+    "समय = 12×14/(14 − 12) = 84 घंटे"
+   ],
+   "finalAnswer": "84 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q016",
+   "testNumber": 10,
+   "questionNumber": 16,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 10 घंटे और 40 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 10 hours and 40 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "C": "8 घंटे",
+    "B": "30 घंटे",
+    "A": "25 घंटे",
+    "D": "50 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "A की दर = 1/10 टंकी/घंटा",
+    "B की दर = 1/40 टंकी/घंटा",
+    "संयुक्त दर = 1/10 + 1/40 = 1/8 टंकी/घंटा",
+    "समय = 10×40/(10+40) = 8 घंटे"
+   ],
+   "finalAnswer": "8 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q021",
+   "testNumber": 11,
+   "questionNumber": 21,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक साथ खोले जाते हैं और एक साथ टंकी 20 घंटे में भर सकते हैं। 8 घंटे बाद पाइप B बंद कर दिया जाता है, जिसके बाद A अकेला शेष टंकी भरता है (A अकेला 60 घंटे में भरता है)। टंकी भरने में कुल कितना समय लगा?",
+   "questionEn": "Pipes A and B together can fill a tank in 20 hours. After 8 hours together, B is closed and A (which alone fills in 60 hours) fills the rest. What is the total time taken to fill the tank?",
+   "options": {
+    "B": "44 घंटे",
+    "C": "20 घंटे",
+    "D": "68 घंटे",
+    "A": "45 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संयुक्त दर = 1/20; 8 घंटे में भरा = 8/20 = 2/5",
+    "शेष = 1 − 2/5 = 3/5",
+    "A की दर = 1/60 ⇒ शेष समय = 3/5 × 60 = 36 घंटे",
+    "कुल समय = 8 + 36 = 44 घंटे"
+   ],
+   "finalAnswer": "44 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q050",
+   "testNumber": 11,
+   "questionNumber": 50,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 14 घंटे और 35 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 14 hours and 35 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "B": "10 घंटे",
+    "C": "5 घंटे",
+    "A": "21 घंटे",
+    "D": "49 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A की दर = 1/14 टंकी/घंटा",
+    "B की दर = 1/35 टंकी/घंटा",
+    "संयुक्त दर = 1/14 + 1/35 = 1/10 टंकी/घंटा",
+    "समय = 14×35/(14+35) = 10 घंटे"
+   ],
+   "finalAnswer": "10 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q007",
+   "testNumber": 12,
+   "questionNumber": 7,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 12 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 30 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 12 hours. If one pipe alone fills it in 30 hours, how long will the other pipe take alone?",
+   "options": {
+    "B": "20 घंटे",
+    "D": "18 घंटे",
+    "A": "32 घंटे",
+    "C": "12 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संयुक्त दर = 1/12",
+    "पहले पाइप की दर = 1/30",
+    "दूसरे पाइप की दर = 1/12 − 1/30 = 1/20 = 1/20",
+    "दूसरा पाइप = 20 घंटे"
+   ],
+   "finalAnswer": "20 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q040",
+   "testNumber": 12,
+   "questionNumber": 40,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक साथ खोले जाते हैं और एक साथ टंकी 6 घंटे में भर सकते हैं। 3 घंटे बाद पाइप B बंद कर दिया जाता है, जिसके बाद A अकेला शेष टंकी भरता है (A अकेला 8 घंटे में भरता है)। टंकी भरने में कुल कितना समय लगा?",
+   "questionEn": "Pipes A and B together can fill a tank in 6 hours. After 3 hours together, B is closed and A (which alone fills in 8 hours) fills the rest. What is the total time taken to fill the tank?",
+   "options": {
+    "A": "7 घंटे",
+    "D": "8 घंटे",
+    "C": "11 घंटे",
+    "B": "6 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संयुक्त दर = 1/6; 3 घंटे में भरा = 3/6 = 1/2",
+    "शेष = 1 − 1/2 = 1/2",
+    "A की दर = 1/8 ⇒ शेष समय = 1/2 × 8 = 4 घंटे",
+    "कुल समय = 3 + 4 = 7 घंटे"
+   ],
+   "finalAnswer": "7 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q004",
+   "testNumber": 13,
+   "questionNumber": 4,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 30 घंटे और 20 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 30 hours and 20 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "C": "12 घंटे",
+    "A": "10 घंटे",
+    "D": "6 घंटे",
+    "B": "50 घंटे"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "A की दर = 1/30 टंकी/घंटा",
+    "B की दर = 1/20 टंकी/घंटा",
+    "संयुक्त दर = 1/30 + 1/20 = 1/12 टंकी/घंटा",
+    "समय = 30×20/(30+20) = 12 घंटे"
+   ],
+   "finalAnswer": "12 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q005",
+   "testNumber": 13,
+   "questionNumber": 5,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक साथ खोले जाते हैं और एक साथ टंकी 12 घंटे में भर सकते हैं। 9 घंटे बाद पाइप B बंद कर दिया जाता है, जिसके बाद A अकेला शेष टंकी भरता है (A अकेला 36 घंटे में भरता है)। टंकी भरने में कुल कितना समय लगा?",
+   "questionEn": "Pipes A and B together can fill a tank in 12 hours. After 9 hours together, B is closed and A (which alone fills in 36 hours) fills the rest. What is the total time taken to fill the tank?",
+   "options": {
+    "A": "18 घंटे",
+    "B": "45 घंटे",
+    "C": "19 घंटे",
+    "D": "9 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संयुक्त दर = 1/12; 9 घंटे में भरा = 9/12 = 3/4",
+    "शेष = 1 − 3/4 = 1/4",
+    "A की दर = 1/36 ⇒ शेष समय = 1/4 × 36 = 9 घंटे",
+    "कुल समय = 9 + 9 = 18 घंटे"
+   ],
+   "finalAnswer": "18 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q001",
+   "testNumber": 14,
+   "questionNumber": 1,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक साथ खोले जाते हैं और एक साथ टंकी 6 घंटे में भर सकते हैं। 2 घंटे बाद पाइप B बंद कर दिया जाता है, जिसके बाद A अकेला शेष टंकी भरता है (A अकेला 24 घंटे में भरता है)। टंकी भरने में कुल कितना समय लगा?",
+   "questionEn": "Pipes A and B together can fill a tank in 6 hours. After 2 hours together, B is closed and A (which alone fills in 24 hours) fills the rest. What is the total time taken to fill the tank?",
+   "options": {
+    "A": "18 घंटे",
+    "C": "26 घंटे",
+    "D": "6 घंटे",
+    "B": "16 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संयुक्त दर = 1/6; 2 घंटे में भरा = 2/6 = 1/3",
+    "शेष = 1 − 1/3 = 2/3",
+    "A की दर = 1/24 ⇒ शेष समय = 2/3 × 24 = 16 घंटे",
+    "कुल समय = 2 + 16 = 18 घंटे"
+   ],
+   "finalAnswer": "18 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q010",
+   "testNumber": 14,
+   "questionNumber": 10,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 4 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 5 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 4 hours. If one pipe alone fills it in 5 hours, how long will the other pipe take alone?",
+   "options": {
+    "B": "20 घंटे",
+    "D": "4 घंटे",
+    "C": "1 घंटे",
+    "A": "24 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संयुक्त दर = 1/4",
+    "पहले पाइप की दर = 1/5",
+    "दूसरे पाइप की दर = 1/4 − 1/5 = 1/20 = 1/20",
+    "दूसरा पाइप = 20 घंटे"
+   ],
+   "finalAnswer": "20 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q020",
+   "testNumber": 15,
+   "questionNumber": 20,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक पाइप टंकी को 8 घंटे में भरता है और दूसरा पाइप उसे 12 घंटे में खाली करता है। दोनों एक साथ खुले होने पर खाली टंकी कितने घंटे में भरेगी?",
+   "questionEn": "One pipe fills a tank in 8 hours and another empties it in 12 hours. If both are opened together, how long will the empty tank take to fill?",
+   "options": {
+    "A": "24 घंटे",
+    "C": "4 घंटे",
+    "D": "12 घंटे",
+    "B": "4.8 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "भरने की दर = 1/8, खाली करने की दर = 1/12",
+    "शुद्ध दर = 1/8 − 1/12 = 1/24 टंकी/घंटा",
+    "समय = 8×12/(12 − 8) = 24 घंटे"
+   ],
+   "finalAnswer": "24 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q028",
+   "testNumber": 15,
+   "questionNumber": 28,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 8 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 10 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 8 hours. If one pipe alone fills it in 10 hours, how long will the other pipe take alone?",
+   "options": {
+    "D": "40 घंटे",
+    "B": "20 घंटे",
+    "C": "48 घंटे",
+    "A": "2 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "संयुक्त दर = 1/8",
+    "पहले पाइप की दर = 1/10",
+    "दूसरे पाइप की दर = 1/8 − 1/10 = 1/40 = 1/40",
+    "दूसरा पाइप = 40 घंटे"
+   ],
+   "finalAnswer": "40 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q038",
+   "testNumber": 16,
+   "questionNumber": 38,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक पाइप टंकी को 6 घंटे में भरता है और दूसरा पाइप उसे 9 घंटे में खाली करता है। दोनों एक साथ खुले होने पर खाली टंकी कितने घंटे में भरेगी?",
+   "questionEn": "One pipe fills a tank in 6 hours and another empties it in 9 hours. If both are opened together, how long will the empty tank take to fill?",
+   "options": {
+    "B": "18 घंटे",
+    "C": "3.6 घंटे",
+    "A": "3 घंटे",
+    "D": "9 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "भरने की दर = 1/6, खाली करने की दर = 1/9",
+    "शुद्ध दर = 1/6 − 1/9 = 1/18 टंकी/घंटा",
+    "समय = 6×9/(9 − 6) = 18 घंटे"
+   ],
+   "finalAnswer": "18 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q048",
+   "testNumber": 16,
+   "questionNumber": 48,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक साथ खोले जाते हैं और एक साथ टंकी 20 घंटे में भर सकते हैं। 4 घंटे बाद पाइप B बंद कर दिया जाता है, जिसके बाद A अकेला शेष टंकी भरता है (A अकेला 60 घंटे में भरता है)। टंकी भरने में कुल कितना समय लगा?",
+   "questionEn": "Pipes A and B together can fill a tank in 20 hours. After 4 hours together, B is closed and A (which alone fills in 60 hours) fills the rest. What is the total time taken to fill the tank?",
+   "options": {
+    "D": "52 घंटे",
+    "B": "64 घंटे",
+    "A": "48 घंटे",
+    "C": "53 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "संयुक्त दर = 1/20; 4 घंटे में भरा = 4/20 = 1/5",
+    "शेष = 1 − 1/5 = 4/5",
+    "A की दर = 1/60 ⇒ शेष समय = 4/5 × 60 = 48 घंटे",
+    "कुल समय = 4 + 48 = 52 घंटे"
+   ],
+   "finalAnswer": "52 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q027",
+   "testNumber": 17,
+   "questionNumber": 27,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक साथ खोले जाते हैं और एक साथ टंकी 6 घंटे में भर सकते हैं। 1 घंटे बाद पाइप B बंद कर दिया जाता है, जिसके बाद A अकेला शेष टंकी भरता है (A अकेला 24 घंटे में भरता है)। टंकी भरने में कुल कितना समय लगा?",
+   "questionEn": "Pipes A and B together can fill a tank in 6 hours. After 1 hours together, B is closed and A (which alone fills in 24 hours) fills the rest. What is the total time taken to fill the tank?",
+   "options": {
+    "A": "21 घंटे",
+    "D": "6 घंटे",
+    "B": "20 घंटे",
+    "C": "25 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संयुक्त दर = 1/6; 1 घंटे में भरा = 1/6 = 1/6",
+    "शेष = 1 − 1/6 = 5/6",
+    "A की दर = 1/24 ⇒ शेष समय = 5/6 × 24 = 20 घंटे",
+    "कुल समय = 1 + 20 = 21 घंटे"
+   ],
+   "finalAnswer": "21 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q041",
+   "testNumber": 17,
+   "questionNumber": 41,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "एक पाइप टंकी को 12 घंटे में भरता है और दूसरा पाइप उसे 18 घंटे में खाली करता है। दोनों एक साथ खुले होने पर खाली टंकी कितने घंटे में भरेगी?",
+   "questionEn": "One pipe fills a tank in 12 hours and another empties it in 18 hours. If both are opened together, how long will the empty tank take to fill?",
+   "options": {
+    "D": "36 घंटे",
+    "A": "18 घंटे",
+    "C": "6 घंटे",
+    "B": "7.2 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "भरने की दर = 1/12, खाली करने की दर = 1/18",
+    "शुद्ध दर = 1/12 − 1/18 = 1/36 टंकी/घंटा",
+    "समय = 12×18/(18 − 12) = 36 घंटे"
+   ],
+   "finalAnswer": "36 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q026",
+   "testNumber": 18,
+   "questionNumber": 26,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 9 घंटे और 18 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 9 hours and 18 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "A": "6 घंटे",
+    "B": "3 घंटे",
+    "C": "13.5 घंटे",
+    "D": "27 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A की दर = 1/9 टंकी/घंटा",
+    "B की दर = 1/18 टंकी/घंटा",
+    "संयुक्त दर = 1/9 + 1/18 = 1/6 टंकी/घंटा",
+    "समय = 9×18/(9+18) = 6 घंटे"
+   ],
+   "finalAnswer": "6 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q031",
+   "testNumber": 18,
+   "questionNumber": 31,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक साथ खोले जाते हैं और एक साथ टंकी 12 घंटे में भर सकते हैं। 1 घंटे बाद पाइप B बंद कर दिया जाता है, जिसके बाद A अकेला शेष टंकी भरता है (A अकेला 36 घंटे में भरता है)। टंकी भरने में कुल कितना समय लगा?",
+   "questionEn": "Pipes A and B together can fill a tank in 12 hours. After 1 hours together, B is closed and A (which alone fills in 36 hours) fills the rest. What is the total time taken to fill the tank?",
+   "options": {
+    "D": "34 घंटे",
+    "A": "12 घंटे",
+    "B": "33 घंटे",
+    "C": "35 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "संयुक्त दर = 1/12; 1 घंटे में भरा = 1/12 = 1/12",
+    "शेष = 1 − 1/12 = 11/12",
+    "A की दर = 1/36 ⇒ शेष समय = 11/12 × 36 = 33 घंटे",
+    "कुल समय = 1 + 33 = 34 घंटे"
+   ],
+   "finalAnswer": "34 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q026",
+   "testNumber": 19,
+   "questionNumber": 26,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 6 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 9 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 6 hours. If one pipe alone fills it in 9 hours, how long will the other pipe take alone?",
+   "options": {
+    "B": "18 घंटे",
+    "D": "9 घंटे",
+    "C": "3 घंटे",
+    "A": "6 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संयुक्त दर = 1/6",
+    "पहले पाइप की दर = 1/9",
+    "दूसरे पाइप की दर = 1/6 − 1/9 = 1/18 = 1/18",
+    "दूसरा पाइप = 18 घंटे"
+   ],
+   "finalAnswer": "18 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q041",
+   "testNumber": 19,
+   "questionNumber": 41,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 12 घंटे और 24 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 12 hours and 24 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "A": "8 घंटे",
+    "D": "18 घंटे",
+    "C": "12 घंटे",
+    "B": "36 घंटे"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "A की दर = 1/12 टंकी/घंटा",
+    "B की दर = 1/24 टंकी/घंटा",
+    "संयुक्त दर = 1/12 + 1/24 = 1/8 टंकी/घंटा",
+    "समय = 12×24/(12+24) = 8 घंटे"
+   ],
+   "finalAnswer": "8 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q020",
+   "testNumber": 20,
+   "questionNumber": 20,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो पाइप एक साथ खोलने पर टंकी 12 घंटे में भर जाती है। यदि एक पाइप अकेला टंकी 21 घंटे में भरता है, तो दूसरा पाइप अकेला कितने घंटे में भरेगा?",
+   "questionEn": "Two pipes together fill a tank in 12 hours. If one pipe alone fills it in 21 hours, how long will the other pipe take alone?",
+   "options": {
+    "B": "28 घंटे",
+    "C": "12 घंटे",
+    "A": "40 घंटे",
+    "D": "14 घंटे"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संयुक्त दर = 1/12",
+    "पहले पाइप की दर = 1/21",
+    "दूसरे पाइप की दर = 1/12 − 1/21 = 1/28 = 1/28",
+    "दूसरा पाइप = 28 घंटे"
+   ],
+   "finalAnswer": "28 घंटे",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q043",
+   "testNumber": 20,
+   "questionNumber": 43,
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो पाइप A और B एक टंकी को क्रमशः 60 घंटे और 30 घंटे में भरते हैं। दोनों पाइप एक साथ खोलने पर टंकी कितने घंटे में भरेगी?",
+   "questionEn": "Two pipes A and B can fill a tank in 60 hours and 30 hours respectively. How long will the tank take to fill if both pipes are opened together?",
+   "options": {
+    "D": "20 घंटे",
+    "B": "45 घंटे",
+    "A": "90 घंटे",
+    "C": "10 घंटे"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A की दर = 1/60 टंकी/घंटा",
+    "B की दर = 1/30 टंकी/घंटा",
+    "संयुक्त दर = 1/60 + 1/30 = 1/20 टंकी/घंटा",
+    "समय = 60×30/(60+30) = 20 घंटे"
+   ],
+   "finalAnswer": "20 घंटे",
+   "shortcut": "दोनों पाइप: ab/(a+b)",
+   "marks": 1
+  }
+ ]
+}

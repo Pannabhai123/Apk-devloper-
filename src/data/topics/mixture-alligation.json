@@ -1,0 +1,1074 @@
+{
+ "topic": "Mixture and Alligation",
+ "topicHi": "मिश्रण",
+ "slug": "mixture-alligation",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q044",
+   "testNumber": 1,
+   "questionNumber": 44,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "8 किग्रा चाय पत्ती (₹32/किग्रा) को 6 किग्रा चाय पत्ती (₹60/किग्रा) के साथ मिलाया जाता है। मिश्रण की प्रति किग्रा कीमत ज्ञात कीजिए।",
+   "questionEn": "8 kg of tea costing ₹32/kg is mixed with 6 kg costing ₹60/kg. Find the cost of the mixture per kg.",
+   "options": {
+    "C": "₹44",
+    "D": "₹46",
+    "A": "₹92",
+    "B": "₹32"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल कीमत = 32 × 8 + 60 × 6 = 256 + 360 = 616",
+    "कुल मात्रा = 8 + 6 = 14 किग्रा",
+    "मिश्रण की कीमत = 616/14 = 44 प्रति किग्रा"
+   ],
+   "finalAnswer": "₹44",
+   "shortcut": "मिश्रण कीमत = कुल कीमत ÷ कुल मात्रा",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q057",
+   "testNumber": 1,
+   "questionNumber": 57,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹42/किग्रा वाले चावल को ₹72/किग्रा वाले चावल के साथ किस अनुपात में मिलाया जाए कि मिश्रण की कीमत ₹55/किग्रा हो जाए?",
+   "questionEn": "In what ratio must rice at ₹42/kg be mixed with rice at ₹72/kg so that the mixture costs ₹55/kg?",
+   "options": {
+    "A": "17 : 13",
+    "B": "13 : 17",
+    "D": "1 : 1",
+    "C": "17 : 14"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मिश्रण नियम (Alligation rule):",
+    "सस्ते की मात्रा : महँगे की मात्रा = (महँगा − मिश्रण) : (मिश्रण − सस्ता)",
+    "= (72 − 55) : (55 − 42) = 17 : 13",
+    "= 17 : 13"
+   ],
+   "finalAnswer": "17 : 13",
+   "shortcut": "(महँगा − M) : (M − सस्ता)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q002",
+   "testNumber": 2,
+   "questionNumber": 2,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक टंकी में 20 लीटर शुद्ध दूध है। इसमें से 4 लीटर दूध निकालकर उतना ही पानी मिला दिया जाता है। अब मिश्रण में दूध का प्रतिशत कितना है?",
+   "questionEn": "A tank contains 20 L of pure milk. 4 L is drawn and replaced with water. What is the percentage of milk in the mixture now?",
+   "options": {
+    "B": "80%",
+    "A": "20%",
+    "D": "40%",
+    "C": "90%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "निकाले गए दूध का भाग = 4/20",
+    "शेष दूध = 20 − 4 = 16 L (कुल मात्रा 20 L ही रहती है)",
+    "दूध% = 16/20 × 100 = 80%"
+   ],
+   "finalAnswer": "80%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q058",
+   "testNumber": 2,
+   "questionNumber": 58,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "24 लीटर दूध-पानी के मिश्रण में दूध और पानी का अनुपात 3 : 1 है। इसमें कितना पानी मिलाया जाए कि अनुपात 2 : 1 हो जाए?",
+   "questionEn": "A 24 L milk-water mixture has milk:water = 3:1. How much water must be added to make the ratio 2:1?",
+   "options": {
+    "C": "3 लीटर",
+    "A": "6 लीटर",
+    "D": "8 लीटर",
+    "B": "12 लीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दूध = 24 × 3/4 = 18 L (स्थिर रहेगा)",
+    "पानी = 6 L",
+    "नया अनुपात 2:1 में पानी = दूध × 1/2 = 18 × 1/2 = 9 L",
+    "मिलाया गया पानी = 9 − 6 = 3 L"
+   ],
+   "finalAnswer": "3 लीटर",
+   "shortcut": "दूध स्थिर रहता है — पानी की गणना दूध के आधार पर करें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q002",
+   "testNumber": 3,
+   "questionNumber": 2,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 2 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 5 : 2 है। दूसरे बर्तन में 11 लीटर मिश्रण है जिसमें अनुपात 4 : 1 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 2 L of milk-water mixture in ratio 5:2. Another vessel has 11 L in ratio 4:1. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "5758173809280849/1560175585196207",
+    "A": "5/2",
+    "C": "4",
+    "D": "7318349394477056/1560175585196207"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 2 × 5/7 = 1.429 L, पानी = 0.571 L",
+    "बर्तन 2: दूध = 11 × 4/5 = 8.8 L, पानी = 2.2 L",
+    "कुल दूध = 10.229 L, कुल पानी = 2.771 L",
+    "अनुपात = 10.229 : 2.771 = 5758173809280849/1560175585196207"
+   ],
+   "finalAnswer": "5758173809280849/1560175585196207",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q003",
+   "testNumber": 3,
+   "questionNumber": 3,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹30/किग्रा वाले चावल को ₹72/किग्रा वाले चावल के साथ किस अनुपात में मिलाया जाए कि मिश्रण की कीमत ₹45/किग्रा हो जाए?",
+   "questionEn": "In what ratio must rice at ₹30/kg be mixed with rice at ₹72/kg so that the mixture costs ₹45/kg?",
+   "options": {
+    "C": "9 : 5",
+    "B": "5 : 9",
+    "A": "1 : 1",
+    "D": "9 : 6"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मिश्रण नियम (Alligation rule):",
+    "सस्ते की मात्रा : महँगे की मात्रा = (महँगा − मिश्रण) : (मिश्रण − सस्ता)",
+    "= (72 − 45) : (45 − 30) = 27 : 15",
+    "= 9 : 5"
+   ],
+   "finalAnswer": "9 : 5",
+   "shortcut": "(महँगा − M) : (M − सस्ता)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q015",
+   "testNumber": 4,
+   "questionNumber": 15,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक टंकी में 40 लीटर शुद्ध दूध है। इसमें से 8 लीटर दूध निकालकर उतना ही पानी मिला दिया जाता है। अब मिश्रण में दूध का प्रतिशत कितना है?",
+   "questionEn": "A tank contains 40 L of pure milk. 8 L is drawn and replaced with water. What is the percentage of milk in the mixture now?",
+   "options": {
+    "D": "80%",
+    "A": "20%",
+    "B": "40%",
+    "C": "90%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "निकाले गए दूध का भाग = 8/40",
+    "शेष दूध = 40 − 8 = 32 L (कुल मात्रा 40 L ही रहती है)",
+    "दूध% = 32/40 × 100 = 80%"
+   ],
+   "finalAnswer": "80%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q045",
+   "testNumber": 4,
+   "questionNumber": 45,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 2 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 4 : 1 है। दूसरे बर्तन में 5 लीटर मिश्रण है जिसमें अनुपात 3 : 1 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 2 L of milk-water mixture in ratio 4:1. Another vessel has 5 L in ratio 3:1. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "430254607257717/132695346163595",
+    "D": "4",
+    "A": "3",
+    "C": "562949953421312/132695346163595"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 2 × 4/5 = 1.6 L, पानी = 0.4 L",
+    "बर्तन 2: दूध = 5 × 3/4 = 3.75 L, पानी = 1.25 L",
+    "कुल दूध = 5.35 L, कुल पानी = 1.65 L",
+    "अनुपात = 5.35 : 1.65 = 430254607257717/132695346163595"
+   ],
+   "finalAnswer": "430254607257717/132695346163595",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q004",
+   "testNumber": 5,
+   "questionNumber": 4,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "20 लीटर दूध-पानी के मिश्रण में दूध और पानी का अनुपात 4 : 1 है। इसमें कितना पानी मिलाया जाए कि अनुपात 1 : 1 हो जाए?",
+   "questionEn": "A 20 L milk-water mixture has milk:water = 4:1. How much water must be added to make the ratio 1:1?",
+   "options": {
+    "C": "12 लीटर",
+    "D": "4 लीटर",
+    "B": "17 लीटर",
+    "A": "24 लीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दूध = 20 × 4/5 = 16 L (स्थिर रहेगा)",
+    "पानी = 4 L",
+    "नया अनुपात 1:1 में पानी = दूध × 1/1 = 16 × 1/1 = 16 L",
+    "मिलाया गया पानी = 16 − 4 = 12 L"
+   ],
+   "finalAnswer": "12 लीटर",
+   "shortcut": "दूध स्थिर रहता है — पानी की गणना दूध के आधार पर करें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q021",
+   "testNumber": 5,
+   "questionNumber": 21,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 15 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 3 : 2 है। दूसरे बर्तन में 4 लीटर मिश्रण है जिसमें अनुपात 3 : 1 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 15 L of milk-water mixture in ratio 3:2. Another vessel has 4 L in ratio 3:1. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "12/7",
+    "C": "3/2",
+    "A": "3",
+    "D": "19/7"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 15 × 3/5 = 9 L, पानी = 6 L",
+    "बर्तन 2: दूध = 4 × 3/4 = 3 L, पानी = 1 L",
+    "कुल दूध = 12 L, कुल पानी = 7 L",
+    "अनुपात = 12 : 7 = 12/7"
+   ],
+   "finalAnswer": "12/7",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q001",
+   "testNumber": 6,
+   "questionNumber": 1,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹40/किग्रा वाले चावल को ₹64/किग्रा वाले चावल के साथ किस अनुपात में मिलाया जाए कि मिश्रण की कीमत ₹58/किग्रा हो जाए?",
+   "questionEn": "In what ratio must rice at ₹40/kg be mixed with rice at ₹64/kg so that the mixture costs ₹58/kg?",
+   "options": {
+    "D": "1 : 3",
+    "A": "3 : 1",
+    "B": "1 : 1",
+    "C": "1 : 4"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मिश्रण नियम (Alligation rule):",
+    "सस्ते की मात्रा : महँगे की मात्रा = (महँगा − मिश्रण) : (मिश्रण − सस्ता)",
+    "= (64 − 58) : (58 − 40) = 6 : 18",
+    "= 1 : 3"
+   ],
+   "finalAnswer": "1 : 3",
+   "shortcut": "(महँगा − M) : (M − सस्ता)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q037",
+   "testNumber": 6,
+   "questionNumber": 37,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "10 किग्रा चाय पत्ती (₹32/किग्रा) को 10 किग्रा चाय पत्ती (₹64/किग्रा) के साथ मिलाया जाता है। मिश्रण की प्रति किग्रा कीमत ज्ञात कीजिए।",
+   "questionEn": "10 kg of tea costing ₹32/kg is mixed with 10 kg costing ₹64/kg. Find the cost of the mixture per kg.",
+   "options": {
+    "D": "₹48",
+    "A": "₹96",
+    "C": "₹32",
+    "B": "₹53"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल कीमत = 32 × 10 + 64 × 10 = 320 + 640 = 960",
+    "कुल मात्रा = 10 + 10 = 20 किग्रा",
+    "मिश्रण की कीमत = 960/20 = 48 प्रति किग्रा"
+   ],
+   "finalAnswer": "₹48",
+   "shortcut": "मिश्रण कीमत = कुल कीमत ÷ कुल मात्रा",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q036",
+   "testNumber": 7,
+   "questionNumber": 36,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "20 लीटर दूध-पानी के मिश्रण में दूध और पानी का अनुपात 3 : 1 है। इसमें कितना पानी मिलाया जाए कि अनुपात 1 : 1 हो जाए?",
+   "questionEn": "A 20 L milk-water mixture has milk:water = 3:1. How much water must be added to make the ratio 1:1?",
+   "options": {
+    "D": "10 लीटर",
+    "A": "5 लीटर",
+    "B": "15 लीटर",
+    "C": "20 लीटर"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "दूध = 20 × 3/4 = 15 L (स्थिर रहेगा)",
+    "पानी = 5 L",
+    "नया अनुपात 1:1 में पानी = दूध × 1/1 = 15 × 1/1 = 15 L",
+    "मिलाया गया पानी = 15 − 5 = 10 L"
+   ],
+   "finalAnswer": "10 लीटर",
+   "shortcut": "दूध स्थिर रहता है — पानी की गणना दूध के आधार पर करें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q050",
+   "testNumber": 7,
+   "questionNumber": 50,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "10 किग्रा चाय पत्ती (₹36/किग्रा) को 5 किग्रा चाय पत्ती (₹72/किग्रा) के साथ मिलाया जाता है। मिश्रण की प्रति किग्रा कीमत ज्ञात कीजिए।",
+   "questionEn": "10 kg of tea costing ₹36/kg is mixed with 5 kg costing ₹72/kg. Find the cost of the mixture per kg.",
+   "options": {
+    "A": "₹48",
+    "D": "₹108",
+    "B": "₹54",
+    "C": "₹53"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कुल कीमत = 36 × 10 + 72 × 5 = 360 + 360 = 720",
+    "कुल मात्रा = 10 + 5 = 15 किग्रा",
+    "मिश्रण की कीमत = 720/15 = 48 प्रति किग्रा"
+   ],
+   "finalAnswer": "₹48",
+   "shortcut": "मिश्रण कीमत = कुल कीमत ÷ कुल मात्रा",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q009",
+   "testNumber": 8,
+   "questionNumber": 9,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "90 लीटर दूध-पानी के मिश्रण में दूध और पानी का अनुपात 4 : 1 है। इसमें कितना पानी मिलाया जाए कि अनुपात 1 : 1 हो जाए?",
+   "questionEn": "A 90 L milk-water mixture has milk:water = 4:1. How much water must be added to make the ratio 1:1?",
+   "options": {
+    "A": "54 लीटर",
+    "D": "18 लीटर",
+    "B": "59 लीटर",
+    "C": "108 लीटर"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "दूध = 90 × 4/5 = 72 L (स्थिर रहेगा)",
+    "पानी = 18 L",
+    "नया अनुपात 1:1 में पानी = दूध × 1/1 = 72 × 1/1 = 72 L",
+    "मिलाया गया पानी = 72 − 18 = 54 L"
+   ],
+   "finalAnswer": "54 लीटर",
+   "shortcut": "दूध स्थिर रहता है — पानी की गणना दूध के आधार पर करें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q022",
+   "testNumber": 8,
+   "questionNumber": 22,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 14 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 3 : 2 है। दूसरे बर्तन में 15 लीटर मिश्रण है जिसमें अनुपात 4 : 3 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 14 L of milk-water mixture in ratio 3:2. Another vessel has 15 L in ratio 4:3. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "4777032461889419/3385741862719605",
+    "A": "3/2",
+    "D": "4/3",
+    "C": "8162774324609024/3385741862719605"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 14 × 3/5 = 8.4 L, पानी = 5.6 L",
+    "बर्तन 2: दूध = 15 × 4/7 = 8.571 L, पानी = 6.429 L",
+    "कुल दूध = 16.971 L, कुल पानी = 12.029 L",
+    "अनुपात = 16.971 : 12.029 = 4777032461889419/3385741862719605"
+   ],
+   "finalAnswer": "4777032461889419/3385741862719605",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q035",
+   "testNumber": 9,
+   "questionNumber": 35,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "36 लीटर दूध-पानी के मिश्रण में दूध और पानी का अनुपात 5 : 1 है। इसमें कितना पानी मिलाया जाए कि अनुपात 1 : 1 हो जाए?",
+   "questionEn": "A 36 L milk-water mixture has milk:water = 5:1. How much water must be added to make the ratio 1:1?",
+   "options": {
+    "B": "24 लीटर",
+    "D": "6 लीटर",
+    "C": "29 लीटर",
+    "A": "48 लीटर"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "दूध = 36 × 5/6 = 30 L (स्थिर रहेगा)",
+    "पानी = 6 L",
+    "नया अनुपात 1:1 में पानी = दूध × 1/1 = 30 × 1/1 = 30 L",
+    "मिलाया गया पानी = 30 − 6 = 24 L"
+   ],
+   "finalAnswer": "24 लीटर",
+   "shortcut": "दूध स्थिर रहता है — पानी की गणना दूध के आधार पर करें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q059",
+   "testNumber": 9,
+   "questionNumber": 59,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "10 किग्रा चाय पत्ती (₹36/किग्रा) को 10 किग्रा चाय पत्ती (₹56/किग्रा) के साथ मिलाया जाता है। मिश्रण की प्रति किग्रा कीमत ज्ञात कीजिए।",
+   "questionEn": "10 kg of tea costing ₹36/kg is mixed with 10 kg costing ₹56/kg. Find the cost of the mixture per kg.",
+   "options": {
+    "D": "₹46",
+    "B": "₹36",
+    "A": "₹51",
+    "C": "₹92"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल कीमत = 36 × 10 + 56 × 10 = 360 + 560 = 920",
+    "कुल मात्रा = 10 + 10 = 20 किग्रा",
+    "मिश्रण की कीमत = 920/20 = 46 प्रति किग्रा"
+   ],
+   "finalAnswer": "₹46",
+   "shortcut": "मिश्रण कीमत = कुल कीमत ÷ कुल मात्रा",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q024",
+   "testNumber": 10,
+   "questionNumber": 24,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 11 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 3 : 1 है। दूसरे बर्तन में 14 लीटर मिश्रण है जिसमें अनुपात 5 : 1 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 11 L of milk-water mixture in ratio 3:1. Another vessel has 14 L in ratio 5:1. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "C": "2803021643076949/715415565806251",
+    "D": "3",
+    "A": "5",
+    "B": "3518437208883200/715415565806251"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "बर्तन 1: दूध = 11 × 3/4 = 8.25 L, पानी = 2.75 L",
+    "बर्तन 2: दूध = 14 × 5/6 = 11.667 L, पानी = 2.333 L",
+    "कुल दूध = 19.917 L, कुल पानी = 5.083 L",
+    "अनुपात = 19.917 : 5.083 = 2803021643076949/715415565806251"
+   ],
+   "finalAnswer": "2803021643076949/715415565806251",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q032",
+   "testNumber": 10,
+   "questionNumber": 32,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक टंकी में 90 लीटर शुद्ध दूध है। इसमें से 9 लीटर दूध निकालकर उतना ही पानी मिला दिया जाता है। अब मिश्रण में दूध का प्रतिशत कितना है?",
+   "questionEn": "A tank contains 90 L of pure milk. 9 L is drawn and replaced with water. What is the percentage of milk in the mixture now?",
+   "options": {
+    "B": "90%",
+    "C": "10%",
+    "A": "45%",
+    "D": "100%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "निकाले गए दूध का भाग = 9/90",
+    "शेष दूध = 90 − 9 = 81 L (कुल मात्रा 90 L ही रहती है)",
+    "दूध% = 81/90 × 100 = 90%"
+   ],
+   "finalAnswer": "90%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q025",
+   "testNumber": 11,
+   "questionNumber": 25,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक टंकी में 60 लीटर शुद्ध दूध है। इसमें से 12 लीटर दूध निकालकर उतना ही पानी मिला दिया जाता है। अब मिश्रण में दूध का प्रतिशत कितना है?",
+   "questionEn": "A tank contains 60 L of pure milk. 12 L is drawn and replaced with water. What is the percentage of milk in the mixture now?",
+   "options": {
+    "A": "80%",
+    "D": "20%",
+    "B": "40%",
+    "C": "90%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "निकाले गए दूध का भाग = 12/60",
+    "शेष दूध = 60 − 12 = 48 L (कुल मात्रा 60 L ही रहती है)",
+    "दूध% = 48/60 × 100 = 80%"
+   ],
+   "finalAnswer": "80%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q053",
+   "testNumber": 11,
+   "questionNumber": 53,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 7 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 4 : 1 है। दूसरे बर्तन में 5 लीटर मिश्रण है जिसमें अनुपात 1 : 2 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 7 L of milk-water mixture in ratio 4:1. Another vessel has 5 L in ratio 1:2. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "8181539323056401/5329259559055087",
+    "A": "4",
+    "C": "1/2",
+    "D": "13510798882111488/5329259559055087"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 7 × 4/5 = 5.6 L, पानी = 1.4 L",
+    "बर्तन 2: दूध = 5 × 1/3 = 1.667 L, पानी = 3.333 L",
+    "कुल दूध = 7.267 L, कुल पानी = 4.733 L",
+    "अनुपात = 7.267 : 4.733 = 8181539323056401/5329259559055087"
+   ],
+   "finalAnswer": "8181539323056401/5329259559055087",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q018",
+   "testNumber": 12,
+   "questionNumber": 18,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 7 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 5 : 3 है। दूसरे बर्तन में 15 लीटर मिश्रण है जिसमें अनुपात 5 : 2 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 7 L of milk-water mixture in ratio 5:3. Another vessel has 15 L in ratio 5:2. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "8494512690018011/3890386285250853",
+    "A": "5/3",
+    "D": "5/2",
+    "C": "12384898975268864/3890386285250853"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 7 × 5/8 = 4.375 L, पानी = 2.625 L",
+    "बर्तन 2: दूध = 15 × 5/7 = 10.714 L, पानी = 4.286 L",
+    "कुल दूध = 15.089 L, कुल पानी = 6.911 L",
+    "अनुपात = 15.089 : 6.911 = 8494512690018011/3890386285250853"
+   ],
+   "finalAnswer": "8494512690018011/3890386285250853",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q046",
+   "testNumber": 12,
+   "questionNumber": 46,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "60 लीटर दूध-पानी के मिश्रण में दूध और पानी का अनुपात 7 : 3 है। इसमें कितना पानी मिलाया जाए कि अनुपात 3 : 4 हो जाए?",
+   "questionEn": "A 60 L milk-water mixture has milk:water = 7:3. How much water must be added to make the ratio 3:4?",
+   "options": {
+    "C": "38 लीटर",
+    "B": "18 लीटर",
+    "D": "43 लीटर",
+    "A": "24 लीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दूध = 60 × 7/10 = 42 L (स्थिर रहेगा)",
+    "पानी = 18 L",
+    "नया अनुपात 3:4 में पानी = दूध × 4/3 = 42 × 4/3 = 56 L",
+    "मिलाया गया पानी = 56 − 18 = 38 L"
+   ],
+   "finalAnswer": "38 लीटर",
+   "shortcut": "दूध स्थिर रहता है — पानी की गणना दूध के आधार पर करें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q009",
+   "testNumber": 13,
+   "questionNumber": 9,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹48/किग्रा वाले चावल को ₹68/किग्रा वाले चावल के साथ किस अनुपात में मिलाया जाए कि मिश्रण की कीमत ₹55/किग्रा हो जाए?",
+   "questionEn": "In what ratio must rice at ₹48/kg be mixed with rice at ₹68/kg so that the mixture costs ₹55/kg?",
+   "options": {
+    "D": "13 : 7",
+    "C": "7 : 13",
+    "A": "1 : 1",
+    "B": "13 : 8"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मिश्रण नियम (Alligation rule):",
+    "सस्ते की मात्रा : महँगे की मात्रा = (महँगा − मिश्रण) : (मिश्रण − सस्ता)",
+    "= (68 − 55) : (55 − 48) = 13 : 7",
+    "= 13 : 7"
+   ],
+   "finalAnswer": "13 : 7",
+   "shortcut": "(महँगा − M) : (M − सस्ता)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q036",
+   "testNumber": 13,
+   "questionNumber": 36,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "72 लीटर दूध-पानी के मिश्रण में दूध और पानी का अनुपात 5 : 1 है। इसमें कितना पानी मिलाया जाए कि अनुपात 5 : 4 हो जाए?",
+   "questionEn": "A 72 L milk-water mixture has milk:water = 5:1. How much water must be added to make the ratio 5:4?",
+   "options": {
+    "C": "36 लीटर",
+    "B": "12 लीटर",
+    "D": "41 लीटर",
+    "A": "48 लीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दूध = 72 × 5/6 = 60 L (स्थिर रहेगा)",
+    "पानी = 12 L",
+    "नया अनुपात 5:4 में पानी = दूध × 4/5 = 60 × 4/5 = 48 L",
+    "मिलाया गया पानी = 48 − 12 = 36 L"
+   ],
+   "finalAnswer": "36 लीटर",
+   "shortcut": "दूध स्थिर रहता है — पानी की गणना दूध के आधार पर करें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q044",
+   "testNumber": 14,
+   "questionNumber": 44,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "45 लीटर दूध-पानी के मिश्रण में दूध और पानी का अनुपात 4 : 1 है। इसमें कितना पानी मिलाया जाए कि अनुपात 3 : 4 हो जाए?",
+   "questionEn": "A 45 L milk-water mixture has milk:water = 4:1. How much water must be added to make the ratio 3:4?",
+   "options": {
+    "C": "39 लीटर",
+    "D": "9 लीटर",
+    "A": "44 लीटर",
+    "B": "27 लीटर"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दूध = 45 × 4/5 = 36 L (स्थिर रहेगा)",
+    "पानी = 9 L",
+    "नया अनुपात 3:4 में पानी = दूध × 4/3 = 36 × 4/3 = 48 L",
+    "मिलाया गया पानी = 48 − 9 = 39 L"
+   ],
+   "finalAnswer": "39 लीटर",
+   "shortcut": "दूध स्थिर रहता है — पानी की गणना दूध के आधार पर करें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q047",
+   "testNumber": 14,
+   "questionNumber": 47,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 12 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 3 : 2 है। दूसरे बर्तन में 4 लीटर मिश्रण है जिसमें अनुपात 5 : 2 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 12 L of milk-water mixture in ratio 3:2. Another vessel has 4 L in ratio 5:2. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "1415417025745013/836382787940235",
+    "C": "3/2",
+    "D": "5/2",
+    "A": "2251799813685248/836382787940235"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 12 × 3/5 = 7.2 L, पानी = 4.8 L",
+    "बर्तन 2: दूध = 4 × 5/7 = 2.857 L, पानी = 1.143 L",
+    "कुल दूध = 10.057 L, कुल पानी = 5.943 L",
+    "अनुपात = 10.057 : 5.943 = 1415417025745013/836382787940235"
+   ],
+   "finalAnswer": "1415417025745013/836382787940235",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q023",
+   "testNumber": 15,
+   "questionNumber": 23,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "5 किग्रा चाय पत्ती (₹20/किग्रा) को 10 किग्रा चाय पत्ती (₹50/किग्रा) के साथ मिलाया जाता है। मिश्रण की प्रति किग्रा कीमत ज्ञात कीजिए।",
+   "questionEn": "5 kg of tea costing ₹20/kg is mixed with 10 kg costing ₹50/kg. Find the cost of the mixture per kg.",
+   "options": {
+    "A": "₹40",
+    "D": "₹20",
+    "B": "₹70",
+    "C": "₹45"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कुल कीमत = 20 × 5 + 50 × 10 = 100 + 500 = 600",
+    "कुल मात्रा = 5 + 10 = 15 किग्रा",
+    "मिश्रण की कीमत = 600/15 = 40 प्रति किग्रा"
+   ],
+   "finalAnswer": "₹40",
+   "shortcut": "मिश्रण कीमत = कुल कीमत ÷ कुल मात्रा",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q033",
+   "testNumber": 15,
+   "questionNumber": 33,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 12 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 3 : 2 है। दूसरे बर्तन में 12 लीटर मिश्रण है जिसमें अनुपात 2 : 1 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 12 L of milk-water mixture in ratio 3:2. Another vessel has 12 L in ratio 2:1. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "D": "1426139882000657/825659931684591",
+    "B": "3/2",
+    "C": "2",
+    "A": "2251799813685248/825659931684591"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "बर्तन 1: दूध = 12 × 3/5 = 7.2 L, पानी = 4.8 L",
+    "बर्तन 2: दूध = 12 × 2/3 = 8 L, पानी = 4 L",
+    "कुल दूध = 15.2 L, कुल पानी = 8.8 L",
+    "अनुपात = 15.2 : 8.8 = 1426139882000657/825659931684591"
+   ],
+   "finalAnswer": "1426139882000657/825659931684591",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q041",
+   "testNumber": 16,
+   "questionNumber": 41,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 9 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 4 : 3 है। दूसरे बर्तन में 4 लीटर मिश्रण है जिसमें अनुपात 5 : 3 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 9 L of milk-water mixture in ratio 4:3. Another vessel has 4 L in ratio 5:3. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "8605092145154341/6031606643799771",
+    "C": "4/3",
+    "A": "5/3",
+    "D": "14636698788954112/6031606643799771"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 9 × 4/7 = 5.143 L, पानी = 3.857 L",
+    "बर्तन 2: दूध = 4 × 5/8 = 2.5 L, पानी = 1.5 L",
+    "कुल दूध = 7.643 L, कुल पानी = 5.357 L",
+    "अनुपात = 7.643 : 5.357 = 8605092145154341/6031606643799771"
+   ],
+   "finalAnswer": "8605092145154341/6031606643799771",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q051",
+   "testNumber": 16,
+   "questionNumber": 51,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹30/किग्रा वाले चावल को ₹90/किग्रा वाले चावल के साथ किस अनुपात में मिलाया जाए कि मिश्रण की कीमत ₹45/किग्रा हो जाए?",
+   "questionEn": "In what ratio must rice at ₹30/kg be mixed with rice at ₹90/kg so that the mixture costs ₹45/kg?",
+   "options": {
+    "C": "3 : 1",
+    "B": "1 : 3",
+    "A": "1 : 1",
+    "D": "3 : 2"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मिश्रण नियम (Alligation rule):",
+    "सस्ते की मात्रा : महँगे की मात्रा = (महँगा − मिश्रण) : (मिश्रण − सस्ता)",
+    "= (90 − 45) : (45 − 30) = 45 : 15",
+    "= 3 : 1"
+   ],
+   "finalAnswer": "3 : 1",
+   "shortcut": "(महँगा − M) : (M − सस्ता)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q040",
+   "testNumber": 17,
+   "questionNumber": 40,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक टंकी में 80 लीटर शुद्ध दूध है। इसमें से 40 लीटर दूध निकालकर उतना ही पानी मिला दिया जाता है। अब मिश्रण में दूध का प्रतिशत कितना है?",
+   "questionEn": "A tank contains 80 L of pure milk. 40 L is drawn and replaced with water. What is the percentage of milk in the mixture now?",
+   "options": {
+    "C": "50%",
+    "A": "25%",
+    "D": "60%",
+    "B": "100%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "निकाले गए दूध का भाग = 40/80",
+    "शेष दूध = 80 − 40 = 40 L (कुल मात्रा 80 L ही रहती है)",
+    "दूध% = 40/80 × 100 = 50%"
+   ],
+   "finalAnswer": "50%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q046",
+   "testNumber": 17,
+   "questionNumber": 46,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "4 किग्रा चाय पत्ती (₹30/किग्रा) को 4 किग्रा चाय पत्ती (₹72/किग्रा) के साथ मिलाया जाता है। मिश्रण की प्रति किग्रा कीमत ज्ञात कीजिए।",
+   "questionEn": "4 kg of tea costing ₹30/kg is mixed with 4 kg costing ₹72/kg. Find the cost of the mixture per kg.",
+   "options": {
+    "B": "₹51",
+    "D": "₹30",
+    "A": "₹56",
+    "C": "₹102"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कुल कीमत = 30 × 4 + 72 × 4 = 120 + 288 = 408",
+    "कुल मात्रा = 4 + 4 = 8 किग्रा",
+    "मिश्रण की कीमत = 408/8 = 51 प्रति किग्रा"
+   ],
+   "finalAnswer": "₹51",
+   "shortcut": "मिश्रण कीमत = कुल कीमत ÷ कुल मात्रा",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q032",
+   "testNumber": 18,
+   "questionNumber": 32,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 10 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 4 : 3 है। दूसरे बर्तन में 6 लीटर मिश्रण है जिसमें अनुपात 1 : 1 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 10 L of milk-water mixture in ratio 4:3. Another vessel has 6 L in ratio 1:1. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "D": "1226426684239287/1025373129445961",
+    "A": "4/3",
+    "C": "1",
+    "B": "2251799813685248/1025373129445961"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "बर्तन 1: दूध = 10 × 4/7 = 5.714 L, पानी = 4.286 L",
+    "बर्तन 2: दूध = 6 × 1/2 = 3 L, पानी = 3 L",
+    "कुल दूध = 8.714 L, कुल पानी = 7.286 L",
+    "अनुपात = 8.714 : 7.286 = 1226426684239287/1025373129445961"
+   ],
+   "finalAnswer": "1226426684239287/1025373129445961",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q047",
+   "testNumber": 18,
+   "questionNumber": 47,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक टंकी में 20 लीटर शुद्ध दूध है। इसमें से 2 लीटर दूध निकालकर उतना ही पानी मिला दिया जाता है। अब मिश्रण में दूध का प्रतिशत कितना है?",
+   "questionEn": "A tank contains 20 L of pure milk. 2 L is drawn and replaced with water. What is the percentage of milk in the mixture now?",
+   "options": {
+    "D": "90%",
+    "A": "10%",
+    "B": "45%",
+    "C": "100%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "निकाले गए दूध का भाग = 2/20",
+    "शेष दूध = 20 − 2 = 18 L (कुल मात्रा 20 L ही रहती है)",
+    "दूध% = 18/20 × 100 = 90%"
+   ],
+   "finalAnswer": "90%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q018",
+   "testNumber": 19,
+   "questionNumber": 18,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 7 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 4 : 1 है। दूसरे बर्तन में 10 लीटर मिश्रण है जिसमें अनुपात 1 : 2 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 7 L of milk-water mixture in ratio 4:1. Another vessel has 10 L in ratio 1:2. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "B": "2514509791948527/2270564812132625",
+    "A": "4",
+    "D": "1/2",
+    "C": "4785074604081152/2270564812132625"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "बर्तन 1: दूध = 7 × 4/5 = 5.6 L, पानी = 1.4 L",
+    "बर्तन 2: दूध = 10 × 1/3 = 3.333 L, पानी = 6.667 L",
+    "कुल दूध = 8.933 L, कुल पानी = 8.067 L",
+    "अनुपात = 8.933 : 8.067 = 2514509791948527/2270564812132625"
+   ],
+   "finalAnswer": "2514509791948527/2270564812132625",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q051",
+   "testNumber": 19,
+   "questionNumber": 51,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक टंकी में 100 लीटर शुद्ध दूध है। इसमें से 25 लीटर दूध निकालकर उतना ही पानी मिला दिया जाता है। अब मिश्रण में दूध का प्रतिशत कितना है?",
+   "questionEn": "A tank contains 100 L of pure milk. 25 L is drawn and replaced with water. What is the percentage of milk in the mixture now?",
+   "options": {
+    "C": "75%",
+    "A": "25%",
+    "D": "37.5%",
+    "B": "85%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "निकाले गए दूध का भाग = 25/100",
+    "शेष दूध = 100 − 25 = 75 L (कुल मात्रा 100 L ही रहती है)",
+    "दूध% = 75/100 × 100 = 75%"
+   ],
+   "finalAnswer": "75%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q039",
+   "testNumber": 20,
+   "questionNumber": 39,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक टंकी में 60 लीटर शुद्ध दूध है। इसमें से 15 लीटर दूध निकालकर उतना ही पानी मिला दिया जाता है। अब मिश्रण में दूध का प्रतिशत कितना है?",
+   "questionEn": "A tank contains 60 L of pure milk. 15 L is drawn and replaced with water. What is the percentage of milk in the mixture now?",
+   "options": {
+    "D": "75%",
+    "A": "25%",
+    "C": "37.5%",
+    "B": "85%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "निकाले गए दूध का भाग = 15/60",
+    "शेष दूध = 60 − 15 = 45 L (कुल मात्रा 60 L ही रहती है)",
+    "दूध% = 45/60 × 100 = 75%"
+   ],
+   "finalAnswer": "75%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q048",
+   "testNumber": 20,
+   "questionNumber": 48,
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक बर्तन में 5 लीटर दूध-पानी का मिश्रण है जिसमें दूध और पानी का अनुपात 4 : 1 है। दूसरे बर्तन में 11 लीटर मिश्रण है जिसमें अनुपात 5 : 2 है। दोनों को मिलाने पर नए मिश्रण में दूध और पानी का अनुपात क्या होगा?",
+   "questionEn": "A vessel has 5 L of milk-water mixture in ratio 4:1. Another vessel has 11 L in ratio 5:2. Find the milk:water ratio of the combined mixture.",
+   "options": {
+    "D": "3337489009569207/1166110617801289",
+    "C": "4",
+    "B": "5/2",
+    "A": "4503599627370496/1166110617801289"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "बर्तन 1: दूध = 5 × 4/5 = 4 L, पानी = 1 L",
+    "बर्तन 2: दूध = 11 × 5/7 = 7.857 L, पानी = 3.143 L",
+    "कुल दूध = 11.857 L, कुल पानी = 4.143 L",
+    "अनुपात = 11.857 : 4.143 = 3337489009569207/1166110617801289"
+   ],
+   "finalAnswer": "3337489009569207/1166110617801289",
+   "shortcut": "",
+   "marks": 1
+  }
+ ]
+}

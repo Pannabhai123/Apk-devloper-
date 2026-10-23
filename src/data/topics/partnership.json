@@ -1,0 +1,1064 @@
+{
+ "topic": "Partnership",
+ "topicHi": "साझेदारी",
+ "slug": "partnership",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q026",
+   "testNumber": 1,
+   "questionNumber": 26,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 3 : 5 है। B, A से 8 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹9,100 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 3:5. B joins 8 months after A. Out of the annual profit of ₹9100, find B's share.",
+   "options": {
+    "C": "₹3,250",
+    "D": "₹6,500",
+    "B": "₹5,688",
+    "A": "₹5,850"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए पूँजियाँ 3x और 5x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 4 महीने लगी।",
+    "लाभ अनुपात = 3 × 12 : 5 × 4 = 36 : 20 = 9 : 5",
+    "B का हिस्सा = 9100 × 5/(9 + 5) = 3,250"
+   ],
+   "finalAnswer": "₹3,250",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q060",
+   "testNumber": 1,
+   "questionNumber": 60,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹45,000 और ₹40,000 निवेश करते हैं। A अपनी पूँजी 8 महीने तक और B 6 महीने तक लगाता है। कुल ₹17,500 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹45000 and ₹40000 in a business. A keeps his capital for 8 months and B for 6 months. Find A's share in a total profit of ₹17500.",
+   "options": {
+    "A": "₹10,500",
+    "C": "₹9,265",
+    "B": "₹8,750",
+    "D": "₹7,000"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 45000 × 8 : 40000 × 6 = 3,60,000 : 2,40,000 = 3 : 2",
+    "A का हिस्सा = 17500 × 3/(3 + 2) = 10,500"
+   ],
+   "finalAnswer": "₹10,500",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q003",
+   "testNumber": 2,
+   "questionNumber": 3,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 4 : 3 है। B, A से 4 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹16,800 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 4:3. B joins 4 months after A. Out of the annual profit of ₹16800, find B's share.",
+   "options": {
+    "B": "₹5,600",
+    "D": "₹8,400",
+    "A": "₹7,200",
+    "C": "₹11,200"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पूँजियाँ 4x और 3x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 8 महीने लगी।",
+    "लाभ अनुपात = 4 × 12 : 3 × 8 = 48 : 24 = 2 : 1",
+    "B का हिस्सा = 16800 × 1/(2 + 1) = 5,600"
+   ],
+   "finalAnswer": "₹5,600",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q014",
+   "testNumber": 2,
+   "questionNumber": 14,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹24,000 लगाया। यदि लाभ का अनुपात 3 : 4 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹24000. If profits are shared in the ratio 3:4, find B's capital.",
+   "options": {
+    "A": "₹32,000",
+    "B": "₹24,000",
+    "C": "₹16,000",
+    "D": "₹18,000"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "24000 : c2 = 3 : 4",
+    "c2 = 24000 × 4/3 = 32,000"
+   ],
+   "finalAnswer": "₹32,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q013",
+   "testNumber": 3,
+   "questionNumber": 13,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹48,000 लगाया। यदि लाभ का अनुपात 3 : 4 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹48000. If profits are shared in the ratio 3:4, find B's capital.",
+   "options": {
+    "C": "₹64,000",
+    "A": "₹74,000",
+    "B": "₹48,000",
+    "D": "₹32,000"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "48000 : c2 = 3 : 4",
+    "c2 = 48000 × 4/3 = 64,000"
+   ],
+   "finalAnswer": "₹64,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q026",
+   "testNumber": 3,
+   "questionNumber": 26,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹36,000 और ₹20,000 निवेश करते हैं। A अपनी पूँजी 6 महीने तक और B 6 महीने तक लगाता है। कुल ₹10,500 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹36000 and ₹20000 in a business. A keeps his capital for 6 months and B for 6 months. Find A's share in a total profit of ₹10500.",
+   "options": {
+    "C": "₹6,750",
+    "B": "₹5,250",
+    "A": "₹3,375",
+    "D": "₹3,750"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 36000 × 6 : 20000 × 6 = 2,16,000 : 1,20,000 = 9 : 5",
+    "A का हिस्सा = 10500 × 9/(9 + 5) = 6,750"
+   ],
+   "finalAnswer": "₹6,750",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q001",
+   "testNumber": 4,
+   "questionNumber": 1,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 3 : 2 है। B, A से 6 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹5,600 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 3:2. B joins 6 months after A. Out of the annual profit of ₹5600, find B's share.",
+   "options": {
+    "C": "₹1,400",
+    "D": "₹2,800",
+    "A": "₹4,200",
+    "B": "₹2,240"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए पूँजियाँ 3x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 6 महीने लगी।",
+    "लाभ अनुपात = 3 × 12 : 2 × 6 = 36 : 12 = 3 : 1",
+    "B का हिस्सा = 5600 × 1/(3 + 1) = 1,400"
+   ],
+   "finalAnswer": "₹1,400",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q027",
+   "testNumber": 4,
+   "questionNumber": 27,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹48,000 लगाया। यदि लाभ का अनुपात 2 : 3 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹48000. If profits are shared in the ratio 2:3, find B's capital.",
+   "options": {
+    "D": "₹72,000",
+    "B": "₹32,000",
+    "C": "₹82,000",
+    "A": "₹48,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "48000 : c2 = 2 : 3",
+    "c2 = 48000 × 3/2 = 72,000"
+   ],
+   "finalAnswer": "₹72,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q016",
+   "testNumber": 5,
+   "questionNumber": 16,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹60,000 और ₹30,000 निवेश करते हैं। A अपनी पूँजी 12 महीने तक और B 8 महीने तक लगाता है। कुल ₹8,400 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹60000 and ₹30000 in a business. A keeps his capital for 12 months and B for 8 months. Find A's share in a total profit of ₹8400.",
+   "options": {
+    "B": "₹6,300",
+    "D": "₹4,200",
+    "A": "₹3,150",
+    "C": "₹5,600"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 60000 × 12 : 30000 × 8 = 7,20,000 : 2,40,000 = 3 : 1",
+    "A का हिस्सा = 8400 × 3/(3 + 1) = 6,300"
+   ],
+   "finalAnswer": "₹6,300",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q027",
+   "testNumber": 5,
+   "questionNumber": 27,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 4 : 2 है। B, A से 6 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹26,000 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 4:2. B joins 6 months after A. Out of the annual profit of ₹26000, find B's share.",
+   "options": {
+    "D": "₹5,200",
+    "A": "₹8,667",
+    "C": "₹10,400",
+    "B": "₹13,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए पूँजियाँ 4x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 6 महीने लगी।",
+    "लाभ अनुपात = 4 × 12 : 2 × 6 = 48 : 12 = 4 : 1",
+    "B का हिस्सा = 26000 × 1/(4 + 1) = 5,200"
+   ],
+   "finalAnswer": "₹5,200",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q012",
+   "testNumber": 6,
+   "questionNumber": 12,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹20,000 और ₹30,000 निवेश करते हैं। A अपनी पूँजी 6 महीने तक और B 12 महीने तक लगाता है। कुल ₹4,900 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹20000 and ₹30000 in a business. A keeps his capital for 6 months and B for 12 months. Find A's share in a total profit of ₹4900.",
+   "options": {
+    "B": "₹1,225",
+    "A": "₹613",
+    "C": "₹3,675",
+    "D": "₹1,960"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 20000 × 6 : 30000 × 12 = 1,20,000 : 3,60,000 = 1 : 3",
+    "A का हिस्सा = 4900 × 1/(1 + 3) = 1,225"
+   ],
+   "finalAnswer": "₹1,225",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q054",
+   "testNumber": 6,
+   "questionNumber": 54,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 4 : 2 है। B, A से 4 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹10,500 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 4:2. B joins 4 months after A. Out of the annual profit of ₹10500, find B's share.",
+   "options": {
+    "B": "₹2,625",
+    "D": "₹7,875",
+    "C": "₹5,250",
+    "A": "₹3,500"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पूँजियाँ 4x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 8 महीने लगी।",
+    "लाभ अनुपात = 4 × 12 : 2 × 8 = 48 : 16 = 3 : 1",
+    "B का हिस्सा = 10500 × 1/(3 + 1) = 2,625"
+   ],
+   "finalAnswer": "₹2,625",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q010",
+   "testNumber": 7,
+   "questionNumber": 10,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹24,000 और ₹25,000 निवेश करते हैं। A अपनी पूँजी 12 महीने तक और B 12 महीने तक लगाता है। कुल ₹24,500 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹24000 and ₹25000 in a business. A keeps his capital for 12 months and B for 12 months. Find A's share in a total profit of ₹24500.",
+   "options": {
+    "D": "₹12,000",
+    "B": "₹12,500",
+    "A": "₹6,000",
+    "C": "₹12,250"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 24000 × 12 : 25000 × 12 = 2,88,000 : 3,00,000 = 24 : 25",
+    "A का हिस्सा = 24500 × 24/(24 + 25) = 12,000"
+   ],
+   "finalAnswer": "₹12,000",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q044",
+   "testNumber": 7,
+   "questionNumber": 44,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 3 : 2 है। B, A से 6 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹14,000 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 3:2. B joins 6 months after A. Out of the annual profit of ₹14000, find B's share.",
+   "options": {
+    "D": "₹3,500",
+    "B": "₹5,600",
+    "A": "₹7,000",
+    "C": "₹10,500"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए पूँजियाँ 3x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 6 महीने लगी।",
+    "लाभ अनुपात = 3 × 12 : 2 × 6 = 36 : 12 = 3 : 1",
+    "B का हिस्सा = 14000 × 1/(3 + 1) = 3,500"
+   ],
+   "finalAnswer": "₹3,500",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q018",
+   "testNumber": 8,
+   "questionNumber": 18,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹40,000 और ₹25,000 निवेश करते हैं। A अपनी पूँजी 6 महीने तक और B 10 महीने तक लगाता है। कुल ₹24,500 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹40000 and ₹25000 in a business. A keeps his capital for 6 months and B for 10 months. Find A's share in a total profit of ₹24500.",
+   "options": {
+    "B": "₹12,000",
+    "D": "₹15,077",
+    "A": "₹12,500",
+    "C": "₹6,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 40000 × 6 : 25000 × 10 = 2,40,000 : 2,50,000 = 24 : 25",
+    "A का हिस्सा = 24500 × 24/(24 + 25) = 12,000"
+   ],
+   "finalAnswer": "₹12,000",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q053",
+   "testNumber": 8,
+   "questionNumber": 53,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 4 : 2 है। B, A से 4 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹7,000 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 4:2. B joins 4 months after A. Out of the annual profit of ₹7000, find B's share.",
+   "options": {
+    "C": "₹1,750",
+    "B": "₹3,500",
+    "D": "₹5,250",
+    "A": "₹2,333"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए पूँजियाँ 4x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 8 महीने लगी।",
+    "लाभ अनुपात = 4 × 12 : 2 × 8 = 48 : 16 = 3 : 1",
+    "B का हिस्सा = 7000 × 1/(3 + 1) = 1,750"
+   ],
+   "finalAnswer": "₹1,750",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q023",
+   "testNumber": 9,
+   "questionNumber": 23,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 5 : 3 है। B, A से 6 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹9,100 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 5:3. B joins 6 months after A. Out of the annual profit of ₹9100, find B's share.",
+   "options": {
+    "B": "₹2,100",
+    "C": "₹4,200",
+    "A": "₹7,000",
+    "D": "₹3,413"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पूँजियाँ 5x और 3x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 6 महीने लगी।",
+    "लाभ अनुपात = 5 × 12 : 3 × 6 = 60 : 18 = 10 : 3",
+    "B का हिस्सा = 9100 × 3/(10 + 3) = 2,100"
+   ],
+   "finalAnswer": "₹2,100",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q052",
+   "testNumber": 9,
+   "questionNumber": 52,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹48,000 और ₹15,000 निवेश करते हैं। A अपनी पूँजी 10 महीने तक और B 8 महीने तक लगाता है। कुल ₹21,000 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹48000 and ₹15000 in a business. A keeps his capital for 10 months and B for 8 months. Find A's share in a total profit of ₹21000.",
+   "options": {
+    "A": "₹16,800",
+    "C": "₹8,400",
+    "B": "₹16,000",
+    "D": "₹4,200"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 48000 × 10 : 15000 × 8 = 4,80,000 : 1,20,000 = 4 : 1",
+    "A का हिस्सा = 21000 × 4/(4 + 1) = 16,800"
+   ],
+   "finalAnswer": "₹16,800",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q008",
+   "testNumber": 10,
+   "questionNumber": 8,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 4 : 2 है। B, A से 8 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹4,200 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 4:2. B joins 8 months after A. Out of the annual profit of ₹4200, find B's share.",
+   "options": {
+    "A": "₹600",
+    "B": "₹3,600",
+    "C": "₹1,400",
+    "D": "₹1,200"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए पूँजियाँ 4x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 4 महीने लगी।",
+    "लाभ अनुपात = 4 × 12 : 2 × 4 = 48 : 8 = 6 : 1",
+    "B का हिस्सा = 4200 × 1/(6 + 1) = 600"
+   ],
+   "finalAnswer": "₹600",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q026",
+   "testNumber": 10,
+   "questionNumber": 26,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹20,000 लगाया। यदि लाभ का अनुपात 2 : 5 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹20000. If profits are shared in the ratio 2:5, find B's capital.",
+   "options": {
+    "A": "₹50,000",
+    "C": "₹20,000",
+    "D": "₹60,000",
+    "B": "₹25,000"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "20000 : c2 = 2 : 5",
+    "c2 = 20000 × 5/2 = 50,000"
+   ],
+   "finalAnswer": "₹50,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q039",
+   "testNumber": 11,
+   "questionNumber": 39,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹40,000 लगाया। यदि लाभ का अनुपात 2 : 5 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹40000. If profits are shared in the ratio 2:5, find B's capital.",
+   "options": {
+    "A": "₹1,00,000",
+    "B": "₹16,000",
+    "D": "₹1,10,000",
+    "C": "₹50,000"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "40000 : c2 = 2 : 5",
+    "c2 = 40000 × 5/2 = 1,00,000"
+   ],
+   "finalAnswer": "₹1,00,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q056",
+   "testNumber": 11,
+   "questionNumber": 56,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹60,000 और ₹15,000 निवेश करते हैं। A अपनी पूँजी 8 महीने तक और B 8 महीने तक लगाता है। कुल ₹6,300 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹60000 and ₹15000 in a business. A keeps his capital for 8 months and B for 8 months. Find A's share in a total profit of ₹6300.",
+   "options": {
+    "D": "₹5,040",
+    "A": "₹2,520",
+    "B": "₹1,260",
+    "C": "₹3,150"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 60000 × 8 : 15000 × 8 = 4,80,000 : 1,20,000 = 4 : 1",
+    "A का हिस्सा = 6300 × 4/(4 + 1) = 5,040"
+   ],
+   "finalAnswer": "₹5,040",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q013",
+   "testNumber": 12,
+   "questionNumber": 13,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹45,000 लगाया। यदि लाभ का अनुपात 3 : 5 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹45000. If profits are shared in the ratio 3:5, find B's capital.",
+   "options": {
+    "B": "₹75,000",
+    "A": "₹37,500",
+    "C": "₹45,000",
+    "D": "₹27,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "45000 : c2 = 3 : 5",
+    "c2 = 45000 × 5/3 = 75,000"
+   ],
+   "finalAnswer": "₹75,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q048",
+   "testNumber": 12,
+   "questionNumber": 48,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹25,000 और ₹15,000 निवेश करते हैं। A अपनी पूँजी 10 महीने तक और B 10 महीने तक लगाता है। कुल ₹7,000 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹25000 and ₹15000 in a business. A keeps his capital for 10 months and B for 10 months. Find A's share in a total profit of ₹7000.",
+   "options": {
+    "D": "₹4,375",
+    "C": "₹3,500",
+    "B": "₹2,625",
+    "A": "₹2,188"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 25000 × 10 : 15000 × 10 = 2,50,000 : 1,50,000 = 5 : 3",
+    "A का हिस्सा = 7000 × 5/(5 + 3) = 4,375"
+   ],
+   "finalAnswer": "₹4,375",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q038",
+   "testNumber": 13,
+   "questionNumber": 38,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹45,000 लगाया। यदि लाभ का अनुपात 3 : 4 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹45000. If profits are shared in the ratio 3:4, find B's capital.",
+   "options": {
+    "B": "₹60,000",
+    "D": "₹30,000",
+    "C": "₹45,000",
+    "A": "₹70,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "45000 : c2 = 3 : 4",
+    "c2 = 45000 × 4/3 = 60,000"
+   ],
+   "finalAnswer": "₹60,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q041",
+   "testNumber": 13,
+   "questionNumber": 41,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 3 : 2 है। B, A से 4 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹26,000 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 3:2. B joins 4 months after A. Out of the annual profit of ₹26000, find B's share.",
+   "options": {
+    "C": "₹8,000",
+    "B": "₹13,000",
+    "A": "₹16,000",
+    "D": "₹18,000"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए पूँजियाँ 3x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 8 महीने लगी।",
+    "लाभ अनुपात = 3 × 12 : 2 × 8 = 36 : 16 = 9 : 4",
+    "B का हिस्सा = 26000 × 4/(9 + 4) = 8,000"
+   ],
+   "finalAnswer": "₹8,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q012",
+   "testNumber": 14,
+   "questionNumber": 12,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹30,000 और ₹20,000 निवेश करते हैं। A अपनी पूँजी 6 महीने तक और B 12 महीने तक लगाता है। कुल ₹17,500 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹30000 and ₹20000 in a business. A keeps his capital for 6 months and B for 12 months. Find A's share in a total profit of ₹17500.",
+   "options": {
+    "C": "₹7,500",
+    "D": "₹10,000",
+    "B": "₹8,750",
+    "A": "₹10,500"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 30000 × 6 : 20000 × 12 = 1,80,000 : 2,40,000 = 3 : 4",
+    "A का हिस्सा = 17500 × 3/(3 + 4) = 7,500"
+   ],
+   "finalAnswer": "₹7,500",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q017",
+   "testNumber": 14,
+   "questionNumber": 17,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 3 : 2 है। B, A से 5 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹5,600 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 3:2. B joins 5 months after A. Out of the annual profit of ₹5600, find B's share.",
+   "options": {
+    "D": "₹1,568",
+    "B": "₹3,136",
+    "A": "₹4,032",
+    "C": "₹2,800"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए पूँजियाँ 3x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 7 महीने लगी।",
+    "लाभ अनुपात = 3 × 12 : 2 × 7 = 36 : 14 = 18 : 7",
+    "B का हिस्सा = 5600 × 7/(18 + 7) = 1,568"
+   ],
+   "finalAnswer": "₹1,568",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q024",
+   "testNumber": 15,
+   "questionNumber": 24,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 3 : 2 है। B, A से 5 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹10,500 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 3:2. B joins 5 months after A. Out of the annual profit of ₹10500, find B's share.",
+   "options": {
+    "B": "₹2,940",
+    "C": "₹5,250",
+    "A": "₹4,200",
+    "D": "₹5,880"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पूँजियाँ 3x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 7 महीने लगी।",
+    "लाभ अनुपात = 3 × 12 : 2 × 7 = 36 : 14 = 18 : 7",
+    "B का हिस्सा = 10500 × 7/(18 + 7) = 2,940"
+   ],
+   "finalAnswer": "₹2,940",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q030",
+   "testNumber": 15,
+   "questionNumber": 30,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹30,000 लगाया। यदि लाभ का अनुपात 2 : 3 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹30000. If profits are shared in the ratio 2:3, find B's capital.",
+   "options": {
+    "D": "₹45,000",
+    "A": "₹55,000",
+    "B": "₹22,500",
+    "C": "₹30,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "30000 : c2 = 2 : 3",
+    "c2 = 30000 × 3/2 = 45,000"
+   ],
+   "finalAnswer": "₹45,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q021",
+   "testNumber": 16,
+   "questionNumber": 21,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹45,000 और ₹35,000 निवेश करते हैं। A अपनी पूँजी 12 महीने तक और B 12 महीने तक लगाता है। कुल ₹28,000 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹45000 and ₹35000 in a business. A keeps his capital for 12 months and B for 12 months. Find A's share in a total profit of ₹28000.",
+   "options": {
+    "A": "₹15,750",
+    "C": "₹14,000",
+    "D": "₹12,250",
+    "B": "₹7,875"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 45000 × 12 : 35000 × 12 = 5,40,000 : 4,20,000 = 9 : 7",
+    "A का हिस्सा = 28000 × 9/(9 + 7) = 15,750"
+   ],
+   "finalAnswer": "₹15,750",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q052",
+   "testNumber": 16,
+   "questionNumber": 52,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 4 : 3 है। B, A से 8 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹9,100 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 4:3. B joins 8 months after A. Out of the annual profit of ₹9100, find B's share.",
+   "options": {
+    "C": "₹1,820",
+    "D": "₹7,280",
+    "A": "₹4,550",
+    "B": "₹3,900"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए पूँजियाँ 4x और 3x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 4 महीने लगी।",
+    "लाभ अनुपात = 4 × 12 : 3 × 4 = 48 : 12 = 4 : 1",
+    "B का हिस्सा = 9100 × 1/(4 + 1) = 1,820"
+   ],
+   "finalAnswer": "₹1,820",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q014",
+   "testNumber": 17,
+   "questionNumber": 14,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹48,000 लगाया। यदि लाभ का अनुपात 3 : 5 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹48000. If profits are shared in the ratio 3:5, find B's capital.",
+   "options": {
+    "C": "₹80,000",
+    "B": "₹48,000",
+    "A": "₹40,000",
+    "D": "₹28,800"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "48000 : c2 = 3 : 5",
+    "c2 = 48000 × 5/3 = 80,000"
+   ],
+   "finalAnswer": "₹80,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q047",
+   "testNumber": 17,
+   "questionNumber": 47,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 3 : 2 है। B, A से 6 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹21,000 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 3:2. B joins 6 months after A. Out of the annual profit of ₹21000, find B's share.",
+   "options": {
+    "B": "₹5,250",
+    "D": "₹15,750",
+    "A": "₹8,400",
+    "C": "₹10,500"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए पूँजियाँ 3x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 6 महीने लगी।",
+    "लाभ अनुपात = 3 × 12 : 2 × 6 = 36 : 12 = 3 : 1",
+    "B का हिस्सा = 21000 × 1/(3 + 1) = 5,250"
+   ],
+   "finalAnswer": "₹5,250",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q004",
+   "testNumber": 18,
+   "questionNumber": 4,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 4 : 2 है। B, A से 6 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹7,000 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 4:2. B joins 6 months after A. Out of the annual profit of ₹7000, find B's share.",
+   "options": {
+    "C": "₹1,400",
+    "B": "₹2,333",
+    "A": "₹2,800",
+    "D": "₹3,500"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए पूँजियाँ 4x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 6 महीने लगी।",
+    "लाभ अनुपात = 4 × 12 : 2 × 6 = 48 : 12 = 4 : 1",
+    "B का हिस्सा = 7000 × 1/(4 + 1) = 1,400"
+   ],
+   "finalAnswer": "₹1,400",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q027",
+   "testNumber": 18,
+   "questionNumber": 27,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹36,000 लगाया। यदि लाभ का अनुपात 2 : 3 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹36000. If profits are shared in the ratio 2:3, find B's capital.",
+   "options": {
+    "B": "₹54,000",
+    "D": "₹27,000",
+    "A": "₹24,000",
+    "C": "₹64,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "36000 : c2 = 2 : 3",
+    "c2 = 36000 × 3/2 = 54,000"
+   ],
+   "finalAnswer": "₹54,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q023",
+   "testNumber": 19,
+   "questionNumber": 23,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹30,000 लगाया। यदि लाभ का अनुपात 3 : 4 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹30000. If profits are shared in the ratio 3:4, find B's capital.",
+   "options": {
+    "C": "₹40,000",
+    "D": "₹30,000",
+    "B": "₹50,000",
+    "A": "₹20,000"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "30000 : c2 = 3 : 4",
+    "c2 = 30000 × 4/3 = 40,000"
+   ],
+   "finalAnswer": "₹40,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q044",
+   "testNumber": 19,
+   "questionNumber": 44,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय शुरू करते हैं, जिसमें पूँजी का अनुपात 3 : 2 है। B, A से 5 महीने बाद जुड़ता है। वर्ष के अंत में कुल ₹9,100 लाभ में से B को कितना मिलेगा?",
+   "questionEn": "A and B start a business with capitals in the ratio 3:2. B joins 5 months after A. Out of the annual profit of ₹9100, find B's share.",
+   "options": {
+    "C": "₹2,548",
+    "D": "₹4,550",
+    "B": "₹6,552",
+    "A": "₹5,096"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए पूँजियाँ 3x और 2x हैं।",
+    "A की पूँजी 12 महीने, B की पूँजी 7 महीने लगी।",
+    "लाभ अनुपात = 3 × 12 : 2 × 7 = 36 : 14 = 18 : 7",
+    "B का हिस्सा = 9100 × 7/(18 + 7) = 2,548"
+   ],
+   "finalAnswer": "₹2,548",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q022",
+   "testNumber": 20,
+   "questionNumber": 22,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B समान समय (एक वर्ष) तक व्यवसाय करते हैं। A ने ₹48,000 लगाया। यदि लाभ का अनुपात 2 : 5 है, तो B की पूँजी ज्ञात कीजिए।",
+   "questionEn": "A and B run a business for the same period. A invested ₹48000. If profits are shared in the ratio 2:5, find B's capital.",
+   "options": {
+    "D": "₹1,20,000",
+    "A": "₹48,000",
+    "B": "₹19,200",
+    "C": "₹1,30,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "समान समय पर लाभ अनुपात = पूँजी अनुपात",
+    "48000 : c2 = 2 : 5",
+    "c2 = 48000 × 5/2 = 1,20,000"
+   ],
+   "finalAnswer": "₹1,20,000",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q060",
+   "testNumber": 20,
+   "questionNumber": 60,
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A और B एक व्यवसाय में क्रमशः ₹45,000 और ₹15,000 निवेश करते हैं। A अपनी पूँजी 10 महीने तक और B 6 महीने तक लगाता है। कुल ₹6,300 लाभ में A का हिस्सा ज्ञात कीजिए।",
+   "questionEn": "A and B invest ₹45000 and ₹15000 in a business. A keeps his capital for 10 months and B for 6 months. Find A's share in a total profit of ₹6300.",
+   "options": {
+    "B": "₹5,250",
+    "A": "₹1,050",
+    "D": "₹4,725",
+    "C": "₹3,150"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "लाभ ∝ पूँजी × समय",
+    "A : B = 45000 × 10 : 15000 × 6 = 4,50,000 : 90,000 = 5 : 1",
+    "A का हिस्सा = 6300 × 5/(5 + 1) = 5,250"
+   ],
+   "finalAnswer": "₹5,250",
+   "shortcut": "लाभ अनुपात = पूँजी × समय",
+   "marks": 1
+  }
+ ]
+}

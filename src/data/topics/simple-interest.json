@@ -1,0 +1,1058 @@
+{
+ "topic": "Simple Interest",
+ "topicHi": "साधारण ब्याज",
+ "slug": "simple-interest",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q009",
+   "testNumber": 1,
+   "questionNumber": 9,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹12,000 पर 2 वर्ष में ₹2,880 साधारण ब्याज मिलता है। ब्याज की दर प्रतिशत प्रति वर्ष ज्ञात कीजिए।",
+   "questionEn": "₹12000 gives ₹2880 simple interest in 2 years. Find the rate of interest per annum.",
+   "options": {
+    "B": "12%",
+    "D": "6%",
+    "A": "24%",
+    "C": "11%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "SI = PRT/100 ⇒ R = SI × 100/(P × T)",
+    "R = 2880 × 100/(12000 × 2)",
+    "R = 288000/24000 = 12% प्रति वर्ष"
+   ],
+   "finalAnswer": "12%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q036",
+   "testNumber": 1,
+   "questionNumber": 36,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹15,000 की राशि पर 4% वार्षिक दर से 10 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹15000 at 4% per annum for 10 years.",
+   "options": {
+    "B": "₹6,000",
+    "A": "₹12,000",
+    "D": "₹600",
+    "C": "₹21,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 15,000, R = 4% प्रति वर्ष, T = 10 वर्ष",
+    "SI = 15000 × 4 × 10/100 = 6,000"
+   ],
+   "finalAnswer": "₹6,000",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q023",
+   "testNumber": 2,
+   "questionNumber": 23,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 4 वर्ष में दोगुनी हो जाती है। ब्याज की दर ज्ञात कीजिए।",
+   "questionEn": "A sum doubles itself in 4 years at simple interest. Find the rate of interest.",
+   "options": {
+    "D": "25%",
+    "C": "50%",
+    "A": "4%",
+    "B": "12.5%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "दोगुनी होने के लिए SI = P (स्वयं राशि के बराबर ब्याज)",
+    "P = P × R × 4/100 ⇒ R × 4 = 100",
+    "R = 100/4 = 25% प्रति वर्ष"
+   ],
+   "finalAnswer": "25%",
+   "shortcut": "n गुना होने में दर R = (n−1) × 100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q034",
+   "testNumber": 2,
+   "questionNumber": 34,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹4,000 की राशि पर 4 वर्ष में 8% और 11% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹4000 for 4 years at 8% and 11% per annum.",
+   "options": {
+    "D": "₹480",
+    "C": "₹120",
+    "A": "₹960",
+    "B": "₹580"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SI₁ = 4000 × 8 × 4/100 = 1,280",
+    "SI₂ = 4000 × 11 × 4/100 = 1,760",
+    "अंतर = 1,760 − 1,280 = 480",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹480",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q018",
+   "testNumber": 3,
+   "questionNumber": 18,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 8 वर्ष में दोगुनी हो जाती है। ब्याज की दर ज्ञात कीजिए।",
+   "questionEn": "A sum doubles itself in 8 years at simple interest. Find the rate of interest.",
+   "options": {
+    "B": "12.5%",
+    "C": "25%",
+    "D": "8%",
+    "A": "6.25%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "दोगुनी होने के लिए SI = P (स्वयं राशि के बराबर ब्याज)",
+    "P = P × R × 8/100 ⇒ R × 8 = 100",
+    "R = 100/8 = 12.5% प्रति वर्ष"
+   ],
+   "finalAnswer": "12.5%",
+   "shortcut": "n गुना होने में दर R = (n−1) × 100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q025",
+   "testNumber": 3,
+   "questionNumber": 25,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹10,000 पर 8 वर्ष में ₹8,000 साधारण ब्याज मिलता है। ब्याज की दर प्रतिशत प्रति वर्ष ज्ञात कीजिए।",
+   "questionEn": "₹10000 gives ₹8000 simple interest in 8 years. Find the rate of interest per annum.",
+   "options": {
+    "C": "10%",
+    "D": "9%",
+    "B": "20%",
+    "A": "5%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SI = PRT/100 ⇒ R = SI × 100/(P × T)",
+    "R = 8000 × 100/(10000 × 8)",
+    "R = 800000/80000 = 10% प्रति वर्ष"
+   ],
+   "finalAnswer": "10%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q026",
+   "testNumber": 4,
+   "questionNumber": 26,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹9,000 की राशि पर 10% वार्षिक दर से 4 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹9000 at 10% per annum for 4 years.",
+   "options": {
+    "A": "₹3,600",
+    "C": "₹12,600",
+    "B": "₹900",
+    "D": "₹7,200"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 9,000, R = 10% प्रति वर्ष, T = 4 वर्ष",
+    "SI = 9000 × 10 × 4/100 = 3,600"
+   ],
+   "finalAnswer": "₹3,600",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q043",
+   "testNumber": 4,
+   "questionNumber": 43,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 20 वर्ष में दोगुनी हो जाती है। ब्याज की दर ज्ञात कीजिए।",
+   "questionEn": "A sum doubles itself in 20 years at simple interest. Find the rate of interest.",
+   "options": {
+    "C": "5%",
+    "A": "10%",
+    "D": "2.5%",
+    "B": "20%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दोगुनी होने के लिए SI = P (स्वयं राशि के बराबर ब्याज)",
+    "P = P × R × 20/100 ⇒ R × 20 = 100",
+    "R = 100/20 = 5% प्रति वर्ष"
+   ],
+   "finalAnswer": "5%",
+   "shortcut": "n गुना होने में दर R = (n−1) × 100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q029",
+   "testNumber": 5,
+   "questionNumber": 29,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹15,000 की राशि पर 3 वर्ष में 6% और 8% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹15000 for 3 years at 6% and 8% per annum.",
+   "options": {
+    "D": "₹900",
+    "C": "₹1,800",
+    "A": "₹300",
+    "B": "₹1,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SI₁ = 15000 × 6 × 3/100 = 2,700",
+    "SI₂ = 15000 × 8 × 3/100 = 3,600",
+    "अंतर = 3,600 − 2,700 = 900",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹900",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q032",
+   "testNumber": 5,
+   "questionNumber": 32,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹2,000 की राशि पर 4% वार्षिक दर से 5 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹2000 at 4% per annum for 5 years.",
+   "options": {
+    "A": "₹400",
+    "B": "₹80",
+    "C": "₹200",
+    "D": "₹800"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 2,000, R = 4% प्रति वर्ष, T = 5 वर्ष",
+    "SI = 2000 × 4 × 5/100 = 400"
+   ],
+   "finalAnswer": "₹400",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q002",
+   "testNumber": 6,
+   "questionNumber": 2,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹6,000 की राशि पर 2 वर्ष में 10% और 13% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹6000 for 2 years at 10% and 13% per annum.",
+   "options": {
+    "D": "₹360",
+    "B": "₹720",
+    "C": "₹460",
+    "A": "₹180"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SI₁ = 6000 × 10 × 2/100 = 1,200",
+    "SI₂ = 6000 × 13 × 2/100 = 1,560",
+    "अंतर = 1,560 − 1,200 = 360",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹360",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q016",
+   "testNumber": 6,
+   "questionNumber": 16,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹8,000 पर 4 वर्ष में ₹1,280 साधारण ब्याज मिलता है। ब्याज की दर प्रतिशत प्रति वर्ष ज्ञात कीजिए।",
+   "questionEn": "₹8000 gives ₹1280 simple interest in 4 years. Find the rate of interest per annum.",
+   "options": {
+    "D": "4%",
+    "A": "8%",
+    "B": "6%",
+    "C": "3%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SI = PRT/100 ⇒ R = SI × 100/(P × T)",
+    "R = 1280 × 100/(8000 × 4)",
+    "R = 128000/32000 = 4% प्रति वर्ष"
+   ],
+   "finalAnswer": "4%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q011",
+   "testNumber": 7,
+   "questionNumber": 11,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 12 वर्ष में अपनी 4 गुनी हो जाती है। ब्याज की वार्षिक दर ज्ञात कीजिए।",
+   "questionEn": "A sum becomes 4 times itself in 12 years at simple interest. Find the annual rate of interest.",
+   "options": {
+    "B": "25%",
+    "D": "12.5%",
+    "A": "30%",
+    "C": "33.33%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "n गुना होने के लिए ब्याज = (n − 1)P",
+    "(n − 1)P = P × R × T/100",
+    "R = (n − 1) × 100/T = 3 × 100/12 = 25%"
+   ],
+   "finalAnswer": "25%",
+   "shortcut": "R = (n−1)×100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q022",
+   "testNumber": 7,
+   "questionNumber": 22,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹2,500 की राशि पर 5% वार्षिक दर से 2 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹2500 at 5% per annum for 2 years.",
+   "options": {
+    "A": "₹250",
+    "C": "₹125",
+    "B": "₹500",
+    "D": "₹2,750"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 2,500, R = 5% प्रति वर्ष, T = 2 वर्ष",
+    "SI = 2500 × 5 × 2/100 = 250"
+   ],
+   "finalAnswer": "₹250",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q006",
+   "testNumber": 8,
+   "questionNumber": 6,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹25,000 की राशि पर 4 वर्ष में 4% और 7% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹25000 for 4 years at 4% and 7% per annum.",
+   "options": {
+    "A": "₹3,000",
+    "C": "₹6,000",
+    "D": "₹3,100",
+    "B": "₹750"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "SI₁ = 25000 × 4 × 4/100 = 4,000",
+    "SI₂ = 25000 × 7 × 4/100 = 7,000",
+    "अंतर = 7,000 − 4,000 = 3,000",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹3,000",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q019",
+   "testNumber": 8,
+   "questionNumber": 19,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 5 वर्ष में अपनी 5 गुनी हो जाती है। ब्याज की वार्षिक दर ज्ञात कीजिए।",
+   "questionEn": "A sum becomes 5 times itself in 5 years at simple interest. Find the annual rate of interest.",
+   "options": {
+    "D": "80%",
+    "B": "100%",
+    "C": "40%",
+    "A": "160%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "n गुना होने के लिए ब्याज = (n − 1)P",
+    "(n − 1)P = P × R × T/100",
+    "R = (n − 1) × 100/T = 4 × 100/5 = 80%"
+   ],
+   "finalAnswer": "80%",
+   "shortcut": "R = (n−1)×100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q011",
+   "testNumber": 9,
+   "questionNumber": 11,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹4,000 की राशि पर 5% वार्षिक दर से 5 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹4000 at 5% per annum for 5 years.",
+   "options": {
+    "B": "₹1,000",
+    "C": "₹5,000",
+    "D": "₹200",
+    "A": "₹2,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 4,000, R = 5% प्रति वर्ष, T = 5 वर्ष",
+    "SI = 4000 × 5 × 5/100 = 1,000"
+   ],
+   "finalAnswer": "₹1,000",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q028",
+   "testNumber": 9,
+   "questionNumber": 28,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 5 वर्ष में दोगुनी हो जाती है। ब्याज की दर ज्ञात कीजिए।",
+   "questionEn": "A sum doubles itself in 5 years at simple interest. Find the rate of interest.",
+   "options": {
+    "B": "20%",
+    "A": "5%",
+    "D": "40%",
+    "C": "10%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "दोगुनी होने के लिए SI = P (स्वयं राशि के बराबर ब्याज)",
+    "P = P × R × 5/100 ⇒ R × 5 = 100",
+    "R = 100/5 = 20% प्रति वर्ष"
+   ],
+   "finalAnswer": "20%",
+   "shortcut": "n गुना होने में दर R = (n−1) × 100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q038",
+   "testNumber": 10,
+   "questionNumber": 38,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹20,000 की राशि पर 4 वर्ष में 5% और 9% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹20000 for 4 years at 5% and 9% per annum.",
+   "options": {
+    "C": "₹3,200",
+    "A": "₹3,300",
+    "B": "₹6,400",
+    "D": "₹800"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SI₁ = 20000 × 5 × 4/100 = 4,000",
+    "SI₂ = 20000 × 9 × 4/100 = 7,200",
+    "अंतर = 7,200 − 4,000 = 3,200",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹3,200",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q043",
+   "testNumber": 10,
+   "questionNumber": 43,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 6 वर्ष में अपनी 4 गुनी हो जाती है। ब्याज की वार्षिक दर ज्ञात कीजिए।",
+   "questionEn": "A sum becomes 4 times itself in 6 years at simple interest. Find the annual rate of interest.",
+   "options": {
+    "B": "50%",
+    "D": "30%",
+    "A": "25%",
+    "C": "66.67%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "n गुना होने के लिए ब्याज = (n − 1)P",
+    "(n − 1)P = P × R × T/100",
+    "R = (n − 1) × 100/T = 3 × 100/6 = 50%"
+   ],
+   "finalAnswer": "50%",
+   "shortcut": "R = (n−1)×100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q008",
+   "testNumber": 11,
+   "questionNumber": 8,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹4,000 की राशि पर 10% वार्षिक दर से 8 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹4000 at 10% per annum for 8 years.",
+   "options": {
+    "A": "₹3,200",
+    "D": "₹400",
+    "B": "₹7,200",
+    "C": "₹6,400"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 4,000, R = 10% प्रति वर्ष, T = 8 वर्ष",
+    "SI = 4000 × 10 × 8/100 = 3,200"
+   ],
+   "finalAnswer": "₹3,200",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q029",
+   "testNumber": 11,
+   "questionNumber": 29,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹8,000 की राशि पर 2 वर्ष में 10% और 12% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹8000 for 2 years at 10% and 12% per annum.",
+   "options": {
+    "B": "₹320",
+    "A": "₹640",
+    "C": "₹420",
+    "D": "₹160"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "SI₁ = 8000 × 10 × 2/100 = 1,600",
+    "SI₂ = 8000 × 12 × 2/100 = 1,920",
+    "अंतर = 1,920 − 1,600 = 320",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹320",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q033",
+   "testNumber": 12,
+   "questionNumber": 33,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 5 वर्ष में अपनी 3 गुनी हो जाती है। ब्याज की वार्षिक दर ज्ञात कीजिए।",
+   "questionEn": "A sum becomes 3 times itself in 5 years at simple interest. Find the annual rate of interest.",
+   "options": {
+    "D": "40%",
+    "B": "60%",
+    "A": "20%",
+    "C": "80%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "n गुना होने के लिए ब्याज = (n − 1)P",
+    "(n − 1)P = P × R × T/100",
+    "R = (n − 1) × 100/T = 2 × 100/5 = 40%"
+   ],
+   "finalAnswer": "40%",
+   "shortcut": "R = (n−1)×100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q056",
+   "testNumber": 12,
+   "questionNumber": 56,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹25,000 की राशि पर 4 वर्ष में 6% और 10% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹25000 for 4 years at 6% and 10% per annum.",
+   "options": {
+    "B": "₹4,000",
+    "A": "₹1,000",
+    "C": "₹8,000",
+    "D": "₹4,100"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "SI₁ = 25000 × 6 × 4/100 = 6,000",
+    "SI₂ = 25000 × 10 × 4/100 = 10,000",
+    "अंतर = 10,000 − 6,000 = 4,000",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹4,000",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q020",
+   "testNumber": 13,
+   "questionNumber": 20,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹24,000 की राशि पर 5% वार्षिक दर से 4 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹24000 at 5% per annum for 4 years.",
+   "options": {
+    "B": "₹4,800",
+    "D": "₹28,800",
+    "A": "₹1,200",
+    "C": "₹9,600"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 24,000, R = 5% प्रति वर्ष, T = 4 वर्ष",
+    "SI = 24000 × 5 × 4/100 = 4,800"
+   ],
+   "finalAnswer": "₹4,800",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q035",
+   "testNumber": 13,
+   "questionNumber": 35,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 8 वर्ष में अपनी 3 गुनी हो जाती है। ब्याज की वार्षिक दर ज्ञात कीजिए।",
+   "questionEn": "A sum becomes 3 times itself in 8 years at simple interest. Find the annual rate of interest.",
+   "options": {
+    "A": "25%",
+    "C": "37.5%",
+    "D": "12.5%",
+    "B": "50%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "n गुना होने के लिए ब्याज = (n − 1)P",
+    "(n − 1)P = P × R × T/100",
+    "R = (n − 1) × 100/T = 2 × 100/8 = 25%"
+   ],
+   "finalAnswer": "25%",
+   "shortcut": "R = (n−1)×100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q016",
+   "testNumber": 14,
+   "questionNumber": 16,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹25,000 की राशि पर 2 वर्ष में 10% और 13% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹25000 for 2 years at 10% and 13% per annum.",
+   "options": {
+    "B": "₹1,500",
+    "D": "₹3,000",
+    "C": "₹750",
+    "A": "₹1,600"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "SI₁ = 25000 × 10 × 2/100 = 5,000",
+    "SI₂ = 25000 × 13 × 2/100 = 6,500",
+    "अंतर = 6,500 − 5,000 = 1,500",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹1,500",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q031",
+   "testNumber": 14,
+   "questionNumber": 31,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹1,600 पर 6 वर्ष में ₹768 साधारण ब्याज मिलता है। ब्याज की दर प्रतिशत प्रति वर्ष ज्ञात कीजिए।",
+   "questionEn": "₹1600 gives ₹768 simple interest in 6 years. Find the rate of interest per annum.",
+   "options": {
+    "B": "8%",
+    "A": "7%",
+    "D": "16%",
+    "C": "10%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "SI = PRT/100 ⇒ R = SI × 100/(P × T)",
+    "R = 768 × 100/(1600 × 6)",
+    "R = 76800/9600 = 8% प्रति वर्ष"
+   ],
+   "finalAnswer": "8%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q002",
+   "testNumber": 15,
+   "questionNumber": 2,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹9,000 की राशि पर 6% वार्षिक दर से 8 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹9000 at 6% per annum for 8 years.",
+   "options": {
+    "C": "₹4,320",
+    "A": "₹13,320",
+    "B": "₹540",
+    "D": "₹2,160"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 9,000, R = 6% प्रति वर्ष, T = 8 वर्ष",
+    "SI = 9000 × 6 × 8/100 = 4,320"
+   ],
+   "finalAnswer": "₹4,320",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q006",
+   "testNumber": 15,
+   "questionNumber": 6,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 25 वर्ष में दोगुनी हो जाती है। ब्याज की दर ज्ञात कीजिए।",
+   "questionEn": "A sum doubles itself in 25 years at simple interest. Find the rate of interest.",
+   "options": {
+    "D": "4%",
+    "A": "2%",
+    "C": "25%",
+    "B": "8%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "दोगुनी होने के लिए SI = P (स्वयं राशि के बराबर ब्याज)",
+    "P = P × R × 25/100 ⇒ R × 25 = 100",
+    "R = 100/25 = 4% प्रति वर्ष"
+   ],
+   "finalAnswer": "4%",
+   "shortcut": "n गुना होने में दर R = (n−1) × 100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q012",
+   "testNumber": 16,
+   "questionNumber": 12,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 15 वर्ष में अपनी 4 गुनी हो जाती है। ब्याज की वार्षिक दर ज्ञात कीजिए।",
+   "questionEn": "A sum becomes 4 times itself in 15 years at simple interest. Find the annual rate of interest.",
+   "options": {
+    "A": "20%",
+    "B": "26.67%",
+    "D": "10%",
+    "C": "40%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "n गुना होने के लिए ब्याज = (n − 1)P",
+    "(n − 1)P = P × R × T/100",
+    "R = (n − 1) × 100/T = 3 × 100/15 = 20%"
+   ],
+   "finalAnswer": "20%",
+   "shortcut": "R = (n−1)×100/T",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q055",
+   "testNumber": 16,
+   "questionNumber": 55,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹5,000 की राशि पर 4% वार्षिक दर से 4 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹5000 at 4% per annum for 4 years.",
+   "options": {
+    "D": "₹800",
+    "C": "₹5,800",
+    "B": "₹200",
+    "A": "₹1,600"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 5,000, R = 4% प्रति वर्ष, T = 4 वर्ष",
+    "SI = 5000 × 4 × 4/100 = 800"
+   ],
+   "finalAnswer": "₹800",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q005",
+   "testNumber": 17,
+   "questionNumber": 5,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹4,800 पर 5 वर्ष में ₹2,880 साधारण ब्याज मिलता है। ब्याज की दर प्रतिशत प्रति वर्ष ज्ञात कीजिए।",
+   "questionEn": "₹4800 gives ₹2880 simple interest in 5 years. Find the rate of interest per annum.",
+   "options": {
+    "D": "12%",
+    "B": "11%",
+    "A": "6%",
+    "C": "14%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SI = PRT/100 ⇒ R = SI × 100/(P × T)",
+    "R = 2880 × 100/(4800 × 5)",
+    "R = 288000/24000 = 12% प्रति वर्ष"
+   ],
+   "finalAnswer": "12%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q011",
+   "testNumber": 17,
+   "questionNumber": 11,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹20,000 की राशि पर 10% वार्षिक दर से 2 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹20000 at 10% per annum for 2 years.",
+   "options": {
+    "D": "₹4,000",
+    "A": "₹2,000",
+    "B": "₹8,000",
+    "C": "₹24,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 20,000, R = 10% प्रति वर्ष, T = 2 वर्ष",
+    "SI = 20000 × 10 × 2/100 = 4,000"
+   ],
+   "finalAnswer": "₹4,000",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q001",
+   "testNumber": 18,
+   "questionNumber": 1,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹15,000 की राशि पर 10% वार्षिक दर से 4 वर्ष का साधारण ब्याज (Simple Interest) ज्ञात कीजिए।",
+   "questionEn": "Find the simple interest on ₹15000 at 10% per annum for 4 years.",
+   "options": {
+    "B": "₹6,000",
+    "D": "₹3,000",
+    "C": "₹12,000",
+    "A": "₹1,500"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: SI = P × R × T/100",
+    "P = 15,000, R = 10% प्रति वर्ष, T = 4 वर्ष",
+    "SI = 15000 × 10 × 4/100 = 6,000"
+   ],
+   "finalAnswer": "₹6,000",
+   "shortcut": "SI = PRT/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q035",
+   "testNumber": 18,
+   "questionNumber": 35,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹4,000 पर 5 वर्ष में ₹800 साधारण ब्याज मिलता है। ब्याज की दर प्रतिशत प्रति वर्ष ज्ञात कीजिए।",
+   "questionEn": "₹4000 gives ₹800 simple interest in 5 years. Find the rate of interest per annum.",
+   "options": {
+    "D": "4%",
+    "A": "8%",
+    "C": "6%",
+    "B": "3%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SI = PRT/100 ⇒ R = SI × 100/(P × T)",
+    "R = 800 × 100/(4000 × 5)",
+    "R = 80000/20000 = 4% प्रति वर्ष"
+   ],
+   "finalAnswer": "4%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q055",
+   "testNumber": 19,
+   "questionNumber": 55,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹12,000 पर 4 वर्ष में ₹4,800 साधारण ब्याज मिलता है। ब्याज की दर प्रतिशत प्रति वर्ष ज्ञात कीजिए।",
+   "questionEn": "₹12000 gives ₹4800 simple interest in 4 years. Find the rate of interest per annum.",
+   "options": {
+    "C": "10%",
+    "A": "12%",
+    "D": "5%",
+    "B": "9%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "SI = PRT/100 ⇒ R = SI × 100/(P × T)",
+    "R = 4800 × 100/(12000 × 4)",
+    "R = 480000/48000 = 10% प्रति वर्ष"
+   ],
+   "finalAnswer": "10%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q058",
+   "testNumber": 19,
+   "questionNumber": 58,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹12,000 की राशि पर 2 वर्ष में 6% और 8% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹12000 for 2 years at 6% and 8% per annum.",
+   "options": {
+    "B": "₹480",
+    "A": "₹960",
+    "C": "₹240",
+    "D": "₹580"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "SI₁ = 12000 × 6 × 2/100 = 1,440",
+    "SI₂ = 12000 × 8 × 2/100 = 1,920",
+    "अंतर = 1,920 − 1,440 = 480",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹480",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q012",
+   "testNumber": 20,
+   "questionNumber": 12,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "₹15,000 की राशि पर 2 वर्ष में 6% और 10% की दरों के साधारण ब्याज का अंतर ज्ञात कीजिए।",
+   "questionEn": "Find the difference between the simple interests on ₹15000 for 2 years at 6% and 10% per annum.",
+   "options": {
+    "D": "₹1,200",
+    "A": "₹600",
+    "C": "₹2,400",
+    "B": "₹1,300"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "SI₁ = 15000 × 6 × 2/100 = 1,800",
+    "SI₂ = 15000 × 10 × 2/100 = 3,000",
+    "अंतर = 3,000 − 1,800 = 1,200",
+    "सीधा: अंतर = P × (r₂ − r₁) × T/100"
+   ],
+   "finalAnswer": "₹1,200",
+   "shortcut": "दरों के अंतर पर ही गणना करें",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q028",
+   "testNumber": 20,
+   "questionNumber": 28,
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "एक राशि साधारण ब्याज पर 4 वर्ष में अपनी 5 गुनी हो जाती है। ब्याज की वार्षिक दर ज्ञात कीजिए।",
+   "questionEn": "A sum becomes 5 times itself in 4 years at simple interest. Find the annual rate of interest.",
+   "options": {
+    "B": "100%",
+    "A": "200%",
+    "D": "125%",
+    "C": "50%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "n गुना होने के लिए ब्याज = (n − 1)P",
+    "(n − 1)P = P × R × T/100",
+    "R = (n − 1) × 100/T = 4 × 100/4 = 100%"
+   ],
+   "finalAnswer": "100%",
+   "shortcut": "R = (n−1)×100/T",
+   "marks": 1
+  }
+ ]
+}

@@ -1,0 +1,1076 @@
+{
+ "topic": "Simplification",
+ "topicHi": "सरलीकरण",
+ "slug": "simplification",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q010",
+   "testNumber": 1,
+   "questionNumber": 10,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 8x + 24 = 416 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 8x + 24 = 416, find the value of x.",
+   "options": {
+    "C": "49",
+    "D": "392",
+    "A": "47",
+    "B": "50"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "8x + 24 = 416",
+    "दोनों पक्षों से 24 घटाएँ: 8x = 416 − 24 = 392",
+    "दोनों पक्षों को 8 से भाग दें: x = 49"
+   ],
+   "finalAnswer": "49",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q046",
+   "testNumber": 1,
+   "questionNumber": 46,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "568 ÷ 8 × 6 + 13² − 9 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 568 ÷ 8 × 6 + 13² − 9",
+   "options": {
+    "A": "586",
+    "C": "172",
+    "B": "443",
+    "D": "595"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 568 ÷ 8 = 71",
+    "71 × 6 = 426",
+    "13² = 169",
+    "अब क्रमशः जोड़ें/घटाएँ: 426 + 169 − 9 = 586"
+   ],
+   "finalAnswer": "586",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q006",
+   "testNumber": 2,
+   "questionNumber": 6,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 7x + 20 = 251 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 7x + 20 = 251, find the value of x.",
+   "options": {
+    "B": "33",
+    "C": "34",
+    "A": "231",
+    "D": "31"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "7x + 20 = 251",
+    "दोनों पक्षों से 20 घटाएँ: 7x = 251 − 20 = 231",
+    "दोनों पक्षों को 7 से भाग दें: x = 33"
+   ],
+   "finalAnswer": "33",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q060",
+   "testNumber": 2,
+   "questionNumber": 60,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "10% of 200 + 20% of 180 = ?",
+   "questionEn": "Find the value of 10% of 200 + 20% of 180.",
+   "options": {
+    "D": "56",
+    "A": "28",
+    "C": "51",
+    "B": "150"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "10% of 200 = 200 × 10/100 = 20",
+    "20% of 180 = 180 × 20/100 = 36",
+    "योग = 20 + 36 = 56"
+   ],
+   "finalAnswer": "56",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q019",
+   "testNumber": 3,
+   "questionNumber": 19,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "1/(1 + 1/5) + 3 का मान क्या है?",
+   "questionEn": "Find the value of 1/(1 + 1/5) + 3.",
+   "options": {
+    "C": "23/6",
+    "D": "4",
+    "B": "8",
+    "A": "19/6"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "आंतरिक भिन्न: 1 + 1/5 = 6/5",
+    "1 ÷ 6/5 = 5/6",
+    "अतः 1/(1 + 1/5) + 3 = 5/6 + 3 = 23/6"
+   ],
+   "finalAnswer": "23/6",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q031",
+   "testNumber": 3,
+   "questionNumber": 31,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "15% of 200 + 50% of 150 = ?",
+   "questionEn": "Find the value of 15% of 200 + 50% of 150.",
+   "options": {
+    "D": "105",
+    "B": "100",
+    "A": "52.5",
+    "C": "210"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "15% of 200 = 200 × 15/100 = 30",
+    "50% of 150 = 150 × 50/100 = 75",
+    "योग = 30 + 75 = 105"
+   ],
+   "finalAnswer": "105",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q002",
+   "testNumber": 4,
+   "questionNumber": 2,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 2x + 28 = 48 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 2x + 28 = 48, find the value of x.",
+   "options": {
+    "C": "10",
+    "D": "20",
+    "B": "11",
+    "A": "12"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "2x + 28 = 48",
+    "दोनों पक्षों से 28 घटाएँ: 2x = 48 − 28 = 20",
+    "दोनों पक्षों को 2 से भाग दें: x = 10"
+   ],
+   "finalAnswer": "10",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q010",
+   "testNumber": 4,
+   "questionNumber": 10,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "40% of 240 + 20% of 120 = ?",
+   "questionEn": "Find the value of 40% of 240 + 20% of 120.",
+   "options": {
+    "D": "120",
+    "C": "240",
+    "A": "130",
+    "B": "300"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "40% of 240 = 240 × 40/100 = 96",
+    "20% of 120 = 120 × 20/100 = 24",
+    "योग = 96 + 24 = 120"
+   ],
+   "finalAnswer": "120",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q014",
+   "testNumber": 5,
+   "questionNumber": 14,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "20% of 400 + 20% of 120 = ?",
+   "questionEn": "Find the value of 20% of 400 + 20% of 120.",
+   "options": {
+    "D": "104",
+    "A": "99",
+    "C": "208",
+    "B": "114"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "20% of 400 = 400 × 20/100 = 80",
+    "20% of 120 = 120 × 20/100 = 24",
+    "योग = 80 + 24 = 104"
+   ],
+   "finalAnswer": "104",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q043",
+   "testNumber": 5,
+   "questionNumber": 43,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "x/2 + x/6 = 16 है, तो x का मान क्या है?",
+   "questionEn": "If x/2 + x/6 = 16, find x.",
+   "options": {
+    "D": "24",
+    "C": "12",
+    "B": "22",
+    "A": "32"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "x/2 + x/6 = 16",
+    "x(1/2 + 1/6) = 16",
+    "1/2 + 1/6 = 2/3",
+    "x × 2/3 = 16",
+    "x = 16 ÷ 2/3 = 24"
+   ],
+   "finalAnswer": "24",
+   "shortcut": "x(1/a + 1/b) = दायाँ पक्ष",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q013",
+   "testNumber": 6,
+   "questionNumber": 13,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "x/4 + x/12 = 13 है, तो x का मान क्या है?",
+   "questionEn": "If x/4 + x/12 = 13, find x.",
+   "options": {
+    "C": "39",
+    "B": "13",
+    "D": "35",
+    "A": "55"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "x/4 + x/12 = 13",
+    "x(1/4 + 1/12) = 13",
+    "1/4 + 1/12 = 1/3",
+    "x × 1/3 = 13",
+    "x = 13 ÷ 1/3 = 39"
+   ],
+   "finalAnswer": "39",
+   "shortcut": "x(1/a + 1/b) = दायाँ पक्ष",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q049",
+   "testNumber": 6,
+   "questionNumber": 49,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "25% of 300 + 10% of 300 = ?",
+   "questionEn": "Find the value of 25% of 300 + 10% of 300.",
+   "options": {
+    "A": "105",
+    "D": "115",
+    "B": "175",
+    "C": "210"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "25% of 300 = 300 × 25/100 = 75",
+    "10% of 300 = 300 × 10/100 = 30",
+    "योग = 75 + 30 = 105"
+   ],
+   "finalAnswer": "105",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q025",
+   "testNumber": 7,
+   "questionNumber": 25,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "x/5 + x/2 = 28 है, तो x का मान क्या है?",
+   "questionEn": "If x/5 + x/2 = 28, find x.",
+   "options": {
+    "D": "40",
+    "B": "28",
+    "A": "35",
+    "C": "47"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "x/5 + x/2 = 28",
+    "x(1/5 + 1/2) = 28",
+    "1/5 + 1/2 = 7/10",
+    "x × 7/10 = 28",
+    "x = 28 ÷ 7/10 = 40"
+   ],
+   "finalAnswer": "40",
+   "shortcut": "x(1/a + 1/b) = दायाँ पक्ष",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q057",
+   "testNumber": 7,
+   "questionNumber": 57,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "320 ÷ 8 × 3 + 7² − 7 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 320 ÷ 8 × 3 + 7² − 7",
+   "options": {
+    "D": "162",
+    "A": "155",
+    "C": "169",
+    "B": "127"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 320 ÷ 8 = 40",
+    "40 × 3 = 120",
+    "7² = 49",
+    "अब क्रमशः जोड़ें/घटाएँ: 120 + 49 − 7 = 162"
+   ],
+   "finalAnswer": "162",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q032",
+   "testNumber": 8,
+   "questionNumber": 32,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "15% of 500 + 25% of 200 = ?",
+   "questionEn": "Find the value of 15% of 500 + 25% of 200.",
+   "options": {
+    "D": "125",
+    "B": "250",
+    "A": "200",
+    "C": "62.5"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "15% of 500 = 500 × 15/100 = 75",
+    "25% of 200 = 200 × 25/100 = 50",
+    "योग = 75 + 50 = 125"
+   ],
+   "finalAnswer": "125",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q057",
+   "testNumber": 8,
+   "questionNumber": 57,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "225 ÷ 5 × 3 + 12² − 10 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 225 ÷ 5 × 3 + 12² − 10",
+   "options": {
+    "D": "269",
+    "B": "149",
+    "A": "257",
+    "C": "279"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 225 ÷ 5 = 45",
+    "45 × 3 = 135",
+    "12² = 144",
+    "अब क्रमशः जोड़ें/घटाएँ: 135 + 144 − 10 = 269"
+   ],
+   "finalAnswer": "269",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q007",
+   "testNumber": 9,
+   "questionNumber": 7,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "1/(1 + 1/6) + 9 का मान क्या है?",
+   "questionEn": "Find the value of 1/(1 + 1/6) + 9.",
+   "options": {
+    "B": "69/7",
+    "D": "10",
+    "C": "15",
+    "A": "64/7"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "आंतरिक भिन्न: 1 + 1/6 = 7/6",
+    "1 ÷ 7/6 = 6/7",
+    "अतः 1/(1 + 1/6) + 9 = 6/7 + 9 = 69/7"
+   ],
+   "finalAnswer": "69/7",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q044",
+   "testNumber": 9,
+   "questionNumber": 44,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "430 ÷ 5 × 12 + 6² − 6 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 430 ÷ 5 × 12 + 6² − 6",
+   "options": {
+    "B": "1062",
+    "C": "37",
+    "D": "1038",
+    "A": "1068"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 430 ÷ 5 = 86",
+    "86 × 12 = 1032",
+    "6² = 36",
+    "अब क्रमशः जोड़ें/घटाएँ: 1032 + 36 − 6 = 1062"
+   ],
+   "finalAnswer": "1062",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q035",
+   "testNumber": 10,
+   "questionNumber": 35,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "462 ÷ 6 × 9 + 13² − 4 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 462 ÷ 6 × 9 + 13² − 4",
+   "options": {
+    "D": "858",
+    "B": "845",
+    "A": "862",
+    "C": "174"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 462 ÷ 6 = 77",
+    "77 × 9 = 693",
+    "13² = 169",
+    "अब क्रमशः जोड़ें/घटाएँ: 693 + 169 − 4 = 858"
+   ],
+   "finalAnswer": "858",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q056",
+   "testNumber": 10,
+   "questionNumber": 56,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "1/(1 + 1/7) + 6 का मान क्या है?",
+   "questionEn": "Find the value of 1/(1 + 1/7) + 6.",
+   "options": {
+    "B": "55/8",
+    "D": "7",
+    "C": "13",
+    "A": "49/8"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "आंतरिक भिन्न: 1 + 1/7 = 8/7",
+    "1 ÷ 8/7 = 7/8",
+    "अतः 1/(1 + 1/7) + 6 = 7/8 + 6 = 55/8"
+   ],
+   "finalAnswer": "55/8",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q042",
+   "testNumber": 11,
+   "questionNumber": 42,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "x/6 + x/12 = 7 है, तो x का मान क्या है?",
+   "questionEn": "If x/6 + x/12 = 7, find x.",
+   "options": {
+    "A": "28",
+    "D": "7",
+    "C": "14",
+    "B": "22"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "x/6 + x/12 = 7",
+    "x(1/6 + 1/12) = 7",
+    "1/6 + 1/12 = 1/4",
+    "x × 1/4 = 7",
+    "x = 7 ÷ 1/4 = 28"
+   ],
+   "finalAnswer": "28",
+   "shortcut": "x(1/a + 1/b) = दायाँ पक्ष",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q043",
+   "testNumber": 11,
+   "questionNumber": 43,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 9x + 6 = 456 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 9x + 6 = 456, find the value of x.",
+   "options": {
+    "D": "50",
+    "C": "48",
+    "A": "51",
+    "B": "450"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "9x + 6 = 456",
+    "दोनों पक्षों से 6 घटाएँ: 9x = 456 − 6 = 450",
+    "दोनों पक्षों को 9 से भाग दें: x = 50"
+   ],
+   "finalAnswer": "50",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q005",
+   "testNumber": 12,
+   "questionNumber": 5,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "1/(1 + 1/6) + 2 का मान क्या है?",
+   "questionEn": "Find the value of 1/(1 + 1/6) + 2.",
+   "options": {
+    "B": "20/7",
+    "C": "3",
+    "D": "8",
+    "A": "15/7"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "आंतरिक भिन्न: 1 + 1/6 = 7/6",
+    "1 ÷ 7/6 = 6/7",
+    "अतः 1/(1 + 1/6) + 2 = 6/7 + 2 = 20/7"
+   ],
+   "finalAnswer": "20/7",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q054",
+   "testNumber": 12,
+   "questionNumber": 54,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "200 ÷ 8 × 12 + 12² − 11 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 200 ÷ 8 × 12 + 12² − 11",
+   "options": {
+    "A": "433",
+    "C": "313",
+    "D": "444",
+    "B": "421"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 200 ÷ 8 = 25",
+    "25 × 12 = 300",
+    "12² = 144",
+    "अब क्रमशः जोड़ें/घटाएँ: 300 + 144 − 11 = 433"
+   ],
+   "finalAnswer": "433",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q040",
+   "testNumber": 13,
+   "questionNumber": 40,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "x/3 + x/6 = 9 है, तो x का मान क्या है?",
+   "questionEn": "If x/3 + x/6 = 9, find x.",
+   "options": {
+    "B": "18",
+    "C": "27",
+    "D": "9",
+    "A": "15"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "x/3 + x/6 = 9",
+    "x(1/3 + 1/6) = 9",
+    "1/3 + 1/6 = 1/2",
+    "x × 1/2 = 9",
+    "x = 9 ÷ 1/2 = 18"
+   ],
+   "finalAnswer": "18",
+   "shortcut": "x(1/a + 1/b) = दायाँ पक्ष",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q058",
+   "testNumber": 13,
+   "questionNumber": 58,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "96 ÷ 4 × 3 + 13² − 12 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 96 ÷ 4 × 3 + 13² − 12",
+   "options": {
+    "B": "229",
+    "C": "165",
+    "A": "241",
+    "D": "86"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 96 ÷ 4 = 24",
+    "24 × 3 = 72",
+    "13² = 169",
+    "अब क्रमशः जोड़ें/घटाएँ: 72 + 169 − 12 = 229"
+   ],
+   "finalAnswer": "229",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q009",
+   "testNumber": 14,
+   "questionNumber": 9,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "x/6 + x/3 = 3 है, तो x का मान क्या है?",
+   "questionEn": "If x/6 + x/3 = 3, find x.",
+   "options": {
+    "B": "6",
+    "D": "15",
+    "C": "0",
+    "A": "3"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "x/6 + x/3 = 3",
+    "x(1/6 + 1/3) = 3",
+    "1/6 + 1/3 = 1/2",
+    "x × 1/2 = 3",
+    "x = 3 ÷ 1/2 = 6"
+   ],
+   "finalAnswer": "6",
+   "shortcut": "x(1/a + 1/b) = दायाँ पक्ष",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q046",
+   "testNumber": 14,
+   "questionNumber": 46,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 5x + 19 = 264 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 5x + 19 = 264, find the value of x.",
+   "options": {
+    "D": "49",
+    "A": "54",
+    "C": "50",
+    "B": "245"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "5x + 19 = 264",
+    "दोनों पक्षों से 19 घटाएँ: 5x = 264 − 19 = 245",
+    "दोनों पक्षों को 5 से भाग दें: x = 49"
+   ],
+   "finalAnswer": "49",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q003",
+   "testNumber": 15,
+   "questionNumber": 3,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 8x + 30 = 494 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 8x + 30 = 494, find the value of x.",
+   "options": {
+    "D": "58",
+    "A": "464",
+    "B": "56",
+    "C": "59"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "8x + 30 = 494",
+    "दोनों पक्षों से 30 घटाएँ: 8x = 494 − 30 = 464",
+    "दोनों पक्षों को 8 से भाग दें: x = 58"
+   ],
+   "finalAnswer": "58",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q037",
+   "testNumber": 15,
+   "questionNumber": 37,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "380 ÷ 5 × 3 + 7² − 8 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 380 ÷ 5 × 3 + 7² − 8",
+   "options": {
+    "B": "269",
+    "D": "262",
+    "A": "277",
+    "C": "66"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 380 ÷ 5 = 76",
+    "76 × 3 = 228",
+    "7² = 49",
+    "अब क्रमशः जोड़ें/घटाएँ: 228 + 49 − 8 = 269"
+   ],
+   "finalAnswer": "269",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q017",
+   "testNumber": 16,
+   "questionNumber": 17,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "x/3 + x/4 = 14 है, तो x का मान क्या है?",
+   "questionEn": "If x/3 + x/4 = 14, find x.",
+   "options": {
+    "C": "24",
+    "A": "12",
+    "D": "31",
+    "B": "14"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "x/3 + x/4 = 14",
+    "x(1/3 + 1/4) = 14",
+    "1/3 + 1/4 = 7/12",
+    "x × 7/12 = 14",
+    "x = 14 ÷ 7/12 = 24"
+   ],
+   "finalAnswer": "24",
+   "shortcut": "x(1/a + 1/b) = दायाँ पक्ष",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q058",
+   "testNumber": 16,
+   "questionNumber": 58,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 7x + 9 = 324 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 7x + 9 = 324, find the value of x.",
+   "options": {
+    "A": "45",
+    "C": "315",
+    "B": "52",
+    "D": "43"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "7x + 9 = 324",
+    "दोनों पक्षों से 9 घटाएँ: 7x = 324 − 9 = 315",
+    "दोनों पक्षों को 7 से भाग दें: x = 45"
+   ],
+   "finalAnswer": "45",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q039",
+   "testNumber": 17,
+   "questionNumber": 39,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "368 ÷ 8 × 6 + 11² − 11 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 368 ÷ 8 × 6 + 11² − 11",
+   "options": {
+    "A": "386",
+    "C": "118",
+    "D": "375",
+    "B": "397"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 368 ÷ 8 = 46",
+    "46 × 6 = 276",
+    "11² = 121",
+    "अब क्रमशः जोड़ें/घटाएँ: 276 + 121 − 11 = 386"
+   ],
+   "finalAnswer": "386",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q054",
+   "testNumber": 17,
+   "questionNumber": 54,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "10% of 360 + 50% of 180 = ?",
+   "questionEn": "Find the value of 10% of 360 + 50% of 180.",
+   "options": {
+    "D": "126",
+    "A": "136",
+    "B": "63",
+    "C": "121"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "10% of 360 = 360 × 10/100 = 36",
+    "50% of 180 = 180 × 50/100 = 90",
+    "योग = 36 + 90 = 126"
+   ],
+   "finalAnswer": "126",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q033",
+   "testNumber": 18,
+   "questionNumber": 33,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "480 ÷ 8 × 3 + 8² − 10 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 480 ÷ 8 × 3 + 8² − 10",
+   "options": {
+    "B": "234",
+    "A": "244",
+    "D": "186",
+    "C": "74"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 480 ÷ 8 = 60",
+    "60 × 3 = 180",
+    "8² = 64",
+    "अब क्रमशः जोड़ें/घटाएँ: 180 + 64 − 10 = 234"
+   ],
+   "finalAnswer": "234",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q034",
+   "testNumber": 18,
+   "questionNumber": 34,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "x/6 + x/3 = 16 है, तो x का मान क्या है?",
+   "questionEn": "If x/6 + x/3 = 16, find x.",
+   "options": {
+    "D": "32",
+    "B": "41",
+    "C": "26",
+    "A": "16"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "x/6 + x/3 = 16",
+    "x(1/6 + 1/3) = 16",
+    "1/6 + 1/3 = 1/2",
+    "x × 1/2 = 16",
+    "x = 16 ÷ 1/2 = 32"
+   ],
+   "finalAnswer": "32",
+   "shortcut": "x(1/a + 1/b) = दायाँ पक्ष",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q036",
+   "testNumber": 19,
+   "questionNumber": 36,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "40% of 240 + 20% of 300 = ?",
+   "questionEn": "Find the value of 40% of 240 + 20% of 300.",
+   "options": {
+    "D": "156",
+    "B": "312",
+    "A": "78",
+    "C": "300"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "40% of 240 = 240 × 40/100 = 96",
+    "20% of 300 = 300 × 20/100 = 60",
+    "योग = 96 + 60 = 156"
+   ],
+   "finalAnswer": "156",
+   "shortcut": "x% of n = n × x/100",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q037",
+   "testNumber": 19,
+   "questionNumber": 37,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "156 ÷ 4 × 6 + 12² − 8 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 156 ÷ 4 × 6 + 12² − 8",
+   "options": {
+    "C": "370",
+    "B": "378",
+    "D": "250",
+    "A": "143"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 156 ÷ 4 = 39",
+    "39 × 6 = 234",
+    "12² = 144",
+    "अब क्रमशः जोड़ें/घटाएँ: 234 + 144 − 8 = 370"
+   ],
+   "finalAnswer": "370",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q053",
+   "testNumber": 20,
+   "questionNumber": 53,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "1/(1 + 1/4) + 9 का मान क्या है?",
+   "questionEn": "Find the value of 1/(1 + 1/4) + 9.",
+   "options": {
+    "B": "49/5",
+    "C": "10",
+    "D": "13",
+    "A": "46/5"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "आंतरिक भिन्न: 1 + 1/4 = 5/4",
+    "1 ÷ 5/4 = 4/5",
+    "अतः 1/(1 + 1/4) + 9 = 4/5 + 9 = 49/5"
+   ],
+   "finalAnswer": "49/5",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q056",
+   "testNumber": 20,
+   "questionNumber": 56,
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "306 ÷ 6 × 6 + 10² − 11 का मान ज्ञात कीजिए।",
+   "questionEn": "Simplify: 306 ÷ 6 × 6 + 10² − 11",
+   "options": {
+    "B": "395",
+    "A": "406",
+    "C": "385",
+    "D": "98"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "पहले भाग और गुणा (बाएँ से दाएँ): 306 ÷ 6 = 51",
+    "51 × 6 = 306",
+    "10² = 100",
+    "अब क्रमशः जोड़ें/घटाएँ: 306 + 100 − 11 = 395"
+   ],
+   "finalAnswer": "395",
+   "shortcut": "BODMAS: वर्ग → भाग/गुणा → जोड़/घटाव",
+   "marks": 1
+  }
+ ]
+}

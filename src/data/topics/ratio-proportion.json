@@ -1,0 +1,1050 @@
+{
+ "topic": "Ratio and Proportion",
+ "topicHi": "अनुपात एवं समानुपात",
+ "slug": "ratio-proportion",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q002",
+   "testNumber": 1,
+   "questionNumber": 2,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a : b = 2 : 4 और b : c = 5 : 6 है, तो a : b : c ज्ञात कीजिए।",
+   "questionEn": "If a:b = 2:4 and b:c = 5:6, find a:b:c.",
+   "options": {
+    "A": "5 : 10 : 12",
+    "D": "2 : 4 : 6",
+    "B": "15 : 10 : 12",
+    "C": "10 : 20 : 24"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "b को दोनों अनुपातों में समान बनाएँ: b का LCM मान = 4, 5 का LCM = 20",
+    "a : b = 2 × 5 : 20 = 10 : 20",
+    "b : c = 20 : 6 × 4 = 20 : 24",
+    "a : b : c = 10 : 20 : 24 = 5 : 10 : 12"
+   ],
+   "finalAnswer": "5 : 10 : 12",
+   "shortcut": "b को LCM से समान बनाकर जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q014",
+   "testNumber": 1,
+   "questionNumber": 14,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "32 और 800 के बीच मध्यानुपाती (Mean Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the mean proportional between 32 and 800.",
+   "options": {
+    "B": "160",
+    "A": "416",
+    "D": "80",
+    "C": "832"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए मध्यानुपाती x है: a : x = x : b",
+    "x² = a × b = 32 × 800 = 25600",
+    "x = √25600 = 160"
+   ],
+   "finalAnswer": "160",
+   "shortcut": "मध्यानुपाती = √(a×b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q001",
+   "testNumber": 2,
+   "questionNumber": 1,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹3,000 को A, B और C में 6 : 2 : 7 के अनुपात में बाँटा जाता है। A को कितना मिलेगा?",
+   "questionEn": "₹3000 is divided among A, B and C in the ratio 6:2:7. Find A's share.",
+   "options": {
+    "D": "₹1,200",
+    "B": "₹400",
+    "C": "₹200",
+    "A": "₹1,000"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल भाग = 6 + 2 + 7 = 15",
+    "एक भाग = 3,000 ÷ 15 = 200",
+    "A का हिस्सा = 6 × 200 = 1,200"
+   ],
+   "finalAnswer": "₹1,200",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q012",
+   "testNumber": 2,
+   "questionNumber": 12,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 12 : 3 :: 36 : x है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 12 : 3 :: 36 : x, find the value of x.",
+   "options": {
+    "D": "9",
+    "B": "0.75",
+    "C": "21",
+    "A": "12"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अनुपात में: a × x = b × c (गुणनफल समान)",
+    "12 × x = 3 × 36 = 108",
+    "x = 108/12 = 9"
+   ],
+   "finalAnswer": "9",
+   "shortcut": "a:b :: c:d ⇒ ad = bc",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q016",
+   "testNumber": 3,
+   "questionNumber": 16,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹3,900 को A, B और C में 5 : 6 : 2 के अनुपात में बाँटा जाता है। A को कितना मिलेगा?",
+   "questionEn": "₹3900 is divided among A, B and C in the ratio 5:6:2. Find A's share.",
+   "options": {
+    "B": "₹1,500",
+    "A": "₹1,300",
+    "D": "₹2,400",
+    "C": "₹1,800"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कुल भाग = 5 + 6 + 2 = 13",
+    "एक भाग = 3,900 ÷ 13 = 300",
+    "A का हिस्सा = 5 × 300 = 1,500"
+   ],
+   "finalAnswer": "₹1,500",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q050",
+   "testNumber": 3,
+   "questionNumber": 50,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 8 : 13 :: 48 : x है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 8 : 13 :: 48 : x, find the value of x.",
+   "options": {
+    "D": "78",
+    "C": "48",
+    "B": "21.13",
+    "A": "86"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अनुपात में: a × x = b × c (गुणनफल समान)",
+    "8 × x = 13 × 48 = 624",
+    "x = 624/8 = 78"
+   ],
+   "finalAnswer": "78",
+   "shortcut": "a:b :: c:d ⇒ ad = bc",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q016",
+   "testNumber": 4,
+   "questionNumber": 16,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a : b = 4 : 3 और b : c = 6 : 6 है, तो a : b : c ज्ञात कीजिए।",
+   "questionEn": "If a:b = 4:3 and b:c = 6:6, find a:b:c.",
+   "options": {
+    "A": "4 : 3 : 3",
+    "C": "4 : 3 : 6",
+    "D": "7 : 3 : 3",
+    "B": "24 : 18 : 18"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "b को दोनों अनुपातों में समान बनाएँ: b का LCM मान = 3, 6 का LCM = 6",
+    "a : b = 4 × 2 : 6 = 8 : 6",
+    "b : c = 6 : 6 × 1 = 6 : 6",
+    "a : b : c = 8 : 6 : 6 = 4 : 3 : 3"
+   ],
+   "finalAnswer": "4 : 3 : 3",
+   "shortcut": "b को LCM से समान बनाकर जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q055",
+   "testNumber": 4,
+   "questionNumber": 55,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "32 और 512 के बीच मध्यानुपाती (Mean Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the mean proportional between 32 and 512.",
+   "options": {
+    "A": "128",
+    "B": "64",
+    "C": "544",
+    "D": "480"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए मध्यानुपाती x है: a : x = x : b",
+    "x² = a × b = 32 × 512 = 16384",
+    "x = √16384 = 128"
+   ],
+   "finalAnswer": "128",
+   "shortcut": "मध्यानुपाती = √(a×b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q017",
+   "testNumber": 5,
+   "questionNumber": 17,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "यदि 4 : 8 :: 36 : x है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If 4 : 8 :: 36 : x, find the value of x.",
+   "options": {
+    "D": "72",
+    "C": "5",
+    "B": "16",
+    "A": "36"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अनुपात में: a × x = b × c (गुणनफल समान)",
+    "4 × x = 8 × 36 = 288",
+    "x = 288/4 = 72"
+   ],
+   "finalAnswer": "72",
+   "shortcut": "a:b :: c:d ⇒ ad = bc",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q049",
+   "testNumber": 5,
+   "questionNumber": 49,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "5 और 40 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 5 and 40.",
+   "options": {
+    "B": "320",
+    "D": "40",
+    "A": "200",
+    "C": "8"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 40²/5 = 1600/5 = 320"
+   ],
+   "finalAnswer": "320",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q026",
+   "testNumber": 6,
+   "questionNumber": 26,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं का अनुपात 3 : 9 है। यदि पहली संख्या में 20 जोड़ दिया जाए और दूसरी संख्या अपरिवर्तित रहे (संख्याएँ क्रमशः 30 और 90 हैं), तो नया अनुपात 5 : 9 है। यदि पहली संख्या में 20 जोड़ा जाए तो नया अनुपात क्या होगा?",
+   "questionEn": "Two numbers are in the ratio 3:9 (the numbers are 30 and 90). If 20 is added to the first number, find the new ratio.",
+   "options": {
+    "B": "5 : 9",
+    "D": "3 : 9",
+    "A": "50 : 110",
+    "C": "9 : 5"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संख्याएँ: 30 और 90",
+    "पहली में 20 जोड़ने पर: 50",
+    "नया अनुपात = 50 : 90 = 5 : 9"
+   ],
+   "finalAnswer": "5 : 9",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q045",
+   "testNumber": 6,
+   "questionNumber": 45,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a : b = 2 : 2 और b : c = 6 : 4 है, तो a : b : c ज्ञात कीजिए।",
+   "questionEn": "If a:b = 2:2 and b:c = 6:4, find a:b:c.",
+   "options": {
+    "B": "3 : 3 : 2",
+    "A": "2 : 2 : 4",
+    "D": "6 : 3 : 2",
+    "C": "12 : 12 : 8"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "b को दोनों अनुपातों में समान बनाएँ: b का LCM मान = 2, 6 का LCM = 6",
+    "a : b = 2 × 3 : 6 = 6 : 6",
+    "b : c = 6 : 4 × 1 = 6 : 4",
+    "a : b : c = 6 : 6 : 4 = 3 : 3 : 2"
+   ],
+   "finalAnswer": "3 : 3 : 2",
+   "shortcut": "b को LCM से समान बनाकर जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q013",
+   "testNumber": 7,
+   "questionNumber": 13,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं का अनुपात 5 : 8 है। यदि पहली संख्या में 32 जोड़ दिया जाए और दूसरी संख्या अपरिवर्तित रहे (संख्याएँ क्रमशः 40 और 64 हैं), तो नया अनुपात 9 : 8 है। यदि पहली संख्या में 32 जोड़ा जाए तो नया अनुपात क्या होगा?",
+   "questionEn": "Two numbers are in the ratio 5:8 (the numbers are 40 and 64). If 32 is added to the first number, find the new ratio.",
+   "options": {
+    "A": "9 : 8",
+    "D": "5 : 8",
+    "C": "72 : 96",
+    "B": "8 : 9"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संख्याएँ: 40 और 64",
+    "पहली में 32 जोड़ने पर: 72",
+    "नया अनुपात = 72 : 64 = 9 : 8"
+   ],
+   "finalAnswer": "9 : 8",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q015",
+   "testNumber": 7,
+   "questionNumber": 15,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹9,000 को A, B और C में 3 : 8 : 7 के अनुपात में बाँटा जाता है। A को कितना मिलेगा?",
+   "questionEn": "₹9000 is divided among A, B and C in the ratio 3:8:7. Find A's share.",
+   "options": {
+    "B": "₹1,500",
+    "A": "₹4,000",
+    "D": "₹500",
+    "C": "₹3,000"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कुल भाग = 3 + 8 + 7 = 18",
+    "एक भाग = 9,000 ÷ 18 = 500",
+    "A का हिस्सा = 3 × 500 = 1,500"
+   ],
+   "finalAnswer": "₹1,500",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q012",
+   "testNumber": 8,
+   "questionNumber": 12,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "3 और 24 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 3 and 24.",
+   "options": {
+    "B": "192",
+    "D": "72",
+    "C": "24",
+    "A": "8"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 24²/3 = 576/3 = 192"
+   ],
+   "finalAnswer": "192",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q034",
+   "testNumber": 8,
+   "questionNumber": 34,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹5,000 को A, B और C में 3 : 3 : 4 के अनुपात में बाँटा जाता है। A को कितना मिलेगा?",
+   "questionEn": "₹5000 is divided among A, B and C in the ratio 3:3:4. Find A's share.",
+   "options": {
+    "C": "₹1,500",
+    "A": "₹1,667",
+    "B": "₹3,500",
+    "D": "₹500"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल भाग = 3 + 3 + 4 = 10",
+    "एक भाग = 5,000 ÷ 10 = 500",
+    "A का हिस्सा = 3 × 500 = 1,500"
+   ],
+   "finalAnswer": "₹1,500",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q010",
+   "testNumber": 9,
+   "questionNumber": 10,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "3 और 18 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 3 and 18.",
+   "options": {
+    "B": "108",
+    "C": "54",
+    "A": "6",
+    "D": "18"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 18²/3 = 324/3 = 108"
+   ],
+   "finalAnswer": "108",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q054",
+   "testNumber": 9,
+   "questionNumber": 54,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "₹8,000 को A, B और C में 7 : 7 : 6 के अनुपात में बाँटा जाता है। A को कितना मिलेगा?",
+   "questionEn": "₹8000 is divided among A, B and C in the ratio 7:7:6. Find A's share.",
+   "options": {
+    "C": "₹2,800",
+    "A": "₹5,200",
+    "B": "₹400",
+    "D": "₹2,667"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल भाग = 7 + 7 + 6 = 20",
+    "एक भाग = 8,000 ÷ 20 = 400",
+    "A का हिस्सा = 7 × 400 = 2,800"
+   ],
+   "finalAnswer": "₹2,800",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q027",
+   "testNumber": 10,
+   "questionNumber": 27,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "8 और 32 के बीच मध्यानुपाती (Mean Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the mean proportional between 8 and 32.",
+   "options": {
+    "D": "16",
+    "C": "8",
+    "A": "20",
+    "B": "24"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए मध्यानुपाती x है: a : x = x : b",
+    "x² = a × b = 8 × 32 = 256",
+    "x = √256 = 16"
+   ],
+   "finalAnswer": "16",
+   "shortcut": "मध्यानुपाती = √(a×b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q039",
+   "testNumber": 10,
+   "questionNumber": 39,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "9 और 63 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 9 and 63.",
+   "options": {
+    "D": "441",
+    "C": "567",
+    "B": "7",
+    "A": "63"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 63²/9 = 3969/9 = 441"
+   ],
+   "finalAnswer": "441",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q027",
+   "testNumber": 11,
+   "questionNumber": 27,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a : b = 3 : 2 और b : c = 5 : 5 है, तो a : b : c ज्ञात कीजिए।",
+   "questionEn": "If a:b = 3:2 and b:c = 5:5, find a:b:c.",
+   "options": {
+    "C": "3 : 2 : 2",
+    "D": "3 : 2 : 5",
+    "A": "5 : 2 : 2",
+    "B": "15 : 10 : 10"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "b को दोनों अनुपातों में समान बनाएँ: b का LCM मान = 2, 5 का LCM = 10",
+    "a : b = 3 × 5 : 10 = 15 : 10",
+    "b : c = 10 : 5 × 2 = 10 : 10",
+    "a : b : c = 15 : 10 : 10 = 3 : 2 : 2"
+   ],
+   "finalAnswer": "3 : 2 : 2",
+   "shortcut": "b को LCM से समान बनाकर जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q034",
+   "testNumber": 11,
+   "questionNumber": 34,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 और 20 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 10 and 20.",
+   "options": {
+    "C": "40",
+    "B": "200",
+    "A": "20",
+    "D": "2"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 20²/10 = 400/10 = 40"
+   ],
+   "finalAnswer": "40",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q023",
+   "testNumber": 12,
+   "questionNumber": 23,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "32 और 2048 के बीच मध्यानुपाती (Mean Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the mean proportional between 32 and 2048.",
+   "options": {
+    "A": "256",
+    "D": "2080",
+    "B": "1040",
+    "C": "2016"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए मध्यानुपाती x है: a : x = x : b",
+    "x² = a × b = 32 × 2048 = 65536",
+    "x = √65536 = 256"
+   ],
+   "finalAnswer": "256",
+   "shortcut": "मध्यानुपाती = √(a×b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q044",
+   "testNumber": 12,
+   "questionNumber": 44,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a : b = 2 : 4 और b : c = 2 : 2 है, तो a : b : c ज्ञात कीजिए।",
+   "questionEn": "If a:b = 2:4 and b:c = 2:2, find a:b:c.",
+   "options": {
+    "A": "1 : 2 : 2",
+    "B": "2 : 4 : 2",
+    "C": "3 : 2 : 2",
+    "D": "4 : 8 : 8"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "b को दोनों अनुपातों में समान बनाएँ: b का LCM मान = 4, 2 का LCM = 4",
+    "a : b = 2 × 1 : 4 = 2 : 4",
+    "b : c = 4 : 2 × 2 = 4 : 4",
+    "a : b : c = 2 : 4 : 4 = 1 : 2 : 2"
+   ],
+   "finalAnswer": "1 : 2 : 2",
+   "shortcut": "b को LCM से समान बनाकर जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q030",
+   "testNumber": 13,
+   "questionNumber": 30,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B की आयों का अनुपात 3 : 8 और व्ययों का अनुपात 3 : 5 है। यदि दोनों की बचत समान ₹90 है, तो A की आय ज्ञात कीजिए।",
+   "questionEn": "The incomes of A and B are in the ratio 3:8 and their expenditures in the ratio 3:5. If each saves ₹90, find A's income.",
+   "options": {
+    "C": "₹-60",
+    "D": "₹-160",
+    "B": "₹90",
+    "A": "₹-150"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए A की आय = 3x, B की आय = 8x",
+    "A का व्यय = 3y, B का व्यय = 5y",
+    "बचत: 3x − 3y = 8x − 5y = 90",
+    "अनुपात हल करने पर x : y = -20 : -50 के गुणज में — x = -20 लेने पर:",
+    "A की आय = 3 × -20 = -60, A का व्यय = 3 × -50 = -150, बचत = 90 ✔"
+   ],
+   "finalAnswer": "₹-60",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q052",
+   "testNumber": 13,
+   "questionNumber": 52,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 और 60 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 10 and 60.",
+   "options": {
+    "A": "360",
+    "D": "6",
+    "C": "600",
+    "B": "60"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 60²/10 = 3600/10 = 360"
+   ],
+   "finalAnswer": "360",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q007",
+   "testNumber": 14,
+   "questionNumber": 7,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "49 और 1225 के बीच मध्यानुपाती (Mean Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the mean proportional between 49 and 1225.",
+   "options": {
+    "A": "245",
+    "C": "123",
+    "D": "637",
+    "B": "1176"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए मध्यानुपाती x है: a : x = x : b",
+    "x² = a × b = 49 × 1225 = 60025",
+    "x = √60025 = 245"
+   ],
+   "finalAnswer": "245",
+   "shortcut": "मध्यानुपाती = √(a×b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q039",
+   "testNumber": 14,
+   "questionNumber": 39,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 और 70 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 10 and 70.",
+   "options": {
+    "A": "490",
+    "B": "700",
+    "C": "70",
+    "D": "7"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 70²/10 = 4900/10 = 490"
+   ],
+   "finalAnswer": "490",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q047",
+   "testNumber": 15,
+   "questionNumber": 47,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं का अनुपात 3 : 9 है। यदि पहली संख्या में 40 जोड़ दिया जाए और दूसरी संख्या अपरिवर्तित रहे (संख्याएँ क्रमशः 30 और 90 हैं), तो नया अनुपात 7 : 9 है। यदि पहली संख्या में 40 जोड़ा जाए तो नया अनुपात क्या होगा?",
+   "questionEn": "Two numbers are in the ratio 3:9 (the numbers are 30 and 90). If 40 is added to the first number, find the new ratio.",
+   "options": {
+    "A": "7 : 9",
+    "D": "3 : 9",
+    "C": "70 : 130",
+    "B": "9 : 7"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संख्याएँ: 30 और 90",
+    "पहली में 40 जोड़ने पर: 70",
+    "नया अनुपात = 70 : 90 = 7 : 9"
+   ],
+   "finalAnswer": "7 : 9",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q049",
+   "testNumber": 15,
+   "questionNumber": 49,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B की आयों का अनुपात 4 : 7 और व्ययों का अनुपात 2 : 3 है। यदि दोनों की बचत समान ₹20 है, तो A की आय ज्ञात कीजिए।",
+   "questionEn": "The incomes of A and B are in the ratio 4:7 and their expenditures in the ratio 2:3. If each saves ₹20, find A's income.",
+   "options": {
+    "D": "₹-40",
+    "C": "₹-4",
+    "A": "₹-60",
+    "B": "₹20"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मान लीजिए A की आय = 4x, B की आय = 7x",
+    "A का व्यय = 2y, B का व्यय = 3y",
+    "बचत: 4x − 2y = 7x − 3y = 20",
+    "अनुपात हल करने पर x : y = -10 : -30 के गुणज में — x = -10 लेने पर:",
+    "A की आय = 4 × -10 = -40, A का व्यय = 2 × -30 = -60, बचत = 20 ✔"
+   ],
+   "finalAnswer": "₹-40",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q009",
+   "testNumber": 16,
+   "questionNumber": 9,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B की आयों का अनुपात 6 : 5 और व्ययों का अनुपात 6 : 3 है। यदि दोनों की बचत समान ₹120 है, तो A की आय ज्ञात कीजिए।",
+   "questionEn": "The incomes of A and B are in the ratio 6:5 and their expenditures in the ratio 6:3. If each saves ₹120, find A's income.",
+   "options": {
+    "C": "₹180",
+    "B": "₹60",
+    "A": "₹150",
+    "D": "₹120"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मान लीजिए A की आय = 6x, B की आय = 5x",
+    "A का व्यय = 6y, B का व्यय = 3y",
+    "बचत: 6x − 6y = 5x − 3y = 120",
+    "अनुपात हल करने पर x : y = 30 : 10 के गुणज में — x = 30 लेने पर:",
+    "A की आय = 6 × 30 = 180, A का व्यय = 6 × 10 = 60, बचत = 120 ✔"
+   ],
+   "finalAnswer": "₹180",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q011",
+   "testNumber": 16,
+   "questionNumber": 11,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 और 50 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 10 and 50.",
+   "options": {
+    "D": "250",
+    "C": "50",
+    "B": "5",
+    "A": "500"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 50²/10 = 2500/10 = 250"
+   ],
+   "finalAnswer": "250",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q024",
+   "testNumber": 17,
+   "questionNumber": 24,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "32 और 128 के बीच मध्यानुपाती (Mean Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the mean proportional between 32 and 128.",
+   "options": {
+    "A": "64",
+    "C": "32",
+    "D": "80",
+    "B": "160"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मान लीजिए मध्यानुपाती x है: a : x = x : b",
+    "x² = a × b = 32 × 128 = 4096",
+    "x = √4096 = 64"
+   ],
+   "finalAnswer": "64",
+   "shortcut": "मध्यानुपाती = √(a×b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q056",
+   "testNumber": 17,
+   "questionNumber": 56,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a : b = 2 : 4 और b : c = 3 : 4 है, तो a : b : c ज्ञात कीजिए।",
+   "questionEn": "If a:b = 2:4 and b:c = 3:4, find a:b:c.",
+   "options": {
+    "C": "3 : 6 : 8",
+    "B": "2 : 4 : 4",
+    "A": "9 : 6 : 8",
+    "D": "6 : 12 : 16"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "b को दोनों अनुपातों में समान बनाएँ: b का LCM मान = 4, 3 का LCM = 12",
+    "a : b = 2 × 3 : 12 = 6 : 12",
+    "b : c = 12 : 4 × 4 = 12 : 16",
+    "a : b : c = 6 : 12 : 16 = 3 : 6 : 8"
+   ],
+   "finalAnswer": "3 : 6 : 8",
+   "shortcut": "b को LCM से समान बनाकर जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q030",
+   "testNumber": 18,
+   "questionNumber": 30,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "10 और 40 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 10 and 40.",
+   "options": {
+    "B": "160",
+    "D": "4",
+    "A": "40",
+    "C": "400"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 40²/10 = 1600/10 = 160"
+   ],
+   "finalAnswer": "160",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q039",
+   "testNumber": 18,
+   "questionNumber": 39,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a : b = 5 : 6 और b : c = 6 : 6 है, तो a : b : c ज्ञात कीजिए।",
+   "questionEn": "If a:b = 5:6 and b:c = 6:6, find a:b:c.",
+   "options": {
+    "D": "5 : 6 : 6",
+    "B": "11 : 6 : 6",
+    "C": "30 : 36 : 36",
+    "A": "6 : 6 : 5"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "b को दोनों अनुपातों में समान बनाएँ: b का LCM मान = 6, 6 का LCM = 6",
+    "a : b = 5 × 1 : 6 = 5 : 6",
+    "b : c = 6 : 6 × 1 = 6 : 6",
+    "a : b : c = 5 : 6 : 6 = 5 : 6 : 6"
+   ],
+   "finalAnswer": "5 : 6 : 6",
+   "shortcut": "b को LCM से समान बनाकर जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q033",
+   "testNumber": 19,
+   "questionNumber": 33,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "2 और 14 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 2 and 14.",
+   "options": {
+    "B": "98",
+    "D": "7",
+    "C": "14",
+    "A": "28"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 14²/2 = 196/2 = 98"
+   ],
+   "finalAnswer": "98",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q046",
+   "testNumber": 19,
+   "questionNumber": 46,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "24 और 96 के बीच मध्यानुपाती (Mean Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the mean proportional between 24 and 96.",
+   "options": {
+    "B": "48",
+    "D": "72",
+    "A": "24",
+    "C": "120"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "मान लीजिए मध्यानुपाती x है: a : x = x : b",
+    "x² = a × b = 24 × 96 = 2304",
+    "x = √2304 = 48"
+   ],
+   "finalAnswer": "48",
+   "shortcut": "मध्यानुपाती = √(a×b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q009",
+   "testNumber": 20,
+   "questionNumber": 9,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं का अनुपात 4 : 7 है। यदि पहली संख्या में 32 जोड़ दिया जाए और दूसरी संख्या अपरिवर्तित रहे (संख्याएँ क्रमशः 32 और 56 हैं), तो नया अनुपात 8 : 7 है। यदि पहली संख्या में 32 जोड़ा जाए तो नया अनुपात क्या होगा?",
+   "questionEn": "Two numbers are in the ratio 4:7 (the numbers are 32 and 56). If 32 is added to the first number, find the new ratio.",
+   "options": {
+    "A": "8 : 7",
+    "D": "4 : 7",
+    "B": "64 : 88",
+    "C": "7 : 8"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संख्याएँ: 32 और 56",
+    "पहली में 32 जोड़ने पर: 64",
+    "नया अनुपात = 64 : 56 = 8 : 7"
+   ],
+   "finalAnswer": "8 : 7",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q029",
+   "testNumber": 20,
+   "questionNumber": 29,
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "6 और 18 का तृतीयानुपाती (Third Proportional) ज्ञात कीजिए।",
+   "questionEn": "Find the third proportional to 6 and 18.",
+   "options": {
+    "A": "54",
+    "B": "108",
+    "D": "18",
+    "C": "3"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "तृतीयानुपाती x के लिए: a : b = b : x",
+    "x = b²/a = 18²/6 = 324/6 = 54"
+   ],
+   "finalAnswer": "54",
+   "shortcut": "तृतीयानुपाती = b²/a",
+   "marks": 1
+  }
+ ]
+}

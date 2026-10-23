@@ -1,0 +1,1061 @@
+{
+ "topic": "Data Interpretation",
+ "topicHi": "आँकड़ों का विश्लेषण",
+ "slug": "data-interpretation",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q005",
+   "testNumber": 1,
+   "questionNumber": 5,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक संग्रहालय में पाँच दिनों में आए आगंतुक (संख्या) / Visitors to a museum on five days:\nसोमवार (Mon): 80\nमंगलवार (Tue): 72\nबुधवार (Wed): 100\nगुरुवार (Thu): 88\nशुक्रवार (Fri): 60\n\nमंगलवार का मान कुल योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. What percentage of the total does Tue represent?",
+   "options": {
+    "D": "18%",
+    "C": "82%",
+    "A": "13%",
+    "B": "28%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल योग = 80 + 72 + 100 + 88 + 60 = 400",
+    "मंगलवार = 72",
+    "प्रतिशत = 72/400 × 100 = 18%"
+   ],
+   "finalAnswer": "18%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q015",
+   "testNumber": 1,
+   "questionNumber": 15,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक कारखाने की वार्षिक उत्पादन (हज़ार इकाई) / Annual production of a factory (thousand units):\n2019 (2019): 375\n2020 (2020): 370\n2021 (2021): 305\n2022 (2022): 280\n2023 (2023): 350\n\n2022 और 2023 के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of 2022 and 2023.",
+   "options": {
+    "D": "4 : 5",
+    "B": "5 : 4",
+    "A": "280 : 350",
+    "C": "5 : 5"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "2022 = 280, 2023 = 350",
+    "अनुपात = 280 : 350",
+    "= 4 : 5 (सबसे बड़े सार्व गुणनखंड 70 से भाग)",
+    "= 4 : 5"
+   ],
+   "finalAnswer": "4 : 5",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q024",
+   "testNumber": 2,
+   "questionNumber": 24,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक कारखाने की वार्षिक उत्पादन (हज़ार इकाई) / Annual production of a factory (thousand units):\n2019 (2019): 190\n2020 (2020): 220\n2021 (2021): 385\n2022 (2022): 340\n2023 (2023): 260\n\n2021 और 2022 के मानों में कितना अंतर है?",
+   "questionEn": "Study the table. Find the difference between the values of 2021 and 2022.",
+   "options": {
+    "B": "45",
+    "D": "90",
+    "A": "725",
+    "C": "385"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "2021 = 385, 2022 = 340",
+    "अंतर = |385 − 340| = 45"
+   ],
+   "finalAnswer": "45",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q031",
+   "testNumber": 2,
+   "questionNumber": 31,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक पुस्तक भंडार में पाँच महीनों में बेची गई पुस्तकें (संख्या) / Books sold by a bookstore in five months:\nजून (Jun): 125\nजुलाई (Jul): 60\nअगस्त (Aug): 140\nसितंबर (Sep): 70\nअक्टूबर (Oct): 85\n\nपाँचों मानों का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the average of the five values.",
+   "options": {
+    "D": "96",
+    "C": "140",
+    "B": "91",
+    "A": "120"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल योग = 125 + 60 + 140 + 70 + 85 = 480",
+    "मानों की संख्या = 5",
+    "औसत = 480/5 = 96"
+   ],
+   "finalAnswer": "96",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q007",
+   "testNumber": 3,
+   "questionNumber": 7,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक कारखाने की वार्षिक उत्पादन (हज़ार इकाई) / Annual production of a factory (thousand units):\n2019 (2019): 130\n2020 (2020): 350\n2021 (2021): 190\n2022 (2022): 210\n2023 (2023): 345\n\n2019 और 2023 के मानों में कितना अंतर है?",
+   "questionEn": "Study the table. Find the difference between the values of 2019 and 2023.",
+   "options": {
+    "D": "215",
+    "A": "350",
+    "B": "430",
+    "C": "107.5"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "2019 = 130, 2023 = 345",
+    "अंतर = |130 − 345| = 215"
+   ],
+   "finalAnswer": "215",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q053",
+   "testNumber": 3,
+   "questionNumber": 53,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक कारखाने की वार्षिक उत्पादन (हज़ार इकाई) / Annual production of a factory (thousand units):\n2019 (2019): 270\n2020 (2020): 365\n2021 (2021): 295\n2022 (2022): 305\n2023 (2023): 155\n\nपाँचों मानों का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the average of the five values.",
+   "options": {
+    "A": "278",
+    "B": "273",
+    "C": "283",
+    "D": "348"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कुल योग = 270 + 365 + 295 + 305 + 155 = 1390",
+    "मानों की संख्या = 5",
+    "औसत = 1390/5 = 278"
+   ],
+   "finalAnswer": "278",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q009",
+   "testNumber": 4,
+   "questionNumber": 9,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nपाँच छात्रों के गणित में प्राप्तांक (100 में से) / Mathematics marks of five students (out of 100):\nराम (Ram): 40\nश्याम (Shyam): 95\nमोहन (Mohan): 70\nसोहन (Sohan): 35\nगोपाल (Gopal): 65\n\nपाँचों मानों का औसत (Average) ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the average of the five values.",
+   "options": {
+    "A": "61",
+    "C": "76",
+    "B": "66",
+    "D": "95"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कुल योग = 40 + 95 + 70 + 35 + 65 = 305",
+    "मानों की संख्या = 5",
+    "औसत = 305/5 = 61"
+   ],
+   "finalAnswer": "61",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q020",
+   "testNumber": 4,
+   "questionNumber": 20,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें और कुल योग ज्ञात कीजिए।\n\nपाँच छात्रों के गणित में प्राप्तांक (100 में से) / Mathematics marks of five students (out of 100):\nराम (Ram): 85\nश्याम (Shyam): 55\nमोहन (Mohan): 35\nसोहन (Sohan): 40\nगोपाल (Gopal): 95\n\nतालिका में दिए गए सभी पाँच मानों का कुल योग कितना है?",
+   "questionEn": "Study the table and find the total of all five values.",
+   "options": {
+    "D": "310",
+    "C": "190",
+    "A": "155",
+    "B": "225"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "तालिका के मान: 85, 55, 35, 40, 95",
+    "कुल योग = 85 + 55 + 35 + 40 + 95",
+    "= 310"
+   ],
+   "finalAnswer": "310",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q047",
+   "testNumber": 5,
+   "questionNumber": 47,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक संग्रहालय में पाँच दिनों में आए आगंतुक (संख्या) / Visitors to a museum on five days:\nसोमवार (Mon): 265\nमंगलवार (Tue): 120\nबुधवार (Wed): 170\nगुरुवार (Thu): 365\nशुक्रवार (Fri): 340\n\nबुधवार और गुरुवार के मानों में कितना अंतर है?",
+   "questionEn": "Study the table. Find the difference between the values of Wed and Thu.",
+   "options": {
+    "A": "195",
+    "D": "365",
+    "C": "97.5",
+    "B": "535"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "बुधवार = 170, गुरुवार = 365",
+    "अंतर = |170 − 365| = 195"
+   ],
+   "finalAnswer": "195",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q054",
+   "testNumber": 5,
+   "questionNumber": 54,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nपाँच छात्रों के गणित में प्राप्तांक (100 में से) / Mathematics marks of five students (out of 100):\nराम (Ram): 75\nश्याम (Shyam): 100\nमोहन (Mohan): 125\nसोहन (Sohan): 120\nगोपाल (Gopal): 80\n\nगोपाल का मान कुल योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. What percentage of the total does Gopal represent?",
+   "options": {
+    "C": "16%",
+    "B": "26%",
+    "D": "84%",
+    "A": "24%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल योग = 75 + 100 + 125 + 120 + 80 = 500",
+    "गोपाल = 80",
+    "प्रतिशत = 80/500 × 100 = 16%"
+   ],
+   "finalAnswer": "16%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q029",
+   "testNumber": 6,
+   "questionNumber": 29,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक विद्यालय की पाँच कक्षाओं में छात्रों की संख्या / Number of students in five classes of a school:\nकक्षा 6 (Class 6): 95\nकक्षा 7 (Class 7): 100\nकक्षा 8 (Class 8): 85\nकक्षा 9 (Class 9): 50\nकक्षा 10 (Class 10): 90\n\nकक्षा 6 और कक्षा 8 के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of Class 6 and Class 8.",
+   "options": {
+    "A": "19 : 17",
+    "B": "17 : 19",
+    "D": "95 : 85",
+    "C": "20 : 17"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कक्षा 6 = 95, कक्षा 8 = 85",
+    "अनुपात = 95 : 85",
+    "= 19 : 17 (सबसे बड़े सार्व गुणनखंड 5 से भाग)",
+    "= 19 : 17"
+   ],
+   "finalAnswer": "19 : 17",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q035",
+   "testNumber": 6,
+   "questionNumber": 35,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक दुकान की पाँच महीनों की बिक्री (₹ हज़ार में) / Sales of a shop for five months (in ₹ thousand):\nजनवरी (Jan): 115\nफरवरी (Feb): 85\nमार्च (Mar): 75\nअप्रैल (Apr): 125\nमई (May): 100\n\nजनवरी का मान कुल योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. What percentage of the total does Jan represent?",
+   "options": {
+    "B": "23%",
+    "D": "18%",
+    "A": "33%",
+    "C": "35%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कुल योग = 115 + 85 + 75 + 125 + 100 = 500",
+    "जनवरी = 115",
+    "प्रतिशत = 115/500 × 100 = 23%"
+   ],
+   "finalAnswer": "23%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q017",
+   "testNumber": 7,
+   "questionNumber": 17,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nपाँच छात्रों के गणित में प्राप्तांक (100 में से) / Mathematics marks of five students (out of 100):\nराम (Ram): 35\nश्याम (Shyam): 45\nमोहन (Mohan): 90\nसोहन (Sohan): 40\nगोपाल (Gopal): 80\n\nश्याम से मोहन तक मान में प्रतिशत परिवर्तन ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the percentage change in the value from Shyam to Mohan.",
+   "options": {
+    "D": "100%",
+    "A": "−100%",
+    "C": "45%",
+    "B": "105%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "श्याम = 45, मोहन = 90",
+    "परिवर्तन = 90 − 45 = 45",
+    "प्रतिशत परिवर्तन = 45/45 × 100 = 100%",
+    "अतः वृद्धि 100% हुई।"
+   ],
+   "finalAnswer": "100%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q049",
+   "testNumber": 7,
+   "questionNumber": 49,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक विद्यालय की पाँच कक्षाओं में छात्रों की संख्या / Number of students in five classes of a school:\nकक्षा 6 (Class 6): 95\nकक्षा 7 (Class 7): 85\nकक्षा 8 (Class 8): 50\nकक्षा 9 (Class 9): 75\nकक्षा 10 (Class 10): 55\n\nकक्षा 6 और कक्षा 10 के मानों का योग, शेष तीन मानों के योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. The sum of the values of Class 6 and Class 10 is what percentage of the sum of the remaining three?",
+   "options": {
+    "C": "71%",
+    "B": "100%",
+    "A": "42%",
+    "D": "200%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कक्षा 6 + कक्षा 10 = 95 + 55 = 150",
+    "शेष तीन का योग = 360 − 150 = 210",
+    "प्रतिशत = 150/210 × 100 = 71.43%"
+   ],
+   "finalAnswer": "71%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q003",
+   "testNumber": 8,
+   "questionNumber": 3,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक संग्रहालय में पाँच दिनों में आए आगंतुक (संख्या) / Visitors to a museum on five days:\nसोमवार (Mon): 120\nमंगलवार (Tue): 80\nबुधवार (Wed): 100\nगुरुवार (Thu): 75\nशुक्रवार (Fri): 125\n\nमंगलवार का मान कुल योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. What percentage of the total does Tue represent?",
+   "options": {
+    "C": "16%",
+    "A": "26%",
+    "B": "24%",
+    "D": "11%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल योग = 120 + 80 + 100 + 75 + 125 = 500",
+    "मंगलवार = 80",
+    "प्रतिशत = 80/500 × 100 = 16%"
+   ],
+   "finalAnswer": "16%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q048",
+   "testNumber": 8,
+   "questionNumber": 48,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक दुकान की पाँच महीनों की बिक्री (₹ हज़ार में) / Sales of a shop for five months (in ₹ thousand):\nजनवरी (Jan): 250\nफरवरी (Feb): 300\nमार्च (Mar): 440\nअप्रैल (Apr): 240\nमई (May): 400\n\nजनवरी से फरवरी तक मान में प्रतिशत परिवर्तन ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the percentage change in the value from Jan to Feb.",
+   "options": {
+    "B": "20%",
+    "C": "−20%",
+    "A": "50%",
+    "D": "25%"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "जनवरी = 250, फरवरी = 300",
+    "परिवर्तन = 300 − 250 = 50",
+    "प्रतिशत परिवर्तन = 50/250 × 100 = 20%",
+    "अतः वृद्धि 20% हुई।"
+   ],
+   "finalAnswer": "20%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q022",
+   "testNumber": 9,
+   "questionNumber": 22,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक संग्रहालय में पाँच दिनों में आए आगंतुक (संख्या) / Visitors to a museum on five days:\nसोमवार (Mon): 125\nमंगलवार (Tue): 120\nबुधवार (Wed): 100\nगुरुवार (Thu): 80\nशुक्रवार (Fri): 75\n\nमंगलवार का मान कुल योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. What percentage of the total does Tue represent?",
+   "options": {
+    "D": "24%",
+    "B": "19%",
+    "A": "76%",
+    "C": "34%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कुल योग = 125 + 120 + 100 + 80 + 75 = 500",
+    "मंगलवार = 120",
+    "प्रतिशत = 120/500 × 100 = 24%"
+   ],
+   "finalAnswer": "24%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q041",
+   "testNumber": 9,
+   "questionNumber": 41,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक कारखाने की वार्षिक उत्पादन (हज़ार इकाई) / Annual production of a factory (thousand units):\n2019 (2019): 160\n2020 (2020): 240\n2021 (2021): 315\n2022 (2022): 230\n2023 (2023): 155\n\nसबसे अधिकतम और न्यूनतम मानों का अंतर ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the difference between the maximum and minimum values.",
+   "options": {
+    "B": "160",
+    "D": "315",
+    "C": "155",
+    "A": "80"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "अधिकतम मान = 315 (2021)",
+    "न्यूनतम मान = 155 (2023)",
+    "अंतर = 315 − 155 = 160"
+   ],
+   "finalAnswer": "160",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q010",
+   "testNumber": 10,
+   "questionNumber": 10,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक दुकान की पाँच महीनों की बिक्री (₹ हज़ार में) / Sales of a shop for five months (in ₹ thousand):\nजनवरी (Jan): 305\nफरवरी (Feb): 335\nमार्च (Mar): 325\nअप्रैल (Apr): 405\nमई (May): 465\n\nसबसे अधिकतम और न्यूनतम मानों का अंतर ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the difference between the maximum and minimum values.",
+   "options": {
+    "A": "160",
+    "C": "80",
+    "B": "465",
+    "D": "385"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अधिकतम मान = 465 (मई)",
+    "न्यूनतम मान = 305 (जनवरी)",
+    "अंतर = 465 − 305 = 160"
+   ],
+   "finalAnswer": "160",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q030",
+   "testNumber": 10,
+   "questionNumber": 30,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक विद्यालय की पाँच कक्षाओं में छात्रों की संख्या / Number of students in five classes of a school:\nकक्षा 6 (Class 6): 75\nकक्षा 7 (Class 7): 100\nकक्षा 8 (Class 8): 55\nकक्षा 9 (Class 9): 40\nकक्षा 10 (Class 10): 80\n\nकक्षा 7 और कक्षा 8 के मानों का योग, शेष तीन मानों के योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. The sum of the values of Class 7 and Class 8 is what percentage of the sum of the remaining three?",
+   "options": {
+    "C": "79%",
+    "A": "50%",
+    "B": "100%",
+    "D": "44%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कक्षा 7 + कक्षा 8 = 100 + 55 = 155",
+    "शेष तीन का योग = 350 − 155 = 195",
+    "प्रतिशत = 155/195 × 100 = 79.49%"
+   ],
+   "finalAnswer": "79%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q013",
+   "testNumber": 11,
+   "questionNumber": 13,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक कारखाने की वार्षिक उत्पादन (हज़ार इकाई) / Annual production of a factory (thousand units):\n2019 (2019): 275\n2020 (2020): 380\n2021 (2021): 130\n2022 (2022): 355\n2023 (2023): 410\n\nसबसे अधिकतम और न्यूनतम मानों का अंतर ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the difference between the maximum and minimum values.",
+   "options": {
+    "A": "280",
+    "C": "410",
+    "D": "140",
+    "B": "130"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अधिकतम मान = 410 (2023)",
+    "न्यूनतम मान = 130 (2021)",
+    "अंतर = 410 − 130 = 280"
+   ],
+   "finalAnswer": "280",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q048",
+   "testNumber": 11,
+   "questionNumber": 48,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक विद्यालय की पाँच कक्षाओं में छात्रों की संख्या / Number of students in five classes of a school:\nकक्षा 6 (Class 6): 65\nकक्षा 7 (Class 7): 45\nकक्षा 8 (Class 8): 90\nकक्षा 9 (Class 9): 40\nकक्षा 10 (Class 10): 50\n\nकक्षा 7 से कक्षा 8 तक मान में प्रतिशत परिवर्तन ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the percentage change in the value from Class 7 to Class 8.",
+   "options": {
+    "C": "100%",
+    "D": "−100%",
+    "A": "45%",
+    "B": "105%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कक्षा 7 = 45, कक्षा 8 = 90",
+    "परिवर्तन = 90 − 45 = 45",
+    "प्रतिशत परिवर्तन = 45/45 × 100 = 100%",
+    "अतः वृद्धि 100% हुई।"
+   ],
+   "finalAnswer": "100%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q006",
+   "testNumber": 12,
+   "questionNumber": 6,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nपाँच छात्रों के गणित में प्राप्तांक (100 में से) / Mathematics marks of five students (out of 100):\nराम (Ram): 95\nश्याम (Shyam): 90\nमोहन (Mohan): 45\nसोहन (Sohan): 70\nगोपाल (Gopal): 75\n\nश्याम से मोहन तक मान में प्रतिशत परिवर्तन ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the percentage change in the value from Shyam to Mohan.",
+   "options": {
+    "C": "−50%",
+    "B": "50%",
+    "A": "45%",
+    "D": "−55%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "श्याम = 90, मोहन = 45",
+    "परिवर्तन = 45 − 90 = -45",
+    "प्रतिशत परिवर्तन = -45/90 × 100 = -50%",
+    "अतः कमी 50% हुई।"
+   ],
+   "finalAnswer": "−50%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q032",
+   "testNumber": 12,
+   "questionNumber": 32,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक कारखाने की वार्षिक उत्पादन (हज़ार इकाई) / Annual production of a factory (thousand units):\n2019 (2019): 370\n2020 (2020): 220\n2021 (2021): 235\n2022 (2022): 425\n2023 (2023): 155\n\n2022 और 2023 के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of 2022 and 2023.",
+   "options": {
+    "A": "85 : 31",
+    "D": "31 : 85",
+    "C": "425 : 155",
+    "B": "86 : 31"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "2022 = 425, 2023 = 155",
+    "अनुपात = 425 : 155",
+    "= 85 : 31 (सबसे बड़े सार्व गुणनखंड 5 से भाग)",
+    "= 85 : 31"
+   ],
+   "finalAnswer": "85 : 31",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q007",
+   "testNumber": 13,
+   "questionNumber": 7,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक पुस्तक भंडार में पाँच महीनों में बेची गई पुस्तकें (संख्या) / Books sold by a bookstore in five months:\nजून (Jun): 130\nजुलाई (Jul): 60\nअगस्त (Aug): 75\nसितंबर (Sep): 140\nअक्टूबर (Oct): 50\n\nसबसे अधिकतम और न्यूनतम मानों का अंतर ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the difference between the maximum and minimum values.",
+   "options": {
+    "D": "90",
+    "C": "50",
+    "B": "45",
+    "A": "140"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "अधिकतम मान = 140 (सितंबर)",
+    "न्यूनतम मान = 50 (अक्टूबर)",
+    "अंतर = 140 − 50 = 90"
+   ],
+   "finalAnswer": "90",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q046",
+   "testNumber": 13,
+   "questionNumber": 46,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक पुस्तक भंडार में पाँच महीनों में बेची गई पुस्तकें (संख्या) / Books sold by a bookstore in five months:\nजून (Jun): 80\nजुलाई (Jul): 115\nअगस्त (Aug): 55\nसितंबर (Sep): 50\nअक्टूबर (Oct): 110\n\nजून और अक्टूबर के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of Jun and Oct.",
+   "options": {
+    "D": "8 : 11",
+    "A": "11 : 8",
+    "B": "80 : 110",
+    "C": "9 : 11"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "जून = 80, अक्टूबर = 110",
+    "अनुपात = 80 : 110",
+    "= 8 : 11 (सबसे बड़े सार्व गुणनखंड 10 से भाग)",
+    "= 8 : 11"
+   ],
+   "finalAnswer": "8 : 11",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q003",
+   "testNumber": 14,
+   "questionNumber": 3,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक दुकान की पाँच महीनों की बिक्री (₹ हज़ार में) / Sales of a shop for five months (in ₹ thousand):\nजनवरी (Jan): 285\nफरवरी (Feb): 355\nमार्च (Mar): 380\nअप्रैल (Apr): 210\nमई (May): 255\n\nसबसे अधिकतम और न्यूनतम मानों का अंतर ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the difference between the maximum and minimum values.",
+   "options": {
+    "B": "170",
+    "A": "295",
+    "D": "380",
+    "C": "85"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "अधिकतम मान = 380 (मार्च)",
+    "न्यूनतम मान = 210 (अप्रैल)",
+    "अंतर = 380 − 210 = 170"
+   ],
+   "finalAnswer": "170",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q036",
+   "testNumber": 14,
+   "questionNumber": 36,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक संग्रहालय में पाँच दिनों में आए आगंतुक (संख्या) / Visitors to a museum on five days:\nसोमवार (Mon): 120\nमंगलवार (Tue): 115\nबुधवार (Wed): 335\nगुरुवार (Thu): 405\nशुक्रवार (Fri): 265\n\nमंगलवार और बुधवार के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of Tue and Wed.",
+   "options": {
+    "D": "23 : 67",
+    "C": "67 : 23",
+    "A": "115 : 335",
+    "B": "24 : 67"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मंगलवार = 115, बुधवार = 335",
+    "अनुपात = 115 : 335",
+    "= 23 : 67 (सबसे बड़े सार्व गुणनखंड 5 से भाग)",
+    "= 23 : 67"
+   ],
+   "finalAnswer": "23 : 67",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q031",
+   "testNumber": 15,
+   "questionNumber": 31,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक पुस्तक भंडार में पाँच महीनों में बेची गई पुस्तकें (संख्या) / Books sold by a bookstore in five months:\nजून (Jun): 90\nजुलाई (Jul): 115\nअगस्त (Aug): 65\nसितंबर (Sep): 50\nअक्टूबर (Oct): 85\n\nसबसे अधिकतम और न्यूनतम मानों का अंतर ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the difference between the maximum and minimum values.",
+   "options": {
+    "A": "65",
+    "D": "83",
+    "B": "115",
+    "C": "32.5"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अधिकतम मान = 115 (जुलाई)",
+    "न्यूनतम मान = 50 (सितंबर)",
+    "अंतर = 115 − 50 = 65"
+   ],
+   "finalAnswer": "65",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q053",
+   "testNumber": 15,
+   "questionNumber": 53,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक पुस्तक भंडार में पाँच महीनों में बेची गई पुस्तकें (संख्या) / Books sold by a bookstore in five months:\nजून (Jun): 65\nजुलाई (Jul): 50\nअगस्त (Aug): 145\nसितंबर (Sep): 100\nअक्टूबर (Oct): 70\n\nजुलाई से अगस्त तक मान में प्रतिशत परिवर्तन ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the percentage change in the value from Jul to Aug.",
+   "options": {
+    "A": "190%",
+    "B": "−190%",
+    "D": "95%",
+    "C": "195%"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "जुलाई = 50, अगस्त = 145",
+    "परिवर्तन = 145 − 50 = 95",
+    "प्रतिशत परिवर्तन = 95/50 × 100 = 190%",
+    "अतः वृद्धि 190% हुई।"
+   ],
+   "finalAnswer": "190%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q007",
+   "testNumber": 16,
+   "questionNumber": 7,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक दुकान की पाँच महीनों की बिक्री (₹ हज़ार में) / Sales of a shop for five months (in ₹ thousand):\nजनवरी (Jan): 250\nफरवरी (Feb): 330\nमार्च (Mar): 295\nअप्रैल (Apr): 205\nमई (May): 320\n\nमार्च और मई के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of Mar and May.",
+   "options": {
+    "D": "59 : 64",
+    "A": "64 : 59",
+    "C": "295 : 320",
+    "B": "60 : 64"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मार्च = 295, मई = 320",
+    "अनुपात = 295 : 320",
+    "= 59 : 64 (सबसे बड़े सार्व गुणनखंड 5 से भाग)",
+    "= 59 : 64"
+   ],
+   "finalAnswer": "59 : 64",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q026",
+   "testNumber": 16,
+   "questionNumber": 26,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक कारखाने की वार्षिक उत्पादन (हज़ार इकाई) / Annual production of a factory (thousand units):\n2019 (2019): 100\n2020 (2020): 115\n2021 (2021): 85\n2022 (2022): 125\n2023 (2023): 75\n\n2019 का मान कुल योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. What percentage of the total does 2019 represent?",
+   "options": {
+    "C": "20%",
+    "B": "15%",
+    "A": "30%",
+    "D": "80%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल योग = 100 + 115 + 85 + 125 + 75 = 500",
+    "2019 = 100",
+    "प्रतिशत = 100/500 × 100 = 20%"
+   ],
+   "finalAnswer": "20%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q025",
+   "testNumber": 17,
+   "questionNumber": 25,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक पुस्तक भंडार में पाँच महीनों में बेची गई पुस्तकें (संख्या) / Books sold by a bookstore in five months:\nजून (Jun): 100\nजुलाई (Jul): 65\nअगस्त (Aug): 85\nसितंबर (Sep): 120\nअक्टूबर (Oct): 110\n\nअगस्त और अक्टूबर के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of Aug and Oct.",
+   "options": {
+    "C": "17 : 22",
+    "D": "22 : 17",
+    "A": "85 : 110",
+    "B": "18 : 22"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "अगस्त = 85, अक्टूबर = 110",
+    "अनुपात = 85 : 110",
+    "= 17 : 22 (सबसे बड़े सार्व गुणनखंड 5 से भाग)",
+    "= 17 : 22"
+   ],
+   "finalAnswer": "17 : 22",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q049",
+   "testNumber": 17,
+   "questionNumber": 49,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक दुकान की पाँच महीनों की बिक्री (₹ हज़ार में) / Sales of a shop for five months (in ₹ thousand):\nजनवरी (Jan): 340\nफरवरी (Feb): 405\nमार्च (Mar): 300\nअप्रैल (Apr): 450\nमई (May): 290\n\nमार्च से अप्रैल तक मान में प्रतिशत परिवर्तन ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the percentage change in the value from Mar to Apr.",
+   "options": {
+    "D": "50%",
+    "C": "−50%",
+    "A": "150%",
+    "B": "55%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मार्च = 300, अप्रैल = 450",
+    "परिवर्तन = 450 − 300 = 150",
+    "प्रतिशत परिवर्तन = 150/300 × 100 = 50%",
+    "अतः वृद्धि 50% हुई।"
+   ],
+   "finalAnswer": "50%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q006",
+   "testNumber": 18,
+   "questionNumber": 6,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक संग्रहालय में पाँच दिनों में आए आगंतुक (संख्या) / Visitors to a museum on five days:\nसोमवार (Mon): 100\nमंगलवार (Tue): 325\nबुधवार (Wed): 250\nगुरुवार (Thu): 205\nशुक्रवार (Fri): 415\n\nसबसे अधिकतम और न्यूनतम मानों का अंतर ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the difference between the maximum and minimum values.",
+   "options": {
+    "A": "315",
+    "B": "157.5",
+    "C": "415",
+    "D": "100"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "अधिकतम मान = 415 (शुक्रवार)",
+    "न्यूनतम मान = 100 (सोमवार)",
+    "अंतर = 415 − 100 = 315"
+   ],
+   "finalAnswer": "315",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q025",
+   "testNumber": 18,
+   "questionNumber": 25,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक विद्यालय की पाँच कक्षाओं में छात्रों की संख्या / Number of students in five classes of a school:\nकक्षा 6 (Class 6): 80\nकक्षा 7 (Class 7): 75\nकक्षा 8 (Class 8): 65\nकक्षा 9 (Class 9): 40\nकक्षा 10 (Class 10): 85\n\nकक्षा 6 और कक्षा 10 के मानों का योग, शेष तीन मानों के योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. The sum of the values of Class 6 and Class 10 is what percentage of the sum of the remaining three?",
+   "options": {
+    "D": "92%",
+    "A": "48%",
+    "C": "200%",
+    "B": "50%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कक्षा 6 + कक्षा 10 = 80 + 85 = 165",
+    "शेष तीन का योग = 345 − 165 = 180",
+    "प्रतिशत = 165/180 × 100 = 91.67%"
+   ],
+   "finalAnswer": "92%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q028",
+   "testNumber": 19,
+   "questionNumber": 28,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक विद्यालय की पाँच कक्षाओं में छात्रों की संख्या / Number of students in five classes of a school:\nकक्षा 6 (Class 6): 80\nकक्षा 7 (Class 7): 85\nकक्षा 8 (Class 8): 65\nकक्षा 9 (Class 9): 40\nकक्षा 10 (Class 10): 50\n\nकक्षा 9 से कक्षा 10 तक मान में प्रतिशत परिवर्तन ज्ञात कीजिए।",
+   "questionEn": "Study the table. Find the percentage change in the value from Class 9 to Class 10.",
+   "options": {
+    "D": "25%",
+    "A": "−25%",
+    "B": "10%",
+    "C": "30%"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "कक्षा 9 = 40, कक्षा 10 = 50",
+    "परिवर्तन = 50 − 40 = 10",
+    "प्रतिशत परिवर्तन = 10/40 × 100 = 25%",
+    "अतः वृद्धि 25% हुई।"
+   ],
+   "finalAnswer": "25%",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q043",
+   "testNumber": 19,
+   "questionNumber": 43,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nपाँच छात्रों के गणित में प्राप्तांक (100 में से) / Mathematics marks of five students (out of 100):\nराम (Ram): 85\nश्याम (Shyam): 70\nमोहन (Mohan): 80\nसोहन (Sohan): 65\nगोपाल (Gopal): 40\n\nमोहन और सोहन के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of Mohan and Sohan.",
+   "options": {
+    "D": "16 : 13",
+    "A": "13 : 16",
+    "B": "80 : 65",
+    "C": "17 : 13"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "मोहन = 80, सोहन = 65",
+    "अनुपात = 80 : 65",
+    "= 16 : 13 (सबसे बड़े सार्व गुणनखंड 5 से भाग)",
+    "= 16 : 13"
+   ],
+   "finalAnswer": "16 : 13",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q035",
+   "testNumber": 20,
+   "questionNumber": 35,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक संग्रहालय में पाँच दिनों में आए आगंतुक (संख्या) / Visitors to a museum on five days:\nसोमवार (Mon): 365\nमंगलवार (Tue): 125\nबुधवार (Wed): 140\nगुरुवार (Thu): 250\nशुक्रवार (Fri): 360\n\nमंगलवार और बुधवार के मानों का अनुपात ज्ञात कीजिए।",
+   "questionEn": "Study the table and find the ratio of the values of Tue and Wed.",
+   "options": {
+    "A": "25 : 28",
+    "B": "28 : 25",
+    "C": "125 : 140",
+    "D": "26 : 28"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "मंगलवार = 125, बुधवार = 140",
+    "अनुपात = 125 : 140",
+    "= 25 : 28 (सबसे बड़े सार्व गुणनखंड 5 से भाग)",
+    "= 25 : 28"
+   ],
+   "finalAnswer": "25 : 28",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q055",
+   "testNumber": 20,
+   "questionNumber": 55,
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "नीचे दी गई तालिका का अध्ययन करें।\n\nएक विद्यालय की पाँच कक्षाओं में छात्रों की संख्या / Number of students in five classes of a school:\nकक्षा 6 (Class 6): 75\nकक्षा 7 (Class 7): 115\nकक्षा 8 (Class 8): 100\nकक्षा 9 (Class 9): 125\nकक्षा 10 (Class 10): 85\n\nकक्षा 9 का मान कुल योग का कितने प्रतिशत है?",
+   "questionEn": "Study the table. What percentage of the total does Class 9 represent?",
+   "options": {
+    "C": "25%",
+    "D": "75%",
+    "A": "20%",
+    "B": "38%"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "कुल योग = 75 + 115 + 100 + 125 + 85 = 500",
+    "कक्षा 9 = 125",
+    "प्रतिशत = 125/500 × 100 = 25%"
+   ],
+   "finalAnswer": "25%",
+   "shortcut": "",
+   "marks": 1
+  }
+ ]
+}

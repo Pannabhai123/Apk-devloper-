@@ -1,0 +1,1592 @@
+{
+ "topic": "Algebra",
+ "topicHi": "बीजगणित",
+ "slug": "algebra",
+ "count": 60,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q018",
+   "testNumber": 1,
+   "questionNumber": 18,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "समीकरण 2x + 12 = 50 को हल कीजिए तथा x का मान ज्ञात कीजिए।",
+   "questionEn": "Solve the equation 2x + 12 = 50 for x.",
+   "options": {
+    "D": "19",
+    "A": "18",
+    "C": "31",
+    "B": "20"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "2x + 12 = 50",
+    "2x = 50 − 12 = 38",
+    "x = 38/2 = 19"
+   ],
+   "finalAnswer": "19",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q033",
+   "testNumber": 1,
+   "questionNumber": 33,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 10 तथा ab = 18 है, तो a³ + b³ का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 10 and ab = 18, find a³ + b³.",
+   "options": {
+    "B": "460",
+    "C": "1540",
+    "D": "946",
+    "A": "490"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "a³ + b³ = (a + b)³ − 3ab(a + b)",
+    "= 10³ − 3 × 18 × 10",
+    "= 1000 − 540 = 460"
+   ],
+   "finalAnswer": "460",
+   "shortcut": "a³+b³ = (a+b)³ − 3ab(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q034",
+   "testNumber": 1,
+   "questionNumber": 34,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं का योग 30 और अंतर 6 है। उनका गुणनफल ज्ञात कीजिए।",
+   "questionEn": "The sum of two numbers is 30 and their difference is 6. Find their product.",
+   "options": {
+    "D": "216",
+    "A": "226",
+    "C": "432",
+    "B": "36"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "संख्याएँ: a = (30 + 6)/2 = 18, b = (30 − 6)/2 = 12",
+    "गुणनफल = 18 × 12 = 216",
+    "सूत्र से: ab = [(a+b)² − (a−b)²]/4 = [900 − 36]/4 = 216"
+   ],
+   "finalAnswer": "216",
+   "shortcut": "ab = ((a+b)² − (a−b)²)/4",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q029",
+   "testNumber": 2,
+   "questionNumber": 29,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 6 है, तो x² + 1/x² का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 6, find the value of x² + 1/x².",
+   "options": {
+    "B": "34",
+    "C": "36",
+    "D": "38",
+    "A": "32"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "(x + 1/x)² = x² + 1/x² + 2",
+    "x² + 1/x² = (x + 1/x)² − 2",
+    "= 6² − 2 = 36 − 2 = 34"
+   ],
+   "finalAnswer": "34",
+   "shortcut": "x² + 1/x² = (x + 1/x)² − 2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q032",
+   "testNumber": 2,
+   "questionNumber": 32,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "(x + 7)(x + 6) का विस्तार (expansion) क्या है?",
+   "questionEn": "What is the expansion of (x + 7)(x + 6)?",
+   "options": {
+    "D": "x² + 13x + 42",
+    "B": "x² + 42x + 13",
+    "A": "x² − 13x + 42",
+    "C": "x² + 13x − 42"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "(x + a)(x + b) = x² + (a + b)x + ab",
+    "a = 7, b = 6",
+    "= x² + (7 + 6)x + 7 × 6",
+    "= x² + 13x + 42"
+   ],
+   "finalAnswer": "x² + 13x + 42",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q033",
+   "testNumber": 2,
+   "questionNumber": 33,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 7 है, तो x³ + 1/x³ का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 7, find the value of x³ + 1/x³.",
+   "options": {
+    "C": "322",
+    "A": "340",
+    "D": "364",
+    "B": "343"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सूत्र: x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x)",
+    "= 7³ − 3 × 7",
+    "= 343 − 21 = 322"
+   ],
+   "finalAnswer": "322",
+   "shortcut": "x³+1/x³ = (x+1/x)³ − 3(x+1/x)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q027",
+   "testNumber": 3,
+   "questionNumber": 27,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 9 है, तो x² + 1/x² का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 9, find the value of x² + 1/x².",
+   "options": {
+    "B": "79",
+    "D": "77",
+    "A": "97",
+    "C": "81"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "(x + 1/x)² = x² + 1/x² + 2",
+    "x² + 1/x² = (x + 1/x)² − 2",
+    "= 9² − 2 = 81 − 2 = 79"
+   ],
+   "finalAnswer": "79",
+   "shortcut": "x² + 1/x² = (x + 1/x)² − 2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q038",
+   "testNumber": 3,
+   "questionNumber": 38,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 14 और ab = 17 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 14 and ab = 17, find the value of a² + b².",
+   "options": {
+    "A": "162",
+    "B": "190",
+    "D": "196",
+    "C": "230"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 14² − 2 × 17",
+    "= 196 − 34 = 162"
+   ],
+   "finalAnswer": "162",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q057",
+   "testNumber": 3,
+   "questionNumber": 57,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं का योग 24 और अंतर 2 है। उनका गुणनफल ज्ञात कीजिए।",
+   "questionEn": "The sum of two numbers is 24 and their difference is 2. Find their product.",
+   "options": {
+    "C": "143",
+    "D": "26",
+    "A": "48",
+    "B": "286"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "संख्याएँ: a = (24 + 2)/2 = 13, b = (24 − 2)/2 = 11",
+    "गुणनफल = 13 × 11 = 143",
+    "सूत्र से: ab = [(a+b)² − (a−b)²]/4 = [576 − 4]/4 = 143"
+   ],
+   "finalAnswer": "143",
+   "shortcut": "ab = ((a+b)² − (a−b)²)/4",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q024",
+   "testNumber": 4,
+   "questionNumber": 24,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "(x + 9)(x + 6) का विस्तार (expansion) क्या है?",
+   "questionEn": "What is the expansion of (x + 9)(x + 6)?",
+   "options": {
+    "A": "x² + 15x + 54",
+    "B": "x² + 54x + 15",
+    "D": "x² − 15x + 54",
+    "C": "x² + 15x − 54"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "(x + a)(x + b) = x² + (a + b)x + ab",
+    "a = 9, b = 6",
+    "= x² + (9 + 6)x + 9 × 6",
+    "= x² + 15x + 54"
+   ],
+   "finalAnswer": "x² + 15x + 54",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q035",
+   "testNumber": 4,
+   "questionNumber": 35,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 6 और ab = 58 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 6 and ab = 58, find the value of a² + b².",
+   "options": {
+    "B": "-80",
+    "D": "-22",
+    "A": "152",
+    "C": "-68"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 6² − 2 × 58",
+    "= 36 − 116 = -80"
+   ],
+   "finalAnswer": "-80",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q048",
+   "testNumber": 4,
+   "questionNumber": 48,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं का योग 18 और अंतर 4 है। उनका गुणनफल ज्ञात कीजिए।",
+   "questionEn": "The sum of two numbers is 18 and their difference is 4. Find their product.",
+   "options": {
+    "C": "77",
+    "A": "72",
+    "D": "82",
+    "B": "154"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "संख्याएँ: a = (18 + 4)/2 = 11, b = (18 − 4)/2 = 7",
+    "गुणनफल = 11 × 7 = 77",
+    "सूत्र से: ab = [(a+b)² − (a−b)²]/4 = [324 − 16]/4 = 77"
+   ],
+   "finalAnswer": "77",
+   "shortcut": "ab = ((a+b)² − (a−b)²)/4",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q020",
+   "testNumber": 5,
+   "questionNumber": 20,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 25 और ab = 42 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 25 and ab = 42, find the value of a² + b².",
+   "options": {
+    "A": "541",
+    "C": "583",
+    "D": "591",
+    "B": "709"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 25² − 2 × 42",
+    "= 625 − 84 = 541"
+   ],
+   "finalAnswer": "541",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q028",
+   "testNumber": 5,
+   "questionNumber": 28,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं का योग 14 और अंतर 4 है। उनका गुणनफल ज्ञात कीजिए।",
+   "questionEn": "The sum of two numbers is 14 and their difference is 4. Find their product.",
+   "options": {
+    "A": "45",
+    "D": "56",
+    "C": "50",
+    "B": "90"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "संख्याएँ: a = (14 + 4)/2 = 9, b = (14 − 4)/2 = 5",
+    "गुणनफल = 9 × 5 = 45",
+    "सूत्र से: ab = [(a+b)² − (a−b)²]/4 = [196 − 16]/4 = 45"
+   ],
+   "finalAnswer": "45",
+   "shortcut": "ab = ((a+b)² − (a−b)²)/4",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q056",
+   "testNumber": 5,
+   "questionNumber": 56,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 12 तथा ab = 9 है, तो a³ + b³ का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 12 and ab = 9, find a³ + b³.",
+   "options": {
+    "D": "1404",
+    "C": "1701",
+    "B": "1440",
+    "A": "1728"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "a³ + b³ = (a + b)³ − 3ab(a + b)",
+    "= 12³ − 3 × 9 × 12",
+    "= 1728 − 324 = 1404"
+   ],
+   "finalAnswer": "1404",
+   "shortcut": "a³+b³ = (a+b)³ − 3ab(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q021",
+   "testNumber": 6,
+   "questionNumber": 21,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "समीकरण 4x + 19 = 87 को हल कीजिए तथा x का मान ज्ञात कीजिए।",
+   "questionEn": "Solve the equation 4x + 19 = 87 for x.",
+   "options": {
+    "A": "17",
+    "D": "18",
+    "B": "26.5",
+    "C": "16"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "4x + 19 = 87",
+    "4x = 87 − 19 = 68",
+    "x = 68/4 = 17"
+   ],
+   "finalAnswer": "17",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q043",
+   "testNumber": 6,
+   "questionNumber": 43,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि द्विघात समीकरण x² − 8x + 7 = 0 के मूल α और β हैं, तो α + β तथा αβ का मान क्रमशः क्या है?",
+   "questionEn": "If α and β are the roots of x² − 8x + 7 = 0, find α + β and αβ respectively.",
+   "options": {
+    "A": "8 और 7",
+    "B": "7 और 8",
+    "D": "−8 और 7",
+    "C": "8 और 15"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "x² − (मूलों का योग)x + (मूलों का गुणनफल) = 0",
+    "तुलना करने पर: α + β = 8, αβ = 7",
+    "(जाँच: मूल 7 और 1 हैं — 7 + 1 = 8, 7 × 1 = 7)"
+   ],
+   "finalAnswer": "8 और 7",
+   "shortcut": "ax²+bx+c=0 ⇒ योग = −b/a, गुणनफल = c/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q053",
+   "testNumber": 6,
+   "questionNumber": 53,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 5 है, तो x² + 1/x² का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 5, find the value of x² + 1/x².",
+   "options": {
+    "C": "23",
+    "B": "33",
+    "D": "25",
+    "A": "27"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "(x + 1/x)² = x² + 1/x² + 2",
+    "x² + 1/x² = (x + 1/x)² − 2",
+    "= 5² − 2 = 25 − 2 = 23"
+   ],
+   "finalAnswer": "23",
+   "shortcut": "x² + 1/x² = (x + 1/x)² − 2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q021",
+   "testNumber": 7,
+   "questionNumber": 21,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 14 और ab = 31 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 14 and ab = 31, find the value of a² + b².",
+   "options": {
+    "D": "134",
+    "C": "165",
+    "B": "162",
+    "A": "196"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 14² − 2 × 31",
+    "= 196 − 62 = 134"
+   ],
+   "finalAnswer": "134",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q047",
+   "testNumber": 7,
+   "questionNumber": 47,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 12 तथा a − b = -6 है, तो 4ab का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 12 and a − b = -6, find the value of 4ab.",
+   "options": {
+    "B": "108",
+    "C": "150",
+    "D": "54",
+    "A": "-72"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "(a + b)² − (a − b)² = 4ab",
+    "= 12² − -6²",
+    "= 144 − 36 = 108"
+   ],
+   "finalAnswer": "108",
+   "shortcut": "(a+b)² − (a−b)² = 4ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q052",
+   "testNumber": 7,
+   "questionNumber": 52,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 7 है, तो x² + 1/x² का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 7, find the value of x² + 1/x².",
+   "options": {
+    "D": "47",
+    "B": "45",
+    "C": "51",
+    "A": "61"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "(x + 1/x)² = x² + 1/x² + 2",
+    "x² + 1/x² = (x + 1/x)² − 2",
+    "= 7² − 2 = 49 − 2 = 47"
+   ],
+   "finalAnswer": "47",
+   "shortcut": "x² + 1/x² = (x + 1/x)² − 2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q017",
+   "testNumber": 8,
+   "questionNumber": 17,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 19 और ab = 11 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 19 and ab = 11, find the value of a² + b².",
+   "options": {
+    "D": "339",
+    "B": "377",
+    "C": "350",
+    "A": "383"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 19² − 2 × 11",
+    "= 361 − 22 = 339"
+   ],
+   "finalAnswer": "339",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q027",
+   "testNumber": 8,
+   "questionNumber": 27,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि द्विघात समीकरण x² − 13x + 40 = 0 के मूल α और β हैं, तो α + β तथा αβ का मान क्रमशः क्या है?",
+   "questionEn": "If α and β are the roots of x² − 13x + 40 = 0, find α + β and αβ respectively.",
+   "options": {
+    "A": "13 और 40",
+    "C": "40 और 13",
+    "B": "−13 और 40",
+    "D": "13 और 53"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "x² − (मूलों का योग)x + (मूलों का गुणनफल) = 0",
+    "तुलना करने पर: α + β = 13, αβ = 40",
+    "(जाँच: मूल 8 और 5 हैं — 8 + 5 = 13, 8 × 5 = 40)"
+   ],
+   "finalAnswer": "13 और 40",
+   "shortcut": "ax²+bx+c=0 ⇒ योग = −b/a, गुणनफल = c/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q051",
+   "testNumber": 8,
+   "questionNumber": 51,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 10 है, तो x² + 1/x² का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 10, find the value of x² + 1/x².",
+   "options": {
+    "D": "98",
+    "A": "118",
+    "C": "96",
+    "B": "100"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "(x + 1/x)² = x² + 1/x² + 2",
+    "x² + 1/x² = (x + 1/x)² − 2",
+    "= 10² − 2 = 100 − 2 = 98"
+   ],
+   "finalAnswer": "98",
+   "shortcut": "x² + 1/x² = (x + 1/x)² − 2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q026",
+   "testNumber": 9,
+   "questionNumber": 26,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "दो संख्याओं का योग 13 और अंतर 3 है। उनका गुणनफल ज्ञात कीजिए।",
+   "questionEn": "The sum of two numbers is 13 and their difference is 3. Find their product.",
+   "options": {
+    "B": "40",
+    "A": "43",
+    "C": "80",
+    "D": "39"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "संख्याएँ: a = (13 + 3)/2 = 8, b = (13 − 3)/2 = 5",
+    "गुणनफल = 8 × 5 = 40",
+    "सूत्र से: ab = [(a+b)² − (a−b)²]/4 = [169 − 9]/4 = 40"
+   ],
+   "finalAnswer": "40",
+   "shortcut": "ab = ((a+b)² − (a−b)²)/4",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q042",
+   "testNumber": 9,
+   "questionNumber": 42,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + y = 41 और x − y = 19 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If x + y = 41 and x − y = 19, find the value of x.",
+   "options": {
+    "D": "30",
+    "A": "19",
+    "C": "41",
+    "B": "11"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "दोनों समीकरणों को जोड़ें:",
+    "2x = 41 + 19 = 60",
+    "x = 60/2 = 30"
+   ],
+   "finalAnswer": "30",
+   "shortcut": "x = (योग + अंतर)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q057",
+   "testNumber": 9,
+   "questionNumber": 57,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 24 और ab = 32 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 24 and ab = 32, find the value of a² + b².",
+   "options": {
+    "C": "512",
+    "B": "640",
+    "D": "576",
+    "A": "560"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 24² − 2 × 32",
+    "= 576 − 64 = 512"
+   ],
+   "finalAnswer": "512",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q028",
+   "testNumber": 10,
+   "questionNumber": 28,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 14 तथा a − b = -4 है, तो 4ab का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 14 and a − b = -4, find the value of 4ab.",
+   "options": {
+    "D": "180",
+    "A": "90",
+    "B": "200",
+    "C": "-56"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "(a + b)² − (a − b)² = 4ab",
+    "= 14² − -4²",
+    "= 196 − 16 = 180"
+   ],
+   "finalAnswer": "180",
+   "shortcut": "(a+b)² − (a−b)² = 4ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q052",
+   "testNumber": 10,
+   "questionNumber": 52,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + y = 50 और x − y = 6 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If x + y = 50 and x − y = 6, find the value of x.",
+   "options": {
+    "A": "28",
+    "B": "6",
+    "C": "50",
+    "D": "22"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "दोनों समीकरणों को जोड़ें:",
+    "2x = 50 + 6 = 56",
+    "x = 56/2 = 28"
+   ],
+   "finalAnswer": "28",
+   "shortcut": "x = (योग + अंतर)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q053",
+   "testNumber": 10,
+   "questionNumber": 53,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि द्विघात समीकरण x² − 14x + 40 = 0 के मूल α और β हैं, तो α + β तथा αβ का मान क्रमशः क्या है?",
+   "questionEn": "If α and β are the roots of x² − 14x + 40 = 0, find α + β and αβ respectively.",
+   "options": {
+    "B": "14 और 40",
+    "C": "40 और 14",
+    "D": "−14 और 40",
+    "A": "14 और 54"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "x² − (मूलों का योग)x + (मूलों का गुणनफल) = 0",
+    "तुलना करने पर: α + β = 14, αβ = 40",
+    "(जाँच: मूल 4 और 10 हैं — 4 + 10 = 14, 4 × 10 = 40)"
+   ],
+   "finalAnswer": "14 और 40",
+   "shortcut": "ax²+bx+c=0 ⇒ योग = −b/a, गुणनफल = c/a",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q019",
+   "testNumber": 11,
+   "questionNumber": 19,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "द्विघात समीकरण x² − 13x + 40 = 0 को हल कीजिए। x के मान क्या हैं?",
+   "questionEn": "Solve the quadratic equation x² − 13x + 40 = 0. What are the values of x?",
+   "options": {
+    "A": "5 और 8",
+    "D": "-5 और -8",
+    "B": "5 और -8",
+    "C": "13 और 40"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "x² − 13x + 40 = 0",
+    "दो संख्याएँ ढूँढें जिनका योग 13 और गुणनफल 40 हो: 5 और 8",
+    "x² − 5x − 8x + 40 = 0 ⇒ (x − 5)(x − 8) = 0",
+    "x = 5 या x = 8"
+   ],
+   "finalAnswer": "5 और 8",
+   "shortcut": "मध्य पद विभाजित करें (x−α)(x−β) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q026",
+   "testNumber": 11,
+   "questionNumber": 26,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 14 और ab = 60 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 14 and ab = 60, find the value of a² + b².",
+   "options": {
+    "A": "76",
+    "D": "316",
+    "B": "136",
+    "C": "104"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 14² − 2 × 60",
+    "= 196 − 120 = 76"
+   ],
+   "finalAnswer": "76",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q030",
+   "testNumber": 11,
+   "questionNumber": 30,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + y = 11 और x − y = 5 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If x + y = 11 and x − y = 5, find the value of x.",
+   "options": {
+    "A": "8",
+    "B": "3",
+    "D": "5",
+    "C": "11"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "दोनों समीकरणों को जोड़ें:",
+    "2x = 11 + 5 = 16",
+    "x = 16/2 = 8"
+   ],
+   "finalAnswer": "8",
+   "shortcut": "x = (योग + अंतर)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q019",
+   "testNumber": 12,
+   "questionNumber": 19,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 4 है, तो x² + 1/x² का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 4, find the value of x² + 1/x².",
+   "options": {
+    "D": "14",
+    "A": "12",
+    "C": "18",
+    "B": "16"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "(x + 1/x)² = x² + 1/x² + 2",
+    "x² + 1/x² = (x + 1/x)² − 2",
+    "= 4² − 2 = 16 − 2 = 14"
+   ],
+   "finalAnswer": "14",
+   "shortcut": "x² + 1/x² = (x + 1/x)² − 2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q049",
+   "testNumber": 12,
+   "questionNumber": 49,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "द्विघात समीकरण x² − 9x + 14 = 0 को हल कीजिए। x के मान क्या हैं?",
+   "questionEn": "Solve the quadratic equation x² − 9x + 14 = 0. What are the values of x?",
+   "options": {
+    "B": "2 और 7",
+    "D": "-2 और -7",
+    "A": "2 और -7",
+    "C": "9 और 14"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "x² − 9x + 14 = 0",
+    "दो संख्याएँ ढूँढें जिनका योग 9 और गुणनफल 14 हो: 2 और 7",
+    "x² − 2x − 7x + 14 = 0 ⇒ (x − 2)(x − 7) = 0",
+    "x = 2 या x = 7"
+   ],
+   "finalAnswer": "2 और 7",
+   "shortcut": "मध्य पद विभाजित करें (x−α)(x−β) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q052",
+   "testNumber": 12,
+   "questionNumber": 52,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 3 तथा ab = 7 है, तो a³ + b³ का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 3 and ab = 7, find a³ + b³.",
+   "options": {
+    "C": "-36",
+    "A": "90",
+    "D": "-27",
+    "B": "27"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "a³ + b³ = (a + b)³ − 3ab(a + b)",
+    "= 3³ − 3 × 7 × 3",
+    "= 27 − 63 = -36"
+   ],
+   "finalAnswer": "-36",
+   "shortcut": "a³+b³ = (a+b)³ − 3ab(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q042",
+   "testNumber": 13,
+   "questionNumber": 42,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि बहुपद p(x) = x² + 11x + c, (x − 6) से पूर्णतः विभाज्य है, तो c का मान ज्ञात कीजिए।",
+   "questionEn": "If the polynomial p(x) = x² + 11x + c is exactly divisible by (x − 6), find the value of c.",
+   "options": {
+    "A": "-102",
+    "B": "-66",
+    "C": "-36",
+    "D": "102"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "शेषफल प्रमेय: (x − 6) से विभाज्यता के लिए p(6) = 0",
+    "p(6) = 6² + 11 × 6 + c = 0",
+    "36 + 66 + c = 0",
+    "c = −102 = -102"
+   ],
+   "finalAnswer": "-102",
+   "shortcut": "(x−k) से विभाज्य ⇒ p(k) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q047",
+   "testNumber": 13,
+   "questionNumber": 47,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "द्विघात समीकरण x² − 25x + 150 = 0 को हल कीजिए। x के मान क्या हैं?",
+   "questionEn": "Solve the quadratic equation x² − 25x + 150 = 0. What are the values of x?",
+   "options": {
+    "A": "10 और 15",
+    "D": "-10 और -15",
+    "B": "10 और -15",
+    "C": "25 और 150"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "x² − 25x + 150 = 0",
+    "दो संख्याएँ ढूँढें जिनका योग 25 और गुणनफल 150 हो: 10 और 15",
+    "x² − 10x − 15x + 150 = 0 ⇒ (x − 10)(x − 15) = 0",
+    "x = 10 या x = 15"
+   ],
+   "finalAnswer": "10 और 15",
+   "shortcut": "मध्य पद विभाजित करें (x−α)(x−β) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q057",
+   "testNumber": 13,
+   "questionNumber": 57,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 4 है, तो x³ + 1/x³ का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 4, find the value of x³ + 1/x³.",
+   "options": {
+    "A": "52",
+    "B": "61",
+    "C": "55",
+    "D": "64"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x)",
+    "= 4³ − 3 × 4",
+    "= 64 − 12 = 52"
+   ],
+   "finalAnswer": "52",
+   "shortcut": "x³+1/x³ = (x+1/x)³ − 3(x+1/x)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q024",
+   "testNumber": 14,
+   "questionNumber": 24,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 5 है, तो x³ + 1/x³ का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 5, find the value of x³ + 1/x³.",
+   "options": {
+    "D": "110",
+    "B": "113",
+    "A": "125",
+    "C": "122"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "सूत्र: x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x)",
+    "= 5³ − 3 × 5",
+    "= 125 − 15 = 110"
+   ],
+   "finalAnswer": "110",
+   "shortcut": "x³+1/x³ = (x+1/x)³ − 3(x+1/x)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q042",
+   "testNumber": 14,
+   "questionNumber": 42,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "द्विघात समीकरण x² − 16x + 28 = 0 को हल कीजिए। x के मान क्या हैं?",
+   "questionEn": "Solve the quadratic equation x² − 16x + 28 = 0. What are the values of x?",
+   "options": {
+    "C": "2 और 14",
+    "B": "-2 और -14",
+    "D": "2 और -14",
+    "A": "16 और 28"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "x² − 16x + 28 = 0",
+    "दो संख्याएँ ढूँढें जिनका योग 16 और गुणनफल 28 हो: 2 और 14",
+    "x² − 2x − 14x + 28 = 0 ⇒ (x − 2)(x − 14) = 0",
+    "x = 2 या x = 14"
+   ],
+   "finalAnswer": "2 और 14",
+   "shortcut": "मध्य पद विभाजित करें (x−α)(x−β) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q045",
+   "testNumber": 14,
+   "questionNumber": 45,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 4 तथा ab = 4 है, तो a³ + b³ का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 4 and ab = 4, find a³ + b³.",
+   "options": {
+    "B": "16",
+    "D": "52",
+    "C": "112",
+    "A": "28"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "a³ + b³ = (a + b)³ − 3ab(a + b)",
+    "= 4³ − 3 × 4 × 4",
+    "= 64 − 48 = 16"
+   ],
+   "finalAnswer": "16",
+   "shortcut": "a³+b³ = (a+b)³ − 3ab(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q010",
+   "testNumber": 15,
+   "questionNumber": 10,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "द्विघात समीकरण x² − 14x + 24 = 0 को हल कीजिए। x के मान क्या हैं?",
+   "questionEn": "Solve the quadratic equation x² − 14x + 24 = 0. What are the values of x?",
+   "options": {
+    "A": "2 और 12",
+    "B": "-2 और -12",
+    "C": "2 और -12",
+    "D": "14 और 24"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "x² − 14x + 24 = 0",
+    "दो संख्याएँ ढूँढें जिनका योग 14 और गुणनफल 24 हो: 2 और 12",
+    "x² − 2x − 12x + 24 = 0 ⇒ (x − 2)(x − 12) = 0",
+    "x = 2 या x = 12"
+   ],
+   "finalAnswer": "2 और 12",
+   "shortcut": "मध्य पद विभाजित करें (x−α)(x−β) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q043",
+   "testNumber": 15,
+   "questionNumber": 43,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 8 तथा ab = 11 है, तो a³ + b³ का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 8 and ab = 11, find a³ + b³.",
+   "options": {
+    "C": "248",
+    "D": "272",
+    "B": "512",
+    "A": "479"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "a³ + b³ = (a + b)³ − 3ab(a + b)",
+    "= 8³ − 3 × 11 × 8",
+    "= 512 − 264 = 248"
+   ],
+   "finalAnswer": "248",
+   "shortcut": "a³+b³ = (a+b)³ − 3ab(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q057",
+   "testNumber": 15,
+   "questionNumber": 57,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि बहुपद p(x) = x² + 9x + c, (x − 5) से पूर्णतः विभाज्य है, तो c का मान ज्ञात कीजिए।",
+   "questionEn": "If the polynomial p(x) = x² + 9x + c is exactly divisible by (x − 5), find the value of c.",
+   "options": {
+    "B": "-70",
+    "A": "-65",
+    "C": "-25",
+    "D": "70"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "शेषफल प्रमेय: (x − 5) से विभाज्यता के लिए p(5) = 0",
+    "p(5) = 5² + 9 × 5 + c = 0",
+    "25 + 45 + c = 0",
+    "c = −70 = -70"
+   ],
+   "finalAnswer": "-70",
+   "shortcut": "(x−k) से विभाज्य ⇒ p(k) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q010",
+   "testNumber": 16,
+   "questionNumber": 10,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 19 और ab = 23 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 19 and ab = 23, find the value of a² + b².",
+   "options": {
+    "B": "315",
+    "D": "361",
+    "A": "338",
+    "C": "407"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 19² − 2 × 23",
+    "= 361 − 46 = 315"
+   ],
+   "finalAnswer": "315",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q019",
+   "testNumber": 16,
+   "questionNumber": 19,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + y = 45 और x − y = 9 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If x + y = 45 and x − y = 9, find the value of x.",
+   "options": {
+    "D": "27",
+    "B": "45",
+    "A": "18",
+    "C": "9"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "दोनों समीकरणों को जोड़ें:",
+    "2x = 45 + 9 = 54",
+    "x = 54/2 = 27"
+   ],
+   "finalAnswer": "27",
+   "shortcut": "x = (योग + अंतर)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q050",
+   "testNumber": 16,
+   "questionNumber": 50,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 5 तथा ab = 4 है, तो a³ + b³ का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 5 and ab = 4, find a³ + b³.",
+   "options": {
+    "C": "65",
+    "D": "125",
+    "B": "113",
+    "A": "80"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "a³ + b³ = (a + b)³ − 3ab(a + b)",
+    "= 5³ − 3 × 4 × 5",
+    "= 125 − 60 = 65"
+   ],
+   "finalAnswer": "65",
+   "shortcut": "a³+b³ = (a+b)³ − 3ab(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q012",
+   "testNumber": 17,
+   "questionNumber": 12,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "द्विघात समीकरण x² − 5x + 6 = 0 को हल कीजिए। x के मान क्या हैं?",
+   "questionEn": "Solve the quadratic equation x² − 5x + 6 = 0. What are the values of x?",
+   "options": {
+    "B": "2 और 3",
+    "C": "-2 और -3",
+    "A": "2 और -3",
+    "D": "5 और 6"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "x² − 5x + 6 = 0",
+    "दो संख्याएँ ढूँढें जिनका योग 5 और गुणनफल 6 हो: 2 और 3",
+    "x² − 2x − 3x + 6 = 0 ⇒ (x − 2)(x − 3) = 0",
+    "x = 2 या x = 3"
+   ],
+   "finalAnswer": "2 और 3",
+   "shortcut": "मध्य पद विभाजित करें (x−α)(x−β) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q017",
+   "testNumber": 17,
+   "questionNumber": 17,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 29 और ab = 34 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 29 and ab = 34, find the value of a² + b².",
+   "options": {
+    "A": "773",
+    "B": "831",
+    "C": "807",
+    "D": "841"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 29² − 2 × 34",
+    "= 841 − 68 = 773"
+   ],
+   "finalAnswer": "773",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q023",
+   "testNumber": 17,
+   "questionNumber": 23,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि बहुपद p(x) = x² + 8x + c, (x − 5) से पूर्णतः विभाज्य है, तो c का मान ज्ञात कीजिए।",
+   "questionEn": "If the polynomial p(x) = x² + 8x + c is exactly divisible by (x − 5), find the value of c.",
+   "options": {
+    "D": "-65",
+    "C": "-40",
+    "B": "-25",
+    "A": "-60"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "शेषफल प्रमेय: (x − 5) से विभाज्यता के लिए p(5) = 0",
+    "p(5) = 5² + 8 × 5 + c = 0",
+    "25 + 40 + c = 0",
+    "c = −65 = -65"
+   ],
+   "finalAnswer": "-65",
+   "shortcut": "(x−k) से विभाज्य ⇒ p(k) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q012",
+   "testNumber": 18,
+   "questionNumber": 12,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि बहुपद p(x) = x² + 5x + c, (x − 5) से पूर्णतः विभाज्य है, तो c का मान ज्ञात कीजिए।",
+   "questionEn": "If the polynomial p(x) = x² + 5x + c is exactly divisible by (x − 5), find the value of c.",
+   "options": {
+    "D": "-50",
+    "A": "-45",
+    "B": "-25",
+    "C": "50"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "शेषफल प्रमेय: (x − 5) से विभाज्यता के लिए p(5) = 0",
+    "p(5) = 5² + 5 × 5 + c = 0",
+    "25 + 25 + c = 0",
+    "c = −50 = -50"
+   ],
+   "finalAnswer": "-50",
+   "shortcut": "(x−k) से विभाज्य ⇒ p(k) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q038",
+   "testNumber": 18,
+   "questionNumber": 38,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 6 तथा ab = 17 है, तो a³ + b³ का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 6 and ab = 17, find a³ + b³.",
+   "options": {
+    "B": "-90",
+    "D": "165",
+    "C": "-72",
+    "A": "522"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "a³ + b³ = (a + b)³ − 3ab(a + b)",
+    "= 6³ − 3 × 17 × 6",
+    "= 216 − 306 = -90"
+   ],
+   "finalAnswer": "-90",
+   "shortcut": "a³+b³ = (a+b)³ − 3ab(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q049",
+   "testNumber": 18,
+   "questionNumber": 49,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "द्विघात समीकरण x² − 14x + 33 = 0 को हल कीजिए। x के मान क्या हैं?",
+   "questionEn": "Solve the quadratic equation x² − 14x + 33 = 0. What are the values of x?",
+   "options": {
+    "D": "3 और 11",
+    "C": "-3 और -11",
+    "B": "3 और -11",
+    "A": "14 और 33"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "x² − 14x + 33 = 0",
+    "दो संख्याएँ ढूँढें जिनका योग 14 और गुणनफल 33 हो: 3 और 11",
+    "x² − 3x − 11x + 33 = 0 ⇒ (x − 3)(x − 11) = 0",
+    "x = 3 या x = 11"
+   ],
+   "finalAnswer": "3 और 11",
+   "shortcut": "मध्य पद विभाजित करें (x−α)(x−β) = 0",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q007",
+   "testNumber": 19,
+   "questionNumber": 7,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 3 है, तो x² + 1/x² का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 3, find the value of x² + 1/x².",
+   "options": {
+    "D": "7",
+    "B": "5",
+    "A": "13",
+    "C": "11"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "(x + 1/x)² = x² + 1/x² + 2",
+    "x² + 1/x² = (x + 1/x)² − 2",
+    "= 3² − 2 = 9 − 2 = 7"
+   ],
+   "finalAnswer": "7",
+   "shortcut": "x² + 1/x² = (x + 1/x)² − 2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q014",
+   "testNumber": 19,
+   "questionNumber": 14,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 13 और ab = 42 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 13 and ab = 42, find the value of a² + b².",
+   "options": {
+    "B": "85",
+    "C": "253",
+    "D": "111",
+    "A": "169"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 13² − 2 × 42",
+    "= 169 − 84 = 85"
+   ],
+   "finalAnswer": "85",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q027",
+   "testNumber": 19,
+   "questionNumber": 27,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि x + 1/x = 3 है, तो x³ + 1/x³ का मान ज्ञात कीजिए।",
+   "questionEn": "If x + 1/x = 3, find the value of x³ + 1/x³.",
+   "options": {
+    "B": "18",
+    "A": "27",
+    "C": "21",
+    "D": "24"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "सूत्र: x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x)",
+    "= 3³ − 3 × 3",
+    "= 27 − 9 = 18"
+   ],
+   "finalAnswer": "18",
+   "shortcut": "x³+1/x³ = (x+1/x)³ − 3(x+1/x)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q010",
+   "testNumber": 20,
+   "questionNumber": 10,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि x + y = 29 और x − y = 23 है, तो x का मान ज्ञात कीजिए।",
+   "questionEn": "If x + y = 29 and x − y = 23, find the value of x.",
+   "options": {
+    "C": "26",
+    "B": "3",
+    "A": "23",
+    "D": "29"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दोनों समीकरणों को जोड़ें:",
+    "2x = 29 + 23 = 52",
+    "x = 52/2 = 26"
+   ],
+   "finalAnswer": "26",
+   "shortcut": "x = (योग + अंतर)/2",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q027",
+   "testNumber": 20,
+   "questionNumber": 27,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 5 तथा ab = 11 है, तो a³ + b³ का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 5 and ab = 11, find a³ + b³.",
+   "options": {
+    "D": "-40",
+    "B": "290",
+    "A": "125",
+    "C": "-25"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "a³ + b³ = (a + b)³ − 3ab(a + b)",
+    "= 5³ − 3 × 11 × 5",
+    "= 125 − 165 = -40"
+   ],
+   "finalAnswer": "-40",
+   "shortcut": "a³+b³ = (a+b)³ − 3ab(a+b)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q034",
+   "testNumber": 20,
+   "questionNumber": 34,
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "यदि a + b = 10 और ab = 52 है, तो a² + b² का मान ज्ञात कीजिए।",
+   "questionEn": "If a + b = 10 and ab = 52, find the value of a² + b².",
+   "options": {
+    "A": "-4",
+    "B": "100",
+    "C": "204",
+    "D": "48"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "सूत्र: (a + b)² = a² + b² + 2ab",
+    "a² + b² = (a + b)² − 2ab",
+    "= 10² − 2 × 52",
+    "= 100 − 104 = -4"
+   ],
+   "finalAnswer": "-4",
+   "shortcut": "a²+b² = (a+b)² − 2ab",
+   "marks": 1
+  }
+ ]
+}

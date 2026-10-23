@@ -1,0 +1,279 @@
+{
+ "generatedAt": "2026-10-23T09:37:24.257Z",
+ "totalQuestions": 1200,
+ "totalTests": 20,
+ "questionsPerTest": 60,
+ "durationMinutes": 90,
+ "tests": [
+  {
+   "testNumber": 1,
+   "difficulty": "Easy to Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 2,
+   "difficulty": "Easy to Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 3,
+   "difficulty": "Easy to Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 4,
+   "difficulty": "Easy to Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 5,
+   "difficulty": "Easy to Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 6,
+   "difficulty": "Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 7,
+   "difficulty": "Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 8,
+   "difficulty": "Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 9,
+   "difficulty": "Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 10,
+   "difficulty": "Moderate",
+   "count": 60
+  },
+  {
+   "testNumber": 11,
+   "difficulty": "Moderate to Difficult",
+   "count": 60
+  },
+  {
+   "testNumber": 12,
+   "difficulty": "Moderate to Difficult",
+   "count": 60
+  },
+  {
+   "testNumber": 13,
+   "difficulty": "Moderate to Difficult",
+   "count": 60
+  },
+  {
+   "testNumber": 14,
+   "difficulty": "Moderate to Difficult",
+   "count": 60
+  },
+  {
+   "testNumber": 15,
+   "difficulty": "Moderate to Difficult",
+   "count": 60
+  },
+  {
+   "testNumber": 16,
+   "difficulty": "Difficult and Advanced",
+   "count": 60
+  },
+  {
+   "testNumber": 17,
+   "difficulty": "Difficult and Advanced",
+   "count": 60
+  },
+  {
+   "testNumber": 18,
+   "difficulty": "Difficult and Advanced",
+   "count": 60
+  },
+  {
+   "testNumber": 19,
+   "difficulty": "Difficult and Advanced",
+   "count": 60
+  },
+  {
+   "testNumber": 20,
+   "difficulty": "Difficult and Advanced",
+   "count": 60
+  }
+ ],
+ "topics": [
+  {
+   "topic": "Number System",
+   "topicHi": "संख्या पद्धति",
+   "slug": "number-system",
+   "count": 40
+  },
+  {
+   "topic": "Simplification",
+   "topicHi": "सरलीकरण",
+   "slug": "simplification",
+   "count": 40
+  },
+  {
+   "topic": "BODMAS",
+   "topicHi": "BODMAS (कोष्ठक)",
+   "slug": "bodmas",
+   "count": 40
+  },
+  {
+   "topic": "HCF and LCM",
+   "topicHi": "महत्तम समापवर्तक एवं लघुत्तम समापवर्त्य",
+   "slug": "hcf-lcm",
+   "count": 40
+  },
+  {
+   "topic": "Percentage",
+   "topicHi": "प्रतिशत",
+   "slug": "percentage",
+   "count": 60
+  },
+  {
+   "topic": "Profit and Loss",
+   "topicHi": "लाभ एवं हानि",
+   "slug": "profit-loss",
+   "count": 60
+  },
+  {
+   "topic": "Discount",
+   "topicHi": "छूट",
+   "slug": "discount",
+   "count": 40
+  },
+  {
+   "topic": "Ratio and Proportion",
+   "topicHi": "अनुपात एवं समानुपात",
+   "slug": "ratio-proportion",
+   "count": 40
+  },
+  {
+   "topic": "Average",
+   "topicHi": "औसत",
+   "slug": "average",
+   "count": 40
+  },
+  {
+   "topic": "Simple Interest",
+   "topicHi": "साधारण ब्याज",
+   "slug": "simple-interest",
+   "count": 40
+  },
+  {
+   "topic": "Compound Interest",
+   "topicHi": "चक्रवृद्धि ब्याज",
+   "slug": "compound-interest",
+   "count": 40
+  },
+  {
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "slug": "time-work",
+   "count": 40
+  },
+  {
+   "topic": "Pipes and Cisterns",
+   "topicHi": "पाइप एवं टंकी",
+   "slug": "pipes-cisterns",
+   "count": 40
+  },
+  {
+   "topic": "Time, Speed and Distance",
+   "topicHi": "समय, चाल एवं दूरी",
+   "slug": "time-speed-distance",
+   "count": 40
+  },
+  {
+   "topic": "Train Problems",
+   "topicHi": "रेलगाड़ी से संबंधित प्रश्न",
+   "slug": "trains",
+   "count": 40
+  },
+  {
+   "topic": "Boat and Stream",
+   "topicHi": "नाव एवं धारा",
+   "slug": "boat-stream",
+   "count": 40
+  },
+  {
+   "topic": "Algebra",
+   "topicHi": "बीजगणित",
+   "slug": "algebra",
+   "count": 60
+  },
+  {
+   "topic": "Geometry",
+   "topicHi": "ज्यामिति",
+   "slug": "geometry",
+   "count": 60
+  },
+  {
+   "topic": "Mensuration",
+   "topicHi": "क्षेत्रमिति",
+   "slug": "mensuration",
+   "count": 60
+  },
+  {
+   "topic": "Trigonometry",
+   "topicHi": "त्रिकोणमिति",
+   "slug": "trigonometry",
+   "count": 40
+  },
+  {
+   "topic": "Data Interpretation",
+   "topicHi": "आँकड़ों का विश्लेषण",
+   "slug": "data-interpretation",
+   "count": 40
+  },
+  {
+   "topic": "Statistics",
+   "topicHi": "सांख्यिकी",
+   "slug": "statistics",
+   "count": 40
+  },
+  {
+   "topic": "Age Problems",
+   "topicHi": "आयु संबंधी प्रश्न",
+   "slug": "age-problems",
+   "count": 40
+  },
+  {
+   "topic": "Mixture and Alligation",
+   "topicHi": "मिश्रण",
+   "slug": "mixture-alligation",
+   "count": 40
+  },
+  {
+   "topic": "Partnership",
+   "topicHi": "साझेदारी",
+   "slug": "partnership",
+   "count": 40
+  },
+  {
+   "topic": "Fractions and Decimals",
+   "topicHi": "भिन्न एवं दशमलव",
+   "slug": "fractions-decimals",
+   "count": 40
+  },
+  {
+   "topic": "Square Roots and Cube Roots",
+   "topicHi": "वर्गमूल एवं घनमूल",
+   "slug": "square-cube-roots",
+   "count": 40
+  },
+  {
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "slug": "coordinate-geometry",
+   "count": 20
+  }
+ ]
+}

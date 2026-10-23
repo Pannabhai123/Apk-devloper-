@@ -1,0 +1,523 @@
+{
+ "topic": "Coordinate Geometry",
+ "topicHi": "निर्देशांक ज्यामिति",
+ "slug": "coordinate-geometry",
+ "count": 20,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q003",
+   "testNumber": 1,
+   "questionNumber": 3,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-5, -2) और (-8, -6) के बीच की दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance between the points (-5, -2) and (-8, -6).",
+   "options": {
+    "A": "5 इकाई",
+    "C": "12 इकाई",
+    "D": "10 इकाई",
+    "B": "7 इकाई"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "दूरी = √[(x₂ − x₁)² + (y₂ − y₁)²]",
+    "x₂ − x₁ = -3, y₂ − y₁ = -4",
+    "दूरी = √(9 + 16) = √25 = 5 इकाई"
+   ],
+   "finalAnswer": "5 इकाई",
+   "shortcut": "दूरी सूत्र = √(Δx² + Δy²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q048",
+   "testNumber": 2,
+   "questionNumber": 48,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "बिंदु (-11, -8) किस चतुर्थांश (Quadrant) में स्थित है?",
+   "questionEn": "In which quadrant does the point (-11, -8) lie?",
+   "options": {
+    "C": "तृतीय (III)",
+    "D": "प्रथम (I)",
+    "A": "द्वितीय (II)",
+    "B": "चतुर्थ (IV)"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "बिंदु (-11, -8) में x-निर्देशांक ऋणात्मक तथा y-निर्देशांक ऋणात्मक है।",
+    "दोनों ऋणात्मक ⇒ तृतीय चतुर्थांश"
+   ],
+   "finalAnswer": "तृतीय (III)",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q001",
+   "testNumber": 3,
+   "questionNumber": 1,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-2, 5) और (5, -19) के बीच की दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance between the points (-2, 5) and (5, -19).",
+   "options": {
+    "C": "25 इकाई",
+    "B": "168 इकाई",
+    "D": "50 इकाई",
+    "A": "31 इकाई"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दूरी = √[(x₂ − x₁)² + (y₂ − y₁)²]",
+    "x₂ − x₁ = 7, y₂ − y₁ = -24",
+    "दूरी = √(49 + 576) = √625 = 25 इकाई"
+   ],
+   "finalAnswer": "25 इकाई",
+   "shortcut": "दूरी सूत्र = √(Δx² + Δy²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q012",
+   "testNumber": 4,
+   "questionNumber": 12,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (3, 2) और (-3, -6) के बीच की दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance between the points (3, 2) and (-3, -6).",
+   "options": {
+    "A": "10 इकाई",
+    "C": "20 इकाई",
+    "D": "48 इकाई",
+    "B": "14 इकाई"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "दूरी = √[(x₂ − x₁)² + (y₂ − y₁)²]",
+    "x₂ − x₁ = -6, y₂ − y₁ = -8",
+    "दूरी = √(36 + 64) = √100 = 10 इकाई"
+   ],
+   "finalAnswer": "10 इकाई",
+   "shortcut": "दूरी सूत्र = √(Δx² + Δy²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q040",
+   "testNumber": 5,
+   "questionNumber": 40,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-5, 2) और (15, -19) के बीच की दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance between the points (-5, 2) and (15, -19).",
+   "options": {
+    "C": "29 इकाई",
+    "B": "41 इकाई",
+    "A": "58 इकाई",
+    "D": "1 इकाई"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दूरी = √[(x₂ − x₁)² + (y₂ − y₁)²]",
+    "x₂ − x₁ = 20, y₂ − y₁ = -21",
+    "दूरी = √(400 + 441) = √841 = 29 इकाई"
+   ],
+   "finalAnswer": "29 इकाई",
+   "shortcut": "दूरी सूत्र = √(Δx² + Δy²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q028",
+   "testNumber": 6,
+   "questionNumber": 28,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-6, 6) और (-4, 4) से होकर जाने वाली रेखा की प्रवणता (Slope) ज्ञात कीजिए।",
+   "questionEn": "Find the slope of the line passing through (-6, 6) and (-4, 4).",
+   "options": {
+    "B": "-1",
+    "C": "1",
+    "D": "-1/2",
+    "A": "-2/3"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "प्रवणता m = (y₂ − y₁)/(x₂ − x₁)",
+    "= (4 − 6)/(-4 − -6)",
+    "= -2/2 = -1"
+   ],
+   "finalAnswer": "-1",
+   "shortcut": "m = Δy/Δx",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q027",
+   "testNumber": 7,
+   "questionNumber": 27,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (6, -8) और (2, -6) से होकर जाने वाली रेखा की प्रवणता (Slope) ज्ञात कीजिए।",
+   "questionEn": "Find the slope of the line passing through (6, -8) and (2, -6).",
+   "options": {
+    "B": "-1/2",
+    "C": "-2",
+    "D": "1/2",
+    "A": "-3/4"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "प्रवणता m = (y₂ − y₁)/(x₂ − x₁)",
+    "= (-6 − -8)/(2 − 6)",
+    "= 2/-4 = -1/2"
+   ],
+   "finalAnswer": "-1/2",
+   "shortcut": "m = Δy/Δx",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q041",
+   "testNumber": 8,
+   "questionNumber": 41,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-4, -2) और (-7, -6) के बीच की दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance between the points (-4, -2) and (-7, -6).",
+   "options": {
+    "C": "5 इकाई",
+    "D": "10 इकाई",
+    "A": "12 इकाई",
+    "B": "1 इकाई"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "दूरी = √[(x₂ − x₁)² + (y₂ − y₁)²]",
+    "x₂ − x₁ = -3, y₂ − y₁ = -4",
+    "दूरी = √(9 + 16) = √25 = 5 इकाई"
+   ],
+   "finalAnswer": "5 इकाई",
+   "shortcut": "दूरी सूत्र = √(Δx² + Δy²)",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q006",
+   "testNumber": 9,
+   "questionNumber": 6,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदु (-4, 10) की y-अक्ष से दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance of the point (-4, 10) from the y-axis.",
+   "options": {
+    "D": "4 इकाई",
+    "A": "10 इकाई",
+    "C": "14 इकाई",
+    "B": "11 इकाई"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "y-अक्ष से दूरी = |x-निर्देशांक|",
+    "= |-4| = 4 इकाई"
+   ],
+   "finalAnswer": "4 इकाई",
+   "shortcut": "y-अक्ष से दूरी = |x|; x-अक्ष से दूरी = |y|",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q021",
+   "testNumber": 10,
+   "questionNumber": 21,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदु (-9, 8) की y-अक्ष से दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance of the point (-9, 8) from the y-axis.",
+   "options": {
+    "A": "9 इकाई",
+    "D": "8 इकाई",
+    "C": "17 इकाई",
+    "B": "12 इकाई"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "y-अक्ष से दूरी = |x-निर्देशांक|",
+    "= |-9| = 9 इकाई"
+   ],
+   "finalAnswer": "9 इकाई",
+   "shortcut": "y-अक्ष से दूरी = |x|; x-अक्ष से दूरी = |y|",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q055",
+   "testNumber": 11,
+   "questionNumber": 55,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदु (-6, 3) की y-अक्ष से दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance of the point (-6, 3) from the y-axis.",
+   "options": {
+    "C": "6 इकाई",
+    "A": "3 इकाई",
+    "B": "9 इकाई",
+    "D": "7 इकाई"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "y-अक्ष से दूरी = |x-निर्देशांक|",
+    "= |-6| = 6 इकाई"
+   ],
+   "finalAnswer": "6 इकाई",
+   "shortcut": "y-अक्ष से दूरी = |x|; x-अक्ष से दूरी = |y|",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q004",
+   "testNumber": 12,
+   "questionNumber": 4,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-7, 5) और (-5, 10) से होकर जाने वाली रेखा की प्रवणता (Slope) ज्ञात कीजिए।",
+   "questionEn": "Find the slope of the line passing through (-7, 5) and (-5, 10).",
+   "options": {
+    "D": "5/2",
+    "A": "2/5",
+    "B": "-5/2",
+    "C": "3"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "प्रवणता m = (y₂ − y₁)/(x₂ − x₁)",
+    "= (10 − 5)/(-5 − -7)",
+    "= 5/2 = 5/2"
+   ],
+   "finalAnswer": "5/2",
+   "shortcut": "m = Δy/Δx",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q051",
+   "testNumber": 13,
+   "questionNumber": 51,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदु (5, 8) की y-अक्ष से दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance of the point (5, 8) from the y-axis.",
+   "options": {
+    "C": "5 इकाई",
+    "D": "8 इकाई",
+    "B": "13 इकाई",
+    "A": "9 इकाई"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "y-अक्ष से दूरी = |x-निर्देशांक|",
+    "= |5| = 5 इकाई"
+   ],
+   "finalAnswer": "5 इकाई",
+   "shortcut": "y-अक्ष से दूरी = |x|; x-अक्ष से दूरी = |y|",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q013",
+   "testNumber": 14,
+   "questionNumber": 13,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-2, 2), (10, 2) और (-2, 8) से बने त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Find the area of the triangle formed by the points (-2, 2), (10, 2) and (-2, 8).",
+   "options": {
+    "C": "36 वर्ग इकाई",
+    "A": "18 वर्ग इकाई",
+    "B": "38 वर्ग इकाई",
+    "D": "72 वर्ग इकाई"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "शोलेस (Shoelace) सूत्र: क्षेत्रफल = ½|x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|",
+    "= ½|-2(2 − 8) + 10(8 − 2) + -2(2 − 2)|",
+    "= ½|72| = ½ × 72 = 36 वर्ग इकाई",
+    "(ज्यामितीय जाँच: इस त्रिभुज की भुजाएँ 12 और 6 हैं ⇒ ½ × 12 × 6 = 36)"
+   ],
+   "finalAnswer": "36 वर्ग इकाई",
+   "shortcut": "शोलेस (Shoelace) सूत्र से क्षेत्रफल",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q011",
+   "testNumber": 15,
+   "questionNumber": 11,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदु (-11, 2) की y-अक्ष से दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance of the point (-11, 2) from the y-axis.",
+   "options": {
+    "A": "11 इकाई",
+    "C": "2 इकाई",
+    "D": "13 इकाई",
+    "B": "12 इकाई"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "y-अक्ष से दूरी = |x-निर्देशांक|",
+    "= |-11| = 11 इकाई"
+   ],
+   "finalAnswer": "11 इकाई",
+   "shortcut": "y-अक्ष से दूरी = |x|; x-अक्ष से दूरी = |y|",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q045",
+   "testNumber": 16,
+   "questionNumber": 45,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदु (-6, 7) की y-अक्ष से दूरी ज्ञात कीजिए।",
+   "questionEn": "Find the distance of the point (-6, 7) from the y-axis.",
+   "options": {
+    "D": "6 इकाई",
+    "B": "7 इकाई",
+    "C": "13 इकाई",
+    "A": "9 इकाई"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "y-अक्ष से दूरी = |x-निर्देशांक|",
+    "= |-6| = 6 इकाई"
+   ],
+   "finalAnswer": "6 इकाई",
+   "shortcut": "y-अक्ष से दूरी = |x|; x-अक्ष से दूरी = |y|",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q009",
+   "testNumber": 17,
+   "questionNumber": 9,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (4, -7) और (9, -4) से होकर जाने वाली रेखा की प्रवणता (Slope) ज्ञात कीजिए।",
+   "questionEn": "Find the slope of the line passing through (4, -7) and (9, -4).",
+   "options": {
+    "A": "3/5",
+    "D": "5/3",
+    "B": "-3/5",
+    "C": "4/5"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "प्रवणता m = (y₂ − y₁)/(x₂ − x₁)",
+    "= (-4 − -7)/(9 − 4)",
+    "= 3/5 = 3/5"
+   ],
+   "finalAnswer": "3/5",
+   "shortcut": "m = Δy/Δx",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q008",
+   "testNumber": 18,
+   "questionNumber": 8,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-3, 4) और (-7, 8) से होकर जाने वाली रेखा की प्रवणता (Slope) ज्ञात कीजिए।",
+   "questionEn": "Find the slope of the line passing through (-3, 4) and (-7, 8).",
+   "options": {
+    "A": "-1",
+    "B": "1",
+    "D": "-5/4",
+    "C": "-4/3"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "प्रवणता m = (y₂ − y₁)/(x₂ − x₁)",
+    "= (8 − 4)/(-7 − -3)",
+    "= 4/-4 = -1"
+   ],
+   "finalAnswer": "-1",
+   "shortcut": "m = Δy/Δx",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q047",
+   "testNumber": 19,
+   "questionNumber": 47,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (-3, -1), (1, -1) और (-3, 14) से बने त्रिभुज का क्षेत्रफल ज्ञात कीजिए।",
+   "questionEn": "Find the area of the triangle formed by the points (-3, -1), (1, -1) and (-3, 14).",
+   "options": {
+    "D": "30 वर्ग इकाई",
+    "C": "60 वर्ग इकाई",
+    "B": "19 वर्ग इकाई",
+    "A": "15 वर्ग इकाई"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "शोलेस (Shoelace) सूत्र: क्षेत्रफल = ½|x₁(y₂ − y₃) + x₂(y₃ − y₁) + x₃(y₁ − y₂)|",
+    "= ½|-3(-1 − 14) + 1(14 − -1) + -3(-1 − -1)|",
+    "= ½|60| = ½ × 60 = 30 वर्ग इकाई",
+    "(ज्यामितीय जाँच: इस त्रिभुज की भुजाएँ 4 और 15 हैं ⇒ ½ × 4 × 15 = 30)"
+   ],
+   "finalAnswer": "30 वर्ग इकाई",
+   "shortcut": "शोलेस (Shoelace) सूत्र से क्षेत्रफल",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q050",
+   "testNumber": 20,
+   "questionNumber": 50,
+   "topic": "Coordinate Geometry",
+   "topicHi": "निर्देशांक ज्यामिति",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "बिंदुओं (1, 3) और (4, 5) से होकर जाने वाली रेखा की प्रवणता (Slope) ज्ञात कीजिए।",
+   "questionEn": "Find the slope of the line passing through (1, 3) and (4, 5).",
+   "options": {
+    "A": "2/3",
+    "B": "3/2",
+    "D": "-2/3",
+    "C": "1"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "प्रवणता m = (y₂ − y₁)/(x₂ − x₁)",
+    "= (5 − 3)/(4 − 1)",
+    "= 2/3 = 2/3"
+   ],
+   "finalAnswer": "2/3",
+   "shortcut": "m = Δy/Δx",
+   "marks": 1
+  }
+ ]
+}

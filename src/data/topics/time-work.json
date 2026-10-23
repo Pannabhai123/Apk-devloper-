@@ -1,0 +1,1083 @@
+{
+ "topic": "Time and Work",
+ "topicHi": "समय एवं कार्य",
+ "slug": "time-work",
+ "count": 40,
+ "questions": [
+  {
+   "id": "ALP-MATH-T01-Q016",
+   "testNumber": 1,
+   "questionNumber": 16,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B और C एक कार्य को क्रमशः 10, 12 और 15 दिन में कर सकते हैं। तीनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A, B and C can do a work in 10, 12 and 15 days respectively. In how many days will they finish it together?",
+   "options": {
+    "B": "4 दिन",
+    "A": "2 दिन",
+    "C": "5 दिन",
+    "D": "12.3 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कार्य का LCM = 60 इकाई मान लें।",
+    "A = 60/10 = 6 इकाई/दिन, B = 5 = 5 इकाई/दिन, C = 4 = 4 इकाई/दिन",
+    "कुल = 6 + 5 + 4 = 15 इकाई/दिन",
+    "समय = 60/15 = 4 दिन"
+   ],
+   "finalAnswer": "4 दिन",
+   "shortcut": "LCM पद्धति से दरें जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T01-Q038",
+   "testNumber": 1,
+   "questionNumber": 38,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A एक कार्य को 12 दिन में और B उसी कार्य को 36 दिन में कर सकता है। दोनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A can do a work in 12 days and B in 36 days. In how many days will they complete the work together?",
+   "options": {
+    "C": "9 दिन",
+    "A": "48 दिन",
+    "B": "4.5 दिन",
+    "D": "24 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "A का 1 दिन का कार्य = 1/12",
+    "B का 1 दिन का कार्य = 1/36",
+    "साथ में 1 दिन का कार्य = 1/12 + 1/36 = 1/9",
+    "अभीष्ट समय = 12×36/(12+36) = 9 दिन"
+   ],
+   "finalAnswer": "9 दिन",
+   "shortcut": "एक साथ: ab/(a+b) दिन",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q015",
+   "testNumber": 2,
+   "questionNumber": 15,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A एक कार्य को 5 दिन में और B उसी कार्य को 20 दिन में कर सकता है। दोनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A can do a work in 5 days and B in 20 days. In how many days will they complete the work together?",
+   "options": {
+    "B": "4 दिन",
+    "C": "15 दिन",
+    "D": "25 दिन",
+    "A": "5 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A का 1 दिन का कार्य = 1/5",
+    "B का 1 दिन का कार्य = 1/20",
+    "साथ में 1 दिन का कार्य = 1/5 + 1/20 = 1/4",
+    "अभीष्ट समय = 5×20/(5+20) = 4 दिन"
+   ],
+   "finalAnswer": "4 दिन",
+   "shortcut": "एक साथ: ab/(a+b) दिन",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T02-Q054",
+   "testNumber": 2,
+   "questionNumber": 54,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 12 दिन में पूरा करते हैं। A अकेला वही कार्य 30 दिन में करता है। B अकेला उस कार्य को कितने दिन में करेगा?",
+   "questionEn": "A and B together complete a work in 12 days. A alone takes 30 days. How long will B alone take?",
+   "options": {
+    "C": "20 दिन",
+    "A": "32 दिन",
+    "D": "18 दिन",
+    "B": "12 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "(A + B) का 1 दिन का कार्य = 1/12",
+    "A का 1 दिन का कार्य = 1/30",
+    "B का 1 दिन का कार्य = 1/12 − 1/30 = 1/20 = 1/20",
+    "B अकेला = 20 दिन"
+   ],
+   "finalAnswer": "20 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q014",
+   "testNumber": 3,
+   "questionNumber": 14,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A एक कार्य को 30 दिन में और B उसी कार्य को 20 दिन में कर सकता है। दोनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A can do a work in 30 days and B in 20 days. In how many days will they complete the work together?",
+   "options": {
+    "B": "12 दिन",
+    "D": "25 दिन",
+    "C": "13 दिन",
+    "A": "50 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A का 1 दिन का कार्य = 1/30",
+    "B का 1 दिन का कार्य = 1/20",
+    "साथ में 1 दिन का कार्य = 1/30 + 1/20 = 1/12",
+    "अभीष्ट समय = 30×20/(30+20) = 12 दिन"
+   ],
+   "finalAnswer": "12 दिन",
+   "shortcut": "एक साथ: ab/(a+b) दिन",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T03-Q059",
+   "testNumber": 3,
+   "questionNumber": 59,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B की तुलना में 2 गुना कुशल (efficient) है और B अकेला एक कार्य 12 दिन में करता है। A और B मिलकर वह कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A is 2 times as efficient as B, and B alone can do a work in 12 days. In how many days will A and B finish the work together?",
+   "options": {
+    "C": "8 दिन",
+    "B": "12 दिन",
+    "D": "4 दिन",
+    "A": "6 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "B का समय = 12 दिन ⇒ A का समय = 12/2 = 12 दिन",
+    "A का 1 दिन कार्य = 2/12, B का = 1/12",
+    "साथ में = (2 + 1)/12 = 3/12 प्रतिदिन",
+    "समय = 12/3 = 8 दिन"
+   ],
+   "finalAnswer": "8 दिन",
+   "shortcut": "कुशलता k गुना ⇒ समय 1/k गुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q021",
+   "testNumber": 4,
+   "questionNumber": 21,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "12 आदमी एक कार्य 20 दिन में पूरा करते हैं। 6 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "12 men complete a work in 20 days. In how many days will 6 men complete the same work?",
+   "options": {
+    "C": "40 दिन",
+    "D": "20 दिन",
+    "B": "42 दिन",
+    "A": "80 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "12 × 20 = 6 × D₂",
+    "D₂ = 240/6 = 40 दिन"
+   ],
+   "finalAnswer": "40 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T04-Q023",
+   "testNumber": 4,
+   "questionNumber": 23,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B की तुलना में 2 गुना कुशल (efficient) है और B अकेला एक कार्य 30 दिन में करता है। A और B मिलकर वह कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A is 2 times as efficient as B, and B alone can do a work in 30 days. In how many days will A and B finish the work together?",
+   "options": {
+    "C": "20 दिन",
+    "A": "21 दिन",
+    "D": "30 दिन",
+    "B": "10 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "B का समय = 30 दिन ⇒ A का समय = 30/2 = 30 दिन",
+    "A का 1 दिन कार्य = 2/30, B का = 1/30",
+    "साथ में = (2 + 1)/30 = 3/30 प्रतिदिन",
+    "समय = 30/3 = 20 दिन"
+   ],
+   "finalAnswer": "20 दिन",
+   "shortcut": "कुशलता k गुना ⇒ समय 1/k गुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q006",
+   "testNumber": 5,
+   "questionNumber": 6,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B और C एक कार्य को क्रमशः 18, 24 और 36 दिन में कर सकते हैं। तीनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A, B and C can do a work in 18, 24 and 36 days respectively. In how many days will they finish it together?",
+   "options": {
+    "A": "8 दिन",
+    "C": "4 दिन",
+    "B": "9 दिन",
+    "D": "26 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कार्य का LCM = 72 इकाई मान लें।",
+    "A = 72/18 = 4 इकाई/दिन, B = 3 = 3 इकाई/दिन, C = 2 = 2 इकाई/दिन",
+    "कुल = 4 + 3 + 2 = 9 इकाई/दिन",
+    "समय = 72/9 = 8 दिन"
+   ],
+   "finalAnswer": "8 दिन",
+   "shortcut": "LCM पद्धति से दरें जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T05-Q030",
+   "testNumber": 5,
+   "questionNumber": 30,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Easy",
+   "language": "Hindi-English",
+   "question": "A एक कार्य को 21 दिन में और B उसी कार्य को 28 दिन में कर सकता है। दोनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A can do a work in 21 days and B in 28 days. In how many days will they complete the work together?",
+   "options": {
+    "B": "12 दिन",
+    "A": "24.5 दिन",
+    "D": "7 दिन",
+    "C": "6 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A का 1 दिन का कार्य = 1/21",
+    "B का 1 दिन का कार्य = 1/28",
+    "साथ में 1 दिन का कार्य = 1/21 + 1/28 = 1/12",
+    "अभीष्ट समय = 21×28/(21+28) = 12 दिन"
+   ],
+   "finalAnswer": "12 दिन",
+   "shortcut": "एक साथ: ab/(a+b) दिन",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q046",
+   "testNumber": 6,
+   "questionNumber": 46,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "12 आदमी एक कार्य 16 दिन में पूरा करते हैं। 16 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "12 men complete a work in 16 days. In how many days will 16 men complete the same work?",
+   "options": {
+    "A": "12 दिन",
+    "D": "16 दिन",
+    "C": "14 दिन",
+    "B": "24 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "12 × 16 = 16 × D₂",
+    "D₂ = 192/16 = 12 दिन"
+   ],
+   "finalAnswer": "12 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T06-Q059",
+   "testNumber": 6,
+   "questionNumber": 59,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A एक कार्य 9 दिन में तथा B 18 दिन में करता है। दोनों मिलकर कार्य पूरा करते हैं और 8400 रुपये मज़दूरी मिलती है। B को कितनी मज़दूरी मिलेगी?",
+   "questionEn": "A does a work in 9 days and B in 18 days. They finish it together and receive ₹8400 as wages. How much does B receive?",
+   "options": {
+    "C": "₹2800",
+    "D": "₹4200",
+    "B": "₹5600",
+    "A": "₹1400"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "मज़दूरी ∞ कार्य-दर (1/समय)",
+    "A : B की दरें = 1/9 : 1/18 = 18 : 9",
+    "B का हिस्सा = 8400 × 9/(9 + 18) = ₹2800"
+   ],
+   "finalAnswer": "₹2800",
+   "shortcut": "मज़दूरी अनुपात = दक्षता अनुपात",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q020",
+   "testNumber": 7,
+   "questionNumber": 20,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B की तुलना में 2 गुना कुशल (efficient) है और B अकेला एक कार्य 24 दिन में करता है। A और B मिलकर वह कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A is 2 times as efficient as B, and B alone can do a work in 24 days. In how many days will A and B finish the work together?",
+   "options": {
+    "C": "16 दिन",
+    "A": "8 दिन",
+    "B": "12 दिन",
+    "D": "17 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "B का समय = 24 दिन ⇒ A का समय = 24/2 = 24 दिन",
+    "A का 1 दिन कार्य = 2/24, B का = 1/24",
+    "साथ में = (2 + 1)/24 = 3/24 प्रतिदिन",
+    "समय = 24/3 = 16 दिन"
+   ],
+   "finalAnswer": "16 दिन",
+   "shortcut": "कुशलता k गुना ⇒ समय 1/k गुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T07-Q033",
+   "testNumber": 7,
+   "questionNumber": 33,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B और C एक कार्य को क्रमशः 24, 40 और 60 दिन में कर सकते हैं। तीनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A, B and C can do a work in 24, 40 and 60 days respectively. In how many days will they finish it together?",
+   "options": {
+    "A": "12 दिन",
+    "C": "13 दिन",
+    "B": "41.3 दिन",
+    "D": "24 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कार्य का LCM = 120 इकाई मान लें।",
+    "A = 120/24 = 5 इकाई/दिन, B = 3 = 3 इकाई/दिन, C = 2 = 2 इकाई/दिन",
+    "कुल = 5 + 3 + 2 = 10 इकाई/दिन",
+    "समय = 120/10 = 12 दिन"
+   ],
+   "finalAnswer": "12 दिन",
+   "shortcut": "LCM पद्धति से दरें जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q039",
+   "testNumber": 8,
+   "questionNumber": 39,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "12 आदमी एक कार्य 30 दिन में पूरा करते हैं। 6 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "12 men complete a work in 30 days. In how many days will 6 men complete the same work?",
+   "options": {
+    "C": "60 दिन",
+    "B": "30 दिन",
+    "A": "120 दिन",
+    "D": "62 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "12 × 30 = 6 × D₂",
+    "D₂ = 360/6 = 60 दिन"
+   ],
+   "finalAnswer": "60 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T08-Q047",
+   "testNumber": 8,
+   "questionNumber": 47,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B और C एक कार्य को क्रमशः 12, 20 और 30 दिन में कर सकते हैं। तीनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A, B and C can do a work in 12, 20 and 30 days respectively. In how many days will they finish it together?",
+   "options": {
+    "A": "6 दिन",
+    "B": "20.7 दिन",
+    "C": "3 दिन",
+    "D": "7 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कार्य का LCM = 60 इकाई मान लें।",
+    "A = 60/12 = 5 इकाई/दिन, B = 3 = 3 इकाई/दिन, C = 2 = 2 इकाई/दिन",
+    "कुल = 5 + 3 + 2 = 10 इकाई/दिन",
+    "समय = 60/10 = 6 दिन"
+   ],
+   "finalAnswer": "6 दिन",
+   "shortcut": "LCM पद्धति से दरें जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q003",
+   "testNumber": 9,
+   "questionNumber": 3,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 9 दिन में पूरा करते हैं। A अकेला वही कार्य 12 दिन में करता है। B अकेला उस कार्य को कितने दिन में करेगा?",
+   "questionEn": "A and B together complete a work in 9 days. A alone takes 12 days. How long will B alone take?",
+   "options": {
+    "B": "36 दिन",
+    "C": "3 दिन",
+    "D": "9 दिन",
+    "A": "45 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "(A + B) का 1 दिन का कार्य = 1/9",
+    "A का 1 दिन का कार्य = 1/12",
+    "B का 1 दिन का कार्य = 1/9 − 1/12 = 1/36 = 1/36",
+    "B अकेला = 36 दिन"
+   ],
+   "finalAnswer": "36 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T09-Q024",
+   "testNumber": 9,
+   "questionNumber": 24,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B की तुलना में 2 गुना कुशल (efficient) है और B अकेला एक कार्य 6 दिन में करता है। A और B मिलकर वह कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A is 2 times as efficient as B, and B alone can do a work in 6 days. In how many days will A and B finish the work together?",
+   "options": {
+    "B": "4 दिन",
+    "D": "3 दिन",
+    "C": "2 दिन",
+    "A": "6 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "B का समय = 6 दिन ⇒ A का समय = 6/2 = 6 दिन",
+    "A का 1 दिन कार्य = 2/6, B का = 1/6",
+    "साथ में = (2 + 1)/6 = 3/6 प्रतिदिन",
+    "समय = 6/3 = 4 दिन"
+   ],
+   "finalAnswer": "4 दिन",
+   "shortcut": "कुशलता k गुना ⇒ समय 1/k गुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q014",
+   "testNumber": 10,
+   "questionNumber": 14,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B की तुलना में 2 गुना कुशल (efficient) है और B अकेला एक कार्य 15 दिन में करता है। A और B मिलकर वह कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A is 2 times as efficient as B, and B alone can do a work in 15 days. In how many days will A and B finish the work together?",
+   "options": {
+    "C": "10 दिन",
+    "D": "11 दिन",
+    "A": "7.5 दिन",
+    "B": "15 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "B का समय = 15 दिन ⇒ A का समय = 15/2 = 15 दिन",
+    "A का 1 दिन कार्य = 2/15, B का = 1/15",
+    "साथ में = (2 + 1)/15 = 3/15 प्रतिदिन",
+    "समय = 15/3 = 10 दिन"
+   ],
+   "finalAnswer": "10 दिन",
+   "shortcut": "कुशलता k गुना ⇒ समय 1/k गुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T10-Q044",
+   "testNumber": 10,
+   "questionNumber": 44,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "18 आदमी एक कार्य 12 दिन में पूरा करते हैं। 36 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "18 men complete a work in 12 days. In how many days will 36 men complete the same work?",
+   "options": {
+    "B": "6 दिन",
+    "D": "3 दिन",
+    "A": "12 दिन",
+    "C": "8 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "18 × 12 = 36 × D₂",
+    "D₂ = 216/36 = 6 दिन"
+   ],
+   "finalAnswer": "6 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q003",
+   "testNumber": 11,
+   "questionNumber": 3,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 12 दिन में पूरा करते हैं। A अकेला वही कार्य 20 दिन में करता है। B अकेला उस कार्य को कितने दिन में करेगा?",
+   "questionEn": "A and B together complete a work in 12 days. A alone takes 20 days. How long will B alone take?",
+   "options": {
+    "C": "30 दिन",
+    "A": "8 दिन",
+    "B": "15 दिन",
+    "D": "12 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "(A + B) का 1 दिन का कार्य = 1/12",
+    "A का 1 दिन का कार्य = 1/20",
+    "B का 1 दिन का कार्य = 1/12 − 1/20 = 1/30 = 1/30",
+    "B अकेला = 30 दिन"
+   ],
+   "finalAnswer": "30 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T11-Q036",
+   "testNumber": 11,
+   "questionNumber": 36,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 4 दिन में पूरा कर सकते हैं और A अकेला उसी कार्य को 6 दिन में करता है। वे एक साथ कार्य शुरू करते हैं, परंतु 1 दिन बाद A कार्य छोड़ देता है। शेष कार्य B अकेला कितने दिन में पूरा करेगा?",
+   "questionEn": "A and B together can do a work in 4 days, and A alone can do it in 6 days. They start together, but A leaves after 1 days. In how many days will B alone finish the remaining work?",
+   "options": {
+    "D": "9 दिन",
+    "B": "2 दिन",
+    "A": "3 दिन",
+    "C": "10 दिन"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A और B की संयुक्त दर = 1/4 प्रतिदिन",
+    "1 दिन में पूर्ण कार्य = 1/4 = 1/4",
+    "शेष कार्य = 1 − 1/4 = 3/4",
+    "B का अकेला समय = 12 दिन (∵ A अकेला 6 दिन में करता है, संयुक्त 4 दिन)",
+    "शेष कार्य का समय = 3/4 × 12 = 9 दिन"
+   ],
+   "finalAnswer": "9 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q038",
+   "testNumber": 12,
+   "questionNumber": 38,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "25 आदमी एक कार्य 24 दिन में पूरा करते हैं। 50 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "25 men complete a work in 24 days. In how many days will 50 men complete the same work?",
+   "options": {
+    "B": "12 दिन",
+    "C": "24 दिन",
+    "A": "14 दिन",
+    "D": "6 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "25 × 24 = 50 × D₂",
+    "D₂ = 600/50 = 12 दिन"
+   ],
+   "finalAnswer": "12 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T12-Q043",
+   "testNumber": 12,
+   "questionNumber": 43,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 24 दिन में पूरा करते हैं। A अकेला वही कार्य 40 दिन में करता है। B अकेला उस कार्य को कितने दिन में करेगा?",
+   "questionEn": "A and B together complete a work in 24 days. A alone takes 40 days. How long will B alone take?",
+   "options": {
+    "B": "60 दिन",
+    "C": "84 दिन",
+    "D": "24 दिन",
+    "A": "16 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "(A + B) का 1 दिन का कार्य = 1/24",
+    "A का 1 दिन का कार्य = 1/40",
+    "B का 1 दिन का कार्य = 1/24 − 1/40 = 1/60 = 1/60",
+    "B अकेला = 60 दिन"
+   ],
+   "finalAnswer": "60 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q019",
+   "testNumber": 13,
+   "questionNumber": 19,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 12 दिन में पूरा करते हैं। A अकेला वही कार्य 21 दिन में करता है। B अकेला उस कार्य को कितने दिन में करेगा?",
+   "questionEn": "A and B together complete a work in 12 days. A alone takes 21 days. How long will B alone take?",
+   "options": {
+    "A": "28 दिन",
+    "C": "9 दिन",
+    "B": "14 दिन",
+    "D": "40 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "(A + B) का 1 दिन का कार्य = 1/12",
+    "A का 1 दिन का कार्य = 1/21",
+    "B का 1 दिन का कार्य = 1/12 − 1/21 = 1/28 = 1/28",
+    "B अकेला = 28 दिन"
+   ],
+   "finalAnswer": "28 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T13-Q026",
+   "testNumber": 13,
+   "questionNumber": 26,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B और C एक कार्य को क्रमशः 20, 30 और 60 दिन में कर सकते हैं। तीनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A, B and C can do a work in 20, 30 and 60 days respectively. In how many days will they finish it together?",
+   "options": {
+    "A": "10 दिन",
+    "C": "36.7 दिन",
+    "B": "5 दिन",
+    "D": "11 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कार्य का LCM = 60 इकाई मान लें।",
+    "A = 60/20 = 3 इकाई/दिन, B = 2 = 2 इकाई/दिन, C = 1 = 1 इकाई/दिन",
+    "कुल = 3 + 2 + 1 = 6 इकाई/दिन",
+    "समय = 60/6 = 10 दिन"
+   ],
+   "finalAnswer": "10 दिन",
+   "shortcut": "LCM पद्धति से दरें जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q022",
+   "testNumber": 14,
+   "questionNumber": 22,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B और C एक कार्य को क्रमशः 10, 15 और 30 दिन में कर सकते हैं। तीनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A, B and C can do a work in 10, 15 and 30 days respectively. In how many days will they finish it together?",
+   "options": {
+    "A": "5 दिन",
+    "D": "18.3 दिन",
+    "C": "6 दिन",
+    "B": "10 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "कार्य का LCM = 30 इकाई मान लें।",
+    "A = 30/10 = 3 इकाई/दिन, B = 2 = 2 इकाई/दिन, C = 1 = 1 इकाई/दिन",
+    "कुल = 3 + 2 + 1 = 6 इकाई/दिन",
+    "समय = 30/6 = 5 दिन"
+   ],
+   "finalAnswer": "5 दिन",
+   "shortcut": "LCM पद्धति से दरें जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T14-Q048",
+   "testNumber": 14,
+   "questionNumber": 48,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 9 दिन में पूरा कर सकते हैं और A अकेला उसी कार्य को 12 दिन में करता है। वे एक साथ कार्य शुरू करते हैं, परंतु 4 दिन बाद A कार्य छोड़ देता है। शेष कार्य B अकेला कितने दिन में पूरा करेगा?",
+   "questionEn": "A and B together can do a work in 9 days, and A alone can do it in 12 days. They start together, but A leaves after 4 days. In how many days will B alone finish the remaining work?",
+   "options": {
+    "B": "20 दिन",
+    "C": "3 दिन",
+    "D": "21 दिन",
+    "A": "36 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A और B की संयुक्त दर = 1/9 प्रतिदिन",
+    "4 दिन में पूर्ण कार्य = 4/9 = 4/9",
+    "शेष कार्य = 1 − 4/9 = 5/9",
+    "B का अकेला समय = 36 दिन (∵ A अकेला 12 दिन में करता है, संयुक्त 9 दिन)",
+    "शेष कार्य का समय = 5/9 × 36 = 20 दिन"
+   ],
+   "finalAnswer": "20 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q018",
+   "testNumber": 15,
+   "questionNumber": 18,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "18 आदमी एक कार्य 15 दिन में पूरा करते हैं। 9 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "18 men complete a work in 15 days. In how many days will 9 men complete the same work?",
+   "options": {
+    "A": "30 दिन",
+    "D": "60 दिन",
+    "C": "15 दिन",
+    "B": "32 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "18 × 15 = 9 × D₂",
+    "D₂ = 270/9 = 30 दिन"
+   ],
+   "finalAnswer": "30 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T15-Q040",
+   "testNumber": 15,
+   "questionNumber": 40,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 6 दिन में पूरा करते हैं। A अकेला वही कार्य 10 दिन में करता है। B अकेला उस कार्य को कितने दिन में करेगा?",
+   "questionEn": "A and B together complete a work in 6 days. A alone takes 10 days. How long will B alone take?",
+   "options": {
+    "A": "15 दिन",
+    "C": "6 दिन",
+    "D": "4 दिन",
+    "B": "7.5 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "(A + B) का 1 दिन का कार्य = 1/6",
+    "A का 1 दिन का कार्य = 1/10",
+    "B का 1 दिन का कार्य = 1/6 − 1/10 = 1/15 = 1/15",
+    "B अकेला = 15 दिन"
+   ],
+   "finalAnswer": "15 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q054",
+   "testNumber": 16,
+   "questionNumber": 54,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 10 दिन में पूरा करते हैं। A अकेला वही कार्य 14 दिन में करता है। B अकेला उस कार्य को कितने दिन में करेगा?",
+   "questionEn": "A and B together complete a work in 10 days. A alone takes 14 days. How long will B alone take?",
+   "options": {
+    "C": "35 दिन",
+    "D": "45 दिन",
+    "A": "10 दिन",
+    "B": "4 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "(A + B) का 1 दिन का कार्य = 1/10",
+    "A का 1 दिन का कार्य = 1/14",
+    "B का 1 दिन का कार्य = 1/10 − 1/14 = 1/35 = 1/35",
+    "B अकेला = 35 दिन"
+   ],
+   "finalAnswer": "35 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T16-Q060",
+   "testNumber": 16,
+   "questionNumber": 60,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "18 आदमी एक कार्य 24 दिन में पूरा करते हैं। 36 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "18 men complete a work in 24 days. In how many days will 36 men complete the same work?",
+   "options": {
+    "B": "12 दिन",
+    "C": "6 दिन",
+    "D": "24 दिन",
+    "A": "14 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "18 × 24 = 36 × D₂",
+    "D₂ = 432/36 = 12 दिन"
+   ],
+   "finalAnswer": "12 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q003",
+   "testNumber": 17,
+   "questionNumber": 3,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 10 दिन में पूरा कर सकते हैं और A अकेला उसी कार्य को 14 दिन में करता है। वे एक साथ कार्य शुरू करते हैं, परंतु 4 दिन बाद A कार्य छोड़ देता है। शेष कार्य B अकेला कितने दिन में पूरा करेगा?",
+   "questionEn": "A and B together can do a work in 10 days, and A alone can do it in 14 days. They start together, but A leaves after 4 days. In how many days will B alone finish the remaining work?",
+   "options": {
+    "D": "21 दिन",
+    "A": "3 दिन",
+    "B": "35 दिन",
+    "C": "6 दिन"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "A और B की संयुक्त दर = 1/10 प्रतिदिन",
+    "4 दिन में पूर्ण कार्य = 4/10 = 2/5",
+    "शेष कार्य = 1 − 2/5 = 3/5",
+    "B का अकेला समय = 35 दिन (∵ A अकेला 14 दिन में करता है, संयुक्त 10 दिन)",
+    "शेष कार्य का समय = 3/5 × 35 = 21 दिन"
+   ],
+   "finalAnswer": "21 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T17-Q052",
+   "testNumber": 17,
+   "questionNumber": 52,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B और C एक कार्य को क्रमशः 12, 15 और 20 दिन में कर सकते हैं। तीनों मिलकर कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A, B and C can do a work in 12, 15 and 20 days respectively. In how many days will they finish it together?",
+   "options": {
+    "B": "5 दिन",
+    "A": "12 दिन",
+    "D": "2.5 दिन",
+    "C": "15.7 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "कार्य का LCM = 60 इकाई मान लें।",
+    "A = 60/12 = 5 इकाई/दिन, B = 4 = 4 इकाई/दिन, C = 3 = 3 इकाई/दिन",
+    "कुल = 5 + 4 + 3 = 12 इकाई/दिन",
+    "समय = 60/12 = 5 दिन"
+   ],
+   "finalAnswer": "5 दिन",
+   "shortcut": "LCM पद्धति से दरें जोड़ें।",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q018",
+   "testNumber": 18,
+   "questionNumber": 18,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 9 दिन में पूरा कर सकते हैं और A अकेला उसी कार्य को 12 दिन में करता है। वे एक साथ कार्य शुरू करते हैं, परंतु 7 दिन बाद A कार्य छोड़ देता है। शेष कार्य B अकेला कितने दिन में पूरा करेगा?",
+   "questionEn": "A and B together can do a work in 9 days, and A alone can do it in 12 days. They start together, but A leaves after 7 days. In how many days will B alone finish the remaining work?",
+   "options": {
+    "C": "8 दिन",
+    "A": "36 दिन",
+    "D": "1 दिन",
+    "B": "2 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "A और B की संयुक्त दर = 1/9 प्रतिदिन",
+    "7 दिन में पूर्ण कार्य = 7/9 = 7/9",
+    "शेष कार्य = 1 − 7/9 = 2/9",
+    "B का अकेला समय = 36 दिन (∵ A अकेला 12 दिन में करता है, संयुक्त 9 दिन)",
+    "शेष कार्य का समय = 2/9 × 36 = 8 दिन"
+   ],
+   "finalAnswer": "8 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T18-Q055",
+   "testNumber": 18,
+   "questionNumber": 55,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "12 आदमी एक कार्य 24 दिन में पूरा करते हैं। 16 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "12 men complete a work in 24 days. In how many days will 16 men complete the same work?",
+   "options": {
+    "C": "18 दिन",
+    "A": "20 दिन",
+    "B": "36 दिन",
+    "D": "9 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "12 × 24 = 16 × D₂",
+    "D₂ = 288/16 = 18 दिन"
+   ],
+   "finalAnswer": "18 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q015",
+   "testNumber": 19,
+   "questionNumber": 15,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "30 आदमी एक कार्य 30 दिन में पूरा करते हैं। 15 आदमी वही कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "30 men complete a work in 30 days. In how many days will 15 men complete the same work?",
+   "options": {
+    "A": "60 दिन",
+    "B": "30 दिन",
+    "C": "120 दिन",
+    "D": "62 दिन"
+   },
+   "correctAnswer": "A",
+   "solution": [
+    "M₁ × D₁ = M₂ × D₂ (कार्य समान)",
+    "30 × 30 = 15 × D₂",
+    "D₂ = 900/15 = 60 दिन"
+   ],
+   "finalAnswer": "60 दिन",
+   "shortcut": "M₁D₁ = M₂D₂",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T19-Q054",
+   "testNumber": 19,
+   "questionNumber": 54,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 8.571428571428571 दिन में पूरा करते हैं। A अकेला वही कार्य 15 दिन में करता है। B अकेला उस कार्य को कितने दिन में करेगा?",
+   "questionEn": "A and B together complete a work in 8.571428571428571 days. A alone takes 15 days. How long will B alone take?",
+   "options": {
+    "C": "20 दिन",
+    "A": "8.57 दिन",
+    "B": "10 दिन",
+    "D": "6.43 दिन"
+   },
+   "correctAnswer": "C",
+   "solution": [
+    "(A + B) का 1 दिन का कार्य = 1/8.571428571428571",
+    "A का 1 दिन का कार्य = 1/15",
+    "B का 1 दिन का कार्य = 1/8.571428571428571 − 1/15 = 3618963986279863/72379279725597250 = 1/20",
+    "B अकेला = 20 दिन"
+   ],
+   "finalAnswer": "20 दिन",
+   "shortcut": "",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q002",
+   "testNumber": 20,
+   "questionNumber": 2,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Moderate",
+   "language": "Hindi-English",
+   "question": "A, B की तुलना में 3 गुना कुशल (efficient) है और B अकेला एक कार्य 24 दिन में करता है। A और B मिलकर वह कार्य कितने दिन में पूरा करेंगे?",
+   "questionEn": "A is 3 times as efficient as B, and B alone can do a work in 24 days. In how many days will A and B finish the work together?",
+   "options": {
+    "D": "18 दिन",
+    "C": "8 दिन",
+    "A": "24 दिन",
+    "B": "19 दिन"
+   },
+   "correctAnswer": "D",
+   "solution": [
+    "B का समय = 24 दिन ⇒ A का समय = 24/3 = 24 दिन",
+    "A का 1 दिन कार्य = 3/24, B का = 1/24",
+    "साथ में = (3 + 1)/24 = 4/24 प्रतिदिन",
+    "समय = 24/4 = 18 दिन"
+   ],
+   "finalAnswer": "18 दिन",
+   "shortcut": "कुशलता k गुना ⇒ समय 1/k गुना",
+   "marks": 1
+  },
+  {
+   "id": "ALP-MATH-T20-Q008",
+   "testNumber": 20,
+   "questionNumber": 8,
+   "topic": "Time and Work",
+   "topicHi": "समय एवं कार्य",
+   "difficulty": "Hard",
+   "language": "Hindi-English",
+   "question": "A और B मिलकर एक कार्य 12 दिन में पूरा कर सकते हैं और A अकेला उसी कार्य को 18 दिन में करता है। वे एक साथ कार्य शुरू करते हैं, परंतु 2 दिन बाद A कार्य छोड़ देता है। शेष कार्य B अकेला कितने दिन में पूरा करेगा?",
+   "questionEn": "A and B together can do a work in 12 days, and A alone can do it in 18 days. They start together, but A leaves after 2 days. In how many days will B alone finish the remaining work?",
+   "options": {
+    "B": "30 दिन",
+    "A": "36 दिन",
+    "C": "10 दिन",
+    "D": "5 दिन"
+   },
+   "correctAnswer": "B",
+   "solution": [
+    "A और B की संयुक्त दर = 1/12 प्रतिदिन",
+    "2 दिन में पूर्ण कार्य = 2/12 = 1/6",
+    "शेष कार्य = 1 − 1/6 = 5/6",
+    "B का अकेला समय = 36 दिन (∵ A अकेला 18 दिन में करता है, संयुक्त 12 दिन)",
+    "शेष कार्य का समय = 5/6 × 36 = 30 दिन"
+   ],
+   "finalAnswer": "30 दिन",
+   "shortcut": "",
+   "marks": 1
+  }
+ ]
+}
