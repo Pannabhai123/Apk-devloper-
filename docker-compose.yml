@@ -1,0 +1,17 @@
+services:
+  dream-classes:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - path: ./backend/.env
+        required: false
+    environment:
+      DATA_DIR: /data
+      FRONTEND_DIST: /app/dist
+    volumes:
+      - dream_classes_data:/data
+    restart: unless-stopped
+
+volumes:
+  dream_classes_data:

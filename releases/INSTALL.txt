@@ -1,0 +1,25 @@
+DREAM CLASSES PPT MAKER — ANDROID INSTALL
+Version 1.1.0 | Package: in.dreamclasses.pptmaker | Android 6.0+
+
+1. Install Dream_Classes_PPT_Maker.apk on your phone.
+2. The app needs the Dream Classes FastAPI backend. Deploy it with Docker
+   or run it on a computer on the same Wi-Fi network.
+3. Open the app > Settings > Backend connection.
+4. Enter your server URL, then tap Test & save:
+   https://your-server.com
+   OR http://YOUR-COMPUTER-LAN-IP:8000
+   (/api is added automatically.)
+5. Upload a PDF. Extraction, PPT generation, and download are automatic.
+   Files are saved to phone Downloads.
+
+The Arena development preview URL is not embedded and will not work as a
+permanent public backend. Use HTTPS for a public server. HTTP is only for a
+trusted local network.
+
+APK SHA-256:
+907eaedd2e4bdf1866cccba0a59be44d92369053f181c30a12a07bd8f4b98d61
+
+This APK uses a development/test signing certificate. Re-sign with your own
+private key for a production release. Device/emulator installation was not
+available in the build sandbox; compile, manifest, DEX, assets, ZIP alignment,
+and v1/v2 signatures were verified.

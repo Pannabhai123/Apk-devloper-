@@ -1,0 +1,15 @@
+node_modules/
+dist/
+backend/.venv/
+backend/data/
+backend/.env
+__pycache__/
+.pytest_cache/
+*.pyc
+*.tsbuildinfo
+.DS_Store
+android/app/build/
+android/build/
+android/.gradle/
+local.properties
+releases/*.apk

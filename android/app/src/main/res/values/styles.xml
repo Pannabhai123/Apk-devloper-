@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E6D4E</color>
+    <color name="colorPrimaryDark">#13251C</color>
+    <color name="colorAccent">#E98C4C</color>
+    <color name="app_background">#F4F6F2</color>
+
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="AppTheme" />
+
+    <style name="AppTheme.NoActionBarLaunch" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+</resources>
