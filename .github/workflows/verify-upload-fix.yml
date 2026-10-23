@@ -1,0 +1,48 @@
+name: Verify PDF upload fix and publish APK
+
+on:
+  push:
+    paths:
+      - .github/workflows/verify-upload-fix.yml
+
+permissions:
+  contents: write
+
+jobs:
+  verify-and-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out release files
+        uses: actions/checkout@v4
+
+      - name: Re-test live cloud PDF to PPTX workflow
+        run: python backend/scripts/verify_remote.py https://dream-classes-ppt-api.onrender.com
+
+      - name: Audit native picker fix and APK integrity
+        run: |
+          python - <<'PY'
+          import hashlib
+          import zipfile
+          path = 'releases/Dream_Classes_PPT_Maker.apk'
+          with zipfile.ZipFile(path) as archive:
+              names = archive.namelist()
+              dex = archive.read('classes.dex')
+              assert b'Could not read that PDF' in dex
+              assert 'assets/public/index.html' in names
+              scripts = ''.join(archive.read(name).decode('utf-8', 'ignore')
+                                for name in names if name.endswith('.js'))
+              assert 'https://dream-classes-ppt-api.onrender.com/api' in scripts
+          digest = hashlib.sha256(open(path, 'rb').read()).hexdigest()
+          assert digest == '6e351c266f606870dff1e2ac301b9ad61d6723de9767e73f527adc08364fa552'
+          print('Native picker fix, cloud assets, DEX, and SHA-256 verified:', digest)
+          PY
+
+      - name: Upload and independently download release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload v1.1.2 releases/Dream_Classes_PPT_Maker.apk releases/INSTALL.txt --repo "${{ github.repository }}" --clobber
+          mkdir -p /tmp/dream-release-check
+          gh release download v1.1.2 --pattern Dream_Classes_PPT_Maker.apk --dir /tmp/dream-release-check --repo "${{ github.repository }}" --clobber
+          cmp releases/Dream_Classes_PPT_Maker.apk /tmp/dream-release-check/Dream_Classes_PPT_Maker.apk
+          sha256sum /tmp/dream-release-check/Dream_Classes_PPT_Maker.apk
