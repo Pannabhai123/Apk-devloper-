@@ -1,0 +1,18 @@
+# Keep the build context small and never bake local state into the image.
+node_modules
+dist
+dist-server
+data
+artifacts
+coverage
+.git
+.github
+.env
+.env.local
+.env.*
+*.log
+*.md
+!README.md
+.DS_Store
+.vite
+.cache

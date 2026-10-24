@@ -1,0 +1,209 @@
+import crypto from 'node:crypto';
+import { Router } from 'express';
+import { z } from 'zod';
+import { config, mailDeliveryConfigured } from '../config.js';
+import { isoAfter } from '../db.js';
+import type { DB } from '../db.js';
+import { claimGuestData, clearSession, createSession, hashPassword, passwordStrength, randomToken, sha256, verifyPassword } from '../lib/auth.js';
+import { audit } from '../lib/audit.js';
+import { asyncRoute, badRequest, conflict, HttpError, send, tooMany, unauthorized } from '../lib/http.js';
+import { sendPasswordResetMail } from '../lib/mailer.js';
+import { rateLimit } from '../lib/rateLimit.js';
+import { validateBody } from '../lib/validate.js';
+import { getSettings, isFeatureEnabled } from './settings.js';
+
+export const authRouter = Router();
+
+const loginLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 12, prefix: 'login', keyFn: (req) => `${req.ip}:${String(req.body?.email || '').toLowerCase()}` });
+const resetLimiter = rateLimit({ windowMs: 60 * 60 * 1000, max: 5, prefix: 'reset' });
+const registerLimiter = rateLimit({ windowMs: 60 * 60 * 1000, max: 10, prefix: 'register' });
+// One-time first-administrator bootstrap: the secret is the only way to open it,
+// and the flow closes permanently the moment an administrator exists.
+const bootstrapLimiter = rateLimit({ windowMs: 60 * 60 * 1000, max: 5, prefix: 'bootstrap' });
+
+function hasAdmin(db: DB): boolean {
+  return Boolean(db.prepare(`SELECT u.id FROM users u JOIN roles r ON r.id = u.role_id
+    WHERE r.key IN ('super_admin','admin') LIMIT 1`).get());
+}
+
+const registerSchema = z.object({
+  name: z.string().trim().min(2).max(80),
+  email: z.string().trim().email().max(160).transform((s) => s.toLowerCase()),
+  phone: z.string().trim().max(20).optional().default(''),
+  password: z.string().min(8).max(128),
+});
+
+authRouter.post('/register', registerLimiter, validateBody(registerSchema), (req, res) => {
+  const db = req.db;
+  if (!isFeatureEnabled(db, 'allow_registration', config.allowRegistration)) throw tooMany('New registrations are currently disabled.');
+  const { name, email, phone, password } = req.body;
+  const strengthError = passwordStrength(password);
+  if (strengthError) throw badRequest(strengthError);
+  if (db.prepare('SELECT id FROM users WHERE email = ?').get(email)) throw conflict('An account with this email already exists.');
+  const role = db.prepare("SELECT id FROM roles WHERE key = 'student'").get() as { id: number };
+  const info = db.prepare('INSERT INTO users (name, email, phone, password_hash, role_id) VALUES (?,?,?,?,?)')
+    .run(name, email, phone || null, hashPassword(password), role.id);
+  const userId = Number(info.lastInsertRowid);
+  claimGuestData(db, req.auth.session.id, userId);
+  const session = createSession(db, res, req, 'user', userId);
+  const user = db.prepare(`SELECT u.id, u.name, u.email, u.phone, u.locale, u.daily_goal_questions, r.key AS role
+    FROM users u JOIN roles r ON r.id = u.role_id WHERE u.id = ?`).get(userId);
+  audit(db, req, 'auth.register', 'users', userId);
+  send(res, { user, csrfToken: session.csrf_token }, 201);
+});
+
+authRouter.post('/login', loginLimiter, validateBody(z.object({
+  email: z.string().trim().email().transform((s) => s.toLowerCase()),
+  password: z.string().min(1).max(128),
+})), (req, res) => {
+  const db = req.db;
+  const { email, password } = req.body;
+  const row = db.prepare('SELECT u.*, r.key AS role_key FROM users u JOIN roles r ON r.id = u.role_id WHERE u.email = ?').get(email) as
+    | { id: number; password_hash: string; status: string; role_key: string; name: string; email: string } | undefined;
+  if (!row || !verifyPassword(password, row.password_hash)) throw unauthorized('Invalid email or password.');
+  if (row.status !== 'active') throw unauthorized('This account has been suspended. Contact support.');
+  db.prepare('UPDATE users SET last_login_at = ? WHERE id = ?').run(new Date().toISOString(), row.id);
+  claimGuestData(db, req.auth.session.id, row.id);
+  db.prepare('DELETE FROM sessions WHERE id = ?').run(req.auth.session.id);
+  const session = createSession(db, res, req, 'user', row.id);
+  const user = db.prepare(`SELECT u.id, u.name, u.email, u.phone, u.locale, u.daily_goal_questions, r.key AS role
+    FROM users u JOIN roles r ON r.id = u.role_id WHERE u.id = ?`).get(row.id);
+  audit(db, req, 'auth.login', 'users', row.id);
+  send(res, { user, csrfToken: session.csrf_token });
+});
+
+authRouter.post('/logout', (req, res) => {
+  audit(req.db, req, 'auth.logout', 'users', req.auth.user?.id);
+  clearSession(req.db, req, res);
+  send(res, { loggedOut: true });
+});
+
+authRouter.get('/me', (req, res) => {
+  const db = req.db;
+  const settings = getSettings(db, ['allow_registration', 'guest_tests_enabled', 'maintenance_mode', 'site_name']);
+  const user = req.auth.user;
+  send(res, {
+    user: user ? {
+      id: user.id, name: user.name, email: user.email, role: user.role_key,
+      permissions: user.permissions, locale: user.locale, dailyGoal: user.daily_goal_questions,
+    } : null,
+    csrfToken: req.auth.session.csrf_token,
+    sessionKind: req.auth.session.kind,
+    settings,
+  });
+});
+
+authRouter.patch('/profile', validateBody(z.object({
+  name: z.string().trim().min(2).max(80).optional(),
+  phone: z.string().trim().max(20).optional(),
+  locale: z.enum(['en', 'hi']).optional(),
+  dailyGoalQuestions: z.coerce.number().int().min(0).max(1000).optional(),
+})), (req, res) => {
+  if (!req.auth.user) throw unauthorized();
+  const db = req.db;
+  const { name, phone, locale, dailyGoalQuestions } = req.body;
+  db.prepare(`UPDATE users SET name = COALESCE(?, name), phone = COALESCE(?, phone),
+    locale = COALESCE(?, locale), daily_goal_questions = COALESCE(?, daily_goal_questions), updated_at = ? WHERE id = ?`)
+    .run(name ?? null, phone ?? null, locale ?? null, dailyGoalQuestions ?? null, new Date().toISOString(), req.auth.user.id);
+  audit(db, req, 'profile.update', 'users', req.auth.user.id);
+  send(res, { updated: true });
+});
+
+authRouter.get('/bootstrap-status', (req, res) => {
+  // Reveals nothing: it only reports whether the owner still needs to create
+  // the very first administrator (which nobody can log in with yet anyway).
+  send(res, { allowed: Boolean(config.adminBootstrapSecret) && !hasAdmin(req.db) });
+});
+
+authRouter.post('/bootstrap', bootstrapLimiter, validateBody(z.object({
+  secret: z.string().min(16).max(256),
+  name: z.string().trim().min(2).max(80),
+  email: z.string().trim().email().max(160).transform((s) => s.toLowerCase()),
+  password: z.string().min(8).max(128),
+})), (req, res) => {
+  const db = req.db;
+  const expected = Buffer.from(config.adminBootstrapSecret || '');
+  const given = Buffer.from(String(req.body.secret || ''));
+  if (!expected.length) throw new HttpError(404, 'First-administrator setup is not enabled on this server.');
+  const secretOk = expected.length === given.length && crypto.timingSafeEqual(expected, given);
+  if (!secretOk) throw unauthorized('The setup secret is not valid.');
+  if (hasAdmin(db)) throw conflict('An administrator already exists. This one-time setup flow is now closed.');
+  const strengthError = passwordStrength(req.body.password);
+  if (strengthError) throw badRequest(strengthError);
+  if (db.prepare('SELECT id FROM users WHERE email = ?').get(req.body.email)) throw conflict('An account with this email already exists.');
+  const role = db.prepare("SELECT id FROM roles WHERE key = 'super_admin'").get() as { id: number };
+  const info = db.prepare('INSERT INTO users (name, email, password_hash, role_id) VALUES (?,?,?,?)')
+    .run(req.body.name, req.body.email, hashPassword(req.body.password), role.id);
+  const userId = Number(info.lastInsertRowid);
+  audit(db, req, 'auth.bootstrap_admin', 'users', userId, { email: req.body.email });
+  const session = createSession(db, res, req, 'user', userId);
+  const user = db.prepare(`SELECT u.id, u.name, u.email, u.phone, u.locale, u.daily_goal_questions, r.key AS role
+    FROM users u JOIN roles r ON r.id = u.role_id WHERE u.id = ?`).get(userId);
+  send(res, { user, csrfToken: session.csrf_token }, 201);
+});
+
+authRouter.post('/password/forgot', resetLimiter, validateBody(z.object({ email: z.string().trim().email() })),
+  asyncRoute(async (req, res) => {
+    const db = req.db;
+    // Honest failure: never claim a reset link was issued when delivery is not wired up.
+    if (!mailDeliveryConfigured()) {
+      throw new HttpError(503,
+        'Password recovery is unavailable because email delivery is not configured on this server. Please contact the administrator.');
+    }
+    const email = req.body.email.toLowerCase();
+    const user = db.prepare('SELECT id FROM users WHERE email = ?').get(email) as { id: number } | undefined;
+    let devToken: string | undefined;
+    if (user) {
+      const token = randomToken();
+      const tokenHash = sha256(token);
+      db.prepare('INSERT INTO password_resets (user_id, token_hash, expires_at) VALUES (?,?,?)')
+        .run(user.id, tokenHash, isoAfter(config.resetTokenTtlSeconds));
+      try {
+        await sendPasswordResetMail(email, token, req);
+      } catch (err) {
+        // A token that was never delivered must not remain usable.
+        db.prepare('DELETE FROM password_resets WHERE token_hash = ?').run(tokenHash);
+        throw err;
+      }
+      // Explicit opt-in only. assertProductionSecrets() refuses to boot if this is on in production.
+      if (config.exposeDevResetToken) devToken = token;
+    }
+    send(res, {
+      message: 'If an account exists for that email, a reset link has been issued.',
+      ...(devToken ? { devResetToken: devToken, note: 'Development only: EXPOSE_DEV_RESET_TOKEN is enabled.' } : {}),
+    });
+  }));
+
+authRouter.post('/password/reset', validateBody(z.object({ token: z.string().min(10), password: z.string().min(8).max(128) })), (req, res) => {
+  const db = req.db;
+  const strengthError = passwordStrength(req.body.password);
+  if (strengthError) throw badRequest(strengthError);
+  const row = db.prepare('SELECT id, user_id FROM password_resets WHERE token_hash = ? AND used_at IS NULL AND expires_at > ?')
+    .get(sha256(req.body.token), new Date().toISOString()) as { id: number; user_id: number } | undefined;
+  if (!row) throw badRequest('This reset link is invalid or has expired.');
+  db.transaction(() => {
+    db.prepare('UPDATE users SET password_hash = ?, updated_at = ? WHERE id = ?')
+      .run(hashPassword(req.body.password), new Date().toISOString(), row.user_id);
+    db.prepare('UPDATE password_resets SET used_at = ? WHERE id = ?').run(new Date().toISOString(), row.id);
+    db.prepare('DELETE FROM sessions WHERE user_id = ?').run(row.user_id);
+  })();
+  audit(db, req, 'auth.password_reset', 'users', row.user_id);
+  send(res, { reset: true });
+});
+
+authRouter.delete('/account', validateBody(z.object({ password: z.string().min(1) })), (req, res) => {
+  const user = req.auth.user;
+  if (!user) throw unauthorized();
+  const db = req.db;
+  const row = db.prepare('SELECT password_hash FROM users WHERE id = ?').get(user.id) as { password_hash: string };
+  if (!verifyPassword(req.body.password, row.password_hash)) throw badRequest('Password confirmation failed.');
+  db.transaction(() => {
+    db.prepare('UPDATE attempts SET user_id = NULL WHERE user_id = ?').run(user.id);
+    db.prepare('DELETE FROM bookmarks WHERE user_id = ?').run(user.id);
+    db.prepare('UPDATE question_reports SET user_id = NULL WHERE user_id = ?').run(user.id);
+    db.prepare('UPDATE audit_logs SET actor_id = NULL WHERE actor_id = ?').run(user.id);
+    db.prepare('DELETE FROM users WHERE id = ?').run(user.id);
+  })();
+  clearSession(db, req, res);
+  send(res, { deleted: true });
+});

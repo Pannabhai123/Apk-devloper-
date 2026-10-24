@@ -1,0 +1,17 @@
+{
+  "name": "VidyaPariksha — Online Mock Tests",
+  "short_name": "VidyaPariksha",
+  "description": "Realistic online mock tests, topic-wise practice and honest performance analytics.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F3F6FB",
+  "theme_color": "#0B4FA8",
+  "orientation": "any",
+  "lang": "en-IN",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
