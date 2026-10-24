@@ -1,0 +1,36 @@
+# Build artefact ignore rules — keep the repo source-only.
+.venv/
+node_modules/
+.tools/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Rendered media (regenerate with `python -m ytstudio sample` / `render`)
+projects/*/build/
+projects/*/output/
+projects/_assets/
+output/
+*.mp4
+*.mov
+*.mkv
+!docs/media/*.mp4
+
+# Generated demo assets are reproducible from code
+projects/_demo-youtube-system/assets/
+
+# Fonts are reproducible via scripts/install_fonts.py (npm + fontTools)
+fonts/*.ttf
+
+# Remotion scratch
+remotion-studio/public/fonts/
+remotion-studio/out/
+remotion-studio/.remotion/
+
+# Editor / OS noise
+.DS_Store
+*.swp
+node_modules/.cache/
+fonts/.uuid

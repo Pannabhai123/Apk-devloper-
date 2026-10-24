@@ -1,0 +1,21 @@
+# ── Core numeric / image stack ────────────────────────────────────────────────
+numpy>=1.26,<3
+pillow>=10.0
+opencv-python-headless>=4.9
+scipy>=1.11
+imageio>=2.31
+imageio-ffmpeg>=0.5          # ships a static FFmpeg 7.x binary (bootstrap uses it)
+matplotlib>=3.8              # only used as a source of DejaVu fonts (no system fonts here)
+
+# ── Video / audio authoring ───────────────────────────────────────────────────
+moviepy>=2.0                 # optional convenience API for quick experiments
+pydub>=0.25                  # audio slicing helpers
+soundfile>=0.12              # wav/flac I/O for the mixing stage
+mutagen>=1.47                # audio metadata / loudness bookkeeping
+
+# ── Subtitles, fonts, CLI ─────────────────────────────────────────────────────
+fonttools>=4.50              # woff2 -> ttf conversion for @fontsource fonts
+brotli>=1.1                  # required by fonttools for woff2
+pyyaml>=6.0
+rich>=13.0
+tqdm>=4.66

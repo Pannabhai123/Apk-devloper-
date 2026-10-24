@@ -1,0 +1,26 @@
+{
+  "name": "ytstudio-remotion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "React/Remotion motion-graphics layer for the ytstudio YouTube video pipeline",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "compositions": "remotion compositions src/index.ts",
+    "render:intro": "remotion render src/index.ts ChannelIntro out/intro.mp4",
+    "render:title": "remotion render src/index.ts TitleCard out/title.mp4",
+    "render:lowerthird": "remotion render src/index.ts LowerThird out/lowerthird.mp4",
+    "render:endscreen": "remotion render src/index.ts EndScreen out/endscreen.mp4",
+    "render:kinetic": "remotion render src/index.ts KineticTitle out/kinetic.mp4",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "remotion": "4.0.538",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3"
+  }
+}

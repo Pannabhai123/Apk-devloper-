@@ -1,0 +1,115 @@
+project:
+  title: "Build a YouTube Video Machine"
+  slug: demo
+  preset: youtube-1080p30
+  resolution: 1920x1080
+  fps: 30
+  brand:
+    channel: "ytstudio"
+    accent: "#FFB03B"
+  language: en
+
+audio:
+  music: assets/audio/music.wav
+  music_gain_db: -19
+  duck: true
+  normalize: true
+  target_lufs: -14.0
+  true_peak: -1.5
+  narration_lead: 0.45
+
+subtitles:
+  burn_in: true
+  max_chars: 82
+  font: Inter-Bold
+  font_size: 56
+  outline: 3
+  shadow: 1
+  margin_v: 76
+
+transitions:
+  type: fade
+  duration: 0.7
+
+thumbnail:
+  enabled: true
+  title: "Build a YouTube Video Machine"
+  subtitle: "the whole pipeline, end to end"
+  badge: "SYSTEM"
+  image: assets/images/thumb_bg.png
+
+scenes:
+  - kind: title
+    title: "Build a YouTube Video Machine"
+    subtitle: "script · voice · scenes · master"
+    motion: zoom_out
+    voice: assets/audio/vo_01.wav
+    narration: "Every good YouTube video gets made twice. Once on paper, and once in software. This is the software part, running end to end."
+
+  - kind: chapter
+    number: "01"
+    title: "The pipeline"
+    subtitle: "files, in the order they are produced"
+    motion: zoom_out
+    voice: assets/audio/vo_02.wav
+    narration: "Here is the pipeline, in the order the files are actually produced."
+
+  - kind: bullets
+    headline: "Five stages, no guesswork"
+    bullets:
+      - "Script and storyboard"
+      - "Voice, music and captions"
+      - "Scene rendering in FFmpeg"
+      - "Master encode for YouTube"
+      - "Thumbnail and end screen"
+    voice: assets/audio/vo_03.wav
+    narration: "Five stages, and no guesswork: script and storyboard, voice, music and captions, scene rendering, the YouTube master, and finally the thumbnail and end screen."
+
+  - kind: image
+    image: assets/images/chart.png
+    title: "Progress is never lost"
+    layout: lower
+    captions: false            # uses the caption card instead of burned subs
+    motion: pan_right
+    voice: assets/audio/vo_04.wav
+    narration: "Rendering happens scene by scene. Each scene is written to disk with a fingerprint, so a crash never costs you the whole render."
+
+  - kind: stats
+    title: "1080p30"
+    subtitle: "H.264 · AAC 320k · -14 LUFS · safe-area aware"
+    motion: zoom_in
+    voice: assets/audio/vo_05.wav
+    narration: "The master lands exactly on YouTube's recommended profile: one thousand eighty p, thirty frames per second, H.264 with AAC audio, normalised to minus fourteen LUFS."
+
+  - kind: quote
+    title: "Slow is smooth. Smooth is fast."
+    attribution: "production proverb"
+    voice: assets/audio/vo_06.wav
+    narration: "Which brings us to the only rule that survives contact with a real deadline. Slow is smooth, and smooth is fast."
+
+  - kind: image
+    image: assets/images/diagram.png
+    title: "Assets in. Video out."
+    layout: center
+    motion: zoom_in
+    voice: assets/audio/vo_07.wav
+    narration: "Drop your images, your clips and your voiceover into the assets folder. Everything else is timing, captions and mix."
+
+  - kind: slideshow
+    images:
+      - assets/images/mesh_a.png
+      - assets/images/mesh_b.png
+    voice: assets/audio/vo_08.wav
+    narration: "Photos become moving shots. Captions follow the narration automatically. And the music ducks itself underneath the voice."
+
+  - kind: outro
+    title: "Thanks for watching"
+    subtitle: "Subscribe for the next build"
+    motion: zoom_in
+    voice: assets/audio/vo_09.wav
+    narration: "That is the whole system. Build it once, then reuse it for every video you make."
+
+  - kind: endscreen
+    title: "ytstudio"
+    subtitle: "Watch next"
+    duration: 10
