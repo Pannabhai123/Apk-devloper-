@@ -3,7 +3,7 @@ import { Eye, Plus, Trash2 } from 'lucide-react';
 import { api, formatError } from '../../api/client';
 import { Badge, Button, Card, ConfirmDialog, EmptyState, ErrorState, Field, Loading, Modal, Notice, Pagination } from '../../components/ui';
 import { useToast } from '../../context/ToastContext';
-import { useApi } from '../../hooks/useApi';
+import { useApi, usePagedApi } from '../../hooks/useApi';
 import { formatDateTime, titleCase } from '../../lib/format';
 import { AdminHeader, DataTable, type Column } from './shared';
 
@@ -97,7 +97,7 @@ export function AdminTests() {
   const confirmDelete = async () => { if (!deleting) return; try { await api.del(`/admin/tests/${deleting.id}`); toast('Test deleted.', 'success'); setDeleting(null); setNonce((n) => n + 1); } catch (err) { toast(formatError(err), 'error'); setDeleting(null); } };
   const showPreview = async (id: number) => { try { setPreview(await api.get<any>(`/admin/tests/${id}/preview`)); } catch (err) { toast(formatError(err), 'error'); } };
 
-  const questionPool = useApi<{ data: any[] }>(form.bookId ? `/admin/questions?bookId=${form.bookId}&status=published&limit=200` : null, [form.bookId]);
+  const questionPool = usePagedApi<any>(form.bookId ? `/admin/questions?bookId=${form.bookId}&status=published&limit=200` : null, [form.bookId]);
 
   const columns: Column<TestRow>[] = [
     { key: 'title', label: 'Test', render: (r) => <span><strong>{r.title}</strong><span className="tiny muted" style={{ display: 'block' }}>/{r.slug}{!r.is_listed ? ' · hidden helper' : ''}</span></span> },
@@ -176,13 +176,13 @@ export function AdminTests() {
         <h3 style={{ fontSize: '.98rem', marginBottom: 8 }}>Fixed questions ({form.fixedQuestionIds.length} selected, need {form.questionCount})</h3>
         {questionPool.loading && <Loading />}
         <div style={{ maxHeight: 220, overflowY: 'auto', border: '1px solid var(--border)', borderRadius: 10, padding: 10 }}>
-          {questionPool.data?.data.map((q) => (
+          {questionPool.data?.map((q) => (
             <label key={q.id} className="checkbox" style={{ display: 'flex', padding: '5px 0', borderBottom: '1px solid #F1F5F9' }}>
               <input type="checkbox" checked={form.fixedQuestionIds.includes(q.id)} onChange={(e) => setForm({ ...form, fixedQuestionIds: e.target.checked ? [...form.fixedQuestionIds, q.id] : form.fixedQuestionIds.filter((x) => x !== q.id) })} />
               <span className="small"><strong>{q.code}</strong> · {q.text_en}</span>
             </label>
           ))}
-          {questionPool.data && questionPool.data.data.length === 0 && <p className="small muted">No published questions in this collection yet.</p>}
+          {questionPool.data && questionPool.data.length === 0 && <p className="small muted">No published questions in this collection yet.</p>}
         </div>
       </div>}
     </Modal>

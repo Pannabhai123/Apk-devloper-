@@ -1,10 +1,11 @@
 import { Router } from 'express';
 import { z } from 'zod';
-import { config } from '../config.js';
+import { config, mailDeliveryConfigured } from '../config.js';
 import { isoAfter } from '../db.js';
 import { claimGuestData, clearSession, createSession, hashPassword, passwordStrength, randomToken, sha256, verifyPassword } from '../lib/auth.js';
 import { audit } from '../lib/audit.js';
-import { badRequest, conflict, send, tooMany, unauthorized } from '../lib/http.js';
+import { asyncRoute, badRequest, conflict, HttpError, send, tooMany, unauthorized } from '../lib/http.js';
+import { sendPasswordResetMail } from '../lib/mailer.js';
 import { rateLimit } from '../lib/rateLimit.js';
 import { validateBody } from '../lib/validate.js';
 import { getSettings, isFeatureEnabled } from './settings.js';
@@ -98,24 +99,37 @@ authRouter.patch('/profile', validateBody(z.object({
   send(res, { updated: true });
 });
 
-authRouter.post('/password/forgot', resetLimiter, validateBody(z.object({ email: z.string().trim().email() })), (req, res) => {
-  const db = req.db;
-  const email = req.body.email.toLowerCase();
-  const user = db.prepare('SELECT id FROM users WHERE email = ?').get(email) as { id: number } | undefined;
-  let devToken: string | undefined;
-  if (user) {
-    const token = randomToken();
-    db.prepare('INSERT INTO password_resets (user_id, token_hash, expires_at) VALUES (?,?,?)')
-      .run(user.id, sha256(token), isoAfter(3600));
-    // No mail transport is bundled. In development the token is returned so the
-    // recovery flow is testable; production must configure an SMTP provider.
-    if (!config.isProd) devToken = token;
-  }
-  send(res, {
-    message: 'If an account exists for that email, a reset link has been issued.',
-    ...(devToken ? { devResetToken: devToken, note: 'Development only: no email service is configured.' } : {}),
-  });
-});
+authRouter.post('/password/forgot', resetLimiter, validateBody(z.object({ email: z.string().trim().email() })),
+  asyncRoute(async (req, res) => {
+    const db = req.db;
+    // Honest failure: never claim a reset link was issued when delivery is not wired up.
+    if (!mailDeliveryConfigured()) {
+      throw new HttpError(503,
+        'Password recovery is unavailable because email delivery is not configured on this server. Please contact the administrator.');
+    }
+    const email = req.body.email.toLowerCase();
+    const user = db.prepare('SELECT id FROM users WHERE email = ?').get(email) as { id: number } | undefined;
+    let devToken: string | undefined;
+    if (user) {
+      const token = randomToken();
+      const tokenHash = sha256(token);
+      db.prepare('INSERT INTO password_resets (user_id, token_hash, expires_at) VALUES (?,?,?)')
+        .run(user.id, tokenHash, isoAfter(config.resetTokenTtlSeconds));
+      try {
+        await sendPasswordResetMail(email, token);
+      } catch (err) {
+        // A token that was never delivered must not remain usable.
+        db.prepare('DELETE FROM password_resets WHERE token_hash = ?').run(tokenHash);
+        throw err;
+      }
+      // Explicit opt-in only. assertProductionSecrets() refuses to boot if this is on in production.
+      if (config.exposeDevResetToken) devToken = token;
+    }
+    send(res, {
+      message: 'If an account exists for that email, a reset link has been issued.',
+      ...(devToken ? { devResetToken: devToken, note: 'Development only: EXPOSE_DEV_RESET_TOKEN is enabled.' } : {}),
+    });
+  }));
 
 authRouter.post('/password/reset', validateBody(z.object({ token: z.string().min(10), password: z.string().min(8).max(128) })), (req, res) => {
   const db = req.db;

@@ -50,8 +50,30 @@ async function request<T = any>(path: string, options: RequestOptions = {}, retr
   return payload as T;
 }
 
+/** Like `get`, but keeps the response envelope so paginated endpoints can read `meta`. */
+async function requestEnvelope<T = any>(path: string, signal?: AbortSignal): Promise<{ data: T; meta?: Record<string, unknown> }> {
+  let response: Response;
+  try {
+    response = await fetch(`/api${path}`, { method: 'GET', credentials: 'same-origin', signal, headers: {} });
+  } catch (err) {
+    throw new ApiError(0, 'Network unavailable. Check your connection and try again.', err);
+  }
+  const contentType = response.headers.get('content-type') || '';
+  const payload = contentType.includes('application/json') ? await response.json().catch(() => null) : await response.text();
+  if (!response.ok) {
+    const message = payload && typeof payload === 'object' && 'error' in payload
+      ? String((payload as any).error) : `Request failed (${response.status})`;
+    throw new ApiError(response.status, message, payload && typeof payload === 'object' ? (payload as any).details : undefined);
+  }
+  if (payload && typeof payload === 'object' && 'ok' in payload && 'data' in payload) {
+    return { data: (payload as any).data as T, meta: (payload as any).meta };
+  }
+  return { data: payload as T };
+}
+
 export const api = {
   get: <T = any>(path: string, signal?: AbortSignal) => request<T>(path, { signal }),
+  getEnvelope: <T = any>(path: string, signal?: AbortSignal) => requestEnvelope<T>(path, signal),
   post: <T = any>(path: string, body?: unknown) => request<T>(path, { method: 'POST', body: body ?? {} }),
   put: <T = any>(path: string, body?: unknown) => request<T>(path, { method: 'PUT', body: body ?? {} }),
   patch: <T = any>(path: string, body?: unknown) => request<T>(path, { method: 'PATCH', body: body ?? {} }),

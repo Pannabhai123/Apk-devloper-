@@ -47,8 +47,10 @@ Create your first administrator (see §3) and sign in at `/login`.
 | `npm run migrate` | Idempotent schema creation + additive migrations |
 | `npm run seed` | Idempotent demo content seed (433 questions); optional first admin |
 | `npm run typecheck` | TypeScript checks for server **and** web |
-| `npm test` | Vitest unit + API integration suite (51 tests) |
-| `npm run e2e` | Live HTTP workflow check against a running dev stack (35 checks) |
+| `npm test` | Vitest unit + API integration + security-hardening suite (**76 tests**, 3 files) |
+| `npm run e2e` | Live HTTP workflow check against a running stack (**35 checks**) |
+| `npm run test:browser` | **Real Chromium** DOM workflow (`playwright-core` + `@sparticuz/chromium`), **66 checks** |
+| `npm run test:lighthouse` | Real Lighthouse audit; writes `artifacts/lighthouse.json` |
 | `npm run build` | Production web bundle into `dist/` **and** compiled server into `dist-server/` |
 | `npm start` | Production single-process server: serves API + built SPA |
 
@@ -56,15 +58,21 @@ Create your first administrator (see §3) and sign in at `/login`.
 
 | Check | Result |
 | --- | --- |
-| `npm run typecheck` | ✅ passed |
-| `npm test` (Vitest) | ✅ 51/51 passed (2 files) |
-| `npm run build` | ✅ passed, no circular-chunk warning |
-| `npm run migrate` | ✅ `schema v2` |
-| `npm run e2e` against Vite proxy | ✅ 35/35 checks passed |
-| Compiled `NODE_ENV=production node dist-server/index.js` | ✅ health 433 questions, SPA deep links, static assets, manifest/icons, admin guard |
-| Real browser (Chromium/Playwright) E2E | ❌ **not run** — no browser binary or Playwright download host is available in this sandbox (see §10) |
-| Lighthouse / load-test scores | ❌ **not measured** — no performance claims are made |
-| Deployment | ❌ **not performed** — instructions only (see §9) |
+| `npm run typecheck` | ✅ passed (server + web) |
+| `npm test` (Vitest) | ✅ **76/76** passed — `unit` 20, `api.workflow` 31, `hardening` 25 |
+| `npm run build` | ✅ passed; split chunks: `react-vendor` 83 kB gz, app 41 kB gz, icons 8 kB gz |
+| `npm run migrate` on a **fresh** database file | ✅ `schema v2`; `npm run seed` then inserted **433 questions / 28 tests** |
+| `npm run e2e` against compiled production server (`:4100`) | ✅ **35/35** with a real admin login |
+| `npm run test:browser` against Vite (`:5173`) | ✅ **66/66**, 0 skipped |
+| `npm run test:browser` against compiled production (`:4100`) | ✅ **66/66**, 0 skipped |
+| Lighthouse (mobile emulation, production build, 5 runs) | ✅ **Performance 93–97 (median 96) · Accessibility 100 · Best practices 100 · SEO 100**; FCP 1.8–2.1 s, LCP 2.0–2.5 s, TBT 100–200 ms, CLS 0–0.001. Scores vary between runs — the range is reported, not a cherry-picked best. |
+| Compiled `NODE_ENV=production node dist-server/index.js` | ✅ health, SPA deep links, static assets/fonts, manifest, admin guard, `Cache-Control: no-store` on API, honest **503** for unconfigured mail |
+| Deployment to hosting/TLS/domain | ❌ **not performed** — needs your credentials and explicit authorisation (see §9) |
+
+Browser artifacts (screenshots at 360/390/768/1366 px, downloaded PDFs, Lighthouse
+JSON) are written to the gitignored `artifacts/` directory. The browser run includes
+a genuine **65-second wait** for a one-minute server deadline to expire; it does not
+fake the timer.
 
 ---
 
@@ -112,13 +120,26 @@ Never put a real password in `.env` or commit it. Create the account from the CL
 after migrating, then remove the credentials from your shell history.
 
 ```bash
-# Development
-npx tsx server/src/index.ts --setup-admin admin@vidyapariksha.local 'DevAdminPass2026!'
+# Development — generate the password, never reuse one shown in a chat or a README
+DEV_ADMIN_PASS="$(openssl rand -hex 24)"
+npx tsx server/src/index.ts --setup-admin admin@vidyapariksha.local "$DEV_ADMIN_PASS"
+printf 'Local dev admin password (store it yourself, then clear this shell): %s\n' "$DEV_ADMIN_PASS"
+unset DEV_ADMIN_PASS
 
 # Production (from the project root, with the same DATABASE_PATH as the service)
 NODE_ENV=production SESSION_SECRET="$(openssl rand -hex 32)" \
-  npx tsx server/src/index.ts --setup-admin you@example.com 'a-strong-password'
+  npx tsx server/src/index.ts --setup-admin you@example.com "$(openssl rand -hex 24)"
+
+# Rotate an existing administrator's password (also invalidates nothing else):
+npx tsx server/src/index.ts --rotate-admin you@example.com "$(openssl rand -hex 24)"
 ```
+
+> **Rotation notice.** An earlier revision of this README printed a sample
+> development password (`DevAdminPass2026!`). **That value is no longer valid**: the
+> sandbox administrator password was rotated with `--rotate-admin` to a random
+> 24-byte value. If you ever copy a password from documentation, chat or logs, treat
+> it as compromised and rotate it before exposing the service. Never place a real
+> credential in `.env` in source control — use `--setup-admin` / `--rotate-admin`.
 
 `--setup-admin` creates the account only if no administrator exists, prints
 `Administrator ready: …` (or the reason it was skipped), and exits — it does **not**
@@ -145,7 +166,10 @@ See [`.env.example`](./.env.example). Important values:
 | `DATABASE_PATH` | Defaults to `./data/vidyapariksha.db`. |
 | `WEB_DIST` | Defaults to `./dist`; the compiled server resolves `schema.sql` next to itself or from the project root. |
 | `ALLOW_REGISTRATION`, `GUEST_TESTS_ENABLED`, `MAINTENANCE_MODE` | Feature switches, also editable by an admin in **Admin → Settings**. |
-| `E2E_BASE_URL`, `E2E_ADMIN_EMAIL`, `E2E_ADMIN_PASSWORD` | Only used by `npm run e2e`. |
+| `E2E_BASE_URL`, `E2E_ADMIN_EMAIL`, `E2E_ADMIN_PASSWORD` | Used by `npm run e2e` and `npm run test:browser`. Admin checks are **skipped** (not faked) if the admin variables are absent. Set them in your shell, not in a committed file. |
+| `LIGHTHOUSE_URL` | Target for `npm run test:lighthouse` (default `http://127.0.0.1:4000/`). |
+| `MAIL_PROVIDER`, `MAIL_FROM`, `SMTP_*`, `RESEND_API_KEY`, `RESET_TOKEN_TTL_SECONDS` | Password-recovery delivery boundary. See §10. |
+| `EXPOSE_DEV_RESET_TOKEN`, `ALLOW_INSECURE_COOKIES` | Development/smoke-test escapes. **Production boot refuses** `EXPOSE_DEV_RESET_TOKEN=true` and refuses insecure cookies unless the escape hatch is set. |
 
 ---
 
@@ -264,7 +288,10 @@ requests need the CSRF header. Paginated endpoints accept `?page=&limit=` and re
   states, keyboard-operable palette/options/modals, a labelled `role="timer"` and live-region toasts,
   status conveyed by text/icon as well as colour, `viewport-fit=cover` + safe-area
   aware sticky exam controls, no horizontal scroll at ~360 px, 44 px touch targets.
-  WCAG 2.2 AA is targeted where practical; a formal audit has **not** been performed.
+  WCAG 2.2 AA is targeted where practical. Lighthouse's automated axe-based
+  accessibility audit scored **100/100** on the production homepage after the
+  muted-text contrast and footer heading-order defects were fixed; a formal manual
+  audit with assistive technology has **not** been performed.
 - **SEO:** per-page `<title>`/meta description/canonical via `PageMeta`, dynamic
   `robots.txt` and a database-generated `sitemap.xml`, clean deep links served by
   the SPA fallback. Search engines cannot see attempt/admin routes (disallowed).
@@ -360,7 +387,7 @@ additive schema changes.
 | `RangeError: Invalid scrypt params … memory limit exceeded` | Old Node default `maxmem` is too small for N=2^15. `server/src/lib/auth.ts` passes `maxmem: 96 * 1024 * 1024`. |
 | `schema.sql not found` | Run commands from the project root, or rebuild: `npm run build:api` now copies `schema.sql` into `dist-server/`. |
 | Login works locally but the cookie never sticks in production | Set `COOKIE_SECURE=true` only with real HTTPS, and `TRUST_PROXY=1` behind the proxy. Mismatched settings drop the cookie. |
-| Password reset email never arrives | **No mail transport is bundled.** The endpoint creates a hashed, single-use, 1-hour token; in development it returns `devResetToken` so the flow is testable. In production you must wire an SMTP/provider call at the marked boundary in `server/src/routes/auth.ts` (`// No mail transport is bundled`). The API deliberately does not leak the token in production. |
+| Password reset returns **503** | Correct behaviour when `MAIL_PROVIDER=none`. No usable token is created, so the API never claims a mail was sent. Configure `MAIL_PROVIDER=smtp` (`SMTP_HOST`, `SMTP_PORT`, `SMTP_USER`, `SMTP_PASSWORD`, `SMTP_SECURE`, `MAIL_FROM`) or `MAIL_PROVIDER=resend` (`RESEND_API_KEY`, `MAIL_FROM`). `MAIL_PROVIDER=console` is **development/test only** and is refused in production. Tokens are single-use, hashed at rest, and expire after `RESET_TOKEN_TTL_SECONDS` (default 3600). Set `EXPOSE_DEV_RESET_TOKEN=true` only for local tests — production boot rejects it. If sending fails, the stored token is deleted. |
 | Custom practice says "Not enough eligible questions" | The selector is honest: publish/import more questions for that book/subject/topic/difficulty/language, or lower the requested count. |
 | Timer seems to jump after reload | Expected: the countdown re-syncs to the stored server deadline; it is not a local counter. |
 | `503 Maintenance mode is enabled` | Disable `MAINTENANCE_MODE` or turn the switch off in **Admin → Settings**. GET/admin/auth routes remain reachable. |
@@ -373,18 +400,23 @@ additive schema changes.
 
 - **Not deployed.** No hosting, domain, TLS certificate or CI/CD pipeline is part of
   this repository. §9 is a runbook, not a completed deployment.
-- **No browser-driven E2E ran.** This sandbox has no Chromium/Playwright browser and
-  outbound access is limited to GitHub/npm/PyPI, so Playwright's browser CDN is
-  unreachable. `npm run e2e` is a real HTTP workflow check through the Vite proxy
-  (cookies + CSRF + full attempt lifecycle), not a DOM test. Add Playwright in an
-  environment with browser downloads to cover rendering, taps and keyboard flows.
-- **No measured performance scores.** Bundle splitting, compression, caching and
-  lazy routes are configured, but Lighthouse/load-test numbers were not collected.
+- **Browser E2E is real but single-browser.** `@sparticuz/chromium` headless shell +
+  `playwright-core` render the actual UI (66 checks, both dev and compiled production).
+  Only Chromium was exercised — Safari/Firefox and real mobile devices were not. The
+  headless shell runs `--single-process`, so the suite deliberately uses one
+  `BrowserContext` and swaps cookie jars instead of opening isolated contexts.
+- **Lighthouse is a lab score, not a field measurement.** Five runs on the sandbox's
+  mobile emulation over loopback gave Performance 93–97 (median 96) and 100/100/100
+  for Accessibility/Best practices/SEO. Real-world Core Web Vitals depend
+  on hosting, network and device. **No load test** or capacity benchmark was run.
 - **SQLite is single-node.** Concurrent multi-instance writes need a shared SQL
   database and a migration of the query layer; the in-memory rate limiter would also
   need a shared store (e.g. Redis) behind multiple instances.
-- **Email/SMS/push are integration boundaries.** Password-reset token generation is
-  implemented; delivery is not bundled. No payment gateway is included.
+- **Email delivery needs real credentials.** The reset-token flow, hashing, TTL,
+  single-use enforcement and failure cleanup are implemented; SMTP and Resend are
+  wired as configurable transports but were **not** exercised against a live provider
+  because no credentials exist here. Unconfigured delivery returns an honest 503.
+  SMS/push are not implemented. No payment gateway is included.
 - **Hindi coverage is partial.** The UI and schema are bilingual, and Hindi options
   appear only where translated questions exist; edit/import more `hi`/`bilingual`
   questions to broaden it.
@@ -402,3 +434,17 @@ Code in this repository is provided for your project. The seeded questions and t
 VidyaPariksha name/mark are original demo material created for this build; review
 licensing and replace content as appropriate for your use case. No third-party
 brand assets from shardatest.in are included.
+
+
+---
+
+## 13. Honest verification matrix
+
+| Area | Status | What that actually means |
+| --- | --- | --- |
+| **Implemented** | ✅ | Category→book→subject→topic→config→instructions→server-backed attempt→save/next/prev/clear/mark/palette→resume→server deadline→submit→server score→review→PDF→dashboard; DB-backed question bank with admin CRUD, CSV preview/import/export, preview/publish and rule-based test generation; registration/login/guest sessions, RBAC, bookmarks, revision, analytics, audit log; bilingual UI, PWA assets, seed + migrations. |
+| **Automated-tested** | ✅ | `npm test` **76/76** (unit, API integration, security hardening incl. hidden answer keys, duplicate submit, session isolation, CSRF, rate limits, CSV validation, magic-byte upload checks, CSV export); `npm run e2e` **35/35** live HTTP workflow against the compiled production server. |
+| **Browser-tested** | ✅ | `npm run test:browser` **66/66** in real Chromium against **both** Vite dev and the compiled production build: full journey, refresh/resume, 4 viewports with no horizontal overflow, offline queue/reconnect, timer expiry (real 65 s wait), Hindi/bilingual rendering, honest translation fallback, Devanagari PDF, PDF download, admin sign-in/permission denial, 18 public+student routes and 12 admin routes rendered without a React crash. |
+| **Performance-measured** | ✅ (lab only) | Lighthouse mobile emulation on the production build, **5 runs**: Performance **93–97 (median 96)**, Accessibility/Best practices/SEO **100/100/100**; FCP 1.8–2.1 s, LCP 2.0–2.5 s, TBT 100–200 ms, CLS 0–0.001. Assets split into cacheable vendor/app/icon chunks; fonts self-hosted. **No load test or field/RUM data.** |
+| **Production-configured** | ✅ | Compiled `NODE_ENV=production` boot enforces a strong `SESSION_SECRET`, secure cookies (with a documented local-HTTP escape hatch), refuses dev reset-token exposure, sets CSP/no-store/HSTS-when-HTTPS, scrubs 500 errors, sweeps expired sessions, copies schema + Devanagari font into `dist-server`, prints honest warnings for localhost origin and missing mail. Config/docs/backups/systemd/nginx examples are in §9. |
+| **Actually-deployed** | ❌ | **Not deployed.** No hosting account, domain, TLS certificate, CI/CD pipeline or third-party credential was available or authorised. The production server was started **locally in this sandbox** for verification only. Deploying requires your infrastructure, secrets and explicit go-ahead. |

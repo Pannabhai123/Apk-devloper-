@@ -6,7 +6,7 @@ import {
 } from 'lucide-react';
 import { api, formatError } from '../api/client';
 import { Badge, BarList, Breadcrumbs, Button, Card, ConfirmDialog, EmptyState, ErrorState, Field, LineChart, Loading, Notice, PageMeta, Pagination } from '../components/ui';
-import { useApi } from '../hooks/useApi';
+import { useApi, usePagedApi } from '../hooks/useApi';
 import { useApp } from '../context/AppContext';
 import { useToast } from '../context/ToastContext';
 import { formatDateTime, formatDuration } from '../lib/format';
@@ -100,17 +100,15 @@ export function Dashboard() {
 
 export function MyResults() {
   const [page, setPage] = useState(1);
-  const { data, loading, error, reload } = useApi<{ data: any[]; meta: { page: number; pages: number; total: number } }>(`/results?page=${page}&limit=15`, [page]);
-  const list: any[] = Array.isArray(data) ? data as unknown as any[] : (data as any)?.data || [];
-  const meta = (data as any)?.meta || { page: 1, pages: 1, total: list.length };
+  const { data: list, meta, loading, error, reload } = usePagedApi<any>(`/results?page=${page}&limit=15`, [page]);
   return (
     <div className="container section">
       <PageMeta title="My Results" />
       <Breadcrumbs items={[{ label: 'My Results' }]} />
-      <div className="row-between mb-3"><div><h2>My results</h2><p className="muted mb-0">{data ? `${meta.total} submitted attempt(s)` : 'Your submitted attempts'}</p></div><Link to="/exams" className="btn btn-primary btn-sm">New test</Link></div>
+      <div className="row-between mb-3"><div><h2>My results</h2><p className="muted mb-0">{meta ? `${meta.total} submitted attempt(s)` : 'Your submitted attempts'}</p></div><Link to="/exams" className="btn btn-primary btn-sm">New test</Link></div>
       {loading && <Loading />}{error && <ErrorState message={error} onRetry={reload} />}
-      {data && list.length === 0 && <EmptyState title="No results yet" description="Submit a mock test to see your genuine result report here." action={<Link to="/exams" className="btn btn-primary">Start a test</Link>} />}
-      {data && list.length > 0 && (
+      {list && list.length === 0 && <EmptyState title="No results yet" description="Submit a mock test to see your genuine result report here." action={<Link to="/exams" className="btn btn-primary">Start a test</Link>} />}
+      {list && list.length > 0 && (
         <div className="grid" style={{ gap: 10 }}>
           {list.map((r) => (
             <Link to={`/test/result/${r.id}`} className="card card-pad card-hover" key={r.id} style={{ display: 'block' }}>
@@ -123,7 +121,7 @@ export function MyResults() {
               </div>
             </Link>
           ))}
-          <Pagination page={meta.page} pages={meta.pages} onChange={setPage} />
+          {meta && <Pagination page={meta.page} pages={meta.pages} onChange={setPage} />}
         </div>
       )}
     </div>

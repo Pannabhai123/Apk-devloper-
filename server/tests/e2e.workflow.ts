@@ -11,7 +11,12 @@
 const BASE = process.env.E2E_BASE_URL || 'http://127.0.0.1:5173';
 let cookies: Record<string, string> = {};
 let passed = 0;
+let skipped = 0;
 const failures: string[] = [];
+function skip(label: string, reason: string) {
+  skipped++;
+  console.log(`  ⊘ ${label} — SKIPPED (${reason})`);
+}
 
 function mergeCookies(res: Response) {
   for (const raw of (res.headers as any).getSetCookie?.() || []) {
@@ -108,19 +113,24 @@ async function main() {
   const before = await call<any>(`/api/attempts/${attemptId}/answers`, { method: 'PUT', body: JSON.stringify({ questionId: first.id, selectedOptionIds: [first.options[0].id] }) });
   check('Answers are locked after submission', before.status === 409);
 
-  // Sandbox development defaults only. Real deployments must supply
-  // E2E_ADMIN_EMAIL / E2E_ADMIN_PASSWORD; never commit real credentials.
-  const login = await call<any>('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: process.env.E2E_ADMIN_EMAIL || 'admin@vidyapariksha.local', password: process.env.E2E_ADMIN_PASSWORD || 'DevAdminPass2026!' }) });
-  check('Administrator can sign in', login.status === 200 && login.data.data.user.role === 'super_admin', login.data.error);
-  const overview = await call<any>('/api/admin/overview');
-  check('Admin overview returns genuine statistics', overview.status === 200 && overview.data.data.totalQuestions > 100, overview.data.error);
-  const settings = await call<any>('/api/admin/settings');
-  check('Site settings are readable by authorised admin', settings.status === 200 && Boolean(settings.data.data.site_name));
-
-  const logout = await call<any>('/api/auth/logout', { method: 'POST', body: '{}' });
-  check('Logout clears the privileged session', logout.data.ok);
+  // No credentials are hardcoded. Supply E2E_ADMIN_EMAIL / E2E_ADMIN_PASSWORD
+  // in the environment for a real deployment; otherwise these checks are skipped.
+  const adminEmail = process.env.E2E_ADMIN_EMAIL;
+  const adminPassword = process.env.E2E_ADMIN_PASSWORD;
+  if (adminEmail && adminPassword) {
+    const login = await call<any>('/api/auth/login', { method: 'POST', body: JSON.stringify({ email: adminEmail, password: adminPassword }) });
+    check('Administrator can sign in', login.status === 200 && login.data.data.user.role === 'super_admin', login.data.error);
+    const overview = await call<any>('/api/admin/overview');
+    check('Admin overview returns genuine statistics', overview.status === 200 && overview.data.data.totalQuestions > 100, overview.data.error);
+    const settings = await call<any>('/api/admin/settings');
+    check('Site settings are readable by authorised admin', settings.status === 200 && Boolean(settings.data.data.site_name));
+    const logout = await call<any>('/api/auth/logout', { method: 'POST', body: '{}' });
+    check('Logout clears the privileged session', logout.data.ok);
+  } else {
+    skip('Administrator sign-in, overview, settings and logout', 'set E2E_ADMIN_EMAIL and E2E_ADMIN_PASSWORD');
+  }
   const blocked = await call<any>('/api/admin/overview');
-  check('Admin route is protected after logout', blocked.status === 401 || blocked.status === 403);
+  check('Admin route is protected without a privileged session', blocked.status === 401 || blocked.status === 403);
 
   const contact = await call<any>('/api/contact', { method: 'POST', body: JSON.stringify({ name: 'Workflow Test', email: 'workflow@test.local', subject: 'Automated check', message: 'This end-to-end message is actually stored.' }) });
   check('Contact form persists a message', contact.status === 201, contact.data);
@@ -129,7 +139,7 @@ async function main() {
 }
 
 function summary() {
-  console.log(`\n${passed} checks passed, ${failures.length} failed.`);
+  console.log(`\n${passed} checks passed, ${skipped} skipped, ${failures.length} failed.`);
   if (failures.length) { console.error('Failures:', failures.join(', ')); process.exitCode = 1; }
   else console.log('Live workflow complete.\n');
 }

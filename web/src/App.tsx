@@ -1,6 +1,6 @@
-import { lazy, Suspense, useEffect } from 'react';
+import { Component, lazy, Suspense, useEffect, type ErrorInfo, type ReactNode } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
-import { Loading } from './components/ui';
+import { Button, Loading } from './components/ui';
 import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 import { Exams, ExamCategory, Books, BookDetail, SubjectDetail, TopicDetail, TestsPage } from './pages/Catalog';
@@ -21,13 +21,36 @@ function ScrollToTop() {
   return null;
 }
 
-function Suspended({ children }: { children: React.ReactNode }) {
+function Suspended({ children }: { children: ReactNode }) {
   return <Suspense fallback={<div className="container section"><Loading label="Loading page…" /></div>}>{children}</Suspense>;
+}
+
+/** A single page crash must not blank the whole application. */
+class AppErrorBoundary extends Component<{ children: ReactNode }, { error: Error | null }> {
+  state: { error: Error | null } = { error: null };
+  static getDerivedStateFromError(error: Error) { return { error }; }
+  componentDidCatch(error: Error, info: ErrorInfo) {
+    console.error('[ui] render error:', error.message, info.componentStack);
+  }
+  render() {
+    if (!this.state.error) return this.props.children;
+    return (
+      <div className="container section" style={{ maxWidth: 560 }}>
+        <h2>Something went wrong on this page</h2>
+        <p className="muted">The rest of the application is still available. Your saved answers and attempts are stored on the server, so reloading is safe.</p>
+        <div className="alert alert-warning">{this.state.error.message}</div>
+        <div className="btn-group mt-2">
+          <Button onClick={() => this.setState({ error: null })}>Try again</Button>
+          <Button variant="outline" onClick={() => window.location.assign('/')}>Go to homepage</Button>
+        </div>
+      </div>
+    );
+  }
 }
 
 export function App() {
   return (
-    <>
+    <AppErrorBoundary>
       <ScrollToTop />
       <Routes>
         {/* The live examination has its own chrome and is deliberately outside the site layout. */}
@@ -87,6 +110,6 @@ export function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-    </>
+    </AppErrorBoundary>
   );
 }

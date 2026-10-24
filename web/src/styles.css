@@ -1,4 +1,28 @@
-/* VidyaPariksha — design system (mobile-first) */
+/* VidyaPariksha — design system (mobile-first)
+ * Fonts are self-hosted (SIL OFL). No render-blocking third-party stylesheet,
+ * so the exam still renders correctly on restricted/offline networks. */
+@font-face {
+  font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url('/fonts/inter-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap;
+  src: url('/fonts/inter-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Inter'; font-style: normal; font-weight: 700 800; font-display: swap;
+  src: url('/fonts/inter-latin-700-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans Devanagari'; font-style: normal; font-weight: 400; font-display: swap;
+  src: url('/fonts/noto-sans-devanagari-devanagari-400-normal.woff2') format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CFF, U+200C-200D, U+20B9, U+25CC, U+A8E0-A8FF;
+}
+@font-face {
+  font-family: 'Noto Sans Devanagari'; font-style: normal; font-weight: 700; font-display: swap;
+  src: url('/fonts/noto-sans-devanagari-devanagari-700-normal.woff2') format('woff2');
+  unicode-range: U+0900-097F, U+1CD0-1CFF, U+200C-200D, U+20B9, U+25CC, U+A8E0-A8FF;
+}
 :root {
   --primary: #0B4FA8;
   --primary-dark: #083c80;
@@ -10,7 +34,8 @@
   --bg: #F3F6FB;
   --card: #FFFFFF;
   --text: #172033;
-  --muted: #64748B;
+  /* WCAG AA: >= 4.5:1 against --bg (#F3F6FB), white and tinted cards. */
+  --muted: #5C6B80;
   --border: #E2E8F0;
   --border-strong: #CBD5E1;
   --focus: #2563EB;
@@ -217,7 +242,7 @@ label.field-label { display: block; font-weight: 600; font-size: .85rem; margin-
 /* Footer */
 .site-footer { background: #0F213D; color: #CBD5E1; margin-top: 56px; }
 .footer-grid { display: grid; gap: 28px; padding: 40px 0 26px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.footer-grid h4 { color: #fff; font-size: .86rem; margin-bottom: 12px; }
+.footer-grid h3 { color: #fff; font-size: .86rem; margin-bottom: 12px; }
 .footer-grid a { display: block; color: #A9BBD3; font-size: .84rem; padding: 4px 0; }
 .footer-grid a:hover { color: #fff; }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding: 16px 0 24px; font-size: .78rem; color: #90A5C0; }

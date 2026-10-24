@@ -53,9 +53,14 @@ export function useResource<T>(endpoint: string, query = '') {
     setLoading(true); setError('');
     try {
       const separator = endpoint.includes('?') ? '&' : '?';
-      const result = await api.get<any>(`${endpoint}${separator}page=${page}&limit=25${query}`);
-      if (Array.isArray(result)) { setRows(result as T[]); setMeta({ page: 1, pages: 1, total: result.length }); }
-      else { setRows(result.data as T[]); setMeta(result.meta || { page: 1, pages: 1, total: result.data?.length || 0 }); }
+      const result = await api.getEnvelope<T[]>(`${endpoint}${separator}page=${page}&limit=25${query}`);
+      const list = Array.isArray(result.data) ? result.data : [];
+      setRows(list);
+      setMeta({
+        page: Number(result.meta?.page ?? page),
+        pages: Number(result.meta?.pages ?? 1),
+        total: Number(result.meta?.total ?? list.length),
+      });
     } catch (err) { setError(formatError(err)); } finally { setLoading(false); }
   }, [endpoint, page, query]);
 

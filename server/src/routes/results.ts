@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import PDFDocument from 'pdfkit';
 import { z } from 'zod';
 import { paginate, parseJson } from '../db.js';
@@ -122,12 +123,25 @@ resultsRouter.get('/:attemptId', (req, res) => {
   send(res, buildResult(req.db, attemptId));
 });
 
-function fontPath(): string | null {
-  const candidates = [
-    path.resolve(process.cwd(), 'server/assets/DejaVuSans.ttf'),
+const here = path.dirname(fileURLToPath(import.meta.url));
+
+/**
+ * PDFKit does not do automatic font fallback. DejaVu Sans covers Latin but has
+ * no Devanagari glyphs, so a bundled OFL-licensed Noto Sans Devanagari TTF is
+ * used for Hindi reports. Licensed content is never guessed/transliterated.
+ */
+function fontPath(language = 'en'): string | null {
+  const latin = [
+    path.join(here, 'assets', 'DejaVuSans.ttf'),
     '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',
     '/usr/share/fonts/dejavu/DejaVuSans.ttf',
   ];
+  const devanagari = [
+    path.join(here, 'assets', 'NotoSansDevanagari-Regular.ttf'),
+    path.join(here, '..', '..', 'server', 'assets', 'NotoSansDevanagari-Regular.ttf'),
+    path.resolve(process.cwd(), 'server/assets/NotoSansDevanagari-Regular.ttf'),
+  ];
+  const candidates = language === 'hi' ? [...devanagari, ...latin] : latin;
   return candidates.find((p) => fs.existsSync(p)) || null;
 }
 
@@ -136,7 +150,7 @@ resultsRouter.get('/:attemptId/pdf', (req, res) => {
   getOwnedAttempt(req, attemptId);
   const result = buildResult(req.db, attemptId);
   const s = result.summary;
-  const font = fontPath();
+  const font = fontPath(result.attempt.language);
   const doc = new PDFDocument({ size: 'A4', margin: 42, bufferPages: true });
   res.setHeader('Content-Type', 'application/pdf');
   res.setHeader('Content-Disposition', `attachment; filename="vidyapariksha-result-${attemptId}.pdf"`);

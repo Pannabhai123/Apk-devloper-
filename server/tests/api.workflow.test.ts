@@ -285,6 +285,10 @@ describe('examination workflow', () => {
     expect(result.body.data.review).toHaveLength(5);
     expect(result.body.data.review[0].correctOptionIds).toContain(correct.id);
     expect(result.body.data.summary.unanswered).toBe(5);
+    // Positive control: a test with result_visibility='after_submit' does reveal
+    // its key on the attempt/review endpoint once submitted.
+    const revealed = await agent.get(`/api/attempts/${attemptId}`).expect(200);
+    expect(revealed.body.data.questions[0].correctOptionIds).toContain(correct.id);
   });
 
   it('calculates a correct score from stored answers on the server', async () => {

@@ -16,7 +16,9 @@ interface RecentTest { id: number; slug: string; title: string; mode: string; qu
 
 export function Home() {
   const { settings } = useApp();
-  const books = useApi<{ data: Book[] }>('/books?limit=12');
+  // `/books` is paginated: the API wrapper already unwraps `data`, so the
+  // payload here is the rows array itself (meta is not needed on the homepage).
+  const books = useApi<Book[]>('/books?limit=12');
   const categories = useApi<Category[]>('/categories');
   const recent = useApi<RecentTest[]>('/tests/recent');
   const countdowns = useApi<{ id: number; title: string; exam_date: string }[]>('/countdowns');
@@ -88,9 +90,9 @@ export function Home() {
           </div>
           {books.loading && <Loading label="Loading books…" />}
           {books.error && <ErrorState message={books.error} onRetry={books.reload} />}
-          {books.data && books.data.data.length === 0 && <EmptyState title="No books configured yet" description="An administrator can add collections from the Admin Panel." />}
+          {books.data && books.data.length === 0 && <EmptyState title="No books configured yet" description="An administrator can add collections from the Admin Panel." />}
           <div className="grid grid-2-sm grid-3-lg grid-4-lg">
-            {books.data?.data.map((b) => (
+            {books.data?.map((b) => (
               <Card className="card-hover book-card" key={b.id}>
                 <div className={`book-cover ${coverClass(b.slug)}`}>
                   <div className="book-badges">

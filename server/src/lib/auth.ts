@@ -44,6 +44,16 @@ export function randomToken(bytes = 32): string {
   return crypto.randomBytes(bytes).toString('base64url');
 }
 
+/**
+ * Session tokens are stored only as a keyed HMAC, never in plaintext. The key is
+ * SESSION_SECRET, so a leaked database copy cannot be replayed as a session even
+ * though the raw tokens are already 256-bit random values. Rotating the secret
+ * invalidates all existing sessions (documented in README).
+ */
+export function sessionTokenHash(token: string): string {
+  return crypto.createHmac('sha256', config.sessionSecret).update(token).digest('hex');
+}
+
 const SCRYPT_N = 32768;
 // N=32768 with r=8 needs ~32 MiB, slightly above Node's default scrypt maxmem.
 const SCRYPT_OPTIONS = { N: SCRYPT_N, r: 8, p: 1, maxmem: 96 * 1024 * 1024 };
@@ -117,7 +127,7 @@ export function createSession(
     .prepare(
       'INSERT INTO sessions (token_hash, csrf_token, user_id, kind, expires_at, ip, user_agent) VALUES (?,?,?,?,?,?,?)',
     )
-    .run(sha256(token), csrf, userId, kind, expiresAt, req.ip || null, String(req.get('user-agent') || '').slice(0, 250));
+    .run(sessionTokenHash(token), csrf, userId, kind, expiresAt, req.ip || null, String(req.get('user-agent') || '').slice(0, 250));
   setSessionCookies(res, token, csrf, hours);
   return { id: Number(info.lastInsertRowid), kind, user_id: userId, csrf_token: csrf, expires_at: expiresAt };
 }
@@ -150,7 +160,7 @@ export function sessionMiddleware(db: DB) {
     if (token) {
       const row = db
         .prepare('SELECT id, kind, user_id, csrf_token, expires_at FROM sessions WHERE token_hash = ?')
-        .get(sha256(token)) as Omit<AuthSession, 'kind'> & { kind: string } | undefined;
+        .get(sessionTokenHash(token)) as Omit<AuthSession, 'kind'> & { kind: string } | undefined;
       if (row && Date.parse(row.expires_at) > Date.now()) {
         const user = row.kind === 'user' && row.user_id ? loadUser(db, row.user_id) : null;
         req.auth = {
@@ -166,9 +176,23 @@ export function sessionMiddleware(db: DB) {
       }
       if (row) db.prepare('DELETE FROM sessions WHERE id = ?').run(row.id);
     }
+    // Unauthenticated health probes must not create a database row on every poll.
+    if (req.path === '/health') {
+      req.auth = {
+        session: { id: 0, kind: 'guest', user_id: null, csrf_token: '', expires_at: '' },
+        user: null,
+      };
+      return next();
+    }
     req.auth = { session: createSession(db, res, req, 'guest'), user: null };
     next();
   };
+}
+
+/** Remove expired sessions so anonymous traffic cannot grow the table without bound. */
+export function cleanupExpiredSessions(db: DB): number {
+  const info = db.prepare('DELETE FROM sessions WHERE expires_at <= ?').run(nowIso());
+  return info.changes;
 }
 
 /** CSRF double-submit check for all state-changing cookie-authenticated requests. */

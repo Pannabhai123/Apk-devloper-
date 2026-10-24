@@ -61,8 +61,15 @@ export function AdminQuestions() {
   const load = async () => {
     setLoading(true); setError('');
     try {
-      const result = await api.get<{ data: QuestionRow[]; meta: any }>(`/admin/questions?${query.toString()}`);
-      setRows(result.data); setMeta(result.meta);
+      // `api.get` already unwraps the response `data`; keep the envelope here so
+      // the real page totals drive the pager instead of a guessed length.
+      const result = await api.getEnvelope<QuestionRow[]>(`/admin/questions?${query.toString()}`);
+      setRows(Array.isArray(result.data) ? result.data : []);
+      setMeta({
+        page: Number(result.meta?.page ?? page),
+        pages: Number(result.meta?.pages ?? 1),
+        total: Number(result.meta?.total ?? 0),
+      });
     } catch (err) { setError(formatError(err)); } finally { setLoading(false); }
   };
   useEffect(() => { void load(); }, [page, filters, nonce]); // eslint-disable-line react-hooks/exhaustive-deps

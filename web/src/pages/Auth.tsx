@@ -40,7 +40,12 @@ export function Login() {
       await api.post('/auth/login', { email, password });
       await refresh();
       toast('Signed in successfully.', 'success');
-      nav(params.get('next') || '/dashboard');
+      const next = params.get('next');
+      if (next) { nav(next); return; }
+      // Staff accounts land directly in the console they were granted access to.
+      const me = await api.get<{ user: { role: string; permissions?: string[] } | null }>('/auth/me');
+      const staff = me.user && (me.user.role !== 'student' || (me.user.permissions?.length ?? 0) > 0);
+      nav(staff ? '/admin' : '/dashboard');
     } catch (err) { setError(formatError(err)); }
     finally { setBusy(false); }
   };
@@ -114,10 +119,10 @@ export function ForgotPassword() {
     } catch (err) { setError(formatError(err)); } finally { setBusy(false); }
   };
   return (
-    <AuthShell title="Reset your password" subtitle="Enter your account email. If it exists, a reset token is issued." footer={<Link to="/login">Back to sign in</Link>}>
+    <AuthShell title="Reset your password" subtitle="Enter your account email. A reset link is sent only when email delivery is configured on this server." footer={<Link to="/login">Back to sign in</Link>}>
       {error && <div className="mb-2"><Notice kind="danger">{error}</Notice></div>}
       {message && <div className="mb-2"><Notice kind="success">{message}</Notice></div>}
-      {devToken && <div className="mb-2"><Notice kind="warning"><strong>Development mode:</strong> no email service is configured, so the reset token is shown here. <Link to={`/reset-password?token=${encodeURIComponent(devToken)}`}>Continue to reset</Link><br /><code style={{ fontSize: '.72rem', wordBreak: 'break-all' }}>{devToken}</code></Notice></div>}
+      {devToken && <div className="mb-2"><Notice kind="warning"><strong>Development/testing aid:</strong> EXPOSE_DEV_RESET_TOKEN is enabled, so the token is shown here instead of being emailed. This is disabled in production. <Link to={`/reset-password?token=${encodeURIComponent(devToken)}`}>Continue to reset</Link><br /><code style={{ fontSize: '.72rem', wordBreak: 'break-all' }}>{devToken}</code></Notice></div>}
       <form onSubmit={submit}>
         <Field label="Email address" htmlFor="forgot-email"><div className="search-box"><Mail size={17} /><input id="forgot-email" className="input" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} /></div></Field>
         <Button type="submit" block loading={busy}><KeyRound size={16} /> Request reset</Button>

@@ -515,11 +515,20 @@ function parseImportCsv(db: any, csvText: string, defaultBookId?: number): { val
     if (text.length < 4) issues.push('text_en must be at least 4 characters');
     if (text.length > 5000) issues.push('text_en exceeds 5000 characters');
     const optionPairs = (r.options || '').split('||').map((p) => p.trim()).filter(Boolean);
-    const options = optionPairs.map((pair) => {
+    const parsedOptions = optionPairs.map((pair) => {
       const idx = pair.indexOf(':');
-      return idx > 0 ? { label: pair.slice(0, idx).trim().toUpperCase(), textEn: pair.slice(idx + 1).trim() } : null;
+      if (idx <= 0) return null;
+      const label = pair.slice(0, idx).trim().toUpperCase();
+      const textEn = pair.slice(idx + 1).trim();
+      return label && textEn ? { label, textEn } : null;
     });
-    if (options.length < 2 || options.some((o) => !o || !o.label || !o.textEn)) issues.push('options must contain at least 2 entries in the form A:Text||B:Text');
+    // Malformed option pairs must produce a row-level validation error, never a
+    // 500 crash. Only well-formed options are kept for further validation.
+    const options = parsedOptions.filter((o): o is { label: string; textEn: string } => o !== null);
+    if (parsedOptions.length !== options.length || options.length < 2) {
+      issues.push('options must contain at least 2 entries in the form A:Text||B:Text');
+    }
+    if (new Set(options.map((o) => o.label)).size !== options.length) issues.push('option labels must be unique');
     const correctLabels = (r.correct_labels || '').split(',').map((s) => s.trim().toUpperCase()).filter(Boolean);
     if (!correctLabels.length) issues.push('correct_labels is required (e.g. A or A,C)');
     if (correctLabels.some((l) => !options.some((o) => o && o.label === l))) issues.push('correct_labels references an option that does not exist');
@@ -538,7 +547,7 @@ function parseImportCsv(db: any, csvText: string, defaultBookId?: number): { val
       bookId: book?.id, subjectId: subject?.id, topicId: topic?.id ?? null, difficulty, qtype,
       textEn: text, textHi: r.text_hi || null, explanationEn: r.explanation_en || null,
       marks, negativeMarks: negative, language, status, tags: r.tags || '', source: r.source || 'CSV import',
-      isVerifiedPyq: false, options: options.map((o) => ({ label: o!.label, textEn: o!.textEn, textHi: null, imageUrl: null, isCorrect: correctLabels.includes(o!.label) })),
+      isVerifiedPyq: false, options: options.map((o) => ({ label: o.label, textEn: o.textEn, textHi: null, imageUrl: null, isCorrect: correctLabels.includes(o.label) })),
     };
     const entry = { row: rowNumber, data, errors: issues };
     if (issues.length) errors.push(entry); else valid.push(entry);

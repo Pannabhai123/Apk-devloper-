@@ -1,5 +1,7 @@
+import crypto from 'node:crypto';
 import type { NextFunction, Request, Response } from 'express';
 import { ZodError } from 'zod';
+import { config } from '../config.js';
 
 export class HttpError extends Error {
   constructor(public status: number, message: string, public details?: unknown) {
@@ -29,9 +31,29 @@ export function sendError(res: Response, err: unknown) {
       details: err.issues.map((i) => ({ path: i.path.join('.'), message: i.message })),
     });
   }
-  console.error('[error]', err);
+  const errorId = crypto.randomUUID();
+  if (config.isProd) {
+    // Never log raw error objects in production: they can contain SQL text,
+    // bound values, absolute paths or personal data. Only a correlation id and
+    // a scrubbed summary reach the log; the raw error stays server-side only.
+    console.error('[error]', JSON.stringify({
+      errorId,
+      name: err instanceof Error ? err.name : 'Error',
+      message: scrubForLog(err instanceof Error ? err.message : 'Unexpected server error'),
+    }));
+  } else {
+    console.error('[error]', err);
+  }
   const message = err instanceof Error ? err.message : 'Unexpected server error';
-  return res.status(500).json({ ok: false, error: configSafeMessage(message) });
+  return res.status(500).json({ ok: false, error: configSafeMessage(message), errorId });
+}
+
+function scrubForLog(message: string): string {
+  return message
+    .replace(/(?:\/[A-Za-z0-9._-]+){2,}/g, '[path]')
+    .replace(/[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}/g, '[email]')
+    .replace(/\b(?:SELECT|INSERT|UPDATE|DELETE)\b[\s\S]*/i, '[query redacted]')
+    .slice(0, 300);
 }
 
 // Never leak internal SQL/file details to clients, but keep useful constraint hints.

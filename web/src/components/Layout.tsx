@@ -117,7 +117,7 @@ function Footer() {
           </div>
         </div>
         <div>
-          <h4>Practice</h4>
+          <h3>Practice</h3>
           <Link to="/exams">Exam Categories</Link>
           <Link to="/books">Books &amp; Collections</Link>
           <Link to="/tests">All Tests</Link>
@@ -125,7 +125,7 @@ function Footer() {
           <Link to="/my-progress">My Progress</Link>
         </div>
         <div>
-          <h4>Company</h4>
+          <h3>Company</h3>
           <Link to="/about">About Us</Link>
           <Link to="/contact">Contact Us</Link>
           <Link to="/help">Help Center</Link>
@@ -133,7 +133,7 @@ function Footer() {
           <Link to="/disclaimer">Disclaimer</Link>
         </div>
         <div>
-          <h4>Legal</h4>
+          <h3>Legal</h3>
           <Link to="/privacy-policy">Privacy Policy</Link>
           <Link to="/terms">Terms &amp; Conditions</Link>
           <Link to="/cookie-policy">Cookie Policy</Link>

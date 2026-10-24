@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { z } from 'zod';
 import { config } from '../config.js';
 import { isoAfter, isExpired, nowIso, parseJson, remainingSeconds, transaction } from '../db.js';
-import { badRequest, conflict, forbidden, notFound, send, tooMany, unauthorized } from '../lib/http.js';
+import { badRequest, conflict, notFound, send, unauthorized } from '../lib/http.js';
 import { audit } from '../lib/audit.js';
 import { finalizeAttempt, negativeMarksForAttempt, scoreQuestion, validateAnswerSelection, type SnapshotOption } from '../lib/scoring.js';
 import { selectQuestions } from '../lib/selection.js';
@@ -294,7 +294,10 @@ attemptsRouter.get('/:id', (req, res) => {
   const answers = db.prepare('SELECT * FROM attempt_answers WHERE attempt_id = ?').all(id) as any[];
   const answerMap = new Map(answers.map((a) => [a.question_id, a]));
   const statusCounts = counts(db, id);
-  const canReveal = fresh.status !== 'in_progress';
+  // Submission alone is not enough: a test configured with result_visibility
+  // 'hidden' shows the score but must never leak the answer key through the
+  // attempt/review payload. Keep this in sync with buildResult() in results.ts.
+  const canReveal = fresh.status !== 'in_progress' && fresh.result_visibility !== 'hidden';
   const questions = rows.map((q) => {
     const a = answerMap.get(q.question_id);
     const qobj = publicQuestion(q, fresh.language, canReveal);
@@ -349,7 +352,9 @@ attemptsRouter.put('/:id/answers', validateBody(answerSchema), (req, res) => {
   if (attempt.status !== 'in_progress') throw conflict('This attempt has already been submitted.');
   if (isExpired(attempt.deadline_at)) {
     finalizeAttempt(db, id, 'expired');
-    throw tooMany('The time limit has expired and the test was submitted automatically.');
+    // 409 (not 429): this is a state conflict, not a rate limit. Keep the same
+    // status whether expiry was detected by GET or by this write.
+    throw conflict('The time limit has expired and the test was submitted automatically.');
   }
   const body = req.body;
   const qrow = db.prepare('SELECT * FROM attempt_questions WHERE attempt_id = ? AND question_id = ?').get(id, body.questionId) as any;
@@ -453,7 +458,8 @@ export function expireDueAttempts(db: any): number {
   const rows = db.prepare("SELECT id FROM attempts WHERE status = 'in_progress' AND deadline_at <= ?").all(nowIso()) as { id: number }[];
   let done = 0;
   for (const row of rows) {
-    try { finalizeAttempt(db, row.id, 'expired'); done++; } catch (err) { console.error('[expiry]', row.id, err); }
+    try { finalizeAttempt(db, row.id, 'expired'); done++; }
+    catch (err) { console.error('[expiry]', row.id, err instanceof Error ? err.message : 'unknown error'); }
   }
   return done;
 }

@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { ArrowRight, BookOpen, ChevronRight, Clock3, FileQuestion, Layers, Search, SlidersHorizontal, Target } from 'lucide-react';
 import { Badge, Breadcrumbs, Button, Card, EmptyState, ErrorState, Icon, Loading, Notice, PageMeta, Pagination } from '../components/ui';
-import { useApi } from '../hooks/useApi';
+import { useApi, usePagedApi } from '../hooks/useApi';
 import { coverClass, formatDate, titleCase } from '../lib/format';
 
 interface Category { id: number; slug: string; name: string; description: string; icon: string; color: string; book_count: number; test_count: number }
@@ -89,7 +89,9 @@ export function ExamCategory() {
 
 export function Books() {
   const [q, setQ] = useState('');
-  const { data, loading, error, reload } = useApi<{ data: BookListItem[]; meta: { total: number; page: number; pages: number } }>(`/books?limit=50${q ? `&q=${encodeURIComponent(q)}` : ''}`, [q]);
+  const [page, setPage] = useState(1);
+  useEffect(() => { setPage(1); }, [q]);
+  const { data, meta, loading, error, reload } = usePagedApi<BookListItem>(`/books?page=${page}&limit=12${q ? `&q=${encodeURIComponent(q)}` : ''}`, [q, page]);
   return (
     <div className="container section">
       <PageMeta title="Books & Collections" description="Browse question collections available for practice on VidyaPariksha." />
@@ -100,9 +102,9 @@ export function Books() {
       </div>
       {loading && <Loading />}
       {error && <ErrorState message={error} onRetry={reload} />}
-      {data && data.data.length === 0 && <EmptyState title="No matching books" description="Try a different keyword or explore all exam categories." action={<Link to="/exams" className="btn btn-primary btn-sm">Browse categories</Link>} />}
+      {data && data.length === 0 && <EmptyState title="No matching books" description="Try a different keyword or explore all exam categories." action={<Link to="/exams" className="btn btn-primary btn-sm">Browse categories</Link>} />}
       <div className="grid grid-2-sm grid-3-lg">
-        {data?.data.map((b) => (
+        {data?.map((b) => (
           <Card className="card-hover book-card" key={b.id}>
             <div className={`book-cover ${coverClass(b.slug)}`}>
               <div className="book-badges">{b.badge && <Badge tone={b.badge === 'new' ? 'new' : 'popular'}>{b.badge.toUpperCase()}</Badge>}</div>
@@ -116,6 +118,8 @@ export function Books() {
           </Card>
         ))}
       </div>
+      {meta && meta.pages > 1 && <Pagination page={meta.page} pages={meta.pages} onChange={setPage} />}
+      {meta && <p className="tiny muted mt-2">{meta.total} collection(s) in the database.</p>}
     </div>
   );
 }
@@ -369,7 +373,7 @@ export function TestsPage() {
   const mode = params.get('mode') || '';
   const q = params.get('q') || '';
   const path = `/tests?page=${page}&limit=12${category ? `&category=${encodeURIComponent(category)}` : ''}${mode ? `&mode=${mode}` : ''}${q ? `&q=${encodeURIComponent(q)}` : ''}`;
-  const { data, loading, error, reload } = useApi<{ data: any[]; meta: { total: number; page: number; pages: number } }>(path, [page, category, mode, q]);
+  const { data, meta, loading, error, reload } = usePagedApi<any>(path, [page, category, mode, q]);
   const cats = useApi<Category[]>('/categories');
   const [draftQ, setDraftQ] = useState(q);
 
@@ -401,9 +405,9 @@ export function TestsPage() {
         </div>
       </div>
       {loading && <Loading />}{error && <ErrorState message={error} onRetry={reload} />}
-      {data && data.data.length === 0 && <EmptyState title="No tests match these filters" description="Try clearing the filters or choose a category." action={<Button variant="outline" onClick={() => setParams({})}>Clear filters</Button>} />}
+      {data && data.length === 0 && <EmptyState title="No tests match these filters" description="Try clearing the filters or choose a category." action={<Button variant="outline" onClick={() => setParams({})}>Clear filters</Button>} />}
       <div className="grid grid-2-sm grid-3-lg">
-        {data?.data.map((t) => (
+        {data?.map((t) => (
           <Link to={`/test/${t.slug}/instructions`} className="card card-pad card-hover" key={t.id} style={{ display: 'block' }}>
             <div className="row-between"><Badge tone="blue">{titleCase(t.mode)}</Badge>{t.practice_feedback ? <Badge tone="green">Feedback</Badge> : null}</div>
             <h3 style={{ margin: '10px 0 6px', fontSize: '1.02rem' }}>{t.title}</h3>
@@ -413,7 +417,7 @@ export function TestsPage() {
           </Link>
         ))}
       </div>
-      {data && <Pagination page={data.meta.page} pages={data.meta.pages} onChange={(p) => update('page', String(p))} />}
+      {meta && <Pagination page={meta.page} pages={meta.pages} onChange={(p) => update('page', String(p))} />}
     </div>
   );
 }

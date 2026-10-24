@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { config } from './config.js';
 import type { DB } from './db.js';
-import { csrfMiddleware, sessionMiddleware } from './lib/auth.js';
+import { cleanupExpiredSessions, csrfMiddleware, sessionMiddleware } from './lib/auth.js';
 import { errorHandler, HttpError, notFoundHandler } from './lib/http.js';
 import { rateLimit } from './lib/rateLimit.js';
 import { authRouter } from './routes/auth.js';
@@ -32,16 +32,21 @@ export function createApp(db: DB, options: AppOptions = {}): Express {
         directives: {
           defaultSrc: ["'self'"],
           scriptSrc: ["'self'"],
-          styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
-          fontSrc: ["'self'", 'https://fonts.gstatic.com', 'data:'],
+          styleSrc: ["'self'", "'unsafe-inline'"],
+          fontSrc: ["'self'", 'data:'],
           imgSrc: ["'self'", 'data:', 'blob:', 'https:'],
           connectSrc: ["'self'", config.publicOrigin],
           objectSrc: ["'none'"],
-          frameAncestors: ['*'],
+          frameSrc: ["'none'"],
+          // Clickjacking protection: the exam UI must not be embeddable by third parties.
+          frameAncestors: ["'none'"],
           baseUri: ["'self'"],
           formAction: ["'self'"],
         },
       },
+      hsts: config.cookieSecure
+        ? { maxAge: 31_536_000, includeSubDomains: true, preload: true }
+        : false,
       crossOriginEmbedderPolicy: false,
       crossOriginResourcePolicy: { policy: 'cross-origin' },
       referrerPolicy: { policy: 'strict-origin-when-cross-origin' },
@@ -58,9 +63,15 @@ export function createApp(db: DB, options: AppOptions = {}): Express {
   app.use((req, _res, next) => { req.db = db; next(); });
   app.use('/uploads', express.static(config.uploadDir, { immutable: true, maxAge: '7d', fallthrough: true }));
 
-  // Public SEO endpoints (no session required).
-  app.use('/', publicRouter);
+  // Public SEO endpoints at the site root. Only safe methods are exposed here:
+  // the state-changing /contact route lives behind CSRF at /api/contact.
+  app.use('/', (req, res, next) => {
+    if (req.method === 'GET' || req.method === 'HEAD') return publicRouter(req, res, next);
+    return next();
+  });
 
+  // Session-scoped API data must never be stored by shared caches/proxies.
+  app.use('/api', (_req, res, next) => { res.setHeader('Cache-Control', 'no-store'); next(); });
   app.use('/api', express.json({ limit: '2mb' }));
   app.use('/api', sessionMiddleware(db));
   app.use('/api', (req, _res, next) => {
@@ -112,8 +123,18 @@ export function createApp(db: DB, options: AppOptions = {}): Express {
 
 export function startExpirySweeper(db: DB, intervalMs = 20_000) {
   const timer = setInterval(() => {
-    const count = expireDueAttempts(db);
-    if (count) console.log(`[expiry] finalized ${count} expired attempt(s)`);
+    try {
+      const count = expireDueAttempts(db);
+      if (count) console.log(`[expiry] finalized ${count} expired attempt(s)`);
+    } catch (err) {
+      console.error('[expiry] sweeper failed:', err instanceof Error ? err.message : 'unknown error');
+    }
+    try {
+      const removed = cleanupExpiredSessions(db);
+      if (removed > 25) console.log(`[expiry] removed ${removed} expired session(s)`);
+    } catch (err) {
+      console.error('[expiry] session cleanup failed:', err instanceof Error ? err.message : 'unknown error');
+    }
   }, intervalMs);
   timer.unref();
   return timer;
