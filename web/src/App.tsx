@@ -5,7 +5,7 @@ import { Layout } from './components/Layout';
 import { Home } from './pages/Home';
 import { Exams, ExamCategory, Books, BookDetail, SubjectDetail, TopicDetail, TestsPage } from './pages/Catalog';
 import { Instructions } from './pages/Instructions';
-import { Login, Register, ForgotPassword, ResetPassword } from './pages/Auth';
+import { Login, Register, ForgotPassword, ResetPassword, SetupAdmin } from './pages/Auth';
 import { About, Contact, Privacy, Terms, CookiePolicy, Disclaimer, Help, SitemapPage, NotFound } from './pages/Static';
 import { Dashboard, MyResults, MyProgress, BookmarksPage, Revision, Profile, StudentSettings } from './pages/Student';
 import { AdminLayout, AdminOverview, AdminCategories, AdminSubjects, AdminTopics, AdminBooks, AdminAttempts, AdminStudents, AdminAnalytics, AdminSettings, AdminAuditLogs, AdminReports } from './pages/admin/Admin';
@@ -80,6 +80,7 @@ export function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
+          <Route path="/setup-admin" element={<SetupAdmin />} />
 
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

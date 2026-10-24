@@ -423,6 +423,14 @@ const run = async () => {
       skip('Administrator UI sign-in', 'set E2E_ADMIN_EMAIL and E2E_ADMIN_PASSWORD');
     }
 
+    // The one-time administrator bootstrap must stay closed once an admin exists.
+    await page.goto(`${BASE}/setup-admin`, { waitUntil: 'domcontentloaded' });
+    await page.locator('h2').waitFor();
+    const setupText = await page.locator('body').innerText();
+    check('First-administrator setup page reports the flow is closed', /setup is currently closed/i.test(setupText), setupText.slice(0, 160));
+    const secretField = page.locator('#boot-secret');
+    check('Bootstrap form is hidden while the flow is closed', (await secretField.count()) === 0 || (await secretField.isHidden()));
+
     check('No uncaught browser console/page errors', consoleErrors.length === 0, consoleErrors.slice(0, 5));
   } catch (err) {
     failures.push(`FATAL: ${err instanceof Error ? err.message : String(err)}`);

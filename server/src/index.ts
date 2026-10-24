@@ -55,10 +55,15 @@ if (flag) {
 }
 
 // A fresh installation is usable immediately with the clearly-labelled demo bank.
+// In development this always happens; in production it happens only when
+// SEED_DEMO_ON_EMPTY=true, and only on a database that is genuinely empty, so the
+// seed can never duplicate or overwrite existing content.
 const questionCount = (db.prepare('SELECT COUNT(*) AS c FROM questions').get() as { c: number }).c;
-if (questionCount === 0 && !config.isProd) {
+if (questionCount === 0 && (config.seedDemoOnEmpty || !config.isProd)) {
   const result = seedDemoContent(db);
-  console.log(`[seed] inserted ${result.questions ?? 0} original demo practice questions`);
+  console.log(`[seed] ${result.skipped ? `question bank already present (${result.questions} rows)` : `inserted ${result.questions ?? 0} original demo practice questions`}`);
+} else if (questionCount === 0 && config.isProd) {
+  console.warn('[seed] Production database is empty. Set SEED_DEMO_ON_EMPTY=true to load the demo question bank once, or import your own questions.');
 }
 
 const app = createApp(db, { serveStatic: config.isProd || fs.existsSync(config.webDist) });

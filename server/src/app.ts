@@ -35,7 +35,10 @@ export function createApp(db: DB, options: AppOptions = {}): Express {
           styleSrc: ["'self'", "'unsafe-inline'"],
           fontSrc: ["'self'", 'data:'],
           imgSrc: ["'self'", 'data:', 'blob:', 'https:'],
-          connectSrc: ["'self'", config.publicOrigin],
+          // The SPA is served from this same origin, so 'self' is the correct
+          // and safest connect-src. When the operator explicitly pinned a
+          // cross-origin public origin (e.g. a separate API host) it is added too.
+          connectSrc: config.publicOriginExplicit ? ["'self'", config.publicOrigin] : ["'self'"],
           objectSrc: ["'none'"],
           frameSrc: ["'none'"],
           // Clickjacking protection: the exam UI must not be embeddable by third parties.

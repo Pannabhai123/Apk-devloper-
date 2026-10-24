@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { ArrowRight, Eye, EyeOff, KeyRound, LockKeyhole, Mail, ShieldCheck, UserRound } from 'lucide-react';
 import { api, formatError } from '../api/client';
@@ -33,6 +33,14 @@ export function Login() {
   const nav = useNavigate();
   const [params] = useSearchParams();
   const toast = useToast();
+  // The one-time first-administrator setup link only appears while the server
+  // still has no administrator at all (and the owner enabled the flow).
+  const [bootstrapOpen, setBootstrapOpen] = useState(false);
+  useEffect(() => {
+    api.get<{ allowed: boolean }>('/auth/bootstrap-status')
+      .then((r) => setBootstrapOpen(Boolean(r.allowed)))
+      .catch(() => setBootstrapOpen(false));
+  }, []);
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault(); setBusy(true); setError('');
@@ -52,7 +60,7 @@ export function Login() {
 
   return (
     <AuthShell title="Welcome back" subtitle="Sign in to keep your results, bookmarks and progress across devices."
-      footer={<>{settings.allow_registration !== false ? <>New here? <Link to="/register">Create an account</Link></> : 'Registration is currently closed.'}</>}>
+      footer={<>{bootstrapOpen ? <>No administrator yet? <Link to="/setup-admin">Set up the first administrator</Link></> : null}{settings.allow_registration !== false ? <>New here? <Link to="/register">Create an account</Link></> : 'Registration is currently closed.'}</>}>
       {error && <div className="mb-2"><Notice kind="danger">{error}</Notice></div>}
       <form onSubmit={submit}>
         <Field label="Email address" htmlFor="login-email"><div className="search-box"><Mail size={17} /><input id="login-email" className="input" type="email" autoComplete="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" /></div></Field>
@@ -157,6 +165,63 @@ export function ResetPassword() {
         <Field label="Confirm new password" htmlFor="reset-confirm"><input id="reset-confirm" className="input" type="password" required value={confirm} onChange={(e) => setConfirm(e.target.value)} /></Field>
         <Button type="submit" block loading={busy}>Update password</Button>
       </form>
+    </AuthShell>
+  );
+}
+
+/**
+ * One-time first-administrator bootstrap.
+ *
+ * The server only enables this while it has no administrator at all, and only
+ * when the owner configured ADMIN_BOOTSTRAP_SECRET. The first person who supplies
+ * that secret chooses the admin email and password; afterwards the flow closes
+ * permanently and cannot be reopened without operator access.
+ */
+export function SetupAdmin() {
+  const [form, setForm] = useState({ secret: '', name: '', email: '', password: '', confirm: '' });
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState('');
+  const [open, setOpen] = useState(false);
+  const { refresh } = useApp();
+  const nav = useNavigate();
+  const toast = useToast();
+
+  // Show the form only while the server genuinely has no administrator yet.
+  useEffect(() => {
+    api.get<{ allowed: boolean }>('/auth/bootstrap-status')
+      .then((r) => setOpen(Boolean(r.allowed)))
+      .catch(() => setOpen(false));
+  }, []);
+
+  const submit = async (e: React.FormEvent) => {
+    e.preventDefault(); setError('');
+    if (form.password.length < 8) { setError('Password must be at least 8 characters long.'); return; }
+    if (form.password !== form.confirm) { setError('Passwords do not match.'); return; }
+    setBusy(true);
+    try {
+      await api.post('/auth/bootstrap', { secret: form.secret, name: form.name, email: form.email, password: form.password });
+      await refresh();
+      toast('Administrator account created. You are signed in.', 'success');
+      nav('/admin');
+    } catch (err) { setError(formatError(err)); } finally { setBusy(false); }
+  };
+
+  return (
+    <AuthShell title="First-time administrator setup" subtitle="This is the one and only time the first administrator can be created. It closes permanently afterwards."
+      footer={<Link to="/login">Back to sign in</Link>}>
+      {error && <div className="mb-2"><Notice kind="danger">{error}</Notice></div>}
+      {!open && <Notice kind="warning">First-administrator setup is currently closed on this server — either an administrator already exists, or the owner has not enabled it. If this is unexpected, contact the site owner.</Notice>}
+      <form onSubmit={submit} hidden={!open}>
+        <Field label="Setup secret" htmlFor="boot-secret" hint="Provided by your hosting provider when you enabled the flow.">
+          <input id="boot-secret" className="input" required minLength={16} value={form.secret} onChange={(e) => setForm({ ...form, secret: e.target.value })} placeholder="The secret issued to you" />
+        </Field>
+        <Field label="Your name" htmlFor="boot-name"><input id="boot-name" className="input" required minLength={2} value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} /></Field>
+        <Field label="Admin email" htmlFor="boot-email"><input id="boot-email" className="input" type="email" required value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} placeholder="admin@yourdomain.com" /></Field>
+        <Field label="Password" htmlFor="boot-password" hint="At least 8 characters."><input id="boot-password" className="input" type="password" autoComplete="new-password" required minLength={8} value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} /></Field>
+        <Field label="Confirm password" htmlFor="boot-confirm"><input id="boot-confirm" className="input" type="password" autoComplete="new-password" required value={form.confirm} onChange={(e) => setForm({ ...form, confirm: e.target.value })} /></Field>
+        <Button type="submit" block size="lg" loading={busy}>Create administrator account <ArrowRight size={17} /></Button>
+      </form>
+      <p className="tiny muted mt-2 mb-0">The password is hashed with scrypt before it is stored. It is never logged or returned to the browser.</p>
     </AuthShell>
   );
 }

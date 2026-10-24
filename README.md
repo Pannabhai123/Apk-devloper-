@@ -9,7 +9,12 @@ proprietary assets were copied.
 > **Status legend used below:** **Implemented** = code exists · **Tested** = covered by
 > an automated check that ran green in this workspace · **Configured** = available via
 > settings/env, needs your values/credentials · **Deployed** = running on infrastructure
-> you control. Nothing in this repository has been deployed to production by the author.
+> you control.
+>
+> **THE WEBSITE IS NOT LIVE YET.** Nothing in this repository has been deployed to a
+> public host. The application is complete, hardened and deployment-ready — §9a gives
+> the exact steps to make it live in one click — but that final step needs a hosting
+> account that this build environment does not have and cannot create.
 
 ---
 
@@ -49,7 +54,7 @@ Create your first administrator (see §3) and sign in at `/login`.
 | `npm run typecheck` | TypeScript checks for server **and** web |
 | `npm test` | Vitest unit + API integration + security-hardening suite (**76 tests**, 3 files) |
 | `npm run e2e` | Live HTTP workflow check against a running stack (**35 checks**) |
-| `npm run test:browser` | **Real Chromium** DOM workflow (`playwright-core` + `@sparticuz/chromium`), **66 checks** |
+| `npm run test:browser` | **Real Chromium** DOM workflow (`playwright-core` + `@sparticuz/chromium`), **68 checks** |
 | `npm run test:lighthouse` | Real Lighthouse audit; writes `artifacts/lighthouse.json` |
 | `npm run build` | Production web bundle into `dist/` **and** compiled server into `dist-server/` |
 | `npm start` | Production single-process server: serves API + built SPA |
@@ -63,8 +68,10 @@ Create your first administrator (see §3) and sign in at `/login`.
 | `npm run build` | ✅ passed; split chunks: `react-vendor` 83 kB gz, app 41 kB gz, icons 8 kB gz |
 | `npm run migrate` on a **fresh** database file | ✅ `schema v2`; `npm run seed` then inserted **433 questions / 28 tests** |
 | `npm run e2e` against compiled production server (`:4100`) | ✅ **35/35** with a real admin login |
-| `npm run test:browser` against Vite (`:5173`) | ✅ **66/66**, 0 skipped |
-| `npm run test:browser` against compiled production (`:4100`) | ✅ **66/66**, 0 skipped |
+| Compiled production server with `SEED_DEMO_ON_EMPTY=true` + `ADMIN_BOOTSTRAP_SECRET` | ✅ 433 questions seeded once, `/setup-admin` opened, wrong secret **401**, correct secret **201**, status then `allowed:false`, second attempt **409** |
+| **Persistence across a real process restart** (same database file) | ✅ attempt, saved answer, mark-for-review, bookmark, user account, admin role and results all survived; the seed did **not** re-run |
+| `npm run test:browser` against Vite (`:5173`) | ✅ **68/68**, 0 skipped |
+| `npm run test:browser` against compiled production (`:4100`) | ✅ **68/68**, 0 skipped |
 | Lighthouse (mobile emulation, production build, 5 runs) | ✅ **Performance 93–97 (median 96) · Accessibility 100 · Best practices 100 · SEO 100**; FCP 1.8–2.1 s, LCP 2.0–2.5 s, TBT 100–200 ms, CLS 0–0.001. Scores vary between runs — the range is reported, not a cherry-picked best. |
 | Compiled `NODE_ENV=production node dist-server/index.js` | ✅ health, SPA deep links, static assets/fonts, manifest, admin guard, `Cache-Control: no-store` on API, honest **503** for unconfigured mail |
 | Deployment to hosting/TLS/domain | ❌ **not performed** — needs your credentials and explicit authorisation (see §9) |
@@ -116,8 +123,21 @@ data/                    SQLite database + uploads (gitignored)
 
 ## 3. First administrator (production-safe process)
 
-Never put a real password in `.env` or commit it. Create the account from the CLI
-after migrating, then remove the credentials from your shell history.
+Never put a real password in `.env` or commit it. There are two supported routes,
+both secure, and neither stores a password in source or in the frontend bundle.
+
+**Route A — one-time web form (best for a hosted deployment).** Set
+`ADMIN_BOOTSTRAP_SECRET` to a random 16+ character value in the server's
+environment. The login page then shows a *“Set up the first administrator”* link
+that opens `/setup-admin`, where you paste the secret and choose the admin email
+and password. The server accepts the form **only while the database has no
+administrator at all**; the first successful submission creates the account,
+signs you in, and the flow is closed permanently (a second attempt returns 409
+even with the correct secret). No password ever appears in a log or an API
+response.
+
+**Route B — CLI (best for a server you control).** Create the account from the
+CLI after migrating, then remove the credentials from your shell history.
 
 ```bash
 # Development — generate the password, never reuse one shown in a chat or a README
@@ -141,7 +161,8 @@ npx tsx server/src/index.ts --rotate-admin you@example.com "$(openssl rand -hex 
 > it as compromised and rotate it before exposing the service. Never place a real
 > credential in `.env` in source control — use `--setup-admin` / `--rotate-admin`.
 
-`--setup-admin` creates the account only if no administrator exists, prints
+Both routes call the same `seedAdmin()` logic. `--setup-admin` creates the
+account only if no administrator exists, prints
 `Administrator ready: …` (or the reason it was skipped), and exits — it does **not**
 start a server. Passwords are hashed with scrypt (N=2^15, `maxmem` 96 MB). The
 `SEED_ADMIN_EMAIL` / `SEED_ADMIN_PASSWORD` env vars are a **development-only**
@@ -162,7 +183,9 @@ See [`.env.example`](./.env.example). Important values:
 | `SESSION_SECRET` | **Required in production.** `assertProductionSecrets()` refuses to boot with the dev default. |
 | `COOKIE_SECURE=true` | Set when serving HTTPS; a production warning is printed otherwise. |
 | `TRUST_PROXY=1` | Set behind a TLS-terminating reverse proxy. |
-| `PUBLIC_ORIGIN` / `SITE_URL` | Used for canonical URLs, `robots.txt`, `sitemap.xml` and the production CSP. |
+| `PUBLIC_ORIGIN` / `SITE_URL` | Used for canonical URLs, `robots.txt`, `sitemap.xml` and the production CSP. **Leave blank on a provider-assigned subdomain** — the server then derives the public HTTPS origin from each request, including for password-reset links. |
+| `ADMIN_BOOTSTRAP_SECRET` | Unlocks the one-time **first-administrator** form at `/setup-admin`. Required for §9a. See §3. |
+| `SEED_DEMO_ON_EMPTY` | `true` loads the 433-question demo bank the first time the database is empty. Idempotent — see §9c. |
 | `DATABASE_PATH` | Defaults to `./data/vidyapariksha.db`. |
 | `WEB_DIST` | Defaults to `./dist`; the compiled server resolves `schema.sql` next to itself or from the project root. |
 | `ALLOW_REGISTRATION`, `GUEST_TESTS_ENABLED`, `MAINTENANCE_MODE` | Feature switches, also editable by an admin in **Admin → Settings**. |
@@ -307,21 +330,71 @@ requests need the CSRF header. Paginated endpoints accept `?page=&limit=` and re
 
 ---
 
-## 9. Deployment (single node, instructions only — not performed)
+## 9. Deployment
+
+The application is a single process that serves the built SPA **and** the API, so
+there is no second server to run and no CORS configuration to get wrong.
+`Dockerfile` and `render.yaml` are committed, so a free hosting plan can build and
+run the whole thing.
+
+Everything user-owned lives under one directory — **`/app/data`** in the image —
+which must be a **persistent** volume:
+
+| Path | Contents | Lost if the volume is lost |
+| --- | --- | --- |
+| `/app/data/vidyapariksha.db` | questions, books, categories, subjects, topics, tests, users, attempts, answers, results, bookmarks, settings, audit log | **yes — everything** |
+| `/app/data/uploads/` | question images uploaded from the admin console | yes |
+
+Nothing is kept in memory or in temporary JSON files; SQLite (WAL mode) is the
+system of record.
+
+### 9a. Free hosting, no domain, no payment (Render)
+
+This is the shortest path and it needs no command line on your machine.
+
+1. Sign up at **render.com** with an email address — the free plan is enough.
+2. In the Render dashboard: **New → New Web Service → Connect GitHub**, pick
+   `Pannabhai123/Apk-devloper-`, choose the branch, **Continue → Review →
+   Deploy**. Render reads `render.yaml` and builds the image (the first build
+   takes a few minutes because it compiles the web bundle and the server).
+3. When the service turns green, Render shows a public URL shaped like
+   `https://<service-name>.onrender.com`. Open it in a phone browser — that is
+   your website.
+4. Open the service in the dashboard → **Environment** tab → copy the value of
+   `ADMIN_BOOTSTRAP_SECRET`.
+5. On the live site open `/setup-admin`, paste that secret, and choose the admin
+   email and a strong password. You are signed in as the administrator.
+6. You can then clear `ADMIN_BOOTSTRAP_SECRET` from the dashboard. The form is
+   closed permanently anyway, because an administrator now exists.
+
+`render.yaml` sets `SESSION_SECRET` and `ADMIN_BOOTSTRAP_SECRET` with
+`generateValue: true`, so Render creates both. `PUBLIC_ORIGIN` is deliberately
+**not** set: the server derives the public HTTPS origin from each request, which
+is what you want on a host assigned after deploy.
+
+The same image runs on Fly.io, a cheap VPS, Kubernetes or a laptop. Point the
+volume at `/app/data` wherever you put it.
+
+### 9b. Deploying on a server you control
 
 ```bash
-# On the server, after uploading the code and setting .env for production:
 npm ci                                   # or: npm_config_nodedir=/usr/local npm ci
 npm run migrate
-npx tsx server/src/index.ts --setup-admin you@example.com 'a-strong-password'
 npm run seed                             # optional demo bank; skip for a clean install
 npm run build
 NODE_ENV=production npm start            # listens on 0.0.0.0:$PORT, serves dist/ + /api
 ```
 
 Then put a TLS-terminating reverse proxy in front and set
-`COOKIE_SECURE=true`, `TRUST_PROXY=1`, `PUBLIC_ORIGIN=https://your.domain`,
-`SITE_URL=https://your.domain`.
+`COOKIE_SECURE=true`, `TRUST_PROXY=1`, and (only if the site is served from a
+host you control) `PUBLIC_ORIGIN`/`SITE_URL`.
+
+Create the administrator with Route B from §3:
+
+```bash
+NODE_ENV=production SESSION_SECRET="$(openssl rand -hex 32)" \
+  npx tsx server/src/index.ts --setup-admin you@example.com "$(openssl rand -hex 24)"
+```
 
 Minimal nginx site:
 
@@ -363,15 +436,57 @@ WantedBy=multi-user.target
 
 **Backups:** stop the service (or use `sqlite3 … ".backup"`) and copy
 `data/vidyapariksha.db` **plus** `data/uploads/`. WAL files are part of the live
-database — do not copy only the `.db` file while the process is writing. Restore by
-copying back before starting the service, then run `npm run migrate` to apply any
-additive schema changes.
+database — do not copy only the `.db` file while the process is writing. Restore
+by copying back before starting the service, then run `npm run migrate` to apply
+any additive schema changes.
 
-**Post-deploy verification:** `curl https://your.domain/api/health` →
-`{"ok":true,"status":"healthy",...}`; load `/`, `/exams`, `/books`,
-`/test/mechanics-topic-wise/instructions`; confirm `/manifest.webmanifest` and
-`/icons/icon-192.png`; sign in as admin and open `/admin`; run `npm run e2e` with
-`E2E_BASE_URL=https://your.domain` and a real admin account.
+### 9c. First-run content
+
+`SEED_DEMO_ON_EMPTY=true` (set in `render.yaml`) loads the 433-question demo bank
+the first time the database contains **zero** questions. `seedDemoContent()` is
+idempotent and returns `{ skipped: true }` once any content exists, so it can
+never duplicate or overwrite your own imports. Set it to `false` if you want an
+empty bank and to import your own questions.
+
+### 9d. Post-deploy verification
+
+```bash
+curl https://<host>/api/health          # {"ok":true,"status":"healthy",...}
+curl https://<host>/api/auth/bootstrap-status   # {"data":{"allowed":false}} once an admin exists
+```
+
+Then load `/`, `/exams`, `/books`, `/test/<slug>/instructions`, sign in as the
+administrator and open `/admin`, and run the full check against the live host:
+
+```bash
+E2E_BASE_URL=https://<host> E2E_ADMIN_EMAIL=you@example.com E2E_ADMIN_PASSWORD='…' npm run e2e
+E2E_BASE_URL=https://<host> E2E_ADMIN_EMAIL=you@example.com E2E_ADMIN_PASSWORD='…' npm run test:browser
+LIGHTHOUSE_URL=https://<host>/ npm run test:lighthouse
+```
+
+`npm run e2e` and `npm run test:browser` are **real** checks — they create real
+attempts, save real answers, submit them and read the server-calculated result.
+They never fabricate data.
+
+### 9e. Free-tier limitations you should know before you rely on them
+
+* **Idle spin-down.** Render's free web service sleeps after roughly 15 minutes of
+  inactivity. The first request after a cold start can take ~30–60 s while the
+  process wakes. Every request after that is fast. If that is unacceptable, you
+  need a paid plan, a VPS, or a provider that does not sleep.
+* **No custom domain on the free plan.** You get a `*.onrender.com` subdomain,
+  which is what §9a uses. The user requirement was “no domain purchase”, so this
+  fits, but you cannot use your own name.
+* **Disk size is bounded** by the free plan. The demo database is small (a few
+  MB); question images are the thing to watch.
+* **I could not verify the current numbers.** The build sandbox has no outbound
+  network access to `render.com`, so the plan limits, spin-down timing and disk
+  quota quoted above are the provider's *documented* behaviour as of the last
+  review, not a measurement taken today. Re-read
+  <https://render.com/docs/free> and <https://render.com/pricing> before you
+  depend on them, and keep a backup of `/app/data`.
+* **No load test has been run.** Nothing here tells you how many concurrent
+  students the free instance will hold.
 
 ---
 
@@ -401,7 +516,7 @@ additive schema changes.
 - **Not deployed.** No hosting, domain, TLS certificate or CI/CD pipeline is part of
   this repository. §9 is a runbook, not a completed deployment.
 - **Browser E2E is real but single-browser.** `@sparticuz/chromium` headless shell +
-  `playwright-core` render the actual UI (66 checks, both dev and compiled production).
+  `playwright-core` render the actual UI (68 checks, both dev and compiled production).
   Only Chromium was exercised — Safari/Firefox and real mobile devices were not. The
   headless shell runs `--single-process`, so the suite deliberately uses one
   `BrowserContext` and swaps cookie jars instead of opening isolated contexts.
@@ -444,7 +559,8 @@ brand assets from shardatest.in are included.
 | --- | --- | --- |
 | **Implemented** | ✅ | Category→book→subject→topic→config→instructions→server-backed attempt→save/next/prev/clear/mark/palette→resume→server deadline→submit→server score→review→PDF→dashboard; DB-backed question bank with admin CRUD, CSV preview/import/export, preview/publish and rule-based test generation; registration/login/guest sessions, RBAC, bookmarks, revision, analytics, audit log; bilingual UI, PWA assets, seed + migrations. |
 | **Automated-tested** | ✅ | `npm test` **76/76** (unit, API integration, security hardening incl. hidden answer keys, duplicate submit, session isolation, CSRF, rate limits, CSV validation, magic-byte upload checks, CSV export); `npm run e2e` **35/35** live HTTP workflow against the compiled production server. |
-| **Browser-tested** | ✅ | `npm run test:browser` **66/66** in real Chromium against **both** Vite dev and the compiled production build: full journey, refresh/resume, 4 viewports with no horizontal overflow, offline queue/reconnect, timer expiry (real 65 s wait), Hindi/bilingual rendering, honest translation fallback, Devanagari PDF, PDF download, admin sign-in/permission denial, 18 public+student routes and 12 admin routes rendered without a React crash. |
+| **Browser-tested** | ✅ | `npm run test:browser` **68/68** in real Chromium against **both** Vite dev and the compiled production build: full journey, refresh/resume, 4 viewports with no horizontal overflow, offline queue/reconnect, timer expiry (real 65 s wait), Hindi/bilingual rendering, honest translation fallback, Devanagari PDF, PDF download, admin sign-in/permission denial, 18 public+student routes, 12 admin routes, and the closed first-administrator page rendered without a React crash. |
 | **Performance-measured** | ✅ (lab only) | Lighthouse mobile emulation on the production build, **5 runs**: Performance **93–97 (median 96)**, Accessibility/Best practices/SEO **100/100/100**; FCP 1.8–2.1 s, LCP 2.0–2.5 s, TBT 100–200 ms, CLS 0–0.001. Assets split into cacheable vendor/app/icon chunks; fonts self-hosted. **No load test or field/RUM data.** |
 | **Production-configured** | ✅ | Compiled `NODE_ENV=production` boot enforces a strong `SESSION_SECRET`, secure cookies (with a documented local-HTTP escape hatch), refuses dev reset-token exposure, sets CSP/no-store/HSTS-when-HTTPS, scrubs 500 errors, sweeps expired sessions, copies schema + Devanagari font into `dist-server`, prints honest warnings for localhost origin and missing mail. Config/docs/backups/systemd/nginx examples are in §9. |
-| **Actually-deployed** | ❌ | **Not deployed.** No hosting account, domain, TLS certificate, CI/CD pipeline or third-party credential was available or authorised. The production server was started **locally in this sandbox** for verification only. Deploying requires your infrastructure, secrets and explicit go-ahead. |
+| **Deployment-prepared** | ✅ | `Dockerfile` + `.dockerignore` + `render.yaml` committed. One container serves SPA + API + SQLite; `/app/data` is the single persistent volume. `render.yaml` generates `SESSION_SECRET`/`ADMIN_BOOTSTRAP_SECRET`, derives the public origin from requests, seeds once on an empty database and health-checks `/api/health`. A one-time `/setup-admin` form creates the first administrator with no password in source, env or logs. Verified end-to-end against the compiled production server in this sandbox (bootstrap + restart persistence, above). |
+| **Actually-deployed** | ❌ | **Not deployed — THE WEBSITE IS NOT LIVE YET.** The build sandbox has no outbound network access to any hosting provider (`render.com`, `vercel.com`, `cloudflare.com`, `fly.io`, `api.netlify.com`, `supabase.com`, `onrender.com` all fail to connect) and holds no provider credentials. What ran here was a local production-mode server for verification, not a hosted site. §9a is the exact one-click path that turns this into a real public URL. |

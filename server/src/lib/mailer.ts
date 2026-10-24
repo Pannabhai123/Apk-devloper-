@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer';
-import { config, mailDeliveryConfigured } from '../config.js';
+import { config, mailDeliveryConfigured, requestSiteUrl } from '../config.js';
 
 /**
  * Email delivery boundary.
@@ -25,8 +25,8 @@ export class MailNotConfiguredError extends Error {
   }
 }
 
-export function resetUrl(token: string): string {
-  const base = config.siteUrl.replace(/\/$/, '');
+export function resetUrl(req: { headers: Record<string, string | string[] | undefined> }, token: string): string {
+  const base = requestSiteUrl(req).replace(/\/$/, '');
   return `${base}/reset-password?token=${encodeURIComponent(token)}`;
 }
 
@@ -43,9 +43,9 @@ function transport() {
 }
 
 /** Delivers a password-reset link. Throws when no usable provider is configured. */
-export async function sendPasswordResetMail(to: string, token: string): Promise<void> {
+export async function sendPasswordResetMail(to: string, token: string, req?: { headers: Record<string, string | string[] | undefined> }): Promise<void> {
   if (!mailDeliveryConfigured()) throw new MailNotConfiguredError();
-  const link = resetUrl(token);
+  const link = resetUrl(req ?? { headers: {} }, token);
   const subject = 'Reset your VidyaPariksha password';
   const text =
     `A password reset was requested for your VidyaPariksha account.\n\n` +

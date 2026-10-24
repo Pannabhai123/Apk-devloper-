@@ -1,7 +1,9 @@
+import crypto from 'node:crypto';
 import { Router } from 'express';
 import { z } from 'zod';
 import { config, mailDeliveryConfigured } from '../config.js';
 import { isoAfter } from '../db.js';
+import type { DB } from '../db.js';
 import { claimGuestData, clearSession, createSession, hashPassword, passwordStrength, randomToken, sha256, verifyPassword } from '../lib/auth.js';
 import { audit } from '../lib/audit.js';
 import { asyncRoute, badRequest, conflict, HttpError, send, tooMany, unauthorized } from '../lib/http.js';
@@ -15,6 +17,14 @@ export const authRouter = Router();
 const loginLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 12, prefix: 'login', keyFn: (req) => `${req.ip}:${String(req.body?.email || '').toLowerCase()}` });
 const resetLimiter = rateLimit({ windowMs: 60 * 60 * 1000, max: 5, prefix: 'reset' });
 const registerLimiter = rateLimit({ windowMs: 60 * 60 * 1000, max: 10, prefix: 'register' });
+// One-time first-administrator bootstrap: the secret is the only way to open it,
+// and the flow closes permanently the moment an administrator exists.
+const bootstrapLimiter = rateLimit({ windowMs: 60 * 60 * 1000, max: 5, prefix: 'bootstrap' });
+
+function hasAdmin(db: DB): boolean {
+  return Boolean(db.prepare(`SELECT u.id FROM users u JOIN roles r ON r.id = u.role_id
+    WHERE r.key IN ('super_admin','admin') LIMIT 1`).get());
+}
 
 const registerSchema = z.object({
   name: z.string().trim().min(2).max(80),
@@ -99,6 +109,39 @@ authRouter.patch('/profile', validateBody(z.object({
   send(res, { updated: true });
 });
 
+authRouter.get('/bootstrap-status', (req, res) => {
+  // Reveals nothing: it only reports whether the owner still needs to create
+  // the very first administrator (which nobody can log in with yet anyway).
+  send(res, { allowed: Boolean(config.adminBootstrapSecret) && !hasAdmin(req.db) });
+});
+
+authRouter.post('/bootstrap', bootstrapLimiter, validateBody(z.object({
+  secret: z.string().min(16).max(256),
+  name: z.string().trim().min(2).max(80),
+  email: z.string().trim().email().max(160).transform((s) => s.toLowerCase()),
+  password: z.string().min(8).max(128),
+})), (req, res) => {
+  const db = req.db;
+  const expected = Buffer.from(config.adminBootstrapSecret || '');
+  const given = Buffer.from(String(req.body.secret || ''));
+  if (!expected.length) throw new HttpError(404, 'First-administrator setup is not enabled on this server.');
+  const secretOk = expected.length === given.length && crypto.timingSafeEqual(expected, given);
+  if (!secretOk) throw unauthorized('The setup secret is not valid.');
+  if (hasAdmin(db)) throw conflict('An administrator already exists. This one-time setup flow is now closed.');
+  const strengthError = passwordStrength(req.body.password);
+  if (strengthError) throw badRequest(strengthError);
+  if (db.prepare('SELECT id FROM users WHERE email = ?').get(req.body.email)) throw conflict('An account with this email already exists.');
+  const role = db.prepare("SELECT id FROM roles WHERE key = 'super_admin'").get() as { id: number };
+  const info = db.prepare('INSERT INTO users (name, email, password_hash, role_id) VALUES (?,?,?,?)')
+    .run(req.body.name, req.body.email, hashPassword(req.body.password), role.id);
+  const userId = Number(info.lastInsertRowid);
+  audit(db, req, 'auth.bootstrap_admin', 'users', userId, { email: req.body.email });
+  const session = createSession(db, res, req, 'user', userId);
+  const user = db.prepare(`SELECT u.id, u.name, u.email, u.phone, u.locale, u.daily_goal_questions, r.key AS role
+    FROM users u JOIN roles r ON r.id = u.role_id WHERE u.id = ?`).get(userId);
+  send(res, { user, csrfToken: session.csrf_token }, 201);
+});
+
 authRouter.post('/password/forgot', resetLimiter, validateBody(z.object({ email: z.string().trim().email() })),
   asyncRoute(async (req, res) => {
     const db = req.db;
@@ -116,7 +159,7 @@ authRouter.post('/password/forgot', resetLimiter, validateBody(z.object({ email:
       db.prepare('INSERT INTO password_resets (user_id, token_hash, expires_at) VALUES (?,?,?)')
         .run(user.id, tokenHash, isoAfter(config.resetTokenTtlSeconds));
       try {
-        await sendPasswordResetMail(email, token);
+        await sendPasswordResetMail(email, token, req);
       } catch (err) {
         // A token that was never delivered must not remain usable.
         db.prepare('DELETE FROM password_resets WHERE token_hash = ?').run(tokenHash);

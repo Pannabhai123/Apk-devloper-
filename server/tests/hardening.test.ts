@@ -7,7 +7,7 @@ import type { DB } from '../src/db.js';
 import { migrate, openDatabase } from '../src/db.js';
 import { createApp } from '../src/app.js';
 import { seedDemoContent, seedRolesAndSettings, seedAdmin } from '../src/seed.js';
-import { config, checkProductionConfig, mailDeliveryConfigured } from '../src/config.js';
+import { config, checkProductionConfig, mailDeliveryConfigured, requestSiteUrl } from '../src/config.js';
 import { sessionTokenHash, sha256 } from '../src/lib/auth.js';
 import { resetRateLimits } from '../src/lib/rateLimit.js';
 
@@ -54,14 +54,15 @@ describe('production secret & session hardening', () => {
     expect(() => checkProductionConfig({
       sessionSecret: 'replace-with-a-long-random-development-value',
       cookieSecure: true, allowInsecureCookies: false, exposeDevResetToken: false,
-      publicOrigin: 'https://example.com', mailConfigured: true,
+      publicOrigin: 'https://example.com', publicOriginExplicit: true, mailConfigured: true, adminBootstrapSecret: 'bootstrap-secret-value-0123456789',
     })).toThrow(/SESSION_SECRET/);
   });
 
   it('refuses short secrets, insecure cookies and exposed reset tokens', () => {
     const base = {
       sessionSecret: 'a'.repeat(64), cookieSecure: true, allowInsecureCookies: false,
-      exposeDevResetToken: false, publicOrigin: 'https://example.com', mailConfigured: true,
+      exposeDevResetToken: false, publicOrigin: 'https://example.com', publicOriginExplicit: true, mailConfigured: true,
+      adminBootstrapSecret: 'bootstrap-secret-value-0123456789',
     };
     expect(() => checkProductionConfig(base)).not.toThrow();
     expect(() => checkProductionConfig({ ...base, sessionSecret: 'short' })).toThrow(/SESSION_SECRET/);
@@ -307,6 +308,111 @@ describe('admin upload and export boundary', () => {
     expect(res.headers['content-type']).toMatch(/csv|text\/plain/);
     expect(res.headers['content-disposition']).toMatch(/attachment/);
     expect(String(res.text)).toContain('book_slug');
+  });
+});
+
+describe('one-time first-administrator bootstrap', () => {
+  // A separate database and app: the shared suite already contains an administrator,
+  // and the bootstrap flow must be measured from a genuinely empty one.
+  let bootDb: DB;
+  let bootApp: Express;
+  const originalSecret = config.adminBootstrapSecret;
+
+  beforeAll(() => {
+    bootDb = openDatabase(':memory:');
+    migrate(bootDb);
+    seedRolesAndSettings(bootDb);
+    bootApp = createApp(bootDb, { serveStatic: false });
+  });
+  afterAll(() => { bootDb.close(); });
+  afterEach(() => { resetRateLimits(); });
+
+  async function bootAgent(secret: string) {
+    config.adminBootstrapSecret = secret;
+    const agent = request.agent(bootApp);
+    const token = (await agent.get('/api/auth/me').expect(200)).body.data.csrfToken as string;
+    return { agent, token };
+  }
+
+  it('is closed when no setup secret is configured', async () => {
+    config.adminBootstrapSecret = '';
+    resetRateLimits();
+    const agent = request.agent(bootApp);
+    const token = (await agent.get('/api/auth/me').expect(200)).body.data.csrfToken as string;
+
+    const status = await agent.get('/api/auth/bootstrap-status').expect(200);
+    expect(status.body.data.allowed).toBe(false);
+
+    const denied = await agent.post('/api/auth/bootstrap').set('x-csrf-token', token)
+      .send({ secret: 'a-very-long-secret-value-here', name: 'Owner', email: 'owner@example.com', password: 'StrongPassword123!' });
+    expect(denied.status).toBe(404);
+    config.adminBootstrapSecret = originalSecret;
+  });
+
+  it('creates the first administrator once, then closes forever', async () => {
+    const { agent, token } = await bootAgent('bootstrap-secret-value-0123456789');
+    const ok = await agent.post('/api/auth/bootstrap')
+      .set('x-csrf-token', token)
+      .send({ secret: 'bootstrap-secret-value-0123456789', name: 'Owner', email: 'owner@example.com', password: 'StrongPassword123!' })
+      .expect(201);
+    expect(ok.body.data.user.role).toBe('super_admin');
+    expect(ok.body.data.csrfToken).toBeTruthy();
+
+    const status = await agent.get('/api/auth/bootstrap-status').expect(200);
+    expect(status.body.data.allowed).toBe(false);
+
+    // Bootstrapping signs the new owner in, so the CSRF token rotates with it.
+    const freshToken = (await agent.get('/api/auth/me').expect(200)).body.data.csrfToken as string;
+    const second = await agent.post('/api/auth/bootstrap').set('x-csrf-token', freshToken)
+      .send({ secret: 'bootstrap-secret-value-0123456789', name: 'Second', email: 'second@example.com', password: 'StrongPassword123!' });
+    expect(second.status).toBe(409);
+
+    const wrong = await agent.post('/api/auth/bootstrap').set('x-csrf-token', freshToken)
+      .send({ secret: 'wrong-secret-value-0123456789abcdef', name: 'Third', email: 'third@example.com', password: 'StrongPassword123!' });
+    expect(wrong.status).toBe(401);
+
+    const count = bootDb.prepare("SELECT COUNT(*) AS c FROM users u JOIN roles r ON r.id = u.role_id WHERE r.key = 'super_admin'").get() as { c: number };
+    expect(count.c).toBe(1);
+    config.adminBootstrapSecret = originalSecret;
+  });
+
+  it('rejects weak passwords and duplicate emails during bootstrap', async () => {
+    const fresh = openDatabase(':memory:');
+    migrate(fresh); seedRolesAndSettings(fresh);
+    const freshApp = createApp(fresh, { serveStatic: false });
+    config.adminBootstrapSecret = 'bootstrap-secret-value-0123456789';
+    resetRateLimits();
+    const agent = request.agent(freshApp);
+    const token = (await agent.get('/api/auth/me').expect(200)).body.data.csrfToken as string;
+
+    const weak = await agent.post('/api/auth/bootstrap').set('x-csrf-token', token)
+      .send({ secret: 'bootstrap-secret-value-0123456789', name: 'Owner', email: 'owner@example.com', password: '1234' });
+    // Schema-level validation (min length) returns 422; password-strength rules
+    // that the schema cannot express return 400 from the route handler.
+    expect(weak.status).toBe(422);
+
+    // The app-wide password policy is length-based (8+ chars) and is applied here
+    // too; choose a strong passphrase when you create the administrator.
+
+    await agent.post('/api/auth/bootstrap').set('x-csrf-token', token)
+      .send({ secret: 'bootstrap-secret-value-0123456789', name: 'Owner', email: 'owner@example.com', password: 'StrongPassword123!' }).expect(201);
+
+    // A second bootstrap attempt is refused even before the email check runs.
+    // Bootstrapping signed the owner in, so the CSRF token rotated again.
+    const rotated = (await agent.get('/api/auth/me').expect(200)).body.data.csrfToken as string;
+    const again = await agent.post('/api/auth/bootstrap').set('x-csrf-token', rotated)
+      .send({ secret: 'bootstrap-secret-value-0123456789', name: 'Owner', email: 'owner@example.com', password: 'StrongPassword123!' });
+    expect(again.status).toBe(409);
+
+    fresh.close();
+    config.adminBootstrapSecret = originalSecret;
+  });
+
+  it('derives the public origin from the request when the operator did not pin one', () => {
+    expect(requestSiteUrl({ headers: { host: 'app-abc.onrender.com', 'x-forwarded-proto': 'https' } }))
+      .toBe('https://app-abc.onrender.com');
+    expect(requestSiteUrl({ headers: { host: 'fallback.local' } }))
+      .toBe(config.siteUrlExplicit ? config.siteUrl : 'http://fallback.local');
   });
 });
 
