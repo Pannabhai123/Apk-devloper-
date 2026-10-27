@@ -1,0 +1,168 @@
+name: Build Android debug APK
+
+# A public debug prerelease is only published when explicitly requested in
+# the commit message on this session branch, or through the manual input.
+on:
+  push:
+    branches:
+      - arena/5dbf39ff-apk-devloper
+  workflow_dispatch:
+    inputs:
+      publish_prerelease:
+        description: Publish the verified debug APK as a public prerelease
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  debug-apk:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[publish-debug-apk]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Prepare Android SDK
+        shell: bash
+        run: |
+          set -euo pipefail
+          : "${ANDROID_HOME:?The hosted runner must provide Android SDK command-line tools}"
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$ANDROID_HOME" \
+            'platform-tools' 'platforms;android-35' 'build-tools;35.0.1' \
+            'platforms;android-36' 'build-tools;36.1.0'
+          test -x "$ANDROID_HOME/platform-tools/adb"
+      - name: Download and verify Godot 4.7.2
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fL --retry 5 --retry-all-errors -o "$RUNNER_TEMP/godot.zip" \
+            https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_linux.x86_64.zip
+          echo 'cadd3204e728a35d3f13adb7fd0d7902636b79f6b95c40c265eb73b6c35329e4  '"$RUNNER_TEMP/godot.zip" | sha256sum -c -
+          mkdir -p "$RUNNER_TEMP/godot"
+          unzip -q "$RUNNER_TEMP/godot.zip" -d "$RUNNER_TEMP/godot"
+          mv "$RUNNER_TEMP/godot/Godot_v4.7.2-stable_linux.x86_64" "$RUNNER_TEMP/godot/godot"
+          chmod +x "$RUNNER_TEMP/godot/godot"
+          echo "$RUNNER_TEMP/godot" >> "$GITHUB_PATH"
+      - name: Cache Android export templates
+        id: templates
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830
+        with:
+          path: ~/.local/share/godot/export_templates/4.7.2.stable
+          key: godot-4.7.2-android-templates-v1
+      - name: Download verified export templates
+        if: steps.templates.outputs.cache-hit != 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fL --retry 5 --retry-all-errors -o "$RUNNER_TEMP/templates.tpz" \
+            https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_export_templates.tpz
+          echo 'f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011  '"$RUNNER_TEMP/templates.tpz" | sha256sum -c -
+          target="$HOME/.local/share/godot/export_templates/4.7.2.stable"
+          mkdir -p "$target"
+          unzip -jo "$RUNNER_TEMP/templates.tpz" 'templates/android_debug.apk' 'templates/android_release.apk' -d "$target"
+          printf '4.7.2.stable\n' > "$target/version.txt"
+      - name: Configure SDK and create ephemeral debug key
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$HOME/.config/godot"
+          cat > "$HOME/.config/godot/editor_settings-4.7.tres" <<EOF_SETTINGS
+          [gd_resource type="EditorSettings" format=3]
+
+          [resource]
+          export/android/android_sdk_path = "$ANDROID_HOME"
+          export/android/java_sdk_path = "$JAVA_HOME"
+          EOF_SETTINGS
+          keytool -genkeypair -noprompt -keystore "$RUNNER_TEMP/ffb-debug.keystore" \
+            -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 365 \
+            -storepass android -keypass android -dname 'CN=Free Fire Bharat Debug,O=Device QA,C=IN'
+      - name: Import, test, and export APK
+        shell: bash
+        env:
+          GODOT_ANDROID_KEYSTORE_DEBUG_PATH: ${{ runner.temp }}/ffb-debug.keystore
+          GODOT_ANDROID_KEYSTORE_DEBUG_USER: androiddebugkey
+          GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD: android
+        run: |
+          set -euo pipefail
+          godot --headless --path . --editor --import --quit
+          godot --headless --path . --script res://tests/run_tests.gd --fixed-fps 60
+          mkdir -p build
+          godot --headless --path . --export-debug Android build/free-fire-bharat-debug.apk
+          test -s build/free-fire-bharat-debug.apk
+      - name: Verify package, signature, architecture and permissions
+        shell: bash
+        run: |
+          set -euo pipefail
+          apk=build/free-fire-bharat-debug.apk
+          "$ANDROID_HOME/build-tools/36.1.0/apksigner" verify --verbose --print-certs "$apk"
+          "$ANDROID_HOME/build-tools/36.1.0/aapt" dump badging "$apk" > "$RUNNER_TEMP/badging.txt"
+          grep -F "package: name='org.bharatisland.freefirebharat'" "$RUNNER_TEMP/badging.txt"
+          grep -E "^(sdkVersion|targetSdkVersion|native-code):" "$RUNNER_TEMP/badging.txt" || true
+          "$ANDROID_HOME/build-tools/36.1.0/aapt" dump permissions "$apk" > "$RUNNER_TEMP/permissions.txt"
+          if grep -Fq 'android.permission.INTERNET' "$RUNNER_TEMP/permissions.txt"; then
+            echo 'Unexpected Internet permission' >&2; exit 1
+          fi
+          unzip -tq "$apk" > /dev/null
+          unzip -Z1 "$apk" | grep -E '^lib/arm64-v8a/[^/]+[.]so$' > /dev/null
+          (cd build && sha256sum free-fire-bharat-debug.apk | tee SHA256SUMS.txt)
+          git rev-parse HEAD | tee build/SOURCE_COMMIT.txt
+          echo 'Signature and package verified. Install/launch on a real Android device is still required.'
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: free-fire-bharat-debug-${{ github.sha }}
+          path: build/
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
+
+  publish-debug-prerelease:
+    needs: debug-apk
+    if: >-
+      (github.event_name == 'push' && contains(github.event.head_commit.message, '[publish-debug-apk]')) ||
+      (github.event_name == 'workflow_dispatch' && inputs.publish_prerelease)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: free-fire-bharat-debug-${{ github.sha }}
+          path: build
+      - name: Verify downloaded artifact matches the source commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          (cd build && sha256sum -c SHA256SUMS.txt)
+          test "$(cat build/SOURCE_COMMIT.txt)" = "$GITHUB_SHA"
+      - name: Publish public prototype prerelease
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          tag="prototype-debug-${GITHUB_SHA:0:12}"
+          cat > "$RUNNER_TEMP/release-notes.md" <<EOF_NOTES
+          This is an **offline prototype debug APK**, not the finished production game.
+
+          - Source commit: $GITHUB_SHA
+          - Built and signature/manifest checked in GitHub Actions: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+          - The APK has **not** been installed or tested on a phone or emulator.
+          - The signing key is a temporary debug key. A later build signed with a different key cannot update this one in place; uninstalling may erase local saves.
+          - Install only if you trust this repository. See the source build and test documentation for current limitations.
+          EOF_NOTES
+          gh release create "$tag" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --prerelease \
+            --title "Offline battle royale — debug prototype ${GITHUB_SHA:0:12}" \
+            --notes-file "$RUNNER_TEMP/release-notes.md" \
+            build/free-fire-bharat-debug.apk build/SHA256SUMS.txt build/SOURCE_COMMIT.txt
+          gh release view "$tag" --repo "$GITHUB_REPOSITORY" --json url,tagName,assets

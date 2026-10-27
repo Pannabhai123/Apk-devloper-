@@ -1,0 +1,13 @@
+# Godot imports and local editor state
+.godot/
+.import/
+# Local builds and signing material
+build/
+*.apk
+*.aab
+*.keystore
+*.jks
+export_credentials.cfg
+.env
+*.pck
+.DS_Store
