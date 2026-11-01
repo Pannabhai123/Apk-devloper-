@@ -37,6 +37,11 @@ final class Reminders {
         }
         save(c, result);
     }
+    static synchronized JSONObject findPending(Context c, int id) throws Exception {
+        JSONArray a=load(c);
+        for(int i=0;i<a.length();i++){JSONObject item=a.getJSONObject(i);if(item.optInt("id")==id&&!item.optBoolean("done"))return new JSONObject(item.toString());}
+        return null;
+    }
     static synchronized JSONObject fired(Context c, int id) throws Exception {
         JSONArray a = load(c); JSONObject found = null;
         for (int i = 0; i < a.length(); i++) {

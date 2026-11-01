@@ -14,6 +14,7 @@ import android.net.NetworkCapabilities;
 import android.net.Uri;
 import android.media.AudioManager;
 import android.text.util.Linkify;
+import android.util.Log;
 import android.os.*;
 import android.provider.AlarmClock;
 import android.provider.MediaStore;
@@ -239,7 +240,7 @@ public class MainActivity extends Activity {
         if(text.length()>limit){spoken=text.substring(0,limit-1);toast("Reading the beginning only; the full answer is in chat.");}
         if(tts.speak(spoken,TextToSpeech.QUEUE_FLUSH,null,id)==TextToSpeech.ERROR){if(voiceConversation)stopConversation();toast("Could not start speech.");}
     }
-    @Override protected void onResume(){super.onResume();foreground=true;if(orbAnimator!=null)orbAnimator.resume();maybeListen();}
+    @Override protected void onResume(){super.onResume();foreground=true;if(orbAnimator!=null)orbAnimator.resume();maybeListen();if(ReminderReceiver.notificationsEnabled(this))executor.execute(()->{try{Reminders.restore(getApplicationContext());}catch(Exception e){Log.e("RONNY","Could not restore reminders",e);}});}
     @Override protected void onPause(){foreground=false;if(orbAnimator!=null)orbAnimator.pause();super.onPause();}
     @Override protected void onStop(){if(voiceConversation && !recognizerOpen)stopConversation();super.onStop();}
     @Override public void onBackPressed(){if(!page.equals("Assistant"))showHome();else super.onBackPressed();}
@@ -272,6 +273,7 @@ public class MainActivity extends Activity {
     }
     private void showReminders(){
         setup("Reminders");content.addView(label("Reminders use Android inexact alarms and may arrive late, especially in battery saver. Allow notifications for alerts.",14,MUTED));addGap(content,10);
+        if(!ReminderReceiver.notificationsEnabled(this)){content.addView(label("Notifications are disabled. Missed reminders stay pending; enable notifications and reopen RONNY to retry them.",14,CYAN));addGap(content,8);content.addView(button("Open notification settings",()->openIntent(new Intent(Settings.ACTION_APP_NOTIFICATION_SETTINGS).putExtra(Settings.EXTRA_APP_PACKAGE,getPackageName()),"notification settings")));addGap(content,10);}
         content.addView(button("+ New reminder",this::reminderForm));addGap(content,12);
         JSONArray a=Reminders.load(this);
         if(a.length()==0)content.addView(label("No reminders yet.",15,MUTED));
