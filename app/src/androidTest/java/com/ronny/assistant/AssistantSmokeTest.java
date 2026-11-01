@@ -2,6 +2,12 @@ package com.ronny.assistant;
 
 import static org.junit.Assert.*;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.ResolveInfo;
+import android.os.SystemClock;
+import android.provider.Settings;
+import android.view.KeyEvent;
+import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -45,6 +51,20 @@ public class AssistantSmokeTest {
             scenario.onActivity(a->{click(a,"Notes");EditText notes=field(a.getWindow().getDecorView(),"Write notes, tasks or a study plan");assertNotNull(notes);notes.setText("A note saved on device");click(a,"Save notes");});
             scenario.recreate();
             scenario.onActivity(a->{click(a,"Notes");EditText notes=field(a.getWindow().getDecorView(),"Write notes, tasks or a study plan");assertNotNull(notes);assertEquals("A note saved on device",notes.getText().toString());});
+        }
+    }
+    @Test public void settingsVoiceStyleCommandOpensSystemSettings() {
+        Context app=InstrumentationRegistry.getInstrumentation().getTargetContext();
+        ResolveInfo resolved=app.getPackageManager().resolveActivity(new Intent(Settings.ACTION_SETTINGS),0);
+        assertNotNull("No system Settings app on this device",resolved);String expected=resolved.activityInfo.packageName;
+        try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
+            try {
+                scenario.onActivity(a->{EditText input=field(a.getWindow().getDecorView(),"Ask or give a command…");assertNotNull(input);input.setText("settings kholo");click(a,"Send");});
+                long deadline=SystemClock.elapsedRealtime()+10000;boolean opened=false;
+                while(SystemClock.elapsedRealtime()<deadline){AccessibilityNodeInfo root=InstrumentationRegistry.getInstrumentation().getUiAutomation().getRootInActiveWindow();
+                    if(root!=null && root.getPackageName()!=null && expected.contentEquals(root.getPackageName())){opened=true;break;}SystemClock.sleep(200);}
+                assertTrue("System Settings did not open",opened);
+            } finally {InstrumentationRegistry.getInstrumentation().sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);}
         }
     }
     @Test public void taskCanBeAddedAndDeleted() {

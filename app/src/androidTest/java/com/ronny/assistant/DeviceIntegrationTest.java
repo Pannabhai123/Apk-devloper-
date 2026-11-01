@@ -6,6 +6,9 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.os.Build;
 import android.os.SystemClock;
+import android.os.ParcelFileDescriptor;
+import android.content.Intent;
+import java.io.InputStream;
 import android.service.notification.StatusBarNotification;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.platform.app.InstrumentationRegistry;
@@ -39,6 +42,22 @@ public class DeviceIntegrationTest {
             assertEquals(sample,BoundSecret.forEndpoint(decoded,endpoint));
             assertEquals("",BoundSecret.forEndpoint(decoded,"https://other.invalid/v1/chat/completions"));
         } finally {secrets.put(slot,"");}
+    }
+    private void setNotificationOp(String mode) throws Exception {
+        ParcelFileDescriptor fd=InstrumentationRegistry.getInstrumentation().getUiAutomation().executeShellCommand("appops set "+app.getPackageName()+" POST_NOTIFICATION "+mode);
+        try(InputStream input=new ParcelFileDescriptor.AutoCloseInputStream(fd)){while(input.read()!=-1){ /* Wait until the shell command completes. */ }}
+    }
+    @Test public void disabledNotificationsLeaveReminderPending() throws Exception {
+        if(Build.VERSION.SDK_INT<33)return;
+        InstrumentationRegistry.getInstrumentation().getUiAutomation().grantRuntimePermission(app.getPackageName(),Manifest.permission.POST_NOTIFICATIONS);
+        try {
+            setNotificationOp("ignore");
+            assertFalse("Notification app-op should be disabled",ReminderReceiver.notificationsEnabled(app));
+            Reminders.add(app,"Reminder with alerts disabled",System.currentTimeMillis()+60000,false);
+            int id=Reminders.load(app).getJSONObject(0).getInt("id");
+            new ReminderReceiver().onReceive(app,new Intent(app,ReminderReceiver.class).putExtra("id",id));
+            assertFalse("A suppressed reminder must remain pending",Reminders.load(app).getJSONObject(0).optBoolean("done"));
+        } finally {setNotificationOp("allow");}
     }
     @Test public void scheduledReminderPostsNotificationAndCompletes() throws Exception {
         if(Build.VERSION.SDK_INT>=33)InstrumentationRegistry.getInstrumentation().getUiAutomation().grantRuntimePermission(app.getPackageName(),Manifest.permission.POST_NOTIFICATIONS);

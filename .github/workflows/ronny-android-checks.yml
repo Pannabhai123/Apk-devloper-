@@ -2,6 +2,7 @@ name: RONNY Android checks
 on:
   push:
     branches: [arena/be57a5a2-apk-devloper]
+    paths-ignore: [README.md]
   workflow_dispatch:
 permissions:
   contents: read
