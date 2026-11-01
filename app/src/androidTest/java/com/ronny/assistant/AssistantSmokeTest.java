@@ -1,11 +1,16 @@
 package com.ronny.assistant;
 
 import static org.junit.Assert.*;
+import static androidx.test.espresso.intent.Intents.intending;
+import static androidx.test.espresso.intent.matcher.IntentMatchers.hasAction;
+import android.app.Activity;
+import android.app.Instrumentation;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.os.SystemClock;
 import android.provider.Settings;
+import android.speech.RecognizerIntent;
 import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.View;
@@ -15,10 +20,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.espresso.intent.Intents;
 import androidx.test.platform.app.InstrumentationRegistry;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import java.util.ArrayList;
 
 /** Real-device/emulator smoke checks; not a substitute for full release QA. */
 @RunWith(AndroidJUnit4.class)
@@ -52,6 +59,24 @@ public class AssistantSmokeTest {
             scenario.recreate();
             scenario.onActivity(a->{click(a,"Notes");EditText notes=field(a.getWindow().getDecorView(),"Write notes, tasks or a study plan");assertNotNull(notes);assertEquals("A note saved on device",notes.getText().toString());});
         }
+    }
+    private static boolean containsText(View view,String value) {
+        if(view instanceof TextView && ((TextView)view).getText().toString().contains(value))return true;
+        if(view instanceof ViewGroup){ViewGroup group=(ViewGroup)view;for(int i=0;i<group.getChildCount();i++)if(containsText(group.getChildAt(i),value))return true;}
+        return false;
+    }
+    @Test public void microphoneButtonHandlesSimulatedRecognitionResult() {
+        Intents.init();
+        try {
+            ArrayList<String> words=new ArrayList<>();words.add("battery");Intent result=new Intent().putStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS,words);
+            intending(hasAction(RecognizerIntent.ACTION_RECOGNIZE_SPEECH)).respondWith(new Instrumentation.ActivityResult(Activity.RESULT_OK,result));
+            try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
+                scenario.onActivity(a->click(a,"🎙 Speak"));
+                long deadline=SystemClock.elapsedRealtime()+10000;boolean[] found={false};
+                while(SystemClock.elapsedRealtime()<deadline && !found[0]){scenario.onActivity(a->found[0]=containsText(a.getWindow().getDecorView(),"Battery:"));if(!found[0])SystemClock.sleep(200);}
+                assertTrue("Recognized command did not produce a battery answer",found[0]);
+            }
+        } finally {Intents.release();}
     }
     @Test public void settingsVoiceStyleCommandOpensSystemSettings() {
         Context app=InstrumentationRegistry.getInstrumentation().getTargetContext();
