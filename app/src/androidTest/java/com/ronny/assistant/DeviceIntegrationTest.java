@@ -8,6 +8,13 @@ import android.content.ContextWrapper;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.SystemClock;
+import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
+import java.util.Locale;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
+import org.junit.Assume;
 import android.content.Intent;
 import android.service.notification.StatusBarNotification;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -51,6 +58,34 @@ public class DeviceIntegrationTest {
         int id=Reminders.load(app).getJSONObject(0).getInt("id");
         new ReminderReceiver().onReceive(denied,new Intent(app,ReminderReceiver.class).putExtra("id",id));
         assertFalse("A suppressed reminder must remain pending",Reminders.load(app).getJSONObject(0).optBoolean("done"));
+    }
+    @Test public void dailyReminderRemainsPendingAndMovesToNextDay() throws Exception {
+        long original=System.currentTimeMillis()+60000;
+        Reminders.add(app,"Daily activity",original,true);
+        int id=Reminders.load(app).getJSONObject(0).getInt("id");
+        assertNotNull(Reminders.fired(app,id));
+        org.json.JSONObject updated=Reminders.load(app).getJSONObject(0);
+        assertFalse(updated.optBoolean("done"));
+        assertTrue("Daily reminder must move forward",updated.getLong("time")>original);
+        assertTrue("Daily recurrence remains set",updated.optBoolean("daily"));
+    }
+    @Test public void deviceTtsEngineCanSpeakWhenAvailable() throws Exception {
+        CountDownLatch initialized=new CountDownLatch(1),completed=new CountDownLatch(1);
+        AtomicInteger initStatus=new AtomicInteger(TextToSpeech.ERROR),result=new AtomicInteger(TextToSpeech.ERROR);
+        TextToSpeech engine=new TextToSpeech(app,status->{initStatus.set(status);initialized.countDown();});
+        try {
+            Assume.assumeTrue("No TTS engine initialized on this emulator",initialized.await(20,TimeUnit.SECONDS)&&initStatus.get()==TextToSpeech.SUCCESS);
+            int lang=engine.setLanguage(Locale.US);
+            Assume.assumeTrue("English TTS data not installed",lang!=TextToSpeech.LANG_MISSING_DATA && lang!=TextToSpeech.LANG_NOT_SUPPORTED);
+            engine.setOnUtteranceProgressListener(new UtteranceProgressListener(){
+                @Override public void onStart(String id){}
+                @Override public void onDone(String id){result.set(TextToSpeech.SUCCESS);completed.countDown();}
+                @Override public void onError(String id){result.set(TextToSpeech.ERROR);completed.countDown();}
+            });
+            assertEquals(TextToSpeech.SUCCESS,engine.speak("Hello from Ronny.",TextToSpeech.QUEUE_FLUSH,null,"ronny-test"));
+            assertTrue("TTS did not finish",completed.await(25,TimeUnit.SECONDS));
+            assertEquals("TTS reported an error",TextToSpeech.SUCCESS,result.get());
+        } finally {engine.stop();engine.shutdown();}
     }
     @Test public void scheduledReminderPostsNotificationAndCompletes() throws Exception {
         if(Build.VERSION.SDK_INT>=33)InstrumentationRegistry.getInstrumentation().getUiAutomation().grantRuntimePermission(app.getPackageName(),Manifest.permission.POST_NOTIFICATIONS);

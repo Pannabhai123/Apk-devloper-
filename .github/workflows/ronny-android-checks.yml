@@ -51,6 +51,23 @@ jobs:
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
           disable-animations: true
           script: ./gradlew --no-daemon connectedDebugAndroidTest > /tmp/ronny-device.log 2>&1
+      - name: Summarize device tests
+        if: always()
+        run: |
+          python3 - <<'PYEOF'
+          import glob, xml.etree.ElementTree as ET
+          tests = failures = skipped = 0
+          for path in glob.glob('app/build/outputs/androidTest-results/**/*.xml', recursive=True):
+              try:
+                  root = ET.parse(path).getroot()
+                  cases = list(root.iter('testcase'))
+                  tests += len(cases)
+                  failures += sum(bool(c.findall('failure') or c.findall('error')) for c in cases)
+                  skipped += sum(bool(c.findall('skipped')) for c in cases)
+              except ET.ParseError:
+                  pass
+          print(f'::notice title=Android test summary::{tests} cases, {failures} failures, {skipped} skipped (API ${{ matrix.api }})')
+          PYEOF
       - name: Annotate failing device tests
         if: failure()
         run: |
