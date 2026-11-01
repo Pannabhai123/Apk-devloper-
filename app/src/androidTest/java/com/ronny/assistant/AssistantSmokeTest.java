@@ -3,6 +3,7 @@ package com.ronny.assistant;
 import static org.junit.Assert.*;
 import static androidx.test.espresso.intent.Intents.intending;
 import static androidx.test.espresso.intent.matcher.IntentMatchers.hasAction;
+import android.accessibilityservice.AccessibilityService;
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Context;
@@ -11,7 +12,6 @@ import android.content.pm.ResolveInfo;
 import android.os.SystemClock;
 import android.provider.Settings;
 import android.speech.RecognizerIntent;
-import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.View;
 import android.view.ViewGroup;
@@ -89,7 +89,7 @@ public class AssistantSmokeTest {
                 while(SystemClock.elapsedRealtime()<deadline){AccessibilityNodeInfo root=InstrumentationRegistry.getInstrumentation().getUiAutomation().getRootInActiveWindow();
                     if(root!=null && root.getPackageName()!=null && expected.contentEquals(root.getPackageName())){opened=true;break;}SystemClock.sleep(200);}
                 assertTrue("System Settings did not open",opened);
-            } finally {InstrumentationRegistry.getInstrumentation().sendKeyDownUpSync(KeyEvent.KEYCODE_BACK);}
+            } finally {InstrumentationRegistry.getInstrumentation().getUiAutomation().performGlobalAction(AccessibilityService.GLOBAL_ACTION_BACK);}
         }
     }
     @Test public void taskCanBeAddedAndDeleted() {
