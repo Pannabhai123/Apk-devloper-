@@ -1,2 +1,62 @@
-# Apk-devloper-
-Apk development 
+# RONNY AI
+
+A native Android assistant **in development**, not a finished or device-tested release. No final APK is available in this repository. Do not rely on its reminders for important events. The previously supplied test-signed APK is outdated and has been removed; it did not contain the latest source changes.
+
+A production release requires a trusted Android build environment, a long-term release signing identity, and real-device testing. The requested absolute `/output` location cannot be created in this sandbox because it is not writable.
+
+## What is implemented
+
+- Native Android UI (Java and platform widgets, no WebView); Android 8.0+ (API 26).
+- Tap-to-start speech recognition through a device speech service; an opt-in voice-conversation loop; text-to-speech with language, device voice, rate, pitch, stop and repeat controls. Voice selection does not guarantee a particular gender. The voice service may need internet and its own permissions. Android runtime behavior has not been verified.
+- Local commands for opening launcher apps, camera, phone, settings, battery, date/time, device, storage and network status, flashlight, selected settings, alarm app, media volume, arithmetic/scientific functions, unit conversions and browser search. English and a few Hinglish command patterns are supported, not general natural-language automation.
+- Current weather by user-specified city through Open-Meteo, with source and model time in the answer; no location permission or weather API key is used. The service may restrict free use to non-commercial use; check [their terms](https://open-meteo.com/en/terms). Weather was tested with mocked responses only.
+- Two user-configured HTTPS OpenAI-compatible chat-completions endpoints, attempted in order; network errors, HTTP errors and rate limits are reported, not disguised as answers. Up to the last 20 stored messages and the user-approved memory are sent with an online request.
+- On-device chat history, editable personal memory, notes and a simple task list, approximate reminders with daily repeat, completion and deletion. A limited English/Hinglish reminder command grammar is supported. Notification delivery depends on device permissions, battery policy and OS scheduling. Reminders are rescheduled after reboot.
+- API keys encrypted with an app-specific Android Keystore AES-GCM key and bound to their configured endpoint; changing that endpoint clears its saved key. Backup is disabled. Chat, notes, settings and reminders are stored in app-private preferences, **not separately encrypted**. No keys are included in the repository.
+
+## Not implemented / important limitations
+
+This is a partial implementation of the requested product, not the full specification. In particular, there is no continuous wake word, microphone foreground service, guaranteed voice selection by gender, listening/thinking/speaking orb states, dedicated onboarding/splash, Room/MVVM/Compose, general-purpose natural-language reminder parsing, advanced task planning, exact alarms, document/image analysis, general-purpose sourced web answers, symbolic algebra, calendar integration or automated phone control beyond the listed intents. Weather uses Open-Meteo only when explicitly requested with a city; general web search opens results in a browser and the AI does not itself retrieve current information. Languages, available apps, recognition and TTS vary by device. There is no official Arena integration or assumed Arena endpoint.
+
+No provider is enabled by default. Online AI requires an independently available compatible endpoint and possibly a user-supplied key; a free service may impose limits, change or disappear. Local supported commands do not require any AI provider. Model content can be inaccurate. Phone actions use user-visible Android intents and do not bypass platform security.
+
+## Build prerequisites
+
+- Android Studio with JDK 17, Android SDK Platform 35 and a compatible Android SDK Build Tools installation.
+- Internet access to Google's Android Maven repository, Maven Central, Gradle's distribution host and their dependencies on the build machine.
+- The wrapper uses Gradle 8.7; the project uses Android Gradle Plugin 8.5.2, compile SDK 35 and target SDK 34. SDK 35 may produce a plugin compatibility warning.
+
+Open this directory in Android Studio, let Gradle sync and install any requested SDK components. Or set `ANDROID_HOME` to your SDK and run:
+
+```sh
+./gradlew assembleDebug
+```
+
+The expected debug artifact is `app/build/outputs/apk/debug/app-debug.apk`. If a device is connected and authorized, install with:
+
+```sh
+adb install -r app/build/outputs/apk/debug/app-debug.apk
+```
+
+### Signed release
+
+Use Android Studio **Build > Generate Signed Bundle / APK > APK** and select or create your own release keystore. Keep that keystore and passwords private and backed up securely; they are not supplied by this project. Select the `release` build variant and finish the wizard. Android Studio will show the generated APK location. Verify on your own machine with `apksigner verify --verbose --print-certs <release.apk>` and install/test it on a real device. If desired, copy the verified artifact to `/output/RONNY_AI_Assistant.apk` on your build machine. The Gradle release build is **not configured to sign itself**; never commit your keystore or credentials.
+
+On a phone, open the APK and approve Android's install-from-this-source prompt if required. Install only APKs from sources you trust. A debug APK and a release APK signed with different keys cannot update each other without uninstalling first, which removes local app data.
+
+## User guide
+
+1. Open the app. Try **Battery**, **Time**, **Apps**, or type `open camera`, `settings kholo`, `internet status`, `storage`, `flashlight on`, `wifi settings`, `set alarm`, `volume up`, `2 + 2`, `calculate sqrt(9)`, `convert 10 km to miles`, `weather in Bhagalpur`, or `search for Android`. Trigonometric functions use radians; conversions support selected length, mass and temperature units. Flashlight requests camera permission; app discovery only includes launchable apps visible through Android's package visibility rules. Search uses the browser.
+2. Tap **Speak** and use the device's speech recognizer. Choose English or Hindi and an available device TTS voice in **Settings**. **Conversation** explicitly starts a session that opens the recognizer again after each spoken answer; cancel recognition, tap **Stop voice**, navigate away or leave the app to end it. The speech service may transmit audio to its provider. There is no background wake word. **Repeat** speaks the latest saved answer.
+3. To use online AI, open **Settings** and enter a provider's complete HTTPS chat-completions URL, model and (if required) key. Tap **Save provider**. A second provider can be configured as a fallback. A blank key field leaves a previously saved key unchanged only if the endpoint has not changed; changing the endpoint clears the old key. Use **Delete key** to remove it. Keys saved by older experimental builds must be re-entered for the endpoint binding to take effect. To disable a provider, clear both URL and model and save. The key should also be deleted if no longer needed.
+4. Optional free-tier example: choose **Fill OpenRouter free settings**, add your own OpenRouter API key and save. It fills `https://openrouter.ai/api/v1/chat/completions` and `openrouter/free`. OpenRouter documents this as a free-model router and supports the chat-completions format, but account eligibility, limits, availability, terms and pricing can change. Review them before use. This example was **not tested with a live account**. See the [free router documentation](https://openrouter.ai/docs/guides/routing/routers/free-router) and [FAQ](https://openrouter.ai/docs/faq). Do not configure a paid model if you want to avoid paid usage. Provider 2 is separately configured and could incur costs depending on your choices.
+5. For `weather in <city>`, the typed or spoken city is sent to Open-Meteo. The first matching location is used; verify its displayed region/country. Availability and results are not guaranteed. In **Tasks**, add, complete or delete local to-dos. In **Notes**, save/edit memory and notes. Memory is explicitly sent to any AI provider used; notes are not sent. Clear memory, notes and conversation under **Settings**; **Delete all app data** also cancels reminders and clears tasks, settings and keys. Remove reminders individually in **Reminders**; uninstalling the app removes all app-local data and encrypted keys.
+6. In **Reminders**, create a reminder, select a future date/time and optionally repeat daily. Alternatively, type or speak `remind me to run tomorrow at 6 am` or `kal subah 6 baje running ke liye yaad dilana`. The parser supports only its documented pattern and rejects ambiguous or past times; use the form for other phrasing. Allow notifications when asked. Alerts are approximate, can be delayed or suppressed, and are not reliable for critical uses. Completion stops future repeats. A past-due reminder may appear after reboot. Check your phone's notification and battery settings if delivery fails.
+
+## Verification status
+
+Java source has been independently type-checked against Android API 35 stubs with Eclipse Compiler and an auxiliary lambda-metafactory compile stub; Android XML has been parsed. Pure-JVM tests cover the reminder parser, endpoint-bound key handling, provider fallback, calculator, weather command and unit converter. Weather response parsing and error handling were additionally checked with mocked responses and a temporary `org.json` implementation, not the Android runtime or live service. With a JDK installed run `scripts/test-core.sh`; to include the mocked weather client checks, set `JSON_JAR` to a compatible org.json JAR.
+
+The full Gradle build was attempted but Gradle's distribution download failed with an SSL handshake error. This environment has no Android SDK, emulator, connected Android device, `adb` or release signing identity, and `services.gradle.org` and `dl.google.com` are unreachable. A prior, now-removed experimental APK was assembled with third-party tools, but it was never installed and did not include the latest changes. No final APK was created at `/output/RONNY_AI_Assistant.apk`.
+
+Installation, launch, voice conversation, Android permissions, AI providers, live weather, reminders, notification delivery, persistence, memory usage and Android API behavior have **not** been verified. Before release, run the full Gradle build and test on API 26 and current Android devices, including permission denial, network loss, provider 429/5xx, malformed replies, reboot, notification denial, battery restrictions, Hindi/Hinglish recognition, encrypted key handling and uninstall/reinstall. Review privacy, security, accessibility and distribution requirements.
