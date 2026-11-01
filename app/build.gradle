@@ -1,5 +1,17 @@
 plugins { id 'com.android.application' }
 
+def releaseKey = [
+    path: System.getenv('RONNY_KEYSTORE_PATH'),
+    storePassword: System.getenv('RONNY_KEYSTORE_PASSWORD'),
+    alias: System.getenv('RONNY_KEY_ALIAS'),
+    keyPassword: System.getenv('RONNY_KEY_PASSWORD')
+]
+def anyReleaseKey = releaseKey.values().any { it != null && !it.isEmpty() }
+def allReleaseKey = releaseKey.values().every { it != null && !it.isEmpty() }
+if (anyReleaseKey && !allReleaseKey) {
+    throw new GradleException('Release signing requires all four RONNY_KEYSTORE_PATH, RONNY_KEYSTORE_PASSWORD, RONNY_KEY_ALIAS and RONNY_KEY_PASSWORD environment variables.')
+}
+
 android {
     namespace 'com.ronny.assistant'
     compileSdk 35
@@ -10,6 +22,21 @@ android {
         versionCode 1
         versionName '1.0'
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    signingConfigs {
+        release {
+            if (allReleaseKey) {
+                storeFile file(releaseKey.path)
+                storePassword releaseKey.storePassword
+                keyAlias releaseKey.alias
+                keyPassword releaseKey.keyPassword
+            }
+        }
+    }
+    buildTypes {
+        release {
+            if (allReleaseKey) signingConfig signingConfigs.release
+        }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17

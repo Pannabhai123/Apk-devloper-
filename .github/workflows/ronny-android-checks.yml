@@ -23,6 +23,16 @@ jobs:
         run: ./scripts/test-core.sh
       - name: Build Android app and instrumentation APK
         run: ./gradlew --no-daemon assembleDebug assembleRelease assembleDebugAndroidTest
+      - name: Verify release signing with a disposable CI key
+        run: |
+          export RONNY_KEYSTORE_PATH="$RUNNER_TEMP/ronny-ci.p12"
+          export RONNY_KEYSTORE_PASSWORD="$(openssl rand -hex 24)"
+          export RONNY_KEY_ALIAS="ronny-ci-only"
+          export RONNY_KEY_PASSWORD="$RONNY_KEYSTORE_PASSWORD"
+          trap 'rm -f "$RONNY_KEYSTORE_PATH"' EXIT
+          keytool -genkeypair -keystore "$RONNY_KEYSTORE_PATH" -storetype PKCS12             -storepass "$RONNY_KEYSTORE_PASSWORD" -keypass "$RONNY_KEY_PASSWORD"             -alias "$RONNY_KEY_ALIAS" -keyalg RSA -keysize 2048 -validity 1             -dname 'CN=Disposable CI Verification Key' -noprompt
+          ./gradlew --no-daemon assembleRelease --rerun-tasks
+          "$ANDROID_HOME/build-tools/35.0.0/apksigner" verify --verbose app/build/outputs/apk/release/app-release.apk
       - name: Enable hardware acceleration for emulator
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
