@@ -36,7 +36,26 @@ jobs:
           target: google_apis
           emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
           disable-animations: true
-          script: ./gradlew --no-daemon connectedDebugAndroidTest
+          script: ./gradlew --no-daemon connectedDebugAndroidTest > /tmp/ronny-device.log 2>&1
+      - name: Annotate failing device tests
+        if: failure()
+        run: |
+          python3 - <<'PYEOF'
+          import glob, os, xml.etree.ElementTree as ET
+          failures = []
+          for path in glob.glob('app/build/outputs/androidTest-results/**/*.xml', recursive=True):
+              try:
+                  for test in ET.parse(path).getroot().iter('testcase'):
+                      for failure in test.findall('failure') + test.findall('error'):
+                          failures.append(test.get('classname', '') + '.' + test.get('name', '') + ': ' + (failure.get('message') or failure.text or 'unknown'))
+              except ET.ParseError:
+                  pass
+          if not failures and os.path.exists('/tmp/ronny-device.log'):
+              failures.append(open('/tmp/ronny-device.log', errors='replace').read()[-6000:])
+          for message in failures:
+              message = message.replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+              print('::error title=Android test failure::' + message[:12000])
+          PYEOF
       - name: Upload check reports
         if: always()
         uses: actions/upload-artifact@v4
