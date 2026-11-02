@@ -281,7 +281,7 @@ public class MainActivity extends Activity {
         content.addView(label(documentName+" • "+documentText.length()+" characters",16,CYAN));addGap(content,6);
         String preview=DocumentText.excerpt(documentText,4000);
         TextView text=label(preview+(preview.length()<documentText.length()?"\n\n[Preview shortened]":""),14,TEXT);text.setTextIsSelectable(true);text.setPadding(dp(12),dp(12),dp(12),dp(12));text.setBackground(shape(PANEL,12,0));content.addView(text);addGap(content,10);
-        content.addView(label("Only the first "+DocumentText.MAX_AI_CHARS+" characters can be sent to AI. Your file stays on your device unless you confirm an AI request.",14,MUTED));addGap(content,8);
+        content.addView(label("Only the first "+DocumentText.MAX_AI_CHARS+" characters can be sent to AI. RONNY sends file text to an AI provider only after you confirm. Your document provider may download the file.",14,MUTED));addGap(content,8);
         LinearLayout actions=row();rowButton(actions,"Summarize",()->confirmDocumentRequest("summarize"));rowButton(actions,"Explain",()->confirmDocumentRequest("explain"));content.addView(actions);addGap(content,8);
         content.addView(button("Clear selected file",()->{if(busy){toast("Wait for the current operation first.");return;}documentText="";documentName="";showDocuments();}));
     }
