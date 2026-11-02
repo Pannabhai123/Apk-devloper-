@@ -2,11 +2,18 @@ package com.ronny.assistant;
 
 import static org.junit.Assert.*;
 import static androidx.test.espresso.intent.Intents.intending;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static androidx.test.espresso.intent.matcher.IntentMatchers.hasAction;
 import android.accessibilityservice.AccessibilityService;
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Context;
+import android.content.ContentValues;
+import android.net.Uri;
+import android.provider.MediaStore;
+import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.os.SystemClock;
@@ -20,6 +27,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.filters.SdkSuppress;
 import androidx.test.espresso.intent.Intents;
 import androidx.test.platform.app.InstrumentationRegistry;
 import org.junit.Before;
@@ -45,7 +53,7 @@ public class AssistantSmokeTest {
         if(view instanceof ViewGroup){ViewGroup group=(ViewGroup)view;for(int i=0;i<group.getChildCount();i++){EditText found=field(group.getChildAt(i),hint);if(found!=null)return found;}}
         return null;
     }
-    private static void click(MainActivity a,String label){TextView button=text(a.getWindow().getDecorView(),label,Button.class);assertNotNull("Missing button: "+label,button);button.performClick();}
+    static void click(MainActivity a,String label){TextView button=text(a.getWindow().getDecorView(),label,Button.class);assertNotNull("Missing button: "+label,button);button.performClick();}
     @Test public void launchesAndCalculatesOffline() {
         try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
             scenario.onActivity(a->{assertNotNull(text(a.getWindow().getDecorView(),"◉  RONNY AI",TextView.class));
@@ -60,7 +68,7 @@ public class AssistantSmokeTest {
             scenario.onActivity(a->{click(a,"Notes");EditText notes=field(a.getWindow().getDecorView(),"Write notes, tasks or a study plan");assertNotNull(notes);assertEquals("A note saved on device",notes.getText().toString());});
         }
     }
-    private static boolean containsText(View view,String value) {
+    static boolean containsText(View view,String value) {
         if(view instanceof TextView && ((TextView)view).getText().toString().contains(value))return true;
         if(view instanceof ViewGroup){ViewGroup group=(ViewGroup)view;for(int i=0;i<group.getChildCount();i++)if(containsText(group.getChildAt(i),value))return true;}
         return false;
@@ -77,6 +85,34 @@ public class AssistantSmokeTest {
                 assertTrue("Recognized command did not produce a battery answer",found[0]);
             }
         } finally {Intents.release();}
+    }
+    @Test @SdkSuppress(minSdkVersion=29) public void selectedTextRequiresConsentAndIsNotStoredInHistory() throws Exception {
+        Context app=InstrumentationRegistry.getInstrumentation().getTargetContext();
+        ContentValues values=new ContentValues();values.put(MediaStore.MediaColumns.DISPLAY_NAME,"ronny-document-test.txt");values.put(MediaStore.MediaColumns.MIME_TYPE,"text/plain");
+        Uri file=app.getContentResolver().insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI,values);assertNotNull(file);
+        String privateText="Unique local document content for the test";
+        try {
+            try(OutputStream out=app.getContentResolver().openOutputStream(file)){assertNotNull(out);out.write(privateText.getBytes(StandardCharsets.UTF_8));}
+            Intents.init();
+            try {
+                intending(hasAction(Intent.ACTION_OPEN_DOCUMENT)).respondWith(new Instrumentation.ActivityResult(Activity.RESULT_OK,new Intent().setData(file)));
+                try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
+                    scenario.onActivity(a->{click(a,"Documents");click(a,"Choose text file");});
+                    long deadline=SystemClock.elapsedRealtime()+15000;boolean[] loaded={false};
+                    while(SystemClock.elapsedRealtime()<deadline && !loaded[0]){scenario.onActivity(a->loaded[0]=containsText(a.getWindow().getDecorView(),privateText));if(!loaded[0])SystemClock.sleep(200);}
+                    assertTrue("Selected text was not displayed",loaded[0]);
+                    scenario.onActivity(a->click(a,"Summarize"));
+                    onView(withText("Cancel")).perform(androidx.test.espresso.action.ViewActions.click());
+                    assertFalse("Cancel must not add document text to chat",app.getSharedPreferences("data",Context.MODE_PRIVATE).getString("history","").contains(privateText));
+                    scenario.onActivity(a->click(a,"Summarize"));onView(withText("Send")).perform(androidx.test.espresso.action.ViewActions.click());
+                    long finish=SystemClock.elapsedRealtime()+15000;boolean[] answered={false};
+                    while(SystemClock.elapsedRealtime()<finish && !answered[0]){scenario.onActivity(a->answered[0]=containsText(a.getWindow().getDecorView(),"No AI provider configured"));if(!answered[0])SystemClock.sleep(200);}
+                    assertTrue("Unavailable AI was not reported",answered[0]);
+                    String history=app.getSharedPreferences("data",Context.MODE_PRIVATE).getString("history","");
+                    assertFalse("Original document text must not be saved to chat",history.contains(privateText));
+                }
+            } finally {Intents.release();}
+        } finally {app.getContentResolver().delete(file,null,null);}
     }
     @Test public void settingsVoiceStyleCommandOpensSystemSettings() {
         Context app=InstrumentationRegistry.getInstrumentation().getTargetContext();

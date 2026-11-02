@@ -1,8 +1,24 @@
 package com.ronny.assistant;
 
 import static org.junit.Assert.*;
+import static androidx.test.espresso.intent.Intents.intending;
+import static androidx.test.espresso.intent.matcher.IntentMatchers.hasAction;
+import static androidx.test.espresso.Espresso.onView;
+import static androidx.test.espresso.matcher.ViewMatchers.withText;
+import android.app.Activity;
+import android.app.Instrumentation;
 import android.content.Context;
+import android.content.ContentValues;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.SystemClock;
+import android.provider.MediaStore;
+import java.io.OutputStream;
+import java.nio.charset.StandardCharsets;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.core.app.ActivityScenario;
+import androidx.test.espresso.intent.Intents;
+import androidx.test.filters.SdkSuppress;
 import androidx.test.platform.app.InstrumentationRegistry;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -29,6 +45,7 @@ public class AiClientIntegrationTest {
     @Before public void prepare() throws Exception {
         app=InstrumentationRegistry.getInstrumentation().getTargetContext();
         app.getSharedPreferences("settings",Context.MODE_PRIVATE).edit().clear().commit();
+        app.getSharedPreferences("data",Context.MODE_PRIVATE).edit().clear().commit();
         secrets=new Secrets(app);secrets.put("key1","");secrets.put("key2","");
         HeldCertificate certificate=new HeldCertificate.Builder().addSubjectAlternativeName("localhost").build();
         HandshakeCertificates serverCerts=new HandshakeCertificates.Builder().heldCertificate(certificate).build();
@@ -62,6 +79,38 @@ public class AiClientIntegrationTest {
         configure();server.enqueue(new MockResponse().setResponseCode(503));server.enqueue(new MockResponse().setResponseCode(429));
         try {AiClient.ask(app,history(),"");fail("Expected a provider error");}
         catch(Exception e){assertTrue(e.getMessage().contains("Provider 1: HTTP 503"));assertTrue(e.getMessage().contains("Provider 2: HTTP 429"));}
+    }
+    @Test @SdkSuppress(minSdkVersion=29) public void documentIsSentOnlyAfterConsentAndNotStoredInChat() throws Exception {
+        configure();server.enqueue(new MockResponse().setResponseCode(200).setBody("{\"choices\":[{\"message\":{\"content\":\"Summary from model\"}}]}"));
+        String privateText="Unique private document contents";
+        ContentValues values=new ContentValues();values.put(MediaStore.MediaColumns.DISPLAY_NAME,"ronny-ai-document.txt");values.put(MediaStore.MediaColumns.MIME_TYPE,"text/plain");
+        Uri file=app.getContentResolver().insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI,values);assertNotNull(file);
+        try {
+            try(OutputStream out=app.getContentResolver().openOutputStream(file)){assertNotNull(out);out.write(privateText.getBytes(StandardCharsets.UTF_8));}
+            Intents.init();
+            try {
+                intending(hasAction(Intent.ACTION_OPEN_DOCUMENT)).respondWith(new Instrumentation.ActivityResult(Activity.RESULT_OK,new Intent().setData(file)));
+                try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
+                    scenario.onActivity(a->{AssistantSmokeTest.click(a,"Documents");AssistantSmokeTest.click(a,"Choose text file");});
+                    long deadline=SystemClock.elapsedRealtime()+15000;boolean[] loaded={false};
+                    while(SystemClock.elapsedRealtime()<deadline&&!loaded[0]){scenario.onActivity(a->loaded[0]=AssistantSmokeTest.containsText(a.getWindow().getDecorView(),privateText));if(!loaded[0])SystemClock.sleep(200);}
+                    assertTrue("File was not displayed",loaded[0]);
+                    scenario.onActivity(a->AssistantSmokeTest.click(a,"Summarize"));
+                    onView(withText("Cancel")).perform(androidx.test.espresso.action.ViewActions.click());
+                    assertEquals("Cancellation must not send a provider request",0,server.getRequestCount());
+                    scenario.onActivity(a->AssistantSmokeTest.click(a,"Summarize"));
+                    onView(withText("Send")).perform(androidx.test.espresso.action.ViewActions.click());
+                    RecordedRequest request=server.takeRequest(15,TimeUnit.SECONDS);assertNotNull("No provider request",request);
+                    assertTrue("Document excerpt not sent after consent",request.getBody().readUtf8().contains(privateText));
+                    long until=SystemClock.elapsedRealtime()+15000;boolean[] answered={false};
+                    while(SystemClock.elapsedRealtime()<until&&!answered[0]){scenario.onActivity(a->answered[0]=AssistantSmokeTest.containsText(a.getWindow().getDecorView(),"Summary from model"));if(!answered[0])SystemClock.sleep(200);}
+                    assertTrue("AI summary not displayed",answered[0]);
+                    String history=app.getSharedPreferences("data",Context.MODE_PRIVATE).getString("history","");
+                    assertFalse("Original document should not be persisted to history",history.contains(privateText));
+                    assertTrue("Summary should be persisted to history",history.contains("Summary from model"));
+                }
+            } finally {Intents.release();}
+        } finally {app.getContentResolver().delete(file,null,null);}
     }
     @Test public void malformedPrimaryResponseFallsBack() throws Exception {
         configure();server.enqueue(new MockResponse().setResponseCode(200).setBody("{}"));
