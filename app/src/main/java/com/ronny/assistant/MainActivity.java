@@ -45,6 +45,7 @@ public class MainActivity extends Activity {
     private EditText input;
     private TextView status;
     private TextToSpeech tts;
+    private AlertDialog documentConsent;
     private ValueAnimator orbAnimator;
     private boolean ttsReady=false, busy=false, pendingTorch=false;
     private boolean voiceConversation=false, recognizerOpen=false, pendingListen=false, foreground=false;
@@ -252,7 +253,7 @@ public class MainActivity extends Activity {
     @Override protected void onPause(){foreground=false;if(orbAnimator!=null)orbAnimator.pause();super.onPause();}
     @Override protected void onStop(){if(voiceConversation && !recognizerOpen)stopConversation();super.onStop();}
     @Override public void onBackPressed(){if(!page.equals("Assistant"))showHome();else super.onBackPressed();}
-    @Override protected void onDestroy(){if(orbAnimator!=null)orbAnimator.cancel();voiceConversation=false;pendingListen=false;if(tts!=null){tts.stop();tts.shutdown();}executor.shutdownNow();super.onDestroy();}
+    @Override protected void onDestroy(){if(documentConsent!=null)documentConsent.dismiss();if(orbAnimator!=null)orbAnimator.cancel();voiceConversation=false;pendingListen=false;if(tts!=null){tts.stop();tts.shutdown();}executor.shutdownNow();super.onDestroy();}
     private void showApps(){
         setup("Installed apps"); TextView intro=label("Tap a launchable app to open it. Android limits visibility to launcher apps.",14,MUTED);content.addView(intro);addGap(content,10);
         PackageManager pm=getPackageManager(); List<ResolveInfo> apps=pm.queryIntentActivities(new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER),0);
@@ -312,7 +313,7 @@ public class MainActivity extends Activity {
         if(documentText.isEmpty()){toast("Choose a text file first.");return;}
         final String selected=documentText,name=documentName,excerpt=DocumentText.excerpt(selected,DocumentText.MAX_AI_CHARS);
         String warning="Send "+excerpt.length()+" characters"+(excerpt.length()<selected.length()?" (only the beginning of this file)":"")+" to your configured AI provider and its fallback if needed? Recent chat and approved memory are also sent. The file name and AI reply are saved in chat, and the reply may quote the file. The original file text is not saved by this feature.";
-        new AlertDialog.Builder(this).setTitle("Send document to AI?").setMessage(warning).setNegativeButton("Cancel",null).setPositiveButton("Send",(d,w)->{
+        AlertDialog dialog=new AlertDialog.Builder(this).setTitle("Send document to AI?").setMessage(warning).setNegativeButton("Cancel",null).setPositiveButton("Send",(d,w)->{
             if(busy || !selected.equals(documentText)){toast("The selected file changed; please try again.");return;}
             addMessage("user",(action.equals("summarize")?"Summarize":"Explain")+" text from "+name+(excerpt.length()<selected.length()?" (excerpt)":""));
             final JSONArray context;
@@ -320,7 +321,8 @@ public class MainActivity extends Activity {
             String memory=data.getString("memory","");busy=true;refreshStatus();if(page.equals("Documents"))showDocuments();
             executor.execute(()->{String response;boolean success;try{response=AiClient.ask(getApplicationContext(),context,memory);success=true;}catch(Exception e){response=e.getMessage()==null?"AI provider unavailable.":e.getMessage();success=false;}final String reply=response;final boolean ok=success;
                 runOnUiThread(()->{if(isFinishing()||isDestroyed())return;busy=false;refreshStatus();answer(reply,ok);if(page.equals("Documents"))showHome();else toast("Document response saved in Assistant.");});});
-        }).show();
+        }).create();
+        documentConsent=dialog;dialog.setOnDismissListener(d->{if(documentConsent==dialog)documentConsent=null;});dialog.show();
     }
     private void showNotes(){
         setup("Notes & memory");

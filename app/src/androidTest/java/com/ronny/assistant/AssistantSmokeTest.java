@@ -2,11 +2,11 @@ package com.ronny.assistant;
 
 import static org.junit.Assert.*;
 import static androidx.test.espresso.intent.Intents.intending;
-import static androidx.test.espresso.Espresso.onView;
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static androidx.test.espresso.intent.matcher.IntentMatchers.hasAction;
 import android.accessibilityservice.AccessibilityService;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.app.Instrumentation;
 import android.content.Context;
 import android.content.ContentValues;
@@ -39,6 +39,8 @@ import java.util.ArrayList;
 @RunWith(AndroidJUnit4.class)
 public class AssistantSmokeTest {
     @Before public void clearData() {
+        InstrumentationRegistry.getInstrumentation().getUiAutomation().performGlobalAction(AccessibilityService.GLOBAL_ACTION_HOME);
+        InstrumentationRegistry.getInstrumentation().waitForIdleSync();
         Context app=InstrumentationRegistry.getInstrumentation().getTargetContext();
         app.getSharedPreferences("data",Context.MODE_PRIVATE).edit().clear().commit();
         app.getSharedPreferences("settings",Context.MODE_PRIVATE).edit().clear().commit();
@@ -54,6 +56,10 @@ public class AssistantSmokeTest {
         return null;
     }
     static void click(MainActivity a,String label){TextView button=text(a.getWindow().getDecorView(),label,Button.class);assertNotNull("Missing button: "+label,button);button.performClick();}
+    static void respondToDocumentConsent(MainActivity a,int which){
+        try{java.lang.reflect.Field field=MainActivity.class.getDeclaredField("documentConsent");field.setAccessible(true);AlertDialog dialog=(AlertDialog)field.get(a);assertNotNull("Document consent dialog missing",dialog);assertTrue("Document consent dialog not shown",dialog.isShowing());Button button=dialog.getButton(which);assertNotNull(button);button.performClick();}
+        catch(ReflectiveOperationException e){throw new AssertionError(e);}
+    }
     @Test public void launchesAndCalculatesOffline() {
         try(ActivityScenario<MainActivity> scenario=ActivityScenario.launch(MainActivity.class)) {
             scenario.onActivity(a->{assertNotNull(text(a.getWindow().getDecorView(),"◉  RONNY AI",TextView.class));
@@ -101,10 +107,9 @@ public class AssistantSmokeTest {
                     long deadline=SystemClock.elapsedRealtime()+15000;boolean[] loaded={false};
                     while(SystemClock.elapsedRealtime()<deadline && !loaded[0]){scenario.onActivity(a->loaded[0]=containsText(a.getWindow().getDecorView(),privateText));if(!loaded[0])SystemClock.sleep(200);}
                     assertTrue("Selected text was not displayed",loaded[0]);
-                    scenario.onActivity(a->click(a,"Summarize"));
-                    onView(withText("Cancel")).perform(androidx.test.espresso.action.ViewActions.click());
+                    scenario.onActivity(a->{click(a,"Summarize");respondToDocumentConsent(a,DialogInterface.BUTTON_NEGATIVE);});
                     assertFalse("Cancel must not add document text to chat",app.getSharedPreferences("data",Context.MODE_PRIVATE).getString("history","").contains(privateText));
-                    scenario.onActivity(a->click(a,"Summarize"));onView(withText("Send")).perform(androidx.test.espresso.action.ViewActions.click());
+                    scenario.onActivity(a->{click(a,"Summarize");respondToDocumentConsent(a,DialogInterface.BUTTON_POSITIVE);});
                     long finish=SystemClock.elapsedRealtime()+15000;boolean[] answered={false};
                     while(SystemClock.elapsedRealtime()<finish && !answered[0]){scenario.onActivity(a->answered[0]=containsText(a.getWindow().getDecorView(),"No AI provider configured"));if(!answered[0])SystemClock.sleep(200);}
                     assertTrue("Unavailable AI was not reported",answered[0]);
@@ -125,7 +130,7 @@ public class AssistantSmokeTest {
                 while(SystemClock.elapsedRealtime()<deadline){AccessibilityNodeInfo root=InstrumentationRegistry.getInstrumentation().getUiAutomation().getRootInActiveWindow();
                     if(root!=null && root.getPackageName()!=null && expected.contentEquals(root.getPackageName())){opened=true;break;}SystemClock.sleep(200);}
                 assertTrue("System Settings did not open",opened);
-            } finally {InstrumentationRegistry.getInstrumentation().getUiAutomation().performGlobalAction(AccessibilityService.GLOBAL_ACTION_BACK);}
+            } finally {InstrumentationRegistry.getInstrumentation().getUiAutomation().performGlobalAction(AccessibilityService.GLOBAL_ACTION_HOME);}
         }
     }
     @Test public void taskCanBeAddedAndDeleted() {

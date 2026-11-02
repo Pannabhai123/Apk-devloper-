@@ -3,13 +3,12 @@ package com.ronny.assistant;
 import static org.junit.Assert.*;
 import static androidx.test.espresso.intent.Intents.intending;
 import static androidx.test.espresso.intent.matcher.IntentMatchers.hasAction;
-import static androidx.test.espresso.Espresso.onView;
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Context;
 import android.content.ContentValues;
 import android.content.Intent;
+import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.SystemClock;
 import android.provider.MediaStore;
@@ -95,11 +94,9 @@ public class AiClientIntegrationTest {
                     long deadline=SystemClock.elapsedRealtime()+15000;boolean[] loaded={false};
                     while(SystemClock.elapsedRealtime()<deadline&&!loaded[0]){scenario.onActivity(a->loaded[0]=AssistantSmokeTest.containsText(a.getWindow().getDecorView(),privateText));if(!loaded[0])SystemClock.sleep(200);}
                     assertTrue("File was not displayed",loaded[0]);
-                    scenario.onActivity(a->AssistantSmokeTest.click(a,"Summarize"));
-                    onView(withText("Cancel")).perform(androidx.test.espresso.action.ViewActions.click());
+                    scenario.onActivity(a->{AssistantSmokeTest.click(a,"Summarize");AssistantSmokeTest.respondToDocumentConsent(a,DialogInterface.BUTTON_NEGATIVE);});
                     assertEquals("Cancellation must not send a provider request",0,server.getRequestCount());
-                    scenario.onActivity(a->AssistantSmokeTest.click(a,"Summarize"));
-                    onView(withText("Send")).perform(androidx.test.espresso.action.ViewActions.click());
+                    scenario.onActivity(a->{AssistantSmokeTest.click(a,"Summarize");AssistantSmokeTest.respondToDocumentConsent(a,DialogInterface.BUTTON_POSITIVE);});
                     RecordedRequest request=server.takeRequest(15,TimeUnit.SECONDS);assertNotNull("No provider request",request);
                     assertTrue("Document excerpt not sent after consent",request.getBody().readUtf8().contains(privateText));
                     long until=SystemClock.elapsedRealtime()+15000;boolean[] answered={false};
