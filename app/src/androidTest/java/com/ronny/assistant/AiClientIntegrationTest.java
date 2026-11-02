@@ -80,7 +80,8 @@ public class AiClientIntegrationTest {
         catch(Exception e){assertTrue(e.getMessage().contains("Provider 1: HTTP 503"));assertTrue(e.getMessage().contains("Provider 2: HTTP 429"));}
     }
     @Test @SdkSuppress(minSdkVersion=29) public void documentIsSentOnlyAfterConsentAndNotStoredInChat() throws Exception {
-        configure();server.enqueue(new MockResponse().setResponseCode(200).setBody("{\"choices\":[{\"message\":{\"content\":\"Summary from model\"}}]}"));
+        configure();app.getSharedPreferences("settings",Context.MODE_PRIVATE).edit().putBoolean("speak",false).commit();
+        server.enqueue(new MockResponse().setResponseCode(200).setBody("{\"choices\":[{\"message\":{\"content\":\"Summary from model\"}}]}"));
         String privateText="Unique private document contents";
         ContentValues values=new ContentValues();values.put(MediaStore.MediaColumns.DISPLAY_NAME,"ronny-ai-document.txt");values.put(MediaStore.MediaColumns.MIME_TYPE,"text/plain");
         Uri file=app.getContentResolver().insert(MediaStore.Downloads.EXTERNAL_CONTENT_URI,values);assertNotNull(file);

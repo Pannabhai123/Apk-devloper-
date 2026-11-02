@@ -40,7 +40,6 @@ import java.util.ArrayList;
 public class AssistantSmokeTest {
     @Before public void clearData() {
         InstrumentationRegistry.getInstrumentation().getUiAutomation().performGlobalAction(AccessibilityService.GLOBAL_ACTION_HOME);
-        InstrumentationRegistry.getInstrumentation().waitForIdleSync();
         Context app=InstrumentationRegistry.getInstrumentation().getTargetContext();
         app.getSharedPreferences("data",Context.MODE_PRIVATE).edit().clear().commit();
         app.getSharedPreferences("settings",Context.MODE_PRIVATE).edit().clear().commit();
