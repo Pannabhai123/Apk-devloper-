@@ -39,7 +39,6 @@ import java.util.ArrayList;
 @RunWith(AndroidJUnit4.class)
 public class AssistantSmokeTest {
     @Before public void clearData() {
-        InstrumentationRegistry.getInstrumentation().getUiAutomation().performGlobalAction(AccessibilityService.GLOBAL_ACTION_HOME);
         Context app=InstrumentationRegistry.getInstrumentation().getTargetContext();
         app.getSharedPreferences("data",Context.MODE_PRIVATE).edit().clear().commit();
         app.getSharedPreferences("settings",Context.MODE_PRIVATE).edit().clear().commit();
@@ -129,7 +128,7 @@ public class AssistantSmokeTest {
                 while(SystemClock.elapsedRealtime()<deadline){AccessibilityNodeInfo root=InstrumentationRegistry.getInstrumentation().getUiAutomation().getRootInActiveWindow();
                     if(root!=null && root.getPackageName()!=null && expected.contentEquals(root.getPackageName())){opened=true;break;}SystemClock.sleep(200);}
                 assertTrue("System Settings did not open",opened);
-            } finally {InstrumentationRegistry.getInstrumentation().getUiAutomation().performGlobalAction(AccessibilityService.GLOBAL_ACTION_HOME);}
+            } finally {InstrumentationRegistry.getInstrumentation().getUiAutomation().performGlobalAction(AccessibilityService.GLOBAL_ACTION_BACK);}
         }
     }
     @Test public void taskCanBeAddedAndDeleted() {
