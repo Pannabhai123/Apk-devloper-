@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ronny AI</string>
+    <string name="ai_name">Ronny</string>
+    <string name="status_online">Online</string>
+    <string name="status_listening">Listening…</string>
+    <string name="status_thinking">Thinking…</string>
+    <string name="status_speaking">Speaking…</string>
+    <string name="status_offline_mode">Offline Mode</string>
+    <string name="sos_active">SOS ACTIVE — Cancel karein</string>
+    <string name="channel_reminders">Reminders</string>
+    <string name="channel_sos">Emergency</string>
+</resources>
