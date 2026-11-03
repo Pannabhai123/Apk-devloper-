@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Ronny AI</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { background:#0A0E1A; color:#E6F1FF; font-family:'Segoe UI',Roboto,sans-serif; min-height:100vh; }
+  .glow { text-shadow:0 0 12px rgba(0,212,255,.55); }
+  header { display:flex; align-items:center; padding:14px 16px 6px; gap:8px; }
+  header h1 { font-size:22px; color:#00D4FF; letter-spacing:1px; }
+  .chip { border-radius:50px; padding:5px 12px; font-size:11px; font-weight:600; border:1px solid; }
+  .chip.online { color:#22D39A; border-color:rgba(34,211,154,.5); background:rgba(34,211,154,.12); }
+  .chip.off { color:#FF3B5C; border-color:rgba(255,59,92,.5); background:rgba(255,59,92,.12); }
+  .chip.blue { color:#00D4FF; border-color:rgba(0,212,255,.5); background:rgba(0,212,255,.12); }
+  .chip.purple { color:#A855F7; border-color:rgba(168,85,247,.5); background:rgba(168,85,247,.12); }
+  .chip.red { color:#FF3B5C; border-color:rgba(255,59,92,.5); background:rgba(255,59,92,.12); }
+  section { display:none; padding:10px 16px 96px; animation:fade .25s ease; }
+  section.active { display:block; }
+  @keyframes fade { from { opacity:0; transform:translateY(8px);} to { opacity:1; transform:none;} }
+  .glass { background:rgba(255,255,255,.06); border:1px solid rgba(0,212,255,.3); border-radius:18px; padding:14px; margin:10px 0; }
+  .glass.purple { border-color:rgba(168,85,247,.45); }
+  .glass.red { border-color:rgba(255,59,92,.5); }
+  button.neon { background:rgba(0,212,255,.12); border:1px solid rgba(0,212,255,.55); color:#E6F1FF;
+    border-radius:14px; padding:11px 15px; font-size:13.5px; font-weight:600; cursor:pointer; }
+  button.neon.purple { background:rgba(168,85,247,.14); border-color:rgba(168,85,247,.6); }
+  button.neon.red { background:rgba(255,59,92,.15); border-color:rgba(255,59,92,.65); }
+  button.neon.green { background:rgba(34,211,154,.13); border-color:rgba(34,211,154,.55); }
+  button.neon:active { transform:scale(.96); }
+  .row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  input, select, textarea { background:rgba(255,255,255,.07); border:1px solid rgba(0,212,255,.35);
+    color:#E6F1FF; border-radius:12px; padding:11px 12px; font-size:14px; width:100%; outline:none; }
+  input:focus { border-color:#00D4FF; }
+  label { font-size:12px; color:#7A8BA8; margin:8px 0 4px; display:block; }
+  /* ---- Avatar area ---- */
+  #avatarWrap { text-align:center; margin:8px 0 2px; }
+  #avatar { width:230px; height:230px; }
+  #aiName { font-size:26px; font-weight:700; }
+  #aiTag { color:#A855F7; font-size:13px; margin-bottom:6px; }
+  #wave { width:82%; height:46px; margin:6px auto; display:block; }
+  #sttPreview { color:#00D4FF; font-size:13px; min-height:18px; font-style:italic; }
+  .mic { width:88px; height:88px; border-radius:50%; border:2px solid #A855F7;
+    background:rgba(168,85,247,.2); font-size:34px; margin:10px auto; display:flex;
+    align-items:center; justify-content:center; cursor:pointer; animation:pulse 2s infinite; }
+  .mic.listening { border-color:#FF3B5C; background:rgba(255,59,92,.22); }
+  @keyframes pulse { 0%,100% { transform:scale(1);} 50% { transform:scale(1.08);} }
+  /* ---- Chat ---- */
+  #chatList { height:52vh; overflow-y:auto; padding:6px 2px; }
+  .bubble { max-width:86%; padding:11px 13px; border-radius:16px; margin:7px 0; font-size:14px;
+    line-height:1.5; white-space:pre-wrap; word-break:break-word; }
+  .bubble.user { background:rgba(168,85,247,.24); border:1px solid rgba(168,85,247,.5); margin-left:auto; }
+  .bubble.bot { background:#12203A; border:1px solid rgba(0,212,255,.35); }
+  .meta { font-size:10px; color:#7A8BA8; margin-top:3px; }
+  /* ---- SOS ---- */
+  #sosBtn { display:block; margin:16px auto; padding:24px 44px; font-size:26px; font-weight:800;
+    border-radius:22px; background:rgba(255,59,92,.18); border:2px solid #FF3B5C; color:#FF3B5C;
+    cursor:pointer; letter-spacing:2px; }
+  #countdownBox { text-align:center; }
+  #countNum { font-size:64px; font-weight:800; color:#FF3B5C; }
+  /* ---- Modal ---- */
+  #modal { position:fixed; inset:0; background:rgba(0,0,0,.6); display:none;
+    align-items:center; justify-content:center; z-index:50; padding:20px; }
+  #modalBox { background:#101728; border:1px solid rgba(0,212,255,.5); border-radius:18px;
+    padding:20px; width:100%; max-width:340px; }
+  /* ---- Bottom nav ---- */
+  nav { position:fixed; bottom:0; left:0; right:0; display:flex; background:rgba(10,14,26,.96);
+    border-top:1px solid rgba(0,212,255,.25); padding:9px 4px calc(9px + env(safe-area-inset-bottom)); }
+  nav button { flex:1; background:none; border:none; color:#7A8BA8; font-size:11px; font-weight:600;
+    padding:5px 2px; cursor:pointer; }
+  nav button .ic { font-size:20px; display:block; }
+  nav button.active { color:#00D4FF; text-shadow:0 0 10px rgba(0,212,255,.6); }
+  h3.sec { color:#00D4FF; font-size:15px; margin:12px 0 6px; }
+  .tiny { font-size:11px; color:#7A8BA8; line-height:1.6; }
+  .log { font-size:12px; line-height:1.8; }
+  ::-webkit-scrollbar { width:4px; } ::-webkit-scrollbar-thumb { background:rgba(0,212,255,.4); border-radius:4px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1 class="glow">RONNY</h1>
+  <span class="chip online" id="netChip">● Online</span>
+  <span style="flex:1"></span>
+  <span class="chip blue" id="battChip">🔋 ---%</span>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="active">
+  <div id="avatarWrap">
+    <canvas id="avatar" width="230" height="230"></canvas>
+    <div id="aiName">Ronny</div>
+    <div id="aiTag">Advanced Personal AI Assistant · <span id="personaTag">Friendly</span></div>
+  </div>
+  <canvas id="wave" width="600" height="46"></canvas>
+  <div id="sttPreview"></div>
+  <div class="mic" id="micBtn" onclick="toggleMic()">🎙</div>
+  <div class="row">
+    <input id="homeInput" placeholder="Ronny se kuch bhi poochho…" style="flex:1"
+      onkeydown="if(event.key==='Enter')sendHome()">
+    <button class="neon" onclick="sendHome()">Send</button>
+  </div>
+  <div class="glass">
+    <b style="color:#00D4FF">⚡ Quick Actions</b>
+    <div class="row" style="margin-top:10px">
+      <button class="neon" onclick="quick('Chrome kholo')">📱 Chrome</button>
+      <button class="neon" onclick="quick('YouTube kholo')">▶️ YouTube</button>
+      <button class="neon" onclick="quick('WhatsApp kholo')">💬 WhatsApp</button>
+      <button class="neon" onclick="quick('flashlight on karo')">🔦 Torch</button>
+      <button class="neon" onclick="quick('battery kitni hai')">🔋 Battery</button>
+      <button class="neon" onclick="quick('tum kya kar sakte ho')">🤖 Automation</button>
+    </div>
+  </div>
+  <div class="glass purple">
+    <b style="color:#A855F7">🎭 AI Personality</b>
+    <div class="row" style="margin-top:10px">
+      <button class="neon purple persona" onclick="setPersona('Friendly')">😊 Friendly</button>
+      <button class="neon purple persona" onclick="setPersona('Professional')">💼 Professional</button>
+      <button class="neon purple persona" onclick="setPersona('JARVIS')">◉ JARVIS</button>
+    </div>
+  </div>
+  <div class="glass">
+    <b style="color:#00D4FF">👁 Avatar Mode</b>
+    <div class="row" style="margin-top:10px">
+      <button class="neon" id="av0" onclick="setAvatar(0)">🤖 AI Companion</button>
+      <button class="neon" id="av1" onclick="setAvatar(1)">◉ JARVIS Interface</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CHAT ================= -->
+<section id="chat">
+  <div class="row">
+    <h3 class="sec" style="flex:1">💬 Chat with Ronny</h3>
+    <button class="neon" id="voiceModeBtn" onclick="toggleVoiceMode()">🗣 Voice OFF</button>
+    <button class="neon red" onclick="clearChat()">🗑</button>
+  </div>
+  <div id="chatList"></div>
+  <div class="row" style="margin-top:8px">
+    <div class="mic" style="width:52px;height:52px;font-size:20px;margin:0" id="micBtn2"
+      onclick="toggleMic()">🎙</div>
+    <input id="chatInput" placeholder="Message ya command…" style="flex:1"
+      onkeydown="if(event.key==='Enter')sendChat()">
+    <button class="neon" onclick="sendChat()">Send</button>
+  </div>
+</section>
+
+<!-- ================= SOS ================= -->
+<section id="sos">
+  <h3 class="sec">🚨 Emergency SOS</h3>
+  <p class="tiny">Cancel-able · Test mode · Koi fake "sent" claim nahi · Location sirf aapke action par share hoti hai</p>
+  <div id="sosIdle">
+    <div id="sosBtn" onclick="startSos()">🚨 SOS 🚨</div>
+    <div style="text-align:center"><button class="neon red" onclick="testSos()">🧪 Test Mode</button></div>
+  </div>
+  <div id="countdownBox" style="display:none">
+    <div class="glass red" style="text-align:center">
+      <div class="tiny">SOS ACTIVATING IN…</div>
+      <div id="countNum">5</div>
+      <button class="neon red" onclick="cancelSos()" style="width:100%">❌ CANCEL SOS</button>
+    </div>
+  </div>
+  <div class="glass red" id="sosMsgBox" style="display:none">
+    <b style="color:#FF3B5C">📨 Emergency Message (prepared)</b>
+    <p class="tiny" id="sosMsgText" style="color:#E6F1FF; margin-top:6px"></p>
+    <p class="tiny" id="sosLocText" style="color:#00D4FF; margin-top:6px"></p>
+  </div>
+  <div class="glass">
+    <b style="color:#00D4FF">👥 Emergency Contacts</b>
+    <div id="contactList"></div>
+    <div class="row" style="margin-top:8px">
+      <input id="cName" placeholder="Naam" style="flex:1">
+      <input id="cPhone" placeholder="Phone" style="flex:1">
+      <button class="neon" onclick="addContact()">Add</button>
+    </div>
+  </div>
+  <div class="glass purple">
+    <b style="color:#A855F7">📋 Status Log (honest)</b>
+    <div class="log" id="sosLog"></div>
+  </div>
+</section>
+
+<!-- ================= REMINDERS ================= -->
+<section id="reminders">
+  <div class="row">
+    <h3 class="sec" style="flex:1">⏰ Smart Reminders</h3>
+    <button class="neon" onclick="showModal('addRemModal')">➕ New</button>
+  </div>
+  <div id="remList"></div>
+  <p class="tiny">Real AlarmManager notifications — app band hone par bhi alarm bajta hai.</p>
+</section>
+
+<!-- ================= SETTINGS ================= -->
+<section id="settings">
+  <h3 class="sec">⚙️ Settings</h3>
+  <div class="glass purple">
+    <b style="color:#A855F7">🌐 AI Brain — FREE, No API Key!</b>
+    <p class="tiny">Ronny ab bilkul <b>key-free</b> hai! ✨<br>
+      • Online AI: Pollinations AI (free) + Wikipedia + DuckDuckGo — automatic<br>
+      • Offline: Knowledge Brain (facts + math + conversions) — internet ke bina bhi<br>
+      • Fallback: 🌐 Web Search button — har sawal ka jawab pakka!<br>
+      • Weather: Open-Meteo (real data) · Image generation: Pollinations (free)<br>
+      ⚠️ Koi API key, koi signup nahi chahiye!</p>
+  </div>
+  <div class="glass">
+    <b style="color:#00D4FF">🎙 Voice</b>
+    <label>Voice Speed: <span id="spdVal">1.0</span></label>
+    <input type="range" min="0.5" max="2" step="0.1" value="1" id="spd"
+      oninput="document.getElementById('spdVal').textContent=this.value">
+    <label>Voice Pitch: <span id="pchVal">1.0</span></label>
+    <input type="range" min="0.5" max="2" step="0.1" value="1" id="pch"
+      oninput="document.getElementById('pchVal').textContent=this.value">
+    <div class="row" style="margin-top:8px">
+      <button class="neon" onclick="testVoice()">🔊 Test Voice</button>
+    </div>
+  </div>
+  <div class="glass">
+    <b style="color:#00D4FF">🔐 Permissions</b>
+    <p class="tiny">🎙 Mic — voice commands (sirf button dabane par)<br>
+      📍 Location — SOS location<br> ✉️ SMS — SOS messages (hamesha confirmation ke saath)<br>
+      📷 Camera — flashlight</p>
+    <div class="row">
+      <button class="neon" onclick="Ronny.openAppSettings()">🛠 App Permissions</button>
+      <button class="neon" onclick="Ronny.openBrightnessSettings()">💡 Brightness Permission</button>
+    </div>
+  </div>
+  <div class="glass">
+    <b style="color:#00D4FF">🧠 Memory</b>
+    <div id="memList" class="log"></div>
+    <button class="neon red" style="margin-top:8px" onclick="clearMemory()">🧹 Clear All Memory</button>
+  </div>
+  <div class="glass">
+    <b style="color:#00D4FF">ℹ️ About Ronny AI</b>
+    <p class="tiny">Version 1.1 (No-API-Key AI) · Futuristic AI Assistant<br>
+      AI: Pollinations AI + Wikipedia + DuckDuckGo + Offline Knowledge Brain + Web Search fallback.<br>
+      Privacy: koi hidden data collection nahi. SOS honest — koi fake "sent" claim nahi.<br>
+      Full Jetpack Compose project: repo mein `RonnyAI/` folder (Android Studio build ke liye).</p>
+  </div>
+</section>
+
+<!-- ================= MODALS ================= -->
+<div id="modal"><div id="modalBox">
+  <b id="modalTitle" style="color:#00D4FF"></b>
+  <p id="modalText" class="tiny" style="color:#E6F1FF; margin:10px 0 14px; white-space:pre-wrap"></p>
+  <div class="row">
+    <button class="neon green" id="modalOk" style="flex:1">✅ Confirm</button>
+    <button class="neon red" id="modalCancel" style="flex:1">❌ Cancel</button>
+  </div>
+</div></div>
+
+<div id="addRemModal" style="display:none">
+  <label>Reminder kis cheez ka?</label><input id="remTitle" placeholder="e.g. Running practice">
+  <label>Time (HH:MM, 24h — kal ke liye 'kal HH:MM')</label><input id="remTime" placeholder="e.g. 05:00">
+  <button class="neon green" style="margin-top:10px; width:100%" onclick="addReminder()">✅ Set Reminder</button>
+</div>
+
+<nav>
+  <button class="active" data-tab="home" onclick="switchTab('home')"><span class="ic">🏠</span>Home</button>
+  <button data-tab="chat" onclick="switchTab('chat')"><span class="ic">💬</span>Chat</button>
+  <button data-tab="sos" onclick="switchTab('sos')"><span class="ic">🚨</span>SOS</button>
+  <button data-tab="reminders" onclick="switchTab('reminders')"><span class="ic">⏰</span>Remind</button>
+  <button data-tab="settings" onclick="switchTab('settings')"><span class="ic">⚙️</span>Settings</button>
+</nav>
+
+<script>
+"use strict";
+/* ================= State ================= */
+var LS = {
+  get: function(k, d) { try { var v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch(e) { return d; } },
+  set: function(k, v) { localStorage.setItem(k, JSON.stringify(v)); }
+};
+var state = {
+  persona: LS.get('persona', 'Friendly'),
+  avatarMode: LS.get('avatarMode', 0),
+  voiceMode: LS.get('voiceMode', false),
+  chat: LS.get('chat', []),
+  memory: LS.get('memory', []),
+  contacts: LS.get('contacts', []),
+  reminders: LS.get('reminders', []),
+  ai: LS.get('ai', { name:'', url:'', model:'', key:'' }),
+  listening: false
+};
+
+/* ================= Tabs ================= */
+function switchTab(name) {
+  document.querySelectorAll('section').forEach(function(s) { s.classList.remove('active'); });
+  document.getElementById(name).classList.add('active');
+  document.querySelectorAll('nav button').forEach(function(b) {
+    b.classList.toggle('active', b.dataset.tab === name);
+  });
+  if (name === 'chat') renderChat();
+  if (name === 'reminders') renderReminders();
+  if (name === 'settings') renderMemory();
+}
+function onBack() {
+  var act = document.querySelector('section.active');
+  if (act && act.id !== 'home') switchTab('home');
+}
+
+/* ================= Modal ================= */
+var modalCb = null;
+function showModal(a, b, c, d) {
+  if (typeof b === 'undefined') { showModalCustom(a); return; }
+  var title = a, text = b, onOk = c, showCancel = d;
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalText').textContent = text || '';
+  document.getElementById('modal').style.display = 'flex';
+  document.getElementById('modalCancel').style.display = (showCancel === false) ? 'none' : '';
+  modalCb = onOk;
+}
+function hideModal() { document.getElementById('modal').style.display = 'none'; modalCb = null; }
+document.getElementById('modalOk').onclick = function() { var cb = modalCb; hideModal(); if (cb) cb(); };
+document.getElementById('modalCancel').onclick = hideModal;
+
+function showModalCustom(innerId) {
+  document.getElementById('modalTitle').textContent = '⏰ New Reminder';
+  var box = document.getElementById('modalText');
+  box.innerHTML = '';
+  box.appendChild(document.getElementById(innerId));
+  document.getElementById(innerId).style.display = 'block';
+  document.getElementById('modal').style.display = 'flex';
+  document.getElementById('modalCancel').style.display = '';
+  modalCb = null;
+}
+
+/* ================= Chat ================= */
+function renderChat() {
+  var el = document.getElementById('chatList');
+  el.innerHTML = '';
+  state.chat.forEach(function(m) {
+    var d = document.createElement('div');
+    if (m.role !== 'user' && m.text.indexOf('!img:') === 0) {
+      d.className = 'bubble bot';
+      var img = document.createElement('img');
+      img.style.width = '100%';
+      img.style.borderRadius = '12px';
+      img.style.border = '1px solid rgba(0,212,255,.4)';
+      img.alt = m.text.slice(5);
+      img.src = 'https://image.pollinations.ai/prompt/' + encodeURIComponent(m.text.slice(5) + ', high quality, detailed') + '?width=640&height=640&nologo=true';
+      d.appendChild(img);
+    } else {
+      d.className = 'bubble ' + (m.role === 'user' ? 'user' : 'bot');
+      d.textContent = m.text;
+      var meta = document.createElement('div');
+      meta.className = 'meta';
+      meta.textContent = m.role === 'user' ? 'You' : ('Ronny' + (m.provider ? ' · ' + m.provider : ''));
+      d.appendChild(meta);
+    }
+    el.appendChild(d);
+  });
+  el.scrollTop = el.scrollHeight;
+}
+function addMsg(role, text, provider) {
+  state.chat.push({ role: role, text: text, provider: provider || '', t: Date.now() });
+  if (state.chat.length > 200) state.chat = state.chat.slice(-200);
+  LS.set('chat', state.chat);
+  renderChat();
+}
+function clearChat() { state.chat = []; LS.set('chat', state.chat); renderChat(); }
+
+function sendHome() {
+  var t = document.getElementById('homeInput').value.trim();
+  if (!t) return;
+  document.getElementById('homeInput').value = '';
+  switchTab('chat');
+  handleUser(t);
+}
+function sendChat() {
+  var t = document.getElementById('chatInput').value.trim();
+  if (!t) return;
+  document.getElementById('chatInput').value = '';
+  handleUser(t);
+}
+function quick(cmd) { switchTab('chat'); handleUser(cmd); }
+
+function handleUser(text) {
+  addMsg('user', text);
+  var cmd = processCommand(text);
+  if (cmd.type === 'answer') { addMsg('bot', cmd.text, cmd.provider || 'local'); maybeSpeak(cmd.text); }
+  else if (cmd.type === 'action') {
+    if (cmd.confirm) {
+      showModal(cmd.title, cmd.confirm, function() {
+        var out = cmd.run();
+        addMsg('bot', out, 'action');
+        maybeSpeak(out);
+      });
+    } else {
+      var out = cmd.run();
+      addMsg('bot', out, 'action');
+      maybeSpeak(out);
+    }
+  } else if (cmd.type === 'image') {
+    addImageMsg(cmd.prompt);
+  } else { // ai
+    // Offline knowledge pehle (instant) — phir online free AI — phir web search
+    var kb = kbAnswer(text);
+    if (kb) { addMsg('bot', kb, 'offline 🧠'); maybeSpeak(kb); return; }
+    addMsg('bot', '🤔 Soch raha hoon…', 'thinking');
+    askAi(text);
+  }
+}
+function maybeSpeak(text) {
+  if (state.voiceMode && text) Ronny.speak(text, 'hi-IN', parseFloat(document.getElementById('spd').value), parseFloat(document.getElementById('pch').value));
+}
+
+/* ================= Command Processor (Hindi/English/Hinglish) ================= */
+var APPS = {
+  'chrome': ['com.android.chrome', 'Chrome'], 'youtube': ['com.google.android.youtube', 'YouTube'],
+  'whatsapp': ['com.whatsapp', 'WhatsApp'], 'camera': ['com.android.camera2', 'Camera'],
+  'gallery': ['com.android.gallery3d', 'Gallery'], 'calculator': ['com.android.calculator2', 'Calculator'],
+  'maps': ['com.google.android.apps.maps', 'Maps'], 'play store': ['com.android.vending', 'Play Store'],
+  'playstore': ['com.android.vending', 'Play Store'], 'contacts': ['com.android.contacts', 'Contacts'],
+  'dialer': ['com.android.dialer', 'Dialer'], 'phone': ['com.android.dialer', 'Dialer'],
+  'settings': ['com.android.settings', 'Settings'], 'gmail': ['com.google.android.gm', 'Gmail'],
+  'instagram': ['com.instagram.android', 'Instagram'], 'facebook': ['com.facebook.katana', 'Facebook']
+};
+function findApp(t) {
+  for (var k in APPS) if (t.indexOf(k) !== -1) return { key: k, pkg: APPS[k][0], label: APPS[k][1] };
+  return null;
+}
+function processCommand(text) {
+  var t = text.toLowerCase();
+
+  // SOS
+  if (t.indexOf('sos') !== -1 || t.indexOf('emergency') !== -1) {
+    return { type: 'action', title: '🚨 Emergency SOS',
+      confirm: 'SOS activate karna hai? 5 second countdown shuru hoga aur emergency message + location prepare hogi.',
+      run: function() { switchTab('sos'); startSos(); return '🚨 SOS flow shuru — countdown dekhein.'; } };
+  }
+  // Open apps
+  if (/kholo|khol |open |launch|chalu karo|start /.test(t)) {
+    if (t.indexOf('setting') !== -1) return { type: 'action', title: '⚙️ Settings', confirm: null,
+      run: function() { return Ronny.openSettings(); } };
+    if (t.indexOf('wifi') !== -1) return { type: 'action', title: '📶 Wi-Fi', confirm: null,
+      run: function() { return Ronny.openWifiSettings(); } };
+    if (t.indexOf('bluetooth') !== -1) return { type: 'action', title: '🔵 Bluetooth', confirm: null,
+      run: function() { return Ronny.openBluetoothSettings(); } };
+    var app = findApp(t);
+    if (app) return { type: 'action', title: '📱 ' + app.label,
+      confirm: app.label + ' kholna hai?', run: function() { return Ronny.openApp(app.pkg); } };
+  }
+  // Torch
+  if (/flash|torch|light/.test(t) && /on|off|jala|band|karo|toggle/.test(t)) {
+    return { type: 'action', title: '🔦 Flashlight', confirm: null,
+      run: function() { return Ronny.toggleTorch(); } };
+  }
+  // Battery / device
+  if (/battery|battrey|charge/.test(t)) return { type: 'action', title: '🔋 Battery', confirm: null,
+    run: function() { return Ronny.batteryInfo(); } };
+  if (/device|phone info|ram|storage|jankari/.test(t)) return { type: 'action', title: '📱 Device', confirm: null,
+    run: function() { return Ronny.deviceInfo(); } };
+  // Volume
+  if (/volume|awaaz|aawaz/.test(t)) {
+    var act = /up|badha|tez/.test(t) ? Ronny.volumeUp : (/mute|chup/.test(t) ? Ronny.volumeMute : Ronny.volumeDown);
+    return { type: 'action', title: '🔊 Volume', confirm: null, run: function() { return act(); } };
+  }
+  // Brightness
+  if (/brightness/.test(t)) {
+    return { type: 'action', title: '💡 Brightness', confirm: null,
+      run: function() { return Ronny.openBrightnessSettings(); } };
+  }
+  // WhatsApp
+  if (t.indexOf('whatsapp') !== -1 || (/message/.test(t) && /bhejo|send/.test(t))) {
+    var num = (text.match(/\+?\d[\d\s]{8,14}\d/) || [''])[0].trim();
+    var nameM = text.match(/([a-zA-Z]+)\s+ko\s/);
+    var msg = text.split(/ki |k |: /).pop().trim() || 'Hi! 👋 (Ronny AI se)';
+    var target = num || (nameM ? nameM[1] : '');
+    return { type: 'action', title: '💬 WhatsApp Message',
+      confirm: 'To: ' + (target || 'contact (WhatsApp mein chunein)') + '\nMessage: "' + msg +
+        '"\n\n✅ Confirm par WhatsApp khulega — Send button aap dabayenge (silent send nahi).',
+      run: function() { return Ronny.whatsappTo(target, msg); } };
+  }
+  // SMS
+  if (t.indexOf('sms') !== -1) {
+    var num2 = (text.match(/\+?\d[\d\s]{8,14}\d/) || [''])[0].trim();
+    if (num2) {
+      var msg2 = text.split(/ki /).pop().trim() || 'Hello from Ronny AI 👋';
+      return { type: 'action', title: '✉️ SMS',
+        confirm: 'To: ' + num2 + '\nMessage: "' + msg2 + '"',
+        run: function() { return Ronny.sendSmsViaApp(num2, msg2); } };
+    }
+  }
+  // Reminder
+  if (/remind|reminder|yaad dilana|yaad dila|alarm/.test(t)) {
+    var when = parseTime(t);
+    var title = text.replace(/(remind\w*|yaad dilana|alarm)[^]*/i, '').replace(/ki /i, '').trim() || 'Reminder';
+    if (t.indexOf('ki ') !== -1) title = text.split(/ki /).pop().trim();
+    return { type: 'action', title: '⏰ Reminder',
+      confirm: 'Reminder: "' + title + '"\n' + new Date(when).toLocaleString(),
+      run: function() {
+        var id = Date.now() % 1000000;
+        state.reminders.push({ id: id, title: title, time: when });
+        LS.set('reminders', state.reminders);
+        Ronny.addReminder(id, title, when);
+        renderReminders();
+        return '✅ Reminder set: "' + title + '" — ' + new Date(when).toLocaleString();
+      } };
+  }
+  // Memory
+  if (/yaad rakho|remember|note karo/.test(t)) {
+    var content = text.split(/ki /).pop().trim() || text;
+    return { type: 'action', title: '🧠 Memory',
+      confirm: 'Memory mein save karna hai?\n"' + content + '"',
+      run: function() {
+        state.memory.push({ key: 'note', value: content, t: Date.now() });
+        LS.set('memory', state.memory);
+        renderMemory();
+        return '🧠 Yaad rakh liya: "' + content + '"';
+      } };
+  }
+  // Time / date
+  if (/time|samay|kitne baje|date|aaj ka din/.test(t)) {
+    return { type: 'answer', text: '🕐 Abhi: ' + new Date().toLocaleString() };
+  }
+  // Math (sanitized)
+  var m = text.replace(/[=?]|karo|calculate|kitna|kitne|hota/gi, '').trim();
+  if (/^[\d\s.+\-*/()]+$/.test(m) && /[+\-*/]/.test(m)) {
+    try {
+      var val = Function('"use strict";return (' + m + ')')();
+      return { type: 'answer', text: '🧮 ' + m + ' = ' + val };
+    } catch (e) { return { type: 'answer', text: '🧮 Calculation samajh nahi aaya.' }; }
+  }
+  // Image generation (free — Pollinations, no key)
+  if (/photo|image|tasveer|picture/.test(t) && /banao|bana|generate|create|draw|banado/.test(t)) {
+    var prompt = text.replace(/(photo|image|tasveer|picture)\s*(banao|bana|generate|create|draw|banado)?\s*/i, '').trim();
+    return { type: 'image', prompt: prompt || 'futuristic AI robot' };
+  }
+  // Weather (real data — Open-Meteo, free, no key)
+  if (/weather|mausam/.test(t)) {
+    var cityM = text.replace(/.*(weather|mausam)\s*/i, '')
+      .replace(/\b(ka|ki|ke|of|in|for|batao|bata|kaisa|kaisi|hai|aaj|kal|ka)\b/gi, ' ')
+      .replace(/[?!.,]/g, ' ').replace(/\s+/g, ' ').trim();
+    return { type: 'action', title: '🌦️ Weather', confirm: null,
+      run: function() { return Ronny.weather(cityM); } };
+  }
+  // Capability
+  if (/kya kar sakt|who are you|tum kaun|your name|tumhara naam|^help$/.test(t)) {
+    return { type: 'answer', text:
+      'Main *Ronny* hoon — tumhara personal AI assistant! 🤖✨\n\n' +
+      '• Sawal-jawab (Hindi/English/Hinglish) — AI provider ya offline mode\n' +
+      '• Apps: "Chrome kholo", "YouTube kholo", "WhatsApp kholo"\n' +
+      '• System: flashlight, volume, brightness, battery, device info\n' +
+      '• Reminders: "mujhe kal subah 5 baje running ka reminder"\n' +
+      '• WhatsApp/SMS (hamesha tumhari confirmation ke saath)\n' +
+      '• Emergency SOS with location\n' +
+      '• Memory: "yaad rakho ki meri class 8 baje hai"\n\n' +
+      'Bolo, kya karna hai? 😊' };
+  }
+  return { type: 'ai' };
+}
+function parseTime(t) {
+  var d = new Date();
+  if (/kal|tomorrow/.test(t)) d.setDate(d.getDate() + 1);
+  var hm = t.match(/(\d{1,2})[:. ]?(\d{2})?\s*(baje|am|pm|bje)?/);
+  if (!hm) return d.getTime() + 3600000;
+  var h = parseInt(hm[1], 10), min = hm[2] ? parseInt(hm[2], 10) : 0;
+  if (/pm|shaam|dopahar/.test(t) && h < 12) h += 12;
+  if (/am|subah|savere/.test(t) && h === 12) h = 0;
+  if (!/am|pm/.test(t) && (hm[3] || '').indexOf('baje') !== -1 && h >= 1 && h <= 7) h += 12;
+  d.setHours(h, min, 0, 0);
+  if (d.getTime() <= Date.now()) d.setDate(d.getDate() + 1);
+  return d.getTime();
+}
+
+/* ================= AI (FREE — No API Key!) ================= */
+function askAi(text) {
+  window._lastQ = text;
+  var hist = [];
+  state.chat.slice(-10).forEach(function(m) {
+    if (m.provider !== 'thinking' && m.text.indexOf('!img:') !== 0)
+      hist.push({ role: m.role === 'user' ? 'user' : 'assistant', content: m.text });
+  });
+  Ronny.aiChat(JSON.stringify({ question: text, history: hist, persona: state.persona,
+    term: extractTermJs(text) }));
+}
+
+function onAiResult(json) {
+  if (state.chat.length && state.chat[state.chat.length - 1].provider === 'thinking') {
+    state.chat.pop();
+  }
+  var r = {};
+  try { r = JSON.parse(json); } catch (e) { r = { ok: false }; }
+  if (r.ok) {
+    addMsg('bot', r.text, r.source || 'AI ✨');
+    maybeSpeak(r.text);
+  } else {
+    // Sab online sources fail -> offline brain + web search guarantee
+    var kb = kbAnswer(window._lastQ || '');
+    var reply = kb
+      ? kb + '\n\n_(Offline Knowledge Brain)_'
+      : '🤖 Offline + online dono se jawab nahi mil paya — koi baat nahi!\n\n' +
+        '💡 🌐 Web Search button dabayein — main browser mein exact answer dikha deta hoon!';
+    addMsg('bot', reply, 'offline 🧠');
+    maybeSpeak(reply);
+    addSearchBtn(window._lastQ || '');
+  }
+  LS.set('chat', state.chat);
+}
+
+function addSearchBtn(query) {
+  if (!query) return;
+  var el = document.getElementById('chatList');
+  var wrap = document.createElement('div');
+  var b = btn('🌐 Web Search: "' + query.slice(0, 28) + '…"', 'neon', function() {
+    Ronny.searchWeb(query);
+  });
+  b.style.margin = '2px 0 8px';
+  wrap.appendChild(b);
+  el.appendChild(wrap);
+  el.scrollTop = el.scrollHeight;
+}
+
+function extractTermJs(q) {
+  return q.replace(/(kya hai|kya h\b|kaun hai|kisne banaya|kaise|batao|tell me about|what is|who is|why|how|explain|define|matlab|about)/gi, ' ')
+    .replace(/[?!.,]/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+// ---------- Image generation (free — Pollinations) ----------
+function addImageMsg(prompt) {
+  addMsg('bot', '🎨 Image bana raha hoon: "' + prompt + '"…', 'image-gen');
+  var el = document.getElementById('chatList');
+  var wrap = document.createElement('div');
+  wrap.className = 'bubble bot';
+  var img = document.createElement('img');
+  img.style.width = '100%';
+  img.style.borderRadius = '12px';
+  img.style.border = '1px solid rgba(0,212,255,.4)';
+  img.alt = prompt;
+  img.src = 'https://image.pollinations.ai/prompt/' + encodeURIComponent(prompt + ', high quality, detailed') + '?width=640&height=640&nologo=true';
+  img.onerror = function() {
+    wrap.innerHTML = '';
+    wrap.textContent = '⚠️ Image generate nahi ho payi — internet check karke phir try karein.';
+  };
+  wrap.appendChild(img);
+  var open = btn('🌐 Full size kholein', 'neon', function() { Ronny.openUrl(img.src); });
+  open.style.marginTop = '6px';
+  wrap.appendChild(open);
+  el.appendChild(wrap);
+  el.scrollTop = el.scrollHeight;
+  state.chat.push({ role: 'assistant', text: '!img:' + prompt, provider: 'image-gen', t: Date.now() });
+  LS.set('chat', state.chat);
+}
+
+// ---------- Offline Knowledge Brain (no internet needed) ----------
+function kbAnswer(q) {
+  if (!q) return null;
+  var n = ' ' + q.toLowerCase().replace(/[?!.,]/g, ' ').replace(/\s+/g, ' ') + ' ';
+  var conv = conversionAnswer(q);
+  if (conv) return conv;
+  var best = null, bestScore = 0;
+  KB.forEach(function(e) {
+    var score = 0;
+    e.k.forEach(function(k) {
+      if (n.indexOf(k) !== -1) score += (k.split(' ').length * 2) + 1;
+    });
+    if (score > bestScore) { bestScore = score; best = e; }
+  });
+  return (best && bestScore >= 2) ? best.a : null;
+}
+
+var KB = [
+  { k: ['haddiyan', 'haddi', 'bones', 'skeleton'], a: '🦴 Insaan ke sharir mein 206 haddiyan hoti hain.' },
+  { k: ['khoon', 'blood groups', 'blood group'], a: '🩸 4 main blood groups hain: A, B, AB, O — har ek + (Rh+) ya - (Rh-) ho sakta hai. Sabse common: O+. Universal donor: O-, universal recipient: AB+.' },
+  { k: ['planet', 'graha', 'solar system'], a: '☀️ Solar system mein 8 planets hain: Mercury, Venus, Earth (Prithvi), Mars, Jupiter, Saturn, Uranus, Neptune. Sabse bada: Jupiter. Sabse chhota: Mercury.' },
+  { k: ['sabse lambi nadi', 'longest river'], a: '🌊 Duniya ki sabse lambi nadi: Nile (lagbhag 6,650 km). Bharat ki sabse lambi nadi: Ganga (2,525 km).' },
+  { k: ['sabse uncha', 'mount everest', 'highest mountain'], a: '🏔 Mount Everest duniya ki sabse unchi choti hai — 8,849 meter (Himalaya, Nepal-Tibet border).' },
+  { k: ['speed of light', 'prakash ki gati', 'light speed'], a: '💡 Prakash ki gati: 299,792,458 meter/second (lagbhag 3 lakh km/s) — isse tez kuch nahi ho sakta.' },
+  { k: ['pythagoras'], a: '📐 Pythagoras theorem: samkon tribhuj mein (karn)² = (aadhar)² + (lamb)². Yaani a² + b² = c².' },
+  { k: ['water', 'paani', 'h2o'], a: '💧 Paani ka chemical formula: H₂O — 2 hydrogen + 1 oxygen atom.' },
+  { k: ['photosynthesis', 'pravakash sanshleshan'], a: '🌿 Photosynthesis: paudhe sunlight, paani (H₂O) aur CO₂ se glucose + oxygen banate hain. Formula: 6CO₂ + 6H₂O + light → C₆H₁₂O₆ + 6O₂.' },
+  { k: ['independence', 'swatantrata', '1947'], a: '🇮🇳 Bharat ko azaadi 15 August 1947 ko mili. Pehle PM: Jawaharlal Nehru. Gantantra diwas: 26 January 1950.' },
+  { k: ['capital of india', 'rajdhani'], a: '🇮🇳 Bharat ki rajdhani: New Delhi. Bharat mein 28 rajya aur 8 kendra shasit pradesh hain.' },
+  { k: ['artificial intelligence', 'ai kya'], a: '🤖 AI (Artificial Intelligence) matlab aisi computer technology jo insaan ki tarah soch-sakti hai — jaise main, Ronny! Ismein learning, reasoning, language understanding shaamil hai.' },
+  { k: ['ram', 'rom', 'computer memory'], a: '💻 RAM (Random Access Memory) computer ki temporary memory hai — jitni zyada RAM, utna fast multitasking. ROM permanent storage hoti hai.' },
+  { k: ['html', 'css', 'web page'], a: '🌐 HTML (HyperText Markup Language) web pages banane ki bhasha hai. CSS se design, JavaScript se interactivity milti hai.' },
+  { k: ['internet'], a: '🌐 Internet computers ka global network hai — cables, WiFi aur mobile towers ke zariye devices judi hoti hain. Websites, apps, email sab isi par chalte hain.' },
+  { k: ['kisne banaya', 'who made you', 'tumhe kisne'], a: '🛠 Mujhe Ronny AI project ke roop mein develop kiya gaya hai — ek futuristic personal assistant jo Hindi, English aur Hinglish samajhta hai!' },
+  { k: ['kaise ho', 'how are you'], a: '😊 Main bilkul badhiya hoon! Ready to help. Tum batao — kya karna hai aaj? 🚀' },
+  { k: ['motivate', 'motivation', 'hausla'], a: '🔥 "Har expert pehle beginner tha." — Chhote steps lijiye, consistent rahiye, apne goals par focus rakhiye. Aap kar sakte hain! 💪' },
+  { k: ['joke', 'chutkula'], a: '😄 Teacher: "Tumhara homework kahan hai?"\nStudent: "Sir, homework toh tha... lekin usne kaha use akela chhod do!" 😂' },
+  { k: ['running', 'daud', 'exercise'], a: '🏃 Running tips: subah thandi mein daudein, roz 15-20 min se shuru karein, sahi shoes pehnein, aur running se pehle 5 min warm-up zaroor karein!' },
+  { k: ['paani peena', 'kitna paani'], a: '💧 Roz kam se kam 8 glass (2 litre) paani peena chahiye. Garmi mein aur exercise ke baad aur zyada!' },
+  { k: ['neend', 'sleep'], a: '😴 8 ghante ki neend sehat ke liye best hai. Sone se pehle screen kam karein, fixed time par sone jayein.' },
+  { k: ['padhai', 'study tips', 'kaise padhe'], a: '📚 Study tips: 25 min focus + 5 min break (Pomodoro), notes banayein, padhne ke baad khud ko test karein, aur distractions door rakhein!' },
+  { k: ['taj mahal'], a: '🕌 Taj Mahal Agra (Uttar Pradesh) mein hai — Shah Jahan ne Mumtaz Mahal ki yaad mein banwaya tha. Safed sangmarmar se bana, duniya ke 7 ajoobon mein shaamil.' },
+  { k: ['gravity', 'gurutvakarshan'], a: '🍎 Gravity woh shakti hai jo cheezon ko neeche kheenchti hai. Newton ne 1666 mein iska niyam bataya. Moon par gravity Prithvi ka 1/6 hai.' },
+  { k: ['atom', 'anu'], a: '⚛️ Atom padarth ki sabse chhoti ikai hai — ismein protons (+), neutrons (0) aur electrons (-) hote hain.' },
+  { k: ['mahasagar', 'ocean', 'samudra'], a: '🌊 Duniya ke 5 mahasagar: Pacific (sabse bada), Atlantic, Indian, Southern, Arctic. Prithvi ka lagbhag 71% hissa paani se bhara hai.' },
+  { k: ['cricket'], a: '🏏 Cricket World Cup har 4 saal par hota hai. ODI World Cup sabse pehle 1975 mein khela gaya. Bharat ne 1983 aur 2011 mein jeeta tha.' },
+  { k: ['software', 'hardware'], a: '💻 Hardware = machine ke physical parts (screen, chip). Software = programs/apps jo hardware par chalte hain. Dono milkar computer banate hain.' },
+  { k: ['virus', 'bacteria', 'kitanu'], a: '🦠 Bacteria zinda cell hote hain jabki virus ko zinda hone ke liye doosre cell chahiye. Antibiotics bacteria par kaam karte hain, virus par nahi.' },
+  { k: ['black hole'], a: '🕳 Black hole space mein aisi jagah hai jahan gravity itni zyada hai ki light bhi bahar nahi aa sakti. Massive stars ke marne se bante hain.' },
+  { k: ['chand', 'moon landing'], a: '🌙 Chand Prithvi ka natural satellite hai — 3,84,400 km door. Neil Armstrong 1969 mein chand par kadam rakhne wale pehle insaan the.' },
+  { k: ['saal', 'din kitne', 'leap year'], a: '🗓 Prithvi ko Suraj ka ek chakkar lagane mein 365.25 din lagte hain — isliye har 4 saal mein ek leap year hota hai (February 29 din).' }
+];
+
+// ---------- Unit conversions (offline) ----------
+function conversionAnswer(q) {
+  var m = q.toLowerCase().match(/(-?[\d.]+)\s*(km|kilometer|kilometre|m|meter|metre|mile|mi|kg|g|gram|lb|pound|c|celsius|f|fahrenheit|inch|cm|feet|ft|gb|mb|kb|ghanta|hour|minute|din|day|saal|year)\b\s*(?:ko|in|to|me|mein)\s*(km|kilometer|kilometre|m|meter|metre|mile|mi|kg|g|gram|lb|pound|c|celsius|f|fahrenheit|inch|cm|feet|ft|gb|mb|kb|ghanta|hour|minute|din|day|saal|year)/);
+  if (!m) return null;
+  var val = parseFloat(m[1]), from = m[2], to = m[3];
+  var BASE = { km: 1000, kilometer: 1000, kilometre: 1000, m: 1, meter: 1, metre: 1, mile: 1609.344, mi: 1609.344, inch: 0.0254, cm: 0.01, feet: 0.3048, ft: 0.3048 };
+  var MASS = { kg: 1000, g: 1, gram: 1, lb: 453.592, pound: 453.592 };
+  var DATA = { gb: 1073741824, mb: 1048576, kb: 1024 };
+  var TIME = { ghanta: 3600, hour: 3600, minute: 60, din: 86400, day: 86400, saal: 31557600, year: 31557600 };
+  var out = null;
+  if (BASE[from] && BASE[to]) out = val * BASE[from] / BASE[to];
+  else if (MASS[from] && MASS[to]) out = val * MASS[from] / MASS[to];
+  else if (DATA[from] && DATA[to]) out = val * DATA[from] / DATA[to];
+  else if (TIME[from] && TIME[to]) out = val * TIME[from] / TIME[to];
+  else if (from === 'c' && to === 'f') out = val * 9 / 5 + 32;
+  else if (from === 'f' && to === 'c') out = (val - 32) * 5 / 9;
+  if (out == null) return null;
+  return '🔁 ' + val + ' ' + from + ' = ' + (Math.round(out * 1000) / 1000) + ' ' + to;
+}
+
+/* ================= Voice ================= */
+function toggleMic() {
+  if (state.listening) { Ronny.stopListening(); return; }
+  state.listening = true;
+  document.getElementById('micBtn').classList.add('listening');
+  document.getElementById('micBtn2').classList.add('listening');
+  Ronny.startListening('hi-IN');
+}
+function onSttState(s) {
+  state.listening = (s === 'listening');
+  document.getElementById('micBtn').classList.toggle('listening', state.listening);
+  document.getElementById('micBtn2').classList.toggle('listening', state.listening);
+}
+function onSttPartial(t) { document.getElementById('sttPreview').textContent = '“' + t + '”'; }
+function onSttResult(text, err) {
+  state.listening = false;
+  document.getElementById('micBtn').classList.remove('listening');
+  document.getElementById('micBtn2').classList.remove('listening');
+  document.getElementById('sttPreview').textContent = '';
+  if (err) { addMsg('bot', err, 'voice'); return; }
+  if (text) {
+    if (document.querySelector('section.active').id !== 'chat') switchTab('chat');
+    handleUser(text);
+  }
+}
+function onTtsState(s) {}
+function toggleVoiceMode() {
+  state.voiceMode = !state.voiceMode;
+  LS.set('voiceMode', state.voiceMode);
+  document.getElementById('voiceModeBtn').textContent = '🗣 Voice ' + (state.voiceMode ? 'ON' : 'OFF');
+}
+function testVoice() {
+  Ronny.speak('Namaste! Main Ronny hoon, tumhara personal AI assistant.', 'hi-IN',
+    parseFloat(document.getElementById('spd').value), parseFloat(document.getElementById('pch').value));
+}
+
+/* ================= SOS ================= */
+var sosTimer = null, sosCancelled = false;
+function startSos() {
+  sosCancelled = false;
+  document.getElementById('sosIdle').style.display = 'none';
+  document.getElementById('countdownBox').style.display = 'block';
+  var n = 5;
+  document.getElementById('countNum').textContent = n;
+  sosTimer = setInterval(function() {
+    n--;
+    if (sosCancelled) return;
+    if (n <= 0) {
+      clearInterval(sosTimer);
+      document.getElementById('countdownBox').style.display = 'none';
+      prepareSos();
+    } else document.getElementById('countNum').textContent = n;
+  }, 1000);
+}
+function cancelSos() {
+  sosCancelled = true;
+  clearInterval(sosTimer);
+  document.getElementById('countdownBox').style.display = 'none';
+  document.getElementById('sosIdle').style.display = 'block';
+  sosLogLine('🚫 SOS cancelled by user.');
+}
+function prepareSos() {
+  var loc = Ronny.getLocation();
+  var locText = loc
+    ? ('Lat/Lng: ' + loc + '\nMap: https://maps.google.com/?q=' + loc)
+    : '⚠️ Location available nahi hai (GPS/Network off) — manually apni location share karein.';
+  var msg = 'EMERGENCY ALERT! 🚨\nI need assistance.\n\nMy current location:\n' + locText +
+    '\n\nPlease contact me immediately.';
+  window._sosMsg = msg;
+  document.getElementById('sosMsgText').textContent = msg;
+  document.getElementById('sosLocText').textContent = loc ? ('📍 ' + loc) : '📍 Location unavailable';
+  document.getElementById('sosMsgBox').style.display = 'block';
+  renderContacts();
+  sosLogLine('🚨 SOS prepared — contacts se action chunein (hamesha confirm ke saath).');
+}
+function testSos() {
+  sosLogLine('🧪 SOS Test Mode: koi real message/call nahi jaata — sirf flow verify hota hai.');
+  showModal('🧪 SOS Test Mode', 'Ye test mode hai — koi real message ya call nahi hoga.\n\nFlow: countdown → location → message template → contact actions.\n\nReal SOS ke liye wapas "SOS" dabayein.', function() {
+    prepareSos();
+    sosLogLine('🧪 Test complete — message prepare hui, kuch send NAHI hua.');
+  });
+}
+function sosLogLine(t) {
+  var el = document.getElementById('sosLog');
+  el.textContent = '• ' + t + '\n' + el.textContent;
+}
+function renderContacts() {
+  var el = document.getElementById('contactList');
+  el.innerHTML = '';
+  if (!state.contacts.length) {
+    el.innerHTML = '<p class="tiny">Koi contact nahi — neeche add karein.</p>';
+    return;
+  }
+  state.contacts.forEach(function(c, i) {
+    var row = document.createElement('div');
+    row.className = 'row';
+    row.style.margin = '8px 0';
+    var name = document.createElement('div');
+    name.style.flex = '1';
+    name.innerHTML = '<b>' + esc(c.name) + '</b><div class="tiny">' + esc(c.phone) + '</div>';
+    row.appendChild(name);
+    if (window._sosMsg) {
+      row.appendChild(btn('✉️ SMS', 'neon', function() {
+        confirmAction('SMS bhejni hai?\nTo: ' + c.phone, function() {
+          sosLogLine(Ronny.sendSmsViaApp(c.phone, window._sosMsg));
+        });
+      }));
+      row.appendChild(btn('💬 WA', 'neon green', function() {
+        confirmAction('WhatsApp par bhejna hai?\nTo: ' + c.phone, function() {
+          sosLogLine(Ronny.whatsappTo(c.phone, window._sosMsg));
+        });
+      }));
+      row.appendChild(btn('📞', 'neon purple', function() {
+        confirmAction('Call karni hai?\nTo: ' + c.phone, function() {
+          sosLogLine(Ronny.dial(c.phone));
+        });
+      }));
+    }
+    row.appendChild(btn('🗑', 'neon red', function() {
+      state.contacts.splice(i, 1);
+      LS.set('contacts', state.contacts);
+      renderContacts();
+    }));
+    el.appendChild(row);
+  });
+}
+function addContact() {
+  var n = document.getElementById('cName').value.trim();
+  var p = document.getElementById('cPhone').value.trim();
+  if (!n || !p) return;
+  state.contacts.push({ name: n, phone: p });
+  LS.set('contacts', state.contacts);
+  document.getElementById('cName').value = '';
+  document.getElementById('cPhone').value = '';
+  renderContacts();
+}
+function confirmAction(text, cb) {
+  showModal('⚠️ Confirmation', text, cb, true);
+}
+
+/* ================= Reminders ================= */
+function renderReminders() {
+  var el = document.getElementById('remList');
+  el.innerHTML = '';
+  if (!state.reminders.length) {
+    el.innerHTML = '<div class="glass"><p class="tiny">Koi reminder nahi — "➕ New" dabayein ya bolein: "mujhe kal subah 5 baje running ka reminder"</p></div>';
+    return;
+  }
+  state.reminders.forEach(function(r, i) {
+    var g = document.createElement('div');
+    g.className = 'glass';
+    g.innerHTML = '<b>' + esc(r.title) + '</b><div class="tiny">' + new Date(r.time).toLocaleString() + '</div>';
+    var del = btn('🗑 Delete', 'neon red', function() {
+      Ronny.cancelReminder(r.id);
+      state.reminders.splice(i, 1);
+      LS.set('reminders', state.reminders);
+      renderReminders();
+    });
+    g.appendChild(del);
+    el.appendChild(g);
+  });
+}
+function addReminder() {
+  var title = document.getElementById('remTitle').value.trim();
+  var timeStr = document.getElementById('remTime').value.trim();
+  if (!title) return;
+  var t = timeStr.toLowerCase(), d = new Date();
+  if (/kal/.test(t)) d.setDate(d.getDate() + 1);
+  var hm = t.match(/(\d{1,2})[:.](\d{2})/);
+  if (hm) d.setHours(parseInt(hm[1], 10), parseInt(hm[2], 10), 0, 0);
+  else d.setTime(d.getTime() + 3600000);
+  if (d.getTime() <= Date.now()) d.setDate(d.getDate() + 1);
+  var id = Date.now() % 1000000;
+  state.reminders.push({ id: id, title: title, time: d.getTime() });
+  LS.set('reminders', state.reminders);
+  Ronny.addReminder(id, title, d.getTime());
+  renderReminders();
+  hideModal();
+  document.getElementById('remTitle').value = '';
+  document.getElementById('remTime').value = '';
+}
+function onReminderResult(msg) { sosLogLine(msg); }
+
+/* ================= Settings ================= */
+function saveAiCfg() {
+  state.ai = {
+    name: document.getElementById('aiNameInp').value.trim(),
+    url: document.getElementById('aiUrlInp').value.trim(),
+    model: document.getElementById('aiModelInp').value.trim(),
+    key: document.getElementById('aiKeyInp').value.trim()
+  };
+  LS.set('ai', state.ai);
+  showModal('✅ Saved', 'AI provider config save ho gayi.\n\nProvider: ' + (state.ai.name || 'custom') +
+    '\nModel: ' + (state.ai.model || '-') + '\n\n⚠️ Note: Lite version key app-local storage mein hai. Kisi ko share mat karein.', null, false);
+}
+function toggleKey() {
+  var i = document.getElementById('aiKeyInp');
+  i.type = (i.type === 'password') ? 'text' : 'password';
+}
+function setPersona(p) {
+  state.persona = p;
+  LS.set('persona', p);
+  document.getElementById('personaTag').textContent = p;
+}
+function setAvatar(m) {
+  state.avatarMode = m;
+  LS.set('avatarMode', m);
+}
+function renderMemory() {
+  var el = document.getElementById('memList');
+  el.innerHTML = state.memory.length
+    ? state.memory.map(function(m, i) { return '• ' + esc(m.value) + ' <a href="javascript:void(0)" style="color:#FF3B5C" onclick="delMemory(' + i + ')">🗑</a>'; }).join('<br>')
+    : 'Memory khali hai 🙂';
+}
+function delMemory(i) {
+  state.memory.splice(i, 1);
+  LS.set('memory', state.memory);
+  renderMemory();
+}
+function clearMemory() {
+  state.memory = [];
+  LS.set('memory', state.memory);
+  renderMemory();
+}
+function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+function btn(text, cls, fn) {
+  var b = document.createElement('button');
+  b.className = cls;
+  b.textContent = text;
+  b.style.fontSize = '11px';
+  b.style.padding = '7px 9px';
+  b.onclick = fn;
+  return b;
+}
+
+/* ================= Avatar + Wave animation ================= */
+var avatarCanvas = document.getElementById('avatar');
+var actx = avatarCanvas.getContext('2d');
+var waveCanvas = document.getElementById('wave');
+var wctx = waveCanvas.getContext('2d');
+var animT = 0;
+function drawAvatar() {
+  animT += 0.016;
+  var c = actx, W = 230, H = 230, cx = W / 2, cy = H / 2;
+  var pulse = 1 + 0.06 * Math.sin(animT * 2.4);
+  var r = 92 * pulse;
+  c.clearRect(0, 0, W, H);
+  var accent = state.avatarMode === 0 ? '#A855F7' : '#00D4FF';
+  // halo
+  c.beginPath(); c.arc(cx, cy, r, 0, Math.PI * 2);
+  c.fillStyle = accent + '2E'; c.fill();
+  c.beginPath(); c.arc(cx, cy, r * 0.82, 0, Math.PI * 2);
+  c.strokeStyle = accent; c.lineWidth = 2.5; c.stroke();
+  if (state.avatarMode === 0) {
+    // face
+    c.beginPath(); c.arc(cx, cy, r * 0.56, 0, Math.PI * 2); c.fillStyle = '#1B2440'; c.fill();
+    // hair arc
+    c.beginPath(); c.arc(cx, cy, r * 0.66, Math.PI * 0.85, Math.PI * 2.15);
+    c.strokeStyle = '#A855F7'; c.lineWidth = 9; c.stroke();
+    // eyes
+    c.beginPath(); c.arc(cx - r * 0.19, cy - r * 0.07, r * 0.085, 0, Math.PI * 2); c.fillStyle = '#00D4FF'; c.fill();
+    c.beginPath(); c.arc(cx + r * 0.19, cy - r * 0.07, r * 0.085, 0, Math.PI * 2); c.fill();
+    // smile
+    c.beginPath(); c.arc(cx, cy + r * 0.02, r * 0.2, Math.PI * 0.12, Math.PI * 0.88);
+    c.strokeStyle = '#E6F1FF'; c.lineWidth = 3; c.stroke();
+    // circuit dots
+    for (var i = 0; i < 8; i++) {
+      var a = animT * 0.7 + i * Math.PI / 4;
+      c.beginPath();
+      c.arc(cx + Math.cos(a) * r * 0.72, cy + Math.sin(a) * r * 0.72, 3.2, 0, Math.PI * 2);
+      c.fillStyle = '#A855F7'; c.fill();
+    }
+  } else {
+    var rot = animT * 0.6;
+    c.beginPath(); c.arc(cx, cy, r * 0.72, rot, rot + Math.PI * 1.66);
+    c.strokeStyle = '#00D4FF'; c.lineWidth = 4; c.stroke();
+    c.beginPath(); c.arc(cx, cy, r * 0.54, rot * -1 + Math.PI, rot * -1 + Math.PI + Math.PI * 0.66);
+    c.strokeStyle = '#A855F7'; c.lineWidth = 6; c.stroke();
+    c.beginPath(); c.arc(cx, cy, r * 0.34, 0, Math.PI * 2); c.fillStyle = '#081226'; c.fill();
+    c.strokeStyle = '#00D4FF'; c.lineWidth = 2; c.stroke();
+    c.strokeStyle = 'rgba(0,212,255,.7)'; c.lineWidth = 2;
+    [[-0.48, -0.22, 0, 0], [0.22, 0.48, 0, 0], [0, 0, -0.48, -0.22], [0, 0, 0.22, 0.48]].forEach(function(l) {
+      c.beginPath();
+      c.moveTo(cx + r * l[0], cy + r * l[2]); c.lineTo(cx + r * l[1], cy + r * l[3]);
+      c.stroke();
+    });
+  }
+  requestAnimationFrame(drawAvatar);
+}
+function drawWave() {
+  var c = wctx, W = 600, H = 46;
+  c.clearRect(0, 0, W, H);
+  var active = state.listening ? 1 : 0.14;
+  for (var i = 0; i < 22; i++) {
+    var x = i * (W / 22);
+    var h = ((Math.sin(animT * 4 + i * 0.6) + 1) / 2) * H * active;
+    h = Math.max(h, 3);
+    c.fillStyle = 'rgba(0,212,255,' + (0.55 + 0.45 * active) + ')';
+    c.beginPath();
+    c.roundRect ? c.roundRect(x, (H - h) / 2, W / 38, h, 4) : c.rect(x, (H - h) / 2, W / 38, h);
+    c.fill();
+  }
+  requestAnimationFrame(drawWave);
+}
+
+/* ================= Init ================= */
+function init() {
+  document.getElementById('personaTag').textContent = state.persona;
+  document.getElementById('voiceModeBtn').textContent = '🗣 Voice ' + (state.voiceMode ? 'ON' : 'OFF');
+  renderChat(); renderReminders(); renderMemory(); renderContacts();
+  drawAvatar(); drawWave();
+  // battery + net
+  try {
+    var b = Ronny.batteryInfo();
+    var pctM = b.match(/(\d+)%/);
+    var chg = /Charging/.test(b) ? '⚡' : (/Full/.test(b) ? '✅' : '🔋');
+    document.getElementById('battChip').textContent = chg + ' ' + (pctM ? pctM[1] : '?') + '%';
+  } catch (e) {}
+  if (state.chat.length === 0) {
+    addMsg('bot', 'Namaste! 🙏 Main Ronny hoon — tumhara personal AI assistant.\n\n' +
+      '✨ Naya FREE AI Brain: koi API key NAHI chahiye! Kuch bhi poochho — har sawal ka jawab.\n\n' +
+      'Try karo: "Chand kitni door hai?", "5 km in miles", "weather Patna", "sher ki photo banao", ' +
+      '"Chrome kholo", "kal 5 baje reminder" — ya mic dabakar bolo! 🎙', 'system');
+  }
+}
+init();
+</script>
+</body>
+</html>
